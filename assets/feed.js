@@ -49,21 +49,14 @@
       <div class="reel-stage">
         <div class="reel-frame" data-act="toggle"><div class="reel-live" aria-label="Film: ${esc(c.title)}"></div>
           <img src="assets/films/${esc(r.poster)}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}"><div class="reel-big"><span></span></div>
-          <button type="button" class="reel-sound" data-act="unmute">${ICON.sound} Tap for sound</button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><b></b><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
+          <button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><b></b><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
         <div class="reel-info">
           <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span>${c.phase && PHASE[c.phase] ? `<span>${esc(PHASE[c.phase])}</span>` : ''}<span class="rt-sep">${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
           <h2><a href="#case/${esc(c.id)}">${esc(c.title)}</a></h2>
           <p class="reel-line">${esc(c.oneLine || '')}</p>
-          <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a>
+          <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a><button type="button" class="reel-share" data-act="share" data-tip="Copy a link to this film">${ICON.share}<span>Copy link</span></button>
         </div>
       </div>
-      <nav class="reel-rail" aria-label="Film controls">
-        <button type="button" data-act="mute" data-tip="Sound on or off (M)"></button>
-        <a href="#case/${esc(c.id)}" data-tip="Case file, sources and every record">${ICON.file}</a>
-        <button type="button" data-act="share" data-tip="Copy a link to this film">${ICON.share}</button>
-        <button type="button" data-act="prev" data-tip="Previous (↑)">${ICON.up}</button>
-        <button type="button" data-act="next" data-tip="Next (↓)">${ICON.down}</button>
-      </nav>
     </section>`;
   }
 
@@ -120,7 +113,9 @@
       for (let k = Math.max(0, i - 2); k <= Math.min(reels.length - 1, i + 3); k++) { const bg = reels[k].querySelector('.reel-bg[data-bg]'); if (bg) { bg.style.backgroundImage = `url('${bg.dataset.bg}')`; bg.removeAttribute('data-bg'); } }   // covers load only near the film on screen
       reels.forEach(r => r.classList.remove('playing', 'started'));
       openLive(i); if (s.watching) play(i);                                     // nothing plays until the viewer taps play (owner, 24 Nov 2026); after that, the next film carries on
-      counter.textContent = `${i + 1} / ${reels.length}`; items.forEach((b, k) => { b.classList.toggle('on', k === i); if (k === i) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current'); }); if (items[i]) { const ol = items[i].closest('.feed-list'), bt = items[i]; if (ol && (bt.offsetTop < ol.scrollTop + 40 || bt.offsetTop + bt.offsetHeight > ol.scrollTop + ol.clientHeight - 20)) ol.scrollTo({ top: bt.offsetTop - ol.clientHeight / 3, behavior: 'smooth' }); } if (i > 0) root.classList.add('moved');
+      counter.textContent = `${i + 1} / ${reels.length}`; items.forEach((b, k) => { b.classList.toggle('on', k === i); if (k === i) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current'); }); if (items[i]) { const ol = items[i].closest('.feed-list'), bt = items[i]; if (ol && (bt.offsetTop < ol.scrollTop + 40 || bt.offsetTop + bt.offsetHeight > ol.scrollTop + ol.clientHeight - 20)) ol.scrollTo({ top: bt.offsetTop - ol.clientHeight / 3, behavior: 'smooth' }); } if (items[i] && innerWidth < 1100) { const ol = items[i].closest('ol'), bt = items[i].closest('li') || items[i]; if (ol) ol.scrollTo({ left: bt.offsetLeft - ol.clientWidth / 2 + bt.offsetWidth / 2, behavior: 'smooth' }); }
+      { const lg = document.querySelector('.feed-legend'); if (lg && lg.classList.contains('away') !== (i > 0)) { lg.classList.toggle('away', i > 0); document.documentElement.style.setProperty('--fd-leg', (i > 0 ? 0 : lg.offsetHeight) + 'px'); let done = false; const re = () => { if (done) return; done = true; scroller.scrollTo({ top: reels[s.i].offsetTop, behavior: 'auto' }); }; scroller.addEventListener('scrollend', re, { once: true }); setTimeout(re, 1200); } }   // the label key stays at the top of the feed: once you move on it is gone, not following you
+      if (i > 0) root.classList.add('moved');
       try { history.replaceState(null, '', '#watch/' + reels[i].dataset.id + (root.dataset.tier ? '?tier=' + root.dataset.tier : '')); } catch (e) { /* file: */ }
       document.title = reels[i].getAttribute('aria-label') + ' — SF Money Trail';
     };
