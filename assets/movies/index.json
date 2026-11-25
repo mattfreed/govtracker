@@ -216,8 +216,8 @@
   "passages": 30
  },
  "in-the-job-before-the-exam": {
-  "seconds": 149.2,
-  "passages": 40
+  "seconds": 153.4,
+  "passages": 41
  },
  "kelly-wong-puc": {
   "seconds": 130.5,
@@ -328,7 +328,7 @@
   "passages": 34
  },
  "overtime-beyond-the-clock": {
-  "seconds": 147.4,
+  "seconds": 146.6,
   "passages": 37
  },
  "pandemic-relief-with-no-names": {
@@ -351,9 +351,13 @@
   "seconds": 130.2,
   "passages": 35
  },
+ "police-captains-overtime-in-lieu": {
+  "seconds": 113.0,
+  "passages": 28
+ },
  "police-overtime-limits-not-enforced": {
-  "seconds": 161.7,
-  "passages": 34
+  "seconds": 167.7,
+  "passages": 35
  },
  "police-retirees-rehired-960": {
   "seconds": 134.2,
@@ -444,8 +448,8 @@
   "passages": 43
  },
  "spent-first-approved-later": {
-  "seconds": 130.4,
-  "passages": 37
+  "seconds": 130.5,
+  "passages": 39
  },
  "st-james-infirmary-books-stop-adding-up": {
   "seconds": 138.2,
@@ -492,8 +496,8 @@
   "passages": 39
  },
  "uniformed-overtime-and-the-agreements": {
-  "seconds": 130.3,
-  "passages": 34
+  "seconds": 130.6,
+  "passages": 35
  },
  "union-name-outside-money": {
   "seconds": 140.7,
