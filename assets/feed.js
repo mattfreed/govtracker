@@ -51,7 +51,7 @@
           <img src="assets/films/${esc(r.poster)}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}"><div class="reel-big"><span></span></div>
           <button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><b></b><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
         <div class="reel-info">
-          <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span>${c.phase && PHASE[c.phase] ? `<span>${esc(PHASE[c.phase])}</span>` : ''}<span class="rt-sep">${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
+          <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span><span class="rt-def">${esc(DEF[c.tier] || '')}</span><span class="rt-defs">${esc(DEFS[c.tier] || '')}</span></div><div class="reel-sub"><span>${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
           <h2><a href="#case/${esc(c.id)}">${esc(c.title)}</a></h2>
           <p class="reel-line">${esc(c.oneLine || '')}</p>
           <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a><button type="button" class="reel-share" data-act="share" data-tip="Copy a link to this film">${ICON.share}<span>Copy link</span></button>${nx ? `<div class="reel-downrow"><button type="button" class="reel-down" data-act="next" aria-label="Next film">${ICON.down}</button></div>` : ''}
@@ -68,6 +68,7 @@
     ['OFFICIAL', 'Official finding', 'An auditor, the Controller, the Ethics Commission, a regulator or a grand jury put it in writing. Not a criminal finding.', 'Found in writing by an auditor or regulator.'],
     ['REDFLAG', 'Lead', 'A pattern in the public records that no authority has ruled on. A question, not an accusation; each case says what is established and what is not.', 'Unexplained in the records; a question, not an accusation.'],
   ];
+  const DEF = Object.fromEntries(MEANS.map(([k, , d]) => [k, d])), DEFS = Object.fromEntries(MEANS.map(([k, , , sh]) => [k, sh]));          // each film says what its label means (owner, 25 Nov 2026: no separate label bar)
   function legend() {
     return `<section class="feed-legend" aria-label="What the labels mean"><span class="fg-h">What the labels mean</span><ul>${MEANS.map(([k, t, d, sh]) =>
       `<li><span class="rt-tier t-${k}">${esc(t)}</span><span class="fg-d">${esc(d)}</span><span class="fg-s">${esc(sh)}</span></li>`).join('')}</ul></section>`;
@@ -76,7 +77,7 @@
   function render(C, startId, tier) {
     const list = ordered(C.cases, tier), counts = {}, first = Math.max(0, list.findIndex(c => c.id === startId));
     C.cases.forEach(c => { if (c.reel) { counts[c.tier] = (counts[c.tier] || 0) + 1; counts[''] = (counts[''] || 0) + 1; } });
-    return `<h1 class="sr-only">Watch the cases</h1>${legend()}<div class="feed${store.get('fd.sound') === 'on' ? '' : ' muted'}" id="feed" data-tier="${esc(tier || '')}" data-start="${esc(startId || '')}">
+    return `<h1 class="sr-only">Watch the cases</h1><div class="feed${store.get('fd.sound') === 'on' ? '' : ' muted'}" id="feed" data-tier="${esc(tier || '')}" data-start="${esc(startId || '')}">
       <div class="feed-bar">${CHIPS.map(([k, t]) => `<button type="button" class="feed-chip" data-tier="${k}" aria-pressed="${(tier || '') === k}">${t}<b>${counts[k] || 0}</b></button>`).join('')}
         <span class="feed-count" aria-live="polite">1 / ${list.length}</span><a class="feed-all" href="#cases">All cases as a list</a></div>
       <aside class="feed-list" aria-label="All films"><div class="fl-head">${list.length} films · scroll for the next</div><ol>${list.map((c, i) => `<li><button type="button" data-go="${i}"${i === first ? ' class="on" aria-current="true"' : ''}><span class="fl-n">${i + 1}</span><img src="assets/films/${esc(c.reel.poster)}" alt="" loading="lazy"><span class="fl-t"><span class="fl-title">${esc(c.title)}</span><span class="fl-meta"><i class="t-${esc(c.tier)}"></i>${esc(TIER[c.tier] || c.tier)} · ${mmss(c.reel.s)}</span></span></button></li>`).join('')}</ol></aside>
