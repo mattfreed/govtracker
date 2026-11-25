@@ -54,7 +54,7 @@
           <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span>${c.phase && PHASE[c.phase] ? `<span>${esc(PHASE[c.phase])}</span>` : ''}<span class="rt-sep">${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
           <h2><a href="#case/${esc(c.id)}">${esc(c.title)}</a></h2>
           <p class="reel-line">${esc(c.oneLine || '')}</p>
-          <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a><button type="button" class="reel-share" data-act="share" data-tip="Copy a link to this film">${ICON.share}<span>Copy link</span></button>
+          <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a><button type="button" class="reel-share" data-act="share" data-tip="Copy a link to this film">${ICON.share}<span>Copy link</span></button>${nx ? `<div class="reel-downrow"><button type="button" class="reel-down" data-act="next" aria-label="Next film">${ICON.down}</button></div>` : ''}
         </div>
       </div>
     </section>`;
