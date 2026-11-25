@@ -97,6 +97,7 @@
     leave();
     const root = document.getElementById('feed'); if (!root) return;
     const hdr = document.querySelector('header.top'); document.documentElement.style.setProperty('--fd-hdr', (hdr ? hdr.offsetHeight : 58) + 'px');
+    const lgh = document.querySelector('.feed-legend .fg-h'); if (lgh) { lgh.setAttribute('role', 'button'); lgh.setAttribute('tabindex', '0'); lgh.setAttribute('aria-expanded', 'false'); const tg = () => { const o = lgh.parentElement.classList.toggle('open'); lgh.setAttribute('aria-expanded', String(o)); }; lgh.addEventListener('click', tg); lgh.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tg(); } }); }   // phones: the label key folds into one line
     const lg = document.querySelector('.feed-legend'), fitLegend = () => document.documentElement.style.setProperty('--fd-leg', (lg ? lg.offsetHeight : 0) + 'px');
     fitLegend(); window.removeEventListener('resize', mount.fit || (() => {})); mount.fit = fitLegend; window.addEventListener('resize', fitLegend);
     const scroller = root.querySelector('#feed-scroll'), reels = [...root.querySelectorAll('.reel[data-id]')], counter = root.querySelector('.feed-count'), items = [...root.querySelectorAll('.feed-list [data-go]')];

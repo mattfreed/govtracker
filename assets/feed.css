@@ -163,3 +163,21 @@ body.feed-on footer { display: none; }
 .reel:not(.started) .reel-live { opacity: 0; }                /* the cover shows until the film is first played */
 /* "Up next" at bottom right: the centred bar's nudge animation moved it by half its width, over the subtitles; no nudge here */
 .reel-frame .reel-next { animation: none; }
+
+/* phones (owner, 25 Nov 2026): the label key folds to one line that opens over the film; the side buttons sit in one row
+   beside "Open the full case" instead of over the film; the one-line summary is left to the case page */
+@media (max-width: 900px) {
+  .feed-legend { position: relative; flex-direction: row; align-items: center; padding: 6px 12px; z-index: 20; }
+  .feed-legend .fg-h { cursor: pointer; padding: 6px 0; display: inline-flex; align-items: center; gap: 6px; }
+  .feed-legend .fg-h::after { content: "▾"; font-size: 12px; transition: transform .2s ease; }
+  .feed-legend.open .fg-h::after { transform: rotate(180deg); }
+  .feed-legend ul { display: none; }
+  .feed-legend.open ul { display: grid; position: absolute; left: 0; right: 0; top: 100%; background: #0b0e13; padding: 10px 12px 14px; border-bottom: 1px solid rgba(255,255,255,.14); box-shadow: 0 12px 24px rgba(0,0,0,.5); }
+  .reel-line { display: none; }
+  .reel-info { padding: 0 16px; }
+  .reel-rail { position: absolute; top: auto; bottom: 14px; right: 12px; transform: none; display: flex; gap: 8px; }
+  .reel-rail button, .reel-rail a { width: 40px; height: 40px; }
+  .reel-rail [data-act="prev"], .reel-rail [data-act="next"] { display: none; }
+  .reel-open { margin-top: 10px; padding: 10px 16px; font-size: 14.5px; }
+}
+@media (max-width: 900px) { .feed-hint { display: none !important; } }
