@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SF Money Trail">
+  <meta property="og:description" content="San Francisco public money: every case names the exact record that looks wrong, draws the money trail around it, and says how strong the evidence is.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="description" content="San Francisco public money: every case names the exact record that looks wrong, draws the money trail around it, and says how strong the evidence is.">
+  <title>SF Money Trail — where the money goes wrong, and how sure we are</title>
+  <link rel="stylesheet" href="assets/site.css?v=202611242031">
+  <link rel="stylesheet" href="assets/movie.css?v=202611242031">
+  <link rel="stylesheet" href="assets/feed.css?v=202611242031">
+  <script defer src="assets/data/core.js?v=202611242031"></script>
+  <script defer src="assets/charts.js?v=202611242031"></script>
+  <script defer src="assets/geo/sf.js?v=202611242031"></script>
+  <script defer src="assets/movie6.js?v=202611242031"></script>
+  <script defer src="assets/movie.js?v=202611242031"></script>
+  <script defer src="assets/evidence.js?v=202611242031"></script>
+  <script defer src="assets/feed.js?v=202611242031"></script>
+  <script defer src="assets/app2.js?v=202611242031"></script>
+  <script defer src="assets/app3.js?v=202611242031"></script>
+<script defer src="assets/app.js?v=202611242031"></script>
+</head>
+<body>
+  <script>/* lay out the first paint for the page being opened, so nothing jumps when it arrives */(function (r) { r = location.hash.slice(1).split(/[?/]/)[0]; var b = document.body.classList; if (r === '' || r === 'watch') b.add('feed-on'); else if (/^(orgs|trace|money|contracts|outcomes|health|screens|s|who|connections|officials)$/.test(r)) b.add('desk-on'); })();</script>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="#" aria-label="SF Money Trail, watch the films">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="13" cy="13" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m20 20 9 9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M13 8v10M10 10.500h4.500a1.800 1.800 0 0 1 0 3.600H11.500a1.800 1.800 0 0 0 0 3.600H16" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/></svg>
+        <span>SF Money Trail<small>Edition <span id="edition"></span></small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Sections"></nav>
+      <button class="nav-more" id="navmore" type="button" aria-label="Show more sections" tabindex="-1"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <form id="gs" role="search"><label class="sr-only" for="gq">Search cases, organizations and names</label><input id="gq" type="search" placeholder="Search…"></form>
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 1.500a6.500 6.500 0 1 0 0 13V1.500Z" fill="currentColor"/><circle cx="8" cy="8" r="6.500" fill="none" stroke="currentColor"/></svg></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"><div class="empty">Opening the files…</div></main>
+  <footer><div><span>SF Money Trail · built from public records · a lead is a question, not an accusation</span><a href="#method">Method and data</a></div></footer>
+  <noscript><p style="padding:20px">This site needs JavaScript. The case files are plain JSON in <code>assets/data/core.js</code>; every source in them links to where the record can be downloaded.</p></noscript>
+</body>
+</html>

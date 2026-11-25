@@ -1,0 +1,165 @@
+/* SF Money Trail — the watch feed (assets/feed.js): one film per screen, scroll or swipe to the next. Always dark, like a cinema. */
+body.feed-on main { max-width: none; padding: 0; min-height: 0; }
+body.feed-on footer { display: none; }
+.feed { --f-bg: #07090c; --f-panel: rgba(18, 21, 27, .72); --f-ink: #f2f3f5; --f-ink2: #c4c9d1; --f-mute: #8b929c; --f-line: rgba(255,255,255,.14); --f-accent: #4f9df0; --f-gold: #f0b93a;
+  position: relative; height: calc(100svh - var(--fd-hdr, 58px) - var(--fd-leg, 0px)); background: var(--f-bg); color: var(--f-ink); overflow: hidden; font-family: var(--sans); }
+.feed a { color: inherit; }
+.feed-scroll { height: 100%; overflow-y: auto; scroll-snap-type: y mandatory; overscroll-behavior: contain; scrollbar-width: none; }
+.feed-scroll { touch-action: pan-x pinch-zoom; }       /* vertical swipes are handled in feed.js, one film per swipe */
+.feed-scroll::-webkit-scrollbar { display: none; }
+.reel { position: relative; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: grid; place-items: center; overflow: hidden; isolation: isolate; }
+.reel-bg { position: absolute; inset: -40px; background: center / cover no-repeat; filter: blur(38px) saturate(1.2) brightness(.42); transform: scale(1.08); z-index: -1; }
+.reel::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,.55)); z-index: -1; pointer-events: none; }
+.reel-stage { width: min(100% - 140px, calc((100svh - var(--fd-hdr, 58px) - 300px) * 16 / 9), 1180px); display: grid; gap: 14px; padding-top: 34px; }
+.reel-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: #000; box-shadow: 0 24px 80px rgba(0,0,0,.55), 0 0 0 1px var(--f-line); cursor: pointer; }
+.reel-frame video, .reel-frame img { width: 100%; height: 100%; display: block; object-fit: contain; background: #000; }
+.reel-frame img { position: absolute; inset: 0; transition: opacity .35s ease; }
+.reel.started .reel-frame img { opacity: 0; pointer-events: none; }
+.reel-big { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+.reel-big span { width: 84px; height: 84px; border-radius: 50%; background: rgba(0,0,0,.55); border: 2px solid rgba(255,255,255,.85); display: grid; place-items: center; backdrop-filter: blur(4px); transition: transform .2s ease, opacity .2s ease; }
+.reel-big span::before { content: ""; border-left: 26px solid #fff; border-top: 16px solid transparent; border-bottom: 16px solid transparent; margin-left: 7px; }
+.reel.playing .reel-big span { opacity: 0; transform: scale(.85); }
+.reel-sound { position: absolute; left: 14px; bottom: 16px; z-index: 2; border: 0; border-radius: 999px; padding: 8px 14px; background: rgba(0,0,0,.66); color: #fff; font: 600 14px var(--sans); cursor: pointer; display: none; backdrop-filter: blur(6px); }
+.feed.muted .reel.playing .reel-sound { display: inline-flex; gap: 7px; align-items: center; white-space: nowrap; }
+.reel-sound svg { width: 18px; height: 18px; flex: none; }
+/* the scrub bar: a tall invisible hit area along the bottom of the film, the visible track grows on hover or drag */
+.reel-prog { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; z-index: 3; cursor: pointer; touch-action: none; outline: none; }
+.reel-prog::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: rgba(255,255,255,.22); transition: height .15s ease; }
+.reel-prog i { position: absolute; left: 0; bottom: 0; height: 5px; width: 0; background: var(--f-gold); transition: height .15s ease; pointer-events: none; }
+.reel-prog b { position: absolute; bottom: 0; left: 0; width: 15px; height: 15px; margin: 0 0 -4px -7.5px; border-radius: 50%; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.5); opacity: 0; transform: scale(.6); transition: opacity .15s ease, transform .15s ease; pointer-events: none; }
+.reel-time { position: absolute; right: 12px; bottom: 14px; font: 600 12.5px var(--sans); font-variant-numeric: tabular-nums; color: #fff; background: rgba(0,0,0,.6); padding: 3px 8px; border-radius: 6px; opacity: 0; transition: opacity .15s ease; pointer-events: none; }
+.reel-frame:hover .reel-prog::before, .reel-prog.drag::before, .reel-prog:focus-visible::before, .reel-frame:hover .reel-prog i, .reel-prog.drag i, .reel-prog:focus-visible i { height: 8px; }
+.reel-frame:hover .reel-prog b, .reel-prog.drag b, .reel-prog:focus-visible b { opacity: 1; transform: scale(1); bottom: 1.5px; }
+.reel-frame:hover .reel-time, .reel-prog.drag .reel-time, .reel-prog:focus-visible .reel-time, .reel:not(.playing).started .reel-time { opacity: 1; }
+.reel-sound { bottom: 26px !important; left: 56px !important; }
+/* up next: says plainly that there is another film below */
+.reel-next { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 3; display: inline-flex; align-items: center; gap: 8px; max-width: min(90%, 620px); border: 1px solid var(--f-line); border-radius: 999px; padding: 8px 16px; background: rgba(16,19,24,.78); color: var(--f-ink2); font: 600 13.5px var(--sans); cursor: pointer; backdrop-filter: blur(6px); animation: fd-nudge 2.4s ease-in-out infinite; }
+.reel-next b { color: var(--f-ink); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.reel-next svg { width: 18px; height: 18px; flex: none; }
+.reel-next:hover { background: rgba(40,46,56,.95); color: #fff; }
+@keyframes fd-nudge { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 4px); } }
+/* the list of every film down the left, the one playing highlighted */
+.feed-list { display: none; }
+@media (min-width: 1100px) {
+  .feed { --fl-w: 300px; }
+  .feed-list { display: flex; flex-direction: column; position: absolute; left: 0; top: 0; bottom: 0; width: var(--fl-w); padding-top: 54px; z-index: 4; background: rgba(10,12,16,.92); border-right: 1px solid var(--f-line); }
+  .feed-scroll { margin-left: var(--fl-w); }
+  .feed-bar { left: var(--fl-w); }
+  .fl-head { padding: 8px 16px 10px; color: var(--f-mute); font: 600 12px var(--sans); letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid var(--f-line); }
+  .feed-list ol { list-style: none; margin: 0; padding: 6px 0 40px; overflow-y: auto; flex: 1; position: relative; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.2) transparent; }
+  .feed-list button { width: 100%; display: grid; grid-template-columns: 22px 64px 1fr; gap: 10px; align-items: center; padding: 7px 12px 7px 10px; border: 0; border-left: 3px solid transparent; background: none; color: var(--f-ink2); text-align: left; cursor: pointer; font: inherit; }
+  .feed-list button:hover { background: rgba(255,255,255,.06); color: var(--f-ink); }
+  .feed-list button.on { background: rgba(240,185,58,.24); border-left: 4px solid var(--f-gold); box-shadow: inset 0 0 0 1px rgba(240,185,58,.5); color: #fff; }
+  .feed-list button.on img { outline: 2px solid var(--f-gold); outline-offset: 1px; }
+  .feed-list button.on .fl-n { color: var(--f-gold); }
+  .fl-n { color: var(--f-mute); font: 600 12px var(--sans); font-variant-numeric: tabular-nums; text-align: right; }
+  .feed-list img { width: 64px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 4px; background: #000; display: block; }
+  .fl-t { display: grid; gap: 2px; min-width: 0; }
+  .fl-title { font: 600 13px/1.3 var(--sans); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .fl-meta { color: var(--f-mute); font-size: 11.5px; display: flex; align-items: center; gap: 6px; }
+  .fl-meta i { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+  .fl-meta .t-PROVEN { background: #d03b3b; } .fl-meta .t-CHARGED { background: #ec835a; } .fl-meta .t-OFFICIAL { background: #fab219; } .fl-meta .t-REDFLAG { background: var(--f-accent); }
+  .feed-hint { display: none; }
+}
+.reel-info { display: grid; grid-template-columns: 1fr auto; gap: 6px 22px; align-items: start; }
+.reel-tags { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--f-ink2); }
+.reel-tags .rt-tier { border-radius: 999px; padding: 3px 10px; font-weight: 700; letter-spacing: .08em; }
+.reel-tags .t-PROVEN { background: #d03b3b; color: #fff; } .reel-tags .t-CHARGED { background: #ec835a; color: #1a0d05; } .reel-tags .t-OFFICIAL { background: #fab219; color: #1b1400; } .reel-tags .t-REDFLAG { background: var(--f-accent); color: #06101c; }
+.reel-tags .rt-sep::before { content: "·"; margin-right: 8px; color: var(--f-mute); }
+.reel-info h2 { margin: 0; font: 750 clamp(20px, 2.3vw, 30px)/1.16 var(--sans); letter-spacing: -.015em; text-wrap: balance; }
+.reel-info h2 a { text-decoration: none; } .reel-info h2 a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.reel-line { grid-column: 1; margin: 0; color: var(--f-ink2); font-size: 15px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.reel-open { grid-column: 2; grid-row: 2 / span 2; align-self: center; white-space: nowrap; text-decoration: none; background: #fff; color: #0b0d10 !important; font-weight: 700; font-size: 15px; padding: 11px 18px; border-radius: 999px; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+.reel-open:hover { background: var(--f-gold); }
+.reel-rail { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); display: grid; gap: 12px; z-index: 3; }
+.reel-rail button, .reel-rail a { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--f-line); background: rgba(10,12,16,.62); color: #fff; display: grid; place-items: center; cursor: pointer; backdrop-filter: blur(6px); text-decoration: none; font: 600 11px var(--sans); position: relative; }
+.reel-rail button:hover, .reel-rail a:hover { background: rgba(40,46,56,.9); }
+.reel-rail svg { width: 22px; height: 22px; }
+.reel-rail [data-tip]:hover::after { content: attr(data-tip); position: absolute; right: 58px; white-space: nowrap; background: #111; color: #fff; padding: 5px 9px; border-radius: 6px; font-size: 12.5px; pointer-events: none; }
+.feed-bar { position: absolute; left: 0; right: 0; top: 0; z-index: 5; display: flex; gap: 8px; align-items: center; padding: 10px 18px; background: linear-gradient(rgba(7,9,12,.85), transparent); pointer-events: none; }
+.feed-bar > * { pointer-events: auto; }
+.feed-chip { border: 1px solid var(--f-line); background: rgba(16,19,24,.7); color: var(--f-ink2); border-radius: 999px; padding: 6px 13px; font: 600 13px var(--sans); cursor: pointer; backdrop-filter: blur(6px); }
+.feed-chip b { color: var(--f-mute); font-weight: 600; margin-left: 4px; }
+.feed-chip[aria-pressed="true"] { background: #fff; color: #0b0d10; border-color: #fff; } .feed-chip[aria-pressed="true"] b { color: #555; }
+.feed-count { margin-left: auto; color: var(--f-ink2); font: 600 13px var(--sans); font-variant-numeric: tabular-nums; background: rgba(16,19,24,.7); border: 1px solid var(--f-line); border-radius: 999px; padding: 6px 12px; }
+.feed-all { color: var(--f-ink2) !important; font: 600 13px var(--sans); text-decoration: none; border: 1px solid var(--f-line); background: rgba(16,19,24,.7); border-radius: 999px; padding: 6px 12px; }
+.feed-hint { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 4; color: var(--f-mute); font-size: 12.5px; pointer-events: none; transition: opacity .4s ease; }
+.feed.moved .feed-hint { opacity: 0; }
+@media (max-height: 900px) { .feed-hint { display: none; } }
+.reel-end { text-align: center; display: grid; gap: 14px; justify-items: center; padding: 20px; }
+.reel-end h2 { font: 750 30px var(--sans); margin: 0; } .reel-end p { color: var(--f-ink2); margin: 0; max-width: 520px; }
+.reel-end .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.reel-end a { text-decoration: none; border-radius: 999px; padding: 11px 18px; font-weight: 700; border: 1px solid var(--f-line); } .reel-end a.primary { background: #fff; color: #0b0d10 !important; }
+@media (max-width: 760px) {
+  .reel-stage { width: 100%; padding: 46px 0 0; gap: 12px; }
+  .reel-frame { border-radius: 0; box-shadow: none; }
+  .reel { place-items: start center; }
+  .reel-info { padding: 0 64px 0 16px; grid-template-columns: 1fr; }
+  .reel-open { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 6px; }
+  .reel-next { bottom: auto; top: 8px; display: none; }
+  .reel-rail { top: auto; bottom: 18px; right: 10px; transform: none; gap: 8px; }
+  .reel-rail button, .reel-rail a { width: 42px; height: 42px; } .reel-rail svg { width: 19px; height: 19px; }
+  .reel-rail [data-tip]:hover::after { display: none; }
+  .feed-bar { overflow-x: auto; padding: 8px 12px; } .feed-all { display: none; }
+  .feed-hint { display: block !important; bottom: auto; top: 52px; } .feed-hint .k { display: none; }
+  .reel-info h2 { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) { .feed-scroll { scroll-behavior: auto; } }
+.crumb .crumb-watch { font-weight: 700; margin-right: 18px; padding-right: 18px; border-right: 1px solid var(--hair); }
+
+/* What the labels mean: a strip above the feed, in the same colours as the labels on each film */
+.feed-legend { background: #0b0e13; color: #f2f3f5; border-bottom: 1px solid rgba(255,255,255,.14); padding: 10px 18px; display: flex; gap: 14px; align-items: flex-start; font-family: var(--sans); }
+.feed-legend .fg-h { flex: none; font: 700 11px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: #8b929c; padding-top: 5px; }
+.feed-legend ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 18px; flex: 1; }
+.feed-legend li { display: flex; gap: 8px; align-items: flex-start; min-width: 0; }
+.feed-legend .rt-tier { flex: none; border-radius: 999px; padding: 3px 10px; font: 700 11.5px var(--sans); letter-spacing: .06em; white-space: nowrap; }
+.feed-legend .t-PROVEN { background: #d03b3b; color: #fff; } .feed-legend .t-CHARGED { background: #ec835a; color: #1a0d05; }
+.feed-legend .t-OFFICIAL { background: #fab219; color: #1b1400; } .feed-legend .t-REDFLAG { background: #4f9df0; color: #06101c; }
+.feed-legend .fg-d { font-size: 12.5px; line-height: 1.35; color: #c4c9d1; }
+.feed-legend .fg-s { display: none; }
+@media (max-width: 1100px) { .feed-legend ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) {
+  .feed-legend { flex-direction: column; gap: 6px; padding: 8px 12px; width: 100vw; max-width: 100vw; box-sizing: border-box; }
+  .feed-legend ul { width: 100%; }
+  .feed-legend li, .feed-legend .fg-s { min-width: 0; overflow-wrap: anywhere; }
+  .feed-legend .fg-h { padding-top: 0; }
+  .feed-legend ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 10px; }
+  .feed-legend li { flex-direction: column; gap: 3px; }
+  .feed-legend .rt-tier { font-size: 10.5px; padding: 2px 8px; }
+  .feed-legend .fg-d { display: none; }
+  .feed-legend .fg-s { display: block; font-size: 11.5px; line-height: 1.3; color: #c4c9d1; }
+}
+
+/* YouTube-style play/pause button at the left end of the scrubber */
+.reel-pp { position: absolute; left: 10px; bottom: 12px; z-index: 4; width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: rgba(0,0,0,.6); color: #fff; cursor: pointer; opacity: 0; transition: opacity .15s ease; }
+.reel-pp svg { width: 20px; height: 20px; fill: currentColor; }
+.reel-pp .i-play { display: block; } .reel-pp .i-pause { display: none; }
+.reel.playing .reel-pp .i-play { display: none; } .reel.playing .reel-pp .i-pause { display: block; }
+.reel-frame:hover .reel-pp, .reel-pp:focus-visible, .reel-prog.drag ~ .reel-pp, .reel:not(.playing).started .reel-pp { opacity: 1; }
+.reel-pp:focus-visible { outline: 2px solid var(--f-gold); outline-offset: 2px; }
+@media (hover: none) { .reel.started .reel-pp { opacity: .85; } }
+/* "Up next": bottom right of the film, like YouTube (owner, 24 Nov 2026) */
+.reel-frame .reel-next { position: absolute; left: auto; right: 12px; bottom: 14px; top: auto; transform: none; z-index: 4; display: inline-flex; align-items: center; gap: 8px; max-width: min(30%, 340px); padding: 7px 12px; border-radius: 10px; font-size: 13px; background: rgba(0,0,0,.72); color: #ddd; border: 1px solid rgba(255,255,255,.18); }
+.reel-frame .reel-next span { color: #aaa; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: 11px; flex: none; }
+.reel-frame .reel-next b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+@media (max-width: 900px) { .reel-frame .reel-next { display: none; } }
+/* with "Up next" at bottom right, the time sits beside the play button and "Tap for sound" above them */
+@media (min-width: 901px) { .reel-time { right: auto; left: 54px; bottom: 19px; } .reel-sound { bottom: 58px !important; left: 10px !important; } }
+/* like YouTube, "Up next" shows near the end of a film or while it is paused, so it never covers the subtitles mid-film */
+.reel-frame .reel-next { opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+.reel.ending .reel-frame .reel-next, .reel:not(.playing).started .reel-frame .reel-next { opacity: 1; pointer-events: auto; }
+/* phones (24 Nov 2026): filter chips stay on one line and scroll sideways; the swipe hint sits at the bottom, clear of the film;
+   the tag row stays on one line */
+@media (max-width: 900px) {
+  .feed-chip { white-space: nowrap; flex: none; }
+  .feed-hint { top: auto !important; bottom: 10px; }
+  .reel-tags { flex-wrap: nowrap; overflow: hidden; white-space: nowrap; font-size: 11.5px; gap: 6px; }
+  .reel-tags .rt-sep::before { margin-right: 6px; }
+}
+/* nothing autoplays: the big play button sits in the middle of the film until the viewer taps it */
+.reel-big span { width: 92px; height: 92px; cursor: pointer; }
+.reel:not(.started) .reel-big { pointer-events: none; }
+.reel-big { z-index: 3; }
+.reel:not(.started) .reel-live { opacity: 0; }                /* the cover shows until the film is first played */
+/* "Up next" at bottom right: the centred bar's nudge animation moved it by half its width, over the subtitles; no nudge here */
+.reel-frame .reel-next { animation: none; }

@@ -1,0 +1,39 @@
+{
+ "San Francisco City Hall, 1 Dr Carlton B Goodlett Place, San Francisco": [
+  {
+   "place_id": 322313441,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 7261820,
+   "lat": "37.7792929",
+   "lon": "-122.4192601",
+   "category": "amenity",
+   "type": "townhall",
+   "place_rank": 30,
+   "importance": 0.4422097936253295,
+   "addresstype": "amenity",
+   "name": "San Francisco City Hall",
+   "display_name": "San Francisco City Hall, 1, Dr. Carlton B. Goodlett Place, Civic Center, San Francisco, California, 94102, United States",
+   "address": {
+    "amenity": "San Francisco City Hall",
+    "house_number": "1",
+    "road": "Dr. Carlton B. Goodlett Place",
+    "quarter": "Civic Center",
+    "neighbourhood": "Civic Center",
+    "city": "San Francisco",
+    "state": "California",
+    "ISO3166-2-lvl4": "US-CA",
+    "postcode": "94102",
+    "country": "United States",
+    "country_code": "us"
+   },
+   "boundingbox": [
+    "37.7786554",
+    "37.7798972",
+    "-122.4198330",
+    "-122.4186300"
+   ]
+  }
+ ],
+ "Tenderloin Housing Clinic, San Francisco": []
+}

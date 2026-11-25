@@ -1,0 +1,550 @@
+{
+ "airport-electrical-one-bidder": {
+  "seconds": 139.8,
+  "passages": 38
+ },
+ "approved-after-the-fact": {
+  "seconds": 130.6,
+  "passages": 39
+ },
+ "audits-the-returns-say-were-done": {
+  "seconds": 105.8,
+  "passages": 26
+ },
+ "autodesk-lease-then-mayors-committee": {
+  "seconds": 123.1,
+  "passages": 28
+ },
+ "bart-overtime-highest-transit": {
+  "seconds": 129.7,
+  "passages": 35
+ },
+ "bay-area-hospice-surge": {
+  "seconds": 130.2,
+  "passages": 38
+ },
+ "behested-payment-waivers": {
+  "seconds": 136.0,
+  "passages": 39
+ },
+ "benefit-errors-dwarf-fraud-found": {
+  "seconds": 137.1,
+  "passages": 32
+ },
+ "board-review-line-raised": {
+  "seconds": 141.9,
+  "passages": 39
+ },
+ "building-inspection-favours": {
+  "seconds": 130.3,
+  "passages": 30
+ },
+ "building-jobs-and-change-orders": {
+  "seconds": 130.2,
+  "passages": 33
+ },
+ "buildings-bought-for-housing": {
+  "seconds": 130.1,
+  "passages": 37
+ },
+ "bvhpf-tier3-still-funded": {
+  "seconds": 130.0,
+  "passages": 34
+ },
+ "certified-local-firms-large-affiliates": {
+  "seconds": 153.1,
+  "passages": 35
+ },
+ "child-care-money-with-no-names": {
+  "seconds": 130.2,
+  "passages": 36
+ },
+ "city-college-contracts-grew-by-memo": {
+  "seconds": 164.7,
+  "passages": 41
+ },
+ "city-college-findings-that-came-back": {
+  "seconds": 138.0,
+  "passages": 30
+ },
+ "city-funded-nonprofits-fund-political-arms": {
+  "seconds": 130.3,
+  "passages": 37
+ },
+ "city-landlords-sold-during-lease": {
+  "seconds": 130.2,
+  "passages": 36
+ },
+ "community-challenge-grants": {
+  "seconds": 130.9,
+  "passages": 34
+ },
+ "contract-notices-filed-late": {
+  "seconds": 137.1,
+  "passages": 30
+ },
+ "contract-window-donations": {
+  "seconds": 121.1,
+  "passages": 33
+ },
+ "contracting-out-city-could-staff": {
+  "seconds": 135.4,
+  "passages": 32
+ },
+ "contractor-gifts-off-the-list": {
+  "seconds": 121.5,
+  "passages": 26
+ },
+ "cpa-resilient-back-office": {
+  "seconds": 152.0,
+  "passages": 41
+ },
+ "credible-messengers-sixteen-youths": {
+  "seconds": 130.8,
+  "passages": 33
+ },
+ "crestwood-locked-beds-contract": {
+  "seconds": 130.4,
+  "passages": 37
+ },
+ "davis-family-payments": {
+  "seconds": 123.3,
+  "passages": 35
+ },
+ "dish-sf-contingency": {
+  "seconds": 130.2,
+  "passages": 34
+ },
+ "dream-keeper-davis-spingola": {
+  "seconds": 144.0,
+  "passages": 35
+ },
+ "dream-keeper-grant-presidents-firm": {
+  "seconds": 167.3,
+  "passages": 36
+ },
+ "dwayne-jones-connector": {
+  "seconds": 130.2,
+  "passages": 34
+ },
+ "emergency-hotels-rooms-repairs-repayment": {
+  "seconds": 157.7,
+  "passages": 41
+ },
+ "emergency-rules-outlived-the-emergency": {
+  "seconds": 130.1,
+  "passages": 36
+ },
+ "empty-supportive-housing": {
+  "seconds": 122.2,
+  "passages": 34
+ },
+ "failed-checkups-kept-funding": {
+  "seconds": 137.9,
+  "passages": 39
+ },
+ "family-shelter-beds-left-empty": {
+  "seconds": 142.6,
+  "passages": 33
+ },
+ "federal-bid-rigging-firms-still-paid": {
+  "seconds": 130.4,
+  "passages": 31
+ },
+ "federal-claims-for-state-only-coverage": {
+  "seconds": 130.2,
+  "passages": 35
+ },
+ "federal-money-passed-on-not-in-the-register": {
+  "seconds": 130.3,
+  "passages": 30
+ },
+ "fixed-crews-fixed-stations": {
+  "seconds": 142.7,
+  "passages": 35
+ },
+ "gift-list-drops-original-filings": {
+  "seconds": 130.2,
+  "passages": 33
+ },
+ "glide-board-donor-prop-e": {
+  "seconds": 130.3,
+  "passages": 37
+ },
+ "good-rural-numbers-that-change": {
+  "seconds": 132.1,
+  "passages": 31
+ },
+ "grand-jury-promises-not-kept": {
+  "seconds": 118.4,
+  "passages": 25
+ },
+ "homelessness-money-and-results": {
+  "seconds": 130.2,
+  "passages": 35
+ },
+ "homerise-wind-down": {
+  "seconds": 147.8,
+  "passages": 35
+ },
+ "hospices-revoked-after-1-26-billion": {
+  "seconds": 139.7,
+  "passages": 36
+ },
+ "housing-loans-not-expected-back": {
+  "seconds": 119.0,
+  "passages": 30
+ },
+ "housing-service-records-counted-twice": {
+  "seconds": 125.9,
+  "passages": 27
+ },
+ "hrc-split-purchases": {
+  "seconds": 130.4,
+  "passages": 35
+ },
+ "hsh-oversight-declined": {
+  "seconds": 130.3,
+  "passages": 43
+ },
+ "huckleberry-federal-match-city-grant": {
+  "seconds": 148.7,
+  "passages": 35
+ },
+ "in-home-care-federal-deferral": {
+  "seconds": 119.0,
+  "passages": 30
+ },
+ "in-the-job-before-the-exam": {
+  "seconds": 149.2,
+  "passages": 40
+ },
+ "kelly-wong-puc": {
+  "seconds": 130.5,
+  "passages": 34
+ },
+ "laguna-honda-federal-fines": {
+  "seconds": 130.3,
+  "passages": 34
+ },
+ "laguna-street-seller-orders-liens": {
+  "seconds": 130.5,
+  "passages": 31
+ },
+ "landlord-and-contractor-same-people": {
+  "seconds": 144.1,
+  "passages": 36
+ },
+ "left-city-then-led-its-contractor": {
+  "seconds": 132.2,
+  "passages": 30
+ },
+ "life-generations-cash-to-iou": {
+  "seconds": 127.2,
+  "passages": 31
+ },
+ "lobby-money-to-the-measure": {
+  "seconds": 136.9,
+  "passages": 35
+ },
+ "lobbyists-gave-to-officials-they-lobbied": {
+  "seconds": 130.3,
+  "passages": 36
+ },
+ "lotteries-waiting-lists-and-pools": {
+  "seconds": 140.1,
+  "passages": 39
+ },
+ "meal-contracts-under-the-line": {
+  "seconds": 130.6,
+  "passages": 30
+ },
+ "meda-tier3-financing": {
+  "seconds": 130.3,
+  "passages": 37
+ },
+ "medi-cal-fraud-exceptions-outnumber-suspensions": {
+  "seconds": 105.8,
+  "passages": 27
+ },
+ "medicaid-far-above-the-norm": {
+  "seconds": 130.3,
+  "passages": 35
+ },
+ "mid-market-urban-alchemy": {
+  "seconds": 130.3,
+  "passages": 34
+ },
+ "money-files-nobody-votes-against": {
+  "seconds": 130.2,
+  "passages": 33
+ },
+ "money-in-expected-result-out": {
+  "seconds": 151.7,
+  "passages": 39
+ },
+ "money-the-ledger-stops-following": {
+  "seconds": 130.2,
+  "passages": 32
+ },
+ "nexstreet-district-contracts": {
+  "seconds": 130.2,
+  "passages": 34
+ },
+ "no-bid-half-billion": {
+  "seconds": 149.9,
+  "passages": 37
+ },
+ "nursing-contract-after-aa-citation": {
+  "seconds": 130.3,
+  "passages": 34
+ },
+ "nursing-homes-money-out-staff-short": {
+  "seconds": 130.8,
+  "passages": 39
+ },
+ "nuru-public-works-web": {
+  "seconds": 130.3,
+  "passages": 33
+ },
+ "oakes-closed-debts-to-the-city-address": {
+  "seconds": 135.1,
+  "passages": 34
+ },
+ "officials-with-a-stake": {
+  "seconds": 130.1,
+  "passages": 38
+ },
+ "one-apartment-62-billing-numbers": {
+  "seconds": 139.0,
+  "passages": 35
+ },
+ "one-owner-several-names": {
+  "seconds": 130.6,
+  "passages": 35
+ },
+ "opportunities-for-all-jcyc": {
+  "seconds": 130.3,
+  "passages": 34
+ },
+ "overtime-beyond-the-clock": {
+  "seconds": 147.4,
+  "passages": 37
+ },
+ "pandemic-relief-with-no-names": {
+  "seconds": 156.8,
+  "passages": 37
+ },
+ "parks-alliance-accounts-to-collapse": {
+  "seconds": 137.5,
+  "passages": 34
+ },
+ "pay-at-the-top-and-bonuses": {
+  "seconds": 140.0,
+  "passages": 37
+ },
+ "permit-maze-permits-to-finish-permits": {
+  "seconds": 138.6,
+  "passages": 35
+ },
+ "permit-reviews-miss-city-deadline": {
+  "seconds": 130.2,
+  "passages": 35
+ },
+ "police-overtime-limits-not-enforced": {
+  "seconds": 161.7,
+  "passages": 34
+ },
+ "police-retirees-rehired-960": {
+  "seconds": 134.2,
+  "passages": 31
+ },
+ "ppp-and-city-money": {
+  "seconds": 134.1,
+  "passages": 38
+ },
+ "project-wreckless-insider-debt": {
+  "seconds": 136.9,
+  "passages": 34
+ },
+ "prop47-treatment-beds-half-empty": {
+  "seconds": 130.3,
+  "passages": 35
+ },
+ "providence-oasis-invoices": {
+  "seconds": 133.3,
+  "passages": 34
+ },
+ "purchase-limit-beyond-hrc": {
+  "seconds": 131.8,
+  "passages": 36
+ },
+ "recology-payments-for-rates": {
+  "seconds": 130.3,
+  "passages": 35
+ },
+ "recovery-survival-network-board-of-one": {
+  "seconds": 130.4,
+  "passages": 29
+ },
+ "registered-after-the-city-paid": {
+  "seconds": 115.0,
+  "passages": 27
+ },
+ "restricted-source-gift-cases": {
+  "seconds": 130.7,
+  "passages": 35
+ },
+ "school-contracts-signed-before-the-vote": {
+  "seconds": 139.4,
+  "passages": 33
+ },
+ "school-district-high-risk-three-times": {
+  "seconds": 172.1,
+  "passages": 38
+ },
+ "security-guards-paid-outside-the-bid": {
+  "seconds": 131.8,
+  "passages": 33
+ },
+ "service-numbers-copied-forward": {
+  "seconds": 130.4,
+  "passages": 35
+ },
+ "sf-nursing-homes-losses-related-pay": {
+  "seconds": 130.4,
+  "passages": 36
+ },
+ "sf-safe-gift-boxes": {
+  "seconds": 145.8,
+  "passages": 37
+ },
+ "sfcta-design-contracts-grow-after-award": {
+  "seconds": 174.0,
+  "passages": 40
+ },
+ "sfmta-garage-contracts-counted-by-fee": {
+  "seconds": 128.2,
+  "passages": 32
+ },
+ "sfmta-service-contracts-outlive-their-bids": {
+  "seconds": 126.0,
+  "passages": 31
+ },
+ "sheriff-short-staffed-guards-contracted-out": {
+  "seconds": 130.6,
+  "passages": 37
+ },
+ "side-doors-of-influence": {
+  "seconds": 134.7,
+  "passages": 36
+ },
+ "small-grantees-insider-loans": {
+  "seconds": 179.1,
+  "passages": 43
+ },
+ "spent-first-approved-later": {
+  "seconds": 130.4,
+  "passages": 37
+ },
+ "st-james-infirmary-books-stop-adding-up": {
+  "seconds": 138.2,
+  "passages": 40
+ },
+ "staff-on-grantee-boards": {
+  "seconds": 112.0,
+  "passages": 28
+ },
+ "stale-board-lists-on-contract-notices": {
+  "seconds": 125.5,
+  "passages": 32
+ },
+ "successor-contracts-restart-under-the-line": {
+  "seconds": 135.3,
+  "passages": 39
+ },
+ "supervisors-voted-on-recent-employers-grants": {
+  "seconds": 130.6,
+  "passages": 30
+ },
+ "suspended-ironworks-back-on-public-works": {
+  "seconds": 130.6,
+  "passages": 30
+ },
+ "told-the-state-no-assets-after-final-gift": {
+  "seconds": 130.4,
+  "passages": 34
+ },
+ "travel-gifts-missing-from-form-700": {
+  "seconds": 149.1,
+  "passages": 33
+ },
+ "treasurer-contract-steering": {
+  "seconds": 136.9,
+  "passages": 41
+ },
+ "two-sets-of-books": {
+  "seconds": 130.3,
+  "passages": 39
+ },
+ "under-ten-million-then-amended": {
+  "seconds": 130.3,
+  "passages": 39
+ },
+ "uniformed-overtime-and-the-agreements": {
+  "seconds": 130.3,
+  "passages": 34
+ },
+ "union-name-outside-money": {
+  "seconds": 140.7,
+  "passages": 40
+ },
+ "union-square-foundation-passthrough": {
+  "seconds": 130.3,
+  "passages": 33
+ },
+ "united-council-westbrook": {
+  "seconds": 160.9,
+  "passages": 43
+ },
+ "united-playaz-soma-fund": {
+  "seconds": 130.4,
+  "passages": 35
+ },
+ "urban-ed-two-portraits": {
+  "seconds": 130.3,
+  "passages": 37
+ },
+ "urban-place-two-routes": {
+  "seconds": 130.4,
+  "passages": 34
+ },
+ "waiver-reports-not-filed": {
+  "seconds": 130.4,
+  "passages": 31
+ },
+ "walton-bacr-trip-and-vote": {
+  "seconds": 149.3,
+  "passages": 42
+ },
+ "wehope-insider-building": {
+  "seconds": 130.1,
+  "passages": 31
+ },
+ "who-gets-a-yes": {
+  "seconds": 147.3,
+  "passages": 39
+ },
+ "youth-housing-provider-upheld-allegations": {
+  "seconds": 130.2,
+  "passages": 30
+ },
+ "youth-justice-same-money-fewer-days": {
+  "seconds": 136.0,
+  "passages": 36
+ },
+ "zoo-loan-and-ledger": {
+  "seconds": 146.4,
+  "passages": 39
+ }
+}
