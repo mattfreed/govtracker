@@ -230,10 +230,11 @@
     getBeats(c.id).then(m => {
       if (cur !== s) return;
       s.v6 = m.format === 6 && !!window.FD_FILM6;
+      root.classList.toggle('mv-legacy', !s.v6);
       s.beats = m.beats.map((b, i) => ({ ...b, i, view: s.v6 ? b.scene : VIEW[b.scene] || b.scene })); s.dur = m.seconds; $('.mv-msg').remove();
       if (s.v6) {                                                                  // a written film: shots, drawn by assets/movie6.js
         root.classList.add('v6'); s.names6 = m.chapters || {}; s.shots = [];
-        s.beats.forEach(b => { const last = s.shots[s.shots.length - 1]; if (!last || last.id !== b.shot) s.shots.push({ id: b.shot, beats: [], k: s.shots.length }); b.si = s.shots.length - 1; b.step = s.shots[b.si].beats.length; s.shots[b.si].beats.push(b); });
+        s.beats.forEach(b => { const last = s.shots[s.shots.length - 1]; if (!last || last.id !== b.shot || last.kind !== b.visual?.type) s.shots.push({ id: b.shot, kind: b.visual?.type, beats: [], k: s.shots.length }); b.si = s.shots.length - 1; b.step = s.shots[b.si].beats.length; s.shots[b.si].beats.push(b); });
         s.shots.forEach((sh, k) => { sh.t0 = k ? Math.max(0, sh.beats[0].t0 - .3) : 0; }); s.shots.forEach((sh, k) => { sh.t1 = k + 1 < s.shots.length ? s.shots[k + 1].t0 : s.dur; });
         let subs = null; try { subs = localStorage.getItem(SUBS_KEY); } catch (e) { /* none saved */ }
         if (subs === 'off') { root.classList.add('nocap'); $('[data-act=cap]').setAttribute('aria-pressed', 'false'); }
@@ -309,6 +310,7 @@
     function frame6(t, bi) {
       const b = s.beats[Math.max(0, bi)], sh = s.shots[b.si], p = bi < 0 ? 0 : clamp((t - b.t0) / Math.max(.2, b.t1 - b.t0));
       if (!s.cur6 || s.cur6.k !== sh.k) {                                          // a new shot: the old one fades out as this one comes in
+        view6.setAttribute('aria-hidden', String(sh.kind !== 'end'));
         const old = s.cur6; s.cur6 = { k: sh.k, start: sh.k ? sh.beats[0].t0 : 0, ...window.FD_FILM6.shot(sh.beats, c, sh.k) }; s.cur6.el.classList.add('in'); view6.appendChild(s.cur6.el);
         if (s.old6) { s.old6.el.remove(); s.old6 = null; }                      // at most one shot on its way out
         if (old) { if (s.jump || Math.abs(t - s.cur6.start) > .5) old.el.remove(); else { old.el.classList.remove('in'); old.el.classList.add('out'); s.old6 = { el: old.el, start: s.cur6.start }; } }
@@ -338,7 +340,9 @@
       if (s.v6) return frame6(t, bi);
       const b = beats[Math.max(0, bi)], p = bi < 0 ? 0 : clamp((t - b.t0) / Math.max(.2, b.t1 - b.t0));
       if (b.view !== s.view) {                                                    // a new scene: build it now, switch it on in the next frame so that it fades in
-        s.view = b.view; s.bi = -2; view.classList.remove('in'); view.innerHTML = draw[b.view](c, beats.filter(x => x.view === b.view));
+        s.view = b.view; s.bi = -2; view.classList.remove('in'); const render = draw[b.view];
+        view.dataset.graphics = 'legacy';
+        view.innerHTML = render ? render(c, beats.filter(x => x.view === b.view)) : '<div class="v-open"><h1>' + esc(b.text || c.title) + '</h1></div>';
         $('.mv-top .ch').textContent = CHAPTER[b.view] || ''; root.querySelectorAll('.mv-chap button').forEach(x => x.classList.toggle('cur', x.dataset.view === b.view));
         const r = view.querySelector('[data-roll]'); if (r) s.roll = r;
         return;

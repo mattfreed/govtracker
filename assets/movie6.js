@@ -585,12 +585,252 @@
       const cs = [...el.querySelectorAll('circle')]; return { el, update: t => cs.forEach((cn, i) => { const k = i % 6, f = ((t * .04 + i / 36 * 3) % 1), x = -50 + f * 1380, y = 120 + k * 100 + Math.sin(f * Math.PI * 2 + k) * 50; cn.setAttribute('cx', x.toFixed(1)); cn.setAttribute('cy', y.toFixed(1)); }) }; },
   };
 
+  // A fixed safe area keeps labels, graphics and captions separate at any player size.
+  const pictograms = {
+    document:'<path d="M8 3h11l6 6v20H8z M19 3v7h6 M12 15h9 M12 20h9 M12 24h6"/>',
+    vote:'<path d="M5 16h22l3 5v7H2v-7z M10 21h11 M10 9l6-6 7 7-6 6z"/>',
+    lease:'<path d="M6 3h12l6 6v7 M17 3v7h7 M6 3v25h10 M9 14h9"/><circle cx="21" cy="21" r="4"/><path d="m24 24 5 5m-2-2 2-2"/>',
+    ticket:'<path d="M3 9h26v5a3 3 0 0 0 0 6v4H3v-4a3 3 0 0 0 0-6z M21 10v3m0 3v3m0 3v2"/>',
+    travel:'<path d="m3 17 10 1 10-13c2-2 5 0 3 3l-8 13 8 4-1 2-10-2-6 4-2-1 4-6-8-3z"/>',
+    transit:'<rect x="6" y="4" width="20" height="21" rx="5"/><path d="M9 9h14v7H9z M10 29l3-4m9 4-3-4"/><circle cx="11" cy="21" r="1"/><circle cx="21" cy="21" r="1"/>',
+    housing:'<path d="M3 16 16 5l13 11 M7 14v14h18V14 M14 28V18h5v10"/>',
+    health:'<rect x="4" y="8" width="24" height="19" rx="3"/><path d="M12 8V5h8v3 M16 12v11 M11 17.5h10"/>',
+    cityhall:'<path d="m3 12 13-8 13 8z M6 27h20 M4 30h24 M8 15v9m6-9v9m6-9v9m5-9v9"/>',
+    person:'<circle cx="16" cy="10" r="6"/><path d="M5 28c0-7 4-11 11-11s11 4 11 11"/>',
+    education:'<path d="M2 12 16 5l14 7-14 7z M7 15v7c5 5 13 5 18 0v-7 M29 13v9"/>',
+    money:'<path d="M3 8h26v16H3z M3 13c3 0 5-2 5-5 M24 24c0-3 2-5 5-5"/><circle cx="16" cy="16" r="4"/>',
+    calendar:'<rect x="4" y="6" width="24" height="22" rx="3"/><path d="M4 13h24 M10 3v7m12-7v7 M9 18h4m5 0h5M9 23h4"/>',
+    gavel:'<path d="m13 5 4-3 9 11-4 3z M8 9l4-3 9 11-4 3z M13 15 3 25l3 3 10-10 M18 27h10"/>',
+    question:'<circle cx="16" cy="16" r="12"/><path d="M12 12a4 4 0 0 1 8 0c0 4-4 4-4 8 M16 24h.01"/>',
+    gap:'<path d="M8 3h11l6 6v6 M25 24v5H8v-6 M8 16V3 M5 20h6m4 0h4m4 0h5"/>',
+    magnifier:'<circle cx="13" cy="13" r="8.7"/><path d="m20 20 8 8 M9 13l3 3 5-6"/>',
+    timeline:'<path d="M6 5v22 M11 7h16 M11 16h12 M11 25h15"/><circle cx="6" cy="7" r="2"/><circle cx="6" cy="16" r="2"/><circle cx="6" cy="25" r="2"/>',
+    transfer:'<path d="M3 10h23m-7-6 7 6-7 6 M29 23H6m7-6-7 6 7 6"/>',
+    network:'<circle cx="7" cy="16" r="4"/><circle cx="25" cy="7" r="4"/><circle cx="25" cy="25" r="4"/><path d="m11 14 10-5m-10 9 10 5"/>',
+    chart:'<path d="M4 4v24h24 M8 22h4v-7H8z M15 22h4V9h-4z M22 22h4V5h-4z"/>',
+    quote:'<path d="M5 21c0-7 2-11 8-14l2 3c-3 2-5 4-5 7h5v9H5z M19 21c0-7 2-11 8-14l2 3c-3 2-5 4-5 7h5v9H19z"/>',
+    file:'<path d="M3 8h10l3 3h13v14H3z M3 15h26"/>',
+    clock:'<circle cx="16" cy="16" r="12"/><path d="M16 8v9l6 4"/>',
+    building:'<path d="M5 28h22M7 28V7l13-3v24 M20 12h5v16 M11 11h3m-3 5h3m-3 5h3"/>',
+    fiber:'<path d="M3 8h8c4 0 5 16 10 16h8 M3 16h26 M3 24h8c4 0 5-16 10-16h8"/>'
+  };
+  const iconAliases = {audit:'magnifier',decision:'gavel',contract:'document',fund:'money',cost:'money',account:'money',agency:'cityhall',van:'transit',order:'document',remedy:'transfer',date:'calendar',closure:'gavel',map:'building',program:'file',information:'document'};
+  function plateIcon(name) {
+    const path = pictograms[iconAliases[name] || name] || pictograms.document;
+    return '<svg class="plate-icon" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + path + '</svg>';
+  }
+  function subjectIcon(v, c) {
+    const actor = (c.actors || []).find(a => a.name?.toLowerCase() === String(v.label || '').toLowerCase());
+    if (actor?.type === 'person') return 'person';
+    if (v.art && !['contract','magnifier','question','building'].includes(v.art)) return v.art;
+    const label = [v.label, v.kicker, c.category, c.title].filter(Boolean).join(' ');
+    if (/\b(caltrain|bart|transit|rail|muni|train|escalator|station)\b/i.test(label)) return 'transit';
+    if (/\b(health|medical|hospital|medicare|hospice|patient|hiv)\b/i.test(label)) return 'health';
+    if (/\b(school|college|education|sfusd|teacher)\b/i.test(label)) return 'education';
+    if (/\b(housing|rent|landlord|tenants?|apartment|foreclosure)\b/i.test(label)) return 'housing';
+    return v.art || 'document';
+  }
+  function comparisonUnit(value) {
+    const m = /^\s*(\$)?(-?[\d,]+(?:\.\d+)?)\s*(million|billion|thousand|[KMB]|%)?\s*$/i.exec(String(value));
+    if (!m) return null;
+    const multiplier = {k:1e3,thousand:1e3,m:1e6,million:1e6,b:1e9,billion:1e9};
+    const unit = m[1] ? 'USD' : m[3] === '%' ? 'percent' : 'count';
+    const amount = Number(m[2].replace(/,/g,'')) * (multiplier[(m[3] || '').toLowerCase()] || 1);
+    return Number.isFinite(amount) && amount >= 0 ? {unit, amount} : null;
+  }
+  const plateTitle = text => text ? '<h2>' + esc(text) + '</h2>' : '';
+  const plateNote = text => text ? '<p class="plate-note">' + esc(text) + '</p>' : '';
+  const plateHeader = (icon, kicker) => kicker ? '<div class="plate-kicker">' + plateIcon(icon) + '<span>' + esc(kicker) + '</span></div>' : '';
+  const row = (name, value, icon, detail) => ({name,value,icon,detail});
+  function listPlate(title, rows, options = {}) {
+    const values = rows.map(r => comparisonUnit(r.value));
+    const drawBars = options.bars && rows.length > 1 && values.every(x => x && x.unit === values[0].unit);
+    const max = drawBars ? Math.max(...values.map(v => v.amount)) : 0;
+    const pages = []; let page = [], load = 0;
+    for (const [i, r] of rows.entries()) {
+      const weight = 1 + Math.floor((String(r.name || '').length + String(r.value || '').length + String(r.detail || '').length) / 86);
+      if (page.length && (load + weight > 4 || page.length === 3)) { pages.push(page); page = []; load = 0; }
+      const bar = max > 0 ? '<div class="plate-bar" aria-hidden="true"><svg viewBox="0 0 100 3" preserveAspectRatio="none"><rect width="' + (100 * values[i].amount / max).toFixed(3) + '" height="3" fill="#217168"/></svg></div>' : '';
+      page.push('<li><div class="plate-row-body"><span class="plate-row-glyph">' + plateIcon(r.icon || options.icon || 'document') + '</span><div class="plate-row-main"><strong>' + esc(r.name) + '</strong>' + plateNote(r.detail) + '</div><b class="plate-row-value">' + esc(r.value ?? '') + '</b></div>' + bar + '</li>');
+      load += weight;
+    }
+    if (page.length) pages.push(page);
+    if (options.singlePage) return plateTitle(title) + '<ol class="plate-rows">' + pages.flat().join('') + '</ol>';
+    return plateTitle(title) + pages.map((items,i) => '<div class="plate-page"' + (i ? ' hidden' : '') + '><ol class="plate-rows">' + items.join('') + '</ol></div>').join('') + (pages.length > 1 ? '<span class="plate-pagenum"></span>' : '');
+  }
+  function feature(v, icon, title, detail, chip) {
+    const accent = chip ? '<b class="plate-chip">' + esc(chip) + '</b>' : '';
+    return '<div class="plate-feature"><div class="plate-emblem">' + plateIcon(icon) + '</div><div>' + plateTitle(title) + plateNote(detail) + accent + '</div></div>';
+  }
+  function trendPlate(v,c) {
+    const series = (v.series || [0]).map(i => c.trajectory?.series?.[i]).filter(s=>s?.points?.length);
+    if (!series.length) return plateTitle(v.kicker || c.title);
+    const periods = [...new Set(series.flatMap(s=>s.points.map(p=>p.period)))].sort((a,b)=>String(a).localeCompare(String(b),'en',{numeric:true}));
+    const values = series.flatMap(s=>s.points.map(p=>p.value).filter(Number.isFinite));
+    const low = Math.min(0,...values), high = Math.max(0,...values), range = Math.max(1,high-low);
+    const x = i => 22+478*i/Math.max(1,periods.length-1);
+    const y = n => 195-165*(n-low)/range;
+    const labels = (value,unit) => String(unit).toLowerCase().includes('percent') ? value+'%' : fmtV(value,unit);
+    const legend = [];
+    const names = series.map(s => String(s.label || '').split(/\s+/));
+    // The chart heading supplies the common measure; the legend identifies the compared groups.
+    if (names.length > 1) {
+      while (names.every(n => n.length > 1 && n[n.length-1] === names[0][names[0].length-1])) names.forEach(n => n.pop());
+    }
+    const pens = ['#0d635e','#945321','#475a94'];
+    const traces=series.map((s,idx)=>{
+      const points=new Map(s.points.filter(p=>Number.isFinite(p.value)).map(p=>[p.period,p.value]));
+      const dates=periods.filter(t=>points.has(t));
+      if(!dates.length)return '';
+      const color=pens[idx%pens.length],first=dates[0],last=dates[dates.length-1];
+      legend.push('<div><i style="background:'+color+'"></i><strong title="'+esc(s.label)+'">'+esc(names[idx].join(' '))+'</strong><p>'+esc(labels(points.get(first),s.unit))+' → '+esc(labels(points.get(last),s.unit))+'</p></div>');
+      let open=false, path='';
+      periods.forEach((t,i)=>{if(!points.has(t)){open=false;return;}path+=(open?' L':'M')+x(i).toFixed(2)+' '+y(points.get(t)).toFixed(2);open=true;});
+      const dot=dates.map(t=>'<circle cx="'+x(periods.indexOf(t)).toFixed(2)+'" cy="'+y(points.get(t)).toFixed(2)+'" r="3.6" fill="'+color+'"/>').join('');
+      return '<path d="'+path+'" fill="none" stroke="'+color+'" stroke-width="4"/>'+dot;
+    }).join('');
+    const grid=[30,112.5,195].map(n=>'<path d="M22 '+n+' H500" stroke="#a7b9b0" stroke-width="1.5"/>').join('');
+    return '<div class="plate-trend"><div><div class="plate-axis"><span>'+esc(labels(high,series[0].unit))+'</span></div><svg viewBox="0 0 522 220" aria-hidden="true">'+grid+traces+'</svg><div class="plate-axis"><span>'+esc(periods[0])+'</span><span>'+esc(periods[periods.length-1])+'</span></div></div><div class="plate-legend">'+legend.join('')+'</div></div>';
+  }
+  let savedBoundaryData, savedMap;
+  function mapBase() {
+    const g=window.FD_SF_GEO;
+    if(!g?.nb) return null;
+    if(savedBoundaryData===g) return savedMap;
+    const areas=Object.entries(g.nb).filter(([name])=>name!=='Treasure Island');
+    const coords=areas.flatMap(([,rings])=>rings.flat());
+    if(!coords.length) return null;
+    const lon=coords.map(p=>p[0]), lat=coords.map(p=>p[1]);
+    const minX=Math.min(...lon),maxX=Math.max(...lon),minY=Math.min(...lat),maxY=Math.max(...lat);
+    const cos=Math.cos(37.76*Math.PI/180),scale=Math.min(310/((maxX-minX)*cos),340/(maxY-minY));
+    const project=(xy)=>[180+(xy[0]-(maxX+minX)/2)*cos*scale,182-(xy[1]-(maxY+minY)/2)*scale];
+    savedMap={project,paths:areas.map(([name,rings])=>[name,rings.map(r=>r.map((p,i)=>(i?'L':'M')+project(p).map(n=>n.toFixed(1)).join(',')).join('')+'Z').join(' ')])};
+    savedBoundaryData=g;
+    return savedMap;
+  }
+  function placePlate(v,c,b) {
+    const map=mapBase(), pins=v.pins || [], places=window.FD_SF_GEO?.places || {};
+    const place=pins[0], name=place?.name || v.hoodLabel || v.hood;
+    if(!map) return feature(v,'building',name || c.title,place?.sub || b.text);
+    const land=map.paths.map(([label,path])=>'<path d="'+path+'" fill="'+(label===v.hood?'#e4b45c':'#aec7b9')+'" stroke="#345850" stroke-width="1.1"/>').join('');
+    const points=pins.map(p=>{
+      const loc=places[p.place] || p;
+      if(!Number.isFinite(loc.lon)||!Number.isFinite(loc.lat))return '';
+      const [x,y]=map.project([loc.lon,loc.lat]);return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="9" fill="#b4512d" stroke="#fff9e9" stroke-width="3"/>';
+    }).join('');
+    return '<div class="plate-place"><svg viewBox="0 0 360 365" aria-hidden="true">'+land+points+'</svg><div>'+plateTitle(name || c.title)+plateNote(place?.sub || (v.hood && v.hoodLabel && v.hood!==v.hoodLabel ? v.hood : ''))+'<small>DataSF neighborhoods · © OpenStreetMap contributors</small></div></div>';
+  }
+  function annualBars(v) {
+    const groups=(v.orgs || []).map(o=>{
+      const pay=(o.city || []).map(([period,amount])=>row(period,amount,'money'));
+      return '<div class="plate-page" hidden>'+listPlate(o.name,pay,{bars:true,singlePage:true})+'<p class="plate-loan">'+esc(['PPP loan',o.loan,o.approved].filter(Boolean).join(' · '))+(o.forgiven?' · Forgiven '+esc(o.forgiven):'')+'</p></div>';
+    });
+    return groups.join('')+(groups.length>1?'<span class="plate-pagenum"></span>':'');
+  }
+
+  function plateFor(b, c, opening) {
+    const v = b.visual || {}, type = v.type || 'passage', src = sourcesFor(b, c)[0] || {};
+    const note = b.text || '', cat = c.category || '', icon = subjectIcon(v,c);
+    let heading = v.kicker || '', glyph = icon, style = 'feature', body = '';
+    if (type === 'scene') {
+      body = feature(v,icon,v.label || v.text || note,v.sub,[v.chip,v.stamp].filter(Boolean).join(' · ')); heading ||= cat;
+    } else if (type === 'hook' || type === 'slam' || type === 'title') {
+      heading = v.sub || cat; body = feature(v,icon,(v.words || []).join(' ') || c.title);
+    } else if (type === 'bignum' || type === 'count') {
+      style='metric'; glyph = String(v.value).includes('$') ? 'money' : 'chart'; heading ||= cat;
+      body = '<div class="plate-metric"><span>' + plateIcon(glyph) + '</span><div><strong>' + esc(v.value) + '</strong>' + plateTitle(v.label || v.line) + plateNote(v.sub) + '</div></div>';
+    } else if (type === 'doc' || type === 'headline') {
+      style='document'; glyph=docTypeIcon(src,heading); heading = src.publisher || v.kicker || cat;
+      const text=v.text || src.title || note, markAt = v.mark ? text.indexOf(v.mark) : -1;
+      const marked=markAt<0 ? esc(text) : esc(text.slice(0,markAt))+'<mark>'+esc(v.mark)+'</mark>'+esc(text.slice(markAt+v.mark.length));
+      body = '<article class="paper plate-paper"><div class="plate-document-meta">'+plateIcon(glyph)+'<span>'+esc(v.date || src.date || '')+'</span></div><h2>'+marked+'</h2>'+plateNote(src.title !== text ? src.title : '')+'</article>';
+    } else if (type === 'record' || type === 'rank' || type === 'form') {
+      style = 'table'; glyph = type==='rank' ? 'chart' : (v.layout==='flow'?'transfer':v.layout==='timeline'?'calendar':'document');
+      heading=v.context || v.kicker || cat;
+      const rows=(v.rows || []).map(r => Array.isArray(r) ? row(r[0],r[1],glyph) : row(r.label,r.value ?? r.event,r.icon || glyph));
+      body = '<section>' + listPlate(v.heading || v.title || v.label,rows,{bars:type==='rank' || v.layout==='amounts'})+'</section>';
+    } else if (type === 'chain' || type === 'span' || type === 'versus') {
+      style='sequence'; glyph=type==='span'?'calendar':type==='chain'?'network':'transfer'; heading ||= cat;
+      const stops = type==='span' ? [[v.from,v.fromLab,'calendar'],[v.to,v.toLab,'calendar']] : type==='chain' ? (v.steps || []).map(s=>[s.name,[s.sub,s.late].filter(Boolean).join(' · '),s.art]) : [v.a || [],v.b || []].map(s=>[s[0],s[1],glyph]);
+      body = '<div class="plate-sequence" style="--stops:'+stops.length+'">'+stops.map((s,i)=>'<article>'+plateIcon(s[2] || glyph)+plateTitle(s[0])+plateNote(s[1])+(i<stops.length-1 && type!=='versus'?'<i aria-hidden="true">→</i>':'')+'</article>').join('')+'</div>'+plateNote(type==='span' && v.days ? [v.days,Number(v.days)===1 ? (v.unit || 'days').replace(/s$/,'') : v.unit || 'days'].join(' ') : v.mid);
+    } else if (type === 'quote' || type === 'caveat' || type==='explain') {
+      style='statement'; glyph=type==='caveat'?'magnifier':'document'; heading ||= type==='caveat'?tierTag(c.tier):cat;
+      body='<div class="plate-statement">'+plateIcon(glyph)+plateTitle(v.line || note)+plateNote(v.sub)+'</div>';
+    } else if (type === 'unknowns' || type === 'settle') {
+      style='table'; glyph=type==='unknowns'?'gap':'magnifier'; heading=type==='unknowns'?'Not established':'Records to request';
+      body=listPlate('',(v.cards || []).map(r => typeof r==='string'?row(r,'',glyph):row(r.what,r.who,glyph)));
+    } else if (type==='status' || type==='end') {
+      style='closing'; heading=tierTag(c.tier); glyph='file';
+      body=type==='status' ? plateTitle(c.status || note) : plateTitle(c.title)+'<div class="plate-actions"><button type="button" data-act="replay">Play again</button><button type="button" data-act="close">Read the case file</button></div>';
+    } else if (type==='line' || type==='sfmap' || type==='bars') {
+      style = type==='line' ? 'trend' : type==='sfmap' ? 'place' : 'table';
+      glyph = type==='sfmap' ? 'building' : 'chart';
+      heading ||= type==='bars' ? 'City payments by fiscal year' : cat;
+      if (type==='line') body = trendPlate(v,c);
+      if (type==='sfmap') body = placePlate(v,c,b);
+      if (type==='bars') body = annualBars(v);
+    } else if (type==='clock' || type==='share') {
+      style='metric'; glyph=type==='clock'?'clock':'chart'; heading ||= cat;
+      const share=type==='clock'?Number(v.hours)/24:Number(v.pct)/100, main=type==='clock'?String(v.hours):String(v.pct)+'%';
+      body='<div class="plate-metric"><div class="plate-dial" style="--share:'+Math.max(0,Math.min(1,share))*100+'%">'+plateIcon(glyph)+'</div><div><strong>'+esc(main)+'</strong>'+plateTitle(v.label)+plateNote(v.sub)+'</div></div>';
+    } else {
+      style='passage'; heading=cat; body=feature(v,icon,note || c.title);
+    }
+    if (opening && ['scene','bignum','count','quote','slam'].includes(type) && c.title !== v.label) heading = c.title;
+    return {type,style,layout:v.layout,html:plateHeader(glyph,heading)+'<div class="plate-body">'+body+'</div>'};
+  }
+  const plateKinds = new Set(['scene','bignum','count','hook','slam','title','doc','headline','record','rank','form','chain','span','versus','quote','caveat','explain','unknowns','settle','status','end','clock','share','sfmap','line','bars']);
+  function editorialShot(bs,c,k) {
+    const el = node('<div class="s6 fd-slide"><div class="plate-frame"></div></div>'), frame = el.firstChild;
+    const keys = bs.map(b => JSON.stringify(b.visual || {}) + (b.visual?.type ? '' : b.text));
+    const oneVisual = keys.every(key => key === keys[0]);
+    let lastIndex = -1, pageIndex = -1, pages = [], pageLabel, lastKey = '';
+    function paint(b) {
+      const plate=plateFor(b,c,k===0);
+      el.className = ['s6','fd-slide','plate-'+plate.style,plate.type==='doc'?'s6-doc':'',plate.type==='record'?'s6-record':'',...['in','out'].filter(name=>el.classList.contains(name))].filter(Boolean).join(' ');
+      el.dataset.kind=plate.type; el.dataset.graphics='evidence';
+      if (plate.layout) el.dataset.layout=plate.layout; else delete el.dataset.layout;
+      frame.innerHTML=plate.html;
+      pages=Array.from(frame.querySelectorAll('.plate-page')); pageLabel=frame.querySelector('.plate-pagenum'); pageIndex=-1;
+    }
+    function fit() {
+      const body=frame.querySelector('.plate-body');
+      // On a 390px display a 38px stage label reads at about 12px. Start considerably larger;
+      // shrink dense records only when a real browser reports a collision with the subtitle area.
+      if (!body?.clientHeight) return;
+      let scale=1; frame.style.setProperty('--text-fit','1');
+      while ((body.scrollHeight>body.clientHeight+2 || body.scrollWidth>body.clientWidth+2) && scale>.70) {
+        scale-=.04; frame.style.setProperty('--text-fit',scale.toFixed(2));
+      }
+    }
+    function update(st) {
+      const i=Math.min(Math.max(0,st.i || 0),bs.length-1),b=bs[i];
+      if(lastIndex!==i){
+        const key=keys[i];
+        if(key!==lastKey){paint(b);lastKey=key;fit();}
+        lastIndex=i;
+      }
+      if(pages.length) {
+        // Continued beats with identical visuals share page time. An authored change begins a new table.
+        const phase=bs.length>1 && oneVisual ? st.lt/Math.max(.2,st.dur) : st.bp;
+        const next=Math.min(pages.length-1,Math.floor(Math.max(0,phase || 0)*pages.length));
+        if(next!==pageIndex){pages.forEach((p,k)=>{p.hidden=k!==next;});if(pageLabel)pageLabel.textContent=(next+1)+' / '+pages.length;pageIndex=next;fit();}
+      }
+    }
+    paint(bs[0]); return {el,update};
+  }
+
   window.FD_FILM6 = {
     sourcesFor, kinds: Object.keys(K), looks: ['midnight', ...Object.keys(BG)],
-    shot(bs, c, k) { const f = K[bs[0].visual.type]; const s = f ? f(bs, c, k) : { el: node(`<div class="s6"><div class="cam"></div></div>`), update() {} }; s.el.dataset.kind = bs[0].visual.type;
-      if (k === 0 && bs[0].visual.type !== 'hook') {                                // the opening shot of every film carries the brand and the case title, small: no title card
-        const tag = node(`<div class="tag6"><b>SF Money Trail · ${tierTag(c.tier)}</b><span>${esc(c.title)}</span></div>`); s.el.appendChild(tag); const up = s.update; s.update = st => { up(st); show(tag, E((st.lt - .2) / .5) * (1 - E((st.lt - 3.6) / .6)), 10); }; }
-      return s; },
+    shot(bs, c, k) {
+      const type = bs[0].visual?.type;
+      if (plateKinds.has(type) || !K[type] || (type === 'sfmap' && !Object.keys(window.FD_SF_GEO?.nb || {}).length)) return editorialShot(bs,c,k);
+      const shot = K[type](bs,c,k);
+      shot.el.classList.add('fd-chart');
+      shot.el.dataset.graphics = 'chart';
+      shot.el.dataset.kind = type;
+      return shot;
+    },
     bg(look) { return BG[look] ? BG[look]() : null; },
     SFX: { record: 'tick', hook: 'whoosh', count: 'thud', title: 'whoosh', program: 'tick', doc: 'tick', drop: 'thud', flow: 'tick', match: 'tick', dots: 'tick', versus: 'thud', bars: 'thud', timeline: 'tick', redact: 'thud', quote: 'tick', explain: 'tick', unknowns: 'tick', settle: 'tick', status: 'tick', end: 'chime',
       swarm: 'tick', map: 'tick', columns: 'thud', line: 'tick', clock: 'thud', slam: 'thud', rank: 'tick', headline: 'thud', window: 'tick', form: 'tick', share: 'thud', network: 'tick', log: 'tick', bignum: 'thud', scene: 'tick', span: 'tick', chain: 'tick', sfmap: 'tick' },
