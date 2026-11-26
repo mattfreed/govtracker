@@ -35,9 +35,17 @@
   "seconds": 45.8,
   "passages": 12
  },
+ "bart-contract-conflicts-disgorgement": {
+  "seconds": 55.3,
+  "passages": 14
+ },
  "bart-ems-staffing-billing-recovery": {
   "seconds": 49.8,
   "passages": 11
+ },
+ "bart-financial-advisory-administration-cost": {
+  "seconds": 43.7,
+  "passages": 10
  },
  "bart-outreach-contract-treatment-outcomes": {
   "seconds": 68.1,
