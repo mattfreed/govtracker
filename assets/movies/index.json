@@ -11,6 +11,10 @@
   "seconds": 138.5,
   "passages": 43
  },
+ "arriba-juntos-grant-cost-allocation": {
+  "seconds": 52.2,
+  "passages": 11
+ },
  "audits-the-returns-say-were-done": {
   "seconds": 109.8,
   "passages": 27
@@ -48,8 +52,8 @@
   "passages": 30
  },
  "building-jobs-and-change-orders": {
-  "seconds": 135.6,
-  "passages": 36
+  "seconds": 148.0,
+  "passages": 39
  },
  "buildings-bought-for-housing": {
   "seconds": 130.1,
@@ -70,6 +74,10 @@
  "city-college-contracts-grew-by-memo": {
   "seconds": 164.7,
   "passages": 41
+ },
+ "city-college-copier-invoice-order-numbers": {
+  "seconds": 41.7,
+  "passages": 11
  },
  "city-college-findings-that-came-back": {
   "seconds": 138.0,
@@ -175,6 +183,10 @@
   "seconds": 142.7,
   "passages": 35
  },
+ "free-city-college-indirect-cost-base": {
+  "seconds": 43.4,
+  "passages": 11
+ },
  "garden-admissions-cash-controls": {
   "seconds": 49.1,
   "passages": 13
@@ -227,13 +239,17 @@
   "seconds": 152.1,
   "passages": 36
  },
+ "hunters-point-shipyard-cleanup-recoveries": {
+  "seconds": 42.9,
+  "passages": 10
+ },
  "in-home-care-federal-deferral": {
   "seconds": 119.0,
   "passages": 30
  },
  "in-the-job-before-the-exam": {
-  "seconds": 153.4,
-  "passages": 41
+  "seconds": 173.8,
+  "passages": 45
  },
  "kelly-wong-puc": {
   "seconds": 130.5,
@@ -286,6 +302,10 @@
  "medicaid-far-above-the-norm": {
   "seconds": 130.5,
   "passages": 36
+ },
+ "mexican-museum-grant-and-duplicate-expenses": {
+  "seconds": 40.5,
+  "passages": 11
  },
  "mid-market-urban-alchemy": {
   "seconds": 130.3,
@@ -387,6 +407,10 @@
   "seconds": 61.3,
   "passages": 13
  },
+ "produce-market-director-tenant-rents": {
+  "seconds": 49.6,
+  "passages": 12
+ },
  "project-wreckless-insider-debt": {
   "seconds": 142.7,
   "passages": 35
@@ -398,6 +422,10 @@
  "providence-oasis-invoices": {
   "seconds": 133.3,
   "passages": 34
+ },
+ "public-works-lead-worker-premiums": {
+  "seconds": 49.0,
+  "passages": 12
  },
  "purchase-limit-beyond-hrc": {
   "seconds": 131.8,
@@ -435,6 +463,10 @@
   "seconds": 131.8,
   "passages": 33
  },
+ "seneca-data-breach-costs-and-insurance": {
+  "seconds": 44.5,
+  "passages": 10
+ },
  "service-numbers-copied-forward": {
   "seconds": 130.4,
   "passages": 35
@@ -466,6 +498,18 @@
  "sfmta-shop-rents-changed-by-word": {
   "seconds": 143.7,
   "passages": 31
+ },
+ "sfo-runway-grant-reimbursement": {
+  "seconds": 44.0,
+  "passages": 9
+ },
+ "sfusd-pay-reported-outside-regular-wages": {
+  "seconds": 63.3,
+  "passages": 14
+ },
+ "sheriff-oversight-title-in-personal-encounters": {
+  "seconds": 44.8,
+  "passages": 10
  },
  "sheriff-short-staffed-guards-contracted-out": {
   "seconds": 130.6,
@@ -554,6 +598,10 @@
  "urban-place-two-routes": {
   "seconds": 130.4,
   "passages": 34
+ },
+ "usf-teacher-residency-americorps-settlement": {
+  "seconds": 66.7,
+  "passages": 14
  },
  "votes-on-interests-not-in-the-title": {
   "seconds": 65.3,

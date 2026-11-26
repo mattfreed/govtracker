@@ -11,6 +11,10 @@
   "seconds": 138.5,
   "poster": "approved-after-the-fact.jpg"
  },
+ "arriba-juntos-grant-cost-allocation": {
+  "seconds": 52.2,
+  "poster": "arriba-juntos-grant-cost-allocation.jpg"
+ },
  "audits-the-returns-say-were-done": {
   "seconds": 109.8,
   "poster": "audits-the-returns-say-were-done.jpg"
@@ -48,7 +52,7 @@
   "poster": "building-inspection-favours.jpg"
  },
  "building-jobs-and-change-orders": {
-  "seconds": 135.6,
+  "seconds": 148.0,
   "poster": "building-jobs-and-change-orders.jpg"
  },
  "buildings-bought-for-housing": {
@@ -70,6 +74,10 @@
  "city-college-contracts-grew-by-memo": {
   "seconds": 164.7,
   "poster": "city-college-contracts-grew-by-memo.jpg"
+ },
+ "city-college-copier-invoice-order-numbers": {
+  "seconds": 41.7,
+  "poster": "city-college-copier-invoice-order-numbers.jpg"
  },
  "city-college-findings-that-came-back": {
   "seconds": 138.0,
@@ -175,6 +183,10 @@
   "seconds": 142.7,
   "poster": "fixed-crews-fixed-stations.jpg"
  },
+ "free-city-college-indirect-cost-base": {
+  "seconds": 43.4,
+  "poster": "free-city-college-indirect-cost-base.jpg"
+ },
  "garden-admissions-cash-controls": {
   "seconds": 49.1,
   "poster": "garden-admissions-cash-controls.jpg"
@@ -227,12 +239,16 @@
   "seconds": 152.1,
   "poster": "huckleberry-federal-match-city-grant.jpg"
  },
+ "hunters-point-shipyard-cleanup-recoveries": {
+  "seconds": 42.9,
+  "poster": "hunters-point-shipyard-cleanup-recoveries.jpg"
+ },
  "in-home-care-federal-deferral": {
   "seconds": 119.0,
   "poster": "in-home-care-federal-deferral.jpg"
  },
  "in-the-job-before-the-exam": {
-  "seconds": 153.4,
+  "seconds": 173.8,
   "poster": "in-the-job-before-the-exam.jpg"
  },
  "kelly-wong-puc": {
@@ -286,6 +302,10 @@
  "medicaid-far-above-the-norm": {
   "seconds": 130.5,
   "poster": "medicaid-far-above-the-norm.jpg"
+ },
+ "mexican-museum-grant-and-duplicate-expenses": {
+  "seconds": 40.5,
+  "poster": "mexican-museum-grant-and-duplicate-expenses.jpg"
  },
  "mid-market-urban-alchemy": {
   "seconds": 130.3,
@@ -387,6 +407,10 @@
   "seconds": 61.3,
   "poster": "prc-federal-payroll-documentation.jpg"
  },
+ "produce-market-director-tenant-rents": {
+  "seconds": 49.6,
+  "poster": "produce-market-director-tenant-rents.jpg"
+ },
  "project-wreckless-insider-debt": {
   "seconds": 142.7,
   "poster": "project-wreckless-insider-debt.jpg"
@@ -398,6 +422,10 @@
  "providence-oasis-invoices": {
   "seconds": 133.3,
   "poster": "providence-oasis-invoices.jpg"
+ },
+ "public-works-lead-worker-premiums": {
+  "seconds": 49.0,
+  "poster": "public-works-lead-worker-premiums.jpg"
  },
  "purchase-limit-beyond-hrc": {
   "seconds": 131.8,
@@ -435,6 +463,10 @@
   "seconds": 131.8,
   "poster": "security-guards-paid-outside-the-bid.jpg"
  },
+ "seneca-data-breach-costs-and-insurance": {
+  "seconds": 44.5,
+  "poster": "seneca-data-breach-costs-and-insurance.jpg"
+ },
  "service-numbers-copied-forward": {
   "seconds": 130.4,
   "poster": "service-numbers-copied-forward.jpg"
@@ -466,6 +498,18 @@
  "sfmta-shop-rents-changed-by-word": {
   "seconds": 143.7,
   "poster": "sfmta-shop-rents-changed-by-word.jpg"
+ },
+ "sfo-runway-grant-reimbursement": {
+  "seconds": 44.0,
+  "poster": "sfo-runway-grant-reimbursement.jpg"
+ },
+ "sfusd-pay-reported-outside-regular-wages": {
+  "seconds": 63.3,
+  "poster": "sfusd-pay-reported-outside-regular-wages.jpg"
+ },
+ "sheriff-oversight-title-in-personal-encounters": {
+  "seconds": 44.8,
+  "poster": "sheriff-oversight-title-in-personal-encounters.jpg"
  },
  "sheriff-short-staffed-guards-contracted-out": {
   "seconds": 130.6,
@@ -554,6 +598,10 @@
  "urban-place-two-routes": {
   "seconds": 130.4,
   "poster": "urban-place-two-routes.jpg"
+ },
+ "usf-teacher-residency-americorps-settlement": {
+  "seconds": 66.7,
+  "poster": "usf-teacher-residency-americorps-settlement.jpg"
  },
  "votes-on-interests-not-in-the-title": {
   "seconds": 65.3,
