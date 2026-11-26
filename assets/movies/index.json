@@ -27,6 +27,10 @@
   "seconds": 156.7,
   "passages": 41
  },
+ "bauer-port-rent-and-sprinkler-settlement": {
+  "seconds": 59.6,
+  "passages": 12
+ },
  "bay-area-hospice-surge": {
   "seconds": 130.2,
   "passages": 38
@@ -90,6 +94,10 @@
  "city-landlords-sold-during-lease": {
   "seconds": 130.2,
   "passages": 36
+ },
+ "city-option-inactive-worker-health-funds": {
+  "seconds": 79.9,
+  "passages": 17
  },
  "city-rents-from-landlords-in-foreclosure": {
   "seconds": 70.8,
@@ -158,6 +166,10 @@
  "empty-supportive-housing": {
   "seconds": 122.2,
   "passages": 34
+ },
+ "environmental-health-inspection-fees": {
+  "seconds": 68.0,
+  "passages": 14
  },
  "failed-checkups-kept-funding": {
   "seconds": 137.9,
@@ -347,6 +359,10 @@
   "seconds": 135.1,
   "passages": 34
  },
+ "office-depot-city-contract-pricing": {
+  "seconds": 54.2,
+  "passages": 13
+ },
  "officials-with-a-stake": {
   "seconds": 130.1,
   "passages": 38
@@ -380,7 +396,7 @@
   "passages": 37
  },
  "permit-maze-permits-to-finish-permits": {
-  "seconds": 138.6,
+  "seconds": 138.8,
   "passages": 35
  },
  "permit-reviews-miss-city-deadline": {
@@ -431,6 +447,10 @@
   "seconds": 131.8,
   "passages": 36
  },
+ "recology-landfill-non-city-waste": {
+  "seconds": 63.4,
+  "passages": 13
+ },
  "recology-payments-for-rates": {
   "seconds": 130.3,
   "passages": 35
@@ -446,6 +466,10 @@
  "restricted-source-gift-cases": {
   "seconds": 130.7,
   "passages": 35
+ },
+ "salvation-army-food-distribution-eligibility": {
+  "seconds": 44.0,
+  "passages": 12
  },
  "school-bond-committee-empty-audits-late": {
   "seconds": 137.1,
@@ -499,6 +523,10 @@
   "seconds": 143.7,
   "passages": 31
  },
+ "sfo-fox-rental-fees-and-fines": {
+  "seconds": 56.4,
+  "passages": 12
+ },
  "sfo-runway-grant-reimbursement": {
   "seconds": 44.0,
   "passages": 9
@@ -550,6 +578,10 @@
  "suspended-ironworks-back-on-public-works": {
   "seconds": 130.6,
   "passages": 30
+ },
+ "sweet-public-campaign-financing-order": {
+  "seconds": 40.3,
+  "passages": 10
  },
  "told-the-state-no-assets-after-final-gift": {
   "seconds": 130.4,
@@ -623,9 +655,13 @@
   "seconds": 130.1,
   "passages": 31
  },
+ "whistleblower-vendor-contract-enforcement": {
+  "seconds": 48.6,
+  "passages": 11
+ },
  "who-gets-a-yes": {
-  "seconds": 147.3,
-  "passages": 39
+  "seconds": 158.6,
+  "passages": 41
  },
  "youth-housing-provider-upheld-allegations": {
   "seconds": 130.5,

@@ -27,6 +27,10 @@
   "seconds": 156.7,
   "poster": "bart-overtime-highest-transit.jpg"
  },
+ "bauer-port-rent-and-sprinkler-settlement": {
+  "seconds": 59.6,
+  "poster": "bauer-port-rent-and-sprinkler-settlement.jpg"
+ },
  "bay-area-hospice-surge": {
   "seconds": 130.2,
   "poster": "bay-area-hospice-surge.jpg"
@@ -90,6 +94,10 @@
  "city-landlords-sold-during-lease": {
   "seconds": 130.2,
   "poster": "city-landlords-sold-during-lease.jpg"
+ },
+ "city-option-inactive-worker-health-funds": {
+  "seconds": 79.9,
+  "poster": "city-option-inactive-worker-health-funds.jpg"
  },
  "city-rents-from-landlords-in-foreclosure": {
   "seconds": 70.8,
@@ -158,6 +166,10 @@
  "empty-supportive-housing": {
   "seconds": 122.2,
   "poster": "empty-supportive-housing.jpg"
+ },
+ "environmental-health-inspection-fees": {
+  "seconds": 68.0,
+  "poster": "environmental-health-inspection-fees.jpg"
  },
  "failed-checkups-kept-funding": {
   "seconds": 137.9,
@@ -347,6 +359,10 @@
   "seconds": 135.1,
   "poster": "oakes-closed-debts-to-the-city-address.jpg"
  },
+ "office-depot-city-contract-pricing": {
+  "seconds": 54.2,
+  "poster": "office-depot-city-contract-pricing.jpg"
+ },
  "officials-with-a-stake": {
   "seconds": 130.1,
   "poster": "officials-with-a-stake.jpg"
@@ -380,7 +396,7 @@
   "poster": "pay-at-the-top-and-bonuses.jpg"
  },
  "permit-maze-permits-to-finish-permits": {
-  "seconds": 138.6,
+  "seconds": 138.8,
   "poster": "permit-maze-permits-to-finish-permits.jpg"
  },
  "permit-reviews-miss-city-deadline": {
@@ -431,6 +447,10 @@
   "seconds": 131.8,
   "poster": "purchase-limit-beyond-hrc.jpg"
  },
+ "recology-landfill-non-city-waste": {
+  "seconds": 63.4,
+  "poster": "recology-landfill-non-city-waste.jpg"
+ },
  "recology-payments-for-rates": {
   "seconds": 130.3,
   "poster": "recology-payments-for-rates.jpg"
@@ -446,6 +466,10 @@
  "restricted-source-gift-cases": {
   "seconds": 130.7,
   "poster": "restricted-source-gift-cases.jpg"
+ },
+ "salvation-army-food-distribution-eligibility": {
+  "seconds": 44.0,
+  "poster": "salvation-army-food-distribution-eligibility.jpg"
  },
  "school-bond-committee-empty-audits-late": {
   "seconds": 137.1,
@@ -499,6 +523,10 @@
   "seconds": 143.7,
   "poster": "sfmta-shop-rents-changed-by-word.jpg"
  },
+ "sfo-fox-rental-fees-and-fines": {
+  "seconds": 56.4,
+  "poster": "sfo-fox-rental-fees-and-fines.jpg"
+ },
  "sfo-runway-grant-reimbursement": {
   "seconds": 44.0,
   "poster": "sfo-runway-grant-reimbursement.jpg"
@@ -550,6 +578,10 @@
  "suspended-ironworks-back-on-public-works": {
   "seconds": 130.6,
   "poster": "suspended-ironworks-back-on-public-works.jpg"
+ },
+ "sweet-public-campaign-financing-order": {
+  "seconds": 40.3,
+  "poster": "sweet-public-campaign-financing-order.jpg"
  },
  "told-the-state-no-assets-after-final-gift": {
   "seconds": 130.4,
@@ -623,8 +655,12 @@
   "seconds": 130.1,
   "poster": "wehope-insider-building.jpg"
  },
+ "whistleblower-vendor-contract-enforcement": {
+  "seconds": 48.6,
+  "poster": "whistleblower-vendor-contract-enforcement.jpg"
+ },
  "who-gets-a-yes": {
-  "seconds": 147.3,
+  "seconds": 158.6,
   "poster": "who-gets-a-yes.jpg"
  },
  "youth-housing-provider-upheld-allegations": {

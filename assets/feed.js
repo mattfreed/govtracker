@@ -19,27 +19,26 @@
   };
   let cur = null;                                                     // the feed on screen: { root, list, i, obs, onKey }
 
-  /* the order (owner, 24 Nov 2026): ranked by the watch-rank screen (engaging story + likelihood of fraud, waste or abuse).
-     The first three rounds show one of each kind (proven, charged, official finding, lead), strongest first; after that the next film is the
-     highest-ranked case whose kind differs from the one before. When one kind is all that is left, neighbours differ in topic where they can. */
   function ordered(cases, tier) {
-    const has = cases.filter(c => c.reel && (!tier || c.tier === tier));
-    const sc = c => (c.reel && c.reel.score != null ? c.reel.score : -1), amt = c => (c.amount && c.amount.kind !== 'none' && +c.amount.value) || 0;
-    has.sort((a, b) => sc(b) - sc(a) || amt(b) - amt(a));
-    if (tier) return has;
-    const left = has.slice(), out = [], take = c => { left.splice(left.indexOf(c), 1); out.push(c); };
-    const KINDS = ['PROVEN', 'CHARGED', 'OFFICIAL', 'REDFLAG'];
-    for (let round = 0; round < 3; round++) {
-      const picks = KINDS.map(t => left.find(c => c.tier === t)).filter(Boolean).sort((a, b) => sc(b) - sc(a));
-      if (out.length && picks.length > 1 && picks[0].tier === out[out.length - 1].tier) picks.push(picks.shift());   // no repeat across rounds
-      picks.forEach(take);
+    const ranked = cases.filter(c => c.reel && (!tier || c.tier === tier)).sort((a, b) => {
+      const rankA = a.reel.rank ?? Infinity, rankB = b.reel.rank ?? Infinity;
+      if (rankA !== rankB) return rankA - rankB;
+      return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+    });
+    if (tier) return ranked;
+
+    const remaining = ranked.slice(), unseen = new Set(ranked.map(c => c.tier)), result = [];
+    while (remaining.length) {
+      // Introduce each available evidence tier once, then take the best alternative to the preceding tier.
+      const previous = result[result.length - 1];
+      const index = unseen.size
+        ? remaining.findIndex(c => unseen.has(c.tier))
+        : remaining.findIndex(c => c.tier !== previous.tier);
+      const [next] = remaining.splice(Math.max(0, index), 1);
+      result.push(next);
+      unseen.delete(next.tier);
     }
-    while (left.length) {
-      const prev = out[out.length - 1];
-      const c = left.find(x => x.tier !== prev.tier) || left.find(x => x.category !== prev.category) || left[0];
-      take(c);
-    }
-    return out;
+    return result;
   }
 
   function reel(c, i, list) {
@@ -79,7 +78,7 @@
     C.cases.forEach(c => { if (c.reel) { counts[c.tier] = (counts[c.tier] || 0) + 1; counts[''] = (counts[''] || 0) + 1; } });
     return `<h1 class="sr-only">Watch the cases</h1><div class="feed${store.get('fd.sound') === 'on' ? '' : ' muted'}" id="feed" data-tier="${esc(tier || '')}" data-start="${esc(startId || '')}">
       <div class="feed-bar">${CHIPS.map(([k, t]) => `<button type="button" class="feed-chip" data-tier="${k}" aria-pressed="${(tier || '') === k}">${t}<b>${counts[k] || 0}</b></button>`).join('')}
-        <span class="feed-count" aria-live="polite">1 / ${list.length}</span><a class="feed-all" href="#cases">All cases as a list</a></div>
+        <span class="feed-count" aria-live="polite">${list.length ? first + 1 : 0} / ${list.length}</span><a class="feed-all" href="#cases">All cases as a list</a></div>
       <aside class="feed-list" aria-label="All films"><div class="fl-head">${list.length} films · scroll for the next</div><ol>${list.map((c, i) => `<li><button type="button" data-go="${i}"${i === first ? ' class="on" aria-current="true"' : ''}><span class="fl-n">${i + 1}</span><img src="assets/films/${esc(c.reel.poster)}" alt="" loading="lazy"><span class="fl-t"><span class="fl-title">${esc(c.title)}</span><span class="fl-meta"><i class="t-${esc(c.tier)}"></i>${esc(TIER[c.tier] || c.tier)} · ${mmss(c.reel.s)}</span></span></button></li>`).join('')}</ol></aside>
       <div class="feed-scroll" id="feed-scroll" tabindex="-1">${list.map((c, i) => reel(c, i, list)).join('')}
         <section class="reel"><div class="reel-end"><h2>That’s every film.</h2><p>${list.length} cases, each from the public record. A lead is a question, not an accusation; every case file says what is established and what is not.</p>
