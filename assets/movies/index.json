@@ -15,6 +15,10 @@
   "seconds": 52.2,
   "passages": 11
  },
+ "asian-pacific-islander-legal-outreach-award-controls": {
+  "seconds": 49.3,
+  "passages": 12
+ },
  "audits-the-returns-say-were-done": {
   "seconds": 109.8,
   "passages": 27
@@ -26,6 +30,10 @@
  "bart-construction-work-tag-settlement": {
   "seconds": 45.8,
   "passages": 12
+ },
+ "bart-ems-staffing-billing-recovery": {
+  "seconds": 49.8,
+  "passages": 11
  },
  "bart-overtime-highest-transit": {
   "seconds": 156.7,
@@ -75,9 +83,21 @@
   "seconds": 130.0,
   "passages": 34
  },
+ "caltrain-electrification-budget-and-change-order": {
+  "seconds": 55.7,
+  "passages": 12
+ },
+ "caltrain-station-apartment-embezzlement": {
+  "seconds": 59.3,
+  "passages": 12
+ },
  "caltrain-train-control-contract-replacement": {
   "seconds": 46.8,
   "passages": 12
+ },
+ "caltrain-trainset-repair-and-insurance": {
+  "seconds": 59.4,
+  "passages": 13
  },
  "certified-local-firms-large-affiliates": {
   "seconds": 153.1,
@@ -264,8 +284,8 @@
   "passages": 35
  },
  "hsh-oversight-declined": {
-  "seconds": 130.3,
-  "passages": 43
+  "seconds": 139.9,
+  "passages": 47
  },
  "huckleberry-federal-match-city-grant": {
   "seconds": 152.1,
@@ -286,6 +306,10 @@
  "janitorial-workers-compensation-premium-fraud": {
   "seconds": 47.9,
   "passages": 12
+ },
+ "jj-community-resource-grant-debarment": {
+  "seconds": 50.9,
+  "passages": 13
  },
  "kelly-wong-puc": {
   "seconds": 130.5,
@@ -326,6 +350,10 @@
  "lotteries-waiting-lists-and-pools": {
   "seconds": 140.1,
   "passages": 39
+ },
+ "lyric-hud-grant-reimbursement-and-rate": {
+  "seconds": 54.2,
+  "passages": 13
  },
  "meal-contracts-under-the-line": {
   "seconds": 130.6,
@@ -455,6 +483,10 @@
   "seconds": 134.1,
   "passages": 38
  },
+ "practice-fusion-opioid-alert-kickbacks": {
+  "seconds": 55.5,
+  "passages": 12
+ },
  "prc-federal-payroll-documentation": {
   "seconds": 61.3,
   "passages": 13
@@ -498,6 +530,10 @@
  "registered-after-the-city-paid": {
   "seconds": 115.0,
   "passages": 27
+ },
+ "restricted-housing-project-debt-payments": {
+  "seconds": 66.3,
+  "passages": 15
  },
  "restricted-source-gift-cases": {
   "seconds": 130.7,
@@ -546,6 +582,10 @@
  "sfcta-design-contracts-grow-after-award": {
   "seconds": 174.0,
   "passages": 40
+ },
+ "sfha-housing-voucher-inspection-backlog": {
+  "seconds": 47.0,
+  "passages": 11
  },
  "sfmta-federal-transit-audit-costs": {
   "seconds": 84.1,
