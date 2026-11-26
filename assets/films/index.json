@@ -208,7 +208,7 @@
   "poster": "environmental-health-inspection-fees.jpg"
  },
  "failed-checkups-kept-funding": {
-  "seconds": 137.9,
+  "seconds": 145.4,
   "poster": "failed-checkups-kept-funding.jpg"
  },
  "family-shelter-beds-left-empty": {
@@ -270,6 +270,10 @@
  "hospices-revoked-after-1-26-billion": {
   "seconds": 145.1,
   "poster": "hospices-revoked-after-1-26-billion.jpg"
+ },
+ "housing-block-grant-eviction-defense-audit": {
+  "seconds": 99.8,
+  "poster": "housing-block-grant-eviction-defense-audit.jpg"
  },
  "housing-loans-not-expected-back": {
   "seconds": 119.0,

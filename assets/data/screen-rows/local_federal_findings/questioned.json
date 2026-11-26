@@ -1,0 +1,2116 @@
+{
+ "id": "questioned",
+ "title": "Findings marked for questioned costs",
+ "question": "Which dated findings does the federal clearinghouse list for recipients reporting a San Francisco address?",
+ "finding": "119 distinct finding references across 64 reports in this selection. Rows link to individual audit reports; the 2021 MEDA filing uses a labeled mirror.",
+ "how": "Join report and finding tables on the report ID. Group multiple award references by report ID and finding number. Normalize local spelling variants with 941 ZIP codes. For conflicting localities, require the same EIN, street and ZIP in a correctly located return or verify the auditee address in the original report. The original city and state are displayed. Preserve each auditor’s flags; when award rows differ, a flag appears if any row is affirmative.",
+ "limits": "The November 7, 2026 bulk export identifies the reporting auditee’s address; awards can fund work elsewhere. A 941 ZIP on its own does not establish a San Francisco address. A questioned cost requires the grantor’s decision. The repeat and questioned tables overlap. Read the signed audit to determine the finding’s scope. For example, Eviction Defense Collaborative’s FY2023 record marks a material weakness. Its signed audit places 2023-001 under financial statement findings and reports no federal award findings or questioned costs for that year. The public data may predate later resolution.",
+ "tier": "OFFICIAL",
+ "columns": [
+  {
+   "k": "entity",
+   "t": "Reporting organization",
+   "type": "text"
+  },
+  {
+   "k": "fy",
+   "t": "Audit year",
+   "type": "year"
+  },
+  {
+   "k": "ref",
+   "t": "Finding",
+   "type": "text"
+  },
+  {
+   "k": "questioned",
+   "t": "Questioned costs",
+   "type": "text"
+  },
+  {
+   "k": "repeat",
+   "t": "Repeat finding",
+   "type": "text"
+  },
+  {
+   "k": "weakness",
+   "t": "Material weakness",
+   "type": "text"
+  },
+  {
+   "k": "awards",
+   "t": "Award references",
+   "type": "int"
+  },
+  {
+   "k": "accepted",
+   "t": "Accepted",
+   "type": "date"
+  },
+  {
+   "k": "reportedCity",
+   "t": "Filed city",
+   "type": "text"
+  },
+  {
+   "k": "reportedState",
+   "t": "Filed state",
+   "type": "text"
+  },
+  {
+   "k": "locationBasis",
+   "t": "Location evidence",
+   "type": "text"
+  },
+  {
+   "k": "report",
+   "t": "Source report",
+   "type": "link"
+  }
+ ],
+ "rows": [
+  {
+   "entity": "ST. PETER'S SUPPORTIVE HOUSING, INC., A CALIFORNIA NONPROFIT PUBLIC BENEFIT CORPORATION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2025",
+   "accepted": "2026-10-01",
+   "ref": "2025-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2025-12-GSAFAC-0000421051",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2025-12-GSAFAC-0000421051"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2025",
+   "accepted": "2026-06-25",
+   "ref": "2025-002",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 19,
+   "report": {
+    "t": "2025-09-GSAFAC-0000421384",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2025-09-GSAFAC-0000421384"
+   }
+  },
+  {
+   "entity": "EL BETHEL TERRACE, INC.",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2025",
+   "accepted": "2026-03-09",
+   "ref": "2025-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2025-06-GSAFAC-0000407210",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000407210"
+   }
+  },
+  {
+   "entity": "Golden Gate University",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2025",
+   "accepted": "2026-03-02",
+   "ref": "2025-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2025-06-GSAFAC-0000405814",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000405814"
+   }
+  },
+  {
+   "entity": "LAVENDER YOUTH RECREATION AND INFORMATION CENTER, INC.",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2026-09-25",
+   "ref": "2024-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2024-06-GSAFAC-0000429069",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000429069"
+   }
+  },
+  {
+   "entity": "LAVENDER YOUTH RECREATION AND INFORMATION CENTER, INC.",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2026-09-25",
+   "ref": "2024-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2024-06-GSAFAC-0000429069",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000429069"
+   }
+  },
+  {
+   "entity": "LAVENDER YOUTH RECREATION AND INFORMATION CENTER, INC.",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2026-09-25",
+   "ref": "2024-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2024-06-GSAFAC-0000429069",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000429069"
+   }
+  },
+  {
+   "entity": "EVICTION DEFENSE COLLABORATIVE, INC., A CALIFORNIA NONPROFIT PUBLIC BENEFIT CORPORATION",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2026-07-27",
+   "ref": "2024-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2024-06-GSAFAC-0000424642",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000424642"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2026-05-05",
+   "ref": "2024-005",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 10,
+   "report": {
+    "t": "2024-09-GSAFAC-0000414628",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-09-GSAFAC-0000414628"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2026-05-05",
+   "ref": "2024-003",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 23,
+   "report": {
+    "t": "2024-09-GSAFAC-0000414628",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-09-GSAFAC-0000414628"
+   }
+  },
+  {
+   "entity": "TEACH.ORG INC.",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2025-06-12",
+   "ref": "2024-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2024-06-GSAFAC-0000371583",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000371583"
+   }
+  },
+  {
+   "entity": "BAY AREA AIR QUALITY MANAGEMENT DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2024",
+   "accepted": "2025-03-31",
+   "ref": "2024-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2024-06-GSAFAC-0000364115",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000364115"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2026-04-28",
+   "ref": "2023-007",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 20,
+   "report": {
+    "t": "2023-09-GSAFAC-0000413981",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-09-GSAFAC-0000413981"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2026-04-28",
+   "ref": "2023-006",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 20,
+   "report": {
+    "t": "2023-09-GSAFAC-0000413981",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-09-GSAFAC-0000413981"
+   }
+  },
+  {
+   "entity": "California College of the Arts",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2024-09-09",
+   "ref": "2023-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 4,
+   "report": {
+    "t": "2023-06-GSAFAC-0000054781",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781"
+   }
+  },
+  {
+   "entity": "Housing Authority of the City and County of San Francisco",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2024-06-28",
+   "ref": "2023-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 2,
+   "report": {
+    "t": "2023-09-GSAFAC-0000045802",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-09-GSAFAC-0000045802"
+   }
+  },
+  {
+   "entity": "Housing Authority of the City and County of San Francisco",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2024-06-28",
+   "ref": "2023-002",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 3,
+   "report": {
+    "t": "2023-09-GSAFAC-0000045802",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-09-GSAFAC-0000045802"
+   }
+  },
+  {
+   "entity": "San Francisco Unified School District",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2024-06-12",
+   "ref": "2023-007",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 5,
+   "report": {
+    "t": "2023-06-GSAFAC-0000024472",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000024472"
+   }
+  },
+  {
+   "entity": "Success Center San Francisco",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2024-03-30",
+   "ref": "2023-009",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2023-06-GSAFAC-0000035021",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000035021"
+   }
+  },
+  {
+   "entity": "Richmond Area Multi-Services, Inc.",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2023",
+   "accepted": "2024-03-29",
+   "ref": "2023-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2023-06-GSAFAC-0000016381",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000016381"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-009",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 15,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-008",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 15,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-005",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 15,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 15,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 15,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 7,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "The Salvation Army, Western Territory, Golden State Division",
+   "reportedCity": "San Francisco",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2026-04-28",
+   "ref": "2022-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 7,
+   "report": {
+    "t": "2022-09-GSAFAC-0000413666",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000413666"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-11-28",
+   "ref": "2022-005",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 11,
+   "report": {
+    "t": "2022-09-GSAFAC-0000004341",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000004341"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-11-28",
+   "ref": "2022-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 11,
+   "report": {
+    "t": "2022-09-GSAFAC-0000004341",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000004341"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-11-28",
+   "ref": "2022-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 11,
+   "report": {
+    "t": "2022-09-GSAFAC-0000004341",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000004341"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-11-28",
+   "ref": "2022-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 7,
+   "report": {
+    "t": "2022-09-GSAFAC-0000004341",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000004341"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-11-28",
+   "ref": "2022-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 7,
+   "report": {
+    "t": "2022-09-GSAFAC-0000004341",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-GSAFAC-0000004341"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO UNIFIED SCHOOL DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-09-27",
+   "ref": "2022-009",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 4,
+   "report": {
+    "t": "2022-06-CENSUS-0000134217",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000134217"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO UNIFIED SCHOOL DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-09-27",
+   "ref": "2022-008",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 8,
+   "report": {
+    "t": "2022-06-CENSUS-0000134217",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000134217"
+   }
+  },
+  {
+   "entity": "SAFE AND SOUND",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-09-21",
+   "ref": "2022-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2022-12-CENSUS-0000258926",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-12-CENSUS-0000258926"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-07-30",
+   "ref": "2022-004",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2022-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-07-30",
+   "ref": "2022-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 3,
+   "report": {
+    "t": "2022-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC.",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2023-04-27",
+   "ref": "2022-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2022-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "YWCA APARTMENTS, INC. HUD PROJECT NO. 121-11146",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2022-10-19",
+   "ref": "2022-005",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2022-06-CENSUS-0000120281",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000120281"
+   }
+  },
+  {
+   "entity": "YWCA APARTMENTS, INC. HUD PROJECT NO. 121-11146",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2022-10-19",
+   "ref": "2022-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2022-06-CENSUS-0000120281",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000120281"
+   }
+  },
+  {
+   "entity": "YWCA APARTMENTS, INC. HUD PROJECT NO. 121-11146",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2022",
+   "accepted": "2022-10-19",
+   "ref": "2022-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2022-06-CENSUS-0000120281",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000120281"
+   }
+  },
+  {
+   "entity": "THE SALVATION ARMY GOLDEN STATE DIVISION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-10-22",
+   "ref": "2021-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 9,
+   "report": {
+    "t": "2021-09-CENSUS-0000255683",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-09-CENSUS-0000255683"
+   }
+  },
+  {
+   "entity": "IDEO.ORG",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-09-18",
+   "ref": "2021-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2021-12-CENSUS-0000254544",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-12-CENSUS-0000254544"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-06-29",
+   "ref": "2021-003",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 4,
+   "report": {
+    "t": "2021-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-06-29",
+   "ref": "2021-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2021-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "TECHSOUP GLOBAL",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-03-29",
+   "ref": "2021-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2021-06-CENSUS-0000249177",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000249177"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO COMMUNITY COLLEGE DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-03-23",
+   "ref": "2021-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2021-06-CENSUS-0000134218",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000134218"
+   }
+  },
+  {
+   "entity": "MARTIN LUTHER KING-MARCUS GARVEY SQUARE APARTMENTS, INCORPORATED",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2021",
+   "accepted": "2022-03-07",
+   "ref": "2021-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2021-10-CENSUS-0000218840",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2021-10-CENSUS-0000218840"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-10-10",
+   "ref": "2020-004",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2020-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-10-10",
+   "ref": "2020-003",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 3,
+   "report": {
+    "t": "2020-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-10-10",
+   "ref": "2020-002",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 3,
+   "report": {
+    "t": "2020-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-08-24",
+   "ref": "2020-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2020-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-08-24",
+   "ref": "2020-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2020-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "CALIFORNIA INSTITUTE OF INTEGRAL STUDIES",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-08-03",
+   "ref": "2020-004",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2020-06-CENSUS-0000119633",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633"
+   }
+  },
+  {
+   "entity": "ROOM TO READ",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-07-07",
+   "ref": "2020-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2020-12-CENSUS-0000242082",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-12-CENSUS-0000242082"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO COMMUNITY COLLEGE DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-03-24",
+   "ref": "2020-006",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2020-06-CENSUS-0000134218",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000134218"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO COMMUNITY COLLEGE DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-03-24",
+   "ref": "2020-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2020-06-CENSUS-0000134218",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000134218"
+   }
+  },
+  {
+   "entity": "THE ASIA FOUNDATION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2020",
+   "accepted": "2021-02-16",
+   "ref": "2020-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 4,
+   "report": {
+    "t": "2020-09-CENSUS-0000118431",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2020-09-CENSUS-0000118431"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-12-30",
+   "ref": "2019-006",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2019-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-12-30",
+   "ref": "2019-005",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2019-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-12-30",
+   "ref": "2019-004",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2019-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "BAY AREA AIR QUALITY MANAGEMENT DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-04-15",
+   "ref": "2019-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000133199",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000133199"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO MUNICIPAL TRANSPORTATION AGENCY",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000233179",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000233179"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC.",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "CALIFORNIA INSTITUTE OF INTEGRAL STUDIES",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-011",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000119633",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633"
+   }
+  },
+  {
+   "entity": "CALIFORNIA INSTITUTE OF INTEGRAL STUDIES",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-007",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000119633",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633"
+   }
+  },
+  {
+   "entity": "CALIFORNIA INSTITUTE OF INTEGRAL STUDIES",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-006",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000119633",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633"
+   }
+  },
+  {
+   "entity": "CALIFORNIA INSTITUTE OF INTEGRAL STUDIES",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-005",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000119633",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633"
+   }
+  },
+  {
+   "entity": "CALIFORNIA INSTITUTE OF INTEGRAL STUDIES",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-30",
+   "ref": "2019-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000119633",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2020-03-29",
+   "ref": "2019-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2019-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "UNIVERSITY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2019",
+   "accepted": "2019-10-21",
+   "ref": "2019-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 8,
+   "report": {
+    "t": "2019-05-CENSUS-0000118369",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2019-05-CENSUS-0000118369"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-06-28",
+   "ref": "2018-008",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2018-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-06-28",
+   "ref": "2018-007",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 2,
+   "report": {
+    "t": "2018-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-06-28",
+   "ref": "2018-006",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2018-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-06-28",
+   "ref": "2018-005",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2018-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-04-16",
+   "ref": "2018-002",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2018-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-04-16",
+   "ref": "2018-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2018-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-03-19",
+   "ref": "2018-003",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2018-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-03-19",
+   "ref": "2018-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 4,
+   "report": {
+    "t": "2018-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2019-03-19",
+   "ref": "2018-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "No",
+   "awards": 4,
+   "report": {
+    "t": "2018-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "UNIVERSITY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2018",
+   "accepted": "2018-10-15",
+   "ref": "2018-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 8,
+   "report": {
+    "t": "2018-05-CENSUS-0000118369",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2018-05-CENSUS-0000118369"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-06-28",
+   "ref": "2017-009",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2017-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-06-28",
+   "ref": "2017-008",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 4,
+   "report": {
+    "t": "2017-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-06-28",
+   "ref": "2017-007",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2017-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-06-28",
+   "ref": "2017-006",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2017-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-06-28",
+   "ref": "2017-005",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2017-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-04-16",
+   "ref": "2017-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2017-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-04-16",
+   "ref": "2017-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2017-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-04-16",
+   "ref": "2017-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2017-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO MUNICIPAL TRANSPORTATION AGENCY",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-03-29",
+   "ref": "2017-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2017-06-CENSUS-0000233179",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000233179"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO ART INSTITUTE",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-03-29",
+   "ref": "2017-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2017-06-CENSUS-0000118448",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118448"
+   }
+  },
+  {
+   "entity": "PRESIDIO GRADUATE SCHOOL",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-03-28",
+   "ref": "2017-001",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 4,
+   "report": {
+    "t": "2017-06-CENSUS-0000244571",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000244571"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-03-27",
+   "ref": "2017-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2017-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2017",
+   "accepted": "2018-03-27",
+   "ref": "2017-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 4,
+   "report": {
+    "t": "2017-06-CENSUS-0000118326",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-018",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-016",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-015",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-009",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-008",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-007",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 2,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-006",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "HOUSING AUTHORITY OF THE CITY AND COUNTY OF SAN FRANCISCO, CALIFORNIA",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-06-29",
+   "ref": "2016-005",
+   "questioned": "Yes",
+   "repeat": "Yes",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000192900",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000192900"
+   }
+  },
+  {
+   "entity": "TMC DEVELOPMENT WORKING SOLUTIONS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-04-30",
+   "ref": "2016-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000235718",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000235718"
+   }
+  },
+  {
+   "entity": "TMC DEVELOPMENT WORKING SOLUTIONS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-04-30",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2016-09-CENSUS-0000235718",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000235718"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-04-30",
+   "ref": "2016-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2016-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "OCTAVIA COURT, INC 121-HD087-NP-WDD/CA39-Q061-002",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-04-30",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-12-CENSUS-0000236227",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-12-CENSUS-0000236227"
+   }
+  },
+  {
+   "entity": "MARTIN LUTHER KING-MARCUS GARVEY SQUARE APTS, INC. 121-35654-COOP",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-04-25",
+   "ref": "2016-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-10-CENSUS-0000218840",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-10-CENSUS-0000218840"
+   }
+  },
+  {
+   "entity": "DIGNITY HEALTH AND SUBORDINATE CORPORATIONS",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-03-30",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2016-06-CENSUS-0000121122",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000121122"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO CONSERVATORY OF MUSIC",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-03-28",
+   "ref": "2016-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2016-06-CENSUS-0000118361",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000118361"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO CONSERVATORY OF MUSIC",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-03-28",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2016-06-CENSUS-0000118361",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000118361"
+   }
+  },
+  {
+   "entity": "PRESIDIO GRADUATE SCHOOL",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-03-28",
+   "ref": "2016-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 2,
+   "report": {
+    "t": "2016-06-CENSUS-0000244571",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000244571"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO ART INSTITUTE",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-03-19",
+   "ref": "2016-003",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2016-06-CENSUS-0000118448",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000118448"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO ART INSTITUTE",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-03-19",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 3,
+   "report": {
+    "t": "2016-06-CENSUS-0000118448",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000118448"
+   }
+  },
+  {
+   "entity": "CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-02-15",
+   "ref": "2016-002",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 1,
+   "report": {
+    "t": "2016-06-CENSUS-0000132266",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000132266"
+   }
+  },
+  {
+   "entity": "CITY AND COUNTY OF SAN FRANCISCO",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-02-15",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 1,
+   "report": {
+    "t": "2016-06-CENSUS-0000132266",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000132266"
+   }
+  },
+  {
+   "entity": "THE ASIA FOUNDATION",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-02-14",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 2,
+   "report": {
+    "t": "2016-09-CENSUS-0000118431",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-09-CENSUS-0000118431"
+   }
+  },
+  {
+   "entity": "SAN FRANCISCO MUNICIPAL TRANSPORTATION AGENCY",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-02-06",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 5,
+   "report": {
+    "t": "2016-06-CENSUS-0000233179",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000233179"
+   }
+  },
+  {
+   "entity": "FACES SF",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-01-16",
+   "ref": "2016-001",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "No",
+   "awards": 2,
+   "report": {
+    "t": "2016-06-CENSUS-0000119122",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000119122"
+   }
+  },
+  {
+   "entity": "SOUTH SAN FRANCISCO UNIFIED SCHOOL DISTRICT",
+   "reportedCity": "SAN FRANCISCO",
+   "reportedState": "CA",
+   "locationBasis": "Reported San Francisco, CA",
+   "fy": "2016",
+   "accepted": "2017-01-08",
+   "ref": "2016-004",
+   "questioned": "Yes",
+   "repeat": "No",
+   "weakness": "Yes",
+   "awards": 4,
+   "report": {
+    "t": "2016-06-CENSUS-0000134272",
+    "u": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000134272"
+   }
+  }
+ ],
+ "total": 119,
+ "chart": null,
+ "sources": [
+  {
+   "t": "Federal Audit Clearinghouse downloadable files and field documentation",
+   "u": "https://www.fac.gov/data/download/"
+  },
+  {
+   "t": "FAC award findings, original downloadable CSV",
+   "u": "https://app.fac.gov/dissemination/public-data/gsa/full/findings.csv"
+  },
+  {
+   "t": "Eviction Defense Collaborative FY2023 signed audit, printed pp. 8–9, Sections II and III",
+   "u": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000052808"
+  },
+  {
+   "t": "Worked example: Eviction Defense Collaborative’s block-grant audits",
+   "u": "#case/housing-block-grant-eviction-defense-audit"
+  }
+ ]
+}

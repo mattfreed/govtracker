@@ -208,8 +208,8 @@
   "passages": 14
  },
  "failed-checkups-kept-funding": {
-  "seconds": 137.9,
-  "passages": 39
+  "seconds": 145.4,
+  "passages": 41
  },
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
@@ -270,6 +270,10 @@
  "hospices-revoked-after-1-26-billion": {
   "seconds": 145.1,
   "passages": 37
+ },
+ "housing-block-grant-eviction-defense-audit": {
+  "seconds": 99.8,
+  "passages": 19
  },
  "housing-loans-not-expected-back": {
   "seconds": 119.0,

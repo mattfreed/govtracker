@@ -81,21 +81,52 @@
     return esc(v);
   };
   const plain = (c, r) => { const v = r[c.k]; return v && typeof v === 'object' ? (v.t || '') : v == null ? '' : String(v); };
-  const st = { key: '', sort: null, dir: -1, q: '' };
+  const PAGE_SIZE = 60;
+  const st = { key: '', sort: null, dir: -1, q: '', page: 0 };
   function tableHtml(s) {
     let rows = s.rows; const q = st.q.trim().toLowerCase();
     if (q) rows = rows.filter(r => s.columns.some(c => plain(c, r).toLowerCase().includes(q)));
     if (st.sort) { const c = s.columns.find(x => x.k === st.sort); rows = [...rows].sort((a, b) => { const x = a[c.k], y = b[c.k]; return (NUMERIC[c.type] ? (x || 0) - (y || 0) : plain(c, a).localeCompare(plain(c, b))) * st.dir; }); }
-    const coverage = s.download ? `Previewing ${num(s.rows.length)} of ${num(s.total)} grant rows.` : s.total > s.rows.length ? `Showing the strongest ${s.rows.length} of ${num(s.total)}.` : `${s.rows.length} row${s.rows.length === 1 ? '' : 's'}.`;
-    return `<div class="table-wrap"><table class="gen"><thead><tr>${s.columns.map(c => `<th class="${NUMERIC[c.type] ? 'num' : ''}" aria-sort="${st.sort === c.k ? (st.dir > 0 ? 'ascending' : 'descending') : 'none'}"><button type="button" data-sort="${esc(c.k)}">${esc(c.t)}${st.sort === c.k ? (st.dir > 0 ? ' ▲' : ' ▼') : ''}</button></th>`).join('')}</tr></thead>
-      <tbody>${rows.map(r => `<tr>${s.columns.map(c => `<td class="${NUMERIC[c.type] ? 'num' : ''}">${cell(c, r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>${rows.length ? '' : '<div class="empty">Nothing matches.</div>'}
-      <p class="small muted">${q ? `${rows.length} of ${s.rows.length} rows match. ` : ''}${coverage} Click a column heading to sort.</p>`;
+    const pages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+    st.page = Math.min(st.page, pages - 1);
+    const start = st.page * PAGE_SIZE;
+    const pageRows = rows.slice(start, start + PAGE_SIZE);
+    const count = rows.length;
+    const range = count > PAGE_SIZE ? `Rows ${num(start + 1)}–${num(start + pageRows.length)} of ${num(count)}.` : '';
+    const coverage = s.total > s.rows.length ? `This table includes ${num(s.rows.length)} selected rows. The analysis reports ${num(s.total)} in total.` : `${num(s.rows.length)} available row${s.rows.length === 1 ? '' : 's'}.`;
+    const navigation = pages > 1 ? `<nav class="filters" aria-label="Table pages">
+      <button type="button" class="btn sm" data-page="0" ${st.page === 0 ? 'disabled' : ''}>First</button>
+      <button type="button" class="btn sm" data-page="${st.page - 1}" ${st.page === 0 ? 'disabled' : ''}>Previous</button>
+      <span>Page ${num(st.page + 1)} of ${num(pages)}</span>
+      <button type="button" class="btn sm" data-page="${st.page + 1}" ${st.page === pages - 1 ? 'disabled' : ''}>Next</button>
+      <button type="button" class="btn sm" data-page="${pages - 1}" ${st.page === pages - 1 ? 'disabled' : ''}>Last</button></nav>` : '';
+    return `<p class="small muted" role="status">${range} ${q ? `${num(count)} of ${num(s.rows.length)} rows match. ` : ''}${coverage}</p>
+      ${navigation}<div class="table-wrap"><table class="gen"><thead><tr>${s.columns.map(c => `<th class="${NUMERIC[c.type] ? 'num' : ''}" aria-sort="${st.sort === c.k ? (st.dir > 0 ? 'ascending' : 'descending') : 'none'}"><button type="button" data-sort="${esc(c.k)}">${esc(c.t)}${st.sort === c.k ? (st.dir > 0 ? ' ▲' : ' ▼') : ''}</button></th>`).join('')}</tr></thead>
+      <tbody>${pageRows.map(r => `<tr>${s.columns.map(c => `<td class="${NUMERIC[c.type] ? 'num' : ''}">${cell(c, r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>${count ? '' : '<div class="empty">Nothing matches.</div>'}`;
   }
   function mountTable(s) {
     after.push(() => {
-      const box = document.getElementById('gen-table'), inp = document.getElementById('gen-q'); if (!box) return;
-      const draw = () => { box.innerHTML = tableHtml(s); box.querySelectorAll('[data-sort]').forEach(b => b.onclick = () => { const k = b.dataset.sort; if (st.sort === k) st.dir = -st.dir; else { st.sort = k; st.dir = NUMERIC[s.columns.find(c => c.k === k).type] ? -1 : 1; } draw(); }); };
-      if (inp) inp.oninput = () => { st.q = inp.value; draw(); };
+      const box = document.getElementById('gen-table'), inp = document.getElementById('gen-q');
+      if (!box) return;
+      const draw = () => { box.innerHTML = tableHtml(s); };
+      box.onclick = event => {
+        const button = event.target.closest('button');
+        if (!button || !box.contains(button) || button.disabled) return;
+        if (button.hasAttribute('data-page')) {
+          st.page = Number(button.dataset.page);
+          draw();
+          const next = [...box.querySelectorAll('[data-page]:not(:disabled)')];
+          (next.find(b => b.textContent === button.textContent) || next[0])?.focus();
+        } else if (button.dataset.sort) {
+          const k = button.dataset.sort;
+          st.dir = st.sort === k ? -st.dir : NUMERIC[s.columns.find(c => c.k === k).type] ? -1 : 1;
+          st.sort = k;
+          st.page = 0;
+          draw();
+          [...box.querySelectorAll('[data-sort]')].find(b => b.dataset.sort === k)?.focus();
+        }
+      };
+      if (inp) inp.oninput = () => { st.q = inp.value; st.page = 0; draw(); };
       draw();
     });
   }
@@ -145,7 +176,7 @@
     });
     return `<div class="card pad gen-chart"><div class="chart-h"><h3>${esc(ch.title || '')}</h3></div>${bars ? `<div class="grid ${ch.series.length > 1 ? 'cols2' : ''}">${ch.series.map((s, i) => `<div>${ch.series.length > 1 ? `<p class="small muted">${esc(s.label)}</p>` : ''}<div class="chart" id="${id}-${i}"></div></div>`).join('')}</div>` : `<div class="chart linechart" id="${id}"></div>`}</div>`;
   };
-  const sourcesHtml = list => list && list.length ? `<section class="section"><h2>Where this comes from</h2><ul class="src-list">${list.map(s => `<li>${s.u && /^https?:\/\//.test(s.u) ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t || s.u)} ↗</a>` : esc(s.t || '')}</li>`).join('')}</ul></section>` : '';
+  const sourcesHtml = list => list && list.length ? `<section class="section"><h2>Where this comes from</h2><ul class="src-list">${list.map(s => `<li>${s.u && /^https?:\/\//.test(s.u) ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t || s.u)} ↗</a>` : /^#case\/[a-z0-9-]+$/.test(s.u || '') ? `<a href="${esc(s.u)}">${esc(s.t)}</a>` : esc(s.t || '')}</li>`).join('')}</ul></section>` : '';
   const stier = (t, long) => tier(t || 'REDFLAG', long);
   const findingBox = s => `<div class="finding bar-${esc(s.tier || 'REDFLAG')}"><div>${stier(s.tier, true)}</div><p><b>What turned up.</b> ${esc(s.finding || '')}</p></div>`;
 
@@ -153,11 +184,11 @@
     const [g, id] = String(arg || '').split('.'), G = (await need('screens'))[g]; if (!G) return null;
     if (!id) return groupPage(g, G);
     const s = G.screens.find(x => x.id === id); if (!s) return null;
-    if (st.key !== arg) { st.key = arg; st.sort = null; st.q = ''; st.dir = -1; }
+    if (st.key !== arg) { st.key = arg; st.sort = null; st.q = ''; st.dir = -1; st.page = 0; }
     mountTable(s);
     return `${head((C.screenGroups[g] || {}).title || 'Records', esc(s.title), esc(s.question || ''))}${findingBox(s)}${chartHtml(s.chart, 'gen-chart')}
       <div class="note how"><p><b>How this was worked out.</b> ${esc(s.how || '')}</p><p><b>What it cannot show.</b> ${esc(s.limits || '')}</p></div>
-      ${s.rows && s.rows.length ? `<section class="section">${s.download ? `<p><a href="${esc(s.download)}" download>Download all ${num(s.total)} grant rows (JSON)</a></p>` : ''}<div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="${s.download ? 'Filter the preview…' : 'Filter these rows…'}" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
+      ${s.rows && s.rows.length ? `<section class="section">${s.download ? `<p><a href="${esc(s.download)}" download>Download ${s.total > s.rows.length ? 'the' : 'all'} ${num(s.rows.length)} ${s.total > s.rows.length ? 'selected rows' : 'rows'} (JSON)</a></p>` : ''}<div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="Search all ${num(s.rows.length)} available rows…" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
       ${sourcesHtml(s.sources)}`;
   };
   function groupPage(g, G) {
