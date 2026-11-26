@@ -103,7 +103,7 @@
       if (s.mi === i && s.media) return s.media;
       if (window.FDMOVIE) window.FDMOVIE.close(); s.media = null; s.mi = -1;
       const c = s.byId[reels[i].dataset.id], host = reels[i].querySelector('.reel-live'); if (!c || !host || !window.FDMOVIE) return null;
-      const h = window.FDMOVIE.open(c, null, { host, noplay: true }); if (!h) return null;
+      const h = window.FDMOVIE.open(c, null, { host, citationHost: reels[i].querySelector('.reel-sub'), noplay: true }); if (!h) return null;
       s.media = h.voice; s.mi = i; wire(i, h.voice); return h.voice;
     };
     const muteIcon = () => root.querySelectorAll('[data-act=mute]').forEach(b => { b.innerHTML = s.sound ? ICON.sound : ICON.mute; });
@@ -184,6 +184,7 @@
     s.onKey = e => {
       if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement && document.activeElement.tagName)) return;
       const k = e.key;
+      if ((k === 'Enter' || k === ' ') && e.target.closest?.('a,button,summary')) return;
       if (k === 'ArrowDown' || k === 'PageDown' || k === 'j') go(s.i + 1);
       else if (k === 'ArrowUp' || k === 'PageUp' || k === 'k') go(Math.max(0, s.i - 1));
       else if (k === ' ') { const v = vid(s.i); if (v) v.paused ? play(s.i) : v.pause(); }

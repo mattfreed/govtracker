@@ -71,11 +71,69 @@
       coins.forEach((cn, i) => { const seg = i % 2, f = ((st.lt * .45 + i / 6) % 1), on = st.bp > at[seg] + .2; cn.setAttribute('cx', (400 + seg * 320 + f * 160).toFixed(1)); cn.setAttribute('cy', 340); cn.style.opacity = on ? Math.sin(f * Math.PI) : 0; });
       const s = P(st.bp, .74, .08); stamp.style.opacity = s > 0 ? 1 : 0; stamp.style.transform = `translate(-50%,-50%) rotate(-12deg) scale(${2.4 - 1.4 * E(s)})`; el.classList.toggle('slam', s > .9); } };
   };
+  function sourcesFor(beat, c) {
+    const ids = [beat.visual?.source];
+    for (const ref of Array.isArray(beat.ref) ? beat.ref : []) {
+      const match = /^(sources|established|suspicious|timeline|links)\[(\d+)\]/.exec(ref);
+      if (!match) { ids.push(ref); continue; }
+      const record = c[match[1]]?.[Number(match[2])];
+      if (record) ids.push(...(match[1] === 'sources' ? [record.id] : record.sourceIds || []));
+    }
+    return [...new Set(ids.filter(Boolean))]
+      .map(id => c.sources?.find(source => source.id === id))
+      .filter(source => /^https?:\/\//i.test(source?.url || ''));
+  }
+
+  const recordIcons = {
+    file: '<path d="M8 3h12l6 6v20H8z M20 3v7h6 M12 15h10 M12 20h8"/>',
+    lease: '<path d="M4 28h24 M7 27V11l9-7 9 7v16 M12 15h2m4 0h2m-8 5h2m4 0h2 M15 28v-4h3v4"/>',
+    vote: '<path d="m9 8 8-5 6 9-8 5z M5 18h22l2 10H3z M12 18h9"/>',
+    ticket: '<path d="M3 8h26v5a3 3 0 0 0 0 6v5H3v-5a3 3 0 0 0 0-6z M20 9v2m0 3v2m0 3v2"/>',
+    transfer: '<path d="M4 10h21m-5-5 5 5-5 5 M28 22H7m5-5-5 5 5 5"/>',
+    audit: '<path d="M5 3h17v11 M5 3v25h9 M9 9h9 M9 14h6"/><circle cx="21" cy="21" r="5"/><path d="m25 25 5 5"/>',
+    travel: '<rect x="3" y="10" width="26" height="17" rx="3"/><path d="M11 10V7c0-2 1-3 3-3h4c2 0 3 1 3 3v3 M10 10v17m12-17v17"/>',
+    calendar: '<rect x="4" y="7" width="24" height="22" rx="3"/><path d="M9 4v7m14-7v7M4 15h24 M10 21h4m4 0h4"/>',
+    gap: '<path d="M8 3h12l6 6v7m0 8v5H8v-7m0-7V3 M20 3v7h6 M5 22l5-4 4 4 4-4 4 4 5-4"/>',
+  };
+  const recordIcon = name => '<svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">' + (recordIcons[name] || recordIcons.file) + '</svg>';
+  const docTypeIcon = (source, kicker) => {
+    const description = (String(source?.title || '') + ' ' + String(kicker || '')).toLowerCase();
+    if (/audit|inspector general|financial statement/.test(description)) return 'audit';
+    if (/roll.call|board vote|passage/.test(description)) return 'vote';
+    if (/lease|property|recorder/.test(description)) return 'lease';
+    if (/payment|remit|disburse/.test(description)) return 'transfer';
+    return 'file';
+  };
+  K.record = (bs, c) => {
+    const v = bs[0].visual, rows = v.rows || [];
+    const layout = ['amounts', 'flow', 'timeline', 'relationship'].includes(v.layout) ? v.layout : 'relationship';
+    const max = layout === 'amounts' ? Math.max(0, ...rows.map(row => parseMoney(row.value))) : 0;
+    const events = c.timeline || [];
+    const lines = rows.map(row => {
+      const date = row.event ? events.find(event => event.date === row.event)?.date : '';
+      const calendar = /^\d{4}-\d{2}-\d{2}$/.test(date) ? new Date(date + 'T00:00:00Z') : null;
+      const stamp = calendar && Number.isFinite(calendar.getTime()) ? calendar.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) : date || row.value;
+      const amount = layout === 'amounts' ? parseMoney(row.value) : 0;
+      const measure = max && amount ? '<i class="record-track"><i style="width:' + (100 * amount / max).toFixed(2) + '%"></i></i>' : '';
+      return '<li><span class="record-symbol">' + recordIcon(row.icon) + '</span><div class="record-detail"><strong>' + esc(row.label) + '</strong>' + measure + '</div><span class="record-value">' + esc(stamp || '') + '</span></li>';
+    }).join('');
+    const el = node('<div class="s6 s6-record record-' + layout + '"><div class="cam"><section><header><span>' + esc(v.context) + '</span><h2>' + esc(v.heading) + '</h2></header><ol>' + lines + '</ol></section></div></div>');
+    const items = [...el.querySelectorAll('li')];
+    return { el, update(st) {
+      items.forEach((item, i) => {
+        const p = E((st.lt - i * .12) / .36);
+        item.style.opacity = String(.65 + .35 * p);
+        const bar = item.querySelector('.record-track i');
+        if (bar) bar.style.transform = 'scaleX(' + p.toFixed(3) + ')';
+      });
+    } };
+  };
+
   K.doc = (bs, c) => {
-    const v = bs[0].visual, src = (c.sources || []).find(s => s.id === v.source), txt = String(v.text || ''), mk = String(v.mark || ''), at = mk ? txt.indexOf(mk) : -1;
+    const v = bs[0].visual, src = sourcesFor(bs[0], c)[0], txt = String(v.text || ''), mk = String(v.mark || ''), at = mk ? txt.indexOf(mk) : -1;
     const body = at >= 0 ? `${esc(txt.slice(0, at))}<mark>${esc(mk)}</mark>${esc(txt.slice(at + mk.length))}` : esc(txt);
-    const el = node(`<div class="s6 s6-doc"><div class="cam"><div class="side"><div class="f-ic">${ICON.doc}</div><h2>${words(v.kicker || '')}</h2></div>
-      <div class="paper"><div class="hd"><span>${esc(src ? src.publisher : 'From the case file')}</span><b>${esc(src ? src.title : '')}</b></div><div class="rule"></div><p>${body}</p><div class="f-ft"><i></i><i></i><i></i></div></div></div></div>`);
+    const el = node(`<div class="s6 s6-doc"><div class="cam"><div class="side"><div class="f-ic">${recordIcon(docTypeIcon(src, v.kicker))}</div><h2>${words(v.kicker || '')}</h2></div>
+      <div class="paper"><div class="hd"><span>${esc(src ? src.publisher : 'From the case file')}</span><b>${esc(src ? src.title : '')}</b></div><div class="rule"></div><p>${body}</p>${src && src.date ? `<div class="doc-date">${esc(src.date)}</div>` : ''}</div></div></div>`);
     const paper = el.querySelector('.paper'), mark = el.querySelector('mark'), ws = [...el.querySelectorAll('.side .w')], ic = el.querySelector('.side .f-ic');
     return { el, update: st => { const o = E(st.lt / 1.1); paper.style.opacity = o; paper.style.transform = `translateX(${(1 - o) * 260}px) rotate(${(1 - o) * 6 + 1.2}deg)`; show(ic, E(st.lt / .6)); reveal(ws, st.lt - .3, .12, .5);
       if (mark) mark.style.backgroundSize = `${E(P(st.bp, .3, .45)) * 100}% 100%`; } };
@@ -190,7 +248,7 @@
   };
   K.unknowns = bs => {
     const C = bs[0].visual.cards || [];
-    const el = node(`<div class="s6 s6-unk"><div class="cam"><div class="f-kick">Not established</div><div class="f-cards">${C.map((t, i) => `<div class="f-card" data-i="${i}"><div class="in"><div class="back">?</div><div class="front"><span class="f-q">?</span><b>${esc(t)}</b><em>Not shown</em></div></div></div>`).join('')}</div></div></div>`);
+    const el = node(`<div class="s6 s6-unk"><div class="cam"><div class="f-kick">Not established</div><div class="f-cards">${C.map((t, i) => `<div class="f-card" data-i="${i}"><div class="in"><div class="back">${recordIcon('gap')}</div><div class="front"><span class="f-q">${recordIcon('gap')}</span><b>${esc(t)}</b><em>Not shown</em></div></div></div>`).join('')}</div></div></div>`);
     const cs = [...el.querySelectorAll('.f-card')], kick = el.querySelector('.f-kick');
     return { el, update: st => { show(kick, E(st.lt / .6)); cs.forEach((cd, i) => { show(cd, E((st.lt - .2 - i * .15) / .6), 30); const f = bs.length === 1 ? E(P(st.lt, .5 + i * .7, .8)) : i < st.i ? 1 : i === st.i ? E(P(st.bt, .3, .9)) : 0; const nowI = bs.length === 1 ? Math.min(C.length - 1, Math.floor(Math.max(0, st.lt - .5) / .7)) : st.i;
       cd.querySelector('.in').style.transform = `rotateY(${180 - 180 * f}deg)`; cd.classList.toggle('now', i === nowI); cd.classList.toggle('done', i < nowI); }); } };
@@ -528,13 +586,13 @@
   };
 
   window.FD_FILM6 = {
-    kinds: Object.keys(K), looks: ['midnight', ...Object.keys(BG)],
+    sourcesFor, kinds: Object.keys(K), looks: ['midnight', ...Object.keys(BG)],
     shot(bs, c, k) { const f = K[bs[0].visual.type]; const s = f ? f(bs, c, k) : { el: node(`<div class="s6"><div class="cam"></div></div>`), update() {} }; s.el.dataset.kind = bs[0].visual.type;
       if (k === 0 && bs[0].visual.type !== 'hook') {                                // the opening shot of every film carries the brand and the case title, small: no title card
         const tag = node(`<div class="tag6"><b>SF Money Trail · ${tierTag(c.tier)}</b><span>${esc(c.title)}</span></div>`); s.el.appendChild(tag); const up = s.update; s.update = st => { up(st); show(tag, E((st.lt - .2) / .5) * (1 - E((st.lt - 3.6) / .6)), 10); }; }
       return s; },
     bg(look) { return BG[look] ? BG[look]() : null; },
-    SFX: { hook: 'whoosh', count: 'thud', title: 'whoosh', program: 'tick', doc: 'tick', drop: 'thud', flow: 'tick', match: 'tick', dots: 'tick', versus: 'thud', bars: 'thud', timeline: 'tick', redact: 'thud', quote: 'tick', explain: 'tick', unknowns: 'tick', settle: 'tick', status: 'tick', end: 'chime',
+    SFX: { record: 'tick', hook: 'whoosh', count: 'thud', title: 'whoosh', program: 'tick', doc: 'tick', drop: 'thud', flow: 'tick', match: 'tick', dots: 'tick', versus: 'thud', bars: 'thud', timeline: 'tick', redact: 'thud', quote: 'tick', explain: 'tick', unknowns: 'tick', settle: 'tick', status: 'tick', end: 'chime',
       swarm: 'tick', map: 'tick', columns: 'thud', line: 'tick', clock: 'thud', slam: 'thud', rank: 'tick', headline: 'thud', window: 'tick', form: 'tick', share: 'thud', network: 'tick', log: 'tick', bignum: 'thud', scene: 'tick', span: 'tick', chain: 'tick', sfmap: 'tick' },
   };
 })();

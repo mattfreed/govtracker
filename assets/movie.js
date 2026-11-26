@@ -5,6 +5,8 @@
 (() => {
   'use strict';
   const W = 1280, H = 720, BASE = 'assets/movies/';
+  const editionQuery = document.currentScript?.src ? new URL(document.currentScript.src).search : '';
+  const mediaUrl = (id, extension) => BASE + encodeURIComponent(id) + extension + editionQuery;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
   const EIO = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
@@ -107,14 +109,14 @@
   let cur = null;                                   // the film that is open
   // each film's beats, fetched once: the watch feed asks for the next film's while this one plays, so a swipe opens it at once
   const beatsOf = new Map(), getBeats = id => {
-    if (!beatsOf.has(id)) beatsOf.set(id, fetch(BASE + id + '.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch(e => { beatsOf.delete(id); throw e; }));
+    if (!beatsOf.has(id)) beatsOf.set(id, fetch(mediaUrl(id, '.json')).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch(e => { beatsOf.delete(id); throw e; }));
     return beatsOf.get(id);
   };
   let warm = null;                                  // the next film's voice, its first bytes only (preload=metadata); one at a time
   function prefetch(c) {
     if (!c || !c.id) return; getBeats(c.id).catch(() => {});
     if (warm && warm.dataset.id === c.id) return; if (warm) { warm.removeAttribute('src'); warm.load(); }
-    warm = new Audio(); warm.preload = 'metadata'; warm.dataset.id = c.id; warm.muted = true; warm.src = BASE + c.id + '.m4a';
+    warm = new Audio(); warm.preload = 'metadata'; warm.dataset.id = c.id; warm.muted = true; warm.src = mediaUrl(c.id, '.m4a');
   }
   function close() {
     if (!cur) return;
@@ -124,6 +126,8 @@
     window.removeEventListener('keydown', s.onKey, true); window.removeEventListener('resize', s.fit); if (s.onUp) window.removeEventListener('pointerup', s.onUp); if (s.ro) s.ro.disconnect();
     try { const fe = document.fullscreenElement || document.webkitFullscreenElement; if (fe && s.root.contains(fe)) (document.exitFullscreen || document.webkitExitFullscreen).call(document); } catch (e) { /* not full screen */ }
     try { s.voice.removeAttribute('src'); s.voice.load(); } catch (e) { /* already gone */ }      // let go of the stream at once
+    s.citation?.remove();
+    s.otherSources?.remove();
     s.root.remove(); document.documentElement.style.overflow = s.overflow;
     if (s.opener && s.opener.focus) s.opener.focus();
   }
@@ -136,13 +140,13 @@
     root.innerHTML = `<div class="mv-wrap"><div class="mv-stage"><div class="mv-amb" aria-hidden="true"><i></i><i></i><i></i></div><div class="mv-bg6" aria-hidden="true"></div><div class="mv-flash" aria-hidden="true"></div><div class="mv-top"><b>SF Money Trail</b><span class="pill">${esc(TIER_TAG[c.tier] || 'Case')}</span><span class="ch"></span><div class="mv-prog" aria-hidden="true"></div><button type="button" class="mv-x" data-act="close" aria-label="Close the film" title="Close (Esc)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="mv-view"></div><div class="mv-view6" aria-hidden="true"></div><div class="mv-cap" aria-live="off"></div><div class="mv-msg">Opening the film…</div></div><button type="button" class="mv-bigplay" data-act="toggle" aria-label="Play the film"><span aria-hidden="true"></span></button></div>
       <div class="mv-bar"><div class="mv-chap"></div><button type="button" data-act="back" title="Back 10 seconds (Left arrow)" aria-label="Back 10 seconds">−10s</button><button type="button" class="play" data-act="toggle">Play</button><button type="button" data-act="fwd" title="Forward 10 seconds (Right arrow)" aria-label="Forward 10 seconds">+10s</button><span class="time">0:00 / 0:00</span>
         <div class="mv-scrub"><div class="ticks"></div><input type="range" min="0" max="100" step="0.01" value="0" aria-label="Position in the film"></div>
-        <button type="button" data-act="speed" title="Playing speed">1×</button><button type="button" data-act="cap" aria-pressed="true" title="Show or hide the words (C)">Words</button><button type="button" data-act="music" aria-pressed="true" title="Music and sounds on or off (M)">Sound bed</button><button type="button" data-act="voice" class="narr" aria-pressed="true" title="Narration on or off (N); the pictures and words keep playing"></button>
+        <a class="mv-citation" target="_blank" rel="noopener noreferrer" hidden></a><button type="button" data-act="speed" title="Playing speed">1×</button><button type="button" data-act="cap" aria-pressed="true" title="Show or hide the words (C)">Words</button><button type="button" data-act="music" aria-pressed="true" title="Music and sounds on or off (M)">Sound bed</button><button type="button" data-act="voice" class="narr" aria-pressed="true" title="Narration on or off (N); the pictures and words keep playing"></button>
         <button type="button" data-act="full" title="Full screen (F)">Full screen</button><button type="button" data-act="close" title="Close (Esc)">Close</button></div>`;
     (inline ? opts.host : document.body).appendChild(root);
     if (!inline) root.appendChild(root.querySelector('.mv-x'));                    // the close X sits on the player, not in the scaled film, so it stays a full-size target on a phone
     const fsOK = !!(document.fullscreenEnabled || document.webkitFullscreenEnabled); if (!fsOK) root.querySelector('[data-act=full]').hidden = true;      // iPhone: no full screen for a page element
     const $ = q => root.querySelector(q), stage = $('.mv-stage'), view = $('.mv-view'), cap = $('.mv-cap'), range = $('.mv-scrub input');
-    const voice = new Audio(), bed = new Audio(BASE + 'sfx/bed.m4a'); voice.preload = opts.noplay ? 'metadata' : 'auto'; voice.src = BASE + c.id + '.m4a'; bed.loop = true; bed.volume = 0.16;
+    const voice = new Audio(), bed = new Audio(BASE + 'sfx/bed.m4a'); voice.preload = opts.noplay ? 'metadata' : 'auto'; voice.src = mediaUrl(c.id, '.m4a'); bed.loop = true; bed.volume = 0.16;
     ['play', 'playing'].forEach(e => voice.addEventListener(e, () => root.classList.add('mv-on'))); ['pause', 'ended'].forEach(e => voice.addEventListener(e, () => root.classList.remove('mv-on')));   // the big play button shows whenever the film is not playing
     const s = cur = { root, voice, bed, opener, narr: narrSaved(), overflow: document.documentElement.style.overflow, beats: [], view: null, bi: -2, music: true, still: opts.t != null ? +opts.t : null, dur: 0, sfx: {} };
     if (!inline) document.documentElement.style.overflow = 'hidden';
@@ -166,6 +170,15 @@
       return ct + Math.min(.25, (pt - clk.pt) / 1000 * (voice.playbackRate || 1));
     };
     s.now = now;
+    s.citation = $('.mv-citation');
+    if (opts.citationHost) opts.citationHost.appendChild(s.citation);
+    s.citation.addEventListener('click', () => pause());
+    s.otherSources = document.createElement('details');
+    s.otherSources.className = 'mv-other-sources';
+    s.otherSources.hidden = true;
+    s.otherSources.innerHTML = '<summary></summary><ul></ul>';
+    s.otherSources.addEventListener('toggle', () => { if (s.otherSources.open) pause(); });
+    s.citation.after(s.otherSources);
     // seeking: a target set before the audio can seek is kept and applied as soon as it can (see seekable() and the blob below)
     const seek = t => { clk.ct = -1; t = clamp(t, 0, Math.max(0, (s.dur || voice.duration || 0) - .05)); if (s.still != null) s.still = t; else { s.want = t; applySeek(); } s.jump = true; };
     const applySeek = () => { if (s.want == null || voice.readyState < 1) return; const t = s.want; try { voice.currentTime = t; } catch (e) { return; } if (Math.abs(voice.currentTime - t) < .5 || seekable()) s.want = null; };
@@ -206,7 +219,7 @@
     voice.addEventListener('loadedmetadata', () => { if (isFinite(voice.duration) && voice.duration > 1 && Math.abs(voice.duration - s.dur) > .3 && s.beats.length) { s.dur = voice.duration; if (s.chapters && s.chapters.length) { s.chapters[s.chapters.length - 1].t1 = s.dur; $('.mv-scrub .ticks').innerHTML = s.chapters.slice(1).map(x => `<i style="left:${(x.t / s.dur * 100).toFixed(2)}%"></i>`).join(''); } } });      // chapter ticks follow the real length   // the recording's real length
     s.onKey = e => {
       if (e.metaKey || e.ctrlKey || e.altKey) return; const k = e.key;
-      if (k === 'Escape') close(); else if (k === ' ' && e.target.tagName !== 'BUTTON') act.toggle(); else if (k === 'ArrowRight' && e.target !== range) act.fwd(); else if (k === 'ArrowLeft' && e.target !== range) act.back();
+      if (k === 'Escape') close(); else if (k === ' ' && !e.target.closest('button, a, input, summary')) act.toggle(); else if (k === 'ArrowRight' && e.target !== range) act.fwd(); else if (k === 'ArrowLeft' && e.target !== range) act.back();
       else if (/^c$/i.test(k)) act.cap($('[data-act=cap]')); else if (/^m$/i.test(k)) act.music($('[data-act=music]')); else if (/^n$/i.test(k)) act.voice(); else if (/^f$/i.test(k)) act.full();
       else if (k === ']' || k === '[') { const st = s.chapters.map(x => x.t), t = now(), j = k === ']' ? st.findIndex(x => x > t + .2) : st.length - 1 - [...st].reverse().findIndex(x => x < t - 1.5); if (st[j] != null) seek(st[j]); }
       else return;
@@ -243,6 +256,26 @@
 
     // the chapter strip at the top, the subtitles, the bar: the same for both kinds of film
     function chrome(t, b, bi, p) {
+      if (s.citationBeat !== bi) {
+        s.citationBeat = bi;
+        const sources = window.FD_FILM6?.sourcesFor(b, c) || [];
+        const source = sources[0];
+        const extra = b.visual?.type === 'record' ? sources.slice(1) : [];
+        s.otherSources.open = false;
+        s.otherSources.hidden = !extra.length;
+        if (extra.length) {
+          s.otherSources.querySelector('summary').textContent = 'More sources (' + extra.length + ')';
+          s.otherSources.querySelector('ul').innerHTML = extra.map(row => '<li><a target="_blank" rel="noopener noreferrer" href="' + esc(row.url) + '">' + esc(row.title) + '</a></li>').join('');
+        }
+        const link = s.citation;
+        link.hidden = !source;
+        if (source) {
+          link.href = source.url;
+          link.textContent = 'Open source ↗';
+          link.title = source.title;
+          link.setAttribute('aria-label', 'Open source in a new tab: ' + source.title);
+        }
+      }
       if (s.chapters) { const ci = s.chapters.findIndex(x => t >= x.t && t < x.t1); $('.mv-prog').querySelectorAll('i').forEach((el, k) => { el.firstChild.style.transform = `scaleX(${k < ci ? 1 : k > ci ? 0 : clamp((t - s.chapters[k].t) / Math.max(.1, s.chapters[k].t1 - s.chapters[k].t))})`; el.classList.toggle('cur', k === ci); }); }
       if (s.v6) caps6(b, bi, p); else {
         const words = b.text.split(/\s+/), n = Math.max(1, Math.ceil(words.length / 15)), per = Math.ceil(words.length / n), j = Math.min(n - 1, Math.floor(p * n)), line = bi < 0 ? '' : words.slice(j * per, (j + 1) * per).join(' ');

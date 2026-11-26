@@ -261,3 +261,12 @@ body.feed-on footer { display: none; }
   .reel-info .reel-share { grid-column: 2; grid-row: 4; align-self: start; justify-self: end; margin-top: 8px; }
   .reel-info .reel-downrow { grid-row: 5; }
 }
+
+.reel-sub { align-items: center; flex-wrap: wrap; }
+.reel-sub .mv-citation {
+  margin-left: auto; display: inline-flex; align-items: center; min-height: 32px;
+  font: 650 14px/1.2 var(--sans); letter-spacing: normal; text-transform: none;
+  color: var(--f-gold); text-decoration: underline; text-underline-offset: 3px;
+}
+.reel-sub .mv-citation[hidden] { display: none; }
+@media (pointer: coarse) { .reel-sub .mv-citation { min-height: 44px; } }

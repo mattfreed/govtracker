@@ -86,9 +86,10 @@
     let rows = s.rows; const q = st.q.trim().toLowerCase();
     if (q) rows = rows.filter(r => s.columns.some(c => plain(c, r).toLowerCase().includes(q)));
     if (st.sort) { const c = s.columns.find(x => x.k === st.sort); rows = [...rows].sort((a, b) => { const x = a[c.k], y = b[c.k]; return (NUMERIC[c.type] ? (x || 0) - (y || 0) : plain(c, a).localeCompare(plain(c, b))) * st.dir; }); }
+    const coverage = s.download ? `Previewing ${num(s.rows.length)} of ${num(s.total)} grant rows.` : s.total > s.rows.length ? `Showing the strongest ${s.rows.length} of ${num(s.total)}.` : `${s.rows.length} row${s.rows.length === 1 ? '' : 's'}.`;
     return `<div class="table-wrap"><table class="gen"><thead><tr>${s.columns.map(c => `<th class="${NUMERIC[c.type] ? 'num' : ''}" aria-sort="${st.sort === c.k ? (st.dir > 0 ? 'ascending' : 'descending') : 'none'}"><button type="button" data-sort="${esc(c.k)}">${esc(c.t)}${st.sort === c.k ? (st.dir > 0 ? ' ▲' : ' ▼') : ''}</button></th>`).join('')}</tr></thead>
       <tbody>${rows.map(r => `<tr>${s.columns.map(c => `<td class="${NUMERIC[c.type] ? 'num' : ''}">${cell(c, r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>${rows.length ? '' : '<div class="empty">Nothing matches.</div>'}
-      <p class="small muted">${q ? `${rows.length} of ${s.rows.length} rows match. ` : ''}${s.total > s.rows.length ? `Showing the strongest ${s.rows.length} of ${num(s.total)}.` : `${s.rows.length} row${s.rows.length === 1 ? '' : 's'}.`} Click a column heading to sort.</p>`;
+      <p class="small muted">${q ? `${rows.length} of ${s.rows.length} rows match. ` : ''}${coverage} Click a column heading to sort.</p>`;
   }
   function mountTable(s) {
     after.push(() => {
@@ -156,7 +157,7 @@
     mountTable(s);
     return `${head((C.screenGroups[g] || {}).title || 'Records', esc(s.title), esc(s.question || ''))}${findingBox(s)}${chartHtml(s.chart, 'gen-chart')}
       <div class="note how"><p><b>How this was worked out.</b> ${esc(s.how || '')}</p><p><b>What it cannot show.</b> ${esc(s.limits || '')}</p></div>
-      ${s.rows && s.rows.length ? `<section class="section"><div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="Filter these rows…" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
+      ${s.rows && s.rows.length ? `<section class="section">${s.download ? `<p><a href="${esc(s.download)}" download>Download all ${num(s.total)} grant rows (JSON)</a></p>` : ''}<div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="${s.download ? 'Filter the preview…' : 'Filter these rows…'}" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
       ${sourcesHtml(s.sources)}`;
   };
   function groupPage(g, G) {
