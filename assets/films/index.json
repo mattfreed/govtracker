@@ -23,6 +23,10 @@
   "seconds": 130.5,
   "poster": "autodesk-lease-then-mayors-committee.jpg"
  },
+ "bart-construction-work-tag-settlement": {
+  "seconds": 45.8,
+  "poster": "bart-construction-work-tag-settlement.jpg"
+ },
  "bart-overtime-highest-transit": {
   "seconds": 156.7,
   "poster": "bart-overtime-highest-transit.jpg"
@@ -59,6 +63,10 @@
   "seconds": 148.0,
   "poster": "building-jobs-and-change-orders.jpg"
  },
+ "building-permits-still-listed-open": {
+  "seconds": 57.0,
+  "poster": "building-permits-still-listed-open.jpg"
+ },
  "buildings-bought-for-housing": {
   "seconds": 130.1,
   "poster": "buildings-bought-for-housing.jpg"
@@ -66,6 +74,10 @@
  "bvhpf-tier3-still-funded": {
   "seconds": 130.0,
   "poster": "bvhpf-tier3-still-funded.jpg"
+ },
+ "caltrain-train-control-contract-replacement": {
+  "seconds": 46.8,
+  "poster": "caltrain-train-control-contract-replacement.jpg"
  },
  "certified-local-firms-large-affiliates": {
   "seconds": 153.1,
@@ -102,6 +114,10 @@
  "city-rents-from-landlords-in-foreclosure": {
   "seconds": 70.8,
   "poster": "city-rents-from-landlords-in-foreclosure.jpg"
+ },
+ "citywide-labor-agreement-bid-terms": {
+  "seconds": 49.6,
+  "poster": "citywide-labor-agreement-bid-terms.jpg"
  },
  "community-challenge-grants": {
   "seconds": 130.9,
@@ -178,6 +194,10 @@
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
   "poster": "family-shelter-beds-left-empty.jpg"
+ },
+ "farrell-campaign-shared-expense-settlement": {
+  "seconds": 46.8,
+  "poster": "farrell-campaign-shared-expense-settlement.jpg"
  },
  "federal-bid-rigging-firms-still-paid": {
   "seconds": 130.4,
@@ -263,9 +283,17 @@
   "seconds": 173.8,
   "poster": "in-the-job-before-the-exam.jpg"
  },
+ "janitorial-workers-compensation-premium-fraud": {
+  "seconds": 47.9,
+  "poster": "janitorial-workers-compensation-premium-fraud.jpg"
+ },
  "kelly-wong-puc": {
   "seconds": 130.5,
   "poster": "kelly-wong-puc.jpg"
+ },
+ "kezar-architect-state-contracting-ban": {
+  "seconds": 57.6,
+  "poster": "kezar-architect-state-contracting-ban.jpg"
  },
  "laguna-honda-federal-fines": {
   "seconds": 130.3,
@@ -403,6 +431,10 @@
   "seconds": 130.2,
   "poster": "permit-reviews-miss-city-deadline.jpg"
  },
+ "physician-workers-compensation-restitution": {
+  "seconds": 44.8,
+  "poster": "physician-workers-compensation-restitution.jpg"
+ },
  "police-captains-overtime-in-lieu": {
   "seconds": 113.0,
   "poster": "police-captains-overtime-in-lieu.jpg"
@@ -414,6 +446,10 @@
  "police-retirees-rehired-960": {
   "seconds": 134.2,
   "poster": "police-retirees-rehired-960.jpg"
+ },
+ "portsmouth-garage-renovation-overrun": {
+  "seconds": 56.2,
+  "poster": "portsmouth-garage-renovation-overrun.jpg"
  },
  "ppp-and-city-money": {
   "seconds": 134.1,
@@ -466,6 +502,10 @@
  "restricted-source-gift-cases": {
   "seconds": 130.7,
   "poster": "restricted-source-gift-cases.jpg"
+ },
+ "safehouse-client-stipends-and-housing-loan": {
+  "seconds": 58.3,
+  "poster": "safehouse-client-stipends-and-housing-loan.jpg"
  },
  "salvation-army-food-distribution-eligibility": {
   "seconds": 44.0,
@@ -527,6 +567,10 @@
   "seconds": 56.4,
   "poster": "sfo-fox-rental-fees-and-fines.jpg"
  },
+ "sfo-kone-escalator-billing-credit": {
+  "seconds": 41.5,
+  "poster": "sfo-kone-escalator-billing-credit.jpg"
+ },
  "sfo-runway-grant-reimbursement": {
   "seconds": 44.0,
   "poster": "sfo-runway-grant-reimbursement.jpg"
@@ -546,6 +590,10 @@
  "side-doors-of-influence": {
   "seconds": 143.8,
   "poster": "side-doors-of-influence.jpg"
+ },
+ "silicon-valley-bart-extension-cost-and-oversight": {
+  "seconds": 56.2,
+  "poster": "silicon-valley-bart-extension-cost-and-oversight.jpg"
  },
  "small-grantees-insider-loans": {
   "seconds": 179.1,
@@ -635,6 +683,10 @@
   "seconds": 66.7,
   "poster": "usf-teacher-residency-americorps-settlement.jpg"
  },
+ "van-ness-transit-construction-timeline": {
+  "seconds": 55.0,
+  "poster": "van-ness-transit-construction-timeline.jpg"
+ },
  "votes-on-interests-not-in-the-title": {
   "seconds": 65.3,
   "poster": "votes-on-interests-not-in-the-title.jpg"
@@ -654,6 +706,10 @@
  "wehope-insider-building": {
   "seconds": 130.1,
   "poster": "wehope-insider-building.jpg"
+ },
+ "westside-pump-station-bid-outreach": {
+  "seconds": 44.6,
+  "poster": "westside-pump-station-bid-outreach.jpg"
  },
  "whistleblower-vendor-contract-enforcement": {
   "seconds": 48.6,

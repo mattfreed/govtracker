@@ -468,3 +468,7 @@ table.outcome th:nth-child(2), table.outcome td:nth-child(2) { min-width: 240px;
 }
 /* first paint: keep the layout still while the case files load (the scrollbar arriving moved the centered page; the footer jumped) */
 html:not(:has(body.feed-on)) { scrollbar-gutter: stable; } body:not(.feed-on) main#main { min-height: calc(100vh - 60px); }
+
+.permit-timing-result dl { display: grid; grid-template-columns: repeat(auto-fit,minmax(145px,1fr)); gap: 1rem; }
+.permit-timing-result dt { font-size: .85rem; }
+.permit-timing-result dd { margin: .3rem 0 0; font-weight: 650; }

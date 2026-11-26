@@ -417,13 +417,66 @@
       ${tab === 'data' ? `<div class="note how"><p><b>This site does not host the raw data.</b> Everything here was pulled ${esc(pulledSpan())} from public sources, and every source on the site links to the place you can view or download it yourself: the City’s open-data portal (DataSF), the Board of Supervisors’ legislative record (Legistar), the Ethics Commission’s filings, IRS returns, federal and State datasets, court dockets and published reports. On a case page, each numbered source links to the original; a DataSF dataset also has a link to download it as a CSV file.</p><p>A few records were obtained by a public records request or saved by hand from a site that does not allow automated download. Those sources link to the agency’s own search page or say “Not online”, with the agency to ask. Records the project asked for and could not get are listed under <a href="#wanted">Requested data</a>, with how to ask for each one.</p></div>
         ${C.sourceReview?.unique ? `<section class="section"><h2>Case citation check</h2><p class="sub">On ${esc(fmtDate(C.sourceReview.asOf))}, the ${C.sourceReview.citations.toLocaleString('en-US')} source entries across ${C.sourceReview.cases.toLocaleString('en-US')} cases pointed to ${C.sourceReview.unique.toLocaleString('en-US')} distinct public addresses. Automated requests reached ${C.sourceReview.reachable.toLocaleString('en-US')}. Of the others, ${C.sourceReview.forbidden.toLocaleString('en-US')} returned an access restriction. Some archives require a browser or a record search. This check measures link availability. Use the cited document, reporting period and case notes to verify the finding itself.</p></section>` : ''}
         ${C.sourceReview?.archiveReview ? `<section class="section"><h2>What the archive review covered</h2><p class="sub">The content scan began with ${C.sourceReview.archiveReview.initialFiles.toLocaleString('en-US')} files, including the owner-supplied collections and extracted copies. It read ${C.sourceReview.archiveReview.rows.toLocaleString('en-US')} rows in standalone tables. A separate pass examined ${C.sourceReview.archiveReview.sheets.toLocaleString('en-US')} worksheet rows. These counts can overlap across copies. Optical character recognition covered all 25,385 pages in the scan index. The evidence review describes damaged files, recovered originals and remaining gaps. Case pages cite the records used for each finding. <a href="EVIDENCE_REVIEW.md" download>Download the evidence review</a>.</p></section>` : ''}
-        <section class="section"><h2>How long did public work take?</h2><p class="sub"><a href="#s/permit_metrics">Building permit review times</a> show which review stations take longest. <a href="#s/delivery_time">Capital project completion times</a> compare bond components with their original schedules. View reported completions and projections separately, or <a href="assets/data/bond-completion-dates.json" download>download all 83 bond components and dates</a>.</p></section>
+        <section class="section"><h2>What did the rail budgets deliver?</h2><p class="sub"><a href="#s/bart_operations">BART spending, riders and service hours</a> compares budgets with actuals and federal service data. <a href="#s/caltrain_operations">Caltrain budgets, ridership and project delivery</a> tracks passenger fares and individual project milestones.</p></section>
+        <section class="section"><h2>How long did public work take?</h2><p class="sub"><a href="#permit-time">Look up a permit by number</a> or download the complete timeline register. <a href="#s/permit_metrics">Building permit review times</a> show which review stations take longest. <a href="#s/delivery_time">Capital project completion times</a> compare bond components with their original schedules. View reported completions and projections separately, or <a href="assets/data/bond-completion-dates.json" download>download all 83 bond components and dates</a>.</p></section>
         <section class="section"><h2>Which rules applied on the decision date?</h2><p class="sub">The 2014 HealthRIGHT360 review uses the law and budget in the signed resolution. Six months of actual expenses, the remaining budget and a 12% contingency on that remaining budget add to the approved $62,797,796 ceiling. For the November 2026 Charter amendment, the City Attorney tied the effective date to state acceptance after the Board declares the results. The election alone did not change the approval threshold.</p><p><a href="https://sfgov.legistar.com/View.ashx?M=F&amp;ID=3184657&amp;GUID=EC33BB48-DEBF-4BBE-AE1E-A636AAF177BF">2014 analyst’s budget, pages 44–46</a> · <a href="https://sfbos.org/ftp/uploadedfiles/bdsupvrs/resolutions14/r0304-14.pdf">Signed 2014 resolution</a> · <a href="https://media.api.sf.gov/documents/Memo_re_Impacts_of_Charter_Amendments_in_Propositions_A_E_and_F.pdf">November 2026 City Attorney memo, pages 1 and 11</a></p></section>
         <h3 style="margin:24px 0 8px">City datasets used</h3>${tableOf([{ h: 'Dataset', f: m => `<a href="${esc(m.portal)}" target="_blank" rel="noopener noreferrer"><b>${esc(m.officialName || m.dataset)}</b> ↗</a><small>${esc(m.why || '')}</small>` }, { h: 'Rows', num: 1, f: m => (m.rows || 0).toLocaleString() }, { h: 'Source updated', f: m => esc(m.portalRowsUpdated || '') }, { h: 'Download', f: m => dsId(m.portal) ? `<a href="${esc(csvUrl(dsId(m.portal)))}" target="_blank" rel="noopener noreferrer">CSV ↓</a>` : '' }], C.manifest)}
         <h3 style="margin:24px 0 8px">Other collections</h3><p class="sub">These collections include downloaded records and supporting files. Use the links on an individual case to find the document, query or registry identifier behind a finding.</p>${tableOf([{ h: 'Collection', f: e => `<b>${esc(e.title || e.folder)}</b>` }, { h: 'Downloaded from', f: e => (e.from || []).length ? e.from.map(h => `<a href="${esc(h.u)}" target="_blank" rel="noopener noreferrer">${esc(h.t)}</a>`).join(', ') : 'Several public sites; see the sources on each page' }, { h: 'Files', num: 1, f: e => e.files.toLocaleString() }, { h: 'Size', num: 1, f: e => e.mb.toLocaleString() + ' MB' }], C.extraData)}` : ''}
       <section class="section"><p class="small muted">Built ${esc(C.built)}.</p></section>`;
   }
   const notFound = () => `${head('Not found', 'That page does not exist', '')}<a class="btn" href="#">Back to the films</a>`;
+
+  function permitTimePage(initialId) {
+    const id = String(initialId || '').trim().toUpperCase();
+    const path = 'assets/data/permit-duration/';
+    const reasons = {
+      issued: 'The register records a filing date and a subsequent or same-day issuance.',
+      open: 'The permit was still listed with an active pre-issuance status at the snapshot.',
+      ended: 'The register shows a closed status without a comparable issuance date.',
+      other: 'The recorded status and dates do not support an issuance interval or an open-application age.',
+      filing_missing: 'The record has no usable filing date.',
+      sequence: 'The recorded dates are out of sequence.',
+      open_inconsistent: 'The status and milestone dates disagree.'
+    };
+    const day = value => value == null ? 'Unrecorded' : new Date(value * 86400000).toISOString().slice(0, 10);
+    const interval = value => value == null ? 'Unavailable' : value.toLocaleString('en-US') + (value === 1 ? ' day' : ' days');
+    after.push(() => {
+      const form = document.getElementById('permit-time-form'), result = document.getElementById('permit-time-result');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const entered = form.elements.permit.value.trim().toUpperCase();
+        if (entered) location.hash = 'permit-time/' + encodeURIComponent(entered);
+      });
+      if (!id) return;
+      if (!/^[A-Z0-9]{2,12}$/.test(id)) {
+        result.textContent = 'Enter the permit number as printed, including any leading zeroes.';
+        return;
+      }
+      const read = async file => {
+        const response = await fetch(path + file);
+        if (!response.ok) throw new Error('Download failed');
+        return response.json();
+      };
+      let bucket = 0;
+      for (const char of id) bucket = (31 * bucket + char.charCodeAt(0)) & 255;
+      result.textContent = 'Looking up this permit…';
+      Promise.all([read('index.json'), read('by-prefix/' + bucket.toString(16).padStart(2, '0') + '.json')]).then(([index, rows]) => {
+        const row = rows.find(r => r[0] === id);
+        if (!row) { result.textContent = 'No match for ' + id + ' in the register snapshot of ' + index.asOf + '.'; return; }
+        const fields = [['Filed', day(row[3])], ['Approved', day(row[10])], ['Issued', day(row[4])], ['Completed', day(row[5])],
+          ['Recorded status', index.statuses[row[2]] || 'Unrecorded'], ['Status date', day(row[6])],
+          ['Filing to approval', interval(row[11])], ['Filing to issuance', interval(row[7])], ['Age of open application', interval(row[8])], ['Filing to terminal status', interval(row[12])]];
+        result.innerHTML = '<h2>Permit ' + esc(id) + '</h2><p>' + esc(reasons[index.classifications[row[9]]] || '') + '</p><dl>' +
+          fields.map(([k, v]) => '<div><dt>' + esc(k) + '</dt><dd>' + esc(v) + '</dd></div>').join('') +
+          '</dl><p class="small">Calendar days. Open age is measured on ' + esc(index.asOf) + '.</p>';
+      }).catch(() => {
+        result.textContent = 'The permit records could not be loaded. Open the full CSV below or retry the lookup on the hosted site.';
+      });
+    });
+    return head('Building permits', 'Look up a permit’s timeline', 'Find filing, issuance, completion and status dates by permit number. The register measures elapsed calendar time, including any time spent with the applicant.') +
+      '<section class="card pad"><form id="permit-time-form" class="filters"><label for="permit-time-id">Permit number</label><input id="permit-time-id" name="permit" type="search" required maxlength="12" autocomplete="off" value="' + esc(id) + '"><button class="btn" type="submit">Look up</button></form><div id="permit-time-result" class="section permit-timing-result" aria-live="polite"></div>' +
+      '<p><a href="' + path + 'permits.csv.gz" download>Download every permit timeline (CSV, gzip)</a> · <a href="#s/permit_metrics">Compare review times</a></p></section>';
+  }
 
   /* ---------- hand the helpers to the second module (plan, trace, outcomes, extra screens) ---------- */
   const FDX = window.FDX; if (FDX) FDX.init({ C, esc, money, full, tier, head, stat, chartBox, tableOf, after, need, S, fmtDate, dept, byId, main, slugOf, rerender });
@@ -460,6 +513,7 @@
       else if (r === '' || r === 'briefing') { html = briefing(); nav = FEED ? 'briefing' : ''; }
       else if (r === 'cases') html = (a === 'federal' && FDX && FDX.prosecutions && C.hasProsecutions && await FDX.prosecutions()) || casesPage() + (FDX && C.hasProsecutions ? `<p style="margin-top:22px"><a class="btn" href="#cases/federal">Federal prosecutions and settlements, by subject →</a></p>` : '');
       else if (r === 'case') { html = byId[a] ? casePage(byId[a]) : notFound(); nav = 'cases'; }
+      else if (r === 'permit-time') { html = permitTimePage(a); nav = 'topics'; }
       else if (r === 'patterns') html = patternsPage();
       else if (r === 'pattern') { html = patternsPage(a); nav = 'patterns'; }
       else if (r === 'orgs') html = orgsPage(await need('orgs'));

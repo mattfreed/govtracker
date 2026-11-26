@@ -23,6 +23,10 @@
   "seconds": 130.5,
   "passages": 30
  },
+ "bart-construction-work-tag-settlement": {
+  "seconds": 45.8,
+  "passages": 12
+ },
  "bart-overtime-highest-transit": {
   "seconds": 156.7,
   "passages": 41
@@ -59,6 +63,10 @@
   "seconds": 148.0,
   "passages": 39
  },
+ "building-permits-still-listed-open": {
+  "seconds": 57.0,
+  "passages": 12
+ },
  "buildings-bought-for-housing": {
   "seconds": 130.1,
   "passages": 38
@@ -66,6 +74,10 @@
  "bvhpf-tier3-still-funded": {
   "seconds": 130.0,
   "passages": 34
+ },
+ "caltrain-train-control-contract-replacement": {
+  "seconds": 46.8,
+  "passages": 12
  },
  "certified-local-firms-large-affiliates": {
   "seconds": 153.1,
@@ -102,6 +114,10 @@
  "city-rents-from-landlords-in-foreclosure": {
   "seconds": 70.8,
   "passages": 16
+ },
+ "citywide-labor-agreement-bid-terms": {
+  "seconds": 49.6,
+  "passages": 13
  },
  "community-challenge-grants": {
   "seconds": 130.9,
@@ -178,6 +194,10 @@
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
   "passages": 33
+ },
+ "farrell-campaign-shared-expense-settlement": {
+  "seconds": 46.8,
+  "passages": 12
  },
  "federal-bid-rigging-firms-still-paid": {
   "seconds": 130.4,
@@ -263,9 +283,17 @@
   "seconds": 173.8,
   "passages": 45
  },
+ "janitorial-workers-compensation-premium-fraud": {
+  "seconds": 47.9,
+  "passages": 12
+ },
  "kelly-wong-puc": {
   "seconds": 130.5,
   "passages": 34
+ },
+ "kezar-architect-state-contracting-ban": {
+  "seconds": 57.6,
+  "passages": 12
  },
  "laguna-honda-federal-fines": {
   "seconds": 130.3,
@@ -403,6 +431,10 @@
   "seconds": 130.2,
   "passages": 35
  },
+ "physician-workers-compensation-restitution": {
+  "seconds": 44.8,
+  "passages": 10
+ },
  "police-captains-overtime-in-lieu": {
   "seconds": 113.0,
   "passages": 28
@@ -414,6 +446,10 @@
  "police-retirees-rehired-960": {
   "seconds": 134.2,
   "passages": 31
+ },
+ "portsmouth-garage-renovation-overrun": {
+  "seconds": 56.2,
+  "passages": 12
  },
  "ppp-and-city-money": {
   "seconds": 134.1,
@@ -466,6 +502,10 @@
  "restricted-source-gift-cases": {
   "seconds": 130.7,
   "passages": 35
+ },
+ "safehouse-client-stipends-and-housing-loan": {
+  "seconds": 58.3,
+  "passages": 13
  },
  "salvation-army-food-distribution-eligibility": {
   "seconds": 44.0,
@@ -527,6 +567,10 @@
   "seconds": 56.4,
   "passages": 12
  },
+ "sfo-kone-escalator-billing-credit": {
+  "seconds": 41.5,
+  "passages": 12
+ },
  "sfo-runway-grant-reimbursement": {
   "seconds": 44.0,
   "passages": 9
@@ -546,6 +590,10 @@
  "side-doors-of-influence": {
   "seconds": 143.8,
   "passages": 38
+ },
+ "silicon-valley-bart-extension-cost-and-oversight": {
+  "seconds": 56.2,
+  "passages": 13
  },
  "small-grantees-insider-loans": {
   "seconds": 179.1,
@@ -635,6 +683,10 @@
   "seconds": 66.7,
   "passages": 14
  },
+ "van-ness-transit-construction-timeline": {
+  "seconds": 55.0,
+  "passages": 12
+ },
  "votes-on-interests-not-in-the-title": {
   "seconds": 65.3,
   "passages": 15
@@ -654,6 +706,10 @@
  "wehope-insider-building": {
   "seconds": 130.1,
   "passages": 31
+ },
+ "westside-pump-station-bid-outreach": {
+  "seconds": 44.6,
+  "passages": 12
  },
  "whistleblower-vendor-contract-enforcement": {
   "seconds": 48.6,
