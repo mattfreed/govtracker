@@ -93,7 +93,7 @@
     const pageRows = rows.slice(start, start + PAGE_SIZE);
     const count = rows.length;
     const range = count > PAGE_SIZE ? `Rows ${num(start + 1)}–${num(start + pageRows.length)} of ${num(count)}.` : '';
-    const coverage = s.total > s.rows.length ? `This table includes ${num(s.rows.length)} selected rows. The analysis reports ${num(s.total)} in total.` : `${num(s.rows.length)} available row${s.rows.length === 1 ? '' : 's'}.`;
+    const coverage = s.total > s.rows.length ? `This table includes ${num(s.rows.length)} selected rows. The analysis reports ${num(s.total)} in total. ${esc(s.rowCoverage || '')}` : `${num(s.rows.length)} available row${s.rows.length === 1 ? '' : 's'}.`;
     const navigation = pages > 1 ? `<nav class="filters" aria-label="Table pages">
       <button type="button" class="btn sm" data-page="0" ${st.page === 0 ? 'disabled' : ''}>First</button>
       <button type="button" class="btn sm" data-page="${st.page - 1}" ${st.page === 0 ? 'disabled' : ''}>Previous</button>
@@ -183,12 +183,24 @@
   Y.screen = async arg => {
     const [g, id] = String(arg || '').split('.'), G = (await need('screens'))[g]; if (!G) return null;
     if (!id) return groupPage(g, G);
-    const s = G.screens.find(x => x.id === id); if (!s) return null;
+    let s = G.screens.find(x => x.id === id); if (!s) return null;
+    let loadFailed = false;
+    if (s.rowCount > s.rows.length) {
+      try {
+        const response = await fetch(s.download + (s.rowVersion ? '?v=' + s.rowVersion : ''));
+        if (!response.ok) throw new Error('Could not load table');
+        const data = await response.json();
+        if (data.id !== s.id || !Array.isArray(data.rows) || data.rows.length !== s.rowCount) throw new Error('Incomplete table');
+        s = {...s, rows: data.rows};
+      } catch {
+        loadFailed = true;
+      }
+    }
     if (st.key !== arg) { st.key = arg; st.sort = null; st.q = ''; st.dir = -1; st.page = 0; }
     mountTable(s);
     return `${head((C.screenGroups[g] || {}).title || 'Records', esc(s.title), esc(s.question || ''))}${findingBox(s)}${chartHtml(s.chart, 'gen-chart')}
       <div class="note how"><p><b>How this was worked out.</b> ${esc(s.how || '')}</p><p><b>What it cannot show.</b> ${esc(s.limits || '')}</p></div>
-      ${s.rows && s.rows.length ? `<section class="section">${s.download ? `<p><a href="${esc(s.download)}" download>Download ${s.total > s.rows.length ? 'the' : 'all'} ${num(s.rows.length)} ${s.total > s.rows.length ? 'selected rows' : 'rows'} (JSON)</a></p>` : ''}<div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="Search all ${num(s.rows.length)} available rows…" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
+      ${s.rows && s.rows.length ? `<section class="section">${loadFailed ? '<p role="alert">The full table could not be loaded. The preview is available below. Open the download for the complete table or reload to retry.</p>' : ''}${s.download ? `<p><a href="${esc(s.download)}" download>Download all ${num(s.rowCount || s.rows.length)} published rows (JSON)</a></p>` : ''}<div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="Search all ${num(s.rows.length)} available rows…" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
       ${sourcesHtml(s.sources)}`;
   };
   function groupPage(g, G) {
@@ -198,6 +210,7 @@
     return `${head('Records', esc(G.title || g), esc(G.lede || ''))}
       ${steps.length ? `<section class="section"><h2>The process, step by step</h2><p class="sub">A typical mid-size building job as the City's own records show it. The bar is the median number of days at that step; “needs first” lists what must already be in hand.</p><ol class="proc">${steps.map(x => `<li><span class="pin">${esc(x.n)}</span><div><h3>${esc(x.name)} <span class="tag">${esc(x.dept || '')}</span></h3><p>${esc(x.what || '')}</p>${(x.needsFirst || []).length ? `<p class="small muted">Needs first: ${x.needsFirst.map(n => `<span class="chip">${esc(n)}</span>`).join(' ')}</p>` : ''}</div><div class="pd">${x.medianDays != null ? `<b>${num(x.medianDays)}</b> days<i style="width:${Math.max(3, 100 * x.medianDays / maxd)}%"></i>` : ''}</div></li>`).join('')}</ol></section>` : ''}
       <section class="section"><h2>What the records show</h2><div class="grid find-grid">${G.screens.map(s => `<a class="card find-card bar-${esc(s.tier || 'REDFLAG')}" href="#s/${esc(g)}.${esc(s.id)}"><div class="row">${stier(s.tier)}</div><h3>${esc(s.title)}</h3><p>${esc(s.finding || s.question || '')}</p><span class="go">See the records →</span></a>`).join('')}</div></section>
+      ${g === 'rings' && window.FDX ? window.FDX.comparisonDownloads(G.comparisons, [['edgesDownload', 'Individual relationship records and source locators'], ['intermediariesDownload', 'All intermediaries and path counts'], ['threeStepDownload', 'Four-organization payment paths and three-organization cycles'], ['reviewedGroupsDownload', 'Members and links of every reviewed group']]) : ''}
       ${(G.clusters || []).length ? `<section class="section"><h2>The largest groups, drawn</h2><p class="sub">Each mark is a member: circles are organizations and firms, squares people, triangles addresses. Colour shows that member’s own standing: a party to a proven or charged case, the subject of an official finding, or a lead; grey means none. An organization that a case file only names keeps its own colour. A line is a recorded link, and being linked is not being involved. Hover or tab to a mark for its name and what is on record about it.</p><div class="grid cls">${G.clusters.slice(0, 12).map(clusterSvg).join('')}</div><div class="lg" style="margin-top:10px">${TIERS.map(t => `<span><i style="background:${TCOL[t]}"></i>${t === 'REDFLAG' ? 'Lead' : t === 'OFFICIAL' ? 'Official finding' : t === 'CHARGED' ? 'Charged' : 'Proven'}</span>`).join('')}<span><i style="background:var(--deemph)"></i>No sign</span></div></section>` : ''}
       ${areas.length ? `<section class="section"><h2>Neighbourhood by neighbourhood</h2><p class="sub">Share of proposals that did not end in approval, after adjusting for the mix of proposal types. Neighbourhoods with at least 50 cases. A difference between areas is not proof of bias: zoning, lot sizes and who applies all differ.</p><div class="area-bars">${areas.map(a => `<div class="ab"><span>${esc(a.name)}${a.district ? ` <small>D${esc(a.district)}</small>` : ''}</span><div><i style="width:${100 * (a.adjusted ?? a.nonApproval) / amax}%"></i></div><b>${unitFmt('pct')(a.adjusted ?? a.nonApproval)}</b><small>${num(a.n)} cases</small></div>`).join('')}</div></section>` : ''}
       ${(G.official || []).length ? `<section class="section"><h2>What official reviewers have already said</h2><ul class="off-list">${G.official.map(o => `<li>${tier('OFFICIAL')}<div><b>${esc(o.p || '')}${o.d ? ', ' + esc(fmtDate(o.d)) : ''}.</b> ${esc(o.said || '')} ${o.u && /^https?:\/\//.test(o.u) ? `<a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t || 'Source')} ↗</a>` : esc(o.t || '')}</div></li>`).join('')}</ul></section>` : ''}

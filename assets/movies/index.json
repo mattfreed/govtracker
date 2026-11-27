@@ -163,6 +163,10 @@
   "seconds": 41.7,
   "passages": 11
  },
+ "city-college-distance-education-apportionment": {
+  "seconds": 72.1,
+  "passages": 15
+ },
  "city-college-findings-that-came-back": {
   "seconds": 138.0,
   "passages": 30
@@ -170,6 +174,10 @@
  "city-computer-store-monarch-invoices": {
   "seconds": 57.5,
   "passages": 14
+ },
+ "city-concession-receipts-rent-reconciliation": {
+  "seconds": 130.0,
+  "passages": 27
  },
  "city-funded-nonprofits-fund-political-arms": {
   "seconds": 130.7,
@@ -307,6 +315,10 @@
   "seconds": 130.2,
   "passages": 38
  },
+ "golden-gate-park-tennis-rent": {
+  "seconds": 80.9,
+  "passages": 20
+ },
  "good-rural-numbers-that-change": {
   "seconds": 132.1,
   "passages": 31
@@ -314,6 +326,10 @@
  "grand-jury-promises-not-kept": {
   "seconds": 127.2,
   "passages": 27
+ },
+ "hanson-bay-sand-royalty-settlement": {
+  "seconds": 71.3,
+  "passages": 14
  },
  "homelessness-money-and-results": {
   "seconds": 133.2,
@@ -443,6 +459,10 @@
   "seconds": 130.3,
   "passages": 34
  },
+ "mission-valley-rock-quarry-royalties": {
+  "seconds": 59.5,
+  "passages": 14
+ },
  "money-files-nobody-votes-against": {
   "seconds": 130.3,
   "passages": 35
@@ -547,9 +567,13 @@
   "seconds": 134.2,
   "passages": 31
  },
+ "port-embarcadero-percentage-rent-overcharge": {
+  "seconds": 43.3,
+  "passages": 12
+ },
  "port-pier-23-rent-and-rebid": {
-  "seconds": 57.2,
-  "passages": 14
+  "seconds": 76.8,
+  "passages": 19
  },
  "port-rent-arrears-and-collections": {
   "seconds": 55.9,
@@ -619,6 +643,10 @@
   "seconds": 130.7,
   "passages": 35
  },
+ "rmc-bay-sand-royalty-settlement": {
+  "seconds": 48.3,
+  "passages": 10
+ },
  "safehouse-client-stipends-and-housing-loan": {
   "seconds": 58.3,
   "passages": 13
@@ -639,6 +667,10 @@
   "seconds": 178.5,
   "passages": 38
  },
+ "scoot-subcontractor-permit-penalty": {
+  "seconds": 93.3,
+  "passages": 27
+ },
  "security-guards-paid-outside-the-bid": {
   "seconds": 131.8,
   "passages": 33
@@ -656,8 +688,8 @@
   "passages": 36
  },
  "sf-plumbing-permit-after-state-license-revocation": {
-  "seconds": 94.8,
-  "passages": 19
+  "seconds": 121.6,
+  "passages": 26
  },
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
@@ -698,6 +730,10 @@
  "sfmta-shop-rents-changed-by-word": {
   "seconds": 143.7,
   "passages": 31
+ },
+ "sfo-aeromexico-landing-weight-fees": {
+  "seconds": 65.0,
+  "passages": 14
  },
  "sfo-airtrain-settlement-renewal": {
   "seconds": 72.5,
@@ -770,6 +806,10 @@
  "spent-first-approved-later": {
   "seconds": 132.0,
   "passages": 41
+ },
+ "st-francis-marine-lease-audits": {
+  "seconds": 79.7,
+  "passages": 19
  },
  "st-james-infirmary-books-stop-adding-up": {
   "seconds": 145.8,

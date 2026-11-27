@@ -359,6 +359,76 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 [View records](https://sfgovtracker.com/#wanted)
 
+### Broaden the voucher comparison and test ordinary milestone payments
+
+2026-11-27 · Reviewed
+
+**Records examined** 3,337,302 positive voucher-and-department observations from 13,995 suppliers.
+
+**Test** Retain payments below $25,000, round-dollar payments, third and later vouchers, cross-year and cross-department matches. Compare smaller amount differences on the same order.
+
+**Result** 311,168 equal-amount groups, including 159,565 with three or more vouchers. Another 1,858,523 pairs of distinct amounts fell within $100 and 1% on an identified order, within department and year. These populations overlap.
+
+**Open question** Reconcile recurring $6,440,445.50 New Flyer vouchers against coach numbers, acceptance milestones and invoices.
+
+[View records](https://sfgovtracker.com/#contracts/forensics)
+
+### Rebuild the organizational relationship graph
+
+2026-11-27 · Reviewed
+
+**Records examined** 86,790 source rows including unflagged entities and common intermediaries.
+
+**Test** Keep the reporter’s wording alongside the recipient’s own filer label. Count paths and cycles from identified source records.
+
+**Result** 24,750 nodes and 155,647 four-organization money paths. Twenty-four paths involved no previously matched case or flag. Thirty-one three-organization cycles appeared across the covered periods.
+
+**Open question** Check period, ownership, fiscal sponsorship and transfer restrictions before attributing any coordinated conduct.
+
+[View records](https://sfgovtracker.com/#s/rings.the-groups)
+
+### Check license changes while building applications were pending
+
+2026-11-27 · Reviewed
+
+**Records examined** State license events matched to building permits and full City contact histories.
+
+**Test** Review exact license numbers, effective orders, same-day and intervening events, dated substitutions and later status.
+
+**Result** Ten exact-number application-window pairs entered review. Six had substitutions by issuance, three permits across two parcels supported an expansion of the existing case, and one earlier licensing history remained open.
+
+**Open question** Obtain signed declarations and intervening orders for the unresolved roles and dates.
+
+[View records](https://sfgovtracker.com/#s/contractor_revocations.outcomes)
+
+### Cross-check concession rent in both directions
+
+2026-11-27 · Reviewed
+
+**Records examined** 1,360 records in the saved Controller catalogue. The lease, concession, rent and royalty title search identified 78 audit reports.
+
+**Test** Retain all 78 reports, including ordinary compliance conclusions. Review the 17 with financial-exception terms in the title against the issuer PDFs and responses.
+
+**Result** The tennis audit distinguished $310,003 in understated receipts from $10,593 in rent and a $530 late charge. The park department disputed the accounting interpretation and agreed to collect the additional revenue. The Controller later closed the audit.
+
+**Open question** Inspect the individual collection or credit entry before publishing a remaining balance.
+
+[View records](https://sfgovtracker.com/#s/concession_audits.lease-reports)
+
+### Verify what separate project documents say about a disclosed bank
+
+2026-11-27 · Reviewed
+
+**Records examined** 5,300 searchable Board attachments, including packets for appeals of Planning decisions.
+
+**Test** Match exact Planning application and roll-call records to each member’s declarations. Check the actual role on every page returned.
+
+**Result** 2,458 pages identified a single linked application. Four pages also named a bank a member had disclosed. One was an appeal fee check, two described a former tenant, and one used its name in an area-plan site label. None of the four established a financial role in the application.
+
+**Open question** Obtain project-team contracts or financing records to establish whether an entity owned, designed, financed or represented a project at the time.
+
+[View records](https://sfgovtracker.com/#s/sidedoors.project-file-declared-interest)
+
 ## Investigation questions
 
 ### Grant routing and fiscal sponsorship
@@ -720,6 +790,26 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **Did a later state order restore a contractor’s license before permits that the date screen flagged?** Tested. The signed state decision for license 432216 confirms reinstatement on August 10, 2015. Among 86 later permit and license matches, 77 preceded or coincided with the next expiration. Renewal after that date was unresolved in the decision. [Records](https://sfgovtracker.com/#s/contractor_revocations.permit-years)
 
 - **What did each issuer know about stays, substitutions, or exemptions when a historical permit was approved?** Partly tested. The inspection history and a signed order are available in the 2024 plumbing file. Certified historical status, declarations, and amendments must be checked for each permit. [Records](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
+
+### Reopened payment, project, permit and lease comparisons
+
+- **Do the same vendor and amount recur across three or more vouchers, fiscal years, or departments?** Tested. Reconcile each voucher to underlying invoice numbers, purchases, deliveries and credits. [Records](https://sfgovtracker.com/#contracts/forensics)
+
+- **Can almost equal payment amounts on the same purchase order be tied to different deliveries or milestones?** Tested. Review invoices, unit prices, acceptance certificates and reversals before attributing a duplicate payment. [Records](https://sfgovtracker.com/#contracts/forensics)
+
+- **Can money move through an organization that had no prior flag, or pass through a high-volume institution?** Tested. Compare filing identifiers, tax periods, direction, purposes and independently recorded payments on each edge. [Records](https://sfgovtracker.com/#s/rings.the-groups)
+
+- **Do differing reporter and filer names refer to the same legal organization?** Tested. Keep both names alongside the EIN as filed and compare the recipient’s own return for the period. [Records](https://sfgovtracker.com/#s/rings.the-groups)
+
+- **Does a license change between permit filing and issuance, and was the contractor replaced by issuance?** Tested. Compare complete dated contact histories, effective state orders, later reinstatements and signed declarations. [Records](https://sfgovtracker.com/#s/contractor_revocations.outcomes)
+
+- **Which accounting period generated a rent difference, and did the department dispute or later close the finding?** Tested. Read the operating agreement, audit exhibits, department response and subsequent closure. Distinguish assessed and collected rent. [Records](https://sfgovtracker.com/#case/golden-gate-park-tennis-rent)
+
+- **When did a City tenant pay too much, and did a subsequent adjustment credit the right operator?** Tested. Compare the audit’s tenant and period with the City’s receivable ledger, credit memo and subsequent billing. [Records](https://sfgovtracker.com/#s/concession_audits.lease-reports)
+
+- **Can a separate project filing identify a business that a commissioner disclosed even when the roll-call description omits it?** Tested. Match Planning application numbers and dated roll calls to source pages and the official’s disclosure. Verify the project role before treating a reference as a conflict. [Records](https://sfgovtracker.com/#s/sidedoors.project-file-declared-interest)
+
+- **Did an audited amount change because missing source documents, a change in operator or a settlement interrupted the audit?** Tested. Trace each lease, tenant, audit period and later settlement. Recoveries and unresolved balances carry separate dates. [Records](https://sfgovtracker.com/#s/concession_audits.lease-reports)
 
 ## Nonprofits and grants
 
@@ -1674,7 +1764,7 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **What it looks like in the records:** Shared officers and addresses; money passing between members; several kinds of warning sign inside one group; a firm paid by many funded nonprofits.
 - **Data:** Every analysis file; tax-return officer, contractor and grant tables; business registrations
 - **Screen:** `the “rings” analysis`
-- **Found this edition:** 50 linked groups were found among 1,072 flagged organizations, firms and addresses. The top-ranked group is named after Urban Alchemy: 6 members carrying 14 different kinds of warning sign and $218.6 million of City money since fiscal 2019; of its members none is a party to a proven or charged case, 2 are the subject of an official finding of its own, and none is named in the file of a proven or charged case without being a party. Across all 50 groups, 4 hold a member that is itself a party to a proven or charged case, 14 hold a member that is the subject of an official finding, and 4 hold a member that is only named in such a case file.
+- **Found this edition:** 111 linked groups were found among 2,305 flagged organizations, firms and addresses. The top-ranked group is named after Felton Institute: 6 members carrying 46 different kinds of warning sign and $426.9 million of City money since fiscal 2019; of its members none is a party to a proven or charged case, one is the subject of an official finding of its own, and 3 are named in the file of a proven or charged case without being a party; attached to it by one route: Gwendolyn Westbrook, party to a charged case (charged; not decided, 2026-02-23). Across all 111 groups, 4 hold a member that is itself a party to a proven or charged case, 19 hold a member that is the subject of an official finding, and 4 hold a member that is only named in such a case file.
 - **How to trace it yourself:**
   1. Look for: Shared officers and addresses; money passing between members; several kinds of warning sign inside one group; a firm paid by many funded nonprofits.
   2. In these records: Every analysis file; tax-return officer, contractor and grant tables; business registrations.
@@ -2158,7 +2248,7 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **What it looks like in the records:** One name across several screen groups; a waived contract after an agreement grew; an affiliate as certified subcontractor; a commission seat at a payee.
 - **Data:** The finished screen files of every group, joined by organization name or street address
 - **Screen:** `the “crosslinks” analysis`
-- **Found this edition:** 4 of the 6 nursing-home operators the City pays by name also appear in the contract screens (growth, no-bid or sole-source): $221.6 million paid in all; 3 of the 4 are confirmed as the operator by their registered address, the rest are name matches. Crestwood Behavioral Health Inc and Helios Healthcare LLC are counted separately here, but their contract notices share a telephone, e-mail domain or officers, so they may be one management. The largest, Crestwood Behavioral Health Inc, was paid $191.1 million; its Public Health agreement grew to $224.2 million (190% over the first approval) and a further $26.3 million contract followed that was not put out to bid (bidding waived by ordinance).
+- **Found this edition:** 5 of the 6 nursing-home operators the City pays by name also appear in the contract screens (growth, no-bid or sole-source): $222.0 million paid in all; 3 of the 5 are confirmed as the operator by their registered address, the rest are name matches. Crestwood Behavioral Health Inc and Helios Healthcare LLC are counted separately here, but their contract notices share a telephone, e-mail domain or officers, so they may be one management. The largest, Crestwood Behavioral Health Inc, was paid $191.1 million; its Public Health agreement grew to $224.2 million (190% over the first approval) and a further $26.3 million contract followed that was not put out to bid (bidding waived by ordinance).
 - **How to trace it yourself:**
   1. Take the published rows of each new screen.
   2. Look each organization up by normalised name, or each building by street number and name, in every older screen.

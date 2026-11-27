@@ -1,4 +1,18 @@
-# Evidence review, November 25–26, 2026
+# Evidence review, November 25–27, 2026
+
+## Reopened investigations on November 27
+
+The current edition contains 236 case files. The public citation check tested 2,069 distinct URLs across 3,657 case citations. 1,976 returned content. 87 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+
+The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
+
+The permit review recovered ten application-and-license pairs with an intervening state action. Six had a contractor or owner-builder substitution by issuance. Three previously omitted permits at two properties were added to the existing case. The project document review checked 5,300 Board attachments. Four pages named a disclosed bank alongside a project identifier, but the pages showed a fee check, a former tenant and a geographical label.
+
+The Controller’s catalogue yielded 78 reports with lease, rent, royalty or concession terms in the title. The 17 titles referring to financial exceptions were traced to individual audit PDFs. The Tennis Center case includes the operator’s reporting periods, the park department’s disagreement, and the subsequent closure. The rent tables distinguish money owed by a tenant from money the City owed a tenant.
+
+The [investigation plan](FRAUD_DETECTION_PLAN.md) records the searches, tested alternatives and outstanding evidence. The archive was inventoried again from the filesystem, including newly eligible directories. The previous checks below remain dated to their original snapshots.
+
+## Earlier coverage
 
 The review covered earlier collections, the November intake and both additional-supplied directories. The inventory counted 171,142 files occupying 95.76 GB. A file can be a source document, a duplicate download, a text extract or an administrative record. The number of files is larger than the number of independent sources.
 
