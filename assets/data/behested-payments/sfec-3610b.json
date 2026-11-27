@@ -1,0 +1,772 @@
+{
+ "series": "SFEC Form 3610b, corrected itemized payments",
+ "rows": [
+  {
+   "official": "Norman Yee",
+   "payor": "Residential Builders Association San Francisco",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2019-03-11",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0ed9d8ab-749b-4677-a2b6-bff324d6b2f9.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Asian Pacific Fund",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2019-03-02",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0ed9d8ab-749b-4677-a2b6-bff324d6b2f9.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Yerba Buena Commons Associates",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2019-03-12",
+   "amount": 4900.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0ed9d8ab-749b-4677-a2b6-bff324d6b2f9.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "New Deal Advisors",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2019-03-11",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0ed9d8ab-749b-4677-a2b6-bff324d6b2f9.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Lui Foundation",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2019-03-15",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0ed9d8ab-749b-4677-a2b6-bff324d6b2f9.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Recology",
+   "recipient": "Ingleside Community Fund",
+   "date": "2019-02-27",
+   "amount": 3000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/f3631df2-3d70-44be-853c-a30a55365834.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Apapa San Francisco Chapter",
+   "recipient": "Ingleside Community Fund",
+   "date": "2019-02-21",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/f3631df2-3d70-44be-853c-a30a55365834.pdf"
+  },
+  {
+   "official": "Rafael Mandelman",
+   "payor": "Recology",
+   "recipient": "Equality California",
+   "date": "2019-03-25",
+   "amount": 10000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/d92c7e49-dc3a-4908-941e-ffc15b118676.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Kaiser Permanente",
+   "recipient": "Inc.",
+   "date": "2019-04-30",
+   "amount": 7500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/4c0adce8-d940-477c-a52f-e11c10f763b5.pdf"
+  },
+  {
+   "official": "Rafael Mandelman",
+   "payor": "Building Owners Management Association San Francisco",
+   "recipient": "Equality California",
+   "date": "2019-05-09",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8b9f70d0-8179-406a-80d9-74fca16e2154.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Inc.",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-06-27",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/6322b946-b48d-4528-92ba-6b658d58ec4e.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Skylink Tv USA San Francisco",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-07-16",
+   "amount": 3000.0,
+   "type": "In-Kind",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73d4e454-06ea-4fc7-96b9-66d4015e6635.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "At T",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-07-22",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/189b93e0-1b2c-483b-a1ed-c8b433e4f41c.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Comcast",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-08-02",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2702fb86-1093-4375-944f-2a20696609f5.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "a private party (not named)",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-08-06",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2702fb86-1093-4375-944f-2a20696609f5.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Recology",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-08-07",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2702fb86-1093-4375-944f-2a20696609f5.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "San Francisco Toyota",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2019-08-08",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2702fb86-1093-4375-944f-2a20696609f5.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Recology",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2019-09-06",
+   "amount": 1887.9,
+   "type": "In-Kind",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/4e1f6cac-c42f-425b-9cc2-d84ccbe934d1.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Kilroy Realty",
+   "recipient": "Bindlestiff",
+   "date": "2019-10-19",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/3b940d12-b8c9-457a-8fe5-69627d790d17.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Airbnb",
+   "recipient": "Bindlestiff",
+   "date": "2019-12-13",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/e49fcb20-4240-4482-9f46-af9962e03ac0.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "Recology",
+   "recipient": "Women S March San Francisco",
+   "date": "2020-01-17",
+   "amount": 2183.0,
+   "type": "In-Kind",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/add6f3cc-2c91-4d6e-92a1-0d93e4bece5d.pdf"
+  },
+  {
+   "official": "Paul Miyamoto",
+   "payor": "San Francisco Deputy Sheriff S Association",
+   "recipient": "San Francisco Juniors Volleyball Club",
+   "date": "2020-01-10",
+   "amount": 10000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/f3d4cf1b-73e2-468e-827a-613df041dbdf.pdf"
+  },
+  {
+   "official": "Paul Miyamoto",
+   "payor": "San Francisco Sheriff S Managing Supervisors Association",
+   "recipient": "San Francisco Juniors Volleyball Club",
+   "date": "2020-01-10",
+   "amount": 20000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/f3d4cf1b-73e2-468e-827a-613df041dbdf.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Recology",
+   "recipient": "Ocean Avenue Association",
+   "date": "2020-02-01",
+   "amount": 1951.98,
+   "type": "In-Kind",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/564a481f-1c8c-49a3-b4a8-e7c54372f082.pdf"
+  },
+  {
+   "official": "Aaron Peskin",
+   "payor": "LLC",
+   "recipient": "Mayor S Office Housing Community Development",
+   "date": "2020-03-03",
+   "amount": 100000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/85d13281-20c0-4369-b82a-27a1493402ef.pdf"
+  },
+  {
+   "official": "Hillary Ronen",
+   "payor": "Justicedignity Ca Seiu Local 2015 Id 1357256",
+   "recipient": "San Francisco Social Justice Democrats Id 1423204",
+   "date": "2020-02-29",
+   "amount": 28000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/c7494f54-0ba8-4672-b74c-15c8fea97085.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Facebook",
+   "recipient": "Community Housing Partnership",
+   "date": "2020-04-24",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/1cf5549c-eaf1-412d-bb3f-69eb00413693.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-20",
+   "amount": 1009.06,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-21",
+   "amount": 999.52,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Tom Hart Tjsb",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-21",
+   "amount": 999.52,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "New Deal Advisors",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-22",
+   "amount": 999.52,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-23",
+   "amount": 300.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-23",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-28",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Hearst",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-28",
+   "amount": 998.74,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "598 Brannan Phase 2 LLC C",
+   "recipient": "a private party (not named)",
+   "date": "2020-05-15",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8a23a6c2-34c8-4f6c-a6c2-18d3ca7b4a16.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "United Methodist Missions",
+   "recipient": "a private party (not named)",
+   "date": "2020-04-20",
+   "amount": 100000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/715ac094-bacd-4ec8-b5c8-22df3e2552b1.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Goldman Sachs Philanthropy Fund",
+   "recipient": "San Francisco Chamber Commerce Foundation",
+   "date": "2020-04-16",
+   "amount": 1500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ca937e5b-4a46-4735-8766-da0f1756560b.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Chamber Commerce Foundation",
+   "date": "2020-04-17",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ca937e5b-4a46-4735-8766-da0f1756560b.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Yerba Buena Commons Associates",
+   "recipient": "San Francisco Chamber Commerce Foundation",
+   "date": "2020-04-06",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ca937e5b-4a46-4735-8766-da0f1756560b.pdf"
+  },
+  {
+   "official": "Norman Yee",
+   "payor": "Hms Associates",
+   "recipient": "San Francisco Chamber Commerce Foundation",
+   "date": "2020-04-06",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ca937e5b-4a46-4735-8766-da0f1756560b.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Noyola Piccini Group",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-05-12",
+   "amount": 1500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2b3b11e4-9aa2-4347-a352-2e601fa57360.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Kswm Treasure Island",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-05-15",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2b3b11e4-9aa2-4347-a352-2e601fa57360.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "United Playaz Inc",
+   "date": "2020-04-27",
+   "amount": 250.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ba21592d-c3fd-4ca8-8b80-e1e4cc10e3b9.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Tenants Owners Development Todco",
+   "recipient": "United Playaz Inc",
+   "date": "2020-04-27",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ba21592d-c3fd-4ca8-8b80-e1e4cc10e3b9.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Boston Properties",
+   "recipient": "United Playaz Inc",
+   "date": "2020-04-27",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ba21592d-c3fd-4ca8-8b80-e1e4cc10e3b9.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "United Playaz Inc",
+   "date": "2020-04-27",
+   "amount": 100.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ba21592d-c3fd-4ca8-8b80-e1e4cc10e3b9.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Brookfield",
+   "recipient": "United Playaz Inc",
+   "date": "2020-04-27",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ba21592d-c3fd-4ca8-8b80-e1e4cc10e3b9.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "United Playaz Inc",
+   "date": "2020-04-27",
+   "amount": 50.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/ba21592d-c3fd-4ca8-8b80-e1e4cc10e3b9.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Gsw Arena",
+   "recipient": "St Vincent De Paul Society of SF",
+   "date": "2020-04-02",
+   "amount": 996.0,
+   "type": "In-Kind",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/5ecce56d-1f77-45aa-ba9d-9846dda755c6.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "75 Howard Owner LP",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-08-03",
+   "amount": 3500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/3f380a28-dac3-4f1e-b621-955f93f7afc0.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "a private party (not named)",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-05-22",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2d4817e2-87d0-48aa-a511-b61a362620dd.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "S2 Partners",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-07-06",
+   "amount": 500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2d4817e2-87d0-48aa-a511-b61a362620dd.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "Inc.",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-07-21",
+   "amount": 3223.09,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2d4817e2-87d0-48aa-a511-b61a362620dd.pdf"
+  },
+  {
+   "official": "Matt Haney",
+   "payor": "New Deal Advisors",
+   "recipient": "We R Home Restaurant Mersea Restaurant",
+   "date": "2020-06-08",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/2d4817e2-87d0-48aa-a511-b61a362620dd.pdf"
+  },
+  {
+   "official": "Sandra Lee Fewer",
+   "payor": "a private party (not named)",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2020-08-17",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/8e505f8a-7478-4ff7-8086-7469da9bfcd1.pdf"
+  },
+  {
+   "official": "Rafael Mandelman",
+   "payor": "Salesforce",
+   "recipient": "Equality California",
+   "date": "2020-09-09",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/11b56c49-92e3-4aa3-98fb-81096aff4f89.pdf"
+  },
+  {
+   "official": "Rafael Mandelman",
+   "payor": "Building Owners Managers Association San Francisco",
+   "recipient": "Equality California",
+   "date": "2020-09-09",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/11b56c49-92e3-4aa3-98fb-81096aff4f89.pdf"
+  },
+  {
+   "official": "Rafael Mandelman",
+   "payor": "Golden State Warriors",
+   "recipient": "Equality California",
+   "date": "2020-09-28",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/11b56c49-92e3-4aa3-98fb-81096aff4f89.pdf"
+  },
+  {
+   "official": "Rafael Mandelman",
+   "payor": "a private party (not named)",
+   "recipient": "Equality California",
+   "date": "2020-09-28",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/11b56c49-92e3-4aa3-98fb-81096aff4f89.pdf"
+  },
+  {
+   "official": "Juliet Barnett de Baubigny",
+   "payor": "a private party (not named)",
+   "recipient": "De Young Museum",
+   "date": "2020-08-21",
+   "amount": 50000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/b986ebb5-2070-41f1-95e8-74fc51030890.pdf"
+  },
+  {
+   "official": "Phil Ginsburg",
+   "payor": "a private party (not named)",
+   "recipient": "Spark San Francisco Public Schools",
+   "date": "2021-05-07",
+   "amount": 110000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/81c5bb9f-530e-4199-89e7-39b65ee56762.pdf"
+  },
+  {
+   "official": "Phil Ginsburg",
+   "payor": "Lsp Family Foundation",
+   "recipient": "Spark San Francisco Public Schools",
+   "date": "2021-05-04",
+   "amount": 10000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/81c5bb9f-530e-4199-89e7-39b65ee56762.pdf"
+  },
+  {
+   "official": "Phil Ginsburg",
+   "payor": "Silver Giving Foundation",
+   "recipient": "Spark San Francisco Public Schools",
+   "date": "2021-05-25",
+   "amount": 25000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/81c5bb9f-530e-4199-89e7-39b65ee56762.pdf"
+  },
+  {
+   "official": "Phil Ginsburg",
+   "payor": "a private party (not named)",
+   "recipient": "Spark San Francisco Public Schools",
+   "date": "2021-05-24",
+   "amount": 50000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/81c5bb9f-530e-4199-89e7-39b65ee56762.pdf"
+  },
+  {
+   "official": "Phil Ginsburg",
+   "payor": "a private party (not named)",
+   "recipient": "Spark San Francisco Public Schools",
+   "date": "2021-06-16",
+   "amount": 50000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/50f32c75-38ab-4d50-9ccd-502ce4cb3780.pdf"
+  },
+  {
+   "official": "Myrna Melgar",
+   "payor": "Swinerton",
+   "recipient": "Ingleside United Presbyterian Church",
+   "date": "2021-09-09",
+   "amount": 4000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/c9e535ef-264a-4f9f-90ec-6acbe32bab55.pdf"
+  },
+  {
+   "official": "CONNIE CHAN",
+   "payor": "Golden State Warriors",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2021-09-18",
+   "amount": 650.0,
+   "type": "In-Kind",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0412c6a4-141f-4561-ae35-4c9c5e02729c.pdf"
+  },
+  {
+   "official": "CONNIE CHAN",
+   "payor": "Golden State Warriors",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2021-09-18",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0412c6a4-141f-4561-ae35-4c9c5e02729c.pdf"
+  },
+  {
+   "official": "CONNIE CHAN",
+   "payor": "San Francisco Toyota",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2021-09-18",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0412c6a4-141f-4561-ae35-4c9c5e02729c.pdf"
+  },
+  {
+   "official": "CONNIE CHAN",
+   "payor": "Safeway",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2021-09-18",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0412c6a4-141f-4561-ae35-4c9c5e02729c.pdf"
+  },
+  {
+   "official": "CONNIE CHAN",
+   "payor": "Google",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2021-09-18",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0412c6a4-141f-4561-ae35-4c9c5e02729c.pdf"
+  },
+  {
+   "official": "CONNIE CHAN",
+   "payor": "Comcast",
+   "recipient": "Richmond Neighborhood Center",
+   "date": "2021-09-18",
+   "amount": 2000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/0412c6a4-141f-4561-ae35-4c9c5e02729c.pdf"
+  },
+  {
+   "official": "Joaquín Torres",
+   "payor": "Crankstart Foundation",
+   "recipient": "Housing Economic Rights Advocate",
+   "date": "2022-01-01",
+   "amount": 300000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/4541c584-71fa-41bd-b9ea-9bf9e3255f8c.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "San Francisco Association Realtors",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-06",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "a private party (not named)",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-09",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "San Francisco Apartment Association",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-09",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Edwin M Lee Democratic Club Political Action Committee",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-10",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Hotel Council San Francisco Pac",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-17",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Building Owners And Managers Association Of San Francisco Political Action Committee",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-17",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "San Francisco Forward Sponsored By San Francisco Chamber Commerce",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-17",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Bay Area Housing Action Coalition",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-17",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Residential Builders Association San Francisco",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-18",
+   "amount": 1000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Shorenstein Realty Services",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-01-22",
+   "amount": 5000.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  },
+  {
+   "official": "Brooke Jenkins",
+   "payor": "Kilroy Realty",
+   "recipient": "Brooke Jenkins Inauguration Committee",
+   "date": "2023-02-02",
+   "amount": 2500.0,
+   "type": "Monetary",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/sfec3610b/73f5a007-bc46-4fe7-a6aa-0048c1f3907e.pdf"
+  }
+ ],
+ "count": 85,
+ "reportedValue": 1039498.33
+}

@@ -1,0 +1,1767 @@
+{
+ "series": "Historic California Form 803, San Francisco filings",
+ "rows": [
+  {
+   "id": "803-001",
+   "official": "Edwin Lee",
+   "payor": "United",
+   "recipient": "Women S Foundation California",
+   "date": "2015-12-08",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151208_20160211_803_Mayor_United_Redacted.pdf"
+  },
+  {
+   "id": "803-002",
+   "official": "Edwin Lee",
+   "payor": "United",
+   "recipient": "Women S Foundation California",
+   "date": "2016-01-19",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160119_20160211_803_Mayor_United+2_Redacted.pdf"
+  },
+  {
+   "id": "803-003",
+   "official": "Edwin Lee",
+   "payor": "Chevron",
+   "recipient": "Women S Foundation California",
+   "date": "2016-02-03",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160203_20160211_803_Mayor_Chevron_Redacted.pdf"
+  },
+  {
+   "id": "803-004",
+   "official": "Scott Wiener",
+   "payor": "At T",
+   "recipient": "GLBT Historical Society",
+   "date": "2016-08-23",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160823_20160830_803_Weiner_Scott_Redacted.pdf"
+  },
+  {
+   "id": "803-005",
+   "official": "George Gascon",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2017-07-21",
+   "amount": 9263.81,
+   "type": "in-kind event",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170721_20170818_803_Gascon_George_Redacted.pdf"
+  },
+  {
+   "id": "803-006",
+   "official": "Edwin Lee",
+   "payor": "Municipal Executives Association",
+   "recipient": "San Francisco",
+   "date": "2017-01-31",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170131_20170303_803_Lee_Edwin_Municipal_Executives_Association_Redacted.pdf"
+  },
+  {
+   "id": "803-007",
+   "official": "Malia Cohen",
+   "payor": "Facebook",
+   "recipient": "a private party (not named)",
+   "date": "2016-11-01",
+   "amount": 7500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20161101_20161128_803+AM_Cohen_Malia_Facebook_Redacted.pdf"
+  },
+  {
+   "id": "803-008",
+   "official": "Jane Kim",
+   "payor": "a private party (not named)",
+   "recipient": "a private party (not named)",
+   "date": "2017-08-25",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170825_20170919_803_The_Green_Cross_Kim_Jane_Redacted.pdf"
+  },
+  {
+   "id": "803-009",
+   "official": "Jane Kim",
+   "payor": "Boston Properties",
+   "recipient": "Life Learning Academy",
+   "date": "2016-11-30",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20161130_20170919_803__Boston+Properties_Kim_Jane_Redacted.pdf"
+  },
+  {
+   "id": "803-010",
+   "official": "Jane Kim",
+   "payor": "a private party (not named)",
+   "recipient": "Rose Pak Community Fund",
+   "date": "2017-11-20",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171120_20171219_803_China_Oceanwide_USA_Redacted.pdf"
+  },
+  {
+   "id": "803-011",
+   "official": "Jane Kim",
+   "payor": "Boston Properties",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2017-12-06",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171206_20171222_803_Boston_Properties_Kim_Jane_Redacted.pdf"
+  },
+  {
+   "id": "803-012",
+   "official": "Malia Cohen",
+   "payor": "Google",
+   "recipient": "a private party (not named)",
+   "date": "2016-10-28",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20161028_20161107_803_Cohen_Malia_Google_Redacted.pdf"
+  },
+  {
+   "id": "803-013",
+   "official": "Edwin Lee",
+   "payor": "George Lucas Family Foundation",
+   "recipient": "a private party (not named)",
+   "date": "2017-08-15",
+   "amount": 1500000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170815_20170906_803_Lee_Edwin_George_Lucas_Family_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-014",
+   "official": "Jane Kim",
+   "payor": "a private party (not named)",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2017-12-11",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171211_20171222_803_Elizabeth+Canela_Kim_Jane_Redacted.pdf"
+  },
+  {
+   "id": "803-015",
+   "official": "Malia Cohen",
+   "payor": "Pacific Gas Electric",
+   "recipient": "Economic Development On Third",
+   "date": "2017-08-11",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170811_20170828_803_Cohen_Malia_Redacted.pdf"
+  },
+  {
+   "id": "803-016",
+   "official": "Sandra Lee Fewer",
+   "payor": "At T",
+   "recipient": "Richmond District Neighborhood Ctr Inc",
+   "date": "2017-08-22",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170822_20170922__Richmond_District_Neighborhood_Center_AT%2526T_Fewer_Sandra_Lee_Redacted.pdf"
+  },
+  {
+   "id": "803-017",
+   "official": "George Gascon",
+   "payor": "Rosenberg Foundation",
+   "recipient": "Policylink",
+   "date": "2016-09-09",
+   "amount": 3500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160928_20161003_803_Gascon_George_Rosenberg_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-018",
+   "official": "George Gascon",
+   "payor": "Frank Denise Quattrone Foundation",
+   "recipient": "University California Berkeley Foundation",
+   "date": "2016-02-22",
+   "amount": 97887.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160222_20160314_803_Gascon_George_Redacted.pdf"
+  },
+  {
+   "id": "803-019",
+   "official": "George Gascon",
+   "payor": "a private party (not named)",
+   "recipient": "Policylink",
+   "date": "2016-02-09",
+   "amount": 86451.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160209_20160223_803_Gascone_George_Redacted.pdf"
+  },
+  {
+   "id": "803-020",
+   "official": "George Gascon",
+   "payor": "Foundation To Promote Open Society",
+   "recipient": "Policylink",
+   "date": "2015-10-27",
+   "amount": 100000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151027_20151218_803_Gascon_George_Foundation_To_Promote_Open_Society_Redacted.pdf"
+  },
+  {
+   "id": "803-021",
+   "official": "George Gascon",
+   "payor": "Engage San Francisco Through Leo T Mccarthy Center",
+   "recipient": "a private party (not named)",
+   "date": "2015-05-30",
+   "amount": 1477.0,
+   "type": "in-kind food services",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150530_20150630_803_Gascon_George_Engage_San_Francisco_through_the_Leo_T._McCarthy_Center_Redacted.pdf"
+  },
+  {
+   "id": "803-022",
+   "official": "Dennis Herrera",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco City Attorney S Office",
+   "date": "2017-02-03",
+   "amount": 15680.0,
+   "type": "in-kind legal services",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170203_20170303_803_Herrera_Dennis_Cohen_Milstein_Stellers%2526Toll+PLLC_Redacted.pdf"
+  },
+  {
+   "id": "803-023",
+   "official": "Jane Kim",
+   "payor": "Barbary Coast Collective",
+   "recipient": "Life Learning Academy",
+   "date": "2017-01-21",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170121_20170919_803_Life_Learning_Academy_Kim_Jane_Redacted.pdf"
+  },
+  {
+   "id": "803-024",
+   "official": "Edwin Lee",
+   "payor": "Union Bank",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-05-26",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150526_20150529_803_Lee_Edwin_Union_Bank_Redacted.pdf"
+  },
+  {
+   "id": "803-025",
+   "official": "Edwin Lee",
+   "payor": "John Marcia Goldman Foundation",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-12",
+   "amount": 100000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150512_20150610_803_Lee_Edwin_John_%2526_Marcia_Goldman_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-026",
+   "official": "Edwin Lee",
+   "payor": "Hamilton Family Center",
+   "recipient": "San Francisco Mayor S Fund Homeless",
+   "date": "2015-05-21",
+   "amount": 3476000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150521_20150610_803_Lee_Edwin_Hamilton_Family_Center_Redacted.pdf"
+  },
+  {
+   "id": "803-027",
+   "official": "Edwin Lee",
+   "payor": "ClearRock Capital",
+   "recipient": "San Francisco Mayor S Fund Homeless",
+   "date": "2015-05-21",
+   "amount": 1000000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150521_20150610_803_Lee_Edwin_Mr._Ronald_Conway_c.o_Mr._Lonnie_A._Dorn_ClearRock_Capital_Redacted.pdf"
+  },
+  {
+   "id": "803-028",
+   "official": "Edwin Lee",
+   "payor": "Autodesk",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-03-16",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150316_20160311_803_Lee_Edwin_Auto_Desk_Redacted.pdf"
+  },
+  {
+   "id": "803-029",
+   "official": "Edwin Lee",
+   "payor": "One Vassar",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-21",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150521_20150610_803_Lee_Edwin_One_Vassar_LLC_Redacted.pdf"
+  },
+  {
+   "id": "803-030",
+   "official": "Edwin Lee",
+   "payor": "San Francisco Foundation",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-22",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150522_20150610_803_Lee_Edwin_The_San_Francisco_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-031",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_Lee_Edwin_Al_%2526_Mei_Wong_Redacted.pdf"
+  },
+  {
+   "id": "803-032",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_1_Lee_Edwin_Nancy_%2526_Joachim_Bechtle_Redacted.pdf"
+  },
+  {
+   "id": "803-033",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-29",
+   "amount": 4500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150529_20150610_803_Lee_Edwin_Marco_Hellmam_Redacted.pdf"
+  },
+  {
+   "id": "803-034",
+   "official": "Edwin Lee",
+   "payor": "Dewey Square Group",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-22",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150522_20150626_803_Lee_Edwin_Dewey_Square_Group_LLC_Redacted.pdf"
+  },
+  {
+   "id": "803-035",
+   "official": "Edwin Lee",
+   "payor": "Nibbi Bros Associates",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-02",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150602_20150626_803_Lee_Edwin_Nibbi_Bros_Associates_Inc._Redacted.pdf"
+  },
+  {
+   "id": "803-036",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-28",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150528_20150723_803_Lee_Edwin_John_Osterweis_Redacted.pdf"
+  },
+  {
+   "id": "803-037",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-03",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160603_20160630_803_Lee_Edwin_Duane_Morris_Redacted.pdf"
+  },
+  {
+   "id": "803-038",
+   "official": "Edwin Lee",
+   "payor": "Veritas Investments",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-02",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150602_20150626_803_Lee_Edwin_Veritas_Investments_Redacted.pdf"
+  },
+  {
+   "id": "803-039",
+   "official": "Edwin Lee",
+   "payor": "Recology",
+   "recipient": "Women S Foundation California",
+   "date": "2015-07-21",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150721_21050828_803_Lee_Edwin_Recology_Redacted.pdf"
+  },
+  {
+   "id": "803-040",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "Women S Foundation California",
+   "date": "2015-07-27",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150727_20150828_803_Lee_Edwin_Diane_Wilsey_Redacted.pdf"
+  },
+  {
+   "id": "803-041",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-04",
+   "amount": 87500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150604_20150626_803_Lee_Edwin_Marco_%2526_Sabrina_Hellman_Redacted.pdf"
+  },
+  {
+   "id": "803-042",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-16",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150616_20150723_803_Lee_Edwin_Schwab_Charitable_Redacted.pdf"
+  },
+  {
+   "id": "803-043",
+   "official": "Edwin Lee",
+   "payor": "Stephen Bechtel Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-26",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150626_20150723_803_Lee_Edwin_Stephen_Bechtel_Fund_Redacted.pdf"
+  },
+  {
+   "id": "803-044",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "Women S Foundation California",
+   "date": "2016-05-23",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160523_20160620_803_Lee_Edwin_Women%2527s_Foundation_of_California_%252410%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-045",
+   "official": "Edwin Lee",
+   "payor": "Lisa Douglas Goldman Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-04-02",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150402_20150424_803_Lee_Edwin_Lisa_%2526_Douglas_Goldman_Fund_Redacted.pdf"
+  },
+  {
+   "id": "803-046",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2015-04-27",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150427_20150526_803_Lee_Edwin_The_Arns_Law_Firm_Redacted.pdf"
+  },
+  {
+   "id": "803-047",
+   "official": "Edwin Lee",
+   "payor": "California State Council Laborers",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2015-05-12",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150512_20150526_803_Lee_Edwin_California_State_Council_of_Laborers_Redacted.pdf"
+  },
+  {
+   "id": "803-048",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-04",
+   "amount": 87500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150604_20150626_803_Lee_Edwin_Patricia_Hellman_Redacted.pdf"
+  },
+  {
+   "id": "803-049",
+   "official": "Edwin Lee",
+   "payor": "San Francisco Citi",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-05-18",
+   "amount": 100000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150518_20150529_803_Lee_Edwin_sf.citi__Redacted.pdf"
+  },
+  {
+   "id": "803-050",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-08",
+   "amount": 1000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150608_20150626_803_Lee_Edwin_Mark_Dwight_Redacted.pdf"
+  },
+  {
+   "id": "803-051",
+   "official": "Edwin Lee",
+   "payor": "Lyft",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-07-01",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150701_20150723_803_Lee_Edwin_Lyft_Redacted.pdf"
+  },
+  {
+   "id": "803-052",
+   "official": "Edwin Lee",
+   "payor": "Twitter",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-07-01",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150701_20150723_803_Lee_Edwin_Twitter_Redacted.pdf"
+  },
+  {
+   "id": "803-053",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-09-14",
+   "amount": 100000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150914_20151005_803_Lee_Edwin_Diane_B._Wilsey_Redacted.pdf"
+  },
+  {
+   "id": "803-054",
+   "official": "Edwin Lee",
+   "payor": "Fisher Family Fund",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-27",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160627_20160630_803_Lee_Edwin_Fisher_Family_Fund_Redacted.pdf"
+  },
+  {
+   "id": "803-055",
+   "official": "Edwin Lee",
+   "payor": "San Francisco Travel Foundation Tomkat Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-11",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150611_20150723_803_Lee_Edwin_The_San_Francisco_Travel_Foundation_%2528TomKat_Fund%2529_Redacted.pdf"
+  },
+  {
+   "id": "803-056",
+   "official": "Edwin Lee",
+   "payor": "Accela",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-06-18",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150618_20150723_803_Lee_Edwin_Accela_Redacted.pdf"
+  },
+  {
+   "id": "803-057",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 100000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_Lee_Edwin_Mr._and_Mrs._Coulter_%2528Coulter_2006_Management_Trust%2529_Redacted.pdf"
+  },
+  {
+   "id": "803-058",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-15",
+   "amount": 50.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150615_20150723_803_Lee_Edwin_Douglas_Hanlin_Redacted.pdf"
+  },
+  {
+   "id": "803-059",
+   "official": "Edwin Lee",
+   "payor": "Comcast",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-06-16",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150616_20150723_803_Lee_Edwin_Comcast_Redacted.pdf"
+  },
+  {
+   "id": "803-060",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-03-02",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150302_20160311_803_Lee_Edwin_Lennar_Urban_Redacted.pdf"
+  },
+  {
+   "id": "803-061",
+   "official": "Edwin Lee",
+   "payor": "Lisa John Pritzker Family Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-08",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150508_20150526_803_Lee_Edwin_The_Lisa_%2526_John_Pritzker_Family_Fund_Redacted.pdf"
+  },
+  {
+   "id": "803-062",
+   "official": "Edwin Lee",
+   "payor": "San Francisco Platinum Advisors",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-15",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150615_20150723_803_Lee_Edwin_San_Francisco_Platinum_Advisors_LLC_Redacted.pdf"
+  },
+  {
+   "id": "803-063",
+   "official": "Edwin Lee",
+   "payor": "Aon Foundation",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-09-17",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150917_20151005_803_Lee_Edwin_Aon_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-064",
+   "official": "Edwin Lee",
+   "payor": "Kaiser Permanente",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-22",
+   "amount": 175000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160622_20160630_803_Lee_Edwin_Kaiser_Permanente_Redacted.pdf"
+  },
+  {
+   "id": "803-065",
+   "official": "Edwin Lee",
+   "payor": "Related California Urban Resid",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-06-16",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150616_20150723_803_Lee_Edwin_Related_California_Urban_Resid_Redacted.pdf"
+  },
+  {
+   "id": "803-066",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "Women S Foundation California",
+   "date": "2015-07-01",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150701_20150828_803_Lee_Edwin_Lennar_Urban_Redacted.pdf"
+  },
+  {
+   "id": "803-067",
+   "official": "Edwin Lee",
+   "payor": "California Healthcare Foundation",
+   "recipient": "Women S Foundation California",
+   "date": "2015-07-16",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150716_20150828_803_Lee_Edwin_California_HealthCare_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-068",
+   "official": "Edwin Lee",
+   "payor": "Inc.",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-08-31",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150831_20150914_803_Lee_Edwin_CH2M_Hills_Inc._Redacted.pdf"
+  },
+  {
+   "id": "803-069",
+   "official": "Edwin Lee",
+   "payor": "Emerald Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-08-31",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150831_20150914_803_Lee_Edwin_Emerald_Fund_Inc._Redacted.pdf"
+  },
+  {
+   "id": "803-070",
+   "official": "Edwin Lee",
+   "payor": "Laurel Heights Partners",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-08-31",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150831_20150914_803_Lee_Edwin_Laurel_Heights_Partners_LLC_Redacted.pdf"
+  },
+  {
+   "id": "803-071",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-09-09",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150909_20151005_803_Lee_Edwin_Lennar_Communities_Bay_Area_Urban_Redacted.pdf"
+  },
+  {
+   "id": "803-072",
+   "official": "Edwin Lee",
+   "payor": "Microsoft",
+   "recipient": "Women S Foundation California",
+   "date": "2015-12-30",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151230_20160216_803_Lee_Edwin_Women%2527s_Microsoft_Redacted.pdf"
+  },
+  {
+   "id": "803-073",
+   "official": "Edwin Lee",
+   "payor": "Inc.",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-01-27",
+   "amount": 1720375.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150127_20160311_803_Lee_Edwin_Salesforce.com_Inc_%25241%252C720%252C375_Redacted.pdf"
+  },
+  {
+   "id": "803-074",
+   "official": "Edwin Lee",
+   "payor": "Dignity Health",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-03-09",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150309_20160311_803_Lee_Edwin_Dignity_Health_%252450%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-075",
+   "official": "Edwin Lee",
+   "payor": "Kilroy Realty",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-24",
+   "amount": 83000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150624_20160630_803_Lee_Edwin_Kilroy_Realty_%252483%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-076",
+   "official": "Edwin Lee",
+   "payor": "Microsoft",
+   "recipient": "Women S Foundation California",
+   "date": "2016-05-25",
+   "amount": 75000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160525_20160620_803_Lee_Edwin_Microsoft_%252475%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-077",
+   "official": "Edwin Lee",
+   "payor": "Wells Fargo",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-07",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160607_20160630_803_Lee_Edwin_Wells_Fargo_Bank_%252410%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-078",
+   "official": "Edwin Lee",
+   "payor": "Twitter",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-22",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160622_20160630_803_Lee_Edwin_Twitter_%252425%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-079",
+   "official": "Edwin Lee",
+   "payor": "Wells Fargo Bank",
+   "recipient": "Friends Foundation San Francisco Public Library",
+   "date": "2015-04-21",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150421_20150501_803_Lee_Edwin_Wells_Fargo_Bank_Redacted.pdf"
+  },
+  {
+   "id": "803-080",
+   "official": "Edwin Lee",
+   "payor": "Tishman Speyer Properties",
+   "recipient": "San Francisco Travel Foundation City Hall Centenial Celebration",
+   "date": "2015-04-29",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150429_20150501_803_Lee_Edwin_Tishman_Speyer_Properties_LP_Redacted.pdf"
+  },
+  {
+   "id": "803-081",
+   "official": "Edwin Lee",
+   "payor": "O Pisces Inc.",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_Lee_Edwin_Fisher_Family_C.O_Pisces_Inc._Redacted.pdf"
+  },
+  {
+   "id": "803-082",
+   "official": "Edwin Lee",
+   "payor": "Tmg Partners",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-08-31",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150831_20150914_803_Lee_Edwin_TMG_Partners_Redacted.pdf"
+  },
+  {
+   "id": "803-083",
+   "official": "Edwin Lee",
+   "payor": "Dignity Health",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-03-06",
+   "amount": 200000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150306_20160311_803_Lee_Edwin_Dignity_Health_%2524200%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-084",
+   "official": "Edwin Lee",
+   "payor": "Inc.",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-04-13",
+   "amount": 720375.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150413_20160311_803_Lee_Edwin_Salesforce.com_Inc_%2524720%252C375_Redacted.pdf"
+  },
+  {
+   "id": "803-085",
+   "official": "Edwin Lee",
+   "payor": "Kilroy Realty",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-04-16",
+   "amount": 150000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150416_20160311_803_Lee_Edwin_Kilroy_Realty_%2524150%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-086",
+   "official": "Edwin Lee",
+   "payor": "Wells Fargo Bank",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-04-16",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150416_20160311_803_Lee_Edwin_Wells_Fargo_Bank_%252450%252C000_Redacted.pdf"
+  },
+  {
+   "id": "803-087",
+   "official": "Edwin Lee",
+   "payor": "Evelyn Walter Haas Jr Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-03-30",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150330_20150424_803_Lee_Edwin_Evelyn_and_Walter_Haas_Jr._Fund_Redacted.pdf"
+  },
+  {
+   "id": "803-088",
+   "official": "Edwin Lee",
+   "payor": "Charles Schwab Foundation",
+   "recipient": "Women S Foundation California",
+   "date": "2016-06-02",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160602_20160630_803_Lee_Edwin_Charles_Schwab_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-089",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_Lee_Edwin_Jose_S._Medeiros_Redacted.pdf"
+  },
+  {
+   "id": "803-090",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_Lee_Edwin_John_Keker_Redacted.pdf"
+  },
+  {
+   "id": "803-091",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-13",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150513_20150526_803_Lee_Edwin_Vicky_Fowler_Redacted.pdf"
+  },
+  {
+   "id": "803-092",
+   "official": "Edwin Lee",
+   "payor": "Marin Community Foundation Barger Family Fund",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-13",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150513_20150526_803_Lee_Edwin_The_Marin_Community_Foundation_%2528The_Barger_Family_Fund%2529_Redacted.pdf"
+  },
+  {
+   "id": "803-093",
+   "official": "Edwin Lee",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-07",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150507_20150513_803_2_Lee_Edwin_Nancy_%2526_Joachim_Bechtle_Redacted.pdf"
+  },
+  {
+   "id": "803-094",
+   "official": "Edwin Lee",
+   "payor": "Construction Employers Association",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2015-05-01",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150501_20150526_803_Lee_Edwin_Construction_Employers_Association_Redacted.pdf"
+  },
+  {
+   "id": "803-095",
+   "official": "Edwin Lee",
+   "payor": "United Business Bank",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2015-05-13",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150513_20150526_803_Lee_Edwin_United_Business_Bank_Redacted.pdf"
+  },
+  {
+   "id": "803-096",
+   "official": "Edwin Lee",
+   "payor": "Asia Alternatives Management",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-08",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150508_20150526_803_Lee_Edwin_Asia_Alternatives_Management_LLC_Redacted.pdf"
+  },
+  {
+   "id": "803-097",
+   "official": "Edwin Lee",
+   "payor": "Walgreens",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-05-20",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150520_20150529_803_Lee_Edwin_Walgreens_Redacted.pdf"
+  },
+  {
+   "id": "803-098",
+   "official": "Scott Wiener",
+   "payor": "a private party (not named)",
+   "recipient": "Equality California",
+   "date": "2015-03-31",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150331_20150427_803_Wiener_Scott_Levi_Strauss_Redacted.pdf"
+  },
+  {
+   "id": "803-099",
+   "official": "Edwin Lee",
+   "payor": "Twitter",
+   "recipient": "San Francisco Travel Foundation City Hall Centennial Celebration",
+   "date": "2015-05-14",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150514_20150526_803_Lee_Edwin_Twitter_Inc._Redacted.pdf"
+  },
+  {
+   "id": "803-100",
+   "official": "Edwin Lee",
+   "payor": "Kilroy Realty",
+   "recipient": "San Francisco Travel Foundation Sfuscm 2015",
+   "date": "2015-05-19",
+   "amount": 250000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20150519_20150529_803_Lee_Edwin_Kilroy_Realty_Redacted.pdf"
+  },
+  {
+   "id": "803-101",
+   "official": "Norman Yee",
+   "payor": "Maximus",
+   "recipient": "Greater West Portal Neighborhood Association",
+   "date": "2016-08-25",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160825_20170105_803_Yee_Norman_Maximus_Redacted.pdf"
+  },
+  {
+   "id": "803-102",
+   "official": "Edwin Lee",
+   "payor": "At T",
+   "recipient": "Women S Foundation California",
+   "date": "2016-01-20",
+   "amount": 50000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20160120_20160211_803_Mayor_AT%2526T_Redacted.pdf"
+  },
+  {
+   "id": "803-103",
+   "official": "Edwin Lee",
+   "payor": "Pius Lee Foundation",
+   "recipient": "Greater Houston Community Foundation",
+   "date": "2017-10-10",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171010_20171122_803_Lee_Edwin_Pius_Lee_Foundation_Redacted.pdf"
+  },
+  {
+   "id": "803-104",
+   "official": "Edwin Lee",
+   "payor": "Shorenstein Realty Services",
+   "recipient": "Women S Foundation California",
+   "date": "2017-10-17",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171017_20171122_803_Lee_Edwin_Shorenstein_Realty_Services_Redacted.pdf"
+  },
+  {
+   "id": "803-105",
+   "official": "Edwin Lee",
+   "payor": "Pg E",
+   "recipient": "a private party (not named)",
+   "date": "2017-10-25",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171025_20171122_803_Lee_Edwin_PG%2526E_Redacted.pdf"
+  },
+  {
+   "id": "803-106",
+   "official": "Dennis Herrera",
+   "payor": "Pillsbury Winthrop Shaw Pittman",
+   "recipient": "San Francisco City Attorney S Office",
+   "date": "2018-01-31",
+   "amount": 4097.43,
+   "type": "in-kind legal services",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180131_20180131_803_Herrera_Dennis_Pillsbury_Winthrop_Redacted.pdf"
+  },
+  {
+   "id": "803-107",
+   "official": "London Breed",
+   "payor": "a private party (not named)",
+   "recipient": "Spark San Francisco Public Schools",
+   "date": "2018-02-09",
+   "amount": 11000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180217_20180221_803_Breed_London_Sparks_Redacted.pdf"
+  },
+  {
+   "id": "803-108",
+   "official": "Dennis Herrera",
+   "payor": "Pillsbury Winthrop Shaw Pittman",
+   "recipient": "San Francisco City Attorney S Office",
+   "date": "2018-01-19",
+   "amount": 92724.16,
+   "type": "in-kind legal services",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180119_20180208_803_Herrera_Dennis_Pillsbury_Redacted.pdf"
+  },
+  {
+   "id": "803-109",
+   "official": "Jane Kim",
+   "payor": "a private party (not named)",
+   "recipient": "Laborers Community Training Foundation",
+   "date": "2017-12-21",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180105_803_Kim_Jane_Joel+Marcus_Redacted.pdf"
+  },
+  {
+   "id": "803-110",
+   "official": "London Breed",
+   "payor": "Recology",
+   "recipient": "Southeast Vision Project",
+   "date": "2018-03-05",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180305_20180323_803_Recology_London_Breed_Redacted.pdf"
+  },
+  {
+   "id": "803-111",
+   "official": "London Breed",
+   "payor": "Eaze Solutions",
+   "recipient": "Southeast Vision Project",
+   "date": "2018-02-26",
+   "amount": 7500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180226_20180323_803_Eaze+Solutions_Breed_London_Redacted.pdf"
+  },
+  {
+   "id": "803-112",
+   "official": "London Breed",
+   "payor": "Uber",
+   "recipient": "Southeast Vision Project",
+   "date": "2018-02-21",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180221_20180323_803_Uber_London_Breed_Redacted.pdf"
+  },
+  {
+   "id": "803-113",
+   "official": "Mark Farrell",
+   "payor": "Llc",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-10-24",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-114",
+   "official": "Mark Farrell",
+   "payor": "Anonymous",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-10-17",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-115",
+   "official": "Mark Farrell",
+   "payor": "Anonymous",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-10-06",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-116",
+   "official": "Mark Farrell",
+   "payor": "At T",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-15",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151010_20151118_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-117",
+   "official": "Mark Farrell",
+   "payor": "Avg",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-09-26",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-118",
+   "official": "Mark Farrell",
+   "payor": "Bay Club San Francisco",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-30",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-119",
+   "official": "Mark Farrell",
+   "payor": "Inc.",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-02",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-120",
+   "official": "Mark Farrell",
+   "payor": "Inc.",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-10-14",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-121",
+   "official": "Mark Farrell",
+   "payor": "California Pacific Medical Center",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-06-02",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-122",
+   "official": "Mark Farrell",
+   "payor": "Clearrock Capital",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-28",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-123",
+   "official": "Mark Farrell",
+   "payor": "Cvs Pharmacy",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-22",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-124",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-02-16",
+   "amount": 100000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-125",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-08-23",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-126",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-01",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-127",
+   "official": "Mark Farrell",
+   "payor": "Dignity Health",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-17",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-128",
+   "official": "Mark Farrell",
+   "payor": "Dignity Health",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-09-07",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-129",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-02",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-130",
+   "official": "Mark Farrell",
+   "payor": "Inc.",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-05-12",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-131",
+   "official": "Mark Farrell",
+   "payor": "Firefighters Local 798",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-24",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-132",
+   "official": "Mark Farrell",
+   "payor": "Fisher Family Fund",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-08-17",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-133",
+   "official": "Mark Farrell",
+   "payor": "Fivepoint",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-10-20",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-134",
+   "official": "Mark Farrell",
+   "payor": "Fivepoint",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-09-01",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-135",
+   "official": "Mark Farrell",
+   "payor": "Golden State Warriors",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-13",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151010_20151118_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-136",
+   "official": "Mark Farrell",
+   "payor": "Golden State Warriors",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-10-20",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-137",
+   "official": "Mark Farrell",
+   "payor": "Google",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-12-07",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-138",
+   "official": "Mark Farrell",
+   "payor": "Inc.",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-08-08",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-139",
+   "official": "Mark Farrell",
+   "payor": "Grass Roots Non Profit Collective",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-02",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-140",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-10",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151010_20151118_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-141",
+   "official": "Mark Farrell",
+   "payor": "Housing Not Tents",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-12-16",
+   "amount": 30000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-142",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-26",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-143",
+   "official": "Mark Farrell",
+   "payor": "Kaiser Foundation Health Plan",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-09-13",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-144",
+   "official": "Mark Farrell",
+   "payor": "Kaiser Permanente",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-06-14",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-145",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-12-07",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180108_20180117_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-146",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-01-11",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-147",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-13",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151010_20151118_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-148",
+   "official": "Mark Farrell",
+   "payor": "Lighthouse Public Affairs",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-11-14",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-149",
+   "official": "Mark Farrell",
+   "payor": "Lyft",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-10-04",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-150",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-13",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151010_20151118_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-151",
+   "official": "Mark Farrell",
+   "payor": "Microsoft",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-06-22",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-152",
+   "official": "Mark Farrell",
+   "payor": "Pacific Gas Electric",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-12-07",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20180108_20180117_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-153",
+   "official": "Mark Farrell",
+   "payor": "Pacific Gas Electric",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-11-08",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-154",
+   "official": "Mark Farrell",
+   "payor": "Prado Group",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-03",
+   "amount": 12500.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-155",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-07-11",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-156",
+   "official": "Mark Farrell",
+   "payor": "Recology",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-14",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-157",
+   "official": "Mark Farrell",
+   "payor": "Recology San Francisco",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-06-02",
+   "amount": 15000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-158",
+   "official": "Mark Farrell",
+   "payor": "Recology San Francisco",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-11-02",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-159",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-08-04",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-160",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Association Realtors",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-08-16",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-161",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Association Realtors",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-10",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-162",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Association Realtors",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-09-15",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-163",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Forty Niners",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-09-13",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-164",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Forty Niners",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-06-02",
+   "amount": 10000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-165",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Police Officers Association",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-09-11",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-166",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Police Officers Association",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-14",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-167",
+   "official": "Mark Farrell",
+   "payor": "San Francisco Waterfront Partners",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-26",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-168",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-30",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-169",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-10-16",
+   "amount": 125000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151010_20151118_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-170",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-07-25",
+   "amount": 125000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-171",
+   "official": "Mark Farrell",
+   "payor": "Tmg Partners",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-09",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-172",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-24",
+   "amount": 25000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-173",
+   "official": "Mark Farrell",
+   "payor": "Trumark Urban Partners Tup Webster",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2015-09-11",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20151003_20151008_803_Farrell_Mark_See_Attached_for_Payor_and_Payment_Information_Redacted.pdf"
+  },
+  {
+   "id": "803-174",
+   "official": "Mark Farrell",
+   "payor": "Trumark Urban Partners Tup Webster",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2016-08-25",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20170130_803_Mark_Farrell_SF_Parks_Alliance_Redacted.pdf"
+  },
+  {
+   "id": "803-175",
+   "official": "Mark Farrell",
+   "payor": "a private party (not named)",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-07-18",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  },
+  {
+   "id": "803-176",
+   "official": "Mark Farrell",
+   "payor": "Wells Fargo Foundation",
+   "recipient": "San Francisco Parks Alliance",
+   "date": "2017-07-31",
+   "amount": 5000.0,
+   "type": "cash",
+   "filing": "https://sfethicsstorage.blob.core.usgovcloudapi.net/fppc-803/20171031_20171102_803_Farrell_Mark_Redacted.pdf"
+  }
+ ],
+ "count": 176,
+ "reportedValue": 12689880.4
+}

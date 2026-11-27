@@ -74,6 +74,9 @@
     const v = r[c.k]; if (v == null || v === '') return '<span class="muted">—</span>';
     if (c.type === 'org') return r[c.k + 'Key'] ? `<a href="#org/${esc(slugOf(r[c.k + 'Key']))}"><b>${esc(v)}</b></a>` : `<b>${esc(v)}</b>`;
     if (c.type === 'person') return `<b>${esc(v)}</b>`;
+    if (c.type === 'link' && v.u && Array.isArray(v.more) && v.more.length) {
+      return [{t: v.t, u: v.u}, ...v.more].map(link => cell(c, {[c.k]: link})).join('<br>');
+    }
     if (c.type === 'link') return v && v.u ? (/^#/.test(v.u) ? `<a href="${esc(v.u)}">${esc(v.t || 'Open')}</a>` : /^https?:\/\//.test(v.u) ? `<a href="${esc(v.u)}" target="_blank" rel="noopener">${esc(v.t || 'Source')} ↗</a>` : esc(v.t || '')) : esc(typeof v === 'string' ? v : '');
     if (c.type === 'usd') return `<span title="${esc(full(v))}">${esc(money(v))}</span>`;
     if (c.type === 'date') return esc(fmtDate(v));
@@ -201,6 +204,7 @@
     return `${head((C.screenGroups[g] || {}).title || 'Records', esc(s.title), esc(s.question || ''))}${findingBox(s)}${chartHtml(s.chart, 'gen-chart')}
       <div class="note how"><p><b>How this was worked out.</b> ${esc(s.how || '')}</p><p><b>What it cannot show.</b> ${esc(s.limits || '')}</p></div>
       ${s.rows && s.rows.length ? `<section class="section">${loadFailed ? '<p role="alert">The full table could not be loaded. The preview is available below. Open the download for the complete table or reload to retry.</p>' : ''}${s.download ? `<p><a href="${esc(s.download)}" download>Download all ${num(s.rowCount || s.rows.length)} published rows (JSON)</a></p>` : ''}<div class="filters">${s.rows.length > 10 ? `<label class="sr-only" for="gen-q">Filter the rows</label><input id="gen-q" type="search" placeholder="Search all ${num(s.rows.length)} available rows…" value="${esc(st.q)}">` : ''}</div><div id="gen-table"></div></section>` : ''}
+      ${s.sourceRegisters ? `<p class="links-row">${s.sourceRegisters.filter(r => /^[a-z0-9-]+$/.test(r.slug)).map(r => `<a href="assets/data/behested-payments/${esc(r.slug)}.json" download>Download ${esc(r.title)} (JSON)</a>`).join(' ')}</p>` : ''}
       ${sourcesHtml(s.sources)}`;
   };
   function groupPage(g, G) {

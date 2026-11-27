@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 329 case files. The public citation check tested 2,599 distinct URLs across 4,232 case citations. 2,502 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 334 case files. The public citation check tested 2,640 distinct URLs across 4,281 case citations. 2,543 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -281,3 +281,19 @@ At Mission Rock the phase one horizontal construction budget rose $73.1 million.
 The Planning review follows 59 application charges across dated schedules. The official fee calculator supports 57 final comparisons. It also distinguishes required outreach from optional, department-facilitated meetings. The June 2026 historical revision changed the highest-value environmental evaluation worksheets. Individual assessments and refunds would establish whether applicants were charged using an earlier calculation. [Planning fee analysis and period-specific evidence](https://sfgovtracker.com/#case/permit-maze-permits-to-finish-permits)
 
 The lobbying review matched all 2,607 linked activity IDs against the City’s official DataSF host. Each repaired link keeps the original row identifier and query.
+
+## Refunds, worker recoveries, construction finance and political disclosures
+
+The 2020 business tax return hid its homelessness tax section when a filer fell below the receipts threshold, even if the business had prepaid the tax. The budget analyst identified 59 businesses and estimated $2.7 million in principal and $40,000 in interest. Ordinance 219-22 reopened refund authority through April 30, 2023. Actual checks and offsets require the Tax Collector’s reconciliation. [Tax portal, analyst’s estimate and enacted ordinance](https://sfgovtracker.com/#case/tax-portal-missed-homelessness-tax-refunds)
+
+The San Francisco District Attorney reported that a care home operator paid $33,020 in restitution to the State Compensation Insurance Fund and a separate $32,589 fine to the Department of Insurance. The licensing accusation used a $32,091.09 premium calculation. The subsequent license surrender conditioned $6,320.25 in costs on any future effort to regain the license. [Plea outcome, State Fund accounting and license order](https://sfgovtracker.com/#case/care-home-payroll-and-state-fund-restitution)
+
+The amended GMG judgment made the City the creditor on behalf of 275 workers for $1,339,028.39 in health benefits. Payments were to go through an administrator. The separate criminal restitution order named two insurers. City records identify $364,781.55 paid to GMG across two spending categories. Worker distributions and the insurer receipts remain open. [Worker judgment and City vendor records](https://sfgovtracker.com/#case/gmg-janitors-health-benefit-judgment)
+
+The Folsom stormwater project drew one bid from three qualified teams. The utility put construction back out to bid. Its June 2026 forecast reached $402.5 million and December 2030. The state financing record shows $50 million drawn by June 30 and another $5 million eligible for forgiveness subject to conditions. The case compares the distinct construction, water-quality and financing deadlines. [Regulatory order, procurement record and state financing](https://sfgovtracker.com/#case/folsom-stormwater-construction-rebid)
+
+A lobbyist reported work on San Francisco’s internet provider-choice ordinance. The firm reported a $5,000 donation to the Parks Alliance for schoolyards at the sponsoring supervisor’s request. The dated filings and 10–0 vote establish the sequence. Ethics staff’s historical review found that the request was permitted at the time. The records supply no evidence of an exchange for the vote. [Sworn filings, legislation and Ethics Commission review](https://sfgovtracker.com/#case/internet-choice-lobbyists-parks-payment)
+
+The two Summer Together disclosures repeated the same $9,366,180 allocation to recipient organizations. The corrected tables identify recipients and preserve the original filings. They also distinguish the two Dignity Health payments to the City’s travel foundation ($250,000 together) from the two schoolyard payments to the Parks Alliance ($10,000 together). The published source registers identify the supporting forms and the disposition of each original index row. [Historic filings and the current waiver record](https://sfgovtracker.com/#case/behested-payment-waivers)
+
+The Transportation Authority’s twelve fiscal-year audit downloads now point to individual reports. The FY2025 Board packet contained the financial audit. Its subsequent Federal Audit Clearinghouse filing also contains the March 2026 federal compliance opinion and findings schedule. [Transportation Authority contract case and audit records](https://sfgovtracker.com/#case/sfcta-design-contracts-grow-after-award)
