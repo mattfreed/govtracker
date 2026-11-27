@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 298 case files. The public citation check tested 2,339 distinct URLs across 3,948 case citations. 2,245 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 304 case files. The public citation check tested 2,378 distinct URLs across 3,990 case citations. 2,284 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -211,3 +211,13 @@ The capital archive recovery verified all 1,908 distinct PDF contents in the his
 The post-recovery snapshot counted 173,560 raw paths. The 1,415 additions relative to the original snapshot contained 962 distinct file contents. The supplemental rules returned 125 passages from 37 contents. Comparing the exact file, page, rule and position identified five additional optical matches in three audit appendices. These corroborate existing findings on Golden Gate Park tennis rent, the airport’s erroneous Travelex credit and the Pier 23 rent response. New acquisitions after this snapshot and ongoing optical reading are tracked separately.
 
 The [assessment records](https://sfgovtracker.com/#s/agency_evidence_review.assessment-appeal-and-cost-checks) trace a missed appeal deadline through two appellate judgments and a later five-matter settlement authorization. For the assessment system, payments on 117 voucher lines reconcile to the Controller’s register. The state’s two separate exemption findings identify control failures without assigning them to any particular parcel.
+
+## Transit invoices, benefit payments and the returned tax-sale notice
+
+BART’s inspector general traced $39,247 of excess Link21 consultant fees to two work plans. BART reports that the fees were refunded or credited. The individual credits would identify which invoices were adjusted. A separate federal audit found six BART payment instructions preceded receipt of certified payroll. Its following-year audit marked the finding corrected. Caltrain’s scoring, appeal votes, later radio tests and grant reporting establish separate facts about the Wi-Fi procurement and the two coverage gaps. [Link21 performance audit](https://oig.bart.gov/files/3f3900bf2/Performance%2BAudit%2Bof%2Bthe%2BLink21%2BProgram_Final%2B%281%29.pdf) · [FY2017 BART audit, page 121](https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000132422#page=121) · [Caltrain project report](https://www.caltrain.com/media/36192)
+
+The workers’ compensation cases distinguish the conviction for fictitious audit fees from two state audits of genuine workers’ benefits. The records identify $627,118.86 stolen, separate from the unpaid benefits the state identified in its 2019 and 2025 samples. The case files identify which payment confirmations remain outstanding. [Fictitious audit fees](https://sfgovtracker.com/#case/ellicott-workers-compensation-fictitious-audits) · [State benefit audits](https://sfgovtracker.com/#case/sf-workers-compensation-benefits-underpaid)
+
+Supervisors reversed the $90,100 Presidio Terrace tax auction after a certified notice came back undelivered. The December 2017 deed verifies the reversal. The exact refund including interest and the disposition of the purchasers’ challenge remain open. [Recorded deed](https://sfgov.legistar.com/View.ashx?M=F&ID=5723183&GUID=7FCB912C-2299-4D30-AAB8-4FD4EB973D9E)
+
+The legislative review reopened 42,961 attachment URLs across 3,586 matters. The former 7,297-attachment plan had 2,017 URLs it never reached and 907 entries labeled as duplicates by date and file size. The new acquisition records content hashes, page-level text, unreadable pages and candidate passages. Coverage will increase as the documents arrive. A procurement waiver or a repeated payment figure alone does not establish misconduct.
