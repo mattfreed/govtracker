@@ -7,6 +7,10 @@
   "seconds": 53.6,
   "passages": 12
  },
+ "airport-baggage-maintenance-state-ban": {
+  "seconds": 51.2,
+  "passages": 12
+ },
  "airport-bond-trustee-retroactive-approval": {
   "seconds": 50.7,
   "passages": 13
@@ -227,6 +231,10 @@
   "seconds": 130.2,
   "passages": 36
  },
+ "chinatown-senior-housing-final-subsidy-year": {
+  "seconds": 48.6,
+  "passages": 14
+ },
  "city-college-conference-lodging-charged-twice": {
   "seconds": 52.0,
   "passages": 14
@@ -280,8 +288,8 @@
   "passages": 16
  },
  "citywide-labor-agreement-bid-terms": {
-  "seconds": 60.1,
-  "passages": 13
+  "seconds": 77.9,
+  "passages": 17
  },
  "cleanpowersf-capacity-penalties": {
   "seconds": 71.8,
@@ -583,6 +591,10 @@
   "seconds": 140.1,
   "passages": 39
  },
+ "lower-alemany-engineering-bid-protest": {
+  "seconds": 44.6,
+  "passages": 12
+ },
  "lyric-hud-grant-reimbursement-and-rate": {
   "seconds": 54.2,
   "passages": 13
@@ -590,6 +602,10 @@
  "maceo-may-storm-repair-insurance": {
   "seconds": 52.3,
   "passages": 13
+ },
+ "marin-street-water-headquarters-design": {
+  "seconds": 65.0,
+  "passages": 14
  },
  "meal-contracts-under-the-line": {
   "seconds": 130.6,
@@ -634,6 +650,10 @@
  "money-the-ledger-stops-following": {
   "seconds": 130.3,
   "passages": 33
+ },
+ "mountain-tunnel-inspection-hours-and-budget": {
+  "seconds": 51.1,
+  "passages": 15
  },
  "neighbors-advocacy-recall-media-services": {
   "seconds": 41.8,
@@ -698,6 +718,10 @@
  "outside-lands-permit-vote-and-ticket-gifts": {
   "seconds": 48.8,
   "passages": 12
+ },
+ "overtime-appropriations-after-the-budget-ran-out": {
+  "seconds": 50.2,
+  "passages": 14
  },
  "overtime-beyond-the-clock": {
   "seconds": 146.6,
@@ -1107,6 +1131,10 @@
   "seconds": 142.2,
   "passages": 41
  },
+ "sunol-electricity-tax-remitted-to-wrong-county": {
+  "seconds": 50.7,
+  "passages": 15
+ },
  "supervisors-voted-on-recent-employers-grants": {
   "seconds": 130.4,
   "passages": 32
@@ -1122,6 +1150,10 @@
  "told-the-state-no-assets-after-final-gift": {
   "seconds": 130.4,
   "passages": 34
+ },
+ "transbay-plumbing-bid-challenge": {
+  "seconds": 40.9,
+  "passages": 12
  },
  "travel-gifts-missing-from-form-700": {
   "seconds": 153.1,
