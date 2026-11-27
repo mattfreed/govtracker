@@ -247,6 +247,10 @@
   "seconds": 46.0,
   "passages": 12
  },
+ "central-subway-testing-and-delay-claims": {
+  "seconds": 64.1,
+  "passages": 12
+ },
  "certified-local-firms-large-affiliates": {
   "seconds": 153.1,
   "passages": 35
@@ -343,6 +347,10 @@
   "seconds": 130.9,
   "passages": 34
  },
+ "conard-house-late-audit-filings": {
+  "seconds": 60.7,
+  "passages": 15
+ },
  "contract-notices-filed-late": {
   "seconds": 137.1,
   "passages": 30
@@ -432,8 +440,8 @@
   "passages": 12
  },
  "failed-checkups-kept-funding": {
-  "seconds": 145.4,
-  "passages": 41
+  "seconds": 153.2,
+  "passages": 43
  },
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
@@ -918,6 +926,10 @@
  "rmc-bay-sand-royalty-settlement": {
   "seconds": 48.3,
   "passages": 10
+ },
+ "roofing-permit-payroll-and-state-insurance": {
+  "seconds": 42.2,
+  "passages": 14
  },
  "safehouse-client-stipends-and-housing-loan": {
   "seconds": 58.3,

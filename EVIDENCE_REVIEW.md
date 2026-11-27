@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 342 case files. The public citation check tested 2,678 distinct URLs across 4,322 case citations. 2,581 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 345 case files. The public citation check tested 2,706 distinct URLs across 4,359 case citations. 2,609 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -317,3 +317,11 @@ San Francisco sought providers for 2,821 existing housing slots. A year after bi
 California allocated $88.2 million in statewide school funding that was unavailable. Its March 2022 recovery schedule shows a $606,049 offset against San Francisco Unified. [Case file and dated source records](https://sfgovtracker.com/#case/sfusd-title-i-overpayment-offset)
 
 San Francisco’s auditor estimated up to $2.08 million in forgone quarry rent. The City later restored a base rent and documented $229,400 of receipts over three years. [Case file and dated source records](https://sfgovtracker.com/#case/sunol-quarry-rent-and-estoppel)
+
+## Delay claims, single audits and insurance declarations
+
+San Francisco approved a $2.49 million train-control delay claim after settling with its builder. A separate $705,407.80 payment can be traced to a voucher and an equal credit. [Underlying records and case film](https://sfgovtracker.com/#case/central-subway-testing-and-delay-claims)
+
+San Francisco twice flagged late financial statements. The nonprofit’s independent auditor later documented six federal forms filed beyond nine months. The Controller lowered the city risk designation as other problems were corrected. [Underlying records and case film](https://sfgovtracker.com/#case/conard-house-late-audit-filings)
+
+An injured worker’s claim exposed conflicting payroll declarations. The prosecutor traced the discrepancy across permits, insurer audits and homeowners’ contracts and documented felony pleas. [Underlying records and case film](https://sfgovtracker.com/#case/roofing-permit-payroll-and-state-insurance)
