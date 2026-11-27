@@ -147,6 +147,10 @@
   "seconds": 54.7,
   "passages": 12
  },
+ "board-of-appeals-real-estate-income-disclosures": {
+  "seconds": 44.2,
+  "passages": 14
+ },
  "board-review-line-raised": {
   "seconds": 156.3,
   "passages": 43
@@ -227,6 +231,14 @@
   "seconds": 138.0,
   "passages": 30
  },
+ "city-college-reserve-policy-budget": {
+  "seconds": 44.6,
+  "passages": 13
+ },
+ "city-college-retiree-health-disbursements": {
+  "seconds": 46.7,
+  "passages": 13
+ },
  "city-computer-store-monarch-invoices": {
   "seconds": 57.5,
   "passages": 14
@@ -267,6 +279,10 @@
   "seconds": 51.7,
   "passages": 13
  },
+ "colbruno-lobbying-contacts-and-client-payments": {
+  "seconds": 46.0,
+  "passages": 12
+ },
  "community-challenge-grants": {
   "seconds": 130.9,
   "passages": 34
@@ -306,6 +322,10 @@
  "dish-sf-contingency": {
   "seconds": 130.2,
   "passages": 34
+ },
+ "district-six-newsletter-and-campaign-resources": {
+  "seconds": 40.5,
+  "passages": 11
  },
  "dream-keeper-davis-spingola": {
   "seconds": 144.0,
@@ -407,6 +427,10 @@
   "seconds": 127.2,
   "passages": 27
  },
+ "hall-campaign-gifts-and-gasoline-records": {
+  "seconds": 41.6,
+  "passages": 12
+ },
  "hanson-bay-sand-royalty-settlement": {
   "seconds": 71.3,
   "passages": 14
@@ -475,6 +499,10 @@
   "seconds": 57.6,
   "passages": 12
  },
+ "labor-slate-coordinated-supervisor-flyer": {
+  "seconds": 51.9,
+  "passages": 12
+ },
  "laguna-honda-federal-fines": {
   "seconds": 130.3,
   "passages": 34
@@ -518,6 +546,10 @@
  "local-hiring-construction-penalty-collections": {
   "seconds": 43.9,
   "passages": 11
+ },
+ "local-two-pac-late-contribution-disclosures": {
+  "seconds": 44.5,
+  "passages": 14
  },
  "lombard-chestnut-demolition-settlement": {
   "seconds": 42.1,
@@ -574,6 +606,10 @@
  "money-the-ledger-stops-following": {
   "seconds": 130.3,
   "passages": 33
+ },
+ "neighbors-advocacy-recall-media-services": {
+  "seconds": 41.8,
+  "passages": 12
  },
  "nems-medi-cal-reconciliation-settlement": {
   "seconds": 72.1,
@@ -647,6 +683,10 @@
   "seconds": 140.0,
   "passages": 37
  },
+ "permit-consultants-unreported-contacts": {
+  "seconds": 45.3,
+  "passages": 13
+ },
  "permit-maze-permits-to-finish-permits": {
   "seconds": 138.8,
   "passages": 35
@@ -701,6 +741,10 @@
  },
  "produce-market-director-tenant-rents": {
   "seconds": 49.6,
+  "passages": 12
+ },
+ "progress-sf-state-and-city-contribution-reports": {
+  "seconds": 46.9,
   "passages": 12
  },
  "project-wreckless-insider-debt": {
@@ -903,6 +947,10 @@
   "seconds": 49.5,
   "passages": 10
  },
+ "sfpuc-green-for-all-contract-refund": {
+  "seconds": 41.3,
+  "passages": 14
+ },
  "sfpuc-underground-express-bribes": {
   "seconds": 86.5,
   "passages": 21
@@ -1036,7 +1084,7 @@
   "passages": 35
  },
  "union-name-outside-money": {
-  "seconds": 155.2,
+  "seconds": 167.6,
   "passages": 43
  },
  "union-square-foundation-passthrough": {
@@ -1118,5 +1166,9 @@
  "zoo-loan-and-ledger": {
   "seconds": 146.4,
   "passages": 39
+ },
+ "zsfg-rehabilitation-design-change-orders": {
+  "seconds": 50.9,
+  "passages": 12
  }
 }

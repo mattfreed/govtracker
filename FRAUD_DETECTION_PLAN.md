@@ -499,6 +499,20 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 [View records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
 
+### Follow-ups on administrative orders, reported projects and cash payments
+
+2026-11-27 · Tested
+
+**Records examined** 14 agency-specific tests, eight quarterly consultant returns and the municipal register of 165 ethics resolutions.
+
+**Test** Join dated original and amended filings to formal orders, recipient reports, permit IDs, fund statements and actual cash records.
+
+**Result** A single project’s two permits ran for 2 and 1,087 days on different work; a college liability matched the trust disbursement in the following year; a state filing amendment explained a $2,500 contribution difference.
+
+**Open question** A payment to a prime contractor cannot establish what a subcontractor received. State reports and municipal assessments cannot establish the date of a City receipt.
+
+[View records](https://sfgovtracker.com/#s/agency_evidence_review.filing-and-cash-crosschecks)
+
 ## Investigation questions
 
 ### Grant routing and fiscal sponsorship
@@ -974,6 +988,36 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **How many Caltrain delay minutes were attributed to warranty issues, and were credits documented?** Tested. Caltrain attributed 1,060 delay minutes to Stadler warranty issues in October 2026. The September figure was 392. The cost of repairs, warranty credits and any liquidated damages remain unverified. [Records](https://sfgovtracker.com/#case/caltrain-electric-fleet-warranty-delays)
 
 - **Did a later vote upholding a permit fee produce a traceable receipt at the originally assessed amount?** Tested. The City acknowledged overlooking a $49,712 infrastructure fee on a 2013 permit. All 11 supervisors upheld the assessment in 2023. The payer table does not identify a subsequent receipt or adjustment. [Records](https://sfgovtracker.com/#case/sf-cathedral-impact-fee-missed-at-issuance)
+
+### Follow-ups on administrative orders, reported projects and cash payments
+
+- **Can a hospital’s documented design errors be traced separately from changed conditions, an increased ceiling and actual prime payments?** Tested. Public Works identified design errors in the change orders for a rehabilitation project at Zuckerberg San Francisco General Hospital. The Controller’s vouchers trace total payments to the builder. The public tables do not identify a responsible designer, establish negligence, show a recovery, or isolate a payment for each design change. [Records](https://sfgovtracker.com/#case/zsfg-rehabilitation-design-change-orders)
+
+- **Did a candidate reimburse his campaign, which purchases lacked receipts, and which allegations did the hearing reject?** Tested. San Francisco’s Ethics Commission found that Tony Hall used $320.36 in campaign funds for gifts and failed to document gasoline expenses. His committee received reimbursement for the gifts almost three years later. The order identifies the time of repayment to the campaign. It supplies no receipt showing when the City collected its $6,000 fine. [Records](https://sfgovtracker.com/#case/hall-campaign-gifts-and-gasoline-records)
+
+- **Could a private reimbursement, a payment back to a utility and two agencies’ penalties be distinguished using the order and the voucher register?** Tested. Juliet Ellis helped advance a $200,000 SFPUC agreement with a nonprofit that paid her. The joint enforcement record traces two repayments and says SFPUC kept the work. The signed agreement gives the contract value. The reviewed records leave the amount disbursed to the nonprofit and refunded to the City unresolved. [Records](https://sfgovtracker.com/#case/sfpuc-green-for-all-contract-refund)
+
+- **Do the corrected quarterly reports identify the permits, and do linked applications at the same address have comparable scopes and clocks?** Tested. The Ethics Commission counted 80 late-reported contacts and $50,675 in consulting fees. The eight corrected reports identify permits with markedly different review times. The record does not establish that the consultants accelerated any permit, that a City official received any consulting fee or that the reported fee was a public loss. [Records](https://sfgovtracker.com/#case/permit-consultants-unreported-contacts)
+
+- **Which union committee expenditures appeared eventually on periodic reports but missed election-period disclosure deadlines?** Tested. An audit found that UNITE HERE Local 2 PAC filed rapid disclosures for 20 payments but missed two totaling $9,100. The payments appeared later on its regular campaign statements. The order does not establish that either payment purchased a vote, changed a law, restricted competition or cost the City money. [Records](https://sfgovtracker.com/#case/local-two-pac-late-contribution-disclosures)
+
+- **Did the individually reportable clients omitted from an income disclosure actually have a matter before the commissioner?** Tested. Darryl Honda disclosed more than $100,000 in annual commission income from his brokerage. A signed Ethics order found that he omitted 37 reportable income sources. Investigators checked those sources against Board of Appeals business. The order identifies no appeals decision involving those income sources and no payment from the City to Honda for the brokerage transactions. [Records](https://sfgovtracker.com/#case/board-of-appeals-real-estate-income-disclosures)
+
+- **Who paid for a campaign email platform, who assembled the distribution list and who produced the official and campaign content?** Tested. District 6 staff helped build a subscriber list for official updates. Campaign newsletters went to that list. The Ethics Commission established a City-resource violation and expressly recorded what staff did at City expense. The record does not establish the value of staff time or that taxpayers paid for the email platform. [Records](https://sfgovtracker.com/#case/district-six-newsletter-and-campaign-resources)
+
+- **Which omitted contacts did investigators establish and which missing payments did the lobbyist identify?** Tested. A signed order identifies contacts on behalf of Waymo, Apothecarium and the Alameda County Water District. It separates contacts investigators substantiated from $21,050 in payments the lobbyist later disclosed. The order does not show that a City official received the private client payments or changed a decision in return for a contact. [Records](https://sfgovtracker.com/#case/colbruno-lobbying-contacts-and-client-payments)
+
+- **Can a reserve transfer described as a loan be traced across the college payable, trust authorization, invoice date and final disbursement?** Tested. The retiree health trust recorded $20,603,414 in two payments to City College. Its financial statements reconcile the second payment to the college’s prior-year accounts. The published figures establish no unauthorized use, theft or loss. The $396,586 is the difference between the ceiling and the disbursements. They do not settle the separate question of long-term funding adequacy. [Records](https://sfgovtracker.com/#case/city-college-retiree-health-disbursements)
+
+- **How did college reserves compare with the operative local maximum, state guidance and actual year-end balance?** Tested. The State Auditor compared the college’s fiscal 2025–26 budget with its board’s 9% maximum. The college later reported an unrestricted balance $12,655,684 above its original projection. A budget-policy difference does not establish missing cash or the denial of a particular student service. [Records](https://sfgovtracker.com/#case/city-college-reserve-policy-budget)
+
+- **Can 24 locally delinquent contributions be traced to state reports, local periodic disclosures and a specific amended amount?** Tested. Progress San Francisco sent 24 late-contribution disclosures to the state. San Francisco voters were entitled to find them at the city filing office. The Ethics Commission imposed $29,300. The filings do not trace a particular donor’s dollars to a particular expenditure. The settlement concerns disclosure and supplies no evidence of candidate coordination or payment of the penalty. [Records](https://sfgovtracker.com/#case/progress-sf-state-and-city-contribution-reports)
+
+- **Could agreement on flyer distribution change the legal classification of spending even when candidates did not approve the message?** Tested. The Labor & Working Families Slate reported a flyer opposing Bilal Mahmood. The Ethics Commission assigned part of its cost to Dean Preston’s campaign and assessed $2,513. No personal violation was adjudicated against Preston or Jolley. The March amendment preceded the settlement. A later corrective filing or payment receipt requires separate evidence. [Records](https://sfgovtracker.com/#case/labor-slate-coordinated-supervisor-flyer)
+
+- **When an intermediary provided coordinated services, which payment amounts were already included within the same assessed contribution?** Tested. Neighbors for a Better San Francisco Advocacy paid Riff City Strategies to handle media for the Chesa Boudin recall. The Ethics Commission assessed $53,916 for the missing disclosures. The signed order did not establish a violation involving the separate nonprofit’s compensation of Brooke Jenkins. The date the penalty cleared is unresolved. [Records](https://sfgovtracker.com/#case/neighbors-advocacy-recall-media-services)
+
+- **Did the 2015 campaign audit record a return of unused public money and a separate enforcement penalty receipt?** Tested. The final audit records $27,894.30 in unexpended public funding returned to the City, $120,043 in public financing and no material audit findings. A separate $2,500 disclosure settlement does not identify the clearing date of its penalty. [Records](https://sfgovtracker.com/#s/agency_evidence_review.filing-and-cash-crosschecks)
 
 ## Nonprofits and grants
 

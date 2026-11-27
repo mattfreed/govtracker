@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 280 case files. The public citation check tested 2,252 distinct URLs across 3,853 case citations. 2,158 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 293 case files. The public citation check tested 2,310 distinct URLs across 3,918 case citations. 2,216 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -197,3 +197,11 @@ The archive topic scan returned 2,025 passages. A second review traced 1,260 enf
 These scans visited the PDF pages in the stated inventories. Some mixed-text PDFs contained scanned pages without usable native text. A separate page-level OCR recovery is in progress. A missing search match on an unreadable page cannot rule out a finding.
 
 The supplemental scan covered 382 distinct file contents added or changed since the original snapshot. All 120 returned passages matched the dispositions recorded for 36 source files. The separately recorded checks compare accounting records and agency decisions beyond those search terms.
+
+## Further payment and filing checks
+
+The [follow-up table](https://sfgovtracker.com/#s/agency_evidence_review.filing-and-cash-crosschecks) records findings and contrary evidence, including a campaign audit that confirmed a previously unresolved return of public money. All 165 documents linked by the current Ethics Commission register resolved to locally verified PDFs. Some orders include multiple respondents or resolve related proceedings.
+
+The [building-permit comparison](https://sfgovtracker.com/#s/agency_evidence_review.disclosed-project-permit-times) gives the actual filing and issuance dates for the 12 exact permit numbers found across eight corrected consultant returns. Seven had both dates. At 150 Eureka a two-day permit concerned a rear storage building seismic upgrade, and a 1,087-day permit concerned a church conversion with two additional floors.
+
+The capital archive recovery verified all 1,908 distinct PDF contents in the historical download log. A supplemental search of 490 restored original documents examined 22,797 pages. Eleven passages returned by the topic screen concerned equipment reuse, projected water shortfalls, project scope or authorized financing. The recovered originals and the exact passages were reconciled without imputing a financial loss to a budget or financing term. Image-only pages in the wider archive remain under separate optical review.

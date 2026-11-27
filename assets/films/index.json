@@ -147,6 +147,10 @@
   "seconds": 54.7,
   "poster": "bicycle-coalition-lobbying-and-ballot-refunds.jpg"
  },
+ "board-of-appeals-real-estate-income-disclosures": {
+  "seconds": 44.2,
+  "poster": "board-of-appeals-real-estate-income-disclosures.jpg"
+ },
  "board-review-line-raised": {
   "seconds": 156.3,
   "poster": "board-review-line-raised.jpg"
@@ -227,6 +231,14 @@
   "seconds": 138.0,
   "poster": "city-college-findings-that-came-back.jpg"
  },
+ "city-college-reserve-policy-budget": {
+  "seconds": 44.6,
+  "poster": "city-college-reserve-policy-budget.jpg"
+ },
+ "city-college-retiree-health-disbursements": {
+  "seconds": 46.7,
+  "poster": "city-college-retiree-health-disbursements.jpg"
+ },
  "city-computer-store-monarch-invoices": {
   "seconds": 57.5,
   "poster": "city-computer-store-monarch-invoices.jpg"
@@ -267,6 +279,10 @@
   "seconds": 51.7,
   "poster": "clipper-outage-muni-fare-claim.jpg"
  },
+ "colbruno-lobbying-contacts-and-client-payments": {
+  "seconds": 46.0,
+  "poster": "colbruno-lobbying-contacts-and-client-payments.jpg"
+ },
  "community-challenge-grants": {
   "seconds": 130.9,
   "poster": "community-challenge-grants.jpg"
@@ -306,6 +322,10 @@
  "dish-sf-contingency": {
   "seconds": 130.2,
   "poster": "dish-sf-contingency.jpg"
+ },
+ "district-six-newsletter-and-campaign-resources": {
+  "seconds": 40.5,
+  "poster": "district-six-newsletter-and-campaign-resources.jpg"
  },
  "dream-keeper-davis-spingola": {
   "seconds": 144.0,
@@ -407,6 +427,10 @@
   "seconds": 127.2,
   "poster": "grand-jury-promises-not-kept.jpg"
  },
+ "hall-campaign-gifts-and-gasoline-records": {
+  "seconds": 41.6,
+  "poster": "hall-campaign-gifts-and-gasoline-records.jpg"
+ },
  "hanson-bay-sand-royalty-settlement": {
   "seconds": 71.3,
   "poster": "hanson-bay-sand-royalty-settlement.jpg"
@@ -475,6 +499,10 @@
   "seconds": 57.6,
   "poster": "kezar-architect-state-contracting-ban.jpg"
  },
+ "labor-slate-coordinated-supervisor-flyer": {
+  "seconds": 51.9,
+  "poster": "labor-slate-coordinated-supervisor-flyer.jpg"
+ },
  "laguna-honda-federal-fines": {
   "seconds": 130.3,
   "poster": "laguna-honda-federal-fines.jpg"
@@ -518,6 +546,10 @@
  "local-hiring-construction-penalty-collections": {
   "seconds": 43.9,
   "poster": "local-hiring-construction-penalty-collections.jpg"
+ },
+ "local-two-pac-late-contribution-disclosures": {
+  "seconds": 44.5,
+  "poster": "local-two-pac-late-contribution-disclosures.jpg"
  },
  "lombard-chestnut-demolition-settlement": {
   "seconds": 42.1,
@@ -574,6 +606,10 @@
  "money-the-ledger-stops-following": {
   "seconds": 130.3,
   "poster": "money-the-ledger-stops-following.jpg"
+ },
+ "neighbors-advocacy-recall-media-services": {
+  "seconds": 41.8,
+  "poster": "neighbors-advocacy-recall-media-services.jpg"
  },
  "nems-medi-cal-reconciliation-settlement": {
   "seconds": 72.1,
@@ -647,6 +683,10 @@
   "seconds": 140.0,
   "poster": "pay-at-the-top-and-bonuses.jpg"
  },
+ "permit-consultants-unreported-contacts": {
+  "seconds": 45.3,
+  "poster": "permit-consultants-unreported-contacts.jpg"
+ },
  "permit-maze-permits-to-finish-permits": {
   "seconds": 138.8,
   "poster": "permit-maze-permits-to-finish-permits.jpg"
@@ -702,6 +742,10 @@
  "produce-market-director-tenant-rents": {
   "seconds": 49.6,
   "poster": "produce-market-director-tenant-rents.jpg"
+ },
+ "progress-sf-state-and-city-contribution-reports": {
+  "seconds": 46.9,
+  "poster": "progress-sf-state-and-city-contribution-reports.jpg"
  },
  "project-wreckless-insider-debt": {
   "seconds": 142.7,
@@ -903,6 +947,10 @@
   "seconds": 49.5,
   "poster": "sfpd-seized-property-missing-from-evidence.jpg"
  },
+ "sfpuc-green-for-all-contract-refund": {
+  "seconds": 41.3,
+  "poster": "sfpuc-green-for-all-contract-refund.jpg"
+ },
  "sfpuc-underground-express-bribes": {
   "seconds": 86.5,
   "poster": "sfpuc-underground-express-bribes.jpg"
@@ -1036,7 +1084,7 @@
   "poster": "uniformed-overtime-and-the-agreements.jpg"
  },
  "union-name-outside-money": {
-  "seconds": 155.2,
+  "seconds": 167.6,
   "poster": "union-name-outside-money.jpg"
  },
  "union-square-foundation-passthrough": {
@@ -1118,5 +1166,9 @@
  "zoo-loan-and-ledger": {
   "seconds": 146.4,
   "poster": "zoo-loan-and-ledger.jpg"
+ },
+ "zsfg-rehabilitation-design-change-orders": {
+  "seconds": 50.9,
+  "poster": "zsfg-rehabilitation-design-change-orders.jpg"
  }
 }
