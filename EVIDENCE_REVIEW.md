@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 337 case files. The public citation check tested 2,640 distinct URLs across 4,281 case citations. 2,543 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 342 case files. The public citation check tested 2,678 distinct URLs across 4,322 case citations. 2,581 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -305,3 +305,15 @@ When BART missed the federal service equity analysis requirement for the airport
 The licensing board recorded two local debarments for false payrolls on public projects. The prosecutor subsequently reported two felony premium-fraud pleas and $20,000 paid at sentencing. The record leaves the final restitution balance open. [Licensing history, arraignment and sentencing records](https://sfgovtracker.com/#case/doherty-painting-public-payroll-and-debarments)
 
 The Budget and Legislative Analyst compared two proposed tenant-counsel grant budgets with the housing department’s share of rent and utilities at 976 Mission Street. The $432,708 difference is a budget finding. The separate federal draw ledger matches the neighborhood development grant portion of one contract to the cent. Invoices would show the actual rent charged. [Office allocations](https://sfgovtracker.com/#case/tenant-counsel-grants-office-cost-allocation) · [Federal draw reconciliation](https://sfgovtracker.com/#case/housing-block-grant-eviction-defense-audit)
+
+## School apportionments, lease collections, contractor restitution and housing delivery
+
+A City report documents the sentence. Two state contractor registrations lead to the same earlier license revocation, including a corporate license that had already expired. [Case file and dated source records](https://sfgovtracker.com/#case/avoca-public-works-restitution-and-licenses)
+
+San Francisco reported that eight of nine subsidy providers missed a housing-search target. Brilliant Corners averaged 281 days. Most of its referred clients ultimately moved into housing. [Case file and dated source records](https://sfgovtracker.com/#case/housing-subsidy-placement-delays)
+
+San Francisco sought providers for 2,821 existing housing slots. A year after bids were due, HSH canceled the competition. The proposed bridge for a major subsidy provider ended before the revised timetable. [Case file and dated source records](https://sfgovtracker.com/#case/scattered-site-housing-rebid)
+
+California allocated $88.2 million in statewide school funding that was unavailable. Its March 2022 recovery schedule shows a $606,049 offset against San Francisco Unified. [Case file and dated source records](https://sfgovtracker.com/#case/sfusd-title-i-overpayment-offset)
+
+San Francisco’s auditor estimated up to $2.08 million in forgone quarry rent. The City later restored a base rent and documented $229,400 of receipts over three years. [Case file and dated source records](https://sfgovtracker.com/#case/sunol-quarry-rent-and-estoppel)

@@ -71,6 +71,10 @@
   "seconds": 130.5,
   "passages": 30
  },
+ "avoca-public-works-restitution-and-licenses": {
+  "seconds": 47.2,
+  "passages": 17
+ },
  "baker-places-health-debt-repayment": {
   "seconds": 64.7,
   "passages": 18
@@ -535,6 +539,10 @@
   "seconds": 125.9,
   "passages": 27
  },
+ "housing-subsidy-placement-delays": {
+  "seconds": 59.3,
+  "passages": 14
+ },
  "hrc-split-purchases": {
   "seconds": 130.4,
   "passages": 35
@@ -919,6 +927,10 @@
   "seconds": 44.0,
   "passages": 12
  },
+ "scattered-site-housing-rebid": {
+  "seconds": 67.3,
+  "passages": 14
+ },
  "school-bond-committee-empty-audits-late": {
   "seconds": 137.1,
   "passages": 31
@@ -1131,6 +1143,10 @@
   "seconds": 40.4,
   "passages": 13
  },
+ "sfusd-title-i-overpayment-offset": {
+  "seconds": 56.4,
+  "passages": 17
+ },
  "sheriff-oversight-title-in-personal-encounters": {
   "seconds": 44.8,
   "passages": 10
@@ -1194,6 +1210,10 @@
  "sunol-electricity-tax-remitted-to-wrong-county": {
   "seconds": 50.7,
   "passages": 15
+ },
+ "sunol-quarry-rent-and-estoppel": {
+  "seconds": 62.8,
+  "passages": 13
  },
  "supervisors-voted-on-recent-employers-grants": {
   "seconds": 130.4,
