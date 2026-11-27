@@ -174,7 +174,7 @@
         ${(c.defense || []).length ? `<div class="card pad"><h3 style="font-size:16px;margin-bottom:10px">What those named say</h3><ul class="list">${c.defense.map(x => `<li>${ic('quote')}<span>${esc(x)}</span></li>`).join('')}</ul></div>` : ''}</div></section>
       <section class="block" id="next"><h2>What would settle it</h2><p class="sub">The specific records that would confirm or close this.</p><div class="card pad"><ul class="list">${c.next.map(x => `<li>${ic('arrow')}<span>${esc(x)}</span></li>`).join('')}</ul></div></section>
       ${(c.related || []).length ? `<section class="block"><h2>Connected cases</h2><div class="grid g2">${c.related.map(r => caseCard(byId[r])).join('')}</div></section>` : ''}
-      <section class="block" id="srcs"><h2>Sources</h2><p class="sub">Numbers in the text point here.</p><ol class="sources card pad">${c.sources.map((s, i) => `<li id="src${i + 1}"><span class="n">${i + 1}</span><div>${/^https:\/\//.test(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>` : esc(s.title)}<small>${esc(s.publisher)}${s.date ? ' · ' + esc(fmtDate(s.date)) : ''}${srcGet(s)}</small>${s.quote ? `<q>${esc(s.quote)}</q>` : ''}</div></li>`).join('')}</ol></section>`;
+      <section class="block" id="srcs"><h2>Sources</h2><p class="sub">Numbers in the text point here.</p><ol class="sources card pad">${c.sources.map((s, i) => `<li id="src${i + 1}"><span class="n">${i + 1}</span><div>${/^https:\/\//.test(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>` : esc(s.title)}<small>${esc(s.publisher)}${s.date ? ' · ' + esc(fmtDate(s.date)) : ''}${srcGet(s)}</small>${sourceDownloads(s)}${s.quote ? `<q>${esc(s.quote)}</q>` : ''}</div></li>`).join('')}</ol></section>`;
   }
   /* where a reader can get the record: the source's own public link, a DataSF CSV download, or a plain "not online" note.
      The site does not host the raw data (owner, 24 Nov 2026), so no saved copy is ever pointed to. */
@@ -192,6 +192,13 @@
     return (csv ? ` · <a href="${esc(csv)}" target="_blank" rel="noopener noreferrer">download the CSV</a>` : '') +
       (s.got === 'hand' ? ' · Find the saved record by its title in the publisher’s search.' : '');
   };
+  function sourceDownloads(source) {
+    const files = (source.downloads || []).filter(file => /^https:\/\//.test(file.url));
+    if (!files.length) return '';
+    const links = files.map(file => `<a href="${esc(file.url)}" target="_blank" rel="noopener noreferrer">${esc(file.title)} ↗</a>`);
+    if (links.length === 1) return `<small>${links[0]}</small>`;
+    return `<details><summary>${links.length} downloadable documents</summary><ul>${links.map(link => `<li>${link}</li>`).join('')}</ul></details>`;
+  }
   function bindRefs(root) {
     root.querySelectorAll('[data-src]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); const el = document.getElementById('src' + a.dataset.src); if (!el) return; document.querySelectorAll('.sources li.hl').forEach(x => x.classList.remove('hl')); el.classList.add('hl'); el.scrollIntoView({ block: 'center' }); }));
   }

@@ -259,9 +259,14 @@
     function chrome(t, b, bi, p) {
       if (s.citationBeat !== bi) {
         s.citationBeat = bi;
-        const sources = window.FD_FILM6?.sourcesFor(b, c) || [];
-        const source = sources[0];
-        const extra = sources.slice(1);
+        const cited = window.FD_FILM6?.sourcesFor(b, c) || [];
+        const sources = cited.flatMap(row => {
+          const downloads = (row.downloads || []).filter(file => /^https:\/\//.test(file.url));
+          return row.downloadRole === 'alternate' ? [...downloads, row] : [row, ...downloads];
+        });
+        const unique = sources.filter((row, i) => sources.findIndex(other => other.url === row.url) === i);
+        const source = unique[0];
+        const extra = unique.slice(1);
         s.otherSources.open = false;
         s.otherSources.hidden = !extra.length;
         if (extra.length) {

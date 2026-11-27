@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 293 case files. The public citation check tested 2,310 distinct URLs across 3,918 case citations. 2,216 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 298 case files. The public citation check tested 2,339 distinct URLs across 3,948 case citations. 2,245 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -205,3 +205,9 @@ The [follow-up table](https://sfgovtracker.com/#s/agency_evidence_review.filing-
 The [building-permit comparison](https://sfgovtracker.com/#s/agency_evidence_review.disclosed-project-permit-times) gives the actual filing and issuance dates for the 12 exact permit numbers found across eight corrected consultant returns. Seven had both dates. At 150 Eureka a two-day permit concerned a rear storage building seismic upgrade, and a 1,087-day permit concerned a church conversion with two additional floors.
 
 The capital archive recovery verified all 1,908 distinct PDF contents in the historical download log. A supplemental search of 490 restored original documents examined 22,797 pages. Eleven passages returned by the topic screen concerned equipment reuse, projected water shortfalls, project scope or authorized financing. The recovered originals and the exact passages were reconciled without imputing a financial loss to a budget or financing term. Image-only pages in the wider archive remain under separate optical review.
+
+## Restored documents and later assessment records
+
+The post-recovery snapshot counted 173,560 raw paths. The 1,415 additions relative to the original snapshot contained 962 distinct file contents. The supplemental rules returned 125 passages from 37 contents. Comparing the exact file, page, rule and position identified five additional optical matches in three audit appendices. These corroborate existing findings on Golden Gate Park tennis rent, the airport’s erroneous Travelex credit and the Pier 23 rent response. New acquisitions after this snapshot and ongoing optical reading are tracked separately.
+
+The [assessment records](https://sfgovtracker.com/#s/agency_evidence_review.assessment-appeal-and-cost-checks) trace a missed appeal deadline through two appellate judgments and a later five-matter settlement authorization. For the assessment system, payments on 117 voucher lines reconcile to the Controller’s register. The state’s two separate exemption findings identify control failures without assigning them to any particular parcel.

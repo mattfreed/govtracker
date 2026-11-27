@@ -216,8 +216,8 @@
   "passages": 14
  },
  "city-college-contracts-grew-by-memo": {
-  "seconds": 164.7,
-  "passages": 41
+  "seconds": 92.2,
+  "passages": 25
  },
  "city-college-copier-invoice-order-numbers": {
   "seconds": 50.5,
@@ -591,6 +591,10 @@
   "seconds": 130.3,
   "passages": 34
  },
+ "mission-housing-tax-appeal-deadlines": {
+  "seconds": 53.4,
+  "passages": 13
+ },
  "mission-valley-rock-quarry-royalties": {
   "seconds": 59.5,
   "passages": 14
@@ -684,8 +688,8 @@
   "passages": 37
  },
  "permit-consultants-unreported-contacts": {
-  "seconds": 45.3,
-  "passages": 13
+  "seconds": 55.4,
+  "passages": 16
  },
  "permit-maze-permits-to-finish-permits": {
   "seconds": 138.8,
@@ -831,6 +835,10 @@
   "seconds": 130.4,
   "passages": 35
  },
+ "sf-assessor-smart-system-delay": {
+  "seconds": 41.3,
+  "passages": 11
+ },
  "sf-cathedral-impact-fee-missed-at-issuance": {
   "seconds": 55.4,
   "passages": 14
@@ -846,6 +854,10 @@
  "sf-invalid-engineering-credentials-five-projects": {
   "seconds": 87.9,
   "passages": 20
+ },
+ "sf-late-welfare-exemption-assessments": {
+  "seconds": 42.1,
+  "passages": 14
  },
  "sf-minimum-wage-collections": {
   "seconds": 43.7,
@@ -866,6 +878,10 @@
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
   "passages": 37
+ },
+ "sf-seismic-tax-exclusion-claim-controls": {
+  "seconds": 44.6,
+  "passages": 13
  },
  "sf-state-preschool-eligibility-refund": {
   "seconds": 49.1,
@@ -970,6 +986,10 @@
  "sfusd-e-rate-net-disbursement-reconciliation": {
   "seconds": 55.3,
   "passages": 11
+ },
+ "sfusd-immunization-attendance-audits": {
+  "seconds": 47.5,
+  "passages": 10
  },
  "sfusd-pay-reported-outside-regular-wages": {
   "seconds": 63.3,

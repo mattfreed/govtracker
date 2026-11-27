@@ -927,6 +927,18 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 - **Were ordinary airport rents paid even when contractual late fees went unassessed?** Tested. Separate airport audits document $74,407 in previously unassessed late fees across three operators. The airport changed its fee policy in April 2012. [Records](https://sfgovtracker.com/#case/sfo-rent-late-fee-policy)
 
+### Assessor records, historic appeal deadlines and system costs
+
+- **How did the City handle the cap for late welfare exemption claims?** Tested. California reviewers found that San Francisco sometimes gave a full welfare exemption after a late filing and sometimes added $250 to the bill. The Assessor agreed the system did not calculate the partial exemptions properly. Can the City show the corrected amount on each deidentified tax bill? [Records](https://sfgovtracker.com/#case/sf-late-welfare-exemption-assessments)
+
+- **Did the Assessor have the required claim and eligible costs for a seismic exclusion?** Tested. State reviewers found several cases in which the Assessor excluded retrofit work from new-construction assessments without obtaining the required claim form or documentation. Which cost certifications arrived from DBI and which were supplied directly? [Records](https://sfgovtracker.com/#case/sf-seismic-tax-exclusion-claim-controls)
+
+- **How did the planned launch, vendor contribution and payments for the assessment system compare?** Tested. Phase 2 of the replacement assessment system went live in September 2025. A joint review attributed 92% of the delay to Sapient. Both the City and the vendor funded additional work. Which outstanding deliverables passed acceptance, and did operational incident records trigger any service credits? [Records](https://sfgovtracker.com/#case/sf-assessor-smart-system-delay)
+
+- **What happened when assessment appeal hearings ran past the statutory deadline?** Tested. A California appeals court ruled that San Francisco had to use the owners’ stated values for two tax years after its appeals board missed a statutory deadline. Other years had different outcomes. How much of the five-matter settlement did the City actually pay, to whom and in which tax years? [Records](https://sfgovtracker.com/#case/mission-housing-tax-appeal-deadlines)
+
+- **How many contemporary assessment appeals exceeded an applicable deadline after waivers and period-specific extensions?** Partial. The budget identified 14,000 open appeals and a separate district study identified six pending filings. Match filing, hearing and decision dates to documented waivers and any emergency extensions in force for the particular application. [Records](https://sfgovtracker.com/#s/agency_evidence_review.assessment-appeal-and-cost-checks)
+
 ### Agency records, payment direction and fiscal-year exceptions
 
 - **Did the transit contractor’s actual restitution match the amount demanded?** Tested. BART confirmed an $11,900 recovery. The event agreement separated a performance bond from fundraising. The final sweeping settlement amount and ultimate distribution of event back wages remain open. [Records](https://sfgovtracker.com/#case/bart-power-washing-contract-false-claims)
