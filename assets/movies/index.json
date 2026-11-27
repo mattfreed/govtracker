@@ -19,13 +19,17 @@
   "seconds": 77.3,
   "passages": 17
  },
+ "americas-cup-host-costs-and-back-wages": {
+  "seconds": 69.3,
+  "passages": 16
+ },
  "approved-after-the-fact": {
   "seconds": 138.5,
   "passages": 43
  },
  "aquarium-photography-receipts-port-rent": {
-  "seconds": 41.4,
-  "passages": 12
+  "seconds": 55.5,
+  "passages": 16
  },
  "arriba-juntos-grant-cost-allocation": {
   "seconds": 52.2,
@@ -184,7 +188,7 @@
   "passages": 41
  },
  "city-college-copier-invoice-order-numbers": {
-  "seconds": 41.7,
+  "seconds": 50.5,
   "passages": 11
  },
  "city-college-distance-education-apportionment": {
@@ -712,8 +716,8 @@
   "passages": 15
  },
  "sf-invalid-engineering-credentials-five-projects": {
-  "seconds": 66.4,
-  "passages": 16
+  "seconds": 87.9,
+  "passages": 20
  },
  "sf-nursing-homes-losses-related-pay": {
   "seconds": 130.4,
@@ -722,6 +726,10 @@
  "sf-plumbing-permit-after-state-license-revocation": {
   "seconds": 121.6,
   "passages": 26
+ },
+ "sf-public-works-somarts-paving-contract-title": {
+  "seconds": 53.2,
+  "passages": 16
  },
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
@@ -779,6 +787,10 @@
   "seconds": 41.5,
   "passages": 12
  },
+ "sfo-rent-late-fee-policy": {
+  "seconds": 60.8,
+  "passages": 13
+ },
  "sfo-runway-grant-reimbursement": {
   "seconds": 44.0,
   "passages": 9
@@ -790,6 +802,10 @@
  "sfpd-seized-property-missing-from-evidence": {
   "seconds": 49.5,
   "passages": 10
+ },
+ "sfpuc-underground-express-bribes": {
+  "seconds": 86.5,
+  "passages": 21
  },
  "sfusd-cafeteria-interest-on-general-fund-support": {
   "seconds": 52.8,

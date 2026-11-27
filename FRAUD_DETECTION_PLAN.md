@@ -443,6 +443,48 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 [View records](https://sfgovtracker.com/#case/baker-places-health-debt-repayment)
 
+### Cross-check competitive bids against subsequent project teams
+
+2026-11-27 · Reviewed
+
+**Records examined** 420 bid entries in 108 documents; 105 state registrations covering 103 projects.
+
+**Test** Verify bidder names, contract crosswalks, state registrations, proposed teams and recorded payments.
+
+**Result** Eight unsuccessful bidders appear on winning teams on seven projects. Six appeared on proposal schedules. Four had reported payments.
+
+**Open question** Team membership alone cannot establish coordination. For unreported amounts the original subcontracts, payrolls and payment vouchers are required.
+
+[View records](https://sfgovtracker.com/#s/bid_subcontract_review)
+
+### Trace disclosed labor lobbying to legislative decisions and final orders
+
+2026-11-27 · Reviewed
+
+**Records examined** 124,020 distinct lobby activity IDs and 37,687 filing versions.
+
+**Test** Remove superseded filings, link exact Board files, compare other clients and read signed outcomes.
+
+**Result** 1,482 union-client contacts and 1,125 disclosed payment entries totaling $3,592,156.70. Of the contacts, 329 cited 51 Board files. Two campaign enforcement orders were traced separately.
+
+**Open question** Filings do not assign monthly fees to individual hearings. Obtain underlying submissions to identify the exact amendments sought.
+
+[View records](https://sfgovtracker.com/#s/union_lobby_review)
+
+### Retest the complete raw archive and adjudicate every returned passage
+
+2026-11-27 · Reviewed
+
+**Records examined** 172,145 initial paths, 163,193 distinct contents, 343 subsequent new or changed files.
+
+**Test** Scan 724,146 PDF pages, 177,525 text or table streams, and 64,649 archive members. A separate legacy reader processed 27,154,771 Access rows.
+
+**Result** The ten additional sets of terms returned 472 passages in 127 files. All were reconciled to records and evidence status. Four encrypted workbooks matched the issuer’s blank forms byte for byte.
+
+**Open question** The specific cover of a damaged Lakeshore school contract remains incomplete. Invoices, receipts, rulings and other still-missing records are listed on the case files and Requested data.
+
+[View records](https://sfgovtracker.com/#wanted)
+
 ## Investigation questions
 
 ### Grant routing and fiscal sponsorship
@@ -843,6 +885,20 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 - **Did a later inspection, utility copy or regulator correction sustain or reverse a forged-signature allegation?** Tested. Compare the original image, inspector account and corrective permit for the same site. One 2018 license complaint was expressly reversed after correction of the recorded number. [Records](https://sfgovtracker.com/#case/sf-forged-permit-and-inspection-records)
 
+### Contract names, competitive bids and recovered payments
+
+- **Can a street contract be identified even if the public ledger gives it another project’s title?** Tested. A signed paving resolution, prime allocation and seven subcontract amounts reconcile to $7,897,922. A separate signed award reconciles the cultural-center team. Both ledgers showed zero payments at the November 22 snapshot. [Records](https://sfgovtracker.com/#case/sf-public-works-somarts-paving-contract-title)
+
+- **Did a losing bidder subsequently join the winning team, and was that role already disclosed?** Tested. The comparison links all 420 bid entries in 108 documents to later contracts. Eight losing bidders appeared on seven winning teams. Six were already in proposal schedules. Four had reported payments. [Records](https://sfgovtracker.com/#s/bid_subcontract_review.bidders-on-winning-teams)
+
+- **Can a federal restitution order, civil settlement and city receipt be reconciled by beneficiary?** Tested. The SFPUC supplier’s criminal case identifies $19,762.90 in restitution ordered for San Francisco. The separate city settlement authorized $75,000 from two defendants. Final receipts remain to be reconciled. [Records](https://sfgovtracker.com/#case/sfpuc-underground-express-bribes)
+
+- **Did two appeals attracting the same labor lobbyist produce different decisions?** Tested. Two Waymo appeals drew 21 reported contacts each from the same client. The Board outcomes differed. The filings disclose monthly payments without assigning a price to either hearing. [Records](https://sfgovtracker.com/#s/union_lobby_review.decisions-and-terms)
+
+- **Was a host fundraising target guaranteed, and how much of the wage settlement reached workers?** Tested. The executed America’s Cup agreement distinguishes the bond from fundraising. The Event Authority paid the City $406,566. By February 2014, 74 of 120 affected workers had received back wages. [Records](https://sfgovtracker.com/#case/americas-cup-host-costs-and-back-wages)
+
+- **Were ordinary airport rents paid even when contractual late fees went unassessed?** Tested. Separate airport audits document $74,407 in previously unassessed late fees across three operators. The airport changed its fee policy in April 2012. [Records](https://sfgovtracker.com/#case/sfo-rent-late-fee-policy)
+
 ## Nonprofits and grants
 
 ### Deals with insiders  ·  run
@@ -1076,14 +1132,14 @@ Review each unresolved record after a release. When new evidence changes an outc
   3. Read the largest June orders: were goods delivered that year?
 - **Still needed:** Delivery receipts.
 
-### Bidders taking turns  ·  partly
+### Bidders taking turns  ·  run
 
 *Traditional scheme.* Competitors agree who wins, or a bidder is fed inside information.
 
 - **What it looks like in the records:** The same few bidders rotating wins; losing bids far above the winner; a winner who subcontracts to a loser.
 - **Data:** Bid tabulations
-- **Screen:** `(needs data)`
-- **Found this edition:** Six firms (R&S Construction Management, Inc., Mitchell Engineering, Precision Engineering, Inc., Esquivel Grading & Paving, Inc., A. Ruiz Construction Company, Ronan Construction, Inc.) account for 132 of the 420 bids; at least two of them meet on 32 of 71 Public Works lists, and one of the six is recommended on 21 of those. Esquivel Grading & Paving, Inc. was recommended on 10 of the 22 lists it entered; R&S Construction Management, Inc. on 3 of 27.
+- **Screen:** `the “bid subcontract review” analysis, the “xlink contracts” analysis`
+- **Found this edition:** 8 bidder–project pairs on 7 projects have a named City subcontractor row. 4 carry a positive payment figure. The original bid paperwork also identifies 6 of the commitments.
 - **How to trace it yourself:**
   1. Request bid tabulations for a category of work.
   2. Tabulate who bid and who won over five years.
@@ -1096,7 +1152,7 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 - **What it looks like in the records:** A local subcontractor listed on the team with no payments.
 - **Data:** Contract team lists
-- **Screen:** `the “lbe fronts” analysis, the “aliases” analysis`
+- **Screen:** `the “bid subcontract review” analysis, the “lbe fronts” analysis, the “aliases” analysis`
 - **Found this edition:** On 38 contracts, a subcontractor carrying the local-business flag works under a prime contractor or joint-venture member that the directory records as its affiliate (38 pairings, 8 distinct firm pairs, $6.4 million in listed subcontract shares). The most frequent: LAVINA TRUCKING, INC. under ESQUIVEL GRADING & PAVING INC, on 22 contracts ($5.1 million). 70 more pairings of recorded affiliates on one team are of other kinds (two subcontractors, or the certified firm as the prime).
 - **How to trace it yourself:**
   1. List local subcontractors named on a contract.

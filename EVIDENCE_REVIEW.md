@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 244 case files. The public citation check tested 2,120 distinct URLs across 3,715 case citations. 2,028 returned content. 87 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 248 case files. The public citation check tested 2,148 distinct URLs across 3,744 case citations. 2,055 returned content. 88 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -179,3 +179,11 @@ On November 27 the ten searches were rerun on the searchable raw text and table 
 Seventeen page matches across 11 PDFs received individual dispositions. Ten supported existing cases, three concerned ordinary project scope, three described accounting policies and one concerned school equipment in Chicago. None supported a separate San Francisco case. The underlying local records still leave substantive questions open, including the 46 permit and license matches that need historical status evidence and the differences between invoice authorizations and net federal disbursements. [Investigation register](https://sfgovtracker.com/#plan) · [Outstanding records](https://sfgovtracker.com/#wanted)
 
 The November 2017 SFMTA refund notice states that its citation issue dates begin January 1, 1995. A 2018 resolution describes that notice as starting January 1, 1994. The listed citations run from August 2, 1996 to June 15, 2014. The wider authorization in the resolution is a separate time period. These documents do not identify an omitted claimant. [Published notice and list](https://www.sfmta.com/sites/default/files/reports-and-documents/2017/11/escheatment_posting_oct_2017.pdf) · [Signed resolution, page 1](https://sfbos.org/sites/default/files/r0177-18.pdf)
+
+## Full archive recheck
+
+The November 27 inventory contained 172,145 paths and 163,193 distinct contents. The full pass read 724,146 PDF pages and 177,525 text or table streams, including material inside archives. The ten additional search topics returned 472 passages in 127 files. Each passage has a disposition in the review ledger. Earlier finance, permitting and relationship comparisons used additional tests.
+
+The separate legacy pass read 189 worksheets or text tables and 27,154,771 rows across 229 Access tables. Four encrypted forms matched the state's publicly distributed blank templates byte for byte. Five public instruction letters supplied the field definitions. One damaged school-board attachment still lacks its specific transaction cover despite comparison with six other attachments.
+
+A subsequent inventory reached 172,488 paths. It identified 343 new or changed files with 338 distinct new or changed contents. The supplemental content pass recorded 0 read errors. Unpublished receipts, signed schedules and later dispositions can change individual findings. The case files identify which records would resolve each open question.

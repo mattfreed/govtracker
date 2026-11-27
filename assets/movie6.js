@@ -95,7 +95,7 @@
     calendar: '<rect x="4" y="7" width="24" height="22" rx="3"/><path d="M9 4v7m14-7v7M4 15h24 M10 21h4m4 0h4"/>',
     gap: '<path d="M8 3h12l6 6v7m0 8v5H8v-7m0-7V3 M20 3v7h6 M5 22l5-4 4 4 4-4 4 4 5-4"/>',
   };
-  const recordIcon = name => '<svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">' + (recordIcons[name] || recordIcons.file) + '</svg>';
+  const recordIcon = name => '<svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">' + (recordIcons[name] || pictogramPath(name)) + '</svg>';
   const docTypeIcon = (source, kicker) => {
     const description = (String(source?.title || '') + ' ' + String(kicker || '')).toLowerCase();
     if (/audit|inspector general|financial statement/.test(description)) return 'audit';
@@ -616,11 +616,20 @@
     file:'<path d="M3 8h10l3 3h13v14H3z M3 15h26"/>',
     clock:'<circle cx="16" cy="16" r="12"/><path d="M16 8v9l6 4"/>',
     building:'<path d="M5 28h22M7 28V7l13-3v24 M20 12h5v16 M11 11h3m-3 5h3m-3 5h3"/>',
+    receipt:'<path d="M7 3l3 2 3-2 3 2 3-2 3 2 3-2v26l-3-2-3 2-3-2-3 2-3-2-3 2z M11 10h10m-10 5h7m-7 5h10"/>',
+    ledger:'<rect x="5" y="4" width="23" height="24" rx="2"/><path d="M10 4v24M14 10h10m-10 6h10m-10 6h10m-4-12v12"/>',
+    shield:'<path d="m16 3 11 4v9c0 6-5 10-11 14C9 26 5 22 5 16V7z m-6 13 4 4 8-8"/>',
+    map:'<path d="m3 7 8-3 10 3 8-3v21l-8 3-10-3-8 3z M11 4v21 M21 7v21"/>',
+    port:'<circle cx="16" cy="7" r="3"/><path d="M16 10v17M10 14h12 M4 19c1 6 7 9 12 9s11-3 12-9 M3 22l1-4 4 2m16 0 4-2 1 4"/>',
+    contract:'<path d="M6 3h13l6 6v11 M19 3v7h6M6 3v25h9 M10 14h9m-9 4h5 M16 26l2-5 8-8 3 3-8 8z"/>',
     fiber:'<path d="M3 8h8c4 0 5 16 10 16h8 M3 16h26 M3 24h8c4 0 5-16 10-16h8"/>'
   };
-  const iconAliases = {audit:'magnifier',decision:'gavel',contract:'document',fund:'money',cost:'money',account:'money',agency:'cityhall',van:'transit',order:'document',remedy:'transfer',date:'calendar',closure:'gavel',map:'building',program:'file',information:'document'};
+  const iconAliases = {audit:'magnifier',decision:'gavel',fund:'money',cost:'money',account:'money',agency:'cityhall',van:'transit',order:'document',remedy:'transfer',date:'calendar',closure:'gavel',program:'file',information:'document',search:'magnifier'};
+  function pictogramPath(name) {
+    return pictograms[iconAliases[name] || name] || pictograms.document;
+  }
   function plateIcon(name) {
-    const path = pictograms[iconAliases[name] || name] || pictograms.document;
+    const path = pictogramPath(name);
     return '<svg class="plate-icon" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + path + '</svg>';
   }
   function subjectIcon(v, c) {
