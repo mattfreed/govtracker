@@ -75,6 +75,10 @@
   "seconds": 64.7,
   "passages": 18
  },
+ "bart-airport-connector-stimulus-redirect": {
+  "seconds": 59.5,
+  "passages": 11
+ },
  "bart-certified-payroll-before-payment": {
   "seconds": 46.9,
   "passages": 13
@@ -375,6 +379,10 @@
   "seconds": 40.5,
   "passages": 11
  },
+ "doherty-painting-public-payroll-and-debarments": {
+  "seconds": 41.2,
+  "passages": 13
+ },
  "dream-keeper-davis-spingola": {
   "seconds": 144.0,
   "passages": 35
@@ -516,7 +524,7 @@
   "passages": 14
  },
  "housing-block-grant-eviction-defense-audit": {
-  "seconds": 99.8,
+  "seconds": 98.0,
   "passages": 19
  },
  "housing-loans-not-expected-back": {
@@ -1203,6 +1211,10 @@
   "seconds": 58.7,
   "passages": 13
  },
+ "tenant-counsel-grants-office-cost-allocation": {
+  "seconds": 52.6,
+  "passages": 12
+ },
  "told-the-state-no-assets-after-final-gift": {
   "seconds": 130.4,
   "passages": 34
@@ -1284,8 +1296,8 @@
   "passages": 44
  },
  "wasserman-rental-income-disclosures": {
-  "seconds": 47.6,
-  "passages": 13
+  "seconds": 57.1,
+  "passages": 15
  },
  "wehope-insider-building": {
   "seconds": 130.1,

@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 334 case files. The public citation check tested 2,640 distinct URLs across 4,281 case citations. 2,543 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 337 case files. The public citation check tested 2,640 distinct URLs across 4,281 case citations. 2,543 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -297,3 +297,11 @@ A lobbyist reported work on San Francisco’s internet provider-choice ordinance
 The two Summer Together disclosures repeated the same $9,366,180 allocation to recipient organizations. The corrected tables identify recipients and preserve the original filings. They also distinguish the two Dignity Health payments to the City’s travel foundation ($250,000 together) from the two schoolyard payments to the Parks Alliance ($10,000 together). The published source registers identify the supporting forms and the disposition of each original index row. [Historic filings and the current waiver record](https://sfgovtracker.com/#case/behested-payment-waivers)
 
 The Transportation Authority’s twelve fiscal-year audit downloads now point to individual reports. The FY2025 Board packet contained the financial audit. Its subsequent Federal Audit Clearinghouse filing also contains the March 2026 federal compliance opinion and findings schedule. [Transportation Authority contract case and audit records](https://sfgovtracker.com/#case/sfcta-design-contracts-grow-after-award)
+
+## Airport connector funding, public payroll and tenant counsel
+
+When BART missed the federal service equity analysis requirement for the airport connector, MTC redirected $70 million of regional stimulus funding. The allocation schedule identifies the projects and agencies that received it. BART later obtained a separate federal grant for the connector. [Federal decision and regional allocation schedule](https://sfgovtracker.com/#case/bart-airport-connector-stimulus-redirect)
+
+The licensing board recorded two local debarments for false payrolls on public projects. The prosecutor subsequently reported two felony premium-fraud pleas and $20,000 paid at sentencing. The record leaves the final restitution balance open. [Licensing history, arraignment and sentencing records](https://sfgovtracker.com/#case/doherty-painting-public-payroll-and-debarments)
+
+The Budget and Legislative Analyst compared two proposed tenant-counsel grant budgets with the housing department’s share of rent and utilities at 976 Mission Street. The $432,708 difference is a budget finding. The separate federal draw ledger matches the neighborhood development grant portion of one contract to the cent. Invoices would show the actual rent charged. [Office allocations](https://sfgovtracker.com/#case/tenant-counsel-grants-office-cost-allocation) · [Federal draw reconciliation](https://sfgovtracker.com/#case/housing-block-grant-eviction-defense-audit)
