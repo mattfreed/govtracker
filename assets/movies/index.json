@@ -32,8 +32,8 @@
   "passages": 16
  },
  "approved-after-the-fact": {
-  "seconds": 138.5,
-  "passages": 43
+  "seconds": 141.4,
+  "passages": 44
  },
  "aquarium-photography-receipts-port-rent": {
   "seconds": 55.5,
@@ -227,6 +227,10 @@
   "seconds": 153.1,
   "passages": 35
  },
+ "cheng-paid-advocacy-for-zoning-changes": {
+  "seconds": 45.2,
+  "passages": 15
+ },
  "child-care-money-with-no-names": {
   "seconds": 130.2,
   "passages": 36
@@ -294,6 +298,10 @@
  "cleanpowersf-capacity-penalties": {
   "seconds": 71.8,
   "passages": 19
+ },
+ "cleanpowersf-contract-ceiling-discrepancy": {
+  "seconds": 41.6,
+  "passages": 13
  },
  "cleanpowersf-renewable-credit-penalty": {
   "seconds": 54.9,
@@ -819,6 +827,10 @@
   "seconds": 133.3,
   "passages": 34
  },
+ "public-power-ballot-late-contribution-reports": {
+  "seconds": 46.8,
+  "passages": 13
+ },
  "public-works-lead-worker-premiums": {
   "seconds": 49.0,
   "passages": 12
@@ -1123,6 +1135,10 @@
   "seconds": 125.5,
   "passages": 32
  },
+ "stanford-hotel-program-monitoring": {
+  "seconds": 40.7,
+  "passages": 13
+ },
  "success-center-youthbuild-shared-costs": {
   "seconds": 63.5,
   "passages": 14
@@ -1226,6 +1242,10 @@
  "walton-bacr-trip-and-vote": {
   "seconds": 165.2,
   "passages": 44
+ },
+ "wasserman-rental-income-disclosures": {
+  "seconds": 47.6,
+  "passages": 13
  },
  "wehope-insider-building": {
   "seconds": 130.1,
