@@ -656,8 +656,8 @@
   "passages": 36
  },
  "sf-plumbing-permit-after-state-license-revocation": {
-  "seconds": 49.8,
-  "passages": 11
+  "seconds": 94.8,
+  "passages": 19
  },
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
@@ -698,6 +698,10 @@
  "sfmta-shop-rents-changed-by-word": {
   "seconds": 143.7,
   "passages": 31
+ },
+ "sfo-airtrain-settlement-renewal": {
+  "seconds": 72.5,
+  "passages": 16
  },
  "sfo-fox-rental-fees-and-fines": {
   "seconds": 56.4,

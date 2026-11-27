@@ -285,9 +285,65 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 **Result** The registers list 3,306 revocation entries on 3,235 license numbers. Thirteen subsequent permit and license combinations matched four numbers. One plumbing permit was issued 54 days after the listed revocation and identified that license on its sole applicant row. The signed state order barred an application for reinstatement or reissuance for five years. The City tracking system records rough approval on July 11 and final approval on December 12, 2024.
 
-**Open question** Obtain the signed declaration, any exemption or contractor changes, inspection job card and any judicial stay or later modification of the state order. Older monthly registers are missing from the live 2015–19 index pages.
+**Open question** The 2024 file needs a signed declaration, any exemption or contractor change and the certified dated license history. A later archive pass recovered the earlier state registers and checked the other trade permits in the linked case.
 
 [View records](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
+
+### Run the ten document searches on image-only source pages
+
+2026-11-26 · Reviewed
+
+**Records examined** 25,385 earlier OCR page transcripts and 202 supplementary transcripts. The cache held 20,830 copies.
+
+**Test** Match each transcript to its source page. Compare repeated hits by content hash and review the surrounding document for operative provisions.
+
+**Result** Nine source pages in six documents matched. Five matches concerned ordinary provisions and one repeated the Fire Department ambulance question. Three pages pointed to an AirTrain settlement and contract investigation.
+
+**Open question** OCR can miss faint marks, rotated text and tables. Original documents, dates and signed terms remain decisive.
+
+[View records](https://sfgovtracker.com/#case/sfo-airtrain-settlement-renewal)
+
+### Was an airport settlement also a route to a long operating contract?
+
+2026-11-26 · Reviewed
+
+**Records examined** 2008 Board ordinance and operating contract, 2013 renewal, 2014 adjustment and 2019 Airport Commission proceedings.
+
+**Test** Reconcile escalation, change orders, bonuses and penalties, then compare the legal basis for renewal and the independent price benchmark.
+
+**Result** The four components explain the $3.2 million first-term shortfall. In 2014 the Board reduced a proposed adjustment by $4,340. In 2019 the negotiated annual O&M price was $17.5 million, below the $18.7 million raw peer average.
+
+**Open question** Obtain training and transition results, the underlying comparable costs, and actual operating invoices.
+
+[View records](https://sfgovtracker.com/#case/sfo-airtrain-settlement-renewal)
+
+### Recover the missing historical state licensing registers
+
+2026-11-26 · Reviewed
+
+**Records examined** Archive indexes and binary captures of California monthly revocation registers, including 150 older months and 82 current issuer PDFs.
+
+**Test** Try the original state URLs and the historical capture index. Verify the PDF bytes against each capture, read the printed reporting month, separate license and salesperson rows, and reconcile against the footer where legible.
+
+**Result** All 150 historical PDFs matched their archive digests. The reports printed 8,233 entries. After visually checking obscured rows, the count reconciled to 8,115 contractor and 118 salesperson entries. A report filed under February 2016 contained January and was replaced with the correct capture. Two files from 2012 were indexed under each other’s months. Their printed dates determine the month in the public table. The separate 82-report issuer series has one unresolved footer discrepancy.
+
+**Open question** A historical register is one event. For candidate permits, seek signed and superseding decisions, any intervening judicial action and the complete City application and inspection history.
+
+[View records](https://sfgovtracker.com/#s/contractor_revocations.monthly)
+
+### Subsequent state orders and City inspection histories
+
+2026-11-26 · Reviewed
+
+**Records examined** 295 initial permit and license matches across 33 license numbers. Detailed predecessor orders and City inspection histories for four permits at three properties.
+
+**Test** Compare dated state actions with City contractor or applicant records and inspections. Check the parent building permit, any owner-builder designation and subsequent license decisions.
+
+**Result** 245 matches had a documented reissue after the flagged revocation and before the City filing. Nine exceeded a later expiration without a resolved renewal; 20 had a reissue only after the permit, ten were active on follow-up with earlier timing unclear, and seven fell between revocation events. The four remaining permits at three properties are documented in the case file.
+
+**Open question** Obtain the signed licence or exemption declarations, all change-of-contractor forms, job cards and issuance records for PM20121101756, E201911195662, E201911195663 and PM20240621501. Request certified histories for 722440, 598804 and 445470 covering each permit and inspection date. Check whether the two 2019 electrical records cover one job, different units or a duplicate filing.
+
+[View records](https://sfgovtracker.com/#s/contractor_revocations.outcomes)
 
 ## Investigation questions
 
@@ -639,7 +695,17 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 - **Did a permit list the same license and applicant after a dated state revocation entry?** Tested. The California Contractors State License Board lists licence 445470 in its May 2024 revocations. The effective date in that register is May 2. The register records an event and gives no account of a later stay, correction or reinstatement. [Records](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
 
-- **What signed declaration and historical status record supported issuance on June 25, 2024?** Needs records. Obtain the signed declaration, any owner-builder exemption or change of contractor, the inspection job card and the issuance record for PM20240621501. Match them to the board’s certified licence history and any orders in effect from May through December 2024. [Records](https://sfgovtracker.com/#wanted)
+- **What signed declaration and historical status record supported issuance on June 25, 2024?** Needs records. Obtain the signed licence or exemption declarations, all change-of-contractor forms, job cards and issuance records for PM20121101756, E201911195662, E201911195663 and PM20240621501. Request certified histories for 722440, 598804 and 445470 covering each permit and inspection date. Check whether the two 2019 electrical records cover one job, different units or a duplicate filing. [Records](https://sfgovtracker.com/#wanted)
+
+- **Did the AirTrain settlement constrain competition beyond the initial contract term, and what did the appropriations actually buy?** Tested. Two trains collided during testing in 2002. The City sued Bombardier and Factory Mutual Insurance Company in 2004. The 2008 settlement included another five years of operations for Bombardier. The Board waived competitive bidding for the $56.5 million award. The contract required a three-year renewal if the company met performance conditions, including 99.5% average availability. [Records](https://sfgovtracker.com/#case/sfo-airtrain-settlement-renewal)
+
+- **Did the operator train Airport staff as contemplated, and how did actual costs compare with the 2019 benchmark?** Needs records. Request the training rosters and transition assessments for the option years, the 2019 proprietary waiver and technical licensing assessment, the underlying peer cost study, and annual operating invoices with capital work, bonuses and penalties shown separately. [Records](https://sfgovtracker.com/#wanted)
+
+- **Can older state revocation registers be recovered and verified when the live issuer’s monthly index is empty?** Tested. 150 monthly state PDFs from July 2007 through December 2019 were recovered and matched to archived content digests. They extend the contemporary series back to July 2007. [Records](https://sfgovtracker.com/#s/contractor_revocations.monthly)
+
+- **Did a later state order restore a contractor’s license before permits that the date screen flagged?** Tested. The signed state decision for license 432216 confirms reinstatement on August 10, 2015. Among 86 later permit and license matches, 77 preceded or coincided with the next expiration. Renewal after that date was unresolved in the decision. [Records](https://sfgovtracker.com/#s/contractor_revocations.permit-years)
+
+- **What did each issuer know about stays, substitutions, or exemptions when a historical permit was approved?** Partly tested. The inspection history and a signed order are available in the 2024 plumbing file. Certified historical status, declarations, and amendments must be checked for each permit. [Records](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
 
 ## Nonprofits and grants
 
