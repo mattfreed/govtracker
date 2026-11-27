@@ -472,3 +472,18 @@ html:not(:has(body.feed-on)) { scrollbar-gutter: stable; } body:not(.feed-on) ma
 .permit-timing-result dl { display: grid; grid-template-columns: repeat(auto-fit,minmax(145px,1fr)); gap: 1rem; }
 .permit-timing-result dt { font-size: .85rem; }
 .permit-timing-result dd { margin: .3rem 0 0; font-weight: 650; }
+
+.sections-toggle { display: none; }
+@media (max-width: 600px) {
+  .top-in { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) 44px 44px; gap: 6px; padding: 6px 10px; }
+  .top-in .brand { grid-column: 1; grid-row: 1; }
+  #gs { grid-column: 2; grid-row: 1; }
+  .top-in #theme { grid-column: 3; grid-row: 1; width: 44px; height: 44px; }
+  .sections-toggle { grid-column: 4; grid-row: 1; display: grid; width: 44px; height: 44px; }
+  .top-in .nav { display: none; }
+  .top-in .nav.sections-open { position: absolute; top: 100%; inset-inline: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); padding: 8px; max-height: 65vh; overflow: auto; background: var(--page); border-bottom: 1px solid var(--border); box-shadow: 0 8px 16px rgb(0 0 0 / .16); mask-image: none; -webkit-mask-image: none; }
+  .top-in .nav a { display: flex; align-items: center; min-height: 44px; }
+  .top-in .nav.fr ~ .nav-more { display: none; }
+  .g2, .grid.cls { grid-template-columns: minmax(0, 1fr); }
+  .sources a, .scheme dd, .ev-head p { overflow-wrap: anywhere; }
+}

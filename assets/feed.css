@@ -5,7 +5,7 @@ body.feed-on footer { display: none; }
   position: relative; height: calc(100svh - var(--fd-hdr, 58px) - var(--fd-leg, 0px)); background: var(--f-bg); color: var(--f-ink); overflow: hidden; font-family: var(--sans); }
 .feed a { color: inherit; }
 .feed-scroll { height: 100%; overflow-y: auto; scroll-snap-type: y mandatory; overscroll-behavior: contain; scrollbar-width: none; }
-.feed-scroll { touch-action: pan-x pinch-zoom; }       /* vertical swipes are handled in feed.js, one film per swipe */
+.feed-scroll { touch-action: pan-y pinch-zoom; }
 .feed-scroll::-webkit-scrollbar { display: none; }
 .reel { position: relative; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: grid; place-items: center; overflow: hidden; isolation: isolate; }
 .reel-bg { position: absolute; inset: -40px; background: center / cover no-repeat; filter: blur(38px) saturate(1.2) brightness(.42); transform: scale(1.08); z-index: -1; }
@@ -270,3 +270,21 @@ body.feed-on footer { display: none; }
 }
 .reel-sub .mv-citation[hidden] { display: none; }
 @media (pointer: coarse) { .reel-sub .mv-citation { min-height: 44px; } }
+
+.reel-full { position: absolute; z-index: 6; top: max(8px, env(safe-area-inset-top)); right: max(8px, env(safe-area-inset-right)); width: 44px; height: 44px; padding: 0; display: grid; place-items: center; color: white; background: rgb(8 12 18 / .84); border: 1px solid rgb(255 255 255 / .4); border-radius: 50%; cursor: pointer; }
+.reel-full:focus-visible { outline: 3px solid white; outline-offset: 2px; }
+.reel-full .shrink-film, .watch-expanded .expand-film { display: none; }
+.watch-expanded .shrink-film { display: inline; }
+.watch-full { overflow: hidden; }
+.watch-full .feed { position: fixed; inset: 0; height: 100%; z-index: 100; }
+.watch-full .feed-scroll { inset: 0; height: 100%; overflow: hidden; scroll-snap-type: none; }
+.watch-full .expanded-reel { z-index: 5; overflow: visible; }
+.watch-full .reel-frame.watch-expanded { position: fixed; z-index: 10; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; aspect-ratio: auto; border: none; border-radius: 0; background: #000; }
+.watch-full .feed-bar, .watch-full .feed-list, .watch-full .feed-arrows, .watch-full .feed-hint, .watch-full .reel-next { visibility: hidden; }
+.watch-expanded .reel-mute, .watch-expanded .reel-pp { opacity: 1; }
+.watch-expanded .reel-prog { bottom: env(safe-area-inset-bottom); }
+@media (max-height: 490px) and (orientation: landscape) {
+  .feed .reel-stage { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); width: 100%; padding: 40px 16px 6px; gap: 12px; align-items: center; }
+  .feed .reel-frame { width: 100%; height: auto; max-height: calc(100svh - var(--fd-hdr, 58px) - 56px); aspect-ratio: 16 / 9; }
+  .feed .reel-info { max-height: calc(100svh - var(--fd-hdr, 58px) - 60px); overflow: auto; }
+}

@@ -48,7 +48,7 @@
       <div class="reel-stage">
         <div class="reel-frame" data-act="toggle"><div class="reel-live" aria-label="Film: ${esc(c.title)}"></div>
           <img src="assets/films/${esc(r.poster)}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}"><div class="reel-big"><span></span></div>
-          <button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><b></b><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
+          <button type="button" class="reel-full" data-act="fullscreen" aria-label="Enter full screen" title="Full screen (F)" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="expand-film" d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6"/><path class="shrink-film" d="M9 3v6H3m12-6v6h6m0 6h-6v6m-6 0v-6H3"/></svg></button><button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><b></b><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
         <div class="reel-info">
           <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span><span class="rt-def">${esc(DEF[c.tier] || '')}</span><span class="rt-defs">${esc(DEFS[c.tier] || '')}</span></div><div class="reel-sub"><span>${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
           <h2><a href="#case/${esc(c.id)}">${esc(c.title)}</a></h2>
@@ -86,6 +86,70 @@
       </div><div class="feed-hint">Swipe up for the next film<span class="k"> · or scroll, or press ↓</span></div></div>`;
   }
 
+  function fullscreenControls(state) {
+    let frame, trigger, nativeActive = false;
+    const nativeElement = () => document.fullscreenElement || document.webkitFullscreenElement;
+    function reset(returnFocus = true) {
+      if (!frame) return;
+      const reel = frame.closest('.reel');
+      frame.classList.remove('watch-expanded');
+      frame.closest('.reel').classList.remove('expanded-reel');
+      document.body.classList.remove('watch-full');
+      trigger.setAttribute('aria-pressed', 'false');
+      trigger.setAttribute('aria-label', 'Enter full screen');
+      trigger.title = 'Full screen (F)';
+      if (returnFocus && reel.isConnected) reel.parentElement.scrollTop = reel.offsetTop - reel.parentElement.firstElementChild.offsetTop;
+      if (returnFocus && trigger.isConnected) trigger.focus({preventScroll:true});
+      frame = trigger = null;
+      nativeActive = false;
+    }
+    function exit(returnFocus = true) {
+      if (!frame) return;
+      if (nativeElement() === frame) {
+        const end = document.exitFullscreen || document.webkitExitFullscreen;
+        try { end?.call(document)?.catch?.(() => {}); } catch { /* the browser may already be exiting */ }
+      }
+      reset(returnFocus);
+    }
+    function change() {
+      if (!frame) return;
+      if (nativeElement() === frame) nativeActive = true;
+      else if (nativeActive) reset();
+    }
+    function toggle(button) {
+      if (frame) { exit(); return; }
+      trigger = button;
+      frame = button.closest('.reel-frame');
+      frame.classList.add('watch-expanded');
+      frame.closest('.reel').classList.add('expanded-reel');
+      document.body.classList.add('watch-full');
+      button.setAttribute('aria-label', 'Exit full screen');
+      button.setAttribute('aria-pressed', 'true');
+      button.title = 'Exit full screen (F or Escape)';
+      button.focus({preventScroll:true});
+      const request = frame.requestFullscreen || frame.webkitRequestFullscreen;
+      try { request?.call(frame)?.catch?.(() => {}); } catch { /* the expanded viewport is already active */ }
+    }
+    function trap(event) {
+      if (!frame) return false;
+      if (event.key === 'Escape') { exit(); event.preventDefault(); return true; }
+      if (event.key !== 'Tab') return false;
+      const buttons = [...frame.querySelectorAll('button, [tabindex="0"]')].filter(el => el.getClientRects().length);
+      if (!buttons.length) return false;
+      const first = buttons[0], last = buttons[buttons.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      return true;
+    }
+    document.addEventListener('fullscreenchange', change);
+    document.addEventListener('webkitfullscreenchange', change);
+    state.fullscreen = {toggle, exit, trap, active: () => !!frame, destroy() {
+      exit(false);
+      document.removeEventListener('fullscreenchange', change);
+      document.removeEventListener('webkitfullscreenchange', change);
+    }};
+  }
+
   function mount(C) {
     leave();
     const root = document.getElementById('feed'); if (!root) return;
@@ -97,6 +161,7 @@
     const s = cur = { root, reels, i: -1, sound: store.get('fd.sound') === 'on', byId: Object.fromEntries((C.cases || []).map(c => [c.id, c])), media: null, mi: -1 };
     /* each film plays live in the same player as the case pages (assets/movie.js), built from its narration and timings, so a
        new recording shows at once with nothing to re-render. Only the film on screen is open; its voice track is the clock. */
+    fullscreenControls(s);
     const vid = i => (s.mi === i ? s.media : null);
     const openLive = i => {
       if (s.mi === i && s.media) return s.media;
@@ -109,7 +174,7 @@
     const setSound = on => { s.sound = on; store.set('fd.sound', on ? 'on' : 'off'); root.classList.toggle('muted', !on); reels.forEach((_, k) => { const v = vid(k); if (v) v.muted = !on; }); muteIcon(); };
     const play = i => { s.watching = true; const v = vid(i) || openLive(i); if (!v) return; v.muted = !s.sound; const p = v.play(); if (p && p.catch) p.catch(() => { if (!v.muted) { v.muted = true; root.classList.add('muted'); v.play().catch(() => {}); } }); };
     const activate = i => {
-      if (i === s.i || !reels[i]) return; s.i = i;
+      if (s.fullscreen.active() || i === s.i || !reels[i]) return; s.i = i;
       for (let k = Math.max(0, i - 2); k <= Math.min(reels.length - 1, i + 3); k++) { const bg = reels[k].querySelector('.reel-bg[data-bg]'); if (bg) { bg.style.backgroundImage = `url('${bg.dataset.bg}')`; bg.removeAttribute('data-bg'); } }   // covers load only near the film on screen
       reels.forEach(r => r.classList.remove('playing', 'started'));
       openLive(i); if (s.watching) play(i);                                     // nothing plays until the viewer taps play (owner, 24 Nov 2026); after that, the next film carries on
@@ -119,7 +184,7 @@
       try { history.replaceState(null, '', '#watch/' + reels[i].dataset.id + (root.dataset.tier ? '?tier=' + root.dataset.tier : '')); } catch (e) { /* file: */ }
       document.title = reels[i].getAttribute('aria-label') + ' — SF Money Trail';
     };
-    const go = i => { const target = i < reels.length ? reels[i] : scroller.lastElementChild; if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    const go = i => { s.fullscreen.exit(false); const target = i < reels.length ? reels[i] : scroller.lastElementChild; if (target) target.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); };
     const shows = [];
     function wire(k, v) {                                                             // the open film's voice track drives this reel's play state, bar and auto-advance
       const r = reels[k];
@@ -143,37 +208,13 @@
     });
     s.obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && e.intersectionRatio >= .6) activate(+e.target.dataset.i); }), { root: scroller, threshold: [.6] });
     reels.forEach(r => s.obs.observe(r));
-    /* touch: the film follows the finger; a flick up (or a drag past a fifth of the screen) is the next film, down the one before.
-       Native snapping is switched off for the drag and back on once the move to the chosen film has settled. */
-    const all = [...scroller.children], at = () => Math.round(scroller.scrollTop / Math.max(1, scroller.clientHeight));
-    let tch = null;
-    scroller.addEventListener('touchstart', e => {
-      if (e.touches.length !== 1 || e.target.closest('.reel-prog, .feed-list')) { tch = null; return; }
-      tch = { y: e.touches[0].clientY, x: e.touches[0].clientX, t: performance.now(), top: scroller.scrollTop, from: at(), dir: 0 };
-    }, { passive: true });
-    scroller.addEventListener('touchmove', e => {
-      if (!tch) return; const dy = tch.y - e.touches[0].clientY, dx = tch.x - e.touches[0].clientX;
-      if (!tch.dir) { if (Math.abs(dy) < 6 && Math.abs(dx) < 6) return; tch.dir = Math.abs(dy) >= Math.abs(dx) ? 'v' : 'h'; }
-      if (tch.dir !== 'v') return;
-      e.preventDefault(); scroller.style.scrollSnapType = 'none'; scroller.style.scrollBehavior = 'auto';
-      const max = (all.length - 1) * scroller.clientHeight;
-      scroller.scrollTop = Math.max(0, Math.min(max, tch.top + dy * (tch.from === 0 && dy < 0 || tch.from === all.length - 1 && dy > 0 ? .3 : 1)));
-    }, { passive: false });
-    const settle = () => { clearTimeout(s.snapT); s.snapT = setTimeout(() => { scroller.style.scrollSnapType = ''; scroller.style.scrollBehavior = ''; }, 650); };
-    scroller.addEventListener('touchend', e => {
-      if (!tch || tch.dir !== 'v') { tch = null; return; }
-      const dy = tch.y - e.changedTouches[0].clientY, ms = performance.now() - tch.t, h = scroller.clientHeight;
-      const step = (Math.abs(dy) > h * .2 || (Math.abs(dy) > 30 && Math.abs(dy) / ms > .35)) ? Math.sign(dy) : 0;
-      const to = Math.max(0, Math.min(all.length - 1, tch.from + step)); tch = null;
-      scroller.scrollTo({ top: to * h, behavior: 'smooth' }); settle();
-    }, { passive: true });
-    scroller.addEventListener('touchcancel', () => { if (tch) { scroller.scrollTo({ top: tch.from * scroller.clientHeight, behavior: 'smooth' }); settle(); } tch = null; }, { passive: true });
     root.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { go(+g.dataset.go); return; }
       const b = e.target.closest('[data-act], [data-tier]'); if (!b || !root.contains(b)) return;
       if (b.classList.contains('feed-chip')) { location.hash = b.dataset.tier ? '#watch?tier=' + b.dataset.tier : '#watch'; return; }
       const a = b.dataset.act, r = b.closest('.reel'), k = r && r.dataset.i != null ? +r.dataset.i : s.i;
-      if (a === 'toggle') { e.preventDefault(); if (k !== s.i) { go(k); return; } if (!s.watching) setSound(true); const v = vid(k); if (!v || v.paused) play(k); else v.pause(); }
+      if (a === 'fullscreen') { e.preventDefault(); s.fullscreen.toggle(b); }
+      else if (a === 'toggle') { e.preventDefault(); if (k !== s.i) { go(k); return; } if (!s.watching) setSound(true); const v = vid(k); if (!v || v.paused) play(k); else v.pause(); }
       else if (a === 'unmute') { e.stopPropagation(); setSound(true); play(s.i); }
       else if (a === 'mute') setSound(!s.sound);
       else if (a === 'next') go(k + 1); else if (a === 'prev') go(Math.max(0, k - 1));
@@ -182,11 +223,13 @@
     });
     s.onKey = e => {
       if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement && document.activeElement.tagName)) return;
+      if (s.fullscreen.trap(e)) return;
       const k = e.key;
       if ((k === 'Enter' || k === ' ') && e.target.closest?.('a,button,summary')) return;
       if (k === 'ArrowDown' || k === 'PageDown' || k === 'j') go(s.i + 1);
       else if (k === 'ArrowUp' || k === 'PageUp' || k === 'k') go(Math.max(0, s.i - 1));
       else if (k === ' ') { const v = vid(s.i); if (v) v.paused ? play(s.i) : v.pause(); }
+      else if (k.toLowerCase() === 'f' && reels[s.i]) s.fullscreen.toggle(reels[s.i].querySelector('.reel-full'));
       else if (k === 'm') setSound(!s.sound);
       else if (k === 'ArrowLeft' || k === 'ArrowRight') { const v = vid(s.i); if (v && v.duration) v.currentTime = Math.max(0, Math.min(v.duration, v.currentTime + (k === 'ArrowLeft' ? -5 : 5))); }
       else if (k === 'Enter' || k === 'o') { if (reels[s.i]) location.hash = '#case/' + reels[s.i].dataset.id; }
@@ -203,7 +246,7 @@
   }
 
   function leave() {
-    if (!cur) return; const s = cur; cur = null;
+    if (!cur) return; const s = cur; cur = null; s.fullscreen.destroy();
     if (window.FDMOVIE) window.FDMOVIE.close();
     if (s.obs) s.obs.disconnect(); window.removeEventListener('keydown', s.onKey);
   }

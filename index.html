@@ -15,19 +15,19 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta name="description" content="San Francisco public money: every case names the exact record that looks wrong, draws the money trail around it, and says how strong the evidence is.">
   <title>SF Money Trail — where the money goes wrong, and how sure we are</title>
-  <link rel="stylesheet" href="assets/site.css?v=202611270949">
+  <link rel="stylesheet" href="assets/site.css?v=202611271006">
   <link rel="stylesheet" href="assets/movie.css?v=202611270949">
-  <link rel="stylesheet" href="assets/feed.css?v=202611270949">
+  <link rel="stylesheet" href="assets/feed.css?v=202611271006">
   <script defer src="assets/data/core.js?v=202611270949"></script>
   <script defer src="assets/charts.js?v=202611270949"></script>
   <script defer src="assets/geo/sf.js?v=202611270949"></script>
   <script defer src="assets/movie6.js?v=202611270949"></script>
   <script defer src="assets/movie.js?v=202611270949"></script>
   <script defer src="assets/evidence.js?v=202611270949"></script>
-  <script defer src="assets/feed.js?v=202611270949"></script>
+  <script defer src="assets/feed.js?v=202611271006"></script>
   <script defer src="assets/app2.js?v=202611270949"></script>
   <script defer src="assets/app3.js?v=202611270949"></script>
-<script defer src="assets/app.js?v=202611270949"></script>
+<script defer src="assets/app.js?v=202611271006"></script>
 </head>
 <body>
   <script>/* lay out the first paint for the page being opened, so nothing jumps when it arrives */(function (r) { r = location.hash.slice(1).split(/[?/]/)[0]; var b = document.body.classList; if (r === '' || r === 'watch') b.add('feed-on'); else if (/^(orgs|trace|money|contracts|outcomes|health|screens|s|who|connections|officials)$/.test(r)) b.add('desk-on'); })();</script>
@@ -38,6 +38,7 @@
         <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="13" cy="13" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m20 20 9 9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M13 8v10M10 10.500h4.500a1.800 1.800 0 0 1 0 3.600H11.500a1.800 1.800 0 0 0 0 3.600H16" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/></svg>
         <span>SF Money Trail<small>Edition <span id="edition"></span></small></span>
       </a>
+      <button type="button" class="icon-btn sections-toggle" id="sections-toggle" aria-label="Sections" aria-controls="nav" aria-expanded="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
       <nav class="nav" id="nav" aria-label="Sections"></nav>
       <button class="nav-more" id="navmore" type="button" aria-label="Show more sections" tabindex="-1"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <form id="gs" role="search"><label class="sr-only" for="gq">Search cases, organizations and names</label><input id="gq" type="search" placeholder="Search…"></form>

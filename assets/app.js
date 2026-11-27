@@ -494,6 +494,27 @@
   /* anything that scrolls sideways (the tab bar on a phone, sub-tabs, wide tables) fades at the edge where more is hidden */
   const edges = el => { const f = () => { const m = el.scrollWidth - el.clientWidth; el.classList.toggle('fl', m > 2 && el.scrollLeft > 2); el.classList.toggle('fr', m > 2 && el.scrollLeft < m - 2); }; if (!el.dataset.edges) { el.dataset.edges = 1; el.addEventListener('scroll', f, { passive: true }); } f(); };
   const navEl = document.getElementById('nav'), navMore = document.getElementById('navmore');
+  const sectionsToggle = document.getElementById('sections-toggle');
+  const smallNav = window.matchMedia?.('(max-width: 600px)');
+  function setSectionsOpen(open) {
+    navEl.classList.toggle('sections-open', open);
+    sectionsToggle.setAttribute('aria-expanded', String(open));
+  }
+  sectionsToggle.addEventListener('click', () => setSectionsOpen(!navEl.classList.contains('sections-open')));
+  navEl.addEventListener('click', event => {
+    if (event.target.closest('a')) setSectionsOpen(false);
+  });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('#nav, #sections-toggle')) setSectionsOpen(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navEl.classList.contains('sections-open')) {
+      setSectionsOpen(false);
+      sectionsToggle.focus();
+    }
+  });
+  window.addEventListener('hashchange', () => setSectionsOpen(false));
+  smallNav?.addEventListener?.('change', () => setSectionsOpen(false));
   if (navMore) navMore.addEventListener('click', () => navEl.scrollBy({ left: Math.max(120, navEl.clientWidth * .6) }));
   const navShow = () => { const cur = navEl.querySelector('[aria-current]'); if (cur && navEl.scrollWidth > navEl.clientWidth) { const l = cur.offsetLeft - navEl.offsetLeft, r = l + cur.offsetWidth; if (l < navEl.scrollLeft || r > navEl.scrollLeft + navEl.clientWidth - 48) navEl.scrollLeft = l - (navEl.clientWidth - cur.offsetWidth) / 2; } edges(navEl); };
   let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { edges(navEl); main.querySelectorAll('.table-wrap, .desk-nav ul').forEach(edges); }, 150); });
