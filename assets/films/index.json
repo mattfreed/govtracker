@@ -7,13 +7,25 @@
   "seconds": 53.6,
   "poster": "air-district-contractor-rate-reconciliation.jpg"
  },
+ "airport-bond-trustee-retroactive-approval": {
+  "seconds": 50.7,
+  "poster": "airport-bond-trustee-retroactive-approval.jpg"
+ },
  "airport-electrical-one-bidder": {
   "seconds": 130.2,
   "poster": "airport-electrical-one-bidder.jpg"
  },
+ "airport-local-business-participation-credit": {
+  "seconds": 77.3,
+  "poster": "airport-local-business-participation-credit.jpg"
+ },
  "approved-after-the-fact": {
   "seconds": 138.5,
   "poster": "approved-after-the-fact.jpg"
+ },
+ "aquarium-photography-receipts-port-rent": {
+  "seconds": 41.4,
+  "poster": "aquarium-photography-receipts-port-rent.jpg"
  },
  "arriba-juntos-grant-cost-allocation": {
   "seconds": 52.2,
@@ -30,6 +42,10 @@
  "autodesk-lease-then-mayors-committee": {
   "seconds": 130.5,
   "poster": "autodesk-lease-then-mayors-committee.jpg"
+ },
+ "baker-places-health-debt-repayment": {
+  "seconds": 64.7,
+  "poster": "baker-places-health-debt-repayment.jpg"
  },
  "bart-commercial-parking-permit-recovery": {
   "seconds": 41.1,
@@ -79,9 +95,17 @@
   "seconds": 50.6,
   "poster": "bart-payroll-consulting-contract-splitting.jpg"
  },
+ "bart-power-washing-contract-false-claims": {
+  "seconds": 84.7,
+  "poster": "bart-power-washing-contract-false-claims.jpg"
+ },
  "bart-seismic-anchor-procurement-waste": {
   "seconds": 44.7,
   "poster": "bart-seismic-anchor-procurement-waste.jpg"
+ },
+ "bart-sweeping-contract-false-claims": {
+  "seconds": 64.9,
+  "poster": "bart-sweeping-contract-false-claims.jpg"
  },
  "bauer-port-rent-and-sprinkler-settlement": {
   "seconds": 59.6,
@@ -682,6 +706,14 @@
  "service-numbers-copied-forward": {
   "seconds": 130.4,
   "poster": "service-numbers-copied-forward.jpg"
+ },
+ "sf-forged-permit-and-inspection-records": {
+  "seconds": 71.7,
+  "poster": "sf-forged-permit-and-inspection-records.jpg"
+ },
+ "sf-invalid-engineering-credentials-five-projects": {
+  "seconds": 66.4,
+  "poster": "sf-invalid-engineering-credentials-five-projects.jpg"
  },
  "sf-nursing-homes-losses-related-pay": {
   "seconds": 130.4,

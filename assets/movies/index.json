@@ -7,13 +7,25 @@
   "seconds": 53.6,
   "passages": 12
  },
+ "airport-bond-trustee-retroactive-approval": {
+  "seconds": 50.7,
+  "passages": 13
+ },
  "airport-electrical-one-bidder": {
   "seconds": 130.2,
   "passages": 38
  },
+ "airport-local-business-participation-credit": {
+  "seconds": 77.3,
+  "passages": 17
+ },
  "approved-after-the-fact": {
   "seconds": 138.5,
   "passages": 43
+ },
+ "aquarium-photography-receipts-port-rent": {
+  "seconds": 41.4,
+  "passages": 12
  },
  "arriba-juntos-grant-cost-allocation": {
   "seconds": 52.2,
@@ -30,6 +42,10 @@
  "autodesk-lease-then-mayors-committee": {
   "seconds": 130.5,
   "passages": 30
+ },
+ "baker-places-health-debt-repayment": {
+  "seconds": 64.7,
+  "passages": 18
  },
  "bart-commercial-parking-permit-recovery": {
   "seconds": 41.1,
@@ -79,9 +95,17 @@
   "seconds": 50.6,
   "passages": 12
  },
+ "bart-power-washing-contract-false-claims": {
+  "seconds": 84.7,
+  "passages": 17
+ },
  "bart-seismic-anchor-procurement-waste": {
   "seconds": 44.7,
   "passages": 11
+ },
+ "bart-sweeping-contract-false-claims": {
+  "seconds": 64.9,
+  "passages": 14
  },
  "bauer-port-rent-and-sprinkler-settlement": {
   "seconds": 59.6,
@@ -682,6 +706,14 @@
  "service-numbers-copied-forward": {
   "seconds": 130.4,
   "passages": 35
+ },
+ "sf-forged-permit-and-inspection-records": {
+  "seconds": 71.7,
+  "passages": 15
+ },
+ "sf-invalid-engineering-credentials-five-projects": {
+  "seconds": 66.4,
+  "passages": 16
  },
  "sf-nursing-homes-losses-related-pay": {
   "seconds": 130.4,

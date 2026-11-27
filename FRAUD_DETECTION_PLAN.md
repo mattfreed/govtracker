@@ -429,6 +429,20 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 [View records](https://sfgovtracker.com/#s/sidedoors.project-file-declared-interest)
 
+### Reconcile official investigations to repayments, changed findings and later-year accounts
+
+2026-11-27 · Reviewed
+
+**Records examined** Eight additional case files, including two BART cleaning investigations, two permit enforcement cases, Airport procurement, the Aquarium and the Baker Places receivable.
+
+**Test** Compare the original instrument to a dated, independently identifiable disposition. Use fiscal-year balances, paid amounts and contract values as separate measures.
+
+**Result** The two BART matters produced different confirmed outcomes. The Baker FY2025 year-end balance follows the property credit. The Airport joint venture still exceeded its local-business targets after adjustment.
+
+**Open question** The BART sweeping settlement amount, later Baker ledger, Aquarium collection evidence and permit reconsideration records are identified on the records request page.
+
+[View records](https://sfgovtracker.com/#case/baker-places-health-debt-repayment)
+
 ## Investigation questions
 
 ### Grant routing and fiscal sponsorship
@@ -810,6 +824,24 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **Can a separate project filing identify a business that a commissioner disclosed even when the roll-call description omits it?** Tested. Match Planning application numbers and dated roll calls to source pages and the official’s disclosure. Verify the project role before treating a reference as a conflict. [Records](https://sfgovtracker.com/#s/sidedoors.project-file-declared-interest)
 
 - **Did an audited amount change because missing source documents, a change in operator or a settlement interrupted the audit?** Tested. Trace each lease, tenant, audit period and later settlement. Recoveries and unresolved balances carry separate dates. [Records](https://sfgovtracker.com/#s/concession_audits.lease-reports)
+
+### Collections, contracting credit and corrected enforcement records
+
+- **How much of a contractor’s repayment reached the agency, and what part was a settlement demand?** Tested. BART compared contemporaneous cleaning checks with invoices. The OIG confirmed a $11,900 power-washing recovery. The sweeping settlement amount and collection date remain open. [Records](https://sfgovtracker.com/#case/bart-power-washing-contract-false-claims)
+
+- **Do verified underbillings, reversals or weather exceptions change a recovery calculation?** Tested. The sweeping investigation reports a substantiated $5,571.09 overcharge and a separate possible underbilling. The 35 charge rows can be reconciled individually. [Records](https://sfgovtracker.com/#case/bart-sweeping-contract-false-claims)
+
+- **Does a large debt balance fall when a City creditor accepts property instead of cash?** Tested. Baker’s FY2025 accounts record approximately $3 million from the sale and a remaining DPH balance of $4,432,143. The parent shows the same year-end balance. The repayment schedule dates differ between the Board and the parent. [Records](https://sfgovtracker.com/#case/baker-places-health-debt-repayment)
+
+- **Can an operator understate percentage rent by deducting a third party’s costs from gross receipts?** Tested. The Controller traced the Aquarium’s photography deductions to a $39,309 net rent underpayment for 2010–12. Trace recovery in the Port ledger and distinguish the operating lease from the Pier 39 sublease. [Records](https://sfgovtracker.com/#case/aquarium-photography-receipts-port-rent)
+
+- **When lower-tier work changes a construction contract’s local-business credit, did the joint venture still qualify?** Tested. The Airport partner retained 41.08% qualifying work following the credit adjustment. The original thresholds and follow-up are linked separately from the earlier 1998 HRC inquiry. [Records](https://sfgovtracker.com/#case/airport-local-business-participation-credit)
+
+- **When a later board vote ratifies an old contract, was an earlier competitive selection or amendment already authorized?** Tested. Airport records trace a competitive 1992 trustee selection and later commission authorizations. The 2022 ratification addresses uncertainty over Charter review of the contract term. [Records](https://sfgovtracker.com/#case/airport-bond-trustee-retroactive-approval)
+
+- **Did a regulator’s signed determination trace the same disputed professional credentials to other projects?** Tested. Five project notices, two signed determinations and six applications identify the verified project scope. Check individual abatements, appeals and any unresolved correction. [Records](https://sfgovtracker.com/#case/sf-invalid-engineering-credentials-five-projects)
+
+- **Did a later inspection, utility copy or regulator correction sustain or reverse a forged-signature allegation?** Tested. Compare the original image, inspector account and corrective permit for the same site. One 2018 license complaint was expressly reversed after correction of the recorded number. [Records](https://sfgovtracker.com/#case/sf-forged-permit-and-inspection-records)
 
 ## Nonprofits and grants
 
