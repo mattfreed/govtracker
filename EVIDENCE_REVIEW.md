@@ -35,13 +35,13 @@ Across FY2019 through the available portion of FY2027, the City’s payment file
 
 ## Source verification
 
-Across 202 cases, the source inventory counted 3,392 citation entries covering 1,848 distinct source links. The initial quotation check flagged 205 local citations for a second reading or a structured-record comparison. All 205 were reviewed. Some PDF quotations crossed a footer or a table break, and some payment assertions required a department-specific query. Of 164 existing numeric comparisons, 147 reproduced within the stated tolerance or after the documented adjustment. The other 17 reflect documented differences in definitions, periods or source versions. The 113 public investigation questions identify 51 completed tests, 17 partial tests and 45 questions that require additional records.
+Across 215 cases, the source inventory counted 3,444 citation entries covering 1,899 distinct source links. The initial quotation check flagged 205 local citations for a second reading or a structured-record comparison. All 205 were reviewed. Some PDF quotations crossed a footer or a table break, and some payment assertions required a department-specific query. Of 164 existing numeric comparisons, 147 reproduced within the stated tolerance or after the documented adjustment. The other 17 reflect documented differences in definitions, periods or source versions. The 139 public investigation questions identify 64 completed tests, 17 partial tests and 58 questions that require additional records.
 
 ## Open evidence
 
 Public source links identify issuing agencies, docket or filing numbers, reporting periods and direct downloads where available. Some issuers require a browser, a search or a public-records request. Availability checks establish whether a URL responds. Citations and case notes explain whether the record supports the specific claim.
 
-Four encrypted state forms could not be read. Certain supplied attachments were empty or damaged. A later agency download recovered all 563 pages of the City Attorney’s permitting exhibits. The request index identifies 296 outstanding items, including 93 at priority one. Some spending questions still require invoices, grant subledgers, attendance records or agency determinations. Each case identifies the missing evidence that could strengthen, overturn or resolve its findings. [Outstanding record requests](https://sfgovtracker.com/#wanted) · [Investigation questions and status](https://sfgovtracker.com/#plan)
+Four encrypted state forms could not be read. Certain supplied attachments were empty or damaged. A later agency download recovered all 563 pages of the City Attorney’s permitting exhibits. The request index identifies 309 outstanding items, including 98 at priority one. Some spending questions still require invoices, grant subledgers, attendance records or agency determinations. Each case identifies the missing evidence that could strengthen, overturn or resolve its findings. [Outstanding record requests](https://sfgovtracker.com/#wanted) · [Investigation questions and status](https://sfgovtracker.com/#plan)
 
 ## Second review of the original collections
 
@@ -67,7 +67,7 @@ For procurement restrictions, the case files identify the governing ordinance or
 
 The expanded Federal Audit Clearinghouse index covers 1,545 locally matched report headers and 394 distinct finding references across 206 reports. Auditors marked 119 references for questioned costs and 110 as repeats. The selections overlap. A San Francisco mailing address can belong to an organization running programs elsewhere, so its entire grant portfolio cannot be attributed to the City. [Federal audit index](https://sfgovtracker.com/#s/local_federal_findings.all) · [Download the federal data](https://www.fac.gov/data/download/)
 
-The automated source check received document or partial-document responses for 1,753 of 1,848 distinct case-source URLs. Ninety-one responded with HTTP 403, three returned HTTP 202 and one connection failed. A browser gate can coexist with an independently verified local record. An HTTP response alone does not verify an assertion. Case pages identify issuers, dates, report identifiers and citations.
+The automated source check received document or partial-document responses for 1,804 of 1,899 distinct case-source URLs. Ninety-one responded with HTTP 403, three returned HTTP 202 and one connection failed. A browser gate can coexist with an independently verified local record. An HTTP response alone does not verify an assertion. Case pages identify issuers, dates, report identifiers and citations.
 
 The New York business registry’s automated endpoint was unavailable during link testing. Its active-corporation register remains downloadable separately. A search of the active register alone cannot rule out an inactive entity or establish ownership. [New York active-corporation data](https://data.ny.gov/Economic-Development/Active-Corporations-Beginning-1800/n9v6-gdp6)
 
@@ -98,3 +98,7 @@ The BART investigation archive now gives the disposition and original agency doc
 
 
 In two BART conflict-of-interest matters, the inspector general recommended seeking $1,249,066 in payments. The district implemented the recommendations to void the affected work and declined the recommendation to seek disgorgement. The contractor conduct code changed in December 2024. A separate employee code revision remained open in the FY2026 follow-up. In another investigation, the inspector general identified $56,000 in avoidable administration charges after financial advisory work went through an engineering prime. The $1.6 million was the value of the advisory workplans. BART’s FY2025 follow-up records a change to procurement guidance. [Conflict findings and management decisions](https://sfgovtracker.com/#case/bart-contract-conflicts-disgorgement) · [Financial advisory workplans, fees and corrective action](https://sfgovtracker.com/#case/bart-financial-advisory-administration-cost)
+
+## Layered case review
+
+The search register records the test, records examined, result, remaining uncertainty and next source for each line of inquiry. The district’s refusal of E-Rate funding, a reversal in health reimbursement litigation, deadlines extended after a FEMA audit and a formal change to soil hauling requirements each changed how the initial figures should be interpreted. [Search register](https://sfgovtracker.com/#plan)

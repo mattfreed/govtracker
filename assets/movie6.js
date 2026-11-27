@@ -593,6 +593,10 @@
     ticket:'<path d="M3 9h26v5a3 3 0 0 0 0 6v4H3v-4a3 3 0 0 0 0-6z M21 10v3m0 3v3m0 3v2"/>',
     travel:'<path d="m3 17 10 1 10-13c2-2 5 0 3 3l-8 13 8 4-1 2-10-2-6 4-2-1 4-6-8-3z"/>',
     transit:'<rect x="6" y="4" width="20" height="21" rx="5"/><path d="M9 9h14v7H9z M10 29l3-4m9 4-3-4"/><circle cx="11" cy="21" r="1"/><circle cx="21" cy="21" r="1"/>',
+    construction:'<path d="M4 19a12 12 0 0 1 8-11m8 0a12 12 0 0 1 8 11 M13 14V6h6v8 M4 20h24l2 4v2H2v-2z"/>',
+    permit:'<path d="M6 3h13l6 6v7 M19 3v7h6 M6 3v25h10 M10 14h9m-9 5h5"/><circle cx="23" cy="22" r="5"/><path d="m20 26-1 4 4-2 4 2-1-4"/>',
+    technology:'<rect x="3" y="5" width="26" height="18" rx="2"/><path d="M13 23v4m6-4v4 M9 28h14 M8 11l3 3-3 3m6 0h6"/>',
+    water:'<path d="M16 3S7 13 7 19a9 9 0 0 0 18 0c0-6-9-16-9-16z M11 20a5 5 0 0 0 5 5"/>',
     housing:'<path d="M3 16 16 5l13 11 M7 14v14h18V14 M14 28V18h5v10"/>',
     health:'<rect x="4" y="8" width="24" height="19" rx="3"/><path d="M12 8V5h8v3 M16 12v11 M11 17.5h10"/>',
     cityhall:'<path d="m3 12 13-8 13 8z M6 27h20 M4 30h24 M8 15v9m6-9v9m6-9v9m5-9v9"/>',
@@ -624,10 +628,15 @@
     if (actor?.type === 'person') return 'person';
     if (v.art && !['contract','magnifier','question','building'].includes(v.art)) return v.art;
     const label = [v.label, v.kicker, c.category, c.title].filter(Boolean).join(' ');
+    if (/\b(airport|sfo|aviation)\b/i.test(label)) return 'travel';
     if (/\b(caltrain|bart|transit|rail|muni|train|escalator|station)\b/i.test(label)) return 'transit';
     if (/\b(health|medical|hospital|medicare|hospice|patient|hiv)\b/i.test(label)) return 'health';
     if (/\b(school|college|education|sfusd|teacher)\b/i.test(label)) return 'education';
     if (/\b(housing|rent|landlord|tenants?|apartment|foreclosure)\b/i.test(label)) return 'housing';
+    if (/\b(permits?|permitting|building inspection)\b/i.test(label)) return 'permit';
+    if (/\b(computer|software|information technology|broadband|telecom)\b/i.test(label)) return 'technology';
+    if (/\b(construction|builder|retrofitting)\b/i.test(label)) return 'construction';
+    if (/\b(water|wastewater|sewer|reservoir)\b/i.test(label)) return 'water';
     return v.art || 'document';
   }
   function comparisonUnit(value) {

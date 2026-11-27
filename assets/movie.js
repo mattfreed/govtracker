@@ -261,7 +261,7 @@
         s.citationBeat = bi;
         const sources = window.FD_FILM6?.sourcesFor(b, c) || [];
         const source = sources[0];
-        const extra = b.visual?.type === 'record' ? sources.slice(1) : [];
+        const extra = sources.slice(1);
         s.otherSources.open = false;
         s.otherSources.hidden = !extra.length;
         if (extra.length) {
