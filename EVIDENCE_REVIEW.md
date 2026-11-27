@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 304 case files. The public citation check tested 2,378 distinct URLs across 3,990 case citations. 2,284 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 310 case files. The public citation check tested 2,430 distinct URLs across 4,042 case citations. 2,336 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -221,3 +221,20 @@ The workers’ compensation cases distinguish the conviction for fictitious audi
 Supervisors reversed the $90,100 Presidio Terrace tax auction after a certified notice came back undelivered. The December 2017 deed verifies the reversal. The exact refund including interest and the disposition of the purchasers’ challenge remain open. [Recorded deed](https://sfgov.legistar.com/View.ashx?M=F&ID=5723183&GUID=7FCB912C-2299-4D30-AAB8-4FD4EB973D9E)
 
 The legislative review reopened 42,961 attachment URLs across 3,586 matters. The former 7,297-attachment plan had 2,017 URLs it never reached and 907 entries labeled as duplicates by date and file size. The new acquisition records content hashes, page-level text, unreadable pages and candidate passages. Coverage will increase as the documents arrive. A procurement waiver or a repeated payment figure alone does not establish misconduct.
+
+## Contract approvals, boarding-area rent and Medicare payment rates
+
+The legislative metadata review linked all 42,961 attachment entries to 3,586 matters. It examined 88 matched sections in budget analyst reports and 18 matters whose titles indicate payment disputes. The separate attachment recovery continues to download and check underlying documents.
+
+HSS counted from a July service launch. The signed agreement began in March, and its ninth amendment pushed the term past the Charter’s ten-year review threshold. Supervisors approved the tenth amendment in March 2025. In March 2026 the Health Service Board selected P&A again through a new competition. [Case and exhibits](https://sfgovtracker.com/#case/benefits-administrator-ten-year-review)
+
+Public Works missed the required vote on a $1,013,500 design amendment. Years later, a settlement of competing claims specified $7.35 million to the City and $750,000 to the architects. Supervisors ratified the amendment in 2013. The 2022 settlement authorized a $6.6 million net recovery. The Controller recorded the $750,000 outgoing payment. [Case and exhibits](https://sfgovtracker.com/#case/general-hospital-architect-fee-settlement)
+
+Fifty vendors answered a request for information. A legal waiver let the City select OpenGov, but finalists never priced the same deliverables. The Board reduced the final authorization to $28,018,982.28 through September 2029. PermitSF’s portal was issuing permits as of November 2026. [Case and exhibits](https://sfgovtracker.com/#case/opengov-permitting-software-waiver)
+
+A $24.75 million youth employment agreement began without a Board vote. Reviewing it exposed two more grants that had crossed the $10 million threshold. The Board approved the three grants in 2021 and 2022. Budget analysts documented a new Controller dashboard and a mandatory City Attorney contract checklist. [Case and exhibits](https://sfgovtracker.com/#case/youth-grants-missed-board-approval)
+
+SFO attributed a 2019 lease holdover to administrative delay. Later, boarding counts crossed the lease’s threshold for restoring minimum rent. The public records identify the threshold date and leave the actual billing open. As of June 30, 2022, SFO reported reinstating minimum rent for about 40% of all concession leases. Neither that figure nor the passenger data shows which month Air Sun was billed, what relief was credited, or what it paid. [Case and exhibits](https://sfgovtracker.com/#case/sfo-terminal-three-retail-holdover-and-rent)
+
+CMS assigned the hospital renal center a 1.5% reduction on eligible 2026 Medicare dialysis payments after it scored 29 points. The California average was 55. The official quality program and contractor pricing files agree on the reduction. The center’s actual payment adjustments in dollars remain unknown. [Case and exhibits](https://sfgovtracker.com/#case/sf-general-dialysis-medicare-payment-reductions)
+
