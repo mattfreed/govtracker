@@ -35,13 +35,13 @@ Across FY2019 through the available portion of FY2027, the City’s payment file
 
 ## Source verification
 
-Across 215 cases, the source inventory counted 3,444 citation entries covering 1,899 distinct source links. The initial quotation check flagged 205 local citations for a second reading or a structured-record comparison. All 205 were reviewed. Some PDF quotations crossed a footer or a table break, and some payment assertions required a department-specific query. Of 164 existing numeric comparisons, 147 reproduced within the stated tolerance or after the documented adjustment. The other 17 reflect documented differences in definitions, periods or source versions. The 139 public investigation questions identify 64 completed tests, 17 partial tests and 58 questions that require additional records.
+Across 225 cases, the source inventory counted 3,559 citation entries covering 1,978 distinct source links. The initial quotation check flagged 205 local citations for a second reading or a structured-record comparison. All 205 were reviewed. Some PDF quotations crossed a footer or a table break, and some payment assertions required a department-specific query. Of 164 existing numeric comparisons, 147 reproduced within the stated tolerance or after the documented adjustment. The other 17 reflect documented differences in definitions, periods or source versions. The 159 public investigation questions identify 74 completed tests, 17 partial tests and 68 questions that require additional records.
 
 ## Open evidence
 
 Public source links identify issuing agencies, docket or filing numbers, reporting periods and direct downloads where available. Some issuers require a browser, a search or a public-records request. Availability checks establish whether a URL responds. Citations and case notes explain whether the record supports the specific claim.
 
-Four encrypted state forms could not be read. Certain supplied attachments were empty or damaged. A later agency download recovered all 563 pages of the City Attorney’s permitting exhibits. The request index identifies 309 outstanding items, including 98 at priority one. Some spending questions still require invoices, grant subledgers, attendance records or agency determinations. Each case identifies the missing evidence that could strengthen, overturn or resolve its findings. [Outstanding record requests](https://sfgovtracker.com/#wanted) · [Investigation questions and status](https://sfgovtracker.com/#plan)
+Four encrypted state forms could not be read. Certain supplied attachments were empty or damaged. A later agency download recovered all 563 pages of the City Attorney’s permitting exhibits. The request index identifies 317 outstanding items, including 102 at priority one. Some spending questions still require invoices, grant subledgers, attendance records or agency determinations. Each case identifies the missing evidence that could strengthen, overturn or resolve its findings. [Outstanding record requests](https://sfgovtracker.com/#wanted) · [Investigation questions and status](https://sfgovtracker.com/#plan)
 
 ## Second review of the original collections
 
@@ -67,7 +67,7 @@ For procurement restrictions, the case files identify the governing ordinance or
 
 The expanded Federal Audit Clearinghouse index covers 1,545 locally matched report headers and 394 distinct finding references across 206 reports. Auditors marked 119 references for questioned costs and 110 as repeats. The selections overlap. A San Francisco mailing address can belong to an organization running programs elsewhere, so its entire grant portfolio cannot be attributed to the City. [Federal audit index](https://sfgovtracker.com/#s/local_federal_findings.all) · [Download the federal data](https://www.fac.gov/data/download/)
 
-The automated source check received document or partial-document responses for 1,804 of 1,899 distinct case-source URLs. Ninety-one responded with HTTP 403, three returned HTTP 202 and one connection failed. A browser gate can coexist with an independently verified local record. An HTTP response alone does not verify an assertion. Case pages identify issuers, dates, report identifiers and citations.
+The automated source check received document or partial-document responses for 1,883 of 1,978 distinct case-source URLs. Of the remaining endpoints, 91 returned HTTP 403, three returned HTTP 202 and one connection failed. A browser gate can coexist with an independently verified local record. An HTTP response alone does not verify an assertion. Case pages identify issuers, dates, report identifiers and citations.
 
 The New York business registry’s automated endpoint was unavailable during link testing. Its active-corporation register remains downloadable separately. A search of the active register alone cannot rule out an inactive entity or establish ownership. [New York active-corporation data](https://data.ny.gov/Economic-Development/Active-Corporations-Beginning-1800/n9v6-gdp6)
 
@@ -102,3 +102,46 @@ In two BART conflict-of-interest matters, the inspector general recommended seek
 ## Layered case review
 
 The search register records the test, records examined, result, remaining uncertainty and next source for each line of inquiry. The district’s refusal of E-Rate funding, a reversal in health reimbursement litigation, deadlines extended after a FEMA audit and a formal change to soil hauling requirements each changed how the initial figures should be interpreted. [Search register](https://sfgovtracker.com/#plan)
+
+## Checks after the 215-case release
+
+The current archive inventory contains 171,804 paths. All 171,570 hashes from the prior inventory matched, and the 234 added files included 162 PDFs totaling 5,497 pages. File counts include agency data exports and repeated copies. Across the November 26 folders, a supplemental OCR pass targeted 202 pages with sparse native text, including all 64 pages of the Inter-Tel plea and settlement scans. Some pages consist of photographs or blank separators.
+
+The school technology comparison joined 4,399 invoice lines to the current version of each funding request. Of 711 comparable requests, 697 reconciled to the cent. The reviewers independently fetched the 14 exceptions from USAC and reproduced all 14 differences using 156 invoice lines. The largest was $454,555.38 for San Francisco Unified. USAC's signed approvals and net disbursement fields can differ after funding is returned. Reconciliation worksheets, disbursement statements and any adjustment letters would explain the amounts. The results table links both official downloads for each request. [All 711 comparisons](https://sfgovtracker.com/#s/erate_reconciliation.requests) · [USAC recovery procedure](https://www.usac.org/e-rate/applicant-process/before-youre-done/commitment-adjustments-recoveries/)
+
+Four BART equipment projects reported the same completion percentages in 12 consecutive quarters. Cumulative spending rose $13,325,073 between June 2024 and June 2026. Award and quarterly reports identify the equipment, but a milestone schedule and acceptance records are needed to test actual delivery. A separate wastewater project illustrates the risk of assigning causation from dates alone. Its equipment failed a test, but the project reports traced the 315-day delay to a vault design and utility connection. [BART reports and award](https://sfgovtracker.com/#case/bart-maintenance-equipment-progress) · [Wastewater project reports](https://sfgovtracker.com/#case/southeast-plant-power-upgrade-vault-delay)
+
+A date-specific licensing check matched 82 state revocation registers to three City permit systems. Thirteen permit and license combinations involved four license numbers. A 2024 plumbing permit warranted a separate review because the City record showed a single applicant carrying the same license number as a prior revocation. The signed state order barred applications for reinstatement or reissuance for five years. City records show two approved inspections. A signed declaration, a substitution or exemption, or a later court or agency order could explain the permit. A distinct bid-competition check found no common dated principal in the 523 pairs that its second method could resolve. [Permit records and 2024 statute](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation) · [Investigation register and open tests](https://sfgovtracker.com/#plan)
+
+Reviewers recorded a disposition for all 200 document and search combinations in ten cross-archive searches. The 168 distinct paths included 116 negative results, 26 unresolved paths, 16 supporting existing files and ten supporting three new cases. Published cases give the counterevidence when a later settlement, appeal, corrected order or subsequent audit changes the interpretation. Other open matters include a sworn notice of customer credits, intercompany adjusting entries and actual receipts for delinquent leases. [Customer credit notice](https://sfgovtracker.com/#case/sfmta-citation-refund-notice) · [Intercompany balances](https://sfgovtracker.com/#case/bernal-heights-affiliate-receivables) · [Port collections](https://sfgovtracker.com/#case/port-rent-arrears-and-collections)
+
+### Cases added in these two releases
+
+**First release · 13 cases**
+
+- Official finding · [Eight staffing charges exceeded the terms of a Bay Area air monitoring contract](https://sfgovtracker.com/#case/air-district-contractor-rate-reconciliation)
+- Official finding · [A soil test changed BART’s hauling work. The formal order came 590 days later](https://sfgovtracker.com/#case/bart-dbe-hauling-change)
+- Official finding · [BART canceled a lighting contract, then ordered the fixtures](https://sfgovtracker.com/#case/bart-m-line-fixture-settlement)
+- Official finding · [Two consultants spread BART labor charges across projects](https://sfgovtracker.com/#case/bart-on-call-project-allocations)
+- Official finding · [A City IT manager’s sham firm billed through a prequalified vendor five times](https://sfgovtracker.com/#case/city-computer-store-monarch-invoices)
+- Official finding · [A 2000 clinic cost report led to a $4.8 million Medi-Cal settlement](https://sfgovtracker.com/#case/nems-medi-cal-reconciliation-settlement)
+- Lead · [Pier 23’s rent deal reverses the order of two options between official documents](https://sfgovtracker.com/#case/port-pier-23-rent-and-rebid)
+- Proven · [A homeowner collected $341,455 in rent subsidies on his own San Francisco home](https://sfgovtracker.com/#case/sfha-landlord-tenant-same-beneficiary)
+- Official finding · [Missing Muni overtime slips and the $8 million operator settlement](https://sfgovtracker.com/#case/sfmta-overtime-slips-and-operator-settlement)
+- Official finding · [After SFO closed out its terminal contract, builders agreed to pay SF $19 million](https://sfgovtracker.com/#case/sfo-tutor-saliba-settlement)
+- Proven · [San Francisco officers kept seized property and left it out of evidence records](https://sfgovtracker.com/#case/sfpd-seized-property-missing-from-evidence)
+- Proven · [Four E-Rate bids rose by $26.1 million while four San Francisco schools dropped out](https://sfgovtracker.com/#case/sfusd-e-rate-inflated-equipment)
+- Official finding · [A roster check led Success Center to remove charges from its YouthBuild grant](https://sfgovtracker.com/#case/success-center-youthbuild-shared-costs)
+
+**Second release · 10 cases**
+
+- Lead · [Four BART equipment projects showed unchanged progress for twelve quarters](https://sfgovtracker.com/#case/bart-maintenance-equipment-progress)
+- Lead · [Two Bernal Heights affiliates reported balances $177,308 apart](https://sfgovtracker.com/#case/bernal-heights-affiliate-receivables)
+- Official finding · [Two corrected orders trace $101,352 in unpaid wages to two SF branch libraries](https://sfgovtracker.com/#case/library-branch-prevailing-wage-orders)
+- Official finding · [San Francisco’s Port expected to collect $11.9 million of $24.5 million overdue](https://sfgovtracker.com/#case/port-rent-arrears-and-collections)
+- Lead · [A San Francisco permit listed a contractor licence after California reported revoking it](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
+- Lead · [San Francisco’s citation refund notice listed $592,303.55. Its dates raise a question](https://sfgovtracker.com/#case/sfmta-citation-refund-notice)
+- Official finding · [SFUSD charged its cafeteria for interest the general fund might have earned](https://sfgovtracker.com/#case/sfusd-cafeteria-interest-on-general-fund-support)
+- Lead · [Two E-Rate ledgers differ by $454,555 on one school network request](https://sfgovtracker.com/#case/sfusd-e-rate-net-disbursement-reconciliation)
+- Official finding · [SFUSD used earnings on its 1997 bonds to cover interest on two older bond issues](https://sfgovtracker.com/#case/sfusd-school-bond-interest-and-duplicate-entries)
+- Official finding · [A utility vault pushed the Southeast Plant power upgrade forecast back 315 days](https://sfgovtracker.com/#case/southeast-plant-power-upgrade-vault-delay)

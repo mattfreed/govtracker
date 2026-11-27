@@ -25,13 +25,13 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 ### Independent search across raw collections
 
-2026-11-26 · Candidate review
+2026-11-26 · Reviewed
 
 **Records examined** Plain and compressed text, delimited tables, XML, HTML and JSON under the raw archive, including older and owner-supplied collections.
 
 **Test** Run ten independent searches for idle assets, unapplied credits, unbilled revenue, reversed outcomes, quality acceptance, duplicate funding, access after exit, timed exclusions, incompatible duties and retained security.
 
-**Result** 200 document and search combinations across 168 distinct matching paths. One payroll audit led to a separate wage settlement with controls governing the same overtime cards.
+**Result** Ten searches produced 200 document and search combinations across 168 distinct paths. On follow-up, 116 paths had negative results, 26 remained unresolved, 16 provided context for existing cases and 10 supported three new cases.
 
 **Open question** A search hit can be a policy, duplicate, cleared claim or historical finding. Scanned exhibits require separate OCR or visual inspection. New records, alternative spellings, amended decisions and unmatched identifiers can change the results.
 
@@ -148,6 +148,146 @@ Review each unresolved record after a release. When new evidence changes an outc
 **Open question** Check the correcting entries and grant draws. The two reviewed invoice amounts may overlap.
 
 [View records](https://sfgovtracker.com/#case/bart-on-call-project-allocations)
+
+### School invoice authorizations versus actual net disbursements
+
+2026-11-26 · Reviewed
+
+**Records examined** 4,399 invoice lines and 1,622 original or revised funding request records.
+
+**Test** Join only the current request for each billed entity. Sum signed line authorizations once per invoice and line. Re-download the largest exception directly from USAC.
+
+**Result** 697 of 711 comparable requests matched to the cent. Four of 315 SFUSD records differed. The largest difference was $454,555.38. The 711-row result includes direct invoice and request downloads.
+
+**Open question** Trace cash returns, posting dates and adjustment letters behind the 14 exceptions.
+
+[View records](https://sfgovtracker.com/#s/erate_reconciliation.requests)
+
+### Board decisions inside an unchanged percentage
+
+2026-11-26 · Reviewed
+
+**Records examined** BART FY2023–26 capital reports, with an FY2026 peer comparison and historical check of four maintenance equipment IDs.
+
+**Test** Compare project ratings by ID and check award records to identify the actual equipment. Use the column definition in each reporting period.
+
+**Result** In the FY2026 comparison, nine projects showed a constant unstarred percentage between zero and 100 while cumulative spending increased at least $500,000. Four equipment projects had reported the same percentages for 12 consecutive quarters. Follow-up on the other five projects found documented rail replacement, future Fremont installation, completed emergency-lighting equipment in financial closeout, program-management support and the M-Line case. Each requires its own definition of delivery.
+
+**Open question** Acceptance and milestone records could show whether progress reporting lagged actual work.
+
+[View records](https://sfgovtracker.com/#case/bart-maintenance-equipment-progress)
+
+### A bidder and its apparent competitor
+
+2026-11-26 · Reviewed
+
+**Records examined** 420 bidder rows in 106 dated procurements, compared with contractor license and principal histories.
+
+**Test** Pair bidders within the same dated procurement. Require different, uniquely resolved licenses and principal records effective at the time of bidding.
+
+**Result** Among 384 resolvable pairs, none shared a principal sequence number. Other pairs require additional identity evidence.
+
+**Open question** Obtain original bid sheets, joint-venture agreements and historical license identities for the remaining pairs.
+
+[View records](https://sfgovtracker.com/#s/planning_records)
+
+### Two affiliates reporting the same year-end balance
+
+2026-11-26 · Reviewed
+
+**Records examined** FY2023 and FY2024 financial statements and IRS returns for the Bernal Heights organizations.
+
+**Test** Compare both sides of the balance, identify fees paid and separate cash support from donated lease income.
+
+**Result** The FY2023 difference was $177,308. The next comparison narrowed to $1 and one organization’s later comparator was a draft. The housing affiliate’s reported grant also reconciled to support and donated lease income.
+
+**Open question** Obtain year-end intercompany schedules and the adjusting entries.
+
+[View records](https://sfgovtracker.com/#case/bernal-heights-affiliate-receivables)
+
+### Equipment test versus critical-path delay
+
+2026-11-26 · Reviewed
+
+**Records examined** Wastewater capital reports from June 2025 to June 2026.
+
+**Test** Follow the stated reason for each milestone revision and compare it with the period of a failed transformer test.
+
+**Result** SFPUC attributed the 315-day change to the utility vault and connection. The reports did not assign the delay to the earlier equipment test.
+
+**Open question** Find the transformer retest, critical-path schedule and final acceptance.
+
+[View records](https://sfgovtracker.com/#case/southeast-plant-power-upgrade-vault-delay)
+
+### A collection authority versus the customer balance
+
+2026-11-26 · Reviewed
+
+**Records examined** SFMTA citation credits, newspaper notice terms and subsequent authorization.
+
+**Test** Sum the published citation list and compare the first publication and claim deadline in the resolution.
+
+**Result** The list contained 7,512 credits worth $592,303.55. The dates and claimed notice interval in the resolution disagree. The transferred balance is unverified.
+
+**Open question** The sworn publication affidavits, claim outcomes and actual transfers are needed.
+
+[View records](https://sfgovtracker.com/#case/sfmta-citation-refund-notice)
+
+### Retest every unmatched E-Rate balance against the issuer
+
+2026-11-26 · Reviewed
+
+**Records examined** All 14 differences in the 711-request screen, including four district requests.
+
+**Test** Retrieve two fresh USAC files for each exception. Compare entity, request, signed line amounts, version and net disbursement with the first extract.
+
+**Result** All 14 differences reproduced from 28 agency downloads and 156 invoice lines. The next-largest difference was $67,504.39 on a City technology department application. A separate case for each amount would repeat the same unanswered accounting question.
+
+**Open question** Dated payment, return and recovery entries would establish why the public measures differ.
+
+[View records](https://sfgovtracker.com/#s/erate_reconciliation.requests)
+
+### Interlocking ownership and shared addresses among apparent competitors
+
+2026-11-26 · Reviewed
+
+**Records examined** 743 distinct bidder pairs in 106 dated procurements.
+
+**Test** Independently resolve license holders under names valid at bid date, then compare dated registered addresses and principal sequence numbers.
+
+**Result** The second method evaluated 523 pairs for distinct licenses and dated principals, including 152 previously unresolved pairs. No shared-principal signal was found. Two dated addresses were available on 493 pairs.
+
+**Open question** 207 pairs lacked a usable principal comparison under either method. Historical statements of information and original bid sheets could resolve them.
+
+[View records](https://sfgovtracker.com/#s/planning_records)
+
+### Contractual write-offs versus collectible emergency medical charges
+
+2026-11-26 · Reviewed
+
+**Records examined** Fire Department testimony describing approximately $106 million and the underlying billing definitions.
+
+**Test** Check what part of a gross ambulance charge can be collected under reimbursement contracts.
+
+**Result** The available evidence attributes the cited difference to contractual insurance adjustments. The gross billed amount cannot be counted as an uncollected debt.
+
+**Open question** An invoice-level aging report separating deductible, patient, insurer and contractual adjustments would support a separate collections test.
+
+[View records](https://sfgovtracker.com/#plan)
+
+### License status when a permit is issued
+
+2026-11-26 · Reviewed
+
+**Records examined** 82 monthly California registers covering January 2020 through October 2026. City building, plumbing and electrical records contain 1,902,160 contact rows and 1,355,992 permit rows.
+
+**Test** Match the license number, order and permit dates. Check the role and signed-declaration rule in force in 2024. Repeated revocation dates and reinstatements need separate treatment.
+
+**Result** The registers list 3,306 revocation entries on 3,235 license numbers. Thirteen subsequent permit and license combinations matched four numbers. One plumbing permit was issued 54 days after the listed revocation and identified that license on its sole applicant row. The signed state order barred an application for reinstatement or reissuance for five years. The City tracking system records rough approval on July 11 and final approval on December 12, 2024.
+
+**Open question** Obtain the signed declaration, any exemption or contractor changes, inspection job card and any judicial stay or later modification of the state order. Older monthly registers are missing from the live 2015–19 index pages.
+
+[View records](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
 
 ## Investigation questions
 
@@ -460,6 +600,46 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **Did a pay practice traced in an audit also appear in the subsequent wage settlement?** Tested. Auditors could not verify 1,079 of 2,448 unscheduled overtime entries at three Muni divisions for the pay period ending July 6, 2012. Dispatchers could enter and approve time, and one division discarded slips after several pay periods. [Records](https://sfgovtracker.com/#case/sfmta-overtime-slips-and-operator-settlement)
 
 - **Did a later payroll review test both unsupported payments and unclaimed work?** Needs records. Obtain subsequent compliance testing, aggregate settlement disbursements, and correction records for the two premium findings. [Records](https://sfgovtracker.com/#wanted)
+
+- **Do the reciprocal year-end affiliate balances and the service-fee lines reconcile independently?** Tested. For December 31, 2023, Bernal Heights Neighborhood Center reported $3,118,999 due from Bernal Heights Housing Corporation in its note on services. The housing corporation’s consolidated note reported $2,941,691 payable to the center for services and operating support. Subtraction leaves $177,308. The center appoints the housing corporation’s board and provides management and housing services under an agreement. [Records](https://sfgovtracker.com/#case/bernal-heights-affiliate-receivables)
+
+- **What entries explain the intercompany balance difference?** Needs records. Request the two December 2023 intercompany reconciliations, account definitions, opening balances, adjusting entries and dates of any settlement through December 2024. Separate direct affiliate balances from amounts owed by property partnerships. [Records](https://sfgovtracker.com/#wanted)
+
+- **Did the subsequent accounts identify cash recovered from the original delinquent leases?** Tested. Port staff listed $24.5 million in unpaid balances across 453 agreements in August 2021. The total already deducted overpayments, advances and credits. Staff estimated $11.9 million collectible. Their 2019 comparison table showed $3.3 million outstanding on 328 agreements. Twenty-four agreements above $250,000 accounted for $17.1 million of the 2021 balance. [Records](https://sfgovtracker.com/#case/port-rent-arrears-and-collections)
+
+- **Where did each of the August 2021 agreements end up after relief, collection or write-off?** Needs records. Obtain an anonymized rollforward of August 2021 delinquent agreements showing collections, relief authorized, settlements, disputed amounts, write-offs and remaining balances, with dates and approvals. [Records](https://sfgovtracker.com/#wanted)
+
+- **Was the reported delay attributed to the earlier failed equipment test?** Tested. In June 2025 SFPUC reported that one transformer delivered for the Southeast Plant power upgrade failed a field test. Replacement parts were on order. The agency identified a possible scheduling risk and still forecast completion on its approved date, March 31, 2026. Its approved and forecast budgets were both $95.88 million. [Records](https://sfgovtracker.com/#case/southeast-plant-power-upgrade-vault-delay)
+
+- **When did the redesigned vault and the transformer separately pass final acceptance?** Needs records. Obtain the transformer retest and warranty closeout, schedule change approval, critical-path analysis and final project acceptance record when available. [Records](https://sfgovtracker.com/#wanted)
+
+- **Do approved invoice lines reconcile to the current net disbursement on each school funding request?** Tested. For San Francisco Unified’s FY2021 data circuits, ten invoice lines net to $1,469,387.70 in approved amounts. The current funding request reports $1,014,832.32 net disbursed. Both records identify request 2199036752. The difference is $454,555.38. [Records](https://sfgovtracker.com/#case/sfusd-e-rate-net-disbursement-reconciliation)
+
+- **What returned funds, timing or other adjustments explain FRN 2199036752?** Needs records. Obtain USAC’s dated payment and return ledger, reconciliation to the approved invoice lines, and any recovery notice for FRN 2199036752. [Records](https://sfgovtracker.com/#wanted)
+
+- **Did the same maintenance procurement accounts keep identical progress percentages over twelve reporting periods?** Tested. Four equipment projects reported the same individual completion figures for twelve consecutive quarters: 97%, 40%, 23% and 13%. Their combined cumulative spending rose from $84,669,635 in June 2024 to $97,994,708 in June 2026. [Records](https://sfgovtracker.com/#case/bart-maintenance-equipment-progress)
+
+- **Which asset deliveries and milestone weights underpin the four percentages?** Needs records. Obtain equipment acceptance certificates, original and revised delivery milestones, equipment-in-service entries, and the calculation supporting each quarterly percentage. [Records](https://sfgovtracker.com/#wanted)
+
+- **Does the notice interval in SFMTA’s resolution agree with the stated claims period?** Tested. Across all 418 pages of SFMTA’s notice, 7,512 distinct citation numbers carry a total of $592,303.55 in unapplied payments. The notice covers overpayments and multiple payments and offers a phone and online claims process. SFMTA later reported processing about 350 claims. [Records](https://sfgovtracker.com/#case/sfmta-citation-refund-notice)
+
+- **What dates did the newspaper certify and how much of the listed credit was ultimately refunded?** Needs records. Obtain the newspaper publication affidavits, the notice as printed, and aggregate amounts claimed, approved, refunded, offset against other citations and transferred. Customer identities and vehicle details are unnecessary. [Records](https://sfgovtracker.com/#wanted)
+
+- **Was the interest charged on documented borrowing or on the opportunity cost of supporting the cafeteria?** Tested. In fiscal years 2010–11 through 2012–13, SFUSD’s cafeteria expenses exceeded the program’s revenues. The general fund covered the shortfall. The district allocated investment interest according to each fund’s cash balance, then charged the cafeteria $9,712 for interest it might otherwise have earned on the general fund money. The State Auditor found this treatment unallowable under the federal cost rules that applied during the audit period. [Records](https://sfgovtracker.com/#case/sfusd-cafeteria-interest-on-general-fund-support)
+
+- **Which costs did the state’s separate administrative closeout actually cover?** Needs records. To reconcile the earlier assessment, obtain CDE’s San Francisco Unified case closeout and its schedule of transactions. The State Auditor identifies the district’s corrective journal entry as available for inspection. [Records](https://sfgovtracker.com/#wanted)
+
+- **Can the school district’s lower bond interest be traced to deductions for earlier issues?** Tested. San Francisco voters approved the school facilities bonds in 1997. The district’s share was $90 million. The City treasurer recorded $5,742,294 in earnings on those proceeds. SFUSD reported $3,085,158 after deducting interest assessed on negative balances for its 1988 and 1994 issues. The 1997 bond certificate required separate tracking of gross proceeds. [Records](https://sfgovtracker.com/#case/sfusd-school-bond-interest-and-duplicate-entries)
+
+- **How were correcting entries assigned to each bond series?** Needs records. Obtain the correcting journal entries by bond series and any final project-level reconciliation to document how each older series settled its balance. [Records](https://sfgovtracker.com/#wanted)
+
+- **Do corrected administrative orders assign the wages to the right work sites and employers?** Tested. The Merced branch reopened in May 2011 and the new Visitacion Valley branch opened in July. Both library fact sheets name CLW Builders as contractor. The state wage proceedings identify Shamrock Structures as the affected subcontractor and San Francisco Public Works as awarding body. The decisions found that Shamrock used incorrect worker classifications and failed to pay required compensation. [Records](https://sfgovtracker.com/#case/library-branch-prevailing-wage-orders)
+
+- **How much of the ordered amount actually reached the workers?** Needs records. Request the Labor Commissioner’s satisfaction and distribution ledgers for 12-0165-PWH and 12-0167-PWH and any related superior-court review or payments by a surety. Aggregate by library without publishing worker names. [Records](https://sfgovtracker.com/#wanted)
+
+- **Did a permit list the same license and applicant after a dated state revocation entry?** Tested. The California Contractors State License Board lists licence 445470 in its May 2024 revocations. The effective date in that register is May 2. The register records an event and gives no account of a later stay, correction or reinstatement. [Records](https://sfgovtracker.com/#case/sf-plumbing-permit-after-state-license-revocation)
+
+- **What signed declaration and historical status record supported issuance on June 25, 2024?** Needs records. Obtain the signed declaration, any owner-builder exemption or change of contractor, the inspection job card and the issuance record for PM20240621501. Match them to the board’s certified licence history and any orders in effect from May through December 2024. [Records](https://sfgovtracker.com/#wanted)
 
 ## Nonprofits and grants
 

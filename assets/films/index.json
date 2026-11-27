@@ -56,8 +56,12 @@
   "poster": "bart-financial-advisory-administration-cost.jpg"
  },
  "bart-m-line-fixture-settlement": {
-  "seconds": 61.7,
+  "seconds": 79.0,
   "poster": "bart-m-line-fixture-settlement.jpg"
+ },
+ "bart-maintenance-equipment-progress": {
+  "seconds": 56.6,
+  "poster": "bart-maintenance-equipment-progress.jpg"
  },
  "bart-on-call-project-allocations": {
   "seconds": 42.8,
@@ -94,6 +98,10 @@
  "benefit-errors-dwarf-fraud-found": {
   "seconds": 137.1,
   "poster": "benefit-errors-dwarf-fraud-found.jpg"
+ },
+ "bernal-heights-affiliate-receivables": {
+  "seconds": 62.1,
+  "poster": "bernal-heights-affiliate-receivables.jpg"
  },
  "board-review-line-raised": {
   "seconds": 156.3,
@@ -387,6 +395,10 @@
   "seconds": 132.2,
   "poster": "left-city-then-led-its-contractor.jpg"
  },
+ "library-branch-prevailing-wage-orders": {
+  "seconds": 49.6,
+  "poster": "library-branch-prevailing-wage-orders.jpg"
+ },
  "life-generations-cash-to-iou": {
   "seconds": 130.1,
   "poster": "life-generations-cash-to-iou.jpg"
@@ -539,6 +551,10 @@
   "seconds": 57.2,
   "poster": "port-pier-23-rent-and-rebid.jpg"
  },
+ "port-rent-arrears-and-collections": {
+  "seconds": 55.9,
+  "poster": "port-rent-arrears-and-collections.jpg"
+ },
  "portsmouth-garage-renovation-overrun": {
   "seconds": 56.2,
   "poster": "portsmouth-garage-renovation-overrun.jpg"
@@ -639,6 +655,10 @@
   "seconds": 130.4,
   "poster": "sf-nursing-homes-losses-related-pay.jpg"
  },
+ "sf-plumbing-permit-after-state-license-revocation": {
+  "seconds": 49.8,
+  "poster": "sf-plumbing-permit-after-state-license-revocation.jpg"
+ },
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
   "poster": "sf-safe-gift-boxes.jpg"
@@ -652,8 +672,12 @@
   "poster": "sfha-housing-voucher-inspection-backlog.jpg"
  },
  "sfha-landlord-tenant-same-beneficiary": {
-  "seconds": 41.0,
+  "seconds": 47.7,
   "poster": "sfha-landlord-tenant-same-beneficiary.jpg"
+ },
+ "sfmta-citation-refund-notice": {
+  "seconds": 52.6,
+  "poster": "sfmta-citation-refund-notice.jpg"
  },
  "sfmta-federal-transit-audit-costs": {
   "seconds": 84.1,
@@ -695,13 +719,25 @@
   "seconds": 49.5,
   "poster": "sfpd-seized-property-missing-from-evidence.jpg"
  },
+ "sfusd-cafeteria-interest-on-general-fund-support": {
+  "seconds": 52.8,
+  "poster": "sfusd-cafeteria-interest-on-general-fund-support.jpg"
+ },
  "sfusd-e-rate-inflated-equipment": {
   "seconds": 80.9,
   "poster": "sfusd-e-rate-inflated-equipment.jpg"
  },
+ "sfusd-e-rate-net-disbursement-reconciliation": {
+  "seconds": 55.3,
+  "poster": "sfusd-e-rate-net-disbursement-reconciliation.jpg"
+ },
  "sfusd-pay-reported-outside-regular-wages": {
   "seconds": 63.3,
   "poster": "sfusd-pay-reported-outside-regular-wages.jpg"
+ },
+ "sfusd-school-bond-interest-and-duplicate-entries": {
+  "seconds": 47.1,
+  "poster": "sfusd-school-bond-interest-and-duplicate-entries.jpg"
  },
  "sheriff-oversight-title-in-personal-encounters": {
   "seconds": 44.8,
@@ -722,6 +758,10 @@
  "small-grantees-insider-loans": {
   "seconds": 179.1,
   "poster": "small-grantees-insider-loans.jpg"
+ },
+ "southeast-plant-power-upgrade-vault-delay": {
+  "seconds": 48.8,
+  "poster": "southeast-plant-power-upgrade-vault-delay.jpg"
  },
  "spent-first-approved-later": {
   "seconds": 132.0,

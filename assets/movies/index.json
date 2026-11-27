@@ -56,8 +56,12 @@
   "passages": 10
  },
  "bart-m-line-fixture-settlement": {
-  "seconds": 61.7,
-  "passages": 15
+  "seconds": 79.0,
+  "passages": 19
+ },
+ "bart-maintenance-equipment-progress": {
+  "seconds": 56.6,
+  "passages": 11
  },
  "bart-on-call-project-allocations": {
   "seconds": 42.8,
@@ -94,6 +98,10 @@
  "benefit-errors-dwarf-fraud-found": {
   "seconds": 137.1,
   "passages": 32
+ },
+ "bernal-heights-affiliate-receivables": {
+  "seconds": 62.1,
+  "passages": 13
  },
  "board-review-line-raised": {
   "seconds": 156.3,
@@ -387,6 +395,10 @@
   "seconds": 132.2,
   "passages": 30
  },
+ "library-branch-prevailing-wage-orders": {
+  "seconds": 49.6,
+  "passages": 10
+ },
  "life-generations-cash-to-iou": {
   "seconds": 130.1,
   "passages": 31
@@ -539,6 +551,10 @@
   "seconds": 57.2,
   "passages": 14
  },
+ "port-rent-arrears-and-collections": {
+  "seconds": 55.9,
+  "passages": 11
+ },
  "portsmouth-garage-renovation-overrun": {
   "seconds": 56.2,
   "passages": 12
@@ -639,6 +655,10 @@
   "seconds": 130.4,
   "passages": 36
  },
+ "sf-plumbing-permit-after-state-license-revocation": {
+  "seconds": 49.8,
+  "passages": 11
+ },
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
   "passages": 37
@@ -652,8 +672,12 @@
   "passages": 11
  },
  "sfha-landlord-tenant-same-beneficiary": {
-  "seconds": 41.0,
-  "passages": 10
+  "seconds": 47.7,
+  "passages": 11
+ },
+ "sfmta-citation-refund-notice": {
+  "seconds": 52.6,
+  "passages": 12
  },
  "sfmta-federal-transit-audit-costs": {
   "seconds": 84.1,
@@ -695,13 +719,25 @@
   "seconds": 49.5,
   "passages": 10
  },
+ "sfusd-cafeteria-interest-on-general-fund-support": {
+  "seconds": 52.8,
+  "passages": 11
+ },
  "sfusd-e-rate-inflated-equipment": {
   "seconds": 80.9,
   "passages": 18
  },
+ "sfusd-e-rate-net-disbursement-reconciliation": {
+  "seconds": 55.3,
+  "passages": 11
+ },
  "sfusd-pay-reported-outside-regular-wages": {
   "seconds": 63.3,
   "passages": 14
+ },
+ "sfusd-school-bond-interest-and-duplicate-entries": {
+  "seconds": 47.1,
+  "passages": 10
  },
  "sheriff-oversight-title-in-personal-encounters": {
   "seconds": 44.8,
@@ -722,6 +758,10 @@
  "small-grantees-insider-loans": {
   "seconds": 179.1,
   "passages": 43
+ },
+ "southeast-plant-power-upgrade-vault-delay": {
+  "seconds": 48.8,
+  "passages": 11
  },
  "spent-first-approved-later": {
   "seconds": 132.0,
