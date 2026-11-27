@@ -23,6 +23,10 @@
   "seconds": 69.3,
   "passages": 16
  },
+ "anchor-qea-local-subconsultant-participation": {
+  "seconds": 68.1,
+  "passages": 16
+ },
  "approved-after-the-fact": {
   "seconds": 138.5,
   "passages": 43
@@ -123,6 +127,10 @@
   "seconds": 130.2,
   "passages": 38
  },
+ "beach-chalet-late-rent-recovery": {
+  "seconds": 47.4,
+  "passages": 11
+ },
  "behested-payment-waivers": {
   "seconds": 136.0,
   "passages": 39
@@ -134,6 +142,10 @@
  "bernal-heights-affiliate-receivables": {
   "seconds": 62.1,
   "passages": 13
+ },
+ "bicycle-coalition-lobbying-and-ballot-refunds": {
+  "seconds": 54.7,
+  "passages": 12
  },
  "board-review-line-raised": {
   "seconds": 156.3,
@@ -163,9 +175,17 @@
   "seconds": 130.0,
   "passages": 34
  },
+ "caltrain-electric-fleet-warranty-delays": {
+  "seconds": 45.6,
+  "passages": 11
+ },
  "caltrain-electrification-budget-and-change-order": {
   "seconds": 55.7,
   "passages": 12
+ },
+ "caltrain-farebox-setaside-receivable": {
+  "seconds": 56.3,
+  "passages": 14
  },
  "caltrain-station-apartment-embezzlement": {
   "seconds": 59.3,
@@ -299,6 +319,10 @@
   "seconds": 130.1,
   "passages": 34
  },
+ "elections-commission-secretary-hiring-order": {
+  "seconds": 45.7,
+  "passages": 14
+ },
  "emergency-hotels-rooms-repairs-repayment": {
   "seconds": 162.9,
   "passages": 42
@@ -315,6 +339,10 @@
   "seconds": 68.0,
   "passages": 14
  },
+ "ethics-legal-defense-fund-penalty-payments": {
+  "seconds": 40.7,
+  "passages": 10
+ },
  "faces-sf-childcare-and-meal-repayments": {
   "seconds": 49.7,
   "passages": 12
@@ -326,6 +354,10 @@
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
   "passages": 33
+ },
+ "farrell-2010-forfeiture-settlement": {
+  "seconds": 49.4,
+  "passages": 12
  },
  "farrell-campaign-shared-expense-settlement": {
   "seconds": 46.8,
@@ -467,13 +499,29 @@
   "seconds": 130.1,
   "passages": 31
  },
+ "lincoln-park-golf-minimum-rent": {
+  "seconds": 42.8,
+  "passages": 10
+ },
  "lobby-money-to-the-measure": {
   "seconds": 136.9,
   "passages": 35
  },
+ "lobbyist-late-fee-collection-deadline": {
+  "seconds": 43.0,
+  "passages": 12
+ },
  "lobbyists-gave-to-officials-they-lobbied": {
   "seconds": 130.3,
   "passages": 36
+ },
+ "local-hiring-construction-penalty-collections": {
+  "seconds": 43.9,
+  "passages": 11
+ },
+ "lombard-chestnut-demolition-settlement": {
+  "seconds": 42.1,
+  "passages": 11
  },
  "lotteries-waiting-lists-and-pools": {
   "seconds": 140.1,
@@ -481,6 +529,10 @@
  },
  "lyric-hud-grant-reimbursement-and-rate": {
   "seconds": 54.2,
+  "passages": 13
+ },
+ "maceo-may-storm-repair-insurance": {
+  "seconds": 52.3,
   "passages": 13
  },
  "meal-contracts-under-the-line": {
@@ -574,6 +626,10 @@
  "opportunities-for-all-jcyc": {
   "seconds": 130.3,
   "passages": 34
+ },
+ "outside-lands-permit-vote-and-ticket-gifts": {
+  "seconds": 48.8,
+  "passages": 12
  },
  "overtime-beyond-the-clock": {
   "seconds": 146.6,
@@ -731,13 +787,25 @@
   "seconds": 130.4,
   "passages": 35
  },
+ "sf-cathedral-impact-fee-missed-at-issuance": {
+  "seconds": 55.4,
+  "passages": 14
+ },
  "sf-forged-permit-and-inspection-records": {
   "seconds": 71.7,
   "passages": 15
  },
+ "sf-inactive-cellular-lines": {
+  "seconds": 51.4,
+  "passages": 13
+ },
  "sf-invalid-engineering-credentials-five-projects": {
   "seconds": 87.9,
   "passages": 20
+ },
+ "sf-minimum-wage-collections": {
+  "seconds": 43.7,
+  "passages": 12
  },
  "sf-nursing-homes-losses-related-pay": {
   "seconds": 130.4,
@@ -754,6 +822,10 @@
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
   "passages": 37
+ },
+ "sf-state-preschool-eligibility-refund": {
+  "seconds": 49.1,
+  "passages": 12
  },
  "sfcta-design-contracts-grow-after-award": {
   "seconds": 174.0,
@@ -834,6 +906,10 @@
  "sfpuc-underground-express-bribes": {
   "seconds": 86.5,
   "passages": 21
+ },
+ "sfpuc-wireless-pole-license-counts": {
+  "seconds": 42.7,
+  "passages": 14
  },
  "sfusd-cafeteria-interest-on-general-fund-support": {
   "seconds": 52.8,
@@ -928,8 +1004,8 @@
   "passages": 30
  },
  "sweet-public-campaign-financing-order": {
-  "seconds": 40.3,
-  "passages": 10
+  "seconds": 45.7,
+  "passages": 11
  },
  "told-the-state-no-assets-after-final-gift": {
   "seconds": 130.4,
@@ -1015,6 +1091,10 @@
   "seconds": 44.6,
   "passages": 12
  },
+ "westside-recycled-water-pump-failures": {
+  "seconds": 56.3,
+  "passages": 15
+ },
  "whistleblower-vendor-contract-enforcement": {
   "seconds": 48.6,
   "passages": 11
@@ -1030,6 +1110,10 @@
  "youth-justice-same-money-fewer-days": {
   "seconds": 136.0,
   "passages": 36
+ },
+ "zhou-mayoral-campaign-billboard-coordination": {
+  "seconds": 40.1,
+  "passages": 14
  },
  "zoo-loan-and-ledger": {
   "seconds": 146.4,

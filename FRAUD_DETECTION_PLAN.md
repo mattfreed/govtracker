@@ -475,7 +475,7 @@ Review each unresolved record after a release. When new evidence changes an outc
 
 2026-11-27 · Reviewed
 
-**Records examined** 172,145 initial paths, 163,193 distinct contents, 343 subsequent new or changed files.
+**Records examined** 172,145 initial paths, 163,193 distinct contents, 387 subsequent new or changed files.
 
 **Test** Scan 724,146 PDF pages, 177,525 text or table streams, and 64,649 archive members. A separate legacy reader processed 27,154,771 Access rows.
 
@@ -484,6 +484,20 @@ Review each unresolved record after a release. When new evidence changes an outc
 **Open question** The specific cover of a damaged Lakeshore school contract remains incomplete. Invoices, receipts, rulings and other still-missing records are listed on the case files and Requested data.
 
 [View records](https://sfgovtracker.com/#wanted)
+
+### Trace agency-specific suspicions to receipts, decisions and applicable-year terms
+
+2026-11-27 · Reviewed
+
+**Records examined** 30 distinct project, department or regulatory reviews. Each scope and the public source are linked in the results table.
+
+**Test** Check the point at which money changed hands, the remedy or exemption authorized at the time, and any later correction or collection.
+
+**Result** Refunds, ordered amounts, contested assessments and authorized spending are recorded separately. Documented service delays and negative comparisons are included.
+
+**Open question** Case files and the source table identify the missing remittance records, after-action reports and agreements needed for further verification.
+
+[View records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
 
 ## Investigation questions
 
@@ -898,6 +912,68 @@ Review each unresolved record after a release. When new evidence changes an outc
 - **Was a host fundraising target guaranteed, and how much of the wage settlement reached workers?** Tested. The executed America’s Cup agreement distinguishes the bond from fundraising. The Event Authority paid the City $406,566. By February 2014, 74 of 120 affected workers had received back wages. [Records](https://sfgovtracker.com/#case/americas-cup-host-costs-and-back-wages)
 
 - **Were ordinary airport rents paid even when contractual late fees went unassessed?** Tested. Separate airport audits document $74,407 in previously unassessed late fees across three operators. The airport changed its fee policy in April 2012. [Records](https://sfgovtracker.com/#case/sfo-rent-late-fee-policy)
+
+### Agency records, payment direction and fiscal-year exceptions
+
+- **Did the transit contractor’s actual restitution match the amount demanded?** Tested. BART confirmed an $11,900 recovery. The event agreement separated a performance bond from fundraising. The final sweeping settlement amount and ultimate distribution of event back wages remain open. [Records](https://sfgovtracker.com/#case/bart-power-washing-contract-false-claims)
+
+- **Which rent late fees went unassessed, and when did the airport change its policy?** Tested. Three operators had $74,407 in unassessed rent late fees. Two closely matched legislative appeals had different outcomes. A monthly lobbying payment cannot be allocated to a particular hearing from the filing alone. [Records](https://sfgovtracker.com/#case/sfo-rent-late-fee-policy)
+
+- **Can a mislabeled project be traced by its winning bidder and every subcontract allocation?** Tested. Eight losing bidders appeared on seven winning project teams. Six overlaps were disclosed in the original proposals. Who performed and received payment for each scope requires the project payrolls and vouchers. [Records](https://sfgovtracker.com/#case/sf-public-works-somarts-paving-contract-title)
+
+- **Which share of a multi-city bribery sentence and civil settlement was payable to San Francisco?** Tested. A supplier admitted about $17,923.50 in bribes to two SFPUC employees. The court ordered $19,762.90 for San Francisco. The City’s receipts and auction-lot remittances remain unverified. [Records](https://sfgovtracker.com/#case/sfpuc-underground-express-bribes)
+
+- **Could the same capacity shortfall have been penalized twice in overlapping regulatory citations?** Tested. The state recorded $3,516,568 received on five citations. A separate $10,010,909 preliminary assessment ended at $500 paid. The alternative cost of buying capacity requires contemporary procurement offers. [Records](https://sfgovtracker.com/#case/cleanpowersf-capacity-penalties)
+
+- **Did outgoing Library Preservation Fund transfers reach the destination accounts required by the Charter?** Tested. $24,826,247 matched the General Fund receiving entries. City Charter section 16.109(c) requires returning the uncommitted baseline share. The year-end controller calculations and a signed capital closeout by source would settle the remaining reconciliation. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **How did the regulator resolve a ferry operating outside its original permit?** Tested. The CPUC ordered PropSF to pay $10,000 for operating a published schedule before approval. Its register marks the obligation in compliance. The register gives no deposit date, and cancellation counts do not identify contractor service credits. [Records](https://sfgovtracker.com/#case/treasure-island-ferry-schedule-penalty)
+
+- **Which party owed the school district money after a suit about unpaid invoices?** Tested. The board approved $1 million payable to the district on disputed pandemic invoices. The earlier maintenance suit ended in a separate gross settlement. Neither settlement establishes when the district received the money. [Records](https://sfgovtracker.com/#case/sfusd-school-bus-closure-invoices)
+
+- **Did missing a streetlight repair target create a contractual or regulatory bill credit?** Tested. City reports document missed repair targets. The state adopted performance goals and deferred a proposed bill credit. No later order or invoice reviewed established a credit payable for a particular outage. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **How did the final shelter cost and acceptance date compare with the approved capital project?** Tested. Public Works reported finishing $7.9 million below budget. Project reporting placed substantial completion in the planned winter window. No improper contingency payment or collectible contractor credit was established. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **Can a year’s newly established food overissuances be reconciled to net collections by claim vintage?** Tested. In FY2026 the state established $1,642,414 in overissuances, including $338,478 in administrative errors. The City booked $396,103.93 net collections. The state and City figures have different claim populations. Signed quarterly reports and reconciliations are needed. [Records](https://sfgovtracker.com/#case/benefit-errors-dwarf-fraud-found)
+
+- **Did fiscal sponsorship bypass vendor selection, and did auditors verify the corrective action?** Tested. Three sponsor-held accounts bypassed City payment rules. The separate SOMArts grant audit identified $339 in charges, with substitute costs proposed. The sponsor-account payments were unquantified and final settlement of the $339 is unverified. [Records](https://sfgovtracker.com/#case/arts-commission-fiscal-sponsor-accounts)
+
+- **Did the housing audit identify an incorrect benefit amount for any late reexamination?** Tested. Four late reexaminations occurred in the FY2025 sample of 60. Auditors identified no questioned costs for that finding. Household-level files and effective schedules are needed to test specific benefit calculations. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **Which airport audit resulted in carrier refunds, and which assessed a charge on a passenger account?** Tested. China Airlines’ passenger fees were $50,594 short after a credit. Separately, SFO documented $4.55 million returned to carrier accounts. The China Airlines fee receipt and final interest decision remain unverified. [Records](https://sfgovtracker.com/#case/sfo-city-overhead-airline-refunds)
+
+- **Did a reimbursement from a regional college actually reverse the original lodging expense?** Tested. Federal auditors retained $8,830 in questioned lodging costs after examining the college’s receipts. The final federal disposition and any repayment remain unverified. [Records](https://sfgovtracker.com/#case/city-college-conference-lodging-charged-twice)
+
+- **Did an approved regional Clipper contingency result in payment of the individual Muni claim?** Tested. Muni submitted a $62,992 estimate. Regional staff proposed reimbursing that amount and the board approved a regional contingency. The dated Muni receipt and a recovery from the operator remain unverified. [Records](https://sfgovtracker.com/#case/clipper-outage-muni-fare-claim)
+
+- **Which system supplied the reported recycled water before the new plant entered service?** Tested. Pre-service pump equipment failure contributed to a $17.03 million project budget increase. Golf course deliveries came from other systems. Net repair expense and the first metered customer delivery remain unverified. [Records](https://sfgovtracker.com/#case/westside-recycled-water-pump-failures)
+
+- **How many idle city phone lines had a documented standby purpose and how much was actually saved?** Tested. The budget analyst identified 2,117 idle lines without an approved business use, costing an estimated $82,000 monthly. The later disconnection dates, actual savings and any specific outage credit remain open. [Records](https://sfgovtracker.com/#case/sf-inactive-cellular-lines)
+
+- **Were agencies paying for vacant leased floors or separate occupied floors at the same address?** Tested. Human Services vacated the first two floors. Public Health rented the fourth. A new lease authorized $429,736 in rent abatement. No dated rent payment for those vacant floors or improper brokerage commission was established. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **Can aggregate trust funding show whether individual payroll deposits arrived on time?** Tested. FY2024 and FY2025 statements reported no annual employer contribution deficiency. The FY2026 auditor reported no reportable noncompliance. Annual statements cannot verify batch-by-batch remittance dates. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **Can accepted dredging quantities be verified against disposal receipts and payment terms?** Tested. Ten vouchers reconciled to $9,962,625 for contract 2842. The successor’s $9.13 million paid differed from $34.83 million authorized. Dated surveys, disposal receipts and credits are necessary for an invoice-level quantity test. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **Did the park department collect assessed concession charges or dispute whether the lease still authorized them?** Tested. Beach Chalet paid $53,208 in late charges. For Lincoln Park Golf the agency disputed a $124,757 audit calculation under holdover terms. Closing the recommendations did not document a Lincoln Park collection. [Records](https://sfgovtracker.com/#case/lincoln-park-golf-minimum-rent)
+
+- **Which penalties were demanded, which were collected, and when did the collection period expire?** Tested. The City settled the disputed Farrell forfeiture for $25,000. In a separate account the Bureau recorded $225 paid and later reported an expired collection window. Later deposits and formal closing entries require separate collection records. [Records](https://sfgovtracker.com/#case/lobbyist-late-fee-collection-deadline)
+
+- **Do a joint agency briefing and adopted wireless resolution give the same legacy license count?** Tested. The agency briefing said 578 SFPUC licenses would retain old terms. The adopted resolution used 800 for that same group. A site-level license ledger with billing dates is needed to verify any unpaid fees. [Records](https://sfgovtracker.com/#case/sfpuc-wireless-pole-license-counts)
+
+- **How did actual insurance receipts affect the City’s authorized construction loan and eventual draw?** Tested. The housing office reported $5.6 million received and $28.6 million expected. The City authorized up to $14.983 million of additional lending. The closing draw, final insurance settlement and any duplicated recovery remain unverified. [Records](https://sfgovtracker.com/#case/maceo-may-storm-repair-insurance)
+
+- **Did the preschool refund arise from incorrect eligible enrollment or from misstated daily attendance?** Tested. Auditors removed 947 eligible enrollment days across six families. The FY2017 audit confirms a $29,156 refund. The separate attendance correction in another audit had no questioned costs. [Records](https://sfgovtracker.com/#case/sf-state-preschool-eligibility-refund)
+
+- **How much of the housing ground-rent payment reduced a contingent balance rather than paying current rent?** Tested. North Beach’s $2,025,734 FY2025 ground rent reconciles to $800,000 base rent and a $1,225,734 contingent-balance reduction. Payment ledgers and cash-flow certifications are needed to test balances on the individual loans. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **Did an out-of-district improvement use assessments or a separate grant authorized for that work?** Tested. Fisherman’s Wharf reported $239,950 more assessment revenue than spending in FY2025. A restricted Port grant funded work outside the district. The revenue difference alone establishes neither an improper charge nor a refund. [Records](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes)
+
+- **How many Caltrain delay minutes were attributed to warranty issues, and were credits documented?** Tested. Caltrain attributed 1,060 delay minutes to Stadler warranty issues in October 2026. The September figure was 392. The cost of repairs, warranty credits and any liquidated damages remain unverified. [Records](https://sfgovtracker.com/#case/caltrain-electric-fleet-warranty-delays)
+
+- **Did a later vote upholding a permit fee produce a traceable receipt at the originally assessed amount?** Tested. The City acknowledged overlooking a $49,712 infrastructure fee on a 2013 permit. All 11 supervisors upheld the assessment in 2023. The payer table does not identify a subsequent receipt or adjustment. [Records](https://sfgovtracker.com/#case/sf-cathedral-impact-fee-missed-at-issuance)
 
 ## Nonprofits and grants
 

@@ -6,7 +6,7 @@
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   const TIER = { PROVEN: 'Proven', CHARGED: 'Charged', OFFICIAL: 'Official finding', REDFLAG: 'Lead' };
   const CHIPS = [['', 'All'], ['REDFLAG', 'Leads'], ['OFFICIAL', 'Official findings'], ['CHARGED', 'Charged'], ['PROVEN', 'Proven']];
-  const PHASE = { convicted: 'Convicted', 'in-court': 'In court', active: 'Active', past: 'Closed' };
+  const PHASE = { convicted: 'Convicted or admitted', 'in-court': 'In court', active: 'Active', past: 'Closed' };
   const mmss = s => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
   const store = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* private window */ } } };
   const ICON = {

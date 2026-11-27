@@ -23,6 +23,10 @@
   "seconds": 69.3,
   "poster": "americas-cup-host-costs-and-back-wages.jpg"
  },
+ "anchor-qea-local-subconsultant-participation": {
+  "seconds": 68.1,
+  "poster": "anchor-qea-local-subconsultant-participation.jpg"
+ },
  "approved-after-the-fact": {
   "seconds": 138.5,
   "poster": "approved-after-the-fact.jpg"
@@ -123,6 +127,10 @@
   "seconds": 130.2,
   "poster": "bay-area-hospice-surge.jpg"
  },
+ "beach-chalet-late-rent-recovery": {
+  "seconds": 47.4,
+  "poster": "beach-chalet-late-rent-recovery.jpg"
+ },
  "behested-payment-waivers": {
   "seconds": 136.0,
   "poster": "behested-payment-waivers.jpg"
@@ -134,6 +142,10 @@
  "bernal-heights-affiliate-receivables": {
   "seconds": 62.1,
   "poster": "bernal-heights-affiliate-receivables.jpg"
+ },
+ "bicycle-coalition-lobbying-and-ballot-refunds": {
+  "seconds": 54.7,
+  "poster": "bicycle-coalition-lobbying-and-ballot-refunds.jpg"
  },
  "board-review-line-raised": {
   "seconds": 156.3,
@@ -163,9 +175,17 @@
   "seconds": 130.0,
   "poster": "bvhpf-tier3-still-funded.jpg"
  },
+ "caltrain-electric-fleet-warranty-delays": {
+  "seconds": 45.6,
+  "poster": "caltrain-electric-fleet-warranty-delays.jpg"
+ },
  "caltrain-electrification-budget-and-change-order": {
   "seconds": 55.7,
   "poster": "caltrain-electrification-budget-and-change-order.jpg"
+ },
+ "caltrain-farebox-setaside-receivable": {
+  "seconds": 56.3,
+  "poster": "caltrain-farebox-setaside-receivable.jpg"
  },
  "caltrain-station-apartment-embezzlement": {
   "seconds": 59.3,
@@ -299,6 +319,10 @@
   "seconds": 130.1,
   "poster": "dwayne-jones-connector.jpg"
  },
+ "elections-commission-secretary-hiring-order": {
+  "seconds": 45.7,
+  "poster": "elections-commission-secretary-hiring-order.jpg"
+ },
  "emergency-hotels-rooms-repairs-repayment": {
   "seconds": 162.9,
   "poster": "emergency-hotels-rooms-repairs-repayment.jpg"
@@ -315,6 +339,10 @@
   "seconds": 68.0,
   "poster": "environmental-health-inspection-fees.jpg"
  },
+ "ethics-legal-defense-fund-penalty-payments": {
+  "seconds": 40.7,
+  "poster": "ethics-legal-defense-fund-penalty-payments.jpg"
+ },
  "faces-sf-childcare-and-meal-repayments": {
   "seconds": 49.7,
   "poster": "faces-sf-childcare-and-meal-repayments.jpg"
@@ -326,6 +354,10 @@
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
   "poster": "family-shelter-beds-left-empty.jpg"
+ },
+ "farrell-2010-forfeiture-settlement": {
+  "seconds": 49.4,
+  "poster": "farrell-2010-forfeiture-settlement.jpg"
  },
  "farrell-campaign-shared-expense-settlement": {
   "seconds": 46.8,
@@ -467,13 +499,29 @@
   "seconds": 130.1,
   "poster": "life-generations-cash-to-iou.jpg"
  },
+ "lincoln-park-golf-minimum-rent": {
+  "seconds": 42.8,
+  "poster": "lincoln-park-golf-minimum-rent.jpg"
+ },
  "lobby-money-to-the-measure": {
   "seconds": 136.9,
   "poster": "lobby-money-to-the-measure.jpg"
  },
+ "lobbyist-late-fee-collection-deadline": {
+  "seconds": 43.0,
+  "poster": "lobbyist-late-fee-collection-deadline.jpg"
+ },
  "lobbyists-gave-to-officials-they-lobbied": {
   "seconds": 130.3,
   "poster": "lobbyists-gave-to-officials-they-lobbied.jpg"
+ },
+ "local-hiring-construction-penalty-collections": {
+  "seconds": 43.9,
+  "poster": "local-hiring-construction-penalty-collections.jpg"
+ },
+ "lombard-chestnut-demolition-settlement": {
+  "seconds": 42.1,
+  "poster": "lombard-chestnut-demolition-settlement.jpg"
  },
  "lotteries-waiting-lists-and-pools": {
   "seconds": 140.1,
@@ -482,6 +530,10 @@
  "lyric-hud-grant-reimbursement-and-rate": {
   "seconds": 54.2,
   "poster": "lyric-hud-grant-reimbursement-and-rate.jpg"
+ },
+ "maceo-may-storm-repair-insurance": {
+  "seconds": 52.3,
+  "poster": "maceo-may-storm-repair-insurance.jpg"
  },
  "meal-contracts-under-the-line": {
   "seconds": 130.6,
@@ -574,6 +626,10 @@
  "opportunities-for-all-jcyc": {
   "seconds": 130.3,
   "poster": "opportunities-for-all-jcyc.jpg"
+ },
+ "outside-lands-permit-vote-and-ticket-gifts": {
+  "seconds": 48.8,
+  "poster": "outside-lands-permit-vote-and-ticket-gifts.jpg"
  },
  "overtime-beyond-the-clock": {
   "seconds": 146.6,
@@ -731,13 +787,25 @@
   "seconds": 130.4,
   "poster": "service-numbers-copied-forward.jpg"
  },
+ "sf-cathedral-impact-fee-missed-at-issuance": {
+  "seconds": 55.4,
+  "poster": "sf-cathedral-impact-fee-missed-at-issuance.jpg"
+ },
  "sf-forged-permit-and-inspection-records": {
   "seconds": 71.7,
   "poster": "sf-forged-permit-and-inspection-records.jpg"
  },
+ "sf-inactive-cellular-lines": {
+  "seconds": 51.4,
+  "poster": "sf-inactive-cellular-lines.jpg"
+ },
  "sf-invalid-engineering-credentials-five-projects": {
   "seconds": 87.9,
   "poster": "sf-invalid-engineering-credentials-five-projects.jpg"
+ },
+ "sf-minimum-wage-collections": {
+  "seconds": 43.7,
+  "poster": "sf-minimum-wage-collections.jpg"
  },
  "sf-nursing-homes-losses-related-pay": {
   "seconds": 130.4,
@@ -754,6 +822,10 @@
  "sf-safe-gift-boxes": {
   "seconds": 145.8,
   "poster": "sf-safe-gift-boxes.jpg"
+ },
+ "sf-state-preschool-eligibility-refund": {
+  "seconds": 49.1,
+  "poster": "sf-state-preschool-eligibility-refund.jpg"
  },
  "sfcta-design-contracts-grow-after-award": {
   "seconds": 174.0,
@@ -834,6 +906,10 @@
  "sfpuc-underground-express-bribes": {
   "seconds": 86.5,
   "poster": "sfpuc-underground-express-bribes.jpg"
+ },
+ "sfpuc-wireless-pole-license-counts": {
+  "seconds": 42.7,
+  "poster": "sfpuc-wireless-pole-license-counts.jpg"
  },
  "sfusd-cafeteria-interest-on-general-fund-support": {
   "seconds": 52.8,
@@ -928,7 +1004,7 @@
   "poster": "suspended-ironworks-back-on-public-works.jpg"
  },
  "sweet-public-campaign-financing-order": {
-  "seconds": 40.3,
+  "seconds": 45.7,
   "poster": "sweet-public-campaign-financing-order.jpg"
  },
  "told-the-state-no-assets-after-final-gift": {
@@ -1015,6 +1091,10 @@
   "seconds": 44.6,
   "poster": "westside-pump-station-bid-outreach.jpg"
  },
+ "westside-recycled-water-pump-failures": {
+  "seconds": 56.3,
+  "poster": "westside-recycled-water-pump-failures.jpg"
+ },
  "whistleblower-vendor-contract-enforcement": {
   "seconds": 48.6,
   "poster": "whistleblower-vendor-contract-enforcement.jpg"
@@ -1030,6 +1110,10 @@
  "youth-justice-same-money-fewer-days": {
   "seconds": 136.0,
   "poster": "youth-justice-same-money-fewer-days.jpg"
+ },
+ "zhou-mayoral-campaign-billboard-coordination": {
+  "seconds": 40.1,
+  "poster": "zhou-mayoral-campaign-billboard-coordination.jpg"
  },
  "zoo-loan-and-ledger": {
   "seconds": 146.4,

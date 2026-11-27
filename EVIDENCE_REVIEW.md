@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 259 case files. The public citation check tested 2,181 distinct URLs across 3,781 case citations. 2,087 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 280 case files. The public citation check tested 2,252 distinct URLs across 3,853 case citations. 2,158 returned content. 89 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -182,8 +182,18 @@ The November 2017 SFMTA refund notice states that its citation issue dates begin
 
 ## Full archive recheck
 
-The November 27 inventory contained 172,145 paths and 163,193 distinct contents. The full pass read 724,146 PDF pages and 177,525 text or table streams, including material inside archives. The ten additional search topics returned 472 passages in 127 files. Each passage has a disposition in the review ledger. Earlier finance, permitting and relationship comparisons used additional tests.
+The November 27 inventory contained 172,145 paths and 163,193 distinct contents. The reader visited 724,146 PDF pages and processed 177,525 text or table streams, including archive members. Page visits count extraction attempts. They do not certify complete text recognition on every scanned page. The ten additional search topics returned 472 passages in 127 files. Each passage has a disposition in the review ledger. Earlier finance, permitting and relationship comparisons used additional tests.
 
 The separate legacy pass read 189 worksheets or text tables and 27,154,771 rows across 229 Access tables. Four encrypted forms matched the state's publicly distributed blank templates byte for byte. Five public instruction letters supplied the field definitions. One damaged school-board attachment still lacks its specific transaction cover despite comparison with six other attachments.
 
-A subsequent inventory reached 172,488 paths. It identified 343 new or changed files with 338 distinct new or changed contents. The supplemental content pass recorded 0 read errors. Unpublished receipts, signed schedules and later dispositions can change individual findings. The case files identify which records would resolve each open question.
+A subsequent inventory reached 172,532 paths. It identified 387 new or changed files with 382 distinct new or changed contents. The supplemental content pass recorded 0 read errors. Unpublished receipts, signed schedules and later dispositions can change individual findings. The case files identify which records would resolve each open question.
+
+## Agency outcome reviews
+
+The [agency review table](https://sfgovtracker.com/#s/agency_evidence_review.agency-review-outcomes) covers 30 separate investigations. It identifies the records tested, the stated fiscal or operating period, what the records establish and what would be needed to determine an outstanding amount. The underlying [complete table](https://sfgovtracker.com/assets/data/screen-rows/agency_evidence_review/agency-review-outcomes.json) can be downloaded.
+
+The archive topic scan returned 2,025 passages. A second review traced 1,260 enforcement-related passages to 347 documents, including 87 distinct Ethics Commission proceedings. The remaining 765 passages came from 288 distinct documents and included a corrected Caltrain receivable and an interim subcontracting review. The [resolution register](https://sfgovtracker.com/#s/agency_evidence_review.ethics-resolution-register) links each decision in the City’s current dataset to its supporting record.
+
+These scans visited the PDF pages in the stated inventories. Some mixed-text PDFs contained scanned pages without usable native text. A separate page-level OCR recovery is in progress. A missing search match on an unreadable page cannot rule out a finding.
+
+The supplemental scan covered 382 distinct file contents added or changed since the original snapshot. All 120 returned passages matched the dispositions recorded for 36 source files. The separately recorded checks compare accounting records and agency decisions beyond those search terms.
