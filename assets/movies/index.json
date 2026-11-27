@@ -35,6 +35,10 @@
   "seconds": 52.2,
   "passages": 11
  },
+ "arts-commission-fiscal-sponsor-accounts": {
+  "seconds": 41.4,
+  "passages": 12
+ },
  "asian-pacific-islander-legal-outreach-award-controls": {
   "seconds": 49.3,
   "passages": 12
@@ -124,8 +128,8 @@
   "passages": 39
  },
  "benefit-errors-dwarf-fraud-found": {
-  "seconds": 137.1,
-  "passages": 32
+  "seconds": 140.9,
+  "passages": 33
  },
  "bernal-heights-affiliate-receivables": {
   "seconds": 62.1,
@@ -183,6 +187,10 @@
   "seconds": 130.2,
   "passages": 36
  },
+ "city-college-conference-lodging-charged-twice": {
+  "seconds": 52.0,
+  "passages": 14
+ },
  "city-college-contracts-grew-by-memo": {
   "seconds": 164.7,
   "passages": 41
@@ -225,6 +233,18 @@
  },
  "citywide-labor-agreement-bid-terms": {
   "seconds": 60.1,
+  "passages": 13
+ },
+ "cleanpowersf-capacity-penalties": {
+  "seconds": 71.8,
+  "passages": 19
+ },
+ "cleanpowersf-renewable-credit-penalty": {
+  "seconds": 54.9,
+  "passages": 14
+ },
+ "clipper-outage-muni-fare-claim": {
+  "seconds": 51.7,
   "passages": 13
  },
  "community-challenge-grants": {
@@ -779,6 +799,14 @@
   "seconds": 72.5,
   "passages": 16
  },
+ "sfo-china-airlines-passenger-fee-credit": {
+  "seconds": 46.9,
+  "passages": 14
+ },
+ "sfo-city-overhead-airline-refunds": {
+  "seconds": 72.6,
+  "passages": 16
+ },
  "sfo-fox-rental-fees-and-fines": {
   "seconds": 56.4,
   "passages": 12
@@ -827,6 +855,14 @@
   "seconds": 47.1,
   "passages": 10
  },
+ "sfusd-school-bus-closure-invoices": {
+  "seconds": 52.0,
+  "passages": 13
+ },
+ "sfusd-school-bus-maintenance-claims": {
+  "seconds": 40.4,
+  "passages": 13
+ },
  "sheriff-oversight-title-in-personal-encounters": {
   "seconds": 44.8,
   "passages": 10
@@ -846,6 +882,10 @@
  "small-grantees-insider-loans": {
   "seconds": 179.1,
   "passages": 43
+ },
+ "somarts-grant-reimbursement-errors": {
+  "seconds": 43.6,
+  "passages": 12
  },
  "southeast-plant-power-upgrade-vault-delay": {
   "seconds": 48.8,
@@ -898,6 +938,10 @@
  "travel-gifts-missing-from-form-700": {
   "seconds": 153.1,
   "passages": 34
+ },
+ "treasure-island-ferry-schedule-penalty": {
+  "seconds": 53.1,
+  "passages": 16
  },
  "treasurer-contract-steering": {
   "seconds": 136.9,
