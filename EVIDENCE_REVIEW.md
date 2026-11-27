@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 326 case files. The public citation check tested 2,572 distinct URLs across 4,203 case citations. 2,475 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 329 case files. The public citation check tested 2,599 distinct URLs across 4,232 case citations. 2,502 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -269,3 +269,15 @@ The Wong settlement separates cash, canceled invoices and a credit for goods the
 The Human Rights Commission purchase-order extract contains 775 numbered orders plus 90 groups labeled Direct Payments. The fiscal 2025 top-tenth result is two of five numbered orders after the purchasing cap rose. All six Warriors orders retain distinct order numbers. [Purchase-order analysis and downloadable records](https://sfgovtracker.com/#case/hrc-split-purchases)
 
 The Form 803 filing review retrieved and opened all 124 distinct PDFs cited by 144 published filing rows. Twenty-seven filenames contained literal percent signs. Their links now preserve those characters when requesting the original files.
+
+## Housing subsidies, utility connections and construction deadlines
+ 
+The 2013 Housing Authority audit attributed $7.5 million of forgone federal operating subsidy to missed criteria during the 2008–2012 period. A federal field review accepted the change to project-based management in January 2014. The Inspector General separately questioned $6,191,321 in central office fees. The Authority’s later maintenance plan assigns mechanics to housing sites. The audit decision or repayment entries would resolve the fee question. [City audit, federal rule, Inspector General report and maintenance plan](https://sfgovtracker.com/#case/housing-authority-subsidies-and-central-office-fees)
+
+Two affordable housing developments needed additional City financing after delays in obtaining electrical connections. Larkin’s signed supplemental loan and payment record agree on $4,226,311. Its Board resolution says $4,266,311. A separate loan at 4840 Mission brought the two payments to $13,203,618. The cases document subsequent occupancy. A September 14, 2026 federal order approved the wholesale tariff settlement. A project-level payment record would establish whether any resulting refund was credited to either loan. [Agreements, payments, occupancy records and utility proceedings](https://sfgovtracker.com/#case/affordable-housing-power-connection-delays)
+
+At Mission Rock the phase one horizontal construction budget rose $73.1 million. The analyst identified schedule, scope, soils and utility changes. Public Works issued a conditional notice in November 2024. The Port’s financial statements date completion to 2025 and record $124,185,000 of assets accepted by the Port. The developer delivered 537 apartments, including 132 below-market-rate homes. [Dated budgets, Port minutes and audited statements](https://sfgovtracker.com/#case/mission-rock-infrastructure-budget-and-delay)
+
+The Planning review follows 59 application charges across dated schedules. The official fee calculator supports 57 final comparisons. It also distinguishes required outreach from optional, department-facilitated meetings. The June 2026 historical revision changed the highest-value environmental evaluation worksheets. Individual assessments and refunds would establish whether applicants were charged using an earlier calculation. [Planning fee analysis and period-specific evidence](https://sfgovtracker.com/#case/permit-maze-permits-to-finish-permits)
+
+The lobbying review matched all 2,607 linked activity IDs against the City’s official DataSF host. Each repaired link keeps the original row identifier and query.
