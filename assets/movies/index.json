@@ -1550,5 +1550,13 @@
  "justis-project-budget-and-delivery": {
   "seconds": 52.5,
   "passages": 11
+ },
+ "bart-cooperative-technology-purchasing-controls": {
+  "seconds": 57.7,
+  "passages": 12
+ },
+ "sfo-shared-ride-curb-fees": {
+  "seconds": 59.8,
+  "passages": 14
  }
 }

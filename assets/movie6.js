@@ -666,8 +666,11 @@
     const max = drawBars ? Math.max(...values.map(v => v.amount)) : 0;
     const pages = []; let page = [], load = 0;
     for (const [i, r] of rows.entries()) {
-      const weight = 1 + Math.floor((String(r.name || '').length + String(r.value || '').length + String(r.detail || '').length) / 86);
-      if (page.length && (load + weight > 4 || page.length === 3)) { pages.push(page); page = []; load = 0; }
+      const characters = String(r.name || '').length + String(r.value || '').length + String(r.detail || '').length;
+      const weight = characters < 86 ? 1 : Math.ceil(characters / 43);
+      // Keep four short rows together. Split five evenly instead of leaving a single trailing row.
+      const leavePair = page.length === 3 && rows.length - i === 2;
+      if (page.length && (load + weight > 4 || leavePair)) { pages.push(page); page = []; load = 0; }
       const bar = max > 0 ? '<div class="plate-bar" aria-hidden="true"><svg viewBox="0 0 100 3" preserveAspectRatio="none"><rect width="' + (100 * values[i].amount / max).toFixed(3) + '" height="3" fill="#217168"/></svg></div>' : '';
       page.push('<li><div class="plate-row-body"><span class="plate-row-glyph">' + plateIcon(r.icon || options.icon || 'document') + '</span><div class="plate-row-main"><strong>' + esc(r.name) + '</strong>' + plateNote(r.detail) + '</div><b class="plate-row-value">' + esc(r.value ?? '') + '</b></div>' + bar + '</li>');
       load += weight;
@@ -801,7 +804,12 @@
   function editorialShot(bs,c,k) {
     const el = node('<div class="s6 fd-slide"><div class="plate-frame"></div></div>'), frame = el.firstChild;
     const keys = bs.map(b => JSON.stringify(b.visual || {}) + (b.visual?.type ? '' : b.text));
-    const oneVisual = keys.every(key => key === keys[0]);
+    const runs = [];
+    for (let i = 0; i < keys.length; i++) {
+      const run = i && keys[i] === keys[i-1] ? runs[i-1] : {first:i};
+      run.last = i;
+      runs.push(run);
+    }
     let lastIndex = -1, pageIndex = -1, pages = [], pageLabel, lastKey = '';
     function paint(b) {
       const plate=plateFor(b,c,k===0);
@@ -830,8 +838,11 @@
         lastIndex=i;
       }
       if(pages.length) {
-        // Continued beats with identical visuals share page time. An authored change begins a new table.
-        const phase=bs.length>1 && oneVisual ? st.lt/Math.max(.2,st.dur) : st.bp;
+        // Leave each page up through the recorded pause before the next visual cue.
+        const run = runs[i], shotStart = st.t - st.lt;
+        const from = run.first === 0 ? shotStart : bs[run.first].t0;
+        const to = bs[run.last + 1]?.t0 ?? shotStart + st.dur;
+        const phase = (st.t - from) / Math.max(.001, to - from);
         const next=Math.min(pages.length-1,Math.floor(Math.max(0,phase || 0)*pages.length));
         if (next !== pageIndex) {
           pages.forEach((p,k) => { p.hidden = k !== next; p.classList.toggle('in', k === next); });

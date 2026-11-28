@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 388 case files. The public citation check tested 3,198 distinct URLs across 4,874 case citations. 3,099 returned content. 93 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 390 case files. The public citation check tested 3,218 distinct URLs across 4,897 case citations. 3,119 returned content. 93 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -429,3 +429,7 @@ A Port restaurant lease audit traced charges left out of percentage rent. A late
 - [The Turk Street access point opened](https://sfgovtracker.com/#case/turk-street-construction-award-and-delivery). The 2021 capital plan confirms that clients could use the new access point. The exact first day of service still requires a dated record. [Capital plan](https://sfgov.legistar.com/View.ashx?GUID=DBA7E74F-CC82-456E-89F8-90100194910B&ID=9316178&M=F#page=45)
 
 - [Medi-Cal suspension exceptions](https://sfgovtracker.com/#case/medi-cal-fraud-exceptions-outnumber-suspensions). The California agency’s source URLs returned HTTP 200 with an access challenge in the automated November 27 test. The evidence panel now supplies the original letters in full. [January federal request](https://sfgovtracker.com/assets/evidence/medi-cal-integrity-cms-request-2026-01.pdf) · [February state response](https://sfgovtracker.com/assets/evidence/medi-cal-integrity-state-response-2026-02.pdf)
+
+- [At SFO, some shuttle operators faced curb fees higher than the fare](https://sfgovtracker.com/#case/sfo-shared-ride-curb-fees). Rider occupancy changed the effective per-rider cost across seven operators. The September 2016 awards were withdrawn and all bids rejected in October. A later voluntary appellate dismissal did not resolve the merits or establish a financial loss. [Source](https://www.flysfo.com/sites/default/files/default/download/about/commission/agenda/pdf/minutes/M062612.pdf)
+
+- [Two BART technology approvals cited agreements that did not cover the purchases](https://sfgovtracker.com/#case/bart-cooperative-technology-purchasing-controls). The 2020 approvals totaled $711,134.99. Two different scope or authorization issues emerged. Records show recurring training had never been assigned, and November 2026 still listed the reopened recommendation in progress. A separate July 2026 vote identified a verifiable covering state addendum. [Source](https://www.bart.gov/sites/default/files/docs/minutes/08-27-20%20Minutes.pdf#page=2)

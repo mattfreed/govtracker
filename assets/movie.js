@@ -5,6 +5,7 @@
 (() => {
   'use strict';
   const W = 1280, H = 720, BASE = 'assets/movies/';
+  const tableKinds = new Set(['record', 'rank', 'form', 'compare', 'unknowns', 'settle', 'bars']);
   // The slides and recordings can change in an edition that keeps the same player.
   const editionScript = document.querySelector('script[src^="assets/data/core.js?"]') || document.currentScript;
   const editionQuery = editionScript?.src ? new URL(editionScript.src).search : '';
@@ -242,7 +243,23 @@
       s.beats = m.beats.map((b, i) => ({ ...b, i, view: s.v6 ? b.scene : VIEW[b.scene] || b.scene })); s.dur = m.seconds; $('.mv-msg').remove();
       if (s.v6) {                                                                  // a written film: shots, drawn by assets/movie6.js
         root.classList.add('v6'); s.names6 = m.chapters || {}; s.shots = [];
-        s.beats.forEach(b => { const last = s.shots[s.shots.length - 1]; if (!last || last.id !== b.shot || last.kind !== b.visual?.type) s.shots.push({ id: b.shot, kind: b.visual?.type, beats: [], k: s.shots.length }); b.si = s.shots.length - 1; b.step = s.shots[b.si].beats.length; s.shots[b.si].beats.push(b); });
+        let previous, previousTable;
+        for (const b of s.beats) {
+          const kind = b.visual?.type;
+          const table = tableKinds.has(kind) ? JSON.stringify(b.visual) : null;
+          const sameShot = previous && previous.shot === b.shot && previous.visual?.type === kind;
+          // Some narration continues an unchanged table under a different authored shot ID.
+          // Keep its DOM and page clock until the displayed record actually changes.
+          if (!sameShot && !(table && table === previousTable)) {
+            s.shots.push({id:b.shot, kind, beats:[], k:s.shots.length});
+          }
+          const shot = s.shots[s.shots.length - 1];
+          b.si = shot.k;
+          b.step = shot.beats.length;
+          shot.beats.push(b);
+          previous = b;
+          previousTable = table;
+        }
         s.shots.forEach((sh, k) => { sh.t0 = k ? sh.beats[0].t0 : 0; }); s.shots.forEach((sh, k) => { sh.t1 = k + 1 < s.shots.length ? s.shots[k + 1].t0 : s.dur; });
         let subs = null; try { subs = localStorage.getItem(SUBS_KEY); } catch (e) { /* none saved */ }
         if (subs === 'off') { root.classList.add('nocap'); $('[data-act=cap]').setAttribute('aria-pressed', 'false'); }
@@ -381,15 +398,15 @@
         // cue without ever displaying an empty or partially visible frame.
         view6.replaceChildren(s.cur6.el);
         prep.replaceChildren();
-        if (b.view !== s.view) {
-          s.view = b.view;
-          $('.mv-top .ch').textContent = s.chName(b.view);
-          root.querySelectorAll('.mv-chap button').forEach(x => {
-            const on = x.dataset.view === b.view;
-            x.classList.toggle('cur', on);
-            if (on && !inline && s.still == null && x.parentNode.scrollTo) x.parentNode.scrollTo({left: Math.max(0, x.offsetLeft - 40), behavior: 'instant'});
-          });
-        }
+      }
+      if (b.view !== s.view) {
+        s.view = b.view;
+        $('.mv-top .ch').textContent = s.chName(b.view);
+        root.querySelectorAll('.mv-chap button').forEach(x => {
+          const on = x.dataset.view === b.view;
+          x.classList.toggle('cur', on);
+          if (on && !inline && s.still == null && x.parentNode.scrollTo) x.parentNode.scrollTo({left: Math.max(0, x.offsetLeft - 40), behavior: 'instant'});
+        });
       }
       const lt = Math.max(0, t - sh.t0), dur = Math.max(1, sh.t1 - sh.t0);
       try { s.cur6.update({t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0)}); }
