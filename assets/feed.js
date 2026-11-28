@@ -245,10 +245,23 @@
     });
     s.obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && e.intersectionRatio >= .6) activate(+e.target.dataset.i); }), { root: scroller, threshold: [.6] });
     reels.forEach(r => s.obs.observe(r));
+    const filterBar = root.querySelector('.feed-bar');
+    let filterPress;
+    filterBar.addEventListener(window.PointerEvent ? 'pointerdown' : 'mousedown', e => {
+      filterPress = { x: e.clientX, y: e.clientY, left: filterBar.scrollLeft };
+    }, { passive: true });
     root.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { go(+g.dataset.go); return; }
-      const b = e.target.closest('[data-act], [data-tier]'); if (!b || !root.contains(b)) return;
-      if (b.classList.contains('feed-chip')) { location.hash = b.dataset.tier ? '#watch?tier=' + b.dataset.tier : '#watch'; return; }
+      const b = e.target.closest('[data-act], .feed-chip'); if (!b || !root.contains(b)) return;
+      if (b.classList.contains('feed-chip')) {
+        const start = filterPress;
+        filterPress = null;
+        // Some touch browsers synthesize a click on the button under a released finger.
+        if (e.detail && start && Math.max(Math.abs(e.clientX - start.x), Math.abs(e.clientY - start.y),
+          Math.abs(filterBar.scrollLeft - start.left)) > 8) return;
+        location.hash = b.dataset.tier ? '#watch?tier=' + b.dataset.tier : '#watch';
+        return;
+      }
       const a = b.dataset.act, r = b.closest('.reel'), k = r && r.dataset.i != null ? +r.dataset.i : s.i;
       if (a === 'fullscreen') { e.preventDefault(); s.fullscreen.toggle(b); }
       else if (a === 'toggle') { e.preventDefault(); if (k !== s.i) { go(k); return; } if (!s.watching) setSound(true); const v = vid(k); if (!v || v.paused) play(k); else v.pause(); }
@@ -279,6 +292,15 @@
     if (start > 0) reels[start].scrollIntoView({ block: 'start' });
     items.forEach((b, k) => b.classList.toggle('on', k === start)); if (items[start]) items[start].closest('ol').scrollTop = Math.max(0, items[start].offsetTop - 120);
     requestAnimationFrame(() => activate(start));
+    // A filter change recreates the row. Keep the selected button within the
+    // horizontal viewport without moving the page or the current film.
+    const selected = filterBar.querySelector('[aria-pressed="true"]');
+    if (selected && filterBar.scrollWidth > filterBar.clientWidth) {
+      const barBounds = filterBar.getBoundingClientRect();
+      const selectedBounds = selected.getBoundingClientRect();
+      if (selectedBounds.right > barBounds.right)
+        filterBar.scrollLeft += selectedBounds.right - barBounds.right + 12;
+    }
     scroller.focus({ preventScroll: true });
   }
 

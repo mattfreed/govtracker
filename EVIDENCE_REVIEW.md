@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 393 case files. The public citation check tested 3,237 distinct URLs across 4,920 case citations. 3,138 returned content. 93 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 394 case files. The public citation check tested 3,248 distinct URLs across 4,931 case citations. 3,149 returned content. 93 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -441,3 +441,7 @@ A Port restaurant lease audit traced charges left out of percentage rent. A late
 - [BART reported 80 hours for officers on an 84-hour schedule](https://sfgovtracker.com/#case/bart-retiree-schedule-and-pension-corrections). BART reported 80 rather than 84 hours for 15 retirees. One small claims award was paid. The district later said correction files were sent by December 14, 2021. The file’s as-of date falls 105 days after the initial target; exact CalPERS payment dates and totals require further records. [Source](https://www.bart.gov/sites/default/files/docs/BPOA%202013-2018.pdf#page=66)
 
 - [BART inspector general funding and spending](https://sfgovtracker.com/#s/agency_evidence_review.bart-oversight-funding-and-actual-spending). In fiscal 2026 the five cost categories totaled $2,139,566 against a $2.7 million budget. Seven consultant project rows add to $437,084, already included in that amount. [Annual report, PDF page 14](https://oig.bart.gov/files/3c908ccb6/BART%2BOIG%2BFiscal%2BYear%2B2026%2BAnnual%2BReport%2Bto%2Bthe%2BCA%2BState%2BLegislature.pdf#page=14)
+
+- [SafeHouse project monitoring and the Ellis Street operating deficit](https://sfgovtracker.com/#case/safehouse-client-stipends-and-housing-loan). The updated city monitoring schedule gives June 1, 2026 while the underwriting memorandum lists June 30. The project recorded a $29,617 FY2024 accounting deficit. The first source and the project memorandum are linked in the case.
+
+- [How a bankruptcy changed San Francisco’s share of steam sales](https://sfgovtracker.com/#case/downtown-steam-franchise-fees). A signed $80,699 obligation, three later slow payments and two interest receipts are established. Two percentages in the 2024 exhibit do not reproduce its printed fee bases, while four earlier control-year exhibits do. A corrected exhibit and remittance ledger are still needed. [Source](https://archive.org/download/boardofsupervis2006sanf_1/boardofsupervis2006sanf_1.pdf#page=9)

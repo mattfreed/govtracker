@@ -102,7 +102,7 @@ body.feed-on footer { display: none; }
   .reel-rail { top: auto; bottom: 18px; right: 10px; transform: none; gap: 8px; }
   .reel-rail button, .reel-rail a { width: 42px; height: 42px; } .reel-rail svg { width: 19px; height: 19px; }
   .reel-rail [data-tip]:hover::after { display: none; }
-  .feed-bar { overflow-x: auto; padding: 8px 12px; } .feed-all { display: none; }
+  .feed-all { display: none; }
   .feed-hint { display: block !important; bottom: auto; top: 52px; } .feed-hint .k { display: none; }
   .reel-info h2 { font-size: 21px; }
 }
@@ -203,6 +203,15 @@ body.feed-on footer { display: none; }
 /* phones and tablets: the list of films stays on screen as a strip of thumbnails under the filter chips */
 @media (max-width: 1099px) {
   .feed { --fs-top: 116px; }
+  .feed-bar {
+    height: 50px; box-sizing: border-box; padding: 4px 12px;
+    pointer-events: auto; overflow-x: auto; overflow-y: hidden;
+    touch-action: pan-x pinch-zoom; overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  .feed-bar::-webkit-scrollbar { display: none; }
+  .feed-bar > * { flex: 0 0 auto; white-space: nowrap; }
+  .feed-chip { min-height: 40px; }
   .feed-list { display: block; position: absolute; left: 0; right: 0; top: 50px; height: 64px; z-index: 4; background: rgba(10,12,16,.94); border-bottom: 1px solid var(--f-line); }
   .feed-list .fl-head { display: none; }
   .feed-list ol { list-style: none; margin: 0; padding: 6px 10px; display: flex; gap: 8px; overflow-x: auto; overflow-y: hidden; height: 100%; box-sizing: border-box; scrollbar-width: none; }
