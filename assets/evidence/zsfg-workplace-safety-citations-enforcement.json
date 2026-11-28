@@ -1,0 +1,666 @@
+{
+ "title": "San Francisco General and UC Regents workplace safety inspections",
+ "asOf": "2026-11-27",
+ "description": "Selected fields from U.S. Department of Labor bulk downloads. Inspection and violation rows cover three activities. Event rows cover the two 2025 inspections. NaT indicates an unpopulated date in the publisher’s file; dollar fields are assessments, not receipts.",
+ "sources": {
+  "inspection": "https://data.dol.gov/data-catalog/OSHA/inspection/OSHA_inspection.zip",
+  "violation": "https://data.dol.gov/data-catalog/OSHA/violation/OSHA_violation.zip",
+  "violation_event": "https://data.dol.gov/data-catalog/OSHA/violation_event/OSHA_violation_event.zip"
+ },
+ "tables": {
+  "inspection": [
+   {
+    "ACTIVITY_NR": "344406285",
+    "ESTAB_NAME": "CITY AND COUNTY OF SAN FRANCISCO",
+    "SITE_CITY": "SAN FRANCISCO",
+    "SITE_STATE": "CA",
+    "OPEN_DATE": "2019-10-24 00:00:00+00:00",
+    "CLOSE_CONF_DATE": "2020-04-23 00:00:00+00:00",
+    "CLOSE_CASE_DATE": "2020-09-08 00:00:00+00:00",
+    "LOAD_DT": "2026-11-27 00:20:10+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "ESTAB_NAME": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA-SAN FRANCISCO",
+    "SITE_CITY": "SAN FRANCISCO",
+    "SITE_STATE": "CA",
+    "OPEN_DATE": "2025-12-09 00:00:00+00:00",
+    "CLOSE_CONF_DATE": "2026-06-02 00:00:00+00:00",
+    "CLOSE_CASE_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:20:18+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "ESTAB_NAME": "ZUCKERBERG SAN FRANCISCO GENERAL HOSPITAL",
+    "SITE_CITY": "SAN FRANCISCO",
+    "SITE_STATE": "CA",
+    "OPEN_DATE": "2025-12-08 00:00:00+00:00",
+    "CLOSE_CONF_DATE": "2026-06-02 00:00:00+00:00",
+    "CLOSE_CASE_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:20:18+00:00"
+   }
+  ],
+  "violation": [
+   {
+    "ACTIVITY_NR": "344406285",
+    "CITATION_ID": "01001",
+    "STANDARD": "3342(D)",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2020-04-23 00:00:00+00:00",
+    "INITIAL_PENALTY": "475.00",
+    "CURRENT_PENALTY": "475.00",
+    "CONTEST_DATE": "2020-05-18 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "2020-07-28 00:00:00+00:00",
+    "LOAD_DT": "2026-11-27 00:24:13+00:00"
+   },
+   {
+    "ACTIVITY_NR": "344406285",
+    "CITATION_ID": "01002",
+    "STANDARD": "3342(F)",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2020-04-23 00:00:00+00:00",
+    "INITIAL_PENALTY": "710.00",
+    "CURRENT_PENALTY": "710.00",
+    "CONTEST_DATE": "2020-05-18 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "2020-07-28 00:00:00+00:00",
+    "LOAD_DT": "2026-11-27 00:24:13+00:00"
+   },
+   {
+    "ACTIVITY_NR": "344406285",
+    "CITATION_ID": "01003",
+    "STANDARD": "3342(H)",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2020-04-23 00:00:00+00:00",
+    "INITIAL_PENALTY": "475.00",
+    "CURRENT_PENALTY": "475.00",
+    "CONTEST_DATE": "2020-05-18 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "2020-07-28 00:00:00+00:00",
+    "LOAD_DT": "2026-11-27 00:24:13+00:00"
+   },
+   {
+    "ACTIVITY_NR": "344406285",
+    "CITATION_ID": "02001",
+    "STANDARD": "3342(C)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2020-04-23 00:00:00+00:00",
+    "INITIAL_PENALTY": "25000.00",
+    "CURRENT_PENALTY": "25000.00",
+    "CONTEST_DATE": "2020-05-18 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "2020-07-28 00:00:00+00:00",
+    "LOAD_DT": "2026-11-27 00:24:13+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01001",
+    "STANDARD": "342(A)",
+    "VIOL_TYPE": "R",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "10000.00",
+    "CURRENT_PENALTY": "10000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01002",
+    "STANDARD": "3203(B)(1)",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "400.00",
+    "CURRENT_PENALTY": "400.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01003",
+    "STANDARD": "3220(B)(4)",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "800.00",
+    "CURRENT_PENALTY": "800.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01004",
+    "STANDARD": "64010009 D01",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "400.00",
+    "CURRENT_PENALTY": "400.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01005",
+    "STANDARD": "64010009 C02",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "800.00",
+    "CURRENT_PENALTY": "800.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "02001",
+    "STANDARD": "64010009 C02",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "22500.00",
+    "CURRENT_PENALTY": "22500.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "03001",
+    "STANDARD": "64010009 C02",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "14400.00",
+    "CURRENT_PENALTY": "14400.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "04001",
+    "STANDARD": "64010009 C02",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "14400.00",
+    "CURRENT_PENALTY": "14400.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "05001",
+    "STANDARD": "64010009 C02 I",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "21600.00",
+    "CURRENT_PENALTY": "21600.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "06001",
+    "STANDARD": "64010009 C02",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "25000.00",
+    "CURRENT_PENALTY": "25000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "07001",
+    "STANDARD": "64010009 C02",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "14400.00",
+    "CURRENT_PENALTY": "14400.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "08001",
+    "STANDARD": "64010009 E01",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "18000.00",
+    "CURRENT_PENALTY": "18000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "01001",
+    "STANDARD": "3342(E)",
+    "VIOL_TYPE": "O",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "600.00",
+    "CURRENT_PENALTY": "600.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "02001",
+    "STANDARD": "3342(C)(3)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "25000.00",
+    "CURRENT_PENALTY": "25000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "03001",
+    "STANDARD": "3342(C)(4)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "22500.00",
+    "CURRENT_PENALTY": "22500.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "04001",
+    "STANDARD": "3342(C)(7)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "14400.00",
+    "CURRENT_PENALTY": "14400.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "05001",
+    "STANDARD": "3342(C)(9)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "25000.00",
+    "CURRENT_PENALTY": "25000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "06001",
+    "STANDARD": "3342(C)(11)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "25000.00",
+    "CURRENT_PENALTY": "25000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "07001",
+    "STANDARD": "3342(F)",
+    "VIOL_TYPE": "S",
+    "ISSUANCE_DATE": "2026-06-03 00:00:00+00:00",
+    "INITIAL_PENALTY": "18000.00",
+    "CURRENT_PENALTY": "18000.00",
+    "CONTEST_DATE": "2026-09-15 00:00:00+00:00",
+    "FINAL_ORDER_DATE": "NaT",
+    "LOAD_DT": "2026-11-27 00:24:23+00:00"
+   }
+  ],
+  "violation_event": [
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "10000",
+    "HIST_VTYPE": "R",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "10000",
+    "HIST_VTYPE": "R",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01002",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "400",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01002",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "400",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01003",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "800",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01003",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "800",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01004",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "400",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01004",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "400",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01005",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "800",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "01005",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "800",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "02001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "22500",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "02001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "22500",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "03001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "03001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "04001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "04001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "05001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "21600",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "05001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "21600",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "06001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "06001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "07001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "07001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "08001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "18000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348637695",
+    "CITATION_ID": "08001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "18000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "01001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "600",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "01001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "600",
+    "HIST_VTYPE": "O",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "02001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "02001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "03001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "22500",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "03001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "22500",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "04001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "04001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "14400",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "05001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "05001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "06001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "06001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "25000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "07001",
+    "HIST_EVENT": "Z",
+    "HIST_DATE": "2026-06-03 00:00:00+00:00",
+    "HIST_PENALTY": "18000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   },
+   {
+    "ACTIVITY_NR": "348640046",
+    "CITATION_ID": "07001",
+    "HIST_EVENT": "C",
+    "HIST_DATE": "2026-09-15 00:00:00+00:00",
+    "HIST_PENALTY": "18000",
+    "HIST_VTYPE": "S",
+    "LOAD_DT": "2026-11-27 00:25:59+00:00"
+   }
+  ]
+ }
+}
