@@ -1,0 +1,116 @@
+{
+ "source": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+ "method": "POST",
+ "query": {
+  "subawards": true,
+  "filters": {
+   "award_type_codes": [
+    "02",
+    "03",
+    "04",
+    "05"
+   ],
+   "time_period": [
+    {
+     "start_date": "2010-10-01",
+     "end_date": "2026-11-28"
+    }
+   ],
+   "award_ids": [
+    "U2C42678"
+   ]
+  },
+  "fields": [
+   "Sub-Award ID",
+   "Sub-Awardee Name",
+   "Sub-Award Amount",
+   "Sub-Award Date",
+   "Prime Award ID",
+   "Prime Recipient Name"
+  ],
+  "page": 1,
+  "limit": 100
+ },
+ "downloaded": "2026-11-28",
+ "response": {
+  "spending_level": "subawards",
+  "limit": 100,
+  "results": [
+   {
+    "internal_id": "1 U2CMC42678-01-00",
+    "prime_award_internal_id": 271691572,
+    "Sub-Award ID": "1 U2CMC42678-01-00",
+    "Sub-Awardee Name": "NEW JERSEY CHAPTER AMERICAN ACADEMY OF PEDIATRICS INC",
+    "Sub-Award Amount": 333079.0,
+    "Sub-Award Date": "2023-09-01",
+    "Prime Award ID": "U2C42678",
+    "Prime Recipient Name": "SAFE & SOUND",
+    "prime_award_generated_internal_id": "ASST_NON_U2C42678_075"
+   },
+   {
+    "internal_id": "1 U2CMC42678-01-00",
+    "prime_award_internal_id": 271691572,
+    "Sub-Award ID": "1 U2CMC42678-01-00",
+    "Sub-Awardee Name": "NEW JERSEY CHAPTER AMERICAN ACADEMY OF PEDIATRICS INC",
+    "Sub-Award Amount": 292935.0,
+    "Sub-Award Date": "2021-09-01",
+    "Prime Award ID": "U2C42678",
+    "Prime Recipient Name": "SAFE & SOUND",
+    "prime_award_generated_internal_id": "ASST_NON_U2C42678_075"
+   },
+   {
+    "internal_id": "1 U2CMC42678-01-00",
+    "prime_award_internal_id": 271691572,
+    "Sub-Award ID": "1 U2CMC42678-01-00",
+    "Sub-Awardee Name": "KAISER FOUNDATION HOSPITALS",
+    "Sub-Award Amount": 90000.0,
+    "Sub-Award Date": "2023-09-01",
+    "Prime Award ID": "U2C42678",
+    "Prime Recipient Name": "SAFE & SOUND",
+    "prime_award_generated_internal_id": "ASST_NON_U2C42678_075"
+   },
+   {
+    "internal_id": "1 U2CMC42678-01-00",
+    "prime_award_internal_id": 271691572,
+    "Sub-Award ID": "1 U2CMC42678-01-00",
+    "Sub-Awardee Name": "KAISER FOUNDATION HOSPITALS",
+    "Sub-Award Amount": 94808.0,
+    "Sub-Award Date": "2022-09-01",
+    "Prime Award ID": "U2C42678",
+    "Prime Recipient Name": "SAFE & SOUND",
+    "prime_award_generated_internal_id": "ASST_NON_U2C42678_075"
+   },
+   {
+    "internal_id": "1 U2CMC42678-01-00",
+    "prime_award_internal_id": 271691572,
+    "Sub-Award ID": "1 U2CMC42678-01-00",
+    "Sub-Awardee Name": "NEW JERSEY CHAPTER AMERICAN ACADEMY OF PEDIATRICS INC",
+    "Sub-Award Amount": 319393.0,
+    "Sub-Award Date": "2022-09-01",
+    "Prime Award ID": "U2C42678",
+    "Prime Recipient Name": "SAFE & SOUND",
+    "prime_award_generated_internal_id": "ASST_NON_U2C42678_075"
+   },
+   {
+    "internal_id": "1 U2CMC42678-01-00",
+    "prime_award_internal_id": 271691572,
+    "Sub-Award ID": "1 U2CMC42678-01-00",
+    "Sub-Awardee Name": "KAISER FOUNDATION HOSPITALS",
+    "Sub-Award Amount": 79550.0,
+    "Sub-Award Date": "2021-09-01",
+    "Prime Award ID": "U2C42678",
+    "Prime Recipient Name": "SAFE & SOUND",
+    "prime_award_generated_internal_id": "ASST_NON_U2C42678_075"
+   }
+  ],
+  "page_metadata": {
+   "page": 1,
+   "hasNext": false,
+   "last_record_unique_id": null,
+   "last_record_sort_value": "None"
+  },
+  "messages": [
+   "For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.  For data going back to 2000-10-01, use either the Custom Award Download feature on the website or one of our download or bulk_download API endpoints as listed on https://api.usaspending.gov/docs/endpoints. "
+  ]
+ }
+}

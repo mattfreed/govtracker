@@ -1,0 +1,676 @@
+{
+ "period": "FY2015–24 independent district financial audits; FY2025 checked for follow-up and no repeat of 2024",
+ "current_year_findings": [
+  {
+   "reportFY": 2015,
+   "id": "2015-001",
+   "title": "Finding - Year End Closing",
+   "pdfPage": 90,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf#page=90",
+   "followingReport": {
+    "reportFY": 2016,
+    "id": "2015-001",
+    "title": "Finding - Year End Closing",
+    "pdfPage": 96,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=96",
+    "status": "Implemented.",
+    "statusPage": 97,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=97"
+   },
+   "description": "Cash and revenue were $3 million low after a late grant posting. A $1 million allowance on $4.6 million of student receivables should have been $2.5 million using district policy. A General Fund interfund receivable of $825,116 had no matching insurance-fund entry. These are different account adjustments."
+  },
+  {
+   "reportFY": 2015,
+   "id": "2015-002",
+   "title": "Finding - Capital Assets",
+   "pdfPage": 91,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf#page=91",
+   "followingReport": {
+    "reportFY": 2016,
+    "id": "2015-002",
+    "title": "Finding - Capital Assets",
+    "pdfPage": 97,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=97",
+    "status": "Implemented.",
+    "statusPage": 98,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=98"
+   },
+   "description": "Historic capital records included approximately $5.5 million of unexplained negative net balances. The district had no detailed support from before 2001 and removed no equipment or vehicle disposals in the audit year. The finding questioned no costs."
+  },
+  {
+   "reportFY": 2015,
+   "id": "2015-003",
+   "title": "Finding Preparation of Schedule of Federal Awards",
+   "pdfPage": 93,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf#page=93",
+   "followingReport": {
+    "reportFY": 2016,
+    "id": "2015-003",
+    "title": "Finding Preparation of Schedule of Federal Awards",
+    "pdfPage": 98,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=98",
+    "status": "Implemented.",
+    "statusPage": 99,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=99"
+   },
+   "description": "Federal/state grant receivables and deferred revenue were about $700,000 high and two partly federal grants appeared as wholly state-funded. This same amount also appears in 2015-001. Count it once."
+  },
+  {
+   "reportFY": 2015,
+   "id": "2015-004",
+   "title": "Finding - GANN Limit Calculation",
+   "pdfPage": 94,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf#page=94",
+   "followingReport": {
+    "reportFY": 2016,
+    "id": "2015-004",
+    "title": "Finding - GANN Limit Calculation",
+    "pdfPage": 99,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=99",
+    "status": "Implemented.",
+    "statusPage": 100,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=100"
+   },
+   "description": "The unrevised carryforward understated the base limit by $25,720,287 and the adjusted ceiling by $23,907,019. These are successive calculations on the same form. No limit was exceeded and no costs were questioned."
+  },
+  {
+   "reportFY": 2015,
+   "id": "2015-005",
+   "title": "Finding - Salaries of Classroom Instructors",
+   "pdfPage": 95,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf#page=95",
+   "followingReport": {
+    "reportFY": 2016,
+    "id": "2015-005",
+    "title": "Finding - Salaries of Classroom Instructors",
+    "pdfPage": 100,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=100",
+    "status": "Implemented.",
+    "statusPage": 101,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=101"
+   },
+   "description": "The instructional payroll classification was corrected. The final schedule on PDF page 76 excludes $1,227,885 from current expenses of education. The adjusted ratio was $84,618,755 / $168,381,672 = 50.25%, above the 50% minimum. The threshold uses the post-exclusion denominator."
+  },
+  {
+   "reportFY": 2015,
+   "id": "2015-006",
+   "title": "Finding - State General Apportionment Funding System",
+   "pdfPage": 96,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf#page=96",
+   "followingReport": {
+    "reportFY": 2016,
+    "id": "2015-006",
+    "title": "Finding - State General Apportionment Funding System",
+    "pdfPage": 101,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=101",
+    "status": "Implemented.",
+    "statusPage": 102,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=102"
+   },
+   "description": "Testing identified 1,330 overstated contact hours (2.5333 full-time-equivalent students); the audit separately projected 31,826 hours, or 60.62 full-time equivalents. The projected and observed counts overlap."
+  },
+  {
+   "reportFY": 2016,
+   "id": "2016-001",
+   "title": "Student Success and Support Program",
+   "pdfPage": 95,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf#page=95",
+   "followingReport": {
+    "reportFY": 2017,
+    "id": "2016-001",
+    "title": "Student Success and Support Program",
+    "pdfPage": 103,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2016-17-annual-audit.pdf#page=103",
+    "status": "Not implemented. See current year finding 2017-001.",
+    "statusPage": 104,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2016-17-annual-audit.pdf#page=104"
+   },
+   "description": "Some summer services were reported in the fall, and documentation was missing in samples of education plans, counseling, assessments, orientations and other services. Sample sizes differed by service."
+  },
+  {
+   "reportFY": 2017,
+   "id": "2017-001",
+   "title": "429 - Student Success and Support Program",
+   "pdfPage": 102,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2016-17-annual-audit.pdf#page=102",
+   "followingReport": {
+    "reportFY": 2018,
+    "id": "2017-001",
+    "title": "429 - Student Success and Support Program",
+    "pdfPage": 115,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=115",
+    "status": "Not implemented. See current year finding 2018-005.",
+    "statusPage": 115,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=115"
+   },
+   "description": "One of 25 student files lacked service support. From 57,717 reported, the auditors projected an at-risk population of 2,309. This is an extrapolation of documentary risk."
+  },
+  {
+   "reportFY": 2018,
+   "id": "2018-001",
+   "title": "Financial Condition of the District",
+   "pdfPage": 107,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=107",
+   "followingReport": {
+    "reportFY": 2019,
+    "id": "2018-001",
+    "title": "Financial Condition of the District",
+    "pdfPage": 121,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=121",
+    "status": "Not implemented. See current year finding 2019-001.",
+    "statusPage": 122,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=122"
+   },
+   "description": "The auditors reported a material weakness in the financial condition of the district. The following audit repeated the finding."
+  },
+  {
+   "reportFY": 2018,
+   "id": "2018-002",
+   "title": "Load Banking",
+   "pdfPage": 109,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=109",
+   "followingReport": {
+    "reportFY": 2019,
+    "id": "2018-002",
+    "title": "Load Banking",
+    "pdfPage": 122,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=122",
+    "status": "Not implemented. See current year finding 2019-002.",
+    "statusPage": 123,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=123"
+   },
+   "description": "The district allowed negative faculty load-bank balances, advancing paid release time before equivalent workload had accrued."
+  },
+  {
+   "reportFY": 2018,
+   "id": "2018-003",
+   "title": "Reporting - Common Origination and Disbursement (COD) Reporting",
+   "pdfPage": 111,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=111",
+   "followingReport": {
+    "reportFY": 2019,
+    "id": "2018-003",
+    "title": "Reporting - Common Origination and Disbursement (COD) Reporting",
+    "pdfPage": 123,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=123",
+    "status": "Not implemented. See current year finding 2019-003.",
+    "statusPage": 124,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=124"
+   },
+   "description": "Seven of 40 files tested had aid disbursement data reported more than 15 days after disbursement. This concerned reporting to the federal system."
+  },
+  {
+   "reportFY": 2018,
+   "id": "2018-004",
+   "title": "Special Tests and Provisions - Return to Title IV",
+   "pdfPage": 112,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=112",
+   "followingReport": {
+    "reportFY": 2019,
+    "id": "2018-004",
+    "title": "Special Tests and Provisions - Return to Title IV",
+    "pdfPage": 125,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=125",
+    "status": "Implemented.",
+    "statusPage": 126,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=126"
+   },
+   "description": "Of 25 student-aid withdrawal calculations tested, 23 determinations and 11 federal cash returns were late. The district returned the required money. There were 202 calculations district-wide."
+  },
+  {
+   "reportFY": 2018,
+   "id": "2018-005",
+   "title": "429 - Student Success and Support Program",
+   "pdfPage": 114,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf#page=114",
+   "followingReport": {
+    "reportFY": 2019,
+    "id": "2018-005",
+    "title": "429 - Student Success and Support Program",
+    "pdfPage": 126,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=126",
+    "status": "Implemented.",
+    "statusPage": 127,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=127"
+   },
+   "description": "Three of 25 files lacked documentation. The text calls this 4% in one sentence and uses 12% in the effect and projection. The sample arithmetic is 12%; 12% of 69,892 is about 8,387. These are potentially unsupported service records, not a verified count of unserved students."
+  },
+  {
+   "reportFY": 2019,
+   "id": "2019-001",
+   "title": "Financial Condition of the District",
+   "pdfPage": 112,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=112",
+   "followingReport": {
+    "reportFY": 2020,
+    "id": "2019-001",
+    "title": "Financial Condition of the District - Going Concern",
+    "pdfPage": 123,
+    "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=123",
+    "status": "Not implemented. See current year finding 2020-001.",
+    "statusPage": 124,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=124"
+   },
+   "description": "The financial condition finding returned. The auditors retained a material weakness classification."
+  },
+  {
+   "reportFY": 2019,
+   "id": "2019-002",
+   "title": "Load Banking",
+   "pdfPage": 115,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=115",
+   "followingReport": {
+    "reportFY": 2020,
+    "id": "2019-002",
+    "title": "Load Banking",
+    "pdfPage": 124,
+    "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=124",
+    "status": "Partially implemented. See current year finding 2020-003.",
+    "statusPage": 125,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=125"
+   },
+   "description": "The audit again found faculty load-bank deficits. The FY2020 prior-year schedule marked the control partially implemented."
+  },
+  {
+   "reportFY": 2019,
+   "id": "2019-003",
+   "title": "Reporting - Common Origination and Disbursement (COD) Reporting",
+   "pdfPage": 118,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf#page=118",
+   "followingReport": {
+    "reportFY": 2020,
+    "id": "2019-003",
+    "title": "Reporting - Common Origination and Disbursement (COD) Reporting",
+    "pdfPage": 125,
+    "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=125",
+    "status": "Implemented.",
+    "statusPage": 126,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=126"
+   },
+   "description": "Five of 40 student files tested included disbursement reports beyond the federal 15-day requirement. No questioned costs."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-001",
+   "title": "Financial Condition of the District - Going Concern",
+   "pdfPage": 114,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=114",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-001",
+    "title": "Financial Condition of the District - Going Concern",
+    "pdfPage": 117,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=117",
+    "status": "Not implemented. See current year finding 2021-001.",
+    "statusPage": 118,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=118"
+   },
+   "description": "The auditors reported substantial doubt about the district’s ability to continue as a going concern."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-002",
+   "title": "Self-Insurance Fund Deficit Retained Earnings",
+   "pdfPage": 115,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=115",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-002",
+    "title": "Self-Insurance Fund Deficit Retained Earnings",
+    "pdfPage": 118,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=118",
+    "status": "Not implemented. See current year finding 2021-002.",
+    "statusPage": 119,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=119"
+   },
+   "description": "The workers’ compensation self-insurance fund had a $1,987,974 deficit. Auditors warned unrestricted resources might be needed for claims."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-003",
+   "title": "Load Banking",
+   "pdfPage": 116,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=116",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-003",
+    "title": "Load Banking",
+    "pdfPage": 119,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=119",
+    "status": "Partially implemented. See current year finding 2021-003.",
+    "statusPage": 120,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=120"
+   },
+   "description": "The load-bank balances remained a control issue. The FY2021 prior-year schedule marked the control partially implemented."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-004",
+   "title": "Cash Management",
+   "pdfPage": 118,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=118",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-004",
+    "title": "Cash Management",
+    "pdfPage": 120,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=120",
+    "status": "Implemented.",
+    "statusPage": 121,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=121"
+   },
+   "description": "The district drew down all available institutional pandemic-relief funding in May, spending $528,647 through June 30. Auditors questioned $11,575 under cash-management rules."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-005",
+   "title": "Reporting",
+   "pdfPage": 119,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=119",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-005",
+    "title": "Reporting",
+    "pdfPage": 121,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=121",
+    "status": "Not implemented. See current year finding 2021-005.",
+    "statusPage": 122,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=122"
+   },
+   "description": "The public student-relief report missed its deadline. The original finding gives conflicting lateness figures of two days in the condition and 36 days in the effect. The duration remains unresolved."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-006",
+   "title": "Activities Allowed or Unallowed and Allowable Costs",
+   "pdfPage": 120,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=120",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-006",
+    "title": "Activities Allowed or Unallowed and Allowable Costs",
+    "pdfPage": 122,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=122",
+    "status": "Not implemented. See current year finding 2021-006.",
+    "statusPage": 123,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=123"
+   },
+   "description": "Two of ten workers tested did not perform services for the adult-education grant. The auditors identified $62,206 known questioned costs and projected $88,505 for the population. The projection includes the sampled errors."
+  },
+  {
+   "reportFY": 2020,
+   "id": "2020-007",
+   "title": "Section 491 - Education Protection Account Funds",
+   "pdfPage": 122,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf#page=122",
+   "followingReport": {
+    "reportFY": 2021,
+    "id": "2020-007",
+    "title": "Section 491 - Education Protection Account Funds",
+    "pdfPage": 123,
+    "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=123",
+    "status": "Not implemented. See current year finding 2021-007.",
+    "statusPage": 124,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=124"
+   },
+   "description": "There was no open-session spending decision or online accounting of $10,810,413 in Education Protection Account expenses. Auditors tested allowable uses and questioned no costs."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-001",
+   "title": "Financial Condition of the District - Going Concern",
+   "pdfPage": 107,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=107",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-001",
+    "title": "Financial Condition of the District - Going Concern",
+    "pdfPage": 107,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=107",
+    "status": "Implemented.",
+    "statusPage": 108,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=108"
+   },
+   "description": "The going-concern finding returned. The FY2022 prior-year schedule later marked it implemented."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-002",
+   "title": "Self-Insurance Fund Deficit Retained Earnings",
+   "pdfPage": 108,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=108",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-002",
+    "title": "Self-Insurance Fund Deficit Retained Earnings",
+    "pdfPage": 108,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=108",
+    "status": "Implemented.",
+    "statusPage": 109,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=109"
+   },
+   "description": "The self-insurance fund deficit grew to $3,907,424. The following year’s state filing shows an actual $6,701,734 transfer from unrestricted Fund 11."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-003",
+   "title": "Load Banking",
+   "pdfPage": 109,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=109",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-003",
+    "title": "Load Banking",
+    "pdfPage": 109,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=109",
+    "status": "Implemented.",
+    "statusPage": 110,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=110"
+   },
+   "description": "Deficit faculty load-bank balances totaled $707,924. The follow-up marked the control implemented. It did not say $707,924 had been recovered."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-004",
+   "title": "Allowable Costs",
+   "pdfPage": 111,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=111",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-004",
+    "title": "Allowable Costs",
+    "pdfPage": 110,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=110",
+    "status": "Implemented.",
+    "statusPage": 112,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=112"
+   },
+   "description": "The higher education relief award used the wrong indirect-cost calculation. Auditors questioned $427,867. Audit follow-up records control implementation, without a dollar recovery determination."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-005",
+   "title": "Reporting",
+   "pdfPage": 112,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=112",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-005",
+    "title": "Reporting",
+    "pdfPage": 112,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=112",
+    "status": "Implemented.",
+    "statusPage": 113,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=113"
+   },
+   "description": "The quarter ended December 31; the institutional-aid report due January 10, 2021, was posted January 19. This was a later reporting period on a different component of the relief program."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-006",
+   "title": "Activities Allowed or Unallowed and Allowable Costs",
+   "pdfPage": 113,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=113",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-006",
+    "title": "Activities Allowed or Unallowed and Allowable Costs",
+    "pdfPage": 113,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=113",
+    "status": "Implemented.",
+    "statusPage": 114,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=114"
+   },
+   "description": "Actual payroll verification remained irregular or late on adult-education grants. The population included $898,779 in salaries and benefits on $912,485 in total expenditures. No new costs were questioned."
+  },
+  {
+   "reportFY": 2021,
+   "id": "2021-007",
+   "title": "Section 491 - Education Protection Account Funds",
+   "pdfPage": 115,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf#page=115",
+   "followingReport": {
+    "reportFY": 2022,
+    "id": "2021-007",
+    "title": "Section 491 - Education Protection Account Funds",
+    "pdfPage": 114,
+    "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=114",
+    "status": "Implemented.",
+    "statusPage": 115,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf#page=115"
+   },
+   "description": "The board again omitted the open decision and online accounting for Education Protection Account spending, now $32,536,173. Auditors found allowable uses in testing. The succeeding audit marked implementation."
+  },
+  {
+   "reportFY": 2023,
+   "id": "2023-001",
+   "title": "Financial Condition of the District",
+   "pdfPage": 109,
+   "url": "https://www.ccsf.edu/sites/default/files/2024/document/san-francisco-community-college-district-financial-statements-2023.pdf#page=109",
+   "followingReport": {
+    "reportFY": 2024,
+    "id": "2023-001",
+    "title": "FINANCIAL CONDITION OF THE DISTRICT",
+    "pdfPage": 94,
+    "url": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf#page=94",
+    "status": "Implemented in 2023-24.",
+    "statusPage": 95,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf#page=95"
+   },
+   "description": "A new current-year financial condition finding followed a year without current findings. The succeeding audit marked it implemented."
+  },
+  {
+   "reportFY": 2023,
+   "id": "2023-002",
+   "title": "Financial Close and Reporting",
+   "pdfPage": 111,
+   "url": "https://www.ccsf.edu/sites/default/files/2024/document/san-francisco-community-college-district-financial-statements-2023.pdf#page=111",
+   "followingReport": {
+    "reportFY": 2024,
+    "id": "2023-002",
+    "title": "FINANCIAL CLOSE AND REPORTING",
+    "pdfPage": 96,
+    "url": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf#page=96",
+    "status": "Implemented in 2023-24.",
+    "statusPage": 97,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf#page=97"
+   },
+   "description": "Material adjustments to cash, receivables, payables and unearned revenue were proposed and posted at year-end. Management accepted them. The findings pages give no aggregate adjustment or questioned cost."
+  },
+  {
+   "reportFY": 2023,
+   "id": "2023-003",
+   "title": "Activities Allowed or Unallowed and Allowable Costs",
+   "pdfPage": 113,
+   "url": "https://www.ccsf.edu/sites/default/files/2024/document/san-francisco-community-college-district-financial-statements-2023.pdf#page=113",
+   "followingReport": {
+    "reportFY": 2024,
+    "id": "2023-003",
+    "title": "ACTIVITIES ALLOWED OR UNALLOWED AND ALLOWABLE COSTS",
+    "pdfPage": 98,
+    "url": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf#page=98",
+    "status": "Implemented in 2023-24.",
+    "statusPage": 99,
+    "statusUrl": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf#page=99"
+   },
+   "description": "Two career and foster care grants spent $1,521,228, including $832,331 in salaries and benefits. Time certification was inconsistent or late. The auditors called it a new material weakness, questioned no costs and subsequently recorded implementation."
+  }
+ ],
+ "scope": "Counting unique identifiers assigned in each current-year schedule. Prior-year recitals retained separately. Sources in source-manifest.json.",
+ "title": "City College annual district audit findings and corrective-action follow-up",
+ "asOf": "2026-11-28",
+ "notes": [
+  "Count each current-year finding once, then link its independently published follow-up. Comparative references to a prior year do not add new findings.",
+  "FY2015–24 includes 33 current-year identifiers. The original seven-report screen had 36 identifiers, including six from FY2014 recovered from prior-year schedules. Thirty identifiers overlap. The full current-year review adds the three FY2023 findings.",
+  "FY2022 and FY2024 reported no current findings. FY2025 also reported no current findings and explicitly confirmed FY2024 had none. The financial and federal schedules in the FY2024 PDF have stale June 2022 heading dates; the audit opinion and the FY2025 follow-up identify the reporting year.",
+  "A follow-up status of implemented records the corrective action. It is a separate question whether a grantor ordered repayment, the college recovered a load-bank balance, or cash changed hands."
+ ],
+ "reports": [
+  {
+   "fiscalYear": 2015,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2014-15-annual-audit.pdf",
+   "sha256": "a0c95b394c4b6ff46ddae128bfb769dd775ba999c07939d0e78d034e6a5805ea",
+   "pdfPages": 102
+  },
+  {
+   "fiscalYear": 2016,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2015-16-annual-audit.pdf",
+   "sha256": "c74cc9ad5517bc89d346048d2051dc884bef46191d5d6b3811b54b3067835f5e",
+   "pdfPages": 102
+  },
+  {
+   "fiscalYear": 2017,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2016-17-annual-audit.pdf",
+   "sha256": "c8bf81d89a8eb28a73fcd19c919b16af8402c3169abeda7648f5aaf1aae62386",
+   "pdfPages": 104
+  },
+  {
+   "fiscalYear": 2018,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2017-18-annual-audit.pdf",
+   "sha256": "c0c135fc4d1aa448033948a27954199f14724ad774994bf095c00503dd600d3f",
+   "pdfPages": 115
+  },
+  {
+   "fiscalYear": 2019,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/2018-19-annual-audit.pdf",
+   "sha256": "c6046222b49c20c19ab9f5ef2034f643d376e8092fb86769df9ec4281811174f",
+   "pdfPages": 127
+  },
+  {
+   "fiscalYear": 2020,
+   "url": "https://www.ccsf.edu/sites/default/files/2021/document/san-francisco-ccd-final-report-2020.pdf",
+   "sha256": "ed80ca71b37968b47d27e75ece5d3e4ad3ce37757e90d08bb9dcf046a0859625",
+   "pdfPages": 126
+  },
+  {
+   "fiscalYear": 2021,
+   "url": "https://www.ccsf.edu/sites/default/files/2022/document/FY-2021-Audit-Report-combined.pdf",
+   "sha256": "6caabc7f6662f49af1cc31faf8bbe04a6881fea29bd16250062ceb5e7b0d38ab",
+   "pdfPages": 129
+  },
+  {
+   "fiscalYear": 2022,
+   "url": "https://www.ccsf.edu/sites/default/files/2023/document/2021-22-annual-audit.pdf",
+   "sha256": "d5d0c8a59055088c99b0b091a3b898dd9b3c891b7bad8dad2370328a7b6c34c6",
+   "pdfPages": 115
+  },
+  {
+   "fiscalYear": 2023,
+   "url": "https://www.ccsf.edu/sites/default/files/2024/document/san-francisco-community-college-district-financial-statements-2023.pdf",
+   "sha256": "f7ff21ee3d209f5fd4ebe41aedb80a0b9520a4c78428c12037668724bf7a817f",
+   "pdfPages": 116
+  },
+  {
+   "fiscalYear": 2024,
+   "url": "https://www.ccsf.edu/sites/default/files/2025/document/san-francisco-ccd-audit-report-20240630.pdf",
+   "sha256": "c296f9c7933bf4593f20acf38c819782d16f96a6fc1751665ad74b2e2fd7a4e9",
+   "pdfPages": 99
+  },
+  {
+   "fiscalYear": 2025,
+   "url": "https://www.ccsf.edu/sites/default/files/2026/document/sfccd-audit-report-june-30-2025.pdf",
+   "sha256": "5eee6bff175fa7aa463256f1492e9287fec05f1bbfc8bca93850a9526aba4dee",
+   "pdfPages": 95
+  }
+ ]
+}

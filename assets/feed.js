@@ -41,13 +41,13 @@
     return result;
   }
 
-  function reel(c, i, list) {
-    const r = c.reel, nx = list && list[i + 1];
-    return `<section class="reel" data-i="${i}" data-id="${esc(c.id)}" aria-label="${esc(c.title)}">
+  function reelContents(c, nx) {
+    const r = c.reel;
+    return `
       <div class="reel-bg" data-bg="assets/films/${esc(r.poster)}"></div>
       <div class="reel-stage">
         <div class="reel-frame" data-act="toggle"><div class="reel-live" aria-label="Film: ${esc(c.title)}"></div>
-          <img src="assets/films/${esc(r.poster)}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}"><div class="reel-big"><span></span></div>
+          <img src="assets/films/${esc(r.poster)}" alt="" loading="eager"><div class="reel-big"><span></span></div>
           <button type="button" class="reel-full" data-act="fullscreen" aria-label="Enter full screen" title="Full screen (F)" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="expand-film" d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6"/><path class="shrink-film" d="M9 3v6H3m12-6v6h6m0 6h-6v6m-6 0v-6H3"/></svg></button><button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><span class="reel-thumb"><b></b></span><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
         <div class="reel-info">
           <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span><span class="rt-def">${esc(DEF[c.tier] || '')}</span><span class="rt-defs">${esc(DEFS[c.tier] || '')}</span></div><div class="reel-sub">${c.phase === 'outcome-unknown' ? `<span>${esc(PHASE[c.phase])}</span>` : ''}<span>${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span>${c.movie?.audioStatus === 'temporary-local' ? '<span>Temporary local narration</span>' : ''}</div>
@@ -55,8 +55,7 @@
           <p class="reel-line">${esc(c.oneLine || '')}</p>
           <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a><button type="button" class="reel-share" data-act="share" data-tip="Copy a link to this film">${ICON.share}<span>Copy link</span></button>${nx ? `<div class="reel-downrow"><button type="button" class="reel-down" data-act="next" aria-label="Next film">${ICON.down}</button></div>` : ''}
         </div>
-      </div>
-    </section>`;
+      </div>`;
   }
 
   // What each label means: the same four steps the case pages use, strongest first. Kept in one place so the strip
@@ -79,8 +78,9 @@
     return `<h1 class="sr-only">Watch the cases</h1><div class="feed${store.get('fd.sound') === 'on' ? '' : ' muted'}" id="feed" data-tier="${esc(tier || '')}" data-start="${esc(startId || '')}">
       <div class="feed-bar">${CHIPS.map(([k, t]) => `<button type="button" class="feed-chip" data-tier="${k}" aria-pressed="${(tier || '') === k}">${t}<b>${counts[k] || 0}</b></button>`).join('')}
         <span class="feed-count" aria-live="polite">${list.length ? first + 1 : 0} / ${list.length}</span><a class="feed-all" href="#cases">All cases as a list</a></div>
-      <aside class="feed-list" aria-label="All films"><div class="fl-head">${list.length} films · scroll for the next</div><ol>${list.map((c, i) => `<li><button type="button" data-go="${i}"${i === first ? ' class="on" aria-current="true"' : ''}><span class="fl-n">${i + 1}</span><img src="assets/films/${esc(c.reel.poster)}" alt="" loading="lazy"><span class="fl-t"><span class="fl-title">${esc(c.title)}</span><span class="fl-meta"><i class="t-${esc(c.tier)}"></i>${esc(TIER[c.tier] || c.tier)} · ${mmss(c.reel.s)}</span></span></button></li>`).join('')}</ol></aside>
-      <div class="feed-scroll" id="feed-scroll" tabindex="-1">${list.map((c, i) => reel(c, i, list)).join('')}
+      <aside class="feed-list" aria-label="All films"><div class="fl-head">${list.length} films · scroll for the next</div><ol>${list.map((c, i) => `<li><button type="button" data-go="${i}"${i === first ? ' class="on" aria-current="true"' : ''}><span class="fl-n">${i + 1}</span><img ${Math.abs(i - first) <= 2 ? 'src' : 'data-poster'}="assets/films/${esc(c.reel.poster)}" alt="" loading="lazy"><span class="fl-t"><span class="fl-title">${esc(c.title)}</span><span class="fl-meta"><i class="t-${esc(c.tier)}"></i>${esc(TIER[c.tier] || c.tier)} · ${mmss(c.reel.s)}</span></span></button></li>`).join('')}</ol></aside>
+      <div class="feed-scroll" id="feed-scroll" tabindex="-1">${list.map((c, i) =>
+        `<section class="reel" data-i="${i}" data-id="${esc(c.id)}" aria-label="${esc(c.title)}">${Math.abs(i - first) <= 1 ? reelContents(c, list[i + 1]) : ''}</section>`).join('')}
         <section class="reel"><div class="reel-end"><h2>That’s every film.</h2><p>${list.length} cases, each from the public record. A lead is a question, not an accusation; every case file says what is established and what is not.</p>
           <div class="row"><a class="primary" href="#cases">Browse all cases</a><a href="#briefing">Read the briefing</a><a href="#" data-act="top">Start again</a></div></div></section>
       </div><div class="feed-hint">Swipe up for the next film<span class="k"> · or scroll, or press ↓</span></div></div>`;
@@ -177,15 +177,22 @@
       s.media = h.voice; s.mi = i; wire(i, h.voice); return h.voice;
     };
     const muteIcon = () => root.querySelectorAll('[data-act=mute]').forEach(b => { b.innerHTML = s.sound ? ICON.sound : ICON.mute; });
-    const setSound = on => { s.sound = on; store.set('fd.sound', on ? 'on' : 'off'); root.classList.toggle('muted', !on); reels.forEach((_, k) => { const v = vid(k); if (v) v.muted = !on; }); muteIcon(); };
+    const setSound = on => { s.sound = on; store.set('fd.sound', on ? 'on' : 'off'); root.classList.toggle('muted', !on); if (s.media) s.media.muted = !on; muteIcon(); };
     const play = i => { s.watching = true; const v = vid(i) || openLive(i); if (!v) return; v.muted = !s.sound; const p = v.play(); if (p && p.catch) p.catch(() => { if (!v.muted) { v.muted = true; root.classList.add('muted'); v.play().catch(() => {}); } }); };
     const activate = i => {
       if (s.fullscreen.active() || i === s.i || !reels[i]) return;
       const previous = s.i;
       s.i = i;
-      for (let k = Math.max(0, i - 2); k <= Math.min(reels.length - 1, i + 3); k++) { const bg = reels[k].querySelector('.reel-bg[data-bg]'); if (bg) { bg.style.backgroundImage = `url('${bg.dataset.bg}')`; bg.removeAttribute('data-bg'); } }   // covers load only near the film on screen
+      // Keep native snap targets for the entire ranked feed. Only nearby films need posters, controls and listeners.
+      for (let k = Math.max(0, i - 1); k <= Math.min(reels.length - 1, i + 1); k++) mountReel(k);
       reels[previous]?.classList.remove('playing', 'started');
       openLive(i); if (s.watching) play(i);                                     // nothing plays until the viewer taps play (owner, 24 Nov 2026); after that, the next film carries on
+      for (const k of mounted) if (Math.abs(k - i) > 1) {
+        reels[k].replaceChildren();
+        reels[k].classList.remove('playing', 'started', 'film-ready', 'ending');
+        delete shows[k];
+        mounted.delete(k);
+      }
       counter.textContent = `${i + 1} / ${reels.length}`;
       const former = previous >= 0 ? items[previous] : root.querySelector('[data-go][aria-current]');
       former?.classList.remove('on');
@@ -206,7 +213,16 @@
       v.addEventListener('pause', () => r.classList.remove('playing'));
       v.addEventListener('ended', () => { r.classList.remove('playing'); if (s.i === k) go(k + 1); });
     }
-    reels.forEach((r, k) => {
+    const mounted = new Set();
+    function mountReel(k) {
+      if (mounted.has(k)) return;
+      const r = reels[k];
+      if (!r.firstElementChild) r.innerHTML = reelContents(s.byId[r.dataset.id], s.byId[reels[k + 1]?.dataset.id]);
+      mounted.add(k);
+      const bg = r.querySelector('.reel-bg');
+      bg.style.backgroundImage = `url('${bg.dataset.bg}')`;
+      bg.removeAttribute('data-bg');
+      r.querySelector('[data-act=mute]').innerHTML = s.sound ? ICON.sound : ICON.mute;
       const bar = r.querySelector('.reel-prog i');
       const prog = r.querySelector('.reel-prog'), tl = r.querySelector('.reel-time'), thumb = prog.querySelector('.reel-thumb');
       function position(fraction) {
@@ -242,9 +258,20 @@
       prog.addEventListener('pointerup', up); prog.addEventListener('pointercancel', up);
       prog.addEventListener('click', e => e.stopPropagation());
       prog.addEventListener('keydown', e => { if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); const v = vid(k); if (v && v.duration) v.currentTime = Math.max(0, Math.min(v.duration, v.currentTime + (e.key === 'ArrowLeft' ? -5 : 5))); } });
-    });
+    }
     s.obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && e.intersectionRatio >= .6) activate(+e.target.dataset.i); }), { root: scroller, threshold: [.6] });
     reels.forEach(r => s.obs.observe(r));
+    // Some browsers eagerly request an entire horizontal strip even with loading=lazy. Reserve its slots, then load only the visible posters.
+    const strip = root.querySelector('.feed-list ol');
+    s.posters = new IntersectionObserver(entries => {
+      for (const entry of entries) if (entry.isIntersecting) {
+        const image = entry.target;
+        image.src = image.dataset.poster;
+        image.removeAttribute('data-poster');
+        s.posters.unobserve(image);
+      }
+    }, {root:strip, rootMargin:'150px'});
+    strip.querySelectorAll('[data-poster]').forEach(image => s.posters.observe(image));
     const filterBar = root.querySelector('.feed-bar');
     let filterPress;
     filterBar.addEventListener(window.PointerEvent ? 'pointerdown' : 'mousedown', e => {
@@ -287,11 +314,10 @@
       e.preventDefault();
     };
     window.addEventListener('keydown', s.onKey);
-    muteIcon();
     const start = Math.max(0, reels.findIndex(r => r.dataset.id === root.dataset.start));
     if (start > 0) reels[start].scrollIntoView({ block: 'start' });
     items.forEach((b, k) => b.classList.toggle('on', k === start)); if (items[start]) items[start].closest('ol').scrollTop = Math.max(0, items[start].offsetTop - 120);
-    requestAnimationFrame(() => activate(start));
+    if (reels[start]) activate(start);
     // A filter change recreates the row. Keep the selected button within the
     // horizontal viewport without moving the page or the current film.
     const selected = filterBar.querySelector('[aria-pressed="true"]');
@@ -307,7 +333,8 @@
   function leave() {
     if (!cur) return; const s = cur; cur = null; s.fullscreen.destroy();
     if (window.FDMOVIE) window.FDMOVIE.close();
-    if (s.obs) s.obs.disconnect(); window.removeEventListener('keydown', s.onKey);
+    if (s.obs) s.obs.disconnect();
+    if (s.posters) s.posters.disconnect(); window.removeEventListener('keydown', s.onKey);
   }
 
   window.FDR = { render, mount, leave, has: C => (C.cases || []).some(c => c.reel) };

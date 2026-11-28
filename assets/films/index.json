@@ -91,6 +91,22 @@
   "seconds": 52.2,
   "poster": "arriba-juntos-grant-cost-allocation.jpg"
  },
+ "art-institute-accounting-conversion-close": {
+  "seconds": 41.8,
+  "poster": "art-institute-accounting-conversion-close.jpg"
+ },
+ "art-institute-borrower-status-and-notices": {
+  "seconds": 60.0,
+  "poster": "art-institute-borrower-status-and-notices.jpg"
+ },
+ "art-institute-federal-loan-reconciliation": {
+  "seconds": 45.0,
+  "poster": "art-institute-federal-loan-reconciliation.jpg"
+ },
+ "art-institute-landlord-affiliate-pledge": {
+  "seconds": 51.1,
+  "poster": "art-institute-landlord-affiliate-pledge.jpg"
+ },
  "arts-commission-fiscal-sponsor-accounts": {
   "seconds": 41.4,
   "poster": "arts-commission-fiscal-sponsor-accounts.jpg"
@@ -319,6 +335,10 @@
   "seconds": 130.0,
   "poster": "bvhpf-tier3-still-funded.jpg"
  },
+ "caap-income-forms-and-budgeting": {
+  "seconds": 48.1,
+  "poster": "caap-income-forms-and-budgeting.jpg"
+ },
  "calfresh-county-caused-approval-delays": {
   "seconds": 40.4,
   "poster": "calfresh-county-caused-approval-delays.jpg"
@@ -411,6 +431,14 @@
   "seconds": 53.4,
   "poster": "circle-telehealth-settlement-and-city-receipt.jpg"
  },
+ "city-college-appropriations-limit-carryforward": {
+  "seconds": 47.2,
+  "poster": "city-college-appropriations-limit-carryforward.jpg"
+ },
+ "city-college-career-and-foster-grant-time-records": {
+  "seconds": 44.6,
+  "poster": "city-college-career-and-foster-grant-time-records.jpg"
+ },
  "city-college-conference-lodging-charged-twice": {
   "seconds": 52.0,
   "poster": "city-college-conference-lodging-charged-twice.jpg"
@@ -427,9 +455,17 @@
   "seconds": 72.1,
   "poster": "city-college-distance-education-apportionment.jpg"
  },
+ "city-college-education-funds-public-vote": {
+  "seconds": 43.8,
+  "poster": "city-college-education-funds-public-vote.jpg"
+ },
  "city-college-findings-that-came-back": {
   "seconds": 138.0,
   "poster": "city-college-findings-that-came-back.jpg"
+ },
+ "city-college-grant-and-asset-closeout": {
+  "seconds": 44.9,
+  "poster": "city-college-grant-and-asset-closeout.jpg"
  },
  "city-college-reserve-policy-budget": {
   "seconds": 44.6,
@@ -438,6 +474,18 @@
  "city-college-retiree-health-disbursements": {
   "seconds": 46.7,
   "poster": "city-college-retiree-health-disbursements.jpg"
+ },
+ "city-college-self-insurance-fund-transfer": {
+  "seconds": 43.4,
+  "poster": "city-college-self-insurance-fund-transfer.jpg"
+ },
+ "city-college-student-aid-return-deadlines": {
+  "seconds": 47.3,
+  "poster": "city-college-student-aid-return-deadlines.jpg"
+ },
+ "city-college-student-support-service-samples": {
+  "seconds": 40.6,
+  "poster": "city-college-student-support-service-samples.jpg"
  },
  "city-college-workers-compensation-restitution": {
   "seconds": 47.5,
@@ -558,6 +606,10 @@
  "crestwood-locked-beds-contract": {
   "seconds": 130.6,
   "poster": "crestwood-locked-beds-contract.jpg"
+ },
+ "crocker-amazon-senior-housing-reserve": {
+  "seconds": 44.0,
+  "poster": "crocker-amazon-senior-housing-reserve.jpg"
  },
  "crystal-springs-golf-rent-and-late-fees": {
   "seconds": 59.0,
@@ -1367,6 +1419,10 @@
   "seconds": 47.0,
   "poster": "roofing-permit-payroll-and-state-insurance.jpg"
  },
+ "safe-sound-federal-grant-costs": {
+  "seconds": 41.0,
+  "poster": "safe-sound-federal-grant-costs.jpg"
+ },
  "safehouse-client-stipends-and-housing-loan": {
   "seconds": 73.3,
   "poster": "safehouse-client-stipends-and-housing-loan.jpg"
@@ -1410,6 +1466,10 @@
  "sewer-improvement-phase-one-budget": {
   "seconds": 68.1,
   "poster": "sewer-improvement-phase-one-budget.jpg"
+ },
+ "sf-art-institute-work-study-payroll": {
+  "seconds": 49.4,
+  "poster": "sf-art-institute-work-study-payroll.jpg"
  },
  "sf-assessor-smart-system-delay": {
   "seconds": 41.3,
@@ -1943,6 +2003,10 @@
   "seconds": 50.5,
   "poster": "wong-civil-settlement-accounting.jpg"
  },
+ "working-solutions-development-grant-timekeeping": {
+  "seconds": 42.0,
+  "poster": "working-solutions-development-grant-timekeeping.jpg"
+ },
  "yank-sing-wage-and-tip-recovery": {
   "seconds": 57.6,
   "poster": "yank-sing-wage-and-tip-recovery.jpg"
@@ -1962,6 +2026,10 @@
  "youth-justice-same-money-fewer-days": {
   "seconds": 136.0,
   "poster": "youth-justice-same-money-fewer-days.jpg"
+ },
+ "ywca-commercial-rent-assignment": {
+  "seconds": 45.3,
+  "poster": "ywca-commercial-rent-assignment.jpg"
  },
  "zhou-mayoral-campaign-billboard-coordination": {
   "seconds": 40.1,
