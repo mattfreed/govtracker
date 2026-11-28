@@ -2090,5 +2090,95 @@
   "seconds": 44.0,
   "passages": 12,
   "audioStatus": "temporary-local"
+ },
+ "garvey-coop-bookkeeping-and-accruals": {
+  "seconds": 51.3,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-late-federal-aid-returns": {
+  "seconds": 45.3,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-loan-costs-and-aid-limits": {
+  "seconds": 50.5,
+  "passages": 11,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-loan-reconciliation-records": {
+  "seconds": 43.2,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-swap-valuation-restatement": {
+  "seconds": 46.3,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-unclaimed-student-aid-checks": {
+  "seconds": 47.6,
+  "passages": 11,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-work-study-payroll-returns": {
+  "seconds": 51.8,
+  "passages": 11,
+  "audioStatus": "temporary-local"
+ },
+ "integral-studies-year-end-financial-reconciliations": {
+  "seconds": 43.7,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "mtc-subrecipient-audit-decision-delays": {
+  "seconds": 41.0,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "octavia-court-management-fees": {
+  "seconds": 47.8,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "octavia-court-project-accounts-and-reserves": {
+  "seconds": 47.8,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-capital-grant-draw-timing": {
+  "seconds": 44.9,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-grant-payroll-and-disbursement-support": {
+  "seconds": 51.4,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-property-management-fee-reconciliation": {
+  "seconds": 43.5,
+  "passages": 11,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-public-housing-tenant-files": {
+  "seconds": 47.8,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-public-housing-waitlist-order": {
+  "seconds": 43.3,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-single-room-housing-reports": {
+  "seconds": 42.4,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "united-playaz-federal-procurement-policy": {
+  "seconds": 44.0,
+  "passages": 12,
+  "audioStatus": "temporary-local"
  }
 }

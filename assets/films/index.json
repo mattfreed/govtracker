@@ -767,6 +767,10 @@
   "seconds": 49.1,
   "poster": "garden-admissions-cash-controls.jpg"
  },
+ "garvey-coop-bookkeeping-and-accruals": {
+  "seconds": 51.3,
+  "poster": "garvey-coop-bookkeeping-and-accruals.jpg"
+ },
  "general-hospital-architect-fee-settlement": {
   "seconds": 42.0,
   "poster": "general-hospital-architect-fee-settlement.jpg"
@@ -918,6 +922,34 @@
  "in-the-job-before-the-exam": {
   "seconds": 173.8,
   "poster": "in-the-job-before-the-exam.jpg"
+ },
+ "integral-studies-late-federal-aid-returns": {
+  "seconds": 45.3,
+  "poster": "integral-studies-late-federal-aid-returns.jpg"
+ },
+ "integral-studies-loan-costs-and-aid-limits": {
+  "seconds": 50.5,
+  "poster": "integral-studies-loan-costs-and-aid-limits.jpg"
+ },
+ "integral-studies-loan-reconciliation-records": {
+  "seconds": 43.2,
+  "poster": "integral-studies-loan-reconciliation-records.jpg"
+ },
+ "integral-studies-swap-valuation-restatement": {
+  "seconds": 46.3,
+  "poster": "integral-studies-swap-valuation-restatement.jpg"
+ },
+ "integral-studies-unclaimed-student-aid-checks": {
+  "seconds": 47.6,
+  "poster": "integral-studies-unclaimed-student-aid-checks.jpg"
+ },
+ "integral-studies-work-study-payroll-returns": {
+  "seconds": 51.8,
+  "poster": "integral-studies-work-study-payroll-returns.jpg"
+ },
+ "integral-studies-year-end-financial-reconciliations": {
+  "seconds": 43.7,
+  "poster": "integral-studies-year-end-financial-reconciliations.jpg"
  },
  "integrated-pain-care-duplicate-lien-agreement": {
   "seconds": 58.4,
@@ -1119,6 +1151,10 @@
   "seconds": 51.1,
   "poster": "mountain-tunnel-inspection-hours-and-budget.jpg"
  },
+ "mtc-subrecipient-audit-decision-delays": {
+  "seconds": 41.0,
+  "poster": "mtc-subrecipient-audit-decision-delays.jpg"
+ },
  "muni-rebuilt-motor-inventory": {
   "seconds": 43.9,
   "poster": "muni-rebuilt-motor-inventory.jpg"
@@ -1167,9 +1203,17 @@
   "seconds": 135.1,
   "poster": "oakes-closed-debts-to-the-city-address.jpg"
  },
+ "octavia-court-management-fees": {
+  "seconds": 47.8,
+  "poster": "octavia-court-management-fees.jpg"
+ },
  "octavia-court-personal-credit-card-charges": {
   "seconds": 50.0,
   "poster": "octavia-court-personal-credit-card-charges.jpg"
+ },
+ "octavia-court-project-accounts-and-reserves": {
+  "seconds": 47.8,
+  "poster": "octavia-court-project-accounts-and-reserves.jpg"
  },
  "office-depot-city-contract-pricing": {
   "seconds": 54.2,
@@ -1539,6 +1583,14 @@
   "seconds": 45.6,
   "poster": "sffd-extractor-installation-purchase-orders.jpg"
  },
+ "sfha-capital-grant-draw-timing": {
+  "seconds": 44.9,
+  "poster": "sfha-capital-grant-draw-timing.jpg"
+ },
+ "sfha-grant-payroll-and-disbursement-support": {
+  "seconds": 51.4,
+  "poster": "sfha-grant-payroll-and-disbursement-support.jpg"
+ },
  "sfha-housing-voucher-inspection-backlog": {
   "seconds": 47.0,
   "poster": "sfha-housing-voucher-inspection-backlog.jpg"
@@ -1546,6 +1598,22 @@
  "sfha-landlord-tenant-same-beneficiary": {
   "seconds": 47.7,
   "poster": "sfha-landlord-tenant-same-beneficiary.jpg"
+ },
+ "sfha-property-management-fee-reconciliation": {
+  "seconds": 43.5,
+  "poster": "sfha-property-management-fee-reconciliation.jpg"
+ },
+ "sfha-public-housing-tenant-files": {
+  "seconds": 47.8,
+  "poster": "sfha-public-housing-tenant-files.jpg"
+ },
+ "sfha-public-housing-waitlist-order": {
+  "seconds": 43.3,
+  "poster": "sfha-public-housing-waitlist-order.jpg"
+ },
+ "sfha-single-room-housing-reports": {
+  "seconds": 42.4,
+  "poster": "sfha-single-room-housing-reports.jpg"
  },
  "sfmta-citation-refund-notice": {
   "seconds": 52.6,
@@ -1926,6 +1994,10 @@
  "united-council-westbrook": {
   "seconds": 166.9,
   "poster": "united-council-westbrook.jpg"
+ },
+ "united-playaz-federal-procurement-policy": {
+  "seconds": 44.0,
+  "poster": "united-playaz-federal-procurement-policy.jpg"
  },
  "united-playaz-soma-fund": {
   "seconds": 130.4,

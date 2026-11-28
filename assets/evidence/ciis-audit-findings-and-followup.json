@@ -1,0 +1,695 @@
+{
+  "title": "California Institute of Integral Studies audit findings and recorded follow-up, FY2018–FY2025",
+  "asOf": "2026-11-28",
+  "method": "All numbered current-year financial statement and federal award findings in eight signed audit reports; numbered rows in the bulk federal finding export are cross-checked against their original schedules. A later test without exceptions is distinct from a federal determination or proof of payment. Pages refer to PDF file pages.",
+  "sources": {
+    "2018": {
+      "id": "2018-06-CENSUS-0000119633",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119633",
+      "accepted": "2019-07-07",
+      "sha256": "39780c2f2aa6af427888a123b0b8834bef1d7201204069067b226409c95186f6",
+      "pages": 29
+    },
+    "2019": {
+      "id": "2019-06-CENSUS-0000119633",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633",
+      "accepted": "2020-03-30",
+      "sha256": "858ee8db78db36789a279adfc0760a4f45a0d350b002d8c8bcdc0cd44ea24b47",
+      "pages": 54
+    },
+    "2020": {
+      "id": "2020-06-CENSUS-0000119633",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633",
+      "accepted": "2021-08-03",
+      "sha256": "90a55f53cb0e02da3d11ba779feb3425451604aefea6a265a4751afbc6f556f1",
+      "pages": 51
+    },
+    "2021": {
+      "id": "2021-06-CENSUS-0000119633",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633",
+      "accepted": "2022-06-19",
+      "sha256": "b4584ae09fd05524ea18fa8e13f0168f1b97740838d9fa337005ef28d31e3ebf",
+      "pages": 35
+    },
+    "2022": {
+      "id": "2022-06-CENSUS-0000119633",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119633",
+      "accepted": "2023-03-19",
+      "sha256": "a5d74969688f67fd30e8995675ac031db785a656d9b902007211ae038b09ce0b",
+      "pages": 36
+    },
+    "2023": {
+      "id": "2023-06-GSAFAC-0000027892",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000027892",
+      "accepted": "2024-03-01",
+      "sha256": "0d47a9aa863c50ab2601c4c4eb2e3b9e4504b37a61042235e8407c5c8cea1b71",
+      "pages": 37
+    },
+    "2024": {
+      "id": "2024-06-GSAFAC-0000363241",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000363241",
+      "accepted": "2025-04-01",
+      "sha256": "a6ad3b7917b2b286664fed10aed9cf29303e26eac7b292ec19c67796ad4cfcd1",
+      "pages": 34
+    },
+    "2025": {
+      "id": "2025-06-GSAFAC-0000406884",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000406884",
+      "accepted": "2026-03-06",
+      "sha256": "b46539193ef81ef7ca130e607e3bdec427287c98d7bc72d382322aa0d4ce0f09",
+      "pages": 34
+    }
+  },
+  "scope": {
+    "numberedAuditFindings": 24,
+    "reportedInBulkFederalFindingIndex": 22,
+    "financialStatementFindings": 4,
+    "federalAwardFindings": 20,
+    "yearsWithoutCurrentFindings": [
+      2022,
+      2024,
+      2025
+    ],
+    "yearsWithoutCurrentFederalAwardFindings": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "findings": [
+    {
+      "finding": "2018-001",
+      "schedule": "Federal awards",
+      "title": "Unclaimed aid checks",
+      "original": "29 checks outstanding for more than 120 days, totaling $33,347.",
+      "followup": "Next audit found no new exceptions and marked corrected in the summary. Its detailed review substantiated seven cleared checks worth $12,986; disposition of the remaining $20,361 was undocumented in the follow-up.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000119633#page=28",
+          "pdfPage": 28
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=46",
+          "pdfPage": 46
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=47",
+          "pdfPage": 47
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-001",
+      "schedule": "Financial statements",
+      "title": "Late accounting reconciliations",
+      "original": "Post-close adjustments lowered net assets by about $200,000.",
+      "followup": "Federal determination closed the FY2019 matter. Accounting weakness recurred as 2020-001 and 2021-001; FY2022 auditors verified revised reconciliation systems.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=27",
+          "pdfPage": 27
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=43",
+          "pdfPage": 43
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=29",
+          "pdfPage": 29
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119633#page=35",
+          "pdfPage": 35
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-002",
+      "schedule": "Federal awards",
+      "title": "Direct loan disbursement dates",
+      "original": "6 of 123 federal loan files had different disbursement dates from institutional records.",
+      "followup": "Auditors verified date corrections; FY2019 federal matter closed. A further exception recurred in FY2020.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=28",
+          "pdfPage": 28
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=29",
+          "pdfPage": 29
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=43",
+          "pdfPage": 43
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-003",
+      "schedule": "Federal awards",
+      "title": "Withdrawn-student refunds",
+      "original": "Two errors in spring-break calculations yielded no additional refund. Two unperformed calculations produced $5,640 in identified refunds.",
+      "followup": "Federal follow-up said a full withdrawal-file review showed aggregate returns exceeded amounts due. Finding closed. The report does not establish an exact $5,640 cash transfer.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=30",
+          "pdfPage": 30
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=43",
+          "pdfPage": 43
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=44",
+          "pdfPage": 44
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-004",
+      "schedule": "Federal awards",
+      "title": "Enrollment reporting",
+      "original": "Five of 123 tested loan files had inaccurate enrollment statuses.",
+      "followup": "Auditors verified updated statuses. Historical federal determination closed this finding, but status reporting recurred in FY2020.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=32",
+          "pdfPage": 32
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=44",
+          "pdfPage": 44
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=32",
+          "pdfPage": 32
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-005",
+      "schedule": "Federal awards",
+      "title": "Borrowing against misstated costs",
+      "original": "Five of 125 tested files contained wrong tuition or fees. Recalculated direct loans exceeded proper student budgets by $21,255.",
+      "followup": "Federal determination records that on August 10, 2020 the institute documented $21,255 returned to the Direct Loan program. Finding closed.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=35",
+          "pdfPage": 35
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=44",
+          "pdfPage": 44
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-006",
+      "schedule": "Federal awards",
+      "title": "Direct loan lifetime limit",
+      "original": "One of 123 loan files exceeded the aggregate limit by $499.",
+      "followup": "Auditors verified $499 returned, leaving no questioned costs. Federal determination later closed the finding.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=36",
+          "pdfPage": 36
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=44",
+          "pdfPage": 44
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-007",
+      "schedule": "Federal awards",
+      "title": "Ineligible supplemental grant",
+      "original": "One of 125 tested files received an $800 FSEOG award beyond financial eligibility limits.",
+      "followup": "Federal determination recorded the $800 returned. A separate supplemental-grant timing violation occurred in FY2020.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=37",
+          "pdfPage": 37
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=45",
+          "pdfPage": 45
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-008",
+      "schedule": "Federal awards",
+      "title": "Borrower notifications",
+      "original": "Disbursement notices unavailable in all 123 Direct Loan files tested.",
+      "followup": "Federal determination closed the finding. Next auditors reported no exceptions in their tests of disbursement notifications.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=38",
+          "pdfPage": 38
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=45",
+          "pdfPage": 45
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-009",
+      "schedule": "Federal awards",
+      "title": "Institutional oversight policy",
+      "original": "Auditors cited missing required GLBA governance documentation during FY2019.",
+      "followup": "Institution adopted its policy. The federal letter closed the finding, and next-year auditors verified implementation.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=39",
+          "pdfPage": 39
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=40",
+          "pdfPage": 40
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=45",
+          "pdfPage": 45
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-010",
+      "schedule": "Federal awards",
+      "title": "Missing monthly loan cash statements",
+      "original": "Unable to obtain the July 2018–June 2019 monthly source statements needed to verify timely Direct Loan cash reconciliations.",
+      "followup": "The federal letter closed the FY2019 finding; monthly documentation was again missing in 2020-009.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=41",
+          "pdfPage": 41
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=45",
+          "pdfPage": 45
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=41",
+          "pdfPage": 41
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-011",
+      "schedule": "Federal awards",
+      "title": "Federal Work Study payroll",
+      "original": "Two of five files showed $6,692.25 total excess wages compared with time worked.",
+      "followup": "The FY2019 federal decision cited by the next audit verified a documented $6,692 return in whole dollars and closed the finding.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=42",
+          "pdfPage": 42
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=43",
+          "pdfPage": 43
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=46",
+          "pdfPage": 46
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2019-012",
+      "schedule": "Federal awards",
+      "title": "Work-study annual application",
+      "original": "Federal application reported $110,095 compensation and 57 recipients; records showed $131,499 and 35 recipients. A separate $14,922 transfer line was erroneous.",
+      "followup": "The September 2020 department determination accepted the institute’s confirmation of a corrected application and closed the matter.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=44",
+          "pdfPage": 44
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000119633#page=45",
+          "pdfPage": 45
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=46",
+          "pdfPage": 46
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-001",
+      "schedule": "Financial statements",
+      "title": "Year-end accounting adjustments",
+      "original": "Adjustments reduced reported assets (net) by approximately $3.4 million, or 54.8% of the original annual change in net assets.",
+      "followup": "Recurred in FY2021. New accounting systems were verified by the FY2022 auditors.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=30",
+          "pdfPage": 30
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=29",
+          "pdfPage": 29
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=32",
+          "pdfPage": 32
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119633#page=35",
+          "pdfPage": 35
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-002",
+      "schedule": "Federal awards",
+      "title": "Loan disbursement date",
+      "original": "One of 116 Direct Loan files had a mismatched disbursement date.",
+      "followup": "Next audit marked corrected and found no exceptions in its tested files.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=32",
+          "pdfPage": 32
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-003",
+      "schedule": "Federal awards",
+      "title": "Enrollment reporting",
+      "original": "Two of 116 files had an inaccurate enrollment status; one status effective date was late.",
+      "followup": "Auditors verified the two corrections; next audit marked corrected and found no exceptions in its tested files.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=32",
+          "pdfPage": 32
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-004",
+      "schedule": "Federal awards",
+      "title": "Grants after student attendance ended",
+      "original": "Three of 18 tested supplemental grants totaling $4,169 were issued more than 180 days after last attendance.",
+      "followup": "Original auditors verified voided disbursements and reallocation to three eligible students, leaving no questioned costs. Next auditors found no new exceptions.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=35",
+          "pdfPage": 35
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-005",
+      "schedule": "Federal awards",
+      "title": "Late withdrawal refunds",
+      "original": "Of 18 withdrawal files tested, $3,432 was paid 103 days after its due date, and $922 was paid 41 days after its due date.",
+      "followup": "Next auditors found no similar exceptions and marked corrected.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=36",
+          "pdfPage": 36
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=37",
+          "pdfPage": 37
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-006",
+      "schedule": "Federal awards",
+      "title": "Late return of ineligible aid",
+      "original": "Two loans totaling $6,184 went to one account in the wrong term. The November 17, 2019 refund deadline passed before the December 18 return.",
+      "followup": "Next auditors found no similar exceptions and marked corrected.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=38",
+          "pdfPage": 38
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-007",
+      "schedule": "Federal awards",
+      "title": "Borrower exit counseling",
+      "original": "In testing 116 loan files, one exit counseling was late and another lacked documentation.",
+      "followup": "Institute mailed counseling documents on the second case. Next audit found no new exceptions.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=39",
+          "pdfPage": 39
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-008",
+      "schedule": "Federal awards",
+      "title": "Pell underpayment",
+      "original": "One of 21 Pell files was underawarded $986 following a change in enrollment.",
+      "followup": "Institute agreed; following audit marked corrected and found no new exception. A dated individual payment is not documented on the cited pages.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=40",
+          "pdfPage": 40
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2020-009",
+      "schedule": "Federal awards",
+      "title": "Repeat missing monthly loan statements",
+      "original": "August 2019–January 2020 monthly Direct Loan cash statements were unavailable to test timely reconciliation.",
+      "followup": "FY2021 reported no new federal findings, but its prior-year summary and resolution comments list only 2020-001 through 008. Explicit item-level determination for 2020-009 remains outstanding.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000119633#page=41",
+          "pdfPage": 41
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=30",
+          "pdfPage": 30
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=31",
+          "pdfPage": 31
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": true
+    },
+    {
+      "finding": "2021-001",
+      "schedule": "Financial statements",
+      "title": "Repeat accounting adjustments",
+      "original": "Audit adjustments reduced reported net assets by about $237,000. Management reported a new accounting system and additional qualified personnel.",
+      "followup": "FY2022 summary marked corrected; next auditors verified the accounting and reconciliation arrangements operated.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000119633#page=29",
+          "pdfPage": 29
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119633#page=34",
+          "pdfPage": 34
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000119633#page=35",
+          "pdfPage": 35
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": false
+    },
+    {
+      "finding": "2023-001",
+      "schedule": "Financial statements",
+      "title": "Prior-year omitted swap value",
+      "original": "FY2022 assets and income were restated upward by $782,213 for an omitted noncash swap valuation. These are different financial presentations of the same correction.",
+      "followup": "Management accepted the adjustment. FY2024 and FY2025 financial-statement schedules report no current findings; neither is an agency cash settlement.",
+      "source": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000027892#page=14",
+          "pdfPage": 14
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000027892#page=33",
+          "pdfPage": 33
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000027892#page=37",
+          "pdfPage": 37
+        }
+      ],
+      "followupSource": [
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000363241#page=33",
+          "pdfPage": 33
+        },
+        {
+          "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000406884#page=33",
+          "pdfPage": 33
+        }
+      ],
+      "appearsInBulkFederalFindingIndex": false
+    }
+  ]
+}
