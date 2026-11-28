@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 483 case files. The public citation check tested 3,998 distinct URLs across 5,708 case citations. 3,898 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 491 case files. The public citation check tested 4,029 distinct URLs across 5,750 case citations. 3,929 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 

@@ -1940,5 +1940,45 @@
   "seconds": 45.5,
   "passages": 14,
   "audioStatus": "temporary-local"
+ },
+ "aging-and-workforce-subaward-notices": {
+  "seconds": 45.1,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "child-support-blanket-contract-vendor-checks": {
+  "seconds": 41.7,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "energy-block-grant-indirect-rate": {
+  "seconds": 44.6,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "federal-health-subrecipient-monitoring": {
+  "seconds": 51.3,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "fireboat-station-budget-and-completion": {
+  "seconds": 48.3,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "lead-hazard-grant-payroll-and-interest": {
+  "seconds": 49.2,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "port-land-improvements-and-retired-assets": {
+  "seconds": 49.5,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "redevelopment-winddown-finance-staff": {
+  "seconds": 44.0,
+  "passages": 12,
+  "audioStatus": "temporary-local"
  }
 }

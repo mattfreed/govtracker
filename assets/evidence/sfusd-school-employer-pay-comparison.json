@@ -1,0 +1,1395 @@
+{
+ "title": "California school employer compensation comparison, 2015–2024",
+ "publisher": "Calculations from California State Controller annual K–12 raw exports",
+ "method": "Sum employer OtherPay divided by employer RegularPay; threshold 5,000 rows with positive TotalWages. Median of the remaining large employers, unweighted. All ten original statewide ZIPs inspected. The Controller website challenges some automated requests. Peer pay screen uses combined OtherPay and LumpSumPay only for its separately labelled per-position column.",
+ "note": "Employer-level figures only. Amounts are whole dollars. Source links point to the original statewide ZIP. The State Controller website can challenge automated retrieval.",
+ "years": [
+  {
+   "year": 2015,
+   "source": "https://gcc.sco.ca.gov/RawExport/2015_K12Education.zip",
+   "sourceZipSHA256": "c79c4153720960e17edfc396954f7efa71f1fb87edefaf243f8a9250ba565cac",
+   "statewideRecords": 678206,
+   "largeEmployerCount": 16,
+   "sanFranciscoUnifiedReported": true,
+   "employers": [
+    {
+     "EmployerName": "San Francisco Unified",
+     "RegularPay": 366415389,
+     "OtherPay": 93308768,
+     "LumpSumPay": 634290,
+     "TotalWages": 461778156,
+     "positionsWithPositivePay": 10561,
+     "otherPayPer100RegularPay": 25.465297
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 212590099,
+     "OtherPay": 28613727,
+     "LumpSumPay": 1974103,
+     "TotalWages": 244066119,
+     "positionsWithPositivePay": 7779,
+     "otherPayPer100RegularPay": 13.459576
+    },
+    {
+     "EmployerName": "Sacramento City Unified",
+     "RegularPay": 220952202,
+     "OtherPay": 26225403,
+     "LumpSumPay": 0,
+     "TotalWages": 247177605,
+     "positionsWithPositivePay": 6733,
+     "otherPayPer100RegularPay": 11.869265
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 473930029,
+     "OtherPay": 43330928,
+     "LumpSumPay": 783036,
+     "TotalWages": 522074654,
+     "positionsWithPositivePay": 12674,
+     "otherPayPer100RegularPay": 9.142896
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 316037363,
+     "OtherPay": 27802376,
+     "LumpSumPay": 68504,
+     "TotalWages": 345500885,
+     "positionsWithPositivePay": 8471,
+     "otherPayPer100RegularPay": 8.79718
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 218529469,
+     "OtherPay": 19222164,
+     "LumpSumPay": 357746,
+     "TotalWages": 238877213,
+     "positionsWithPositivePay": 5668,
+     "otherPayPer100RegularPay": 8.796143
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 3775967685,
+     "OtherPay": 239363018,
+     "LumpSumPay": 13628234,
+     "TotalWages": 4079582195,
+     "positionsWithPositivePay": 91405,
+     "otherPayPer100RegularPay": 6.339117
+    },
+    {
+     "EmployerName": "San Diego Unified",
+     "RegularPay": 770995205,
+     "OtherPay": 42374763,
+     "LumpSumPay": 2700240,
+     "TotalWages": 820010800,
+     "positionsWithPositivePay": 20431,
+     "otherPayPer100RegularPay": 5.496112
+    },
+    {
+     "EmployerName": "Mt. Diablo Unified",
+     "RegularPay": 181353665,
+     "OtherPay": 9758884,
+     "LumpSumPay": 1106146,
+     "TotalWages": 193565022,
+     "positionsWithPositivePay": 5733,
+     "otherPayPer100RegularPay": 5.381134
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 392578878,
+     "OtherPay": 17541186,
+     "LumpSumPay": 7801569,
+     "TotalWages": 420332820,
+     "positionsWithPositivePay": 8509,
+     "otherPayPer100RegularPay": 4.468194
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 263889094,
+     "OtherPay": 11734210,
+     "LumpSumPay": 1513887,
+     "TotalWages": 278451181,
+     "positionsWithPositivePay": 6411,
+     "otherPayPer100RegularPay": 4.446645
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 208208141,
+     "OtherPay": 6873943,
+     "LumpSumPay": 1142501,
+     "TotalWages": 217052180,
+     "positionsWithPositivePay": 6838,
+     "otherPayPer100RegularPay": 3.301477
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 235847180,
+     "OtherPay": 4727316,
+     "LumpSumPay": 750090,
+     "TotalWages": 248870018,
+     "positionsWithPositivePay": 6132,
+     "otherPayPer100RegularPay": 2.004398
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 294437592,
+     "OtherPay": 4902528,
+     "LumpSumPay": 167675,
+     "TotalWages": 299966463,
+     "positionsWithPositivePay": 7223,
+     "otherPayPer100RegularPay": 1.665048
+    },
+    {
+     "EmployerName": "Corona-Norco Unified",
+     "RegularPay": 303685017,
+     "OtherPay": 2753912,
+     "LumpSumPay": 3026814,
+     "TotalWages": 320187768,
+     "positionsWithPositivePay": 7276,
+     "otherPayPer100RegularPay": 0.906832
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 343373953,
+     "OtherPay": 1518333,
+     "LumpSumPay": 823209,
+     "TotalWages": 348195678,
+     "positionsWithPositivePay": 7381,
+     "otherPayPer100RegularPay": 0.442181
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "source": "https://gcc.sco.ca.gov/RawExport/2016_K12Education.zip",
+   "sourceZipSHA256": "88f92861d9f7e6afc75f1ab6c35b73bf56c2cf426c53f3c3f82f87d44ce789d1",
+   "statewideRecords": 666649,
+   "largeEmployerCount": 17,
+   "sanFranciscoUnifiedReported": true,
+   "employers": [
+    {
+     "EmployerName": "San Francisco Unified",
+     "RegularPay": 391799319,
+     "OtherPay": 94412497,
+     "LumpSumPay": 632059,
+     "TotalWages": 488291486,
+     "positionsWithPositivePay": 10467,
+     "otherPayPer100RegularPay": 24.097157
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 223901950,
+     "OtherPay": 29226828,
+     "LumpSumPay": 380438,
+     "TotalWages": 254418033,
+     "positionsWithPositivePay": 7560,
+     "otherPayPer100RegularPay": 13.053405
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 490852934,
+     "OtherPay": 46254138,
+     "LumpSumPay": 806058,
+     "TotalWages": 541827976,
+     "positionsWithPositivePay": 12769,
+     "otherPayPer100RegularPay": 9.423217
+    },
+    {
+     "EmployerName": "Lodi Unified",
+     "RegularPay": 159009785,
+     "OtherPay": 14588470,
+     "LumpSumPay": 179917,
+     "TotalWages": 174788006,
+     "positionsWithPositivePay": 5084,
+     "otherPayPer100RegularPay": 9.174574
+    },
+    {
+     "EmployerName": "San Diego Unified",
+     "RegularPay": 799813785,
+     "OtherPay": 61204805,
+     "LumpSumPay": 2560151,
+     "TotalWages": 868090446,
+     "positionsWithPositivePay": 20643,
+     "otherPayPer100RegularPay": 7.652382
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 301721081,
+     "OtherPay": 19246329,
+     "LumpSumPay": 1287358,
+     "TotalWages": 324040565,
+     "positionsWithPositivePay": 6664,
+     "otherPayPer100RegularPay": 6.378848
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 3887515613,
+     "OtherPay": 238538174,
+     "LumpSumPay": 13594031,
+     "TotalWages": 4194943812,
+     "positionsWithPositivePay": 90762,
+     "otherPayPer100RegularPay": 6.136006
+    },
+    {
+     "EmployerName": "Mt. Diablo Unified",
+     "RegularPay": 203025838,
+     "OtherPay": 11474477,
+     "LumpSumPay": 1495920,
+     "TotalWages": 217739739,
+     "positionsWithPositivePay": 5849,
+     "otherPayPer100RegularPay": 5.651732
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 181582956,
+     "OtherPay": 9707369,
+     "LumpSumPay": 3345726,
+     "TotalWages": 195653066,
+     "positionsWithPositivePay": 6297,
+     "otherPayPer100RegularPay": 5.345969
+    },
+    {
+     "EmployerName": "Kern High",
+     "RegularPay": 234216011,
+     "OtherPay": 11858501,
+     "LumpSumPay": 5830172,
+     "TotalWages": 256466678,
+     "positionsWithPositivePay": 5284,
+     "otherPayPer100RegularPay": 5.063062
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 438396942,
+     "OtherPay": 20553742,
+     "LumpSumPay": 20754371,
+     "TotalWages": 482268093,
+     "positionsWithPositivePay": 12921,
+     "otherPayPer100RegularPay": 4.688386
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 243867214,
+     "OtherPay": 10833870,
+     "LumpSumPay": 1559987,
+     "TotalWages": 257311123,
+     "positionsWithPositivePay": 5925,
+     "otherPayPer100RegularPay": 4.442528
+    },
+    {
+     "EmployerName": "Moreno Valley Unified",
+     "RegularPay": 205808077,
+     "OtherPay": 9098531,
+     "LumpSumPay": 1354323,
+     "TotalWages": 217132485,
+     "positionsWithPositivePay": 5464,
+     "otherPayPer100RegularPay": 4.420881
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 345155346,
+     "OtherPay": 8898883,
+     "LumpSumPay": 1933247,
+     "TotalWages": 357432482,
+     "positionsWithPositivePay": 8866,
+     "otherPayPer100RegularPay": 2.578225
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 262928242,
+     "OtherPay": 6102259,
+     "LumpSumPay": 266678,
+     "TotalWages": 279218501,
+     "positionsWithPositivePay": 6467,
+     "otherPayPer100RegularPay": 2.320884
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 382450557,
+     "OtherPay": 5027134,
+     "LumpSumPay": 644741,
+     "TotalWages": 391022109,
+     "positionsWithPositivePay": 7615,
+     "otherPayPer100RegularPay": 1.314453
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 295629953,
+     "OtherPay": 3544148,
+     "LumpSumPay": 167058,
+     "TotalWages": 299891521,
+     "positionsWithPositivePay": 7220,
+     "otherPayPer100RegularPay": 1.198846
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "source": "https://gcc.sco.ca.gov/RawExport/2017_K12Education.zip",
+   "sourceZipSHA256": "d71741b8cb67366e80e52dba5e1f94aaa974083635b284aea2cd62d78eb6f08e",
+   "statewideRecords": 618603,
+   "largeEmployerCount": 16,
+   "sanFranciscoUnifiedReported": true,
+   "employers": [
+    {
+     "EmployerName": "San Francisco Unified",
+     "RegularPay": 416077401,
+     "OtherPay": 105167686,
+     "LumpSumPay": 717964,
+     "TotalWages": 523549618,
+     "positionsWithPositivePay": 10546,
+     "otherPayPer100RegularPay": 25.275991
+    },
+    {
+     "EmployerName": "Lodi Unified",
+     "RegularPay": 163337205,
+     "OtherPay": 18320873,
+     "LumpSumPay": 171047,
+     "TotalWages": 182856749,
+     "positionsWithPositivePay": 5092,
+     "otherPayPer100RegularPay": 11.216595
+    },
+    {
+     "EmployerName": "Moreno Valley Unified",
+     "RegularPay": 205776979,
+     "OtherPay": 22166164,
+     "LumpSumPay": 0,
+     "TotalWages": 228979446,
+     "positionsWithPositivePay": 5625,
+     "otherPayPer100RegularPay": 10.771936
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 307556461,
+     "OtherPay": 32505872,
+     "LumpSumPay": 124014,
+     "TotalWages": 340721324,
+     "positionsWithPositivePay": 7671,
+     "otherPayPer100RegularPay": 10.569075
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 497312854,
+     "OtherPay": 45186208,
+     "LumpSumPay": 6006469,
+     "TotalWages": 552242742,
+     "positionsWithPositivePay": 12789,
+     "otherPayPer100RegularPay": 9.086073
+    },
+    {
+     "EmployerName": "Kern High",
+     "RegularPay": 234307124,
+     "OtherPay": 19609027,
+     "LumpSumPay": 3502493,
+     "TotalWages": 262125922,
+     "positionsWithPositivePay": 5243,
+     "otherPayPer100RegularPay": 8.368942
+    },
+    {
+     "EmployerName": "Mt. Diablo Unified",
+     "RegularPay": 206604309,
+     "OtherPay": 14941001,
+     "LumpSumPay": 1151399,
+     "TotalWages": 224886864,
+     "positionsWithPositivePay": 5949,
+     "otherPayPer100RegularPay": 7.231699
+    },
+    {
+     "EmployerName": "San Diego Unified",
+     "RegularPay": 793933885,
+     "OtherPay": 57203208,
+     "LumpSumPay": 5787420,
+     "TotalWages": 862059761,
+     "positionsWithPositivePay": 19498,
+     "otherPayPer100RegularPay": 7.205034
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 229588901,
+     "OtherPay": 16000306,
+     "LumpSumPay": 1371579,
+     "TotalWages": 247951920,
+     "positionsWithPositivePay": 7031,
+     "otherPayPer100RegularPay": 6.969111
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 452231786,
+     "OtherPay": 27635915,
+     "LumpSumPay": 2599458,
+     "TotalWages": 485393665,
+     "positionsWithPositivePay": 14238,
+     "otherPayPer100RegularPay": 6.111007
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 3902582703,
+     "OtherPay": 238086601,
+     "LumpSumPay": 25958200,
+     "TotalWages": 4220516675,
+     "positionsWithPositivePay": 104317,
+     "otherPayPer100RegularPay": 6.100745
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 275603537,
+     "OtherPay": 10310762,
+     "LumpSumPay": 1306138,
+     "TotalWages": 288830074,
+     "positionsWithPositivePay": 6689,
+     "otherPayPer100RegularPay": 3.741157
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 255042819,
+     "OtherPay": 9454334,
+     "LumpSumPay": 8871918,
+     "TotalWages": 274611169,
+     "positionsWithPositivePay": 5802,
+     "otherPayPer100RegularPay": 3.706959
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 360639443,
+     "OtherPay": 13032000,
+     "LumpSumPay": 2183384,
+     "TotalWages": 377338707,
+     "positionsWithPositivePay": 9073,
+     "otherPayPer100RegularPay": 3.613581
+    },
+    {
+     "EmployerName": "Chula Vista Elementary",
+     "RegularPay": 201390108,
+     "OtherPay": 3262631,
+     "LumpSumPay": 4958260,
+     "TotalWages": 210535055,
+     "positionsWithPositivePay": 5080,
+     "otherPayPer100RegularPay": 1.620055
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 379815242,
+     "OtherPay": 1755130,
+     "LumpSumPay": 820113,
+     "TotalWages": 384961163,
+     "positionsWithPositivePay": 7513,
+     "otherPayPer100RegularPay": 0.462101
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "source": "https://gcc.sco.ca.gov/RawExport/2018_K12Education.zip",
+   "sourceZipSHA256": "41002d6036b32bb006dca1a0cbc128cbccbad5b329b5d6138660aef3cafe6b49",
+   "statewideRecords": 582174,
+   "largeEmployerCount": 14,
+   "sanFranciscoUnifiedReported": true,
+   "employers": [
+    {
+     "EmployerName": "San Francisco Unified",
+     "RegularPay": 440470246,
+     "OtherPay": 118979726,
+     "LumpSumPay": 846951,
+     "TotalWages": 561866599,
+     "positionsWithPositivePay": 10689,
+     "otherPayPer100RegularPay": 27.011978
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 251120591,
+     "OtherPay": 32415093,
+     "LumpSumPay": 132162,
+     "TotalWages": 284771712,
+     "positionsWithPositivePay": 8216,
+     "otherPayPer100RegularPay": 12.908178
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 491211456,
+     "OtherPay": 56847898,
+     "LumpSumPay": 697030,
+     "TotalWages": 552587898,
+     "positionsWithPositivePay": 12760,
+     "otherPayPer100RegularPay": 11.572999
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 321340399,
+     "OtherPay": 24857371,
+     "LumpSumPay": 333561,
+     "TotalWages": 347108360,
+     "positionsWithPositivePay": 7890,
+     "otherPayPer100RegularPay": 7.735526
+    },
+    {
+     "EmployerName": "San Diego Unified",
+     "RegularPay": 761716794,
+     "OtherPay": 56431240,
+     "LumpSumPay": 9180100,
+     "TotalWages": 832881536,
+     "positionsWithPositivePay": 18342,
+     "otherPayPer100RegularPay": 7.408428
+    },
+    {
+     "EmployerName": "Mt. Diablo Unified",
+     "RegularPay": 205548323,
+     "OtherPay": 13568554,
+     "LumpSumPay": 1168857,
+     "TotalWages": 222267551,
+     "positionsWithPositivePay": 5807,
+     "otherPayPer100RegularPay": 6.60115
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 516333664,
+     "OtherPay": 32067950,
+     "LumpSumPay": 2570464,
+     "TotalWages": 554520494,
+     "positionsWithPositivePay": 16348,
+     "otherPayPer100RegularPay": 6.210703
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 3957245911,
+     "OtherPay": 240218066,
+     "LumpSumPay": 13130960,
+     "TotalWages": 4265236502,
+     "positionsWithPositivePay": 93031,
+     "otherPayPer100RegularPay": 6.070335
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 294154422,
+     "OtherPay": 10924246,
+     "LumpSumPay": 1415975,
+     "TotalWages": 308414573,
+     "positionsWithPositivePay": 7021,
+     "otherPayPer100RegularPay": 3.713779
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 258539159,
+     "OtherPay": 8584454,
+     "LumpSumPay": 18279504,
+     "TotalWages": 286713660,
+     "positionsWithPositivePay": 5842,
+     "otherPayPer100RegularPay": 3.320369
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 384285818,
+     "OtherPay": 11059108,
+     "LumpSumPay": 2619639,
+     "TotalWages": 399745891,
+     "positionsWithPositivePay": 9258,
+     "otherPayPer100RegularPay": 2.877834
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 306664564,
+     "OtherPay": 7856981,
+     "LumpSumPay": 672938,
+     "TotalWages": 324561858,
+     "positionsWithPositivePay": 6890,
+     "otherPayPer100RegularPay": 2.562077
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 380690252,
+     "OtherPay": 7123856,
+     "LumpSumPay": 1130541,
+     "TotalWages": 391703836,
+     "positionsWithPositivePay": 7646,
+     "otherPayPer100RegularPay": 1.8713
+    },
+    {
+     "EmployerName": "Chula Vista Elementary",
+     "RegularPay": 209296598,
+     "OtherPay": 1804701,
+     "LumpSumPay": 435119,
+     "TotalWages": 212436405,
+     "positionsWithPositivePay": 5159,
+     "otherPayPer100RegularPay": 0.86227
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "source": "https://gcc.sco.ca.gov/RawExport/2019_K12Education.zip",
+   "sourceZipSHA256": "a8c1ca8797b94a95d306398dc9ef91964fc0afdbb2e9d09f79a9bbc5a9d04382",
+   "statewideRecords": 607259,
+   "largeEmployerCount": 15,
+   "sanFranciscoUnifiedReported": true,
+   "employers": [
+    {
+     "EmployerName": "San Francisco Unified",
+     "RegularPay": 466898065,
+     "OtherPay": 135130849,
+     "LumpSumPay": 735866,
+     "TotalWages": 604504431,
+     "positionsWithPositivePay": 10939,
+     "otherPayPer100RegularPay": 28.942259
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 263637604,
+     "OtherPay": 33475029,
+     "LumpSumPay": 71250,
+     "TotalWages": 298414087,
+     "positionsWithPositivePay": 8422,
+     "otherPayPer100RegularPay": 12.697365
+    },
+    {
+     "EmployerName": "West Contra Costa Unified",
+     "RegularPay": 195821687,
+     "OtherPay": 24774472,
+     "LumpSumPay": 0,
+     "TotalWages": 222950173,
+     "positionsWithPositivePay": 5112,
+     "otherPayPer100RegularPay": 12.651547
+    },
+    {
+     "EmployerName": "Moreno Valley Unified",
+     "RegularPay": 231016383,
+     "OtherPay": 23659807,
+     "LumpSumPay": 0,
+     "TotalWages": 255663132,
+     "positionsWithPositivePay": 6088,
+     "otherPayPer100RegularPay": 10.241614
+    },
+    {
+     "EmployerName": "Lodi Unified",
+     "RegularPay": 179235685,
+     "OtherPay": 16584460,
+     "LumpSumPay": 303336,
+     "TotalWages": 197351919,
+     "positionsWithPositivePay": 5099,
+     "otherPayPer100RegularPay": 9.252878
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 553448537,
+     "OtherPay": 46498473,
+     "LumpSumPay": 5497027,
+     "TotalWages": 609602357,
+     "positionsWithPositivePay": 12297,
+     "otherPayPer100RegularPay": 8.401589
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 4183082405,
+     "OtherPay": 318151381,
+     "LumpSumPay": 14207126,
+     "TotalWages": 4573659745,
+     "positionsWithPositivePay": 93998,
+     "otherPayPer100RegularPay": 7.605669
+    },
+    {
+     "EmployerName": "Kern High",
+     "RegularPay": 287270818,
+     "OtherPay": 21648733,
+     "LumpSumPay": 3411221,
+     "TotalWages": 317476097,
+     "positionsWithPositivePay": 6394,
+     "otherPayPer100RegularPay": 7.536001
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 247760730,
+     "OtherPay": 17857979,
+     "LumpSumPay": 1437627,
+     "TotalWages": 268180290,
+     "positionsWithPositivePay": 7568,
+     "otherPayPer100RegularPay": 7.207752
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 521802718,
+     "OtherPay": 33294390,
+     "LumpSumPay": 10178078,
+     "TotalWages": 569497501,
+     "positionsWithPositivePay": 14272,
+     "otherPayPer100RegularPay": 6.380647
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 267959630,
+     "OtherPay": 10016742,
+     "LumpSumPay": 6269411,
+     "TotalWages": 285939972,
+     "positionsWithPositivePay": 5838,
+     "otherPayPer100RegularPay": 3.738153
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 290423537,
+     "OtherPay": 10572402,
+     "LumpSumPay": 1403851,
+     "TotalWages": 304495810,
+     "positionsWithPositivePay": 6732,
+     "otherPayPer100RegularPay": 3.640339
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 390533408,
+     "OtherPay": 13070213,
+     "LumpSumPay": 1885523,
+     "TotalWages": 407480288,
+     "positionsWithPositivePay": 9098,
+     "otherPayPer100RegularPay": 3.346759
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 286612874,
+     "OtherPay": 7371908,
+     "LumpSumPay": 1398878,
+     "TotalWages": 304807561,
+     "positionsWithPositivePay": 6916,
+     "otherPayPer100RegularPay": 2.572078
+    },
+    {
+     "EmployerName": "Chula Vista Elementary",
+     "RegularPay": 217207479,
+     "OtherPay": 1799941,
+     "LumpSumPay": 512209,
+     "TotalWages": 220341882,
+     "positionsWithPositivePay": 5105,
+     "otherPayPer100RegularPay": 0.828674
+    }
+   ]
+  },
+  {
+   "year": 2020,
+   "source": "https://gcc.sco.ca.gov/RawExport/2020_K12Education.zip",
+   "sourceZipSHA256": "2093b470a50cdb447bdae8b03046ac91819c91b9a0a66c77a51747a2699a08a0",
+   "statewideRecords": 565435,
+   "largeEmployerCount": 13,
+   "sanFranciscoUnifiedReported": false,
+   "employers": [
+    {
+     "EmployerName": "Modesto City Schools",
+     "RegularPay": 149048945,
+     "OtherPay": 21180718,
+     "LumpSumPay": 0,
+     "TotalWages": 171066015,
+     "positionsWithPositivePay": 5313,
+     "otherPayPer100RegularPay": 14.210579
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 270084006,
+     "OtherPay": 24726759,
+     "LumpSumPay": 134149,
+     "TotalWages": 295362107,
+     "positionsWithPositivePay": 7652,
+     "otherPayPer100RegularPay": 9.15521
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 4135238621,
+     "OtherPay": 320152622,
+     "LumpSumPay": 64371823,
+     "TotalWages": 4555856946,
+     "positionsWithPositivePay": 84602,
+     "otherPayPer100RegularPay": 7.742059
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 254706810,
+     "OtherPay": 18478803,
+     "LumpSumPay": 1423106,
+     "TotalWages": 275137706,
+     "positionsWithPositivePay": 7430,
+     "otherPayPer100RegularPay": 7.254931
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 493567931,
+     "OtherPay": 33464948,
+     "LumpSumPay": 1792913,
+     "TotalWages": 530697945,
+     "positionsWithPositivePay": 11037,
+     "otherPayPer100RegularPay": 6.780211
+    },
+    {
+     "EmployerName": "Kern High",
+     "RegularPay": 292812652,
+     "OtherPay": 19141909,
+     "LumpSumPay": 1516492,
+     "TotalWages": 315477218,
+     "positionsWithPositivePay": 6057,
+     "otherPayPer100RegularPay": 6.537255
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 333518760,
+     "OtherPay": 19037745,
+     "LumpSumPay": 474755,
+     "TotalWages": 353417710,
+     "positionsWithPositivePay": 7320,
+     "otherPayPer100RegularPay": 5.708148
+    },
+    {
+     "EmployerName": "San Diego Unified",
+     "RegularPay": 832755583,
+     "OtherPay": 45194015,
+     "LumpSumPay": 2092575,
+     "TotalWages": 883074433,
+     "positionsWithPositivePay": 16996,
+     "otherPayPer100RegularPay": 5.427044
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 525612070,
+     "OtherPay": 26754281,
+     "LumpSumPay": 3447337,
+     "TotalWages": 557655330,
+     "positionsWithPositivePay": 13511,
+     "otherPayPer100RegularPay": 5.090119
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 305310788,
+     "OtherPay": 8489082,
+     "LumpSumPay": 1772006,
+     "TotalWages": 316884113,
+     "positionsWithPositivePay": 6555,
+     "otherPayPer100RegularPay": 2.780472
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 394089445,
+     "OtherPay": 8039748,
+     "LumpSumPay": 4420007,
+     "TotalWages": 407550785,
+     "positionsWithPositivePay": 8284,
+     "otherPayPer100RegularPay": 2.040082
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 280840608,
+     "OtherPay": 4263647,
+     "LumpSumPay": 1301383,
+     "TotalWages": 294475204,
+     "positionsWithPositivePay": 6025,
+     "otherPayPer100RegularPay": 1.518173
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 397307080,
+     "OtherPay": 2042114,
+     "LumpSumPay": 1019121,
+     "TotalWages": 403551941,
+     "positionsWithPositivePay": 7435,
+     "otherPayPer100RegularPay": 0.513989
+    }
+   ]
+  },
+  {
+   "year": 2021,
+   "source": "https://gcc.sco.ca.gov/RawExport/2021_K12Education.zip",
+   "sourceZipSHA256": "e7e86821c6b6421211bf83f42e8b60e6eca15e7fc52e66c0b1a6a40b09a9c548",
+   "statewideRecords": 541469,
+   "largeEmployerCount": 11,
+   "sanFranciscoUnifiedReported": true,
+   "employers": [
+    {
+     "EmployerName": "San Francisco Unified",
+     "RegularPay": 489670487,
+     "OtherPay": 131424325,
+     "LumpSumPay": 1171863,
+     "TotalWages": 623912976,
+     "positionsWithPositivePay": 10664,
+     "otherPayPer100RegularPay": 26.83934
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 553781795,
+     "OtherPay": 61657811,
+     "LumpSumPay": 38239793,
+     "TotalWages": 656340560,
+     "positionsWithPositivePay": 13668,
+     "otherPayPer100RegularPay": 11.133954
+    },
+    {
+     "EmployerName": "Kern High",
+     "RegularPay": 292914425,
+     "OtherPay": 31236273,
+     "LumpSumPay": 13278342,
+     "TotalWages": 341007323,
+     "positionsWithPositivePay": 5929,
+     "otherPayPer100RegularPay": 10.663959
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 514044345,
+     "OtherPay": 48960418,
+     "LumpSumPay": 10007834,
+     "TotalWages": 576395151,
+     "positionsWithPositivePay": 11915,
+     "otherPayPer100RegularPay": 9.524551
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 4244172031,
+     "OtherPay": 373568003,
+     "LumpSumPay": 159254476,
+     "TotalWages": 4831830296,
+     "positionsWithPositivePay": 90937,
+     "otherPayPer100RegularPay": 8.801905
+    },
+    {
+     "EmployerName": "San Diego Unified",
+     "RegularPay": 840191869,
+     "OtherPay": 66308332,
+     "LumpSumPay": 5028995,
+     "TotalWages": 915919612,
+     "positionsWithPositivePay": 16773,
+     "otherPayPer100RegularPay": 7.892046
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 259031873,
+     "OtherPay": 17355722,
+     "LumpSumPay": 1508200,
+     "TotalWages": 278880637,
+     "positionsWithPositivePay": 6992,
+     "otherPayPer100RegularPay": 6.700226
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 274026741,
+     "OtherPay": 16185987,
+     "LumpSumPay": 19571582,
+     "TotalWages": 311772542,
+     "positionsWithPositivePay": 5508,
+     "otherPayPer100RegularPay": 5.906718
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 310822471,
+     "OtherPay": 17322416,
+     "LumpSumPay": 1691846,
+     "TotalWages": 331520159,
+     "positionsWithPositivePay": 6580,
+     "otherPayPer100RegularPay": 5.57309
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 400735750,
+     "OtherPay": 17117856,
+     "LumpSumPay": 6498043,
+     "TotalWages": 425812940,
+     "positionsWithPositivePay": 7894,
+     "otherPayPer100RegularPay": 4.271607
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 284000669,
+     "OtherPay": 7718984,
+     "LumpSumPay": 12794793,
+     "TotalWages": 314435578,
+     "positionsWithPositivePay": 6197,
+     "otherPayPer100RegularPay": 2.717946
+    }
+   ]
+  },
+  {
+   "year": 2022,
+   "source": "https://gcc.sco.ca.gov/RawExport/2022_K12Education.zip",
+   "sourceZipSHA256": "fedf3e3790c9c00fd47ab6e71ebaac1eb7f5d32311c4bbae1a4642b6c7168cc8",
+   "statewideRecords": 600480,
+   "largeEmployerCount": 16,
+   "sanFranciscoUnifiedReported": false,
+   "employers": [
+    {
+     "EmployerName": "Sacramento City Unified",
+     "RegularPay": 293048202,
+     "OtherPay": 55137797,
+     "LumpSumPay": 0,
+     "TotalWages": 348185999,
+     "positionsWithPositivePay": 6302,
+     "otherPayPer100RegularPay": 18.815265
+    },
+    {
+     "EmployerName": "Modesto City Schools",
+     "RegularPay": 253086842,
+     "OtherPay": 46875988,
+     "LumpSumPay": 0,
+     "TotalWages": 301768862,
+     "positionsWithPositivePay": 5670,
+     "otherPayPer100RegularPay": 18.521701
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 610204371,
+     "OtherPay": 84496422,
+     "LumpSumPay": 6722095,
+     "TotalWages": 705683386,
+     "positionsWithPositivePay": 14593,
+     "otherPayPer100RegularPay": 13.847233
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 298644333,
+     "OtherPay": 40971152,
+     "LumpSumPay": 228408,
+     "TotalWages": 341365108,
+     "positionsWithPositivePay": 8054,
+     "otherPayPer100RegularPay": 13.719046
+    },
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 546810626,
+     "OtherPay": 67072052,
+     "LumpSumPay": 950472,
+     "TotalWages": 619994557,
+     "positionsWithPositivePay": 12074,
+     "otherPayPer100RegularPay": 12.266048
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 4509187761,
+     "OtherPay": 390291099,
+     "LumpSumPay": 103977362,
+     "TotalWages": 5072761305,
+     "positionsWithPositivePay": 90453,
+     "otherPayPer100RegularPay": 8.655463
+    },
+    {
+     "EmployerName": "Poway Unified",
+     "RegularPay": 285393685,
+     "OtherPay": 21826872,
+     "LumpSumPay": 1500038,
+     "TotalWages": 310644378,
+     "positionsWithPositivePay": 7641,
+     "otherPayPer100RegularPay": 7.647987
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 444013024,
+     "OtherPay": 22705880,
+     "LumpSumPay": 16300050,
+     "TotalWages": 485648239,
+     "positionsWithPositivePay": 8771,
+     "otherPayPer100RegularPay": 5.113787
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 314842560,
+     "OtherPay": 15000508,
+     "LumpSumPay": 17103942,
+     "TotalWages": 349700431,
+     "positionsWithPositivePay": 5945,
+     "otherPayPer100RegularPay": 4.764447
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 309255834,
+     "OtherPay": 14662253,
+     "LumpSumPay": 2270347,
+     "TotalWages": 336396273,
+     "positionsWithPositivePay": 6622,
+     "otherPayPer100RegularPay": 4.74114
+    },
+    {
+     "EmployerName": "Corona-Norco Unified",
+     "RegularPay": 380542773,
+     "OtherPay": 17466501,
+     "LumpSumPay": 2098957,
+     "TotalWages": 417141034,
+     "positionsWithPositivePay": 7060,
+     "otherPayPer100RegularPay": 4.589892
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 338096412,
+     "OtherPay": 14968961,
+     "LumpSumPay": 1710164,
+     "TotalWages": 357597727,
+     "positionsWithPositivePay": 6715,
+     "otherPayPer100RegularPay": 4.427424
+    },
+    {
+     "EmployerName": "Chula Vista Elementary",
+     "RegularPay": 246427770,
+     "OtherPay": 8515653,
+     "LumpSumPay": 3541515,
+     "TotalWages": 260055713,
+     "positionsWithPositivePay": 5036,
+     "otherPayPer100RegularPay": 3.455639
+    },
+    {
+     "EmployerName": "Vista Unified",
+     "RegularPay": 174481793,
+     "OtherPay": 3536721,
+     "LumpSumPay": 2167746,
+     "TotalWages": 181305879,
+     "positionsWithPositivePay": 5059,
+     "otherPayPer100RegularPay": 2.026986
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 380915847,
+     "OtherPay": 6397470,
+     "LumpSumPay": 589764,
+     "TotalWages": 388797940,
+     "positionsWithPositivePay": 7623,
+     "otherPayPer100RegularPay": 1.679497
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 464554996,
+     "OtherPay": 3904952,
+     "LumpSumPay": 1245980,
+     "TotalWages": 473216716,
+     "positionsWithPositivePay": 7588,
+     "otherPayPer100RegularPay": 0.840579
+    }
+   ]
+  },
+  {
+   "year": 2023,
+   "source": "https://gcc.sco.ca.gov/RawExport/2023_K12Education.zip",
+   "sourceZipSHA256": "3067523def1a264641f1814e7afd7c60ab23b0d1592ddbd750da1dff6dee6405",
+   "statewideRecords": 513276,
+   "largeEmployerCount": 13,
+   "sanFranciscoUnifiedReported": false,
+   "employers": [
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 619620172,
+     "OtherPay": 82152680,
+     "LumpSumPay": 993495,
+     "TotalWages": 708582693,
+     "positionsWithPositivePay": 12284,
+     "otherPayPer100RegularPay": 13.258555
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 343204394,
+     "OtherPay": 42903974,
+     "LumpSumPay": 212051,
+     "TotalWages": 387980536,
+     "positionsWithPositivePay": 8470,
+     "otherPayPer100RegularPay": 12.500998
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 301526823,
+     "OtherPay": 33448097,
+     "LumpSumPay": 2526246,
+     "TotalWages": 340439548,
+     "positionsWithPositivePay": 5933,
+     "otherPayPer100RegularPay": 11.092909
+    },
+    {
+     "EmployerName": "Los Angeles Unified",
+     "RegularPay": 5080572038,
+     "OtherPay": 442186411,
+     "LumpSumPay": 62584081,
+     "TotalWages": 5673406405,
+     "positionsWithPositivePay": 97232,
+     "otherPayPer100RegularPay": 8.703477
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 675459485,
+     "OtherPay": 58694217,
+     "LumpSumPay": 48530043,
+     "TotalWages": 788304605,
+     "positionsWithPositivePay": 15748,
+     "otherPayPer100RegularPay": 8.689524
+    },
+    {
+     "EmployerName": "San Bernardino City Unified",
+     "RegularPay": 474671770,
+     "OtherPay": 26961578,
+     "LumpSumPay": 11769943,
+     "TotalWages": 517047194,
+     "positionsWithPositivePay": 9255,
+     "otherPayPer100RegularPay": 5.680047
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 520996749,
+     "OtherPay": 28473116,
+     "LumpSumPay": 4222172,
+     "TotalWages": 558649534,
+     "positionsWithPositivePay": 7755,
+     "otherPayPer100RegularPay": 5.465124
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 382483543,
+     "OtherPay": 14222316,
+     "LumpSumPay": 1947270,
+     "TotalWages": 402572154,
+     "positionsWithPositivePay": 6971,
+     "otherPayPer100RegularPay": 3.718413
+    },
+    {
+     "EmployerName": "Chula Vista Elementary",
+     "RegularPay": 253923118,
+     "OtherPay": 5900462,
+     "LumpSumPay": 754085,
+     "TotalWages": 262125386,
+     "positionsWithPositivePay": 5339,
+     "otherPayPer100RegularPay": 2.32372
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 466346104,
+     "OtherPay": 10757444,
+     "LumpSumPay": 400083,
+     "TotalWages": 478746141,
+     "positionsWithPositivePay": 7751,
+     "otherPayPer100RegularPay": 2.306751
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 360331541,
+     "OtherPay": 5332344,
+     "LumpSumPay": 3743898,
+     "TotalWages": 381008688,
+     "positionsWithPositivePay": 6992,
+     "otherPayPer100RegularPay": 1.479844
+    },
+    {
+     "EmployerName": "Vista Unified",
+     "RegularPay": 192782628,
+     "OtherPay": 1474727,
+     "LumpSumPay": 2289012,
+     "TotalWages": 198183605,
+     "positionsWithPositivePay": 6869,
+     "otherPayPer100RegularPay": 0.764969
+    },
+    {
+     "EmployerName": "Modesto City Schools",
+     "RegularPay": 278119539,
+     "OtherPay": 0,
+     "LumpSumPay": 48660113,
+     "TotalWages": 328721388,
+     "positionsWithPositivePay": 5977,
+     "otherPayPer100RegularPay": 0.0
+    }
+   ]
+  },
+  {
+   "year": 2024,
+   "source": "https://gcc.sco.ca.gov/RawExport/2024_K12Education.zip",
+   "sourceZipSHA256": "770385e2e6a20f7c0d3758868563dd21bb70535c62fa4c034f9c63baa52cd0fe",
+   "statewideRecords": 465758,
+   "largeEmployerCount": 12,
+   "sanFranciscoUnifiedReported": false,
+   "employers": [
+    {
+     "EmployerName": "Long Beach Unified",
+     "RegularPay": 629127282,
+     "OtherPay": 88161948,
+     "LumpSumPay": 1281641,
+     "TotalWages": 724424933,
+     "positionsWithPositivePay": 12208,
+     "otherPayPer100RegularPay": 14.013372
+    },
+    {
+     "EmployerName": "Sacramento City Unified",
+     "RegularPay": 404415269,
+     "OtherPay": 53897353,
+     "LumpSumPay": 0,
+     "TotalWages": 458312622,
+     "positionsWithPositivePay": 7689,
+     "otherPayPer100RegularPay": 13.32723
+    },
+    {
+     "EmployerName": "Clovis Unified",
+     "RegularPay": 359554119,
+     "OtherPay": 45327204,
+     "LumpSumPay": 89444,
+     "TotalWages": 406896907,
+     "positionsWithPositivePay": 8797,
+     "otherPayPer100RegularPay": 12.606504
+    },
+    {
+     "EmployerName": "Fontana Unified",
+     "RegularPay": 311628206,
+     "OtherPay": 36804336,
+     "LumpSumPay": 9668072,
+     "TotalWages": 360996163,
+     "positionsWithPositivePay": 5982,
+     "otherPayPer100RegularPay": 11.810335
+    },
+    {
+     "EmployerName": "Fresno Unified",
+     "RegularPay": 751001982,
+     "OtherPay": 65736716,
+     "LumpSumPay": 19990353,
+     "TotalWages": 842688125,
+     "positionsWithPositivePay": 16223,
+     "otherPayPer100RegularPay": 8.753201
+    },
+    {
+     "EmployerName": "Capistrano Unified",
+     "RegularPay": 384240698,
+     "OtherPay": 22278504,
+     "LumpSumPay": 1726078,
+     "TotalWages": 412282679,
+     "positionsWithPositivePay": 7050,
+     "otherPayPer100RegularPay": 5.798059
+    },
+    {
+     "EmployerName": "Garden Grove Unified",
+     "RegularPay": 447689163,
+     "OtherPay": 24613800,
+     "LumpSumPay": 568558,
+     "TotalWages": 474187353,
+     "positionsWithPositivePay": 8061,
+     "otherPayPer100RegularPay": 5.497966
+    },
+    {
+     "EmployerName": "Santa Ana Unified",
+     "RegularPay": 522006688,
+     "OtherPay": 9185114,
+     "LumpSumPay": 1109671,
+     "TotalWages": 538598283,
+     "positionsWithPositivePay": 7878,
+     "otherPayPer100RegularPay": 1.759578
+    },
+    {
+     "EmployerName": "Temecula Valley Unified",
+     "RegularPay": 237870807,
+     "OtherPay": 4038959,
+     "LumpSumPay": 612401,
+     "TotalWages": 249928261,
+     "positionsWithPositivePay": 5066,
+     "otherPayPer100RegularPay": 1.697963
+    },
+    {
+     "EmployerName": "Corona-Norco Unified",
+     "RegularPay": 458368965,
+     "OtherPay": 7425632,
+     "LumpSumPay": 1890204,
+     "TotalWages": 485787904,
+     "positionsWithPositivePay": 7563,
+     "otherPayPer100RegularPay": 1.620012
+    },
+    {
+     "EmployerName": "Riverside Unified",
+     "RegularPay": 384261573,
+     "OtherPay": 5980041,
+     "LumpSumPay": 3660334,
+     "TotalWages": 407225709,
+     "positionsWithPositivePay": 7093,
+     "otherPayPer100RegularPay": 1.556242
+    },
+    {
+     "EmployerName": "Vista Unified",
+     "RegularPay": 203777198,
+     "OtherPay": 2122700,
+     "LumpSumPay": 2378006,
+     "TotalWages": 210246112,
+     "positionsWithPositivePay": 7223,
+     "otherPayPer100RegularPay": 1.041677
+    }
+   ]
+  }
+ ]
+}
