@@ -547,6 +547,10 @@
   "seconds": 127.2,
   "passages": 27
  },
+ "grotto-worker-health-order-mismatch": {
+  "seconds": 46.1,
+  "passages": 11
+ },
  "haight-housing-shoring-and-permit-timing": {
   "seconds": 42.4,
   "passages": 13
@@ -610,6 +614,10 @@
  "huckleberry-federal-match-city-grant": {
   "seconds": 152.1,
   "passages": 36
+ },
+ "human-services-security-holiday-billing": {
+  "seconds": 42.8,
+  "passages": 13
  },
  "hunters-point-shipyard-cleanup-recoveries": {
   "seconds": 42.9,
@@ -894,6 +902,10 @@
  "physician-workers-compensation-restitution": {
   "seconds": 44.8,
   "passages": 10
+ },
+ "pier-45-fire-insurance-and-wharf-funding": {
+  "seconds": 65.1,
+  "passages": 14
  },
  "plastering-payroll-state-fund-restitution": {
   "seconds": 45.7,
@@ -1480,8 +1492,8 @@
   "passages": 14
  },
  "zoo-loan-and-ledger": {
-  "seconds": 146.4,
-  "passages": 39
+  "seconds": 159.5,
+  "passages": 42
  },
  "zsfg-rehabilitation-design-change-orders": {
   "seconds": 50.9,

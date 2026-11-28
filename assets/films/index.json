@@ -547,6 +547,10 @@
   "seconds": 127.2,
   "poster": "grand-jury-promises-not-kept.jpg"
  },
+ "grotto-worker-health-order-mismatch": {
+  "seconds": 46.1,
+  "poster": "grotto-worker-health-order-mismatch.jpg"
+ },
  "haight-housing-shoring-and-permit-timing": {
   "seconds": 42.4,
   "poster": "haight-housing-shoring-and-permit-timing.jpg"
@@ -610,6 +614,10 @@
  "huckleberry-federal-match-city-grant": {
   "seconds": 152.1,
   "poster": "huckleberry-federal-match-city-grant.jpg"
+ },
+ "human-services-security-holiday-billing": {
+  "seconds": 42.8,
+  "poster": "human-services-security-holiday-billing.jpg"
  },
  "hunters-point-shipyard-cleanup-recoveries": {
   "seconds": 42.9,
@@ -894,6 +902,10 @@
  "physician-workers-compensation-restitution": {
   "seconds": 44.8,
   "poster": "physician-workers-compensation-restitution.jpg"
+ },
+ "pier-45-fire-insurance-and-wharf-funding": {
+  "seconds": 65.1,
+  "poster": "pier-45-fire-insurance-and-wharf-funding.jpg"
  },
  "plastering-payroll-state-fund-restitution": {
   "seconds": 45.7,
@@ -1480,7 +1492,7 @@
   "poster": "zhou-mayoral-campaign-billboard-coordination.jpg"
  },
  "zoo-loan-and-ledger": {
-  "seconds": 146.4,
+  "seconds": 159.5,
   "poster": "zoo-loan-and-ledger.jpg"
  },
  "zsfg-rehabilitation-design-change-orders": {
