@@ -1586,5 +1586,17 @@
  "civic-center-steam-loop-repairs": {
   "seconds": 55.5,
   "passages": 13
+ },
+ "bart-starting-pay-and-salary-step-exceptions": {
+  "seconds": 46.0,
+  "passages": 12
+ },
+ "bart-wireless-card-rates": {
+  "seconds": 57.4,
+  "passages": 13
+ },
+ "blackstone-att-lobbying-payments": {
+  "seconds": 40.2,
+  "passages": 13
  }
 }
