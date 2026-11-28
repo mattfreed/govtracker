@@ -719,6 +719,10 @@
   "seconds": 43.9,
   "poster": "health-surcharge-settlements-and-clearances.jpg"
  },
+ "home-subsidy-cap-800-presidio": {
+  "seconds": 52.5,
+  "poster": "home-subsidy-cap-800-presidio.jpg"
+ },
  "homelessness-money-and-results": {
   "seconds": 133.2,
   "poster": "homelessness-money-and-results.jpg"
@@ -738,6 +742,10 @@
  "hospices-revoked-after-1-26-billion": {
   "seconds": 145.1,
   "poster": "hospices-revoked-after-1-26-billion.jpg"
+ },
+ "hotel-assessment-and-transfer-tax-refunds": {
+  "seconds": 64.8,
+  "poster": "hotel-assessment-and-transfer-tax-refunds.jpg"
  },
  "housing-authority-cash-and-pension-reconciliations": {
   "seconds": 43.7,
@@ -762,6 +770,14 @@
  "housing-subsidy-placement-delays": {
   "seconds": 59.3,
   "poster": "housing-subsidy-placement-delays.jpg"
+ },
+ "housing-voucher-administrator-contract-ceilings": {
+  "seconds": 45.0,
+  "poster": "housing-voucher-administrator-contract-ceilings.jpg"
+ },
+ "housing-voucher-annual-income-review-delays": {
+  "seconds": 43.2,
+  "poster": "housing-voucher-annual-income-review-delays.jpg"
  },
  "hrc-split-purchases": {
   "seconds": 130.4,
@@ -1288,7 +1304,7 @@
   "poster": "school-bond-committee-empty-audits-late.jpg"
  },
  "school-contracts-signed-before-the-vote": {
-  "seconds": 150.9,
+  "seconds": 161.3,
   "poster": "school-contracts-signed-before-the-vote.jpg"
  },
  "school-district-high-risk-three-times": {
@@ -1487,6 +1503,10 @@
   "seconds": 51.8,
   "poster": "sfusd-after-school-registration-and-staffing.jpg"
  },
+ "sfusd-audit-records-and-funding-claims": {
+  "seconds": 52.3,
+  "poster": "sfusd-audit-records-and-funding-claims.jpg"
+ },
  "sfusd-cafeteria-interest-on-general-fund-support": {
   "seconds": 52.8,
   "poster": "sfusd-cafeteria-interest-on-general-fund-support.jpg"
@@ -1530,6 +1550,10 @@
  "sfusd-pay-reported-outside-regular-wages": {
   "seconds": 63.3,
   "poster": "sfusd-pay-reported-outside-regular-wages.jpg"
+ },
+ "sfusd-pensionable-pay-reporting": {
+  "seconds": 54.5,
+  "poster": "sfusd-pensionable-pay-reporting.jpg"
  },
  "sfusd-proposition-28-arts-spending": {
   "seconds": 47.5,
@@ -1742,6 +1766,10 @@
  "union-name-outside-money": {
   "seconds": 167.6,
   "poster": "union-name-outside-money.jpg"
+ },
+ "union-pension-housing-transfer-tax-eligibility": {
+  "seconds": 47.4,
+  "poster": "union-pension-housing-transfer-tax-eligibility.jpg"
  },
  "union-square-foundation-passthrough": {
   "seconds": 130.3,
