@@ -467,6 +467,10 @@
   "seconds": 40.7,
   "passages": 10
  },
+ "european-food-wholesale-wage-order": {
+  "seconds": 42.3,
+  "passages": 11
+ },
  "faces-sf-childcare-and-meal-repayments": {
   "seconds": 49.7,
   "passages": 12
@@ -562,6 +566,10 @@
  "hanson-bay-sand-royalty-settlement": {
   "seconds": 71.3,
   "passages": 14
+ },
+ "health-surcharge-settlements-and-clearances": {
+  "seconds": 43.9,
+  "passages": 13
  },
  "homelessness-money-and-results": {
   "seconds": 133.2,
@@ -1315,6 +1323,10 @@
   "seconds": 40.7,
   "passages": 13
  },
+ "street-improvement-permit-review-clocks": {
+  "seconds": 49.6,
+  "passages": 14
+ },
  "success-center-youthbuild-shared-costs": {
   "seconds": 63.5,
   "passages": 14
@@ -1382,6 +1394,10 @@
  "truancy-grant-participation-thresholds": {
   "seconds": 54.2,
   "passages": 13
+ },
+ "turk-street-construction-award-and-delivery": {
+  "seconds": 41.4,
+  "passages": 11
  },
  "two-sets-of-books": {
   "seconds": 130.3,
@@ -1474,6 +1490,10 @@
  "wong-civil-settlement-accounting": {
   "seconds": 50.5,
   "passages": 15
+ },
+ "yank-sing-wage-and-tip-recovery": {
+  "seconds": 57.6,
+  "passages": 13
  },
  "youth-grants-missed-board-approval": {
   "seconds": 40.4,

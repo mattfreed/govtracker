@@ -1,0 +1,164 @@
+{
+ "publisher": "SF Gov Tracker, manual transcription and recalculation of San Francisco Public Works tables",
+ "incompletePermitCycles": {
+  "source": "https://www.sf.gov/sites/default/files/2023-05/Public%20Works.PAIP_.Initial.letter.050123_0.pdf#page=45",
+  "asOf": "2023-04-10",
+  "units": "Elapsed days to the snapshot. Public Works review is part of City time.",
+  "rows": [
+   {
+    "project": "Treasure Island Stage 2/3",
+    "elapsedDays": 1404,
+    "cityDays": 645,
+    "developerDays": 759,
+    "publicWorksDays": 364
+   },
+   {
+    "project": "India Basin Big Green",
+    "elapsedDays": 229,
+    "cityDays": 108,
+    "developerDays": 121,
+    "publicWorksDays": 39
+   },
+   {
+    "project": "Mission Bay (Parks P2-P8)",
+    "elapsedDays": 1067,
+    "cityDays": 370,
+    "developerDays": 697,
+    "publicWorksDays": 300
+   },
+   {
+    "project": "Parkmerced Phase 1B",
+    "elapsedDays": 710,
+    "cityDays": 11,
+    "developerDays": 699,
+    "publicWorksDays": 7
+   },
+   {
+    "project": "Parkmerced Phase 1C",
+    "elapsedDays": 185,
+    "cityDays": 121,
+    "developerDays": 64,
+    "publicWorksDays": 106
+   },
+   {
+    "project": "Parkmerced Phase 1D",
+    "elapsedDays": 262,
+    "cityDays": 129,
+    "developerDays": 133,
+    "publicWorksDays": 105
+   },
+   {
+    "project": "Schlage Lock",
+    "elapsedDays": 1175,
+    "cityDays": 196,
+    "developerDays": 979,
+    "publicWorksDays": 54
+   },
+   {
+    "project": "Stonestown",
+    "elapsedDays": 115,
+    "cityDays": 55,
+    "developerDays": 60,
+    "publicWorksDays": 51
+   },
+   {
+    "project": "Job Corps SSPS",
+    "elapsedDays": 1053,
+    "cityDays": 358,
+    "developerDays": 695,
+    "publicWorksDays": 157
+   },
+   {
+    "project": "Balboa Reservoir",
+    "elapsedDays": 266,
+    "cityDays": 73,
+    "developerDays": 193,
+    "publicWorksDays": 63
+   }
+  ],
+  "averages": {
+   "elapsedDays": 646.6,
+   "cityDays": 206.6,
+   "developerDays": 440,
+   "publicWorksDays": 124.6
+  }
+ },
+ "bureauServicePerformance": {
+  "source": "https://www.sf.gov/sites/default/files/2023-05/Public%20Works.PAIP_.Initial.letter.050123_0.pdf#page=11",
+  "scope": "Six common permit categories from FY2021-22 and FY2022-23 through March 2023. Bureau time excludes applicants and other agency reviews.",
+  "rows": [
+   {
+    "permit": "General excavation",
+    "goalBusinessDays": 5,
+    "fy2022Count": 646,
+    "fy2022PctMet": 87,
+    "fy2022MeanBureauDays": 3,
+    "fy2023ThroughMarchCount": 407,
+    "fy2023ThroughMarchPctMet": 83,
+    "fy2023ThroughMarchMeanBureauDays": 3
+   },
+   {
+    "permit": "Major encroachment",
+    "goalBusinessDays": 125,
+    "fy2022Count": 1,
+    "fy2022PctMet": 100,
+    "fy2022MeanBureauDays": 38,
+    "fy2023ThroughMarchCount": 2,
+    "fy2023ThroughMarchPctMet": 100,
+    "fy2023ThroughMarchMeanBureauDays": 15
+   },
+   {
+    "permit": "Minor encroachment",
+    "goalBusinessDays": 40,
+    "fy2022Count": 395,
+    "fy2022PctMet": 77,
+    "fy2022MeanBureauDays": 29,
+    "fy2023ThroughMarchCount": 209,
+    "fy2023ThroughMarchPctMet": 73,
+    "fy2023ThroughMarchMeanBureauDays": 40
+   },
+   {
+    "permit": "Street improvement, complex",
+    "goalBusinessDays": 60,
+    "fy2022Count": 10,
+    "fy2022PctMet": 100,
+    "fy2022MeanBureauDays": 25,
+    "fy2023ThroughMarchCount": 6,
+    "fy2023ThroughMarchPctMet": 67,
+    "fy2023ThroughMarchMeanBureauDays": 79
+   },
+   {
+    "permit": "Street improvement, simple",
+    "goalBusinessDays": 40,
+    "fy2022Count": 327,
+    "fy2022PctMet": 85,
+    "fy2022MeanBureauDays": 19,
+    "fy2023ThroughMarchCount": 205,
+    "fy2023ThroughMarchPctMet": 69,
+    "fy2023ThroughMarchMeanBureauDays": 34
+   },
+   {
+    "permit": "Vault",
+    "goalBusinessDays": 60,
+    "fy2022Count": 21,
+    "fy2022PctMet": 95,
+    "fy2022MeanBureauDays": 29,
+    "fy2023ThroughMarchCount": 8,
+    "fy2023ThroughMarchPctMet": 63,
+    "fy2023ThroughMarchMeanBureauDays": 57
+   }
+  ],
+  "publishedTotalCounts": {
+   "fy2022": 1763,
+   "fy2023ThroughMarch": 1088
+  },
+  "sumOfDisplayedCounts": {
+   "fy2022": 1400,
+   "fy2023ThroughMarch": 837
+  },
+  "differenceFromDisplayedCounts": {
+   "fy2022": 363,
+   "fy2023ThroughMarch": 251
+  }
+ }
+}
