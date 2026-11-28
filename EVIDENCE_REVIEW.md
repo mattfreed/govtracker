@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 350 case files. The public citation check tested 2,805 distinct URLs across 4,466 case citations. 2,708 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 351 case files. The public citation check tested 2,806 distinct URLs across 4,469 case citations. 2,709 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -341,3 +341,5 @@ After two unsuccessful state funding rounds, the sponsors of affordable family h
 SFO disqualified its incumbent because its United States headquarters was in Georgia. The replacement firm later won a new competition after the City repealed the ban. [Case and film](https://sfgovtracker.com/#case/airport-baggage-maintenance-state-ban) · [March 2022 covered-state list, including operative dates and Georgia grounds](https://media.api.sf.gov/documents/Appendix_D_Administrative_Code_Chapter_12X_List_of_States_as_of_3.2022.pdf)
 
 Pandemic arrears were concentrated in a few dozen Port agreements. Two years later the Port requested a collections officer, citing the risk that aging debts would become uncollectible. Later audited balances leave open how much of the original debt was recovered. [Case and film](https://sfgovtracker.com/#case/port-rent-arrears-and-collections) · [Port portfolio management and delinquency, November 2021 staff memorandum, pp. 7–10 and Tables 1–3](https://sfport.com/files/2021-11/11092021_Item%208A%20Delinquency%20Challenges_final_0.pdf)
+
+An uninsured contractor used another person’s license number to obtain construction work. Two prosecution filings and California’s sentencing register trace the complaint to two misdemeanor pleas and $1,200 paid in restitution. [Case and film](https://sfgovtracker.com/#case/construction-business-card-license-misuse) · [California insurance enforcement report, PDF p. 102](https://www.insurance.ca.gov/0400-news/0200-studies-reports/0700-commissioner-report/upload/2020-Annual-Report-of-the-Insurance-Commissioner.pdf#page=102)
