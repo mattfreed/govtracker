@@ -424,7 +424,7 @@
   "poster": "elections-commission-secretary-hiring-order.jpg"
  },
  "ellicott-workers-compensation-fictitious-audits": {
-  "seconds": 41.4,
+  "seconds": 42.5,
   "poster": "ellicott-workers-compensation-fictitious-audits.jpg"
  },
  "emergency-hotels-rooms-repairs-repayment": {
@@ -590,6 +590,10 @@
  "in-the-job-before-the-exam": {
   "seconds": 173.8,
   "poster": "in-the-job-before-the-exam.jpg"
+ },
+ "integrated-pain-care-duplicate-lien-agreement": {
+  "seconds": 58.4,
+  "poster": "integrated-pain-care-duplicate-lien-agreement.jpg"
  },
  "internet-choice-lobbyists-parks-payment": {
   "seconds": 57.2,
@@ -850,6 +854,10 @@
  "physician-workers-compensation-restitution": {
   "seconds": 44.8,
   "poster": "physician-workers-compensation-restitution.jpg"
+ },
+ "plastering-payroll-state-fund-restitution": {
+  "seconds": 45.7,
+  "poster": "plastering-payroll-state-fund-restitution.jpg"
  },
  "police-captains-overtime-in-lieu": {
   "seconds": 113.0,
@@ -1311,6 +1319,10 @@
   "seconds": 136.9,
   "poster": "treasurer-contract-steering.jpg"
  },
+ "truancy-grant-participation-thresholds": {
+  "seconds": 54.2,
+  "poster": "truancy-grant-participation-thresholds.jpg"
+ },
  "two-sets-of-books": {
   "seconds": 130.3,
   "poster": "two-sets-of-books.jpg"
@@ -1422,5 +1434,9 @@
  "zsfg-rehabilitation-design-change-orders": {
   "seconds": 50.9,
   "poster": "zsfg-rehabilitation-design-change-orders.jpg"
+ },
+ "zsfg-workplace-safety-citations": {
+  "seconds": 57.1,
+  "poster": "zsfg-workplace-safety-citations.jpg"
  }
 }
