@@ -1890,5 +1890,45 @@
  "union-pension-housing-transfer-tax-eligibility": {
   "seconds": 47.4,
   "passages": 11
+ },
+ "adoption-assistance-reassessment-signoffs": {
+  "seconds": 46.4,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "city-financial-system-report-reconciliation": {
+  "seconds": 45.9,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "convention-and-treasure-island-cutoff": {
+  "seconds": 51.2,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "covid-relief-grant-period-extensions": {
+  "seconds": 42.9,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "juvenile-probation-foster-care-underclaim": {
+  "seconds": 50.4,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "port-security-grant-vendor-check": {
+  "seconds": 52.7,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "sffd-extractor-installation-purchase-orders": {
+  "seconds": 45.6,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "zsfg-patient-credit-balance-corrections": {
+  "seconds": 45.0,
+  "passages": 12,
+  "audioStatus": "temporary-local"
  }
 }

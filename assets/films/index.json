@@ -19,6 +19,10 @@
   "seconds": 62.1,
   "poster": "accessible-van-trip-reporting.jpg"
  },
+ "adoption-assistance-reassessment-signoffs": {
+  "seconds": 46.4,
+  "poster": "adoption-assistance-reassessment-signoffs.jpg"
+ },
  "affordable-housing-power-connection-delays": {
   "seconds": 57.6,
   "poster": "affordable-housing-power-connection-delays.jpg"
@@ -431,6 +435,10 @@
   "seconds": 131.4,
   "poster": "city-concession-receipts-rent-reconciliation.jpg"
  },
+ "city-financial-system-report-reconciliation": {
+  "seconds": 45.9,
+  "poster": "city-financial-system-report-reconciliation.jpg"
+ },
  "city-funded-nonprofits-fund-political-arms": {
   "seconds": 130.7,
   "poster": "city-funded-nonprofits-fund-political-arms.jpg"
@@ -507,6 +515,10 @@
   "seconds": 121.5,
   "poster": "contractor-gifts-off-the-list.jpg"
  },
+ "convention-and-treasure-island-cutoff": {
+  "seconds": 51.2,
+  "poster": "convention-and-treasure-island-cutoff.jpg"
+ },
  "court-debt-aging-categories": {
   "seconds": 48.7,
   "poster": "court-debt-aging-categories.jpg"
@@ -514,6 +526,10 @@
  "court-judicial-benefit-reimbursement": {
   "seconds": 41.9,
   "poster": "court-judicial-benefit-reimbursement.jpg"
+ },
+ "covid-relief-grant-period-extensions": {
+  "seconds": 42.9,
+  "poster": "covid-relief-grant-period-extensions.jpg"
  },
  "cpa-resilient-back-office": {
   "seconds": 172.4,
@@ -843,6 +859,10 @@
   "seconds": 52.5,
   "poster": "justis-project-budget-and-delivery.jpg"
  },
+ "juvenile-probation-foster-care-underclaim": {
+  "seconds": 50.4,
+  "poster": "juvenile-probation-foster-care-underclaim.jpg"
+ },
  "kelly-wong-puc": {
   "seconds": 130.5,
   "poster": "kelly-wong-puc.jpg"
@@ -1167,6 +1187,10 @@
   "seconds": 65.6,
   "poster": "port-rent-arrears-and-collections.jpg"
  },
+ "port-security-grant-vendor-check": {
+  "seconds": 52.7,
+  "poster": "port-security-grant-vendor-check.jpg"
+ },
  "portsmouth-bridge-removal-and-hotel-payments": {
   "seconds": 49.6,
   "poster": "portsmouth-bridge-removal-and-hotel-payments.jpg"
@@ -1394,6 +1418,10 @@
  "sfcta-design-contracts-grow-after-award": {
   "seconds": 173.1,
   "poster": "sfcta-design-contracts-grow-after-award.jpg"
+ },
+ "sffd-extractor-installation-purchase-orders": {
+  "seconds": 45.6,
+  "poster": "sffd-extractor-installation-purchase-orders.jpg"
  },
  "sfha-housing-voucher-inspection-backlog": {
   "seconds": 47.0,
@@ -1882,6 +1910,10 @@
  "zoo-loan-and-ledger": {
   "seconds": 159.5,
   "poster": "zoo-loan-and-ledger.jpg"
+ },
+ "zsfg-patient-credit-balance-corrections": {
+  "seconds": 45.0,
+  "poster": "zsfg-patient-credit-balance-corrections.jpg"
  },
  "zsfg-rehabilitation-design-change-orders": {
   "seconds": 50.9,
