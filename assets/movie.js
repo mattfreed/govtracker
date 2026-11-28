@@ -9,7 +9,7 @@
   const mediaUrl = (id, extension) => BASE + encodeURIComponent(id) + extension + editionQuery;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
-  const EIO = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+  const CUT_MS = 160;
   const fmtT = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
   const money = v => { const a = Math.abs(v); return a >= 1e9 ? '$' + (v / 1e9).toFixed(2) + 'B' : a >= 1e6 ? '$' + (v / 1e6).toFixed(1) + 'M' : a >= 1e4 ? '$' + Math.round(v / 1e3) + 'K' : '$' + Math.round(v).toLocaleString('en-US'); };
   const figs = t => esc(t).replace(/(-?\$[\d,]+(?:\.\d+)?(?:\s?(?:million|billion|thousand)|[KMB]\b)?|\b\d[\d,]*(?:\.\d+)?%|\b\d{1,3}(?:,\d{3})+\b)/g, '<b class="fig">$1</b>');
@@ -120,7 +120,7 @@
   }
   function close() {
     if (!cur) return;
-    const s = cur; cur = null; cancelAnimationFrame(s.raf);
+    const s = cur; cur = null; cancelAnimationFrame(s.raf); s.finishCut?.();
     try { s.voice.pause(); s.bed.pause(); } catch (e) { /* not started */ }
     if (s.blobUrl) URL.revokeObjectURL(s.blobUrl);
     window.removeEventListener('keydown', s.onKey, true); window.removeEventListener('resize', s.fit); if (s.onUp) window.removeEventListener('pointerup', s.onUp); if (s.ro) s.ro.disconnect();
@@ -137,7 +137,7 @@
     close();
     const inline = !!opts.host;                                                     // inline: inside a page element (the watch feed), not a full-screen dialog
     const root = document.createElement('div'); root.className = 'mv' + (inline ? ' mv-inline' : ''); root.setAttribute('role', inline ? 'region' : 'dialog'); if (!inline) root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', 'Film: ' + c.title);
-    root.innerHTML = `<div class="mv-wrap"><div class="mv-stage"><div class="mv-amb" aria-hidden="true"><i></i><i></i><i></i></div><div class="mv-bg6" aria-hidden="true"></div><div class="mv-flash" aria-hidden="true"></div><div class="mv-top"><b>SF Money Trail</b><span class="pill">${esc(TIER_TAG[c.tier] || 'Case')}</span><span class="ch"></span><div class="mv-prog" aria-hidden="true"></div><button type="button" class="mv-x" data-act="close" aria-label="Close the film" title="Close (Esc)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="mv-view"></div><div class="mv-view6" aria-hidden="true"></div><div class="mv-cap" aria-live="off"></div><div class="mv-msg">Opening the film…</div></div><button type="button" class="mv-bigplay" data-act="toggle" aria-label="Play the film"><span aria-hidden="true"></span></button></div>
+    root.innerHTML = `<div class="mv-wrap"><div class="mv-stage"><div class="mv-top"><b>SF Money Trail</b><span class="pill">${esc(TIER_TAG[c.tier] || 'Case')}</span><span class="ch"></span><div class="mv-prog" aria-hidden="true"></div><button type="button" class="mv-x" data-act="close" aria-label="Close the film" title="Close (Esc)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="mv-view"></div><div class="mv-view6" aria-hidden="true"></div><div class="mv-cap" aria-live="off"></div><div class="mv-msg">Opening the film…</div></div><button type="button" class="mv-bigplay" data-act="toggle" aria-label="Play the film"><span aria-hidden="true"></span></button></div>
       <div class="mv-bar"><div class="mv-chap"></div><button type="button" data-act="back" title="Back 10 seconds (Left arrow)" aria-label="Back 10 seconds">−10s</button><button type="button" class="play" data-act="toggle">Play</button><button type="button" data-act="fwd" title="Forward 10 seconds (Right arrow)" aria-label="Forward 10 seconds">+10s</button><span class="time">0:00 / 0:00</span>
         <div class="mv-scrub"><div class="ticks"></div><input type="range" min="0" max="100" step="0.01" value="0" aria-label="Position in the film"></div>
         <a class="mv-citation" target="_blank" rel="noopener noreferrer" hidden></a><button type="button" data-act="speed" title="Playing speed">1×</button><button type="button" data-act="cap" aria-pressed="true" title="Show or hide the words (C)">Words</button><button type="button" data-act="music" aria-pressed="true" title="Music and sounds on or off (M)">Sound bed</button><button type="button" data-act="voice" class="narr" aria-pressed="true" title="Narration on or off (N); the pictures and words keep playing"></button>
@@ -159,15 +159,25 @@
     const showNarr = () => { const b = $('[data-act=voice]'); voice.muted = !s.narr; b.setAttribute('aria-pressed', String(s.narr)); b.innerHTML = `${SPEAKER(s.narr)}<span>${s.narr ? 'Narration on' : 'Narration off'}</span>`; };
     showNarr();
     if (s.still != null) root.classList.add('still');                              // a still for checking the pictures: no fades
-    s.fit = () => { const r = $('.mv-wrap').getBoundingClientRect(), k = Math.min(r.width / W, r.height / H); stage.style.transform = `translate(-50%, -50%) scale(${Math.max(.2, k)})`; }; s.fit(); window.addEventListener('resize', s.fit);
+    s.fit = () => {
+      if (s.prepared && s.fitWidth !== innerWidth) { s.prepared.el.remove(); s.prepared = null; }
+      s.fitWidth = innerWidth;
+      const r = $('.mv-wrap').getBoundingClientRect(), k = Math.min(r.width / W, r.height / H); stage.style.transform = `translate(-50%, -50%) scale(${Math.max(.2, k)})`; }; s.fit(); window.addEventListener('resize', s.fit);
     if (window.ResizeObserver) { s.ro = new ResizeObserver(() => s.fit()); s.ro.observe($('.mv-wrap')); }           // the bar grows once the chapters arrive: refit then too
     // the film clock: the audio's own time, smoothed between its updates (some browsers move currentTime in steps) and never more than .25 s ahead of it
-    const clk = { ct: -1, pt: 0 };
+    const clk = { ct: -1, pt: 0, shown: 0 };
+    const motion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+    voice.addEventListener('seeking', () => { s.jump = true; clk.ct = -1; finishCut(); });
+    voice.addEventListener('pause', finishCut);
+    voice.addEventListener('waiting', finishCut);
     const now = () => {
       if (s.still != null) return s.still; if (s.want != null) return s.want;
       const ct = voice.currentTime || 0, pt = performance.now();
-      if (ct !== clk.ct || voice.paused || voice.ended) { clk.ct = ct; clk.pt = pt; return ct; }
-      return ct + Math.min(.25, (pt - clk.pt) / 1000 * (voice.playbackRate || 1));
+      const reset = clk.ct < 0 || voice.seeking || voice.paused || voice.ended || voice.readyState < 3;
+      if (reset || ct !== clk.ct) { clk.ct = ct; clk.pt = pt; }
+      const estimate = ct + Math.min(.25, (pt - clk.pt) / 1000 * (voice.playbackRate || 1));
+      clk.shown = reset ? ct : Math.max(clk.shown, estimate);
+      return Math.min(clk.shown, s.dur || Infinity);
     };
     s.now = now;
     s.citation = $('.mv-citation');
@@ -239,8 +249,8 @@
         let subs = null; try { subs = localStorage.getItem(SUBS_KEY); } catch (e) { /* none saved */ }
         if (subs === 'off') { root.classList.add('nocap'); $('[data-act=cap]').setAttribute('aria-pressed', 'false'); }
         $('[data-act=cap]').textContent = 'Subtitles'; $('[data-act=cap]').title = 'Subtitles on or off (C)';
-        s.look = m.look || 'midnight'; root.classList.add('look-' + s.look); s.bg6 = window.FD_FILM6.bg ? window.FD_FILM6.bg(s.look) : null; if (s.bg6) $('.mv-bg6').appendChild(s.bg6.el);
-        s.hits = []; s.beats.forEach(b => { const k = capsOf(b); (b.emph || []).forEach(e => { const tk = norm(e).split(' '), i = k.ws.findIndex((w, j) => tk.every((x, n) => norm(k.ws[j + n] || '') === x)); if (i < 0) return; tk.forEach((_, n) => k.em.add(i + n)); s.hits.push(b.t0 + k.at[i] * Math.max(.2, b.t1 - b.t0)); }); });
+        s.look = m.look || 'midnight'; root.classList.add('look-' + s.look);
+        s.beats.forEach(b => { const k = capsOf(b); (b.emph || []).forEach(e => { const tk = norm(e).split(' '), i = k.ws.findIndex((w, j) => tk.every((x, n) => norm(k.ws[j + n] || '') === x)); if (i < 0) return; tk.forEach((_, n) => k.em.add(i + n)); }); });
       }
       // chapters: where each view first starts
       s.chapters = []; s.beats.forEach(b => { if (!s.chapters.length || s.chapters[s.chapters.length - 1].view !== b.view) s.chapters.push({ view: b.view, t: Math.max(0, b.t0 - .15) }); });
@@ -249,6 +259,7 @@
       $('.mv-chap').innerHTML = s.chapters.map(x => `<button type="button" data-seek="${x.t}" data-view="${x.view}">${esc(chName(x.view))}</button>`).join('');
       $('.mv-prog').innerHTML = s.chapters.map(x => `<i style="flex:${Math.max(1, x.t1 - x.t).toFixed(1)}"><b></b></i>`).join('');
       $('.mv-scrub .ticks').innerHTML = s.chapters.slice(1).map(x => `<i style="left:${(x.t / s.dur * 100).toFixed(2)}%"></i>`).join('');
+      s.progressParts = Array.from(root.querySelectorAll('.mv-prog i'));
       // which people and bodies each story passage names (their whole name, or its first two words)
       const A = c.actors || [], keys = A.map(a => { const n = a.name.toLowerCase(), w = n.split(/\s+/); return [n, w.length > 2 && w[0].length > 3 && w[1].length > 3 ? w.slice(0, 2).join(' ') : null].filter(Boolean); });
       s.names = b => { const t = b.text.toLowerCase(); return keys.map((ks, j) => (ks.some(k => t.includes(k)) ? j : -1)).filter(j => j >= 0); };
@@ -256,6 +267,7 @@
     }).catch(() => { if (cur === s) $('.mv-msg').textContent = 'This film could not be opened. It may not have been built yet: run scripts/movies/build_movies.py.'; });
 
     // the chapter strip at the top, the subtitles, the bar: the same for both kinds of film
+    const timeLabel = $('.time'), playButton = $('.play');
     function chrome(t, b, bi, p) {
       if (s.citationBeat !== bi) {
         s.citationBeat = bi;
@@ -282,18 +294,34 @@
           link.setAttribute('aria-label', 'Open source in a new tab: ' + source.title);
         }
       }
-      if (s.chapters) { const ci = s.chapters.findIndex(x => t >= x.t && t < x.t1); $('.mv-prog').querySelectorAll('i').forEach((el, k) => { el.firstChild.style.transform = `scaleX(${k < ci ? 1 : k > ci ? 0 : clamp((t - s.chapters[k].t) / Math.max(.1, s.chapters[k].t1 - s.chapters[k].t))})`; el.classList.toggle('cur', k === ci); }); }
+      const ci = s.chapters.findIndex(x => t >= x.t && t < x.t1);
+      if (ci !== s.chapterIndex) {
+        s.progressParts.forEach((el, k) => {
+          el.firstChild.style.transform = k < ci || t >= s.dur ? 'scaleX(1)' : 'scaleX(0)';
+          el.classList.toggle('cur', k === ci);
+        });
+        s.chapterIndex = ci;
+      }
+      if (ci >= 0) {
+        const ch = s.chapters[ci];
+        s.progressParts[ci].firstChild.style.transform = 'scaleX(' + clamp((t - ch.t) / Math.max(.1, ch.t1 - ch.t)) + ')';
+      }
+      if (!s.ready) { s.ready = true; opts.onReady?.(); }
+      opts.onProgress?.(t, s.dur);
       if (s.v6) caps6(b, bi, p); else {
         const words = b.text.split(/\s+/), n = Math.max(1, Math.ceil(words.length / 15)), per = Math.ceil(words.length / n), j = Math.min(n - 1, Math.floor(p * n)), line = bi < 0 ? '' : words.slice(j * per, (j + 1) * per).join(' ');
         if (cap.textContent !== line) cap.textContent = line;
       }
       if (!s.drag) { const v = s.dur ? (t / s.dur * 100) : 0; if (Math.abs(+range.value - v) > .01) range.value = v; }
-      $('.time').textContent = `${fmtT(t)} / ${fmtT(s.dur)}`; const pb = $('.play'), lab = playing() ? 'Pause' : voice.ended ? 'Play again' : 'Play'; if (pb.textContent !== lab) pb.textContent = lab;
+      const label = fmtT(t) + ' / ' + fmtT(s.dur);
+      if (timeLabel.textContent !== label) timeLabel.textContent = label;
+      const action = playing() ? 'Pause' : voice.ended ? 'Play again' : 'Play';
+      if (playButton.textContent !== action) playButton.textContent = action;
     }
     // short-form captions: groups of up to four words, broken at punctuation, the word being said lit. Word times are
     // estimated from the passage's timing by the length of each word (the voice reads at an even pace).
     // A voice that reports word times (ElevenLabs, beat field wt) places each word exactly; otherwise times are estimated from word lengths.
-    // Emphasised words (the script's emph) get their own caption style and are where the picture punches (s.hits).
+    // Emphasised words come from the authored script.
     function norm(w) { return String(w).toLowerCase().replace(/[^a-z0-9$.%']/g, '').replace(/[.']+$/, ''); }
     function capsOf(b) {
       if (!b.caps) { const ws = b.text.split(/\s+/).filter(Boolean), d = Math.max(.2, b.t1 - b.t0); let at;
@@ -303,54 +331,127 @@
       return b.caps;
     }
     function caps6(b, bi, p) {
-      if (bi < 0) { if (cap.innerHTML) cap.innerHTML = ''; return; }
-      const { ws, at, gs, em } = capsOf(b); let wi = 0; while (wi + 1 < at.length && at[wi + 1] <= p) wi++;
-      const gi = gs.findIndex(g => g.includes(wi)), key = bi + ':' + gi + ':' + wi;
-      if (cap.dataset.k !== key) { cap.dataset.k = key; cap.innerHTML = `<span class="cg${cap.dataset.g === bi + ':' + gi ? '' : ' pop'}">${gs[gi].map(i => `<span class="${i === wi ? 'now' : i < wi ? 'past' : ''}${em.has(i) ? ' em' : ''}">${esc(ws[i])}</span>`).join(' ')}</span>`; cap.dataset.g = bi + ':' + gi; }
+      if (bi < 0) { if (cap.firstChild) cap.replaceChildren(); s.captionGroup = null; return; }
+      const { ws, at, gs, em } = capsOf(b);
+      let wi = 0;
+      while (wi + 1 < at.length && at[wi + 1] <= p) wi++;
+      const group = gs.find(g => g.includes(wi));
+      if (!group) return;
+      if (group !== s.captionGroup) {
+        cap.innerHTML = '<span class="cg">' + group.map(i => '<span' + (em.has(i) ? ' class="em"' : '') + '>' + esc(ws[i]) + '</span>').join(' ') + '</span>';
+        s.captionGroup = group;
+        s.captionWord = -1;
+      }
+      if (wi !== s.captionWord) {
+        [...cap.firstChild.children].forEach((word, j) => {
+          word.classList.toggle('now', group[j] === wi);
+          word.classList.toggle('past', group[j] < wi);
+        });
+        s.captionWord = wi;
+      }
     }
-    const IN6 = .27, OUT6 = .3;      /* s6out reaches opacity 0 at 90 % of .3 s = .27 s: the new shot starts only then, so the two never share the screen */                                                       // seconds: the incoming shot waits this long; the outgoing one is gone after that long
-    const drive6 = (el, e) => { el.style.setProperty('animation-play-state', 'paused', 'important'); el.style.setProperty('animation-delay', (-e).toFixed(3) + 's', 'important'); };      // important: .s6.out sets its animation !important, and only an important inline value outranks it     // a shot's entrance or exit, set to e seconds in
-    const view6 = $('.mv-view6'), amb = [...root.querySelectorAll('.mv-amb i')], flash = $('.mv-flash');
-    const punchAt = t => { let p = 0; for (const h of s.hits || []) { const d = t - h; if (d >= 0 && d < 1.2) p = Math.max(p, Math.exp(-d * 4.2) * Math.min(1, d / .04)); } return p; };
+
+    const view6 = $('.mv-view6');
+    const prep = document.createElement('div');
+    prep.className = 'mv-prep6';
+    prep.inert = true;
+    prep.setAttribute('aria-hidden', 'true');
+    view6.after(prep);
+    function warmNext(t, sh) {
+      const next = s.shots[sh.k + 1];
+      if (!next || !playing() || voice.seeking || s.prepared?.k === next.k) return;
+      const first = next.beats[0], remaining = first.t0 - t;
+      if (remaining > .7 || remaining <= 0) return;
+      const shot = window.FD_FILM6.shot(next.beats, c, next.k);
+      prep.replaceChildren(shot.el);
+      shot.update({t: first.t0, lt: first.t0 - next.t0, dur: Math.max(1, next.t1 - next.t0), i: 0, bp: 0, bt: 0});
+      s.prepared = {k: next.k, ...shot};
+    }
+    function finishCut() {
+      if (!s.cut) return;
+      const {animation, previous} = s.cut;
+      s.cut = null;
+      animation.onfinish = null;
+      animation.cancel();
+      previous.remove();
+    }
+    function canBlend() {
+      return playing() && !s.jump && !voice.seeking && !motion?.matches && typeof view6.animate === 'function';
+    }
+    // The outgoing plate stays opaque while the next one fades over it on the compositor.
+    function blend(previous, next) {
+      previous.classList.remove('in');
+      previous.classList.add('out');
+      previous.inert = true;
+      previous.setAttribute('aria-hidden', 'true');
+      const animation = next.animate([{opacity: 0}, {opacity: 1}], {duration: CUT_MS, easing: 'ease-out'});
+      // New animations otherwise wait for another rendering update to acquire a start time.
+      if (document.timeline?.currentTime != null) animation.startTime = document.timeline.currentTime;
+      s.cut = {animation, previous};
+      animation.onfinish = () => { if (s.cut?.animation === animation) finishCut(); };
+    }
+    s.finishCut = finishCut;
     function frame6(t, bi) {
       const b = s.beats[Math.max(0, bi)], sh = s.shots[b.si], p = bi < 0 ? 0 : clamp((t - b.t0) / Math.max(.2, b.t1 - b.t0));
-      if (!s.cur6 || s.cur6.k !== sh.k) {                                          // a new shot: the old one fades out as this one comes in
+      if (s.jump || motion?.matches) finishCut();
+      const changed = !s.cur6 || s.cur6.k !== sh.k;
+      let previous;
+      if (changed) {
+        finishCut();
         view6.setAttribute('aria-hidden', String(sh.kind !== 'end'));
-        const old = s.cur6; s.cur6 = { k: sh.k, start: sh.k ? sh.beats[0].t0 : 0, ...window.FD_FILM6.shot(sh.beats, c, sh.k) }; s.cur6.el.classList.add('in'); view6.appendChild(s.cur6.el);
-        if (s.old6) { s.old6.el.remove(); s.old6 = null; }                      // at most one shot on its way out
-        if (old) { if (s.jump || Math.abs(t - s.cur6.start) > .5) old.el.remove(); else { old.el.classList.remove('in'); old.el.classList.add('out'); s.old6 = { el: old.el, start: s.cur6.start }; } }
-        if (b.view !== s.view) { s.view = b.view; $('.mv-top .ch').textContent = s.chName(b.view); root.querySelectorAll('.mv-chap button').forEach(x => { const on = x.dataset.view === b.view; x.classList.toggle('cur', on); if (on && s.still == null && x.parentNode.scrollTo) x.parentNode.scrollTo({ left: Math.max(0, x.offsetLeft - 40), behavior: 'smooth' }); }); }
-        if (old && !s.jump && playing()) sound('whoosh');
+        const old = s.cur6;
+        s.cur6 = s.prepared?.k === sh.k ? s.prepared : {k: sh.k, ...window.FD_FILM6.shot(sh.beats, c, sh.k)};
+        s.prepared = null;
+        prep.replaceChildren();
+        s.cur6.el.classList.add('in');
+        view6.appendChild(s.cur6.el);
+        if (old) {
+          if (canBlend() && old.k + 1 === sh.k && t - b.t0 < .2) previous = old.el;
+          else old.el.remove();
+        }
+        if (b.view !== s.view) {
+          s.view = b.view;
+          $('.mv-top .ch').textContent = s.chName(b.view);
+          root.querySelectorAll('.mv-chap button').forEach(x => {
+            const on = x.dataset.view === b.view;
+            x.classList.toggle('cur', on);
+            if (on && !inline && s.still == null && x.parentNode.scrollTo) x.parentNode.scrollTo({left: Math.max(0, x.offsetLeft - 40), behavior: 'instant'});
+          });
+        }
       }
-      if (bi !== s.bi) { if (bi === s.bi + 1 && !s.jump && playing() && b.step > 0) sound(window.FD_FILM6.SFX[b.kind]); s.jump = false; s.bi = bi; }
-      // the cut, on the film clock (the same in the player, after a seek, and in a rendered still): the outgoing shot is gone in
-      // OUT6 s; the incoming one starts entering IN6 s after the cut, once the old one has nearly faded; nothing else stays on screen
-      drive6(s.cur6.el, t - s.cur6.start - IN6);
-      if (s.old6) { const e = t - s.old6.start; if (e < 0 || e >= OUT6 || s.jump) { s.old6.el.remove(); s.old6 = null; } else drive6(s.old6.el, e); }
-      for (const x of [...view6.children]) if (x !== s.cur6.el && !(s.old6 && x === s.old6.el)) x.remove();
       const lt = Math.max(0, t - sh.t0), dur = Math.max(1, sh.t1 - sh.t0);
-      try { s.cur6.update({ t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0) }); } catch (e) { if (!s.err6) { s.err6 = 1; console.error(e); } }
-      const cam = s.cur6.el.querySelector('.cam'), q = EIO(clamp(lt / dur)), dir = sh.k % 4;      // the camera: a slow push in, drifting a different way each shot
-      const pu = punchAt(t), shake = /kinetic|terminal|newsroom/.test(s.look) ? pu : pu * .35, sx = Math.sin(t * 73) * 9 * shake, sy = Math.cos(t * 61) * 6 * shake;      // emphasis: a punch in, a shake, a flash
-      if (cam) cam.style.transform = `scale(${(1.0 + .045 * q + .06 * pu).toFixed(4)}) translate(${((dir === 0 ? -1 : dir === 2 ? 1 : 0) * 14 * q + sx).toFixed(1)}px, ${((dir === 1 ? -1 : dir === 3 ? 1 : 0) * 9 * q + sy).toFixed(1)}px)`;
-      flash.style.opacity = (pu * .28).toFixed(3); view6.style.setProperty('--punch', pu.toFixed(3)); if (s.bg6) s.bg6.update(t);
-      amb.forEach((a, k) => { a.style.transform = `translate(${(Math.sin(t * .05 + k * 2) * 120).toFixed(1)}px, ${(Math.cos(t * .04 + k) * 60).toFixed(1)}px)`; });
+      function keepPreviousPage() {
+        if (changed || previous || !canBlend()) return;
+        finishCut();
+        previous = s.cur6.el.cloneNode(true);
+        view6.insertBefore(previous, s.cur6.el);
+      }
+      try { s.cur6.update({t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0), beforePageChange: keepPreviousPage}); }
+      catch (e) { if (!s.err6) { s.err6 = 1; console.error(e); } }
+      if (previous) blend(previous, s.cur6.el);
+      if (bi !== s.bi && bi === s.bi + 1 && !s.jump && playing() && b.step > 0) sound(window.FD_FILM6.SFX[b.kind]);
+      s.bi = bi;
+      s.jump = false;
       chrome(t, b, bi, p);
+      warmNext(t, sh);
     }
     function frame() {
       if (cur !== s) return; s.raf = requestAnimationFrame(frame);
       const t = now(), beats = s.beats; let bi = -1;
-      if (s.still == null && t === s.lastT && !playing() && !s.jump) return; s.lastT = t;      // paused and nothing moved: no work this frame
+      if (t === s.lastT && !playing() && !s.jump && voice.paused === s.lastPaused) return; s.lastPaused = voice.paused; s.lastT = t;      // paused and nothing moved: no work this frame
       for (let lo = 0, hi = beats.length - 1; lo <= hi;) { const mid = (lo + hi) >> 1; if (beats[mid].t0 <= t) { bi = mid; lo = mid + 1; } else hi = mid - 1; }
       if (s.v6) return frame6(t, bi);
       const b = beats[Math.max(0, bi)], p = bi < 0 ? 0 : clamp((t - b.t0) / Math.max(.2, b.t1 - b.t0));
-      if (b.view !== s.view) {                                                    // a new scene: build it now, switch it on in the next frame so that it fades in
-        s.view = b.view; s.bi = -2; view.classList.remove('in'); const render = draw[b.view];
+      if (b.view !== s.view) {
+        finishCut();
+        const previous = s.view && canBlend() && bi === s.bi + 1 ? view.cloneNode(true) : null;
+        if (previous) view.before(previous);
+        s.view = b.view; s.bi = -2; const render = draw[b.view];
         view.dataset.graphics = 'legacy';
         view.innerHTML = render ? render(c, beats.filter(x => x.view === b.view)) : '<div class="v-open"><h1>' + esc(b.text || c.title) + '</h1></div>';
         $('.mv-top .ch').textContent = CHAPTER[b.view] || ''; root.querySelectorAll('.mv-chap button').forEach(x => x.classList.toggle('cur', x.dataset.view === b.view));
         const r = view.querySelector('[data-roll]'); if (r) s.roll = r;
-        return;
+        if (previous) blend(previous, view);
       }
       if (bi !== s.bi) {
         const step = bi === s.bi + 1 && !s.jump; s.jump = false; view.classList.add('in');

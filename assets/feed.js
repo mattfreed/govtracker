@@ -48,7 +48,7 @@
       <div class="reel-stage">
         <div class="reel-frame" data-act="toggle"><div class="reel-live" aria-label="Film: ${esc(c.title)}"></div>
           <img src="assets/films/${esc(r.poster)}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}"><div class="reel-big"><span></span></div>
-          <button type="button" class="reel-full" data-act="fullscreen" aria-label="Enter full screen" title="Full screen (F)" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="expand-film" d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6"/><path class="shrink-film" d="M9 3v6H3m12-6v6h6m0 6h-6v6m-6 0v-6H3"/></svg></button><button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><b></b><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
+          <button type="button" class="reel-full" data-act="fullscreen" aria-label="Enter full screen" title="Full screen (F)" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="expand-film" d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6"/><path class="shrink-film" d="M9 3v6H3m12-6v6h6m0 6h-6v6m-6 0v-6H3"/></svg></button><button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><span class="reel-thumb"><b></b></span><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
         <div class="reel-info">
           <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span><span class="rt-def">${esc(DEF[c.tier] || '')}</span><span class="rt-defs">${esc(DEFS[c.tier] || '')}</span></div><div class="reel-sub"><span>${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
           <h2><a href="#case/${esc(c.id)}">${esc(c.title)}</a></h2>
@@ -167,7 +167,13 @@
       if (s.mi === i && s.media) return s.media;
       if (window.FDMOVIE) window.FDMOVIE.close(); s.media = null; s.mi = -1;
       const c = s.byId[reels[i].dataset.id], host = reels[i].querySelector('.reel-live'); if (!c || !host || !window.FDMOVIE) return null;
-      const h = window.FDMOVIE.open(c, null, { host, citationHost: reels[i].querySelector('.reel-sub'), noplay: true }); if (!h) return null;
+      reels[i].classList.remove('film-ready');
+      const h = window.FDMOVIE.open(c, null, {
+        host, citationHost: reels[i].querySelector('.reel-sub'), noplay: true,
+        onReady: () => reels[i].classList.add('film-ready'),
+        onProgress: (time, duration) => shows[i](time, duration)
+      });
+      if (!h) return null;
       s.media = h.voice; s.mi = i; wire(i, h.voice); return h.voice;
     };
     const muteIcon = () => root.querySelectorAll('[data-act=mute]').forEach(b => { b.innerHTML = s.sound ? ICON.sound : ICON.mute; });
@@ -190,15 +196,38 @@
       const r = reels[k];
       v.addEventListener('playing', () => { r.classList.add('playing', 'started'); const nx = reels[k + 1]; if (nx && window.FDMOVIE && window.FDMOVIE.prefetch) window.FDMOVIE.prefetch(s.byId[nx.dataset.id]); });      // the next film's beats and first audio bytes, so a swipe opens it at once
       v.addEventListener('pause', () => r.classList.remove('playing'));
-      v.addEventListener('timeupdate', shows[k]); v.addEventListener('seeked', shows[k]);
       v.addEventListener('ended', () => { r.classList.remove('playing'); if (s.i === k) go(k + 1); });
     }
     reels.forEach((r, k) => {
       const bar = r.querySelector('.reel-prog i');
-      const prog = r.querySelector('.reel-prog'), tl = r.querySelector('.reel-time'), knob = prog.querySelector('b');
-      const show = shows[k] = () => { const v = vid(k); if (!v || !v.duration || !isFinite(v.duration)) return; const f = v.currentTime / v.duration; r.classList.toggle('ending', v.duration - v.currentTime < 12); bar.style.width = (f * 100).toFixed(2) + '%'; knob.style.left = (f * 100).toFixed(2) + '%'; tl.textContent = mmss(v.currentTime) + ' / ' + mmss(v.duration); prog.setAttribute('aria-valuenow', Math.round(v.currentTime)); };
+      const prog = r.querySelector('.reel-prog'), tl = r.querySelector('.reel-time'), thumb = prog.querySelector('.reel-thumb');
+      function position(fraction) {
+        bar.style.transform = 'scaleX(' + fraction + ')';
+        thumb.style.transform = 'translateX(' + fraction * 100 + '%)';
+      }
+      let lastSecond, lastDuration;
+      const show = shows[k] = (time, duration) => {
+        if (!Number.isFinite(duration) || duration <= 0) return;
+        position(Math.min(1, Math.max(0, time / duration)));
+        const whole = Math.floor(time);
+        if (whole === lastSecond && duration === lastDuration) return;
+        lastSecond = whole;
+        lastDuration = duration;
+        r.classList.toggle('ending', duration - time < 12);
+        tl.textContent = mmss(time) + ' / ' + mmss(duration);
+        prog.setAttribute('aria-valuenow', whole);
+        prog.setAttribute('aria-valuemax', Math.ceil(duration));
+      };
       /* scrubbing: press or drag on the bar to move through the film */
-      const seekTo = x => { const v = vid(k) || openLive(k); if (!v) return; const b = prog.getBoundingClientRect(), f = Math.max(0, Math.min(1, (x - b.left) / b.width)); const go2 = () => { v.currentTime = f * v.duration; show(); }; if (v.duration && isFinite(v.duration)) go2(); else v.addEventListener('loadedmetadata', go2, { once: true }); bar.style.width = knob.style.left = (f * 100).toFixed(2) + '%'; };
+      const seekTo = x => {
+        const v = vid(k) || openLive(k);
+        if (!v) return;
+        const rect = prog.getBoundingClientRect(), f = Math.max(0, Math.min(1, (x - rect.left) / rect.width));
+        const apply = () => { v.currentTime = f * v.duration; show(v.currentTime, v.duration); };
+        if (v.duration && isFinite(v.duration)) apply();
+        else v.addEventListener('loadedmetadata', apply, {once:true});
+        position(f);
+      };
       prog.addEventListener('pointerdown', e => { e.preventDefault(); e.stopPropagation(); if (k !== s.i) { go(k); return; } const v = vid(k) || openLive(k); if (!v) return; prog.setPointerCapture(e.pointerId); prog.classList.add('drag'); s.wasPaused = v.paused; v.pause(); seekTo(e.clientX); });
       prog.addEventListener('pointermove', e => { if (prog.classList.contains('drag')) seekTo(e.clientX); });
       const up = e => { if (!prog.classList.contains('drag')) return; prog.classList.remove('drag'); seekTo(e.clientX); if (!s.wasPaused || !r.classList.contains('started')) play(k); };

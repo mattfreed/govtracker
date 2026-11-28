@@ -825,17 +825,18 @@
       const i=Math.min(Math.max(0,st.i || 0),bs.length-1),b=bs[i];
       if(lastIndex!==i){
         const key=keys[i];
-        if(key!==lastKey){paint(b);lastKey=key;fit();}
+        if(key!==lastKey){st.beforePageChange?.();paint(b);lastKey=key;}
+        if(!pages.length) fit();
         lastIndex=i;
       }
       if(pages.length) {
         // Continued beats with identical visuals share page time. An authored change begins a new table.
         const phase=bs.length>1 && oneVisual ? st.lt/Math.max(.2,st.dur) : st.bp;
         const next=Math.min(pages.length-1,Math.floor(Math.max(0,phase || 0)*pages.length));
-        if(next!==pageIndex){pages.forEach((p,k)=>{p.hidden=k!==next;});if(pageLabel)pageLabel.textContent=(next+1)+' / '+pages.length;pageIndex=next;fit();}
+        if(next!==pageIndex){if(pageIndex>=0) st.beforePageChange?.();pages.forEach((p,k)=>{p.hidden=k!==next;});if(pageLabel)pageLabel.textContent=(next+1)+' / '+pages.length;pageIndex=next;fit();}
       }
     }
-    paint(bs[0]); return {el,update};
+    paint(bs[0]); lastKey=keys[0]; return {el,update};
   }
 
   window.FD_FILM6 = {
