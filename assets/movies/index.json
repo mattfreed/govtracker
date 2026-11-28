@@ -1598,5 +1598,21 @@
  "blackstone-att-lobbying-payments": {
   "seconds": 40.2,
   "passages": 13
+ },
+ "bart-workers-compensation-claims-referral-rates": {
+  "seconds": 40.8,
+  "passages": 11
+ },
+ "comcast-franchise-rebuild-settlement": {
+  "seconds": 54.9,
+  "passages": 13
+ },
+ "harris-district-attorney-spending-settlement": {
+  "seconds": 44.4,
+  "passages": 11
+ },
+ "sfpuc-water-discount-eligibility-and-repayments": {
+  "seconds": 57.2,
+  "passages": 13
  }
 }
