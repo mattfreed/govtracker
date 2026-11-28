@@ -1,1 +1,605 @@
-{"id": "st-francis-marine-lease-audits", "title": "Two audits of a waterfront lease reached very different answers", "seconds": 79.7, "voice": "elevenlabs:iPYqcpY8j8Ap4jUf28I3", "narrator": "Michael", "made": "2026-11-27", "key": "56057fe13f9c9d80", "words": 178, "beats": [{"scene": "first", "kind": "hook", "ref": ["suspicious[0]", "established[0]"], "text": "The Ramp restaurant and San Francisco Boatworks shared a Port tenant.", "t0": 0.2, "t1": 4.45, "shot": "r0", "visual": {"type": "hook", "words": ["Could", "the", "Port", "account", "for", "the", "rent?"], "sub": "St. Francis Marine Center"}, "wt": [0.0, 0.15, 0.49, 1.08, 1.26, 1.52, 2.13, 3.11, 3.46, 3.53, 3.83]}, {"scene": "first", "kind": "doc", "ref": ["suspicious[0]", "established[0]"], "text": "The lease tied part of the rent to gross receipts.", "t0": 4.57, "t1": 7.47, "shot": "r1", "visual": {"type": "doc", "source": "earlier", "kicker": "San Francisco Controller, City Services Auditor", "text": "2011 through 2013 audit period", "mark": "2011 through 2013 audit period"}, "wt": [0.0, 0.17, 0.56, 0.9, 1.11, 1.19, 1.34, 1.64, 1.81, 2.2]}, {"scene": "first", "kind": "bignum", "ref": ["suspicious[0]", "established[0]"], "text": "Auditors found", "t0": 7.59, "t1": 8.44, "shot": "r2", "visual": {"type": "bignum", "value": "$382,179", "label": "Gross revenue omitted from the report"}, "wt": [0.0, 0.55]}, {"scene": "first", "kind": "doc", "ref": ["suspicious[0]", "established[0]"], "text": "$382,179 in unreported", "t0": 8.44, "t1": 14.48, "shot": "r2-source", "visual": {"type": "doc", "source": "earlier", "text": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013", "mark": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013", "kicker": "San Francisco Controller, City Services Auditor"}, "wt": [0.04, 0.4, 0.88, 1.5, 2.05, 2.38, 3.08, 4.06, 5.08, 5.37]}, {"scene": "first", "kind": "doc", "ref": ["suspicious[0]", "established[0]"], "text": "gross revenue, including surcharges.", "t0": 14.48, "t1": 17.39, "shot": "r2-source", "visual": {"type": "doc", "source": "earlier", "text": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013", "mark": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013", "kicker": "San Francisco Controller, City Services Auditor"}, "wt": [0.04, 0.4, 1.4, 2.04]}, {"scene": "first", "kind": "record", "ref": ["suspicious[1]", "established[1]"], "text": "They calculated $25,491 in unpaid", "t0": 17.51, "t1": 23.0, "shot": "r3", "visual": {"type": "record", "layout": "amounts", "context": "Earlier audit", "heading": "Percentage rent and interest", "source": "earlier", "rows": [{"icon": "file", "label": "Percentage rent due", "value": "$25,491"}, {"icon": "file", "label": "Interest", "value": "$7,121"}]}, "wt": [0.0, 0.19, 0.85, 1.56, 2.1, 2.34, 2.73, 3.44, 4.48, 4.81]}, {"scene": "first", "kind": "doc", "ref": ["suspicious[1]", "established[1]"], "text": "percentage rent, plus interest.", "t0": 23.0, "t1": 25.6, "shot": "r3-source", "visual": {"type": "doc", "source": "earlier", "text": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013", "mark": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013", "kicker": "San Francisco Controller, City Services Auditor"}, "wt": [0.04, 0.56, 1.46, 2.01]}, {"scene": "first", "kind": "quote", "ref": ["suspicious[1]", "established[1]"], "text": "The audit separately identified $185 in unpaid base rent.", "t0": 25.72, "t1": 31.7, "shot": "r4", "visual": {"type": "quote", "line": "Base rent"}, "wt": [0.0, 0.15, 0.48, 0.96, 1.68, 2.02, 2.5, 3.23, 4.18, 4.49, 5.21, 5.61]}, {"scene": "first", "kind": "doc", "ref": ["suspicious[1]", "established[1]"], "text": "The Port said it would invoice the tenant and pursue collection.", "t0": 31.82, "t1": 35.48, "shot": "r5", "visual": {"type": "doc", "source": "earlier", "kicker": "San Francisco Controller, City Services Auditor", "text": "Port response", "mark": "Port response"}, "wt": [0.0, 0.19, 0.56, 0.81, 0.91, 1.13, 1.73, 1.86, 2.31, 2.48, 3.0]}, {"scene": "checks", "kind": "doc", "ref": ["suspicious[2]", "established[2]"], "text": "Years later, the auditors could not match checks to rent bills.", "t0": 35.7, "t1": 40.06, "shot": "r6", "visual": {"type": "doc", "source": "later", "kicker": "San Francisco Controller, City Services Auditor", "text": "2018 to 2021 audit period", "mark": "2018 to 2021 audit period"}, "wt": [0.0, 0.56, 1.35, 1.53, 2.05, 2.27, 2.52, 2.86, 3.29, 3.46, 3.74]}, {"scene": "checks", "kind": "record", "ref": ["suspicious[2]", "established[2]"], "text": "From February 2020 through December 2021,", "t0": 40.18, "t1": 44.52, "shot": "r7", "visual": {"type": "record", "layout": "relationship", "context": "The payment records changed", "heading": "What the later auditors could trace", "source": "later", "rows": [{"icon": "file", "label": "Through January 2020", "value": "Multiple checks"}, {"icon": "file", "label": "From February 2020", "value": "No supporting payment documents"}]}, "wt": [0.0, 0.27, 0.87, 1.24, 1.96, 2.24, 2.76, 3.11]}, {"scene": "checks", "kind": "doc", "ref": ["suspicious[2]", "established[2]"], "text": "the tenant provided no supporting payment documents.", "t0": 44.52, "t1": 47.65, "shot": "r7-source", "visual": {"type": "doc", "source": "later", "text": "Port Commission: Audit of St. Francis Marine Center for January 1, 2018, Through December 31, 2021, Could Not Be Completed Because of Pending Litigation and Lack of Records", "mark": "Port Commission: Audit of St. Francis Marine Center for January 1, 2018, Through December 31, 2021, Could Not Be Completed Because of Pending Litigation and Lack of Records", "kicker": "San Francisco Controller, City Services Auditor"}, "wt": [0.04, 0.2, 0.53, 1.07, 1.51, 2.07, 2.47]}, {"scene": "checks", "kind": "quote", "ref": ["suspicious[2]", "established[2]"], "text": "Some Port receipts also left out the period or purpose.", "t0": 47.77, "t1": 50.9, "shot": "r8", "visual": {"type": "quote", "line": "Port receipts"}, "wt": [0.0, 0.31, 0.69, 1.2, 1.53, 1.77, 1.93, 2.05, 2.43, 2.56]}, {"scene": "checks", "kind": "doc", "ref": ["suspicious[3]", "established[3]"], "text": "Counsel disclosed litigation alleging the tenant’s former controller misrepresented rent payments.", "t0": 51.02, "t1": 56.9, "shot": "r9", "visual": {"type": "doc", "source": "later", "kicker": "San Francisco Controller, City Services Auditor", "text": "Later audit and tenant counsel", "mark": "Later audit and tenant counsel"}, "wt": [0.0, 0.53, 1.18, 2.14, 2.66, 2.79, 3.17, 3.52, 4.18, 5.11, 5.35]}, {"scene": "checks", "kind": "quote", "ref": ["suspicious[3]", "established[3]"], "text": "The auditors could not determine whether the tenant complied from 2018 through 2021.", "t0": 57.02, "t1": 63.29, "shot": "r10", "visual": {"type": "quote", "line": "Rent compliance remained unresolved"}, "wt": [0.0, 0.2, 0.73, 0.96, 1.19, 1.76, 2.05, 2.17, 2.51, 3.52, 3.78, 4.12, 4.9, 5.22, 5.56]}, {"scene": "checks", "kind": "doc", "ref": ["suspicious[4]", "established[4]"], "text": "In March 2026, the Port said it was negotiating with the tenant.", "t0": 63.41, "t1": 67.68, "shot": "r11", "visual": {"type": "doc", "source": "interim", "kicker": "San Francisco Controller, City Services Auditor", "text": "March 2026 update", "mark": "March 2026 update"}, "wt": [0.0, 0.2, 0.55, 0.86, 1.96, 2.12, 2.46, 2.65, 2.73, 2.88, 3.59, 3.74, 3.86]}, {"scene": "checks", "kind": "doc", "ref": ["suspicious[4]", "established[4]"], "text": "The Controller later listed the audit as closed.", "t0": 67.8, "t1": 70.53, "shot": "r12", "visual": {"type": "doc", "source": "followup", "kicker": "San Francisco Controller, City Services Auditor", "text": "2026 follow-up", "mark": "2026 follow-up"}, "wt": [0.0, 0.13, 0.7, 1.05, 1.42, 1.57, 1.88, 2.06]}, {"scene": "checks", "kind": "unknowns", "ref": ["notEstablished[0]"], "text": "That list gives neither a reconstructed rent balance nor a court outcome.", "t0": 70.65, "t1": 76.04, "shot": "r13", "visual": {"type": "unknowns", "cards": ["Rent reconciliation", "Court disposition"]}, "wt": [0.0, 0.34, 1.1, 1.42, 1.76, 1.86, 2.7, 2.95, 3.91, 4.44, 4.61, 4.88]}, {"scene": "checks", "kind": "end", "ref": ["status"], "text": "Every source is linked in the case file below.", "t0": 76.16, "t1": 78.79, "shot": "r14", "visual": {"type": "end"}, "wt": [0.0, 0.46, 0.92, 1.11, 1.41, 1.49, 1.6, 1.86, 2.17]}], "format": 6, "chapters": {"first": "Two businesses on one lease", "checks": "Why the next audit could not give an answer"}, "look": "flow", "hook": "question"}
+{
+ "id": "st-francis-marine-lease-audits",
+ "title": "Two audits of a waterfront lease reached very different answers",
+ "seconds": 79.7,
+ "voice": "elevenlabs:iPYqcpY8j8Ap4jUf28I3",
+ "narrator": "Michael",
+ "made": "2026-11-27",
+ "key": "50a5ed11701822d4",
+ "words": 178,
+ "beats": [
+  {
+   "scene": "first",
+   "kind": "hook",
+   "ref": [
+    "suspicious[0]",
+    "established[0]"
+   ],
+   "text": "The Ramp restaurant and San Francisco Boatworks shared a Port tenant.",
+   "t0": 0.2,
+   "t1": 4.45,
+   "shot": "r0",
+   "visual": {
+    "type": "hook",
+    "words": [
+     "Could",
+     "the",
+     "Port",
+     "account",
+     "for",
+     "the",
+     "rent?"
+    ],
+    "sub": "St. Francis Marine Center"
+   },
+   "wt": [
+    0.0,
+    0.15,
+    0.49,
+    1.08,
+    1.26,
+    1.52,
+    2.13,
+    3.11,
+    3.46,
+    3.53,
+    3.83
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "doc",
+   "ref": [
+    "suspicious[0]",
+    "established[0]"
+   ],
+   "text": "The lease tied part of the rent to gross receipts.",
+   "t0": 4.57,
+   "t1": 7.47,
+   "shot": "r1",
+   "visual": {
+    "type": "doc",
+    "source": "earlier",
+    "kicker": "San Francisco Controller, City Services Auditor",
+    "text": "2011 through 2013 audit period",
+    "mark": "2011 through 2013 audit period"
+   },
+   "wt": [
+    0.0,
+    0.17,
+    0.56,
+    0.9,
+    1.11,
+    1.19,
+    1.34,
+    1.64,
+    1.81,
+    2.2
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[0]",
+    "established[0]"
+   ],
+   "text": "Auditors found",
+   "t0": 7.59,
+   "t1": 8.44,
+   "shot": "r2",
+   "visual": {
+    "type": "bignum",
+    "value": "$382,179",
+    "label": "Gross revenue omitted from the report"
+   },
+   "wt": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[0]",
+    "established[0]"
+   ],
+   "text": "$382,179 in unreported",
+   "t0": 8.44,
+   "t1": 14.48,
+   "shot": "r2",
+   "visual": {
+    "type": "bignum",
+    "value": "$382,179",
+    "label": "Gross revenue omitted from the report"
+   },
+   "wt": [
+    0.04,
+    0.4,
+    0.88,
+    1.5,
+    2.05,
+    2.38,
+    3.08,
+    4.06,
+    5.08,
+    5.37
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[0]",
+    "established[0]"
+   ],
+   "text": "gross revenue, including surcharges.",
+   "t0": 14.48,
+   "t1": 17.39,
+   "shot": "r2",
+   "visual": {
+    "type": "bignum",
+    "value": "$382,179",
+    "label": "Gross revenue omitted from the report"
+   },
+   "wt": [
+    0.04,
+    0.4,
+    1.4,
+    2.04
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "record",
+   "ref": [
+    "suspicious[1]",
+    "established[1]"
+   ],
+   "text": "They calculated $25,491 in unpaid",
+   "t0": 17.51,
+   "t1": 23.0,
+   "shot": "r3",
+   "visual": {
+    "type": "record",
+    "layout": "amounts",
+    "context": "Earlier audit",
+    "heading": "Percentage rent and interest",
+    "source": "earlier",
+    "rows": [
+     {
+      "icon": "file",
+      "label": "Percentage rent due",
+      "value": "$25,491"
+     },
+     {
+      "icon": "file",
+      "label": "Interest",
+      "value": "$7,121"
+     }
+    ]
+   },
+   "wt": [
+    0.0,
+    0.19,
+    0.85,
+    1.56,
+    2.1,
+    2.34,
+    2.73,
+    3.44,
+    4.48,
+    4.81
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "doc",
+   "ref": [
+    "suspicious[1]",
+    "established[1]"
+   ],
+   "text": "percentage rent, plus interest.",
+   "t0": 23.0,
+   "t1": 25.6,
+   "shot": "r3-source",
+   "visual": {
+    "type": "doc",
+    "source": "earlier",
+    "text": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013",
+    "mark": "Port Commission: St. Francis Marine Center Underpaid $25,491 in Rent to the Port for 2011 Through 2013",
+    "kicker": "San Francisco Controller, City Services Auditor"
+   },
+   "wt": [
+    0.04,
+    0.56,
+    1.46,
+    2.01
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "quote",
+   "ref": [
+    "suspicious[1]",
+    "established[1]"
+   ],
+   "text": "The audit separately identified $185 in unpaid base rent.",
+   "t0": 25.72,
+   "t1": 31.7,
+   "shot": "r4",
+   "visual": {
+    "type": "quote",
+    "line": "Base rent"
+   },
+   "wt": [
+    0.0,
+    0.15,
+    0.48,
+    0.96,
+    1.68,
+    2.02,
+    2.5,
+    3.23,
+    4.18,
+    4.49,
+    5.21,
+    5.61
+   ]
+  },
+  {
+   "scene": "first",
+   "kind": "doc",
+   "ref": [
+    "suspicious[1]",
+    "established[1]"
+   ],
+   "text": "The Port said it would invoice the tenant and pursue collection.",
+   "t0": 31.82,
+   "t1": 35.48,
+   "shot": "r5",
+   "visual": {
+    "type": "doc",
+    "source": "earlier",
+    "kicker": "San Francisco Controller, City Services Auditor",
+    "text": "Port response",
+    "mark": "Port response"
+   },
+   "wt": [
+    0.0,
+    0.19,
+    0.56,
+    0.81,
+    0.91,
+    1.13,
+    1.73,
+    1.86,
+    2.31,
+    2.48,
+    3.0
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "doc",
+   "ref": [
+    "suspicious[2]",
+    "established[2]"
+   ],
+   "text": "Years later, the auditors could not match checks to rent bills.",
+   "t0": 35.7,
+   "t1": 40.06,
+   "shot": "r6",
+   "visual": {
+    "type": "doc",
+    "source": "later",
+    "kicker": "San Francisco Controller, City Services Auditor",
+    "text": "2018 to 2021 audit period",
+    "mark": "2018 to 2021 audit period"
+   },
+   "wt": [
+    0.0,
+    0.56,
+    1.35,
+    1.53,
+    2.05,
+    2.27,
+    2.52,
+    2.86,
+    3.29,
+    3.46,
+    3.74
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "record",
+   "ref": [
+    "suspicious[2]",
+    "established[2]"
+   ],
+   "text": "From February 2020 through December 2021,",
+   "t0": 40.18,
+   "t1": 44.52,
+   "shot": "r7",
+   "visual": {
+    "type": "record",
+    "layout": "relationship",
+    "context": "The payment records changed",
+    "heading": "What the later auditors could trace",
+    "source": "later",
+    "rows": [
+     {
+      "icon": "file",
+      "label": "Through January 2020",
+      "value": "Multiple checks"
+     },
+     {
+      "icon": "file",
+      "label": "From February 2020",
+      "value": "No supporting payment documents"
+     }
+    ]
+   },
+   "wt": [
+    0.0,
+    0.27,
+    0.87,
+    1.24,
+    1.96,
+    2.24,
+    2.76,
+    3.11
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "doc",
+   "ref": [
+    "suspicious[2]",
+    "established[2]"
+   ],
+   "text": "the tenant provided no supporting payment documents.",
+   "t0": 44.52,
+   "t1": 47.65,
+   "shot": "r7-source",
+   "visual": {
+    "type": "doc",
+    "source": "later",
+    "text": "Port Commission: Audit of St. Francis Marine Center for January 1, 2018, Through December 31, 2021, Could Not Be Completed Because of Pending Litigation and Lack of Records",
+    "mark": "Port Commission: Audit of St. Francis Marine Center for January 1, 2018, Through December 31, 2021, Could Not Be Completed Because of Pending Litigation and Lack of Records",
+    "kicker": "San Francisco Controller, City Services Auditor"
+   },
+   "wt": [
+    0.04,
+    0.2,
+    0.53,
+    1.07,
+    1.51,
+    2.07,
+    2.47
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "quote",
+   "ref": [
+    "suspicious[2]",
+    "established[2]"
+   ],
+   "text": "Some Port receipts also left out the period or purpose.",
+   "t0": 47.77,
+   "t1": 50.9,
+   "shot": "r8",
+   "visual": {
+    "type": "quote",
+    "line": "Port receipts"
+   },
+   "wt": [
+    0.0,
+    0.31,
+    0.69,
+    1.2,
+    1.53,
+    1.77,
+    1.93,
+    2.05,
+    2.43,
+    2.56
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "doc",
+   "ref": [
+    "suspicious[3]",
+    "established[3]"
+   ],
+   "text": "Counsel disclosed litigation alleging the tenant’s former controller misrepresented rent payments.",
+   "t0": 51.02,
+   "t1": 56.9,
+   "shot": "r9",
+   "visual": {
+    "type": "doc",
+    "source": "later",
+    "kicker": "San Francisco Controller, City Services Auditor",
+    "text": "Later audit and tenant counsel",
+    "mark": "Later audit and tenant counsel"
+   },
+   "wt": [
+    0.0,
+    0.53,
+    1.18,
+    2.14,
+    2.66,
+    2.79,
+    3.17,
+    3.52,
+    4.18,
+    5.11,
+    5.35
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "quote",
+   "ref": [
+    "suspicious[3]",
+    "established[3]"
+   ],
+   "text": "The auditors could not determine whether the tenant complied from 2018 through 2021.",
+   "t0": 57.02,
+   "t1": 63.29,
+   "shot": "r10",
+   "visual": {
+    "type": "quote",
+    "line": "Rent compliance remained unresolved"
+   },
+   "wt": [
+    0.0,
+    0.2,
+    0.73,
+    0.96,
+    1.19,
+    1.76,
+    2.05,
+    2.17,
+    2.51,
+    3.52,
+    3.78,
+    4.12,
+    4.9,
+    5.22,
+    5.56
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "doc",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "In March 2026, the Port said it was negotiating with the tenant.",
+   "t0": 63.41,
+   "t1": 67.68,
+   "shot": "r11",
+   "visual": {
+    "type": "doc",
+    "source": "interim",
+    "kicker": "San Francisco Controller, City Services Auditor",
+    "text": "March 2026 update",
+    "mark": "March 2026 update"
+   },
+   "wt": [
+    0.0,
+    0.2,
+    0.55,
+    0.86,
+    1.96,
+    2.12,
+    2.46,
+    2.65,
+    2.73,
+    2.88,
+    3.59,
+    3.74,
+    3.86
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "doc",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "The Controller later listed the audit as closed.",
+   "t0": 67.8,
+   "t1": 70.53,
+   "shot": "r12",
+   "visual": {
+    "type": "doc",
+    "source": "followup",
+    "kicker": "San Francisco Controller, City Services Auditor",
+    "text": "2026 follow-up",
+    "mark": "2026 follow-up"
+   },
+   "wt": [
+    0.0,
+    0.13,
+    0.7,
+    1.05,
+    1.42,
+    1.57,
+    1.88,
+    2.06
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "unknowns",
+   "ref": [
+    "notEstablished[0]"
+   ],
+   "text": "That list gives neither a reconstructed rent balance nor a court outcome.",
+   "t0": 70.65,
+   "t1": 76.04,
+   "shot": "r13",
+   "visual": {
+    "type": "unknowns",
+    "cards": [
+     "Rent reconciliation",
+     "Court disposition"
+    ]
+   },
+   "wt": [
+    0.0,
+    0.34,
+    1.1,
+    1.42,
+    1.76,
+    1.86,
+    2.7,
+    2.95,
+    3.91,
+    4.44,
+    4.61,
+    4.88
+   ]
+  },
+  {
+   "scene": "checks",
+   "kind": "end",
+   "ref": [
+    "status"
+   ],
+   "text": "Every source is linked in the case file below.",
+   "t0": 76.16,
+   "t1": 78.79,
+   "shot": "r14",
+   "visual": {
+    "type": "end"
+   },
+   "wt": [
+    0.0,
+    0.46,
+    0.92,
+    1.11,
+    1.41,
+    1.49,
+    1.6,
+    1.86,
+    2.17
+   ]
+  }
+ ],
+ "format": 6,
+ "chapters": {
+  "first": "Two businesses on one lease",
+  "checks": "Why the next audit could not give an answer"
+ },
+ "look": "flow",
+ "hook": "question"
+}

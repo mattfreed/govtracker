@@ -5,7 +5,9 @@
 (() => {
   'use strict';
   const W = 1280, H = 720, BASE = 'assets/movies/';
-  const editionQuery = document.currentScript?.src ? new URL(document.currentScript.src).search : '';
+  // The slides and recordings can change in an edition that keeps the same player.
+  const editionScript = document.querySelector('script[src^="assets/data/core.js?"]') || document.currentScript;
+  const editionQuery = editionScript?.src ? new URL(editionScript.src).search : '';
   const mediaUrl = (id, extension) => BASE + encodeURIComponent(id) + extension + editionQuery;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));

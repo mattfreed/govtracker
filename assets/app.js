@@ -7,7 +7,7 @@
   /* ---------- vocabulary ---------- */
   const TIER = {
     PROVEN: { label: 'Proven', long: 'Proven', help: 'A conviction, a guilty plea, or conduct formally admitted.', icon: '<path d="M8 1.2a6.8 6.8 0 1 0 0 13.6A6.8 6.8 0 0 0 8 1.2Zm3.4 5.3-4 4.1a.8.8 0 0 1-1.1 0L4.5 8.8l1.1-1.1 1.2 1.2 3.5-3.5 1.1 1.1Z" fill="currentColor"/>' },
-    CHARGED: { label: 'Charged', long: 'Charged — not proven', help: 'Alleged by prosecutors or the City Attorney. Not decided by a court.', icon: '<path d="M8 1.3 15 14H1L8 1.3Zm-.8 4.9v4h1.6v-4H7.2Zm0 5v1.5h1.6v-1.5H7.2Z" fill="currentColor"/>' },
+    CHARGED: { label: 'Charged', long: 'Charged — not proven', help: 'A prosecutor or the City Attorney filed allegations. The case file identifies any verified outcome.', icon: '<path d="M8 1.3 15 14H1L8 1.3Zm-.8 4.9v4h1.6v-4H7.2Zm0 5v1.5h1.6v-1.5H7.2Z" fill="currentColor"/>' },
     OFFICIAL: { label: 'Official finding', long: 'Official finding', help: 'Found by an auditor, the Controller, the Ethics Commission or a grand jury. Not a criminal finding.', icon: '<path d="M3 1.5h7l3 3v10H3v-13Zm2 5v1.4h6V6.5H5Zm0 3v1.4h6V9.5H5Z" fill="currentColor"/>' },
     REDFLAG: { label: 'Lead', long: 'Lead — unexplained', help: 'An anomaly in the records that no authority has ruled on. A question, not an accusation.', icon: '<path d="M6.8 1.5a5.3 5.3 0 0 1 4.2 8.6l3.5 3.5-1.3 1.3-3.5-3.5A5.3 5.3 0 1 1 6.8 1.5Zm0 1.8a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" fill="currentColor"/>' },
     CLEARED: { label: 'Checked — nothing unusual', long: 'Checked — nothing unusual', help: 'A test that was run on the records and turned up nothing out of the ordinary.', icon: '<path d="M8 1.2a6.8 6.8 0 1 0 0 13.6A6.8 6.8 0 0 0 8 1.2Zm0 1.6a5.2 5.2 0 1 1 0 10.4A5.2 5.2 0 0 1 8 2.8Zm2.5 2.9L7 9.2 5.6 7.8 4.5 8.9 7 11.4l4.6-4.6-1.1-1.1Z" fill="currentColor"/>' },
@@ -16,8 +16,9 @@
   const PHASE = {
     convicted: { label: 'Convicted or admitted', mark: '✓', help: 'A court, or the person themselves, has settled it. This one has been found.' },
     'in-court': { label: 'In court', mark: '◐', help: 'Charged and not yet decided.' },
+    'outcome-unknown': { label: 'Outcome unverified', mark: '◌', help: 'A court or prosecutor recorded charges. The latest available case records leave the outcome unverified.' },
     active: { label: 'Active', mark: '●', help: 'The pattern is still in the latest records, or the finding is recent. It may be happening now. Nobody has been accused by this label.' },
-    past: { label: 'Past', mark: '○', help: 'The records behind it end before 2024. It may have stopped; no authority has ruled on it.' },
+    past: { label: 'Past', mark: '○', help: 'The underlying activity is historical. The case file gives any later findings or follow-up.' },
   };
   const phase = (c, long) => PHASE[c.phase] ? `<span class="phase ph-${esc(c.phase)}" title="${esc(PHASE[c.phase].help)}"><i aria-hidden="true">${PHASE[c.phase].mark}</i>${esc(PHASE[c.phase].label)}${long && c.phase === 'active' ? ' — still in the latest records' : ''}</span>` : '';
   /* what each person was charged with and what came of it (the case-outcomes screen, merged at build) */
@@ -27,7 +28,7 @@
       <p class="sub">${c.tier === 'PROVEN' ? 'The linked court records, agreements and orders identify the outcome for each party.' : 'A charge is an accusation. Nothing here has been decided by a court unless the row says so.'}</p>
       <div class="table-wrap"><table class="outcome"><thead><tr><th>Who</th><th>Charges</th><th>Plea or verdict</th><th>Sentence or penalty</th><th>Where it stands</th></tr></thead><tbody>
       ${o.parties.map(x => `<tr><td><b>${esc(x.name)}</b>${x.role ? `<small>${esc(x.role)}</small>` : ''}</td><td>${(x.charges || []).length ? `<ul>${x.charges.map(ch => `<li>${esc(ch)}</li>`).join('')}</ul>` : '<span class="muted">Not on file</span>'}</td>
-        <td>${esc(x.disposition || 'Not decided')}${x.date ? `<small>${esc(fmtDate(x.date))}</small>` : ''}</td><td>${esc(sent(x.sentence || {}) || (c.tier === 'PROVEN' ? 'Not on file' : 'None: not decided'))}</td>
+        <td>${esc(x.disposition || 'Outcome unverified')}${x.date ? `<small>${esc(fmtDate(x.date))}</small>` : ''}</td><td>${esc(sent(x.sentence || {}) || 'Not on file')}</td>
         <td>${esc(x.status || 'Not on file')}${(x.sources || []).filter(q => /^https:/.test(q.u || '')).slice(0, 2).map(q => `<small><a href="${esc(q.u)}" target="_blank" rel="noopener">${esc(q.t || 'Source')} ↗</a></small>`).join('')}</td></tr>`).join('')}
       </tbody></table></div>${o.note ? `<p class="small muted">${esc(o.note)}</p>` : ''}</section>`; };
   const outcomeNote = c => '';
@@ -110,9 +111,9 @@
     return `${head('Case files', 'Every case, strongest evidence first', 'Filter by how solid the evidence is, by where the case stands, by subject, or by the method used.')}
       <details class="note labels"><summary><b>What the labels mean</b></summary>
         <p><b>Two labels on every case.</b> The first says how strong the evidence is. The second says where the matter stands in time.</p>
-        <p><b>Proven</b> means a court convicted someone, someone pleaded guilty, or someone formally admitted the conduct, for example in a signed agreement with the Ethics Commission. <b>Charged</b> means a prosecutor or the City Attorney has accused someone and no court has decided; the person is presumed innocent. Each proven or charged case lists the charges, the plea or verdict, and the sentence or penalty where the documents on file record them.</p>
+        <p><b>Proven</b> means a court convicted someone, someone pleaded guilty, or someone formally admitted the conduct, for example in a signed agreement with the Ethics Commission. <b>Charged</b> means a prosecutor or the City Attorney formally accused someone. A charge alone does not establish guilt. Each proven or charged case lists the charges, the plea or verdict, and the sentence or penalty where the documents on file record them.</p>
         <p><b>Official finding</b> means an auditor, the Controller, a grand jury or a regulator put it in writing; it is not a criminal finding. <b>Lead</b> means a pattern in the records that no authority has ruled on.</p>
-        <p><b>Convicted or admitted</b> and <b>In court</b> follow from Proven and Charged. <b>Active</b> means the records behind the case reach 2024 or later, so the pattern is still in the latest data or the finding is recent; it may be happening now. <b>Past</b> means the records end earlier. Active is a statement about dates, not an accusation.</p></details>
+        <p><b>In court</b> means the latest verified court records describe pending proceedings. <b>Outcome unverified</b> means charges are documented and the later disposition is unknown. <b>Active</b> means the records behind the case reach 2024 or later, so the pattern is still in the latest data or the finding is recent; it may be happening now. <b>Past</b> identifies historical activity. Active is a statement about dates, not an accusation.</p></details>
       <form class="filters" id="cf" onsubmit="return false"><input id="cq" type="search" placeholder="Search a name, organization or topic" value="${esc(S.q)}" aria-label="Search cases">
         ${['PROVEN', 'CHARGED', 'OFFICIAL', 'REDFLAG'].map(t => `<button type="button" class="chip" data-tier="${t}" aria-pressed="${S.tier === t}">${esc(TIER[t].label)} · ${C.stats.tiers[t] || 0}</button>`).join('')}
         <span class="filter-sep" aria-hidden="true"></span>${Object.keys(PHASE).map(k => `<button type="button" class="chip" data-phase="${k}" aria-pressed="${S.phase === k}" title="${esc(PHASE[k].help)}">${PHASE[k].mark} ${esc(PHASE[k].label)} · ${(C.stats.phases || {})[k] || 0}</button>`).join('')}

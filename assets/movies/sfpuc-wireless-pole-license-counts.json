@@ -1,1 +1,407 @@
-{"id": "sfpuc-wireless-pole-license-counts", "title": "Two pages give different counts for San Francisco’s wireless pole licenses", "seconds": 42.7, "voice": "elevenlabs:OtHu0lbpdNTqJVqaxDtR", "narrator": "Maven", "made": "2026-11-27", "key": "543ddb3643a1e840", "words": 138, "beats": [{"scene": "p", "kind": "doc", "ref": ["suspicious[0]"], "text": "San Francisco supervisors approved wireless agreements for city poles in July 2023.", "t0": 0.2, "t1": 4.47, "shot": "r0", "visual": {"type": "doc", "source": "resolution", "kicker": "Resolution 367-23", "text": "approximately 578 pole licenses", "mark": "578"}, "wt": [0.0, 0.22, 0.69, 1.34, 1.66, 2.02, 2.42, 2.56, 2.78, 3.07, 3.17, 3.48, 3.71]}, {"scene": "p", "kind": "quote", "ref": ["suspicious[0]"], "text": "One resolution gives two counts.", "t0": 4.59, "t1": 6.2, "shot": "r1", "visual": {"type": "quote", "line": "One resolution gives two counts"}, "wt": [0.0, 0.21, 0.72, 0.93, 1.11]}, {"scene": "p", "kind": "quote", "ref": ["suspicious[0]"], "text": "This is a lead, not a finding.", "t0": 6.32, "t1": 7.94, "shot": "r2", "visual": {"type": "quote", "line": "This is a lead, not a finding"}, "wt": [0.0, 0.16, 0.29, 0.37, 0.94, 1.11, 1.18]}, {"scene": "p", "kind": "bignum", "ref": ["suspicious[0]"], "text": "The utilities commission had issued roughly 578 pole licenses.", "t0": 8.06, "t1": 11.89, "shot": "r3", "visual": {"type": "bignum", "value": "800", "label": "Existing utilities commission licenses on page 3"}, "wt": [0.0, 0.12, 0.58, 1.01, 1.12, 1.42, 1.81, 2.1, 2.4, 2.91, 3.14]}, {"scene": "p", "kind": "quote", "ref": ["suspicious[0]"], "text": "Turn to page three.", "t0": 12.01, "t1": 12.88, "shot": "r4", "visual": {"type": "quote", "line": "Turn to page three"}, "wt": [0.0, 0.2, 0.28, 0.51]}, {"scene": "p", "kind": "quote", "ref": ["suspicious[0]"], "text": "It says 800 existing licenses would keep the old terms.", "t0": 13.0, "t1": 15.78, "shot": "r5", "visual": {"type": "quote", "line": "It says 800 existing licenses would keep the old terms"}, "wt": [0.0, 0.11, 0.33, 0.57, 0.84, 1.24, 1.71, 1.88, 2.06, 2.18, 2.34]}, {"scene": "b", "kind": "bignum", "ref": ["established[0]"], "text": "The transit and utilities agencies had given supervisors a count for precisely that group.", "t0": 16.0, "t1": 19.97, "shot": "r6", "visual": {"type": "bignum", "value": "578", "label": "Legacy licenses in the agencies’ joint briefing"}, "wt": [0.0, 0.11, 0.56, 0.69, 1.19, 1.64, 1.76, 2.01, 2.61, 2.68, 2.93, 3.08, 3.56, 3.73]}, {"scene": "b", "kind": "quote", "ref": ["established[0]"], "text": "Their June briefing put the licenses keeping the old terms at 578.", "t0": 20.09, "t1": 23.83, "shot": "r7", "visual": {"type": "quote", "line": "Their June briefing put the licenses keeping the old terms at 578"}, "wt": [0.0, 0.19, 0.42, 0.84, 1.0, 1.11, 1.59, 1.88, 2.0, 2.19, 2.57, 2.68, 2.9, 3.18]}, {"scene": "b", "kind": "doc", "ref": ["established[1]"], "text": "A supervisor also asked where the licensed poles were.", "t0": 23.95, "t1": 26.55, "shot": "r8", "visual": {"type": "doc", "source": "followup", "kicker": "SFPUC reply to supervisors", "text": "June 2021", "mark": "June 2021"}, "wt": [0.0, 0.11, 0.81, 1.17, 1.38, 1.53, 1.63, 2.02, 2.32]}, {"scene": "b", "kind": "quote", "ref": ["established[1]"], "text": "On July 14, the utilities commission sent its most recent map, dated June 2021.", "t0": 26.67, "t1": 31.84, "shot": "r9", "visual": {"type": "quote", "line": "On July 14, the utilities commission sent its most recent map, dated June 2021"}, "wt": [0.0, 0.14, 0.42, 1.02, 1.17, 1.67, 2.13, 2.38, 2.54, 2.76, 3.09, 3.76, 4.06, 4.32, 4.61]}, {"scene": "o", "kind": "bignum", "ref": ["established[3]"], "text": "An earlier board packet had used approximately 800.", "t0": 32.06, "t1": 34.69, "shot": "r10", "visual": {"type": "bignum", "value": "800", "label": "April transit board estimate"}, "wt": [0.0, 0.15, 0.5, 0.74, 1.15, 1.28, 1.44, 2.03, 2.23]}, {"scene": "o", "kind": "quote", "ref": ["established[3]"], "text": "An old estimate could explain the wording.", "t0": 34.81, "t1": 36.51, "shot": "r11", "visual": {"type": "quote", "line": "An old estimate could explain the wording"}, "wt": [0.0, 0.15, 0.35, 0.72, 0.87, 1.21, 1.3]}, {"scene": "o", "kind": "quote", "ref": ["established[3]"], "text": "The individual licenses and payments would show what each carrier owed.", "t0": 36.63, "t1": 39.76, "shot": "r12", "visual": {"type": "quote", "line": "The individual licenses and payments would show what each carrier owed"}, "wt": [0.0, 0.11, 0.62, 1.11, 1.22, 1.63, 1.8, 1.98, 2.15, 2.35, 2.78]}, {"scene": "o", "kind": "end", "ref": ["status"], "text": "A lead is a question, not an accusation.", "t0": 39.88, "t1": 41.84, "shot": "r13", "visual": {"type": "end"}, "wt": [0.0, 0.12, 0.35, 0.45, 0.52, 1.06, 1.26, 1.35]}], "format": 6, "chapters": {"p": "Two counts in one resolution", "b": "What the agencies told supervisors", "o": "Which licenses earned fees?"}, "look": "terminal", "hook": "document"}
+{
+ "id": "sfpuc-wireless-pole-license-counts",
+ "title": "Two pages give different counts for San Francisco’s wireless pole licenses",
+ "seconds": 42.7,
+ "voice": "elevenlabs:OtHu0lbpdNTqJVqaxDtR",
+ "narrator": "Maven",
+ "made": "2026-11-27",
+ "key": "117c017522286854",
+ "words": 138,
+ "beats": [
+  {
+   "scene": "p",
+   "kind": "doc",
+   "ref": [
+    "suspicious[0]"
+   ],
+   "text": "San Francisco supervisors approved wireless agreements for city poles in July 2023.",
+   "t0": 0.2,
+   "t1": 4.47,
+   "shot": "r0",
+   "visual": {
+    "type": "doc",
+    "source": "resolution",
+    "kicker": "Resolution 367-23",
+    "text": "approximately 578 pole licenses",
+    "mark": "578"
+   },
+   "wt": [
+    0.0,
+    0.22,
+    0.69,
+    1.34,
+    1.66,
+    2.02,
+    2.42,
+    2.56,
+    2.78,
+    3.07,
+    3.17,
+    3.48,
+    3.71
+   ]
+  },
+  {
+   "scene": "p",
+   "kind": "quote",
+   "ref": [
+    "suspicious[0]"
+   ],
+   "text": "One resolution gives two counts.",
+   "t0": 4.59,
+   "t1": 6.2,
+   "shot": "r1",
+   "visual": {
+    "type": "quote",
+    "line": "One resolution gives two counts"
+   },
+   "wt": [
+    0.0,
+    0.21,
+    0.72,
+    0.93,
+    1.11
+   ]
+  },
+  {
+   "scene": "p",
+   "kind": "quote",
+   "ref": [
+    "suspicious[0]"
+   ],
+   "text": "This is a lead, not a finding.",
+   "t0": 6.32,
+   "t1": 7.94,
+   "shot": "r2",
+   "visual": {
+    "type": "quote",
+    "line": "This is a lead, not a finding"
+   },
+   "wt": [
+    0.0,
+    0.16,
+    0.29,
+    0.37,
+    0.94,
+    1.11,
+    1.18
+   ]
+  },
+  {
+   "scene": "p",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[0]"
+   ],
+   "text": "The utilities commission had issued roughly 578 pole licenses.",
+   "t0": 8.06,
+   "t1": 11.89,
+   "shot": "r3",
+   "visual": {
+    "type": "bignum",
+    "value": "578",
+    "label": "Utilities commission licenses on page 2"
+   },
+   "wt": [
+    0.0,
+    0.12,
+    0.58,
+    1.01,
+    1.12,
+    1.42,
+    1.81,
+    2.1,
+    2.4,
+    2.91,
+    3.14
+   ]
+  },
+  {
+   "scene": "p",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[0]"
+   ],
+   "text": "Turn to page three.",
+   "t0": 12.01,
+   "t1": 12.88,
+   "shot": "r4",
+   "visual": {
+    "type": "bignum",
+    "value": "800",
+    "label": "Existing utilities commission licenses on page 3"
+   },
+   "wt": [
+    0.0,
+    0.2,
+    0.28,
+    0.51
+   ]
+  },
+  {
+   "scene": "p",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[0]"
+   ],
+   "text": "It says 800 existing licenses would keep the old terms.",
+   "t0": 13.0,
+   "t1": 15.78,
+   "shot": "r4",
+   "visual": {
+    "type": "bignum",
+    "value": "800",
+    "label": "Existing utilities commission licenses on page 3"
+   },
+   "wt": [
+    0.0,
+    0.11,
+    0.33,
+    0.57,
+    0.84,
+    1.24,
+    1.71,
+    1.88,
+    2.06,
+    2.18,
+    2.34
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "bignum",
+   "ref": [
+    "established[0]"
+   ],
+   "text": "The transit and utilities agencies had given supervisors a count for precisely that group.",
+   "t0": 16.0,
+   "t1": 19.97,
+   "shot": "r6",
+   "visual": {
+    "type": "bignum",
+    "value": "578",
+    "label": "Legacy licenses in the agencies’ joint briefing"
+   },
+   "wt": [
+    0.0,
+    0.11,
+    0.56,
+    0.69,
+    1.19,
+    1.64,
+    1.76,
+    2.01,
+    2.61,
+    2.68,
+    2.93,
+    3.08,
+    3.56,
+    3.73
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "bignum",
+   "ref": [
+    "established[0]"
+   ],
+   "text": "Their June briefing put the licenses keeping the old terms at 578.",
+   "t0": 20.09,
+   "t1": 23.83,
+   "shot": "r6",
+   "visual": {
+    "type": "bignum",
+    "value": "578",
+    "label": "Legacy licenses in the agencies’ joint briefing"
+   },
+   "wt": [
+    0.0,
+    0.19,
+    0.42,
+    0.84,
+    1.0,
+    1.11,
+    1.59,
+    1.88,
+    2.0,
+    2.19,
+    2.57,
+    2.68,
+    2.9,
+    3.18
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "doc",
+   "ref": [
+    "established[1]"
+   ],
+   "text": "A supervisor also asked where the licensed poles were.",
+   "t0": 23.95,
+   "t1": 26.55,
+   "shot": "r8",
+   "visual": {
+    "type": "doc",
+    "source": "followup",
+    "kicker": "SFPUC reply to supervisors",
+    "text": "June 2021",
+    "mark": "June 2021"
+   },
+   "wt": [
+    0.0,
+    0.11,
+    0.81,
+    1.17,
+    1.38,
+    1.53,
+    1.63,
+    2.02,
+    2.32
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "quote",
+   "ref": [
+    "established[1]"
+   ],
+   "text": "On July 14, the utilities commission sent its most recent map, dated June 2021.",
+   "t0": 26.67,
+   "t1": 31.84,
+   "shot": "r9",
+   "visual": {
+    "type": "quote",
+    "line": "On July 14, the utilities commission sent its most recent map, dated June 2021"
+   },
+   "wt": [
+    0.0,
+    0.14,
+    0.42,
+    1.02,
+    1.17,
+    1.67,
+    2.13,
+    2.38,
+    2.54,
+    2.76,
+    3.09,
+    3.76,
+    4.06,
+    4.32,
+    4.61
+   ]
+  },
+  {
+   "scene": "o",
+   "kind": "bignum",
+   "ref": [
+    "established[3]"
+   ],
+   "text": "An earlier board packet had used approximately 800.",
+   "t0": 32.06,
+   "t1": 34.69,
+   "shot": "r10",
+   "visual": {
+    "type": "bignum",
+    "value": "800",
+    "label": "April transit board estimate"
+   },
+   "wt": [
+    0.0,
+    0.15,
+    0.5,
+    0.74,
+    1.15,
+    1.28,
+    1.44,
+    2.03,
+    2.23
+   ]
+  },
+  {
+   "scene": "o",
+   "kind": "quote",
+   "ref": [
+    "established[3]"
+   ],
+   "text": "An old estimate could explain the wording.",
+   "t0": 34.81,
+   "t1": 36.51,
+   "shot": "r11",
+   "visual": {
+    "type": "quote",
+    "line": "An old estimate could explain the wording"
+   },
+   "wt": [
+    0.0,
+    0.15,
+    0.35,
+    0.72,
+    0.87,
+    1.21,
+    1.3
+   ]
+  },
+  {
+   "scene": "o",
+   "kind": "quote",
+   "ref": [
+    "established[3]"
+   ],
+   "text": "The individual licenses and payments would show what each carrier owed.",
+   "t0": 36.63,
+   "t1": 39.76,
+   "shot": "r12",
+   "visual": {
+    "type": "quote",
+    "line": "The individual licenses and payments would show what each carrier owed"
+   },
+   "wt": [
+    0.0,
+    0.11,
+    0.62,
+    1.11,
+    1.22,
+    1.63,
+    1.8,
+    1.98,
+    2.15,
+    2.35,
+    2.78
+   ]
+  },
+  {
+   "scene": "o",
+   "kind": "end",
+   "ref": [
+    "status"
+   ],
+   "text": "A lead is a question, not an accusation.",
+   "t0": 39.88,
+   "t1": 41.84,
+   "shot": "r13",
+   "visual": {
+    "type": "end"
+   },
+   "wt": [
+    0.0,
+    0.12,
+    0.35,
+    0.45,
+    0.52,
+    1.06,
+    1.26,
+    1.35
+   ]
+  }
+ ],
+ "format": 6,
+ "chapters": {
+  "p": "Two counts in one resolution",
+  "b": "What the agencies told supervisors",
+  "o": "Which licenses earned fees?"
+ },
+ "look": "terminal",
+ "hook": "document"
+}

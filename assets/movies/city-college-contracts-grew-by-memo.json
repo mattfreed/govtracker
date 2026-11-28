@@ -1,1 +1,871 @@
-{"id": "city-college-contracts-grew-by-memo", "title": "City College reported conflicting amounts on two building change orders", "seconds": 92.2, "voice": "elevenlabs:iPYqcpY8j8Ap4jUf28I3", "narrator": "Michael", "made": "2026-11-27", "key": "ffcb9d807e6e215a", "words": 191, "beats": [{"scene": "a", "kind": "hook", "ref": ["oneLine", "suspicious[0]", "suspicious[2]"], "text": "City College’s two building contracts", "t0": 0.2, "t1": 2.29, "shot": "c0", "visual": {"type": "hook", "words": ["Two", "building", "contracts"], "sub": "City College purchasing reports"}, "wt": [0.0, 0.38, 0.9, 1.14, 1.53]}, {"scene": "a", "kind": "hook", "ref": ["oneLine", "suspicious[0]", "suspicious[2]"], "text": "reached a combined $276,394,969.55.", "t0": 2.29, "t1": 6.81, "shot": "c1", "visual": {"type": "hook", "words": ["Two", "building", "contracts"], "sub": "City College purchasing reports"}, "wt": [0.04, 0.41, 0.73, 1.34, 2.0, 3.19, 3.93]}, {"scene": "a", "kind": "doc", "ref": ["status", "notEstablished[0]"], "text": "This remains a lead because the payment records are incomplete.", "t0": 6.93, "t1": 10.14, "shot": "c2", "visual": {"type": "doc", "source": "s1", "kicker": "City College", "text": "Monthly Purchasing Reports", "mark": "Reports"}, "wt": [0.0, 0.27, 0.67, 0.77, 1.1, 1.45, 1.56, 1.95, 2.35, 2.5]}, {"scene": "a", "kind": "record", "ref": ["suspicious[0]", "suspicious[2]"], "text": "XL built the Student Success Center.", "t0": 10.26, "t1": 13.38, "shot": "c3", "visual": {"type": "record", "source": "sep26", "heading": "Published contract totals", "context": "Design and construction", "layout": "amounts", "rows": [{"label": "Student Success Center", "value": "$121,969,753.15"}, {"label": "STEAM building", "value": "$154,425,216.40"}]}, "wt": [0.0, 0.65, 0.95, 1.09, 1.52, 2.04]}, {"scene": "a", "kind": "record", "ref": ["suspicious[0]", "suspicious[2]"], "text": "Rudolph and Sletten built the STEAM building.", "t0": 13.38, "t1": 16.22, "shot": "c4", "visual": {"type": "record", "source": "sep26", "heading": "Published contract totals", "context": "Design and construction", "layout": "amounts", "rows": [{"label": "Student Success Center", "value": "$121,969,753.15"}, {"label": "STEAM building", "value": "$154,425,216.40"}]}, "wt": [0.04, 0.54, 0.67, 1.15, 1.45, 1.57, 1.92]}, {"scene": "a", "kind": "record", "ref": ["suspicious[0]", "suspicious[2]"], "text": "Both contracts began with design work and later included construction.", "t0": 16.22, "t1": 20.27, "shot": "c5", "visual": {"type": "record", "source": "sep26", "heading": "Published contract totals", "context": "Design and construction", "layout": "amounts", "rows": [{"label": "Student Success Center", "value": "$121,969,753.15"}, {"label": "STEAM building", "value": "$154,425,216.40"}]}, "wt": [0.04, 0.4, 0.98, 1.42, 1.61, 2.07, 2.33, 2.49, 2.83, 3.31]}, {"scene": "a", "kind": "record", "ref": ["suspicious[1]", "suspicious[3]"], "text": "Kitchell’s management contract reached $16,588,061.", "t0": 20.39, "t1": 26.18, "shot": "c6", "visual": {"type": "record", "source": "apr26", "heading": "Other college contracts", "context": "Reported contract values", "layout": "amounts", "rows": [{"label": "Kitchell", "value": "$16,588,061"}, {"label": "COR-O-VAN", "value": "$2,336,000"}]}, "wt": [0.0, 0.49, 0.97, 1.56, 1.9, 2.24, 2.92, 3.25, 3.74, 4.18]}, {"scene": "a", "kind": "record", "ref": ["suspicious[1]", "suspicious[3]"], "text": "COR-O-VAN reached $2,336,000.", "t0": 26.18, "t1": 30.82, "shot": "c7", "visual": {"type": "record", "source": "apr26", "heading": "Other college contracts", "context": "Reported contract values", "layout": "amounts", "rows": [{"label": "Kitchell", "value": "$16,588,061"}, {"label": "COR-O-VAN", "value": "$2,336,000"}]}, "wt": [0.04, 1.4, 1.77, 2.08, 2.44, 2.83, 3.19, 3.57]}, {"scene": "a", "kind": "record", "ref": ["suspicious[1]", "suspicious[3]"], "text": "The college reported its latest moving increase across two funding lines.", "t0": 30.82, "t1": 35.44, "shot": "c8", "visual": {"type": "record", "source": "apr26", "heading": "Other college contracts", "context": "Reported contract values", "layout": "amounts", "rows": [{"label": "Kitchell", "value": "$16,588,061"}, {"label": "COR-O-VAN", "value": "$2,336,000"}]}, "wt": [0.04, 0.24, 0.62, 1.1, 1.31, 1.69, 2.01, 2.81, 3.34, 3.67, 4.09]}, {"scene": "a", "kind": "doc", "ref": ["established[3]"], "text": "Earlier minutes recorded several increases to Robert Half’s staffing contract.", "t0": 35.56, "t1": 40.56, "shot": "c9", "visual": {"type": "doc", "source": "i18m", "kicker": "Board minutes", "text": "Robert Half", "mark": "Robert Half"}, "wt": [0.0, 0.47, 0.85, 1.4, 1.86, 2.49, 2.64, 2.96, 3.31, 3.79]}, {"scene": "a", "kind": "doc", "ref": ["established[3]"], "text": "The trustees tabled a further $100,000 request.", "t0": 40.56, "t1": 44.28, "shot": "c10", "visual": {"type": "doc", "source": "i18m", "kicker": "Board minutes", "text": "Robert Half", "mark": "Robert Half"}, "wt": [0.04, 0.2, 0.91, 1.33, 1.42, 1.83, 2.02, 2.3, 2.72, 3.1]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "One STEAM change shows $200,223", "t0": 44.5, "t1": 49.75, "shot": "c11", "visual": {"type": "record", "source": "mar26", "heading": "STEAM building", "context": "March 2026, line 281", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$200,223"}, {"label": "Description", "value": "$220,223"}]}, "wt": [0.0, 0.3, 0.72, 1.16, 1.53, 1.83, 2.16, 2.98, 3.3, 3.76, 4.45]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "in the purchase-order column.", "t0": 49.75, "t1": 51.54, "shot": "c12", "visual": {"type": "record", "source": "mar26", "heading": "STEAM building", "context": "March 2026, line 281", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$200,223"}, {"label": "Description", "value": "$220,223"}]}, "wt": [0.04, 0.23, 0.34, 1.02]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "The description says $220,223.", "t0": 51.54, "t1": 56.32, "shot": "c13", "visual": {"type": "record", "source": "mar26", "heading": "STEAM building", "context": "March 2026, line 281", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$200,223"}, {"label": "Description", "value": "$220,223"}]}, "wt": [0.04, 0.2, 0.75, 1.05, 1.27, 1.66, 2.0, 2.81, 3.15, 3.64, 4.22]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "On the Student Success Center,", "t0": 56.44, "t1": 58.5, "shot": "c14", "visual": {"type": "record", "source": "jun26", "heading": "Student Success Center", "context": "June 2026, line 273", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$355,320.65"}, {"label": "Description", "value": "$335,320.65"}]}, "wt": [0.0, 0.24, 0.38, 0.77, 1.32]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "the order says", "t0": 58.5, "t1": 59.46, "shot": "c15", "visual": {"type": "record", "source": "jun26", "heading": "Student Success Center", "context": "June 2026, line 273", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$355,320.65"}, {"label": "Description", "value": "$335,320.65"}]}, "wt": [0.04, 0.25, 0.61]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "$355,320.65.", "t0": 59.46, "t1": 66.39, "shot": "c16", "visual": {"type": "record", "source": "jun26", "heading": "Student Success Center", "context": "June 2026, line 273", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$355,320.65"}, {"label": "Description", "value": "$335,320.65"}]}, "wt": [0.04, 0.47, 0.85, 1.47, 2.44, 2.91, 3.37, 3.69, 4.59, 4.88, 5.69]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "Its description says", "t0": 66.39, "t1": 67.77, "shot": "c17", "visual": {"type": "record", "source": "jun26", "heading": "Student Success Center", "context": "June 2026, line 273", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$355,320.65"}, {"label": "Description", "value": "$335,320.65"}]}, "wt": [0.04, 0.34, 1.02]}, {"scene": "b", "kind": "record", "ref": ["suspicious[4]", "established[4]"], "text": "$335,320.65.", "t0": 67.77, "t1": 73.78, "shot": "c18", "visual": {"type": "record", "source": "jun26", "heading": "Student Success Center", "context": "June 2026, line 273", "layout": "amounts", "rows": [{"label": "Purchase order", "value": "$355,320.65"}, {"label": "Description", "value": "$335,320.65"}]}, "wt": [0.04, 0.46, 0.83, 1.48, 2.34, 2.76, 3.2, 3.52, 4.39, 4.65, 5.45]}, {"scene": "c", "kind": "bignum", "ref": ["suspicious[4]", "established[4]"], "text": "Each description differed by $20,000.", "t0": 74.0, "t1": 77.45, "shot": "c19", "visual": {"type": "bignum", "value": "$20,000", "label": "Difference on each entry"}, "wt": [0.0, 0.35, 1.01, 1.33, 1.51, 1.93, 2.37]}, {"scene": "c", "kind": "bignum", "ref": ["suspicious[4]", "established[4]"], "text": "The running totals support the purchase-order column.", "t0": 77.45, "t1": 80.4, "shot": "c20", "visual": {"type": "bignum", "value": "$20,000", "label": "Difference on each entry"}, "wt": [0.04, 0.24, 0.6, 1.08, 1.67, 1.84, 2.51]}, {"scene": "c", "kind": "doc", "ref": ["status", "notEstablished[0]"], "text": "The college reports authorizations.", "t0": 80.52, "t1": 83.27, "shot": "c21", "visual": {"type": "doc", "source": "sep26", "kicker": "September board report", "text": "New Contract Amount", "mark": "Contract Amount"}, "wt": [0.0, 0.16, 0.57, 1.19]}, {"scene": "c", "kind": "doc", "ref": ["status", "notEstablished[0]"], "text": "Signed change memos and invoices would establish", "t0": 83.27, "t1": 86.82, "shot": "c22", "visual": {"type": "doc", "source": "sep26", "kicker": "September board report", "text": "New Contract Amount", "mark": "Contract Amount"}, "wt": [0.04, 0.68, 1.13, 1.5, 1.64, 2.71, 2.97]}, {"scene": "c", "kind": "doc", "ref": ["status", "notEstablished[0]"], "text": "the approved and paid amounts.", "t0": 86.82, "t1": 88.73, "shot": "c23", "visual": {"type": "doc", "source": "sep26", "kicker": "September board report", "text": "New Contract Amount", "mark": "Contract Amount"}, "wt": [0.04, 0.17, 0.77, 0.97, 1.3]}, {"scene": "c", "kind": "end", "ref": ["status"], "text": "A lead is a question, not an accusation.", "t0": 88.85, "t1": 91.35, "shot": "c24", "visual": {"type": "end"}, "wt": [0.0, 0.14, 0.37, 0.48, 0.57, 1.41, 1.63, 1.74]}], "format": 6, "chapters": {"a": "Two buildings", "b": "Two mismatches", "c": "What the totals show"}, "look": "midnight", "hook": "document"}
+{
+ "id": "city-college-contracts-grew-by-memo",
+ "title": "City College reported conflicting amounts on two building change orders",
+ "seconds": 92.2,
+ "voice": "elevenlabs:iPYqcpY8j8Ap4jUf28I3",
+ "narrator": "Michael",
+ "made": "2026-11-27",
+ "key": "e4da8fa5afa44c1c",
+ "words": 191,
+ "beats": [
+  {
+   "scene": "a",
+   "kind": "hook",
+   "ref": [
+    "oneLine",
+    "suspicious[0]",
+    "suspicious[2]"
+   ],
+   "text": "City College’s two building contracts",
+   "t0": 0.2,
+   "t1": 2.29,
+   "shot": "c0",
+   "visual": {
+    "type": "hook",
+    "words": [
+     "Two",
+     "building",
+     "contracts"
+    ],
+    "sub": "City College purchasing reports"
+   },
+   "wt": [
+    0.0,
+    0.38,
+    0.9,
+    1.14,
+    1.53
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "hook",
+   "ref": [
+    "oneLine",
+    "suspicious[0]",
+    "suspicious[2]"
+   ],
+   "text": "reached a combined $276,394,969.55.",
+   "t0": 2.29,
+   "t1": 6.81,
+   "shot": "c1",
+   "visual": {
+    "type": "hook",
+    "words": [
+     "Two",
+     "building",
+     "contracts"
+    ],
+    "sub": "City College purchasing reports"
+   },
+   "wt": [
+    0.04,
+    0.41,
+    0.73,
+    1.34,
+    2.0,
+    3.19,
+    3.93
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "doc",
+   "ref": [
+    "status",
+    "notEstablished[0]"
+   ],
+   "text": "This remains a lead because the payment records are incomplete.",
+   "t0": 6.93,
+   "t1": 10.14,
+   "shot": "c2",
+   "visual": {
+    "type": "doc",
+    "source": "s1",
+    "kicker": "City College",
+    "text": "Monthly Purchasing Reports",
+    "mark": "Reports"
+   },
+   "wt": [
+    0.0,
+    0.27,
+    0.67,
+    0.77,
+    1.1,
+    1.45,
+    1.56,
+    1.95,
+    2.35,
+    2.5
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "record",
+   "ref": [
+    "suspicious[0]",
+    "suspicious[2]"
+   ],
+   "text": "XL built the Student Success Center.",
+   "t0": 10.26,
+   "t1": 13.38,
+   "shot": "c3",
+   "visual": {
+    "type": "record",
+    "source": "sep26",
+    "heading": "Published contract totals",
+    "context": "Design and construction",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Student Success Center",
+      "value": "$121,969,753.15"
+     },
+     {
+      "label": "STEAM building",
+      "value": "$154,425,216.40"
+     }
+    ]
+   },
+   "wt": [
+    0.0,
+    0.65,
+    0.95,
+    1.09,
+    1.52,
+    2.04
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "record",
+   "ref": [
+    "suspicious[0]",
+    "suspicious[2]"
+   ],
+   "text": "Rudolph and Sletten built the STEAM building.",
+   "t0": 13.38,
+   "t1": 16.22,
+   "shot": "c4",
+   "visual": {
+    "type": "record",
+    "source": "sep26",
+    "heading": "Published contract totals",
+    "context": "Design and construction",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Student Success Center",
+      "value": "$121,969,753.15"
+     },
+     {
+      "label": "STEAM building",
+      "value": "$154,425,216.40"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.54,
+    0.67,
+    1.15,
+    1.45,
+    1.57,
+    1.92
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "record",
+   "ref": [
+    "suspicious[0]",
+    "suspicious[2]"
+   ],
+   "text": "Both contracts began with design work and later included construction.",
+   "t0": 16.22,
+   "t1": 20.27,
+   "shot": "c5",
+   "visual": {
+    "type": "record",
+    "source": "sep26",
+    "heading": "Published contract totals",
+    "context": "Design and construction",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Student Success Center",
+      "value": "$121,969,753.15"
+     },
+     {
+      "label": "STEAM building",
+      "value": "$154,425,216.40"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.4,
+    0.98,
+    1.42,
+    1.61,
+    2.07,
+    2.33,
+    2.49,
+    2.83,
+    3.31
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "record",
+   "ref": [
+    "suspicious[1]",
+    "suspicious[3]"
+   ],
+   "text": "Kitchell’s management contract reached $16,588,061.",
+   "t0": 20.39,
+   "t1": 26.18,
+   "shot": "c6",
+   "visual": {
+    "type": "record",
+    "source": "apr26",
+    "heading": "Other college contracts",
+    "context": "Reported contract values",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Kitchell",
+      "value": "$16,588,061"
+     },
+     {
+      "label": "COR-O-VAN",
+      "value": "$2,336,000"
+     }
+    ]
+   },
+   "wt": [
+    0.0,
+    0.49,
+    0.97,
+    1.56,
+    1.9,
+    2.24,
+    2.92,
+    3.25,
+    3.74,
+    4.18
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "record",
+   "ref": [
+    "suspicious[1]",
+    "suspicious[3]"
+   ],
+   "text": "COR-O-VAN reached $2,336,000.",
+   "t0": 26.18,
+   "t1": 30.82,
+   "shot": "c7",
+   "visual": {
+    "type": "record",
+    "source": "apr26",
+    "heading": "Other college contracts",
+    "context": "Reported contract values",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Kitchell",
+      "value": "$16,588,061"
+     },
+     {
+      "label": "COR-O-VAN",
+      "value": "$2,336,000"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    1.4,
+    1.77,
+    2.08,
+    2.44,
+    2.83,
+    3.19,
+    3.57
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "record",
+   "ref": [
+    "suspicious[1]",
+    "suspicious[3]"
+   ],
+   "text": "The college reported its latest moving increase across two funding lines.",
+   "t0": 30.82,
+   "t1": 35.44,
+   "shot": "c8",
+   "visual": {
+    "type": "record",
+    "source": "apr26",
+    "heading": "Other college contracts",
+    "context": "Reported contract values",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Kitchell",
+      "value": "$16,588,061"
+     },
+     {
+      "label": "COR-O-VAN",
+      "value": "$2,336,000"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.24,
+    0.62,
+    1.1,
+    1.31,
+    1.69,
+    2.01,
+    2.81,
+    3.34,
+    3.67,
+    4.09
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "doc",
+   "ref": [
+    "established[3]"
+   ],
+   "text": "Earlier minutes recorded several increases to Robert Half’s staffing contract.",
+   "t0": 35.56,
+   "t1": 40.56,
+   "shot": "c9",
+   "visual": {
+    "type": "doc",
+    "source": "i18m",
+    "kicker": "Board minutes",
+    "text": "Robert Half",
+    "mark": "Robert Half"
+   },
+   "wt": [
+    0.0,
+    0.47,
+    0.85,
+    1.4,
+    1.86,
+    2.49,
+    2.64,
+    2.96,
+    3.31,
+    3.79
+   ]
+  },
+  {
+   "scene": "a",
+   "kind": "doc",
+   "ref": [
+    "established[3]"
+   ],
+   "text": "The trustees tabled a further $100,000 request.",
+   "t0": 40.56,
+   "t1": 44.28,
+   "shot": "c10",
+   "visual": {
+    "type": "doc",
+    "source": "i18m",
+    "kicker": "Board minutes",
+    "text": "Robert Half",
+    "mark": "Robert Half"
+   },
+   "wt": [
+    0.04,
+    0.2,
+    0.91,
+    1.33,
+    1.42,
+    1.83,
+    2.02,
+    2.3,
+    2.72,
+    3.1
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "One STEAM change shows $200,223",
+   "t0": 44.5,
+   "t1": 49.75,
+   "shot": "c11",
+   "visual": {
+    "type": "record",
+    "source": "mar26",
+    "heading": "STEAM building",
+    "context": "March 2026, line 281",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$200,223"
+     },
+     {
+      "label": "Description",
+      "value": "$220,223"
+     }
+    ]
+   },
+   "wt": [
+    0.0,
+    0.3,
+    0.72,
+    1.16,
+    1.53,
+    1.83,
+    2.16,
+    2.98,
+    3.3,
+    3.76,
+    4.45
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "in the purchase-order column.",
+   "t0": 49.75,
+   "t1": 51.54,
+   "shot": "c12",
+   "visual": {
+    "type": "record",
+    "source": "mar26",
+    "heading": "STEAM building",
+    "context": "March 2026, line 281",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$200,223"
+     },
+     {
+      "label": "Description",
+      "value": "$220,223"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.23,
+    0.34,
+    1.02
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "The description says $220,223.",
+   "t0": 51.54,
+   "t1": 56.32,
+   "shot": "c13",
+   "visual": {
+    "type": "record",
+    "source": "mar26",
+    "heading": "STEAM building",
+    "context": "March 2026, line 281",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$200,223"
+     },
+     {
+      "label": "Description",
+      "value": "$220,223"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.2,
+    0.75,
+    1.05,
+    1.27,
+    1.66,
+    2.0,
+    2.81,
+    3.15,
+    3.64,
+    4.22
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "On the Student Success Center,",
+   "t0": 56.44,
+   "t1": 58.5,
+   "shot": "c14",
+   "visual": {
+    "type": "record",
+    "source": "jun26",
+    "heading": "Student Success Center",
+    "context": "June 2026, line 273",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$355,320.65"
+     },
+     {
+      "label": "Description",
+      "value": "$335,320.65"
+     }
+    ]
+   },
+   "wt": [
+    0.0,
+    0.24,
+    0.38,
+    0.77,
+    1.32
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "the order says",
+   "t0": 58.5,
+   "t1": 59.46,
+   "shot": "c14",
+   "visual": {
+    "type": "record",
+    "source": "jun26",
+    "heading": "Student Success Center",
+    "context": "June 2026, line 273",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$355,320.65"
+     },
+     {
+      "label": "Description",
+      "value": "$335,320.65"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.25,
+    0.61
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "$355,320.65.",
+   "t0": 59.46,
+   "t1": 66.39,
+   "shot": "c14",
+   "visual": {
+    "type": "record",
+    "source": "jun26",
+    "heading": "Student Success Center",
+    "context": "June 2026, line 273",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$355,320.65"
+     },
+     {
+      "label": "Description",
+      "value": "$335,320.65"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.47,
+    0.85,
+    1.47,
+    2.44,
+    2.91,
+    3.37,
+    3.69,
+    4.59,
+    4.88,
+    5.69
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "Its description says",
+   "t0": 66.39,
+   "t1": 67.77,
+   "shot": "c14",
+   "visual": {
+    "type": "record",
+    "source": "jun26",
+    "heading": "Student Success Center",
+    "context": "June 2026, line 273",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$355,320.65"
+     },
+     {
+      "label": "Description",
+      "value": "$335,320.65"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.34,
+    1.02
+   ]
+  },
+  {
+   "scene": "b",
+   "kind": "record",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "$335,320.65.",
+   "t0": 67.77,
+   "t1": 73.78,
+   "shot": "c14",
+   "visual": {
+    "type": "record",
+    "source": "jun26",
+    "heading": "Student Success Center",
+    "context": "June 2026, line 273",
+    "layout": "amounts",
+    "rows": [
+     {
+      "label": "Purchase order",
+      "value": "$355,320.65"
+     },
+     {
+      "label": "Description",
+      "value": "$335,320.65"
+     }
+    ]
+   },
+   "wt": [
+    0.04,
+    0.46,
+    0.83,
+    1.48,
+    2.34,
+    2.76,
+    3.2,
+    3.52,
+    4.39,
+    4.65,
+    5.45
+   ]
+  },
+  {
+   "scene": "c",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "Each description differed by $20,000.",
+   "t0": 74.0,
+   "t1": 77.45,
+   "shot": "c19",
+   "visual": {
+    "type": "bignum",
+    "value": "$20,000",
+    "label": "Difference on each entry"
+   },
+   "wt": [
+    0.0,
+    0.35,
+    1.01,
+    1.33,
+    1.51,
+    1.93,
+    2.37
+   ]
+  },
+  {
+   "scene": "c",
+   "kind": "bignum",
+   "ref": [
+    "suspicious[4]",
+    "established[4]"
+   ],
+   "text": "The running totals support the purchase-order column.",
+   "t0": 77.45,
+   "t1": 80.4,
+   "shot": "c20",
+   "visual": {
+    "type": "bignum",
+    "value": "$20,000",
+    "label": "Difference on each entry"
+   },
+   "wt": [
+    0.04,
+    0.24,
+    0.6,
+    1.08,
+    1.67,
+    1.84,
+    2.51
+   ]
+  },
+  {
+   "scene": "c",
+   "kind": "doc",
+   "ref": [
+    "status",
+    "notEstablished[0]"
+   ],
+   "text": "The college reports authorizations.",
+   "t0": 80.52,
+   "t1": 83.27,
+   "shot": "c21",
+   "visual": {
+    "type": "doc",
+    "source": "sep26",
+    "kicker": "September board report",
+    "text": "New Contract Amount",
+    "mark": "Contract Amount"
+   },
+   "wt": [
+    0.0,
+    0.16,
+    0.57,
+    1.19
+   ]
+  },
+  {
+   "scene": "c",
+   "kind": "doc",
+   "ref": [
+    "status",
+    "notEstablished[0]"
+   ],
+   "text": "Signed change memos and invoices would establish",
+   "t0": 83.27,
+   "t1": 86.82,
+   "shot": "c22",
+   "visual": {
+    "type": "doc",
+    "source": "sep26",
+    "kicker": "September board report",
+    "text": "New Contract Amount",
+    "mark": "Contract Amount"
+   },
+   "wt": [
+    0.04,
+    0.68,
+    1.13,
+    1.5,
+    1.64,
+    2.71,
+    2.97
+   ]
+  },
+  {
+   "scene": "c",
+   "kind": "doc",
+   "ref": [
+    "status",
+    "notEstablished[0]"
+   ],
+   "text": "the approved and paid amounts.",
+   "t0": 86.82,
+   "t1": 88.73,
+   "shot": "c23",
+   "visual": {
+    "type": "doc",
+    "source": "sep26",
+    "kicker": "September board report",
+    "text": "New Contract Amount",
+    "mark": "Contract Amount"
+   },
+   "wt": [
+    0.04,
+    0.17,
+    0.77,
+    0.97,
+    1.3
+   ]
+  },
+  {
+   "scene": "c",
+   "kind": "end",
+   "ref": [
+    "status"
+   ],
+   "text": "A lead is a question, not an accusation.",
+   "t0": 88.85,
+   "t1": 91.35,
+   "shot": "c24",
+   "visual": {
+    "type": "end"
+   },
+   "wt": [
+    0.0,
+    0.14,
+    0.37,
+    0.48,
+    0.57,
+    1.41,
+    1.63,
+    1.74
+   ]
+  }
+ ],
+ "format": 6,
+ "chapters": {
+  "a": "Two buildings",
+  "b": "Two mismatches",
+  "c": "What the totals show"
+ },
+ "look": "midnight",
+ "hook": "document"
+}

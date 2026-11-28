@@ -6,7 +6,7 @@
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   const TIER = { PROVEN: 'Proven', CHARGED: 'Charged', OFFICIAL: 'Official finding', REDFLAG: 'Lead' };
   const CHIPS = [['', 'All'], ['REDFLAG', 'Leads'], ['OFFICIAL', 'Official findings'], ['CHARGED', 'Charged'], ['PROVEN', 'Proven']];
-  const PHASE = { convicted: 'Convicted or admitted', 'in-court': 'In court', active: 'Active', past: 'Closed' };
+  const PHASE = { convicted: 'Convicted or admitted', 'in-court': 'In court', 'outcome-unknown': 'Outcome unverified', active: 'Active', past: 'Past' };
   const mmss = s => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
   const store = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* private window */ } } };
   const ICON = {
@@ -50,7 +50,7 @@
           <img src="assets/films/${esc(r.poster)}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}"><div class="reel-big"><span></span></div>
           <button type="button" class="reel-full" data-act="fullscreen" aria-label="Enter full screen" title="Full screen (F)" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="expand-film" d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6"/><path class="shrink-film" d="M9 3v6H3m12-6v6h6m0 6h-6v6m-6 0v-6H3"/></svg></button><button type="button" class="reel-mute" data-act="mute" aria-label="Sound on or off (M)"></button><button type="button" class="reel-pp" data-act="toggle" aria-label="Play or pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>${nx ? `<button type="button" class="reel-next" data-act="next"><span>Up next</span><b>${esc(nx.title)}</b> ${ICON.down}</button>` : ''}<div class="reel-prog" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="${Math.round(r.s)}" aria-valuenow="0"><i></i><span class="reel-thumb"><b></b></span><span class="reel-time">0:00 / ${mmss(r.s)}</span></div></div>
         <div class="reel-info">
-          <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span><span class="rt-def">${esc(DEF[c.tier] || '')}</span><span class="rt-defs">${esc(DEFS[c.tier] || '')}</span></div><div class="reel-sub"><span>${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
+          <div class="reel-tags"><span class="rt-tier t-${esc(c.tier)}">${esc(TIER[c.tier] || c.tier)}</span><span class="rt-def">${esc(DEF[c.tier] || '')}</span><span class="rt-defs">${esc(DEFS[c.tier] || '')}</span></div><div class="reel-sub">${c.phase === 'outcome-unknown' ? `<span>${esc(PHASE[c.phase])}</span>` : ''}<span>${esc(c.category || '')}</span><span class="rt-sep">${mmss(r.s)} film</span></div>
           <h2><a href="#case/${esc(c.id)}">${esc(c.title)}</a></h2>
           <p class="reel-line">${esc(c.oneLine || '')}</p>
           <a class="reel-open" href="#case/${esc(c.id)}">Open the full case →</a><button type="button" class="reel-share" data-act="share" data-tip="Copy a link to this film">${ICON.share}<span>Copy link</span></button>${nx ? `<div class="reel-downrow"><button type="button" class="reel-down" data-act="next" aria-label="Next film">${ICON.down}</button></div>` : ''}
@@ -63,7 +63,7 @@
   // above the feed and the end-of-feed note say the same thing.
   const MEANS = [
     ['PROVEN', 'Proven', 'A court conviction, a guilty plea, or conduct the person or company formally admitted.', 'Convicted, pleaded guilty or admitted.'],
-    ['CHARGED', 'Charged', 'Prosecutors or the City Attorney have filed charges or a lawsuit. A court has not decided it; a charge is not proof.', 'Charged or sued; no court decision yet.'],
+    ['CHARGED', 'Charged', 'A prosecutor or the City Attorney filed allegations. The case file identifies any verified outcome.', 'A prosecutor or the City Attorney filed allegations.'],
     ['OFFICIAL', 'Official finding', 'An auditor, the Controller, the Ethics Commission, a regulator or a grand jury put it in writing. Not a criminal finding.', 'Found in writing by an auditor or regulator.'],
     ['REDFLAG', 'Lead', 'A pattern in the public records that no authority has ruled on. A question, not an accusation; each case says what is established and what is not.', 'Unexplained in the records; a question, not an accusation.'],
   ];
