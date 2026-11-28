@@ -1,8 +1,10 @@
-# Evidence review, November 25–27, 2026
+# Evidence review, November 25–28, 2026
 
-## Reopened investigations on November 27
+## Investigations reopened November 27 and updated November 28
 
-The current edition contains 491 case files. The public citation check tested 4,029 distinct URLs across 5,750 case citations. 3,929 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 496 case files. The public citation check tested 4,047 distinct URLs across 5,773 case citations. 3,947 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+
+The school review traced all 46 numbered findings across nine fiscal years to 17 case files. The City’s single-audit review accounted for all 15 numbered findings across FY2014–2025. A separate review of FY2010–2013 covered 11 federal findings and checked additional evidence in the FY2009 hearing. Case files identify which corrective actions were documented and where repayment or underlying records remain outstanding.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 

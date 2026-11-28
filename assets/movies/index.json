@@ -1980,5 +1980,30 @@
   "seconds": 44.0,
   "passages": 12,
   "audioStatus": "temporary-local"
+ },
+ "calfresh-county-caused-approval-delays": {
+  "seconds": 40.4,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "calworks-discharge-report-negative-counts": {
+  "seconds": 45.5,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "foster-care-grant-monitoring-and-overhead": {
+  "seconds": 46.2,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "muni-rebuilt-motor-inventory": {
+  "seconds": 43.9,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "port-clean-water-certified-payroll": {
+  "seconds": 45.4,
+  "passages": 12,
+  "audioStatus": "temporary-local"
  }
 }
