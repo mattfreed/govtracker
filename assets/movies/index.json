@@ -756,8 +756,8 @@
   "passages": 30
  },
  "meda-tier3-financing": {
-  "seconds": 130.3,
-  "passages": 37
+  "seconds": 129.0,
+  "passages": 35
  },
  "medi-cal-fraud-exceptions-outnumber-suspensions": {
   "seconds": 105.8,
@@ -2178,6 +2178,76 @@
  },
  "united-playaz-federal-procurement-policy": {
   "seconds": 44.0,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "california-college-arts-financial-close-and-late-audit": {
+  "seconds": 43.8,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "california-college-arts-monthly-loan-reconciliations": {
+  "seconds": 43.3,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "california-college-arts-one-semester-loan": {
+  "seconds": 47.7,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "california-college-arts-relief-purchase-quotes": {
+  "seconds": 40.6,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "california-college-arts-withdrawn-student-aid": {
+  "seconds": 42.5,
+  "passages": 10,
+  "audioStatus": "temporary-local"
+ },
+ "kelsey-civic-center-financing-and-completion": {
+  "seconds": 64.5,
+  "passages": 15,
+  "audioStatus": "temporary-local"
+ },
+ "salvation-army-food-audit-restatements": {
+  "seconds": 48.1,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "salvation-army-food-eligibility-records": {
+  "seconds": 45.5,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-capital-asset-disposals": {
+  "seconds": 42.7,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-failed-inspection-payment-enforcement": {
+  "seconds": 46.4,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-housing-subsidy-sample-projections": {
+  "seconds": 49.5,
+  "passages": 13,
+  "audioStatus": "temporary-local"
+ },
+ "sfha-interprogram-account-balances": {
+  "seconds": 47.3,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "sfmta-federal-payroll-approval": {
+  "seconds": 45.0,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "tenderloin-tenant-rent-notice-delays": {
+  "seconds": 42.3,
   "passages": 12,
   "audioStatus": "temporary-local"
  }

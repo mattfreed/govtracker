@@ -1,0 +1,39 @@
+{
+ "publisher": "U.S. Department of Housing and Urban Development",
+ "original": "https://www.huduser.gov/portal/sites/default/files/xls/2023-HIC-Counts-by-State.csv",
+ "uncompressedOriginalSHA256": "90d7258b21f939da322d5e43be0ea6fb7feb437988cb991262c60ed1b736c213",
+ "selection": "All 2023 records where HudNum is CA-501 and Organization Name equals St. James Infirmary. Project bed capacity and the count on one night are distinct measures.",
+ "originalColumns": [
+  "HudNum",
+  "year",
+  "Organization Name",
+  "Project Name",
+  "Project Type",
+  "Year-Round Beds",
+  "PIT Count",
+  "Total Beds"
+ ],
+ "rows": [
+  {
+   "HudNum": "CA-501",
+   "year": "2023",
+   "Organization Name": "St. James Infirmary",
+   "Project Name": "Bobbi Jean Baker House",
+   "Project Type": "TH",
+   "Year-Round Beds": "15",
+   "PIT Count": "14",
+   "Total Beds": "15"
+  },
+  {
+   "HudNum": "CA-501",
+   "year": "2023",
+   "Organization Name": "St. James Infirmary",
+   "Project Name": "Taimon Booton Navigation Center-GF",
+   "Project Type": "ES",
+   "Year-Round Beds": "84",
+   "PIT Count": "33",
+   "Total Beds": "84"
+  }
+ ],
+ "officialProjectInventoryPDF": "https://files.hudexchange.info/reports/published/CoC_HIC_CoC_CA-501-2023_CA_2023.pdf"
+}

@@ -2,7 +2,7 @@
 
 ## Investigations reopened November 27 and updated November 28
 
-The current edition contains 531 case files. The public citation check tested 4,285 distinct URLs across 6,023 case citations. 4,184 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 545 case files. The public citation check tested 4,403 distinct URLs across 6,147 case citations. 4,303 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The school review traced all 46 numbered findings across nine fiscal years to 17 case files. The City’s single-audit review accounted for all 15 numbered findings across FY2014–2025. A separate review of FY2010–2013 covered 11 federal findings and checked additional evidence in the FY2009 hearing. Case files identify which corrective actions were documented and where repayment or underlying records remain outstanding.
 

@@ -343,6 +343,26 @@
   "seconds": 40.4,
   "poster": "calfresh-county-caused-approval-delays.jpg"
  },
+ "california-college-arts-financial-close-and-late-audit": {
+  "seconds": 43.8,
+  "poster": "california-college-arts-financial-close-and-late-audit.jpg"
+ },
+ "california-college-arts-monthly-loan-reconciliations": {
+  "seconds": 43.3,
+  "poster": "california-college-arts-monthly-loan-reconciliations.jpg"
+ },
+ "california-college-arts-one-semester-loan": {
+  "seconds": 47.7,
+  "poster": "california-college-arts-one-semester-loan.jpg"
+ },
+ "california-college-arts-relief-purchase-quotes": {
+  "seconds": 40.6,
+  "poster": "california-college-arts-relief-purchase-quotes.jpg"
+ },
+ "california-college-arts-withdrawn-student-aid": {
+  "seconds": 42.5,
+  "poster": "california-college-arts-withdrawn-student-aid.jpg"
+ },
  "caltrain-broadband-award-and-coverage-tests": {
   "seconds": 48.8,
   "poster": "caltrain-broadband-award-and-coverage-tests.jpg"
@@ -987,6 +1007,10 @@
   "seconds": 130.5,
   "poster": "kelly-wong-puc.jpg"
  },
+ "kelsey-civic-center-financing-and-completion": {
+  "seconds": 64.5,
+  "poster": "kelsey-civic-center-financing-and-completion.jpg"
+ },
  "kezar-architect-state-contracting-ban": {
   "seconds": 57.6,
   "poster": "kezar-architect-state-contracting-ban.jpg"
@@ -1100,7 +1124,7 @@
   "poster": "meal-contracts-under-the-line.jpg"
  },
  "meda-tier3-financing": {
-  "seconds": 130.3,
+  "seconds": 129.0,
   "poster": "meda-tier3-financing.jpg"
  },
  "medi-cal-fraud-exceptions-outnumber-suspensions": {
@@ -1471,9 +1495,17 @@
   "seconds": 73.3,
   "poster": "safehouse-client-stipends-and-housing-loan.jpg"
  },
+ "salvation-army-food-audit-restatements": {
+  "seconds": 48.1,
+  "poster": "salvation-army-food-audit-restatements.jpg"
+ },
  "salvation-army-food-distribution-eligibility": {
   "seconds": 44.0,
   "poster": "salvation-army-food-distribution-eligibility.jpg"
+ },
+ "salvation-army-food-eligibility-records": {
+  "seconds": 45.5,
+  "poster": "salvation-army-food-eligibility-records.jpg"
  },
  "scattered-site-housing-rebid": {
   "seconds": 67.3,
@@ -1583,17 +1615,33 @@
   "seconds": 45.6,
   "poster": "sffd-extractor-installation-purchase-orders.jpg"
  },
+ "sfha-capital-asset-disposals": {
+  "seconds": 42.7,
+  "poster": "sfha-capital-asset-disposals.jpg"
+ },
  "sfha-capital-grant-draw-timing": {
   "seconds": 44.9,
   "poster": "sfha-capital-grant-draw-timing.jpg"
+ },
+ "sfha-failed-inspection-payment-enforcement": {
+  "seconds": 46.4,
+  "poster": "sfha-failed-inspection-payment-enforcement.jpg"
  },
  "sfha-grant-payroll-and-disbursement-support": {
   "seconds": 51.4,
   "poster": "sfha-grant-payroll-and-disbursement-support.jpg"
  },
+ "sfha-housing-subsidy-sample-projections": {
+  "seconds": 49.5,
+  "poster": "sfha-housing-subsidy-sample-projections.jpg"
+ },
  "sfha-housing-voucher-inspection-backlog": {
   "seconds": 47.0,
   "poster": "sfha-housing-voucher-inspection-backlog.jpg"
+ },
+ "sfha-interprogram-account-balances": {
+  "seconds": 47.3,
+  "poster": "sfha-interprogram-account-balances.jpg"
  },
  "sfha-landlord-tenant-same-beneficiary": {
   "seconds": 47.7,
@@ -1618,6 +1666,10 @@
  "sfmta-citation-refund-notice": {
   "seconds": 52.6,
   "poster": "sfmta-citation-refund-notice.jpg"
+ },
+ "sfmta-federal-payroll-approval": {
+  "seconds": 45.0,
+  "poster": "sfmta-federal-payroll-approval.jpg"
  },
  "sfmta-federal-transit-audit-costs": {
   "seconds": 84.1,
@@ -1918,6 +1970,10 @@
  "tenant-counsel-grants-office-cost-allocation": {
   "seconds": 52.6,
   "poster": "tenant-counsel-grants-office-cost-allocation.jpg"
+ },
+ "tenderloin-tenant-rent-notice-delays": {
+  "seconds": 42.3,
+  "poster": "tenderloin-tenant-rent-notice-delays.jpg"
  },
  "theatre-lease-extension-and-rent-waivers": {
   "seconds": 52.9,

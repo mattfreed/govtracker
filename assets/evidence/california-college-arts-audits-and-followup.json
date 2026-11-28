@@ -1,0 +1,379 @@
+{
+  "title": "California College of the Arts audit findings and recorded follow-up, FY2016–FY2025",
+  "asOf": "2026-11-28",
+  "method": "Ten signed FAC reports, including current financial-statement findings and prior-year resolutions, matched to the identity of California College of the Arts (EIN 94-1156485). Distinct from San Francisco Art Institute, Academy of Art University, and California Institute of Integral Studies.",
+  "geographicScope": "Historic financial aid and institutional relief reports span both San Francisco and Oakland. Starting fall 2022, the college reported all academic programs and residence halls in San Francisco. Early findings lack a campus-level transaction breakdown.",
+  "geographySources": [
+    "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=8",
+    "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326#page=20"
+  ],
+  "counts": {
+    "originalFederalExportIDs": 15,
+    "distinctNumberedAuditFindings": 17,
+    "financialStatementFindingIDs": 2
+  },
+  "sources": {
+    "2016": {
+      "year": "2016",
+      "id": "2016-06-CENSUS-0000118326",
+      "accepted": "2017-03-05",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "2dc2e10d2ce4bc2883dd55da0c0f8557a8b9576dddbfa4788548bda2cea3caa6",
+      "pages": 38
+    },
+    "2017": {
+      "year": "2017",
+      "id": "2017-06-CENSUS-0000118326",
+      "accepted": "2018-03-27",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "772f87a613d68f56813220f4ff26c124eed90b28a15ed97a6e4406da3327e14e",
+      "pages": 47
+    },
+    "2018": {
+      "year": "2018",
+      "id": "2018-06-CENSUS-0000118326",
+      "accepted": "2019-03-19",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "d384baa486624f0aa0be24b8b8855e37846bf1c27302cb28803dfffed2d50cbf",
+      "pages": 55
+    },
+    "2019": {
+      "year": "2019",
+      "id": "2019-06-CENSUS-0000118326",
+      "accepted": "2020-03-29",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "32624e63bb06c7b080ec891eae16ada32a4fb3269fbfaba41cf7d6e10514d261",
+      "pages": 48
+    },
+    "2020": {
+      "year": "2020",
+      "id": "2020-06-CENSUS-0000118326",
+      "accepted": "2021-08-24",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "d4d22b97b6e10b798d8b287d542191814ead8ab37f8d4a41e61b37c27eba480c",
+      "pages": 53
+    },
+    "2021": {
+      "year": "2021",
+      "id": "2021-06-CENSUS-0000118326",
+      "accepted": "2022-10-25",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "1d67a9f87748af3bd9b39cce8f34033982799d3e73d867573c50e9501d4beca3",
+      "pages": 51
+    },
+    "2022": {
+      "year": "2022",
+      "id": "2022-06-CENSUS-0000118326",
+      "accepted": "2023-03-30",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "SAN FRANCISCO",
+      "sha256": "99c9b0839ccd1c37ed80fc30ca8460a250439993413c285cda4e93e47654c1af",
+      "pages": 55
+    },
+    "2023": {
+      "year": "2023",
+      "id": "2023-06-GSAFAC-0000054781",
+      "accepted": "2024-09-09",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781",
+      "entity": "California College of the Arts",
+      "city": "San Francisco",
+      "sha256": "07ed475943a2f52c27af173c7d60e8feec9c06520ef4bc43415b6d58a533ede1",
+      "pages": 59
+    },
+    "2024": {
+      "year": "2024",
+      "id": "2024-06-GSAFAC-0000364903",
+      "accepted": "2025-04-02",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000364903",
+      "entity": "California College of the Arts",
+      "city": "San Francisco",
+      "sha256": "bf99f5adaeb5f4a8bcd52afea6fbeb218a008b42402e3ee8c0aca19e4ab17814",
+      "pages": 49
+    },
+    "2025": {
+      "year": "2025",
+      "id": "2025-06-GSAFAC-0000419775",
+      "accepted": "2026-05-29",
+      "url": "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775",
+      "entity": "CALIFORNIA COLLEGE OF THE ARTS",
+      "city": "San Francisco",
+      "sha256": "1a1d5e18342454996931ba74507286e7560c8e7db54c6bc1dd5beaa815e4aa1f",
+      "pages": 47
+    }
+  },
+  "findings": [
+    {
+      "id": "2017-001",
+      "schedule": "Federal awards",
+      "finding": "Two of 40 students received $1,000 less each in subsidized loans than eligible, before unsubsidized borrowing.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=38",
+        "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=39"
+      ],
+      "followup": "FY2018 auditor explicitly continued the finding as 2018-001. The FY2019 auditor later found the revised grade-level procedure appeared effective.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=46",
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=42"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2017-002",
+      "schedule": "Federal awards",
+      "finding": "One of 40 students received $824 less in Pell aid than the maximum for which the student was eligible.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=39",
+        "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=40"
+      ],
+      "followup": "The next audit reported that the new Pell checks appeared to be in place. This is a control result and does not establish a dated $824 payment.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=47"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2017-003",
+      "schedule": "Federal awards",
+      "finding": "Corrected work-study earnings and the federal annual aid report after its deadline; no questioned costs or excess funds drawn.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=40",
+        "https://app.fac.gov/dissemination/report/pdf/2017-06-CENSUS-0000118326#page=41"
+      ],
+      "followup": "The college reported corrected procedures following its payroll and general ledger conversion; the next auditor found no similar exception.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=48"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2018-001",
+      "schedule": "Federal awards",
+      "finding": "Subsidized loan underaward of $1,000 in one of 40 files before unsubsidized borrowing; repeat of 2017-001.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=39",
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=40"
+      ],
+      "followup": "The following auditors said corrective action appeared in place and effective.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=41",
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=42"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2018-002",
+      "schedule": "Federal awards",
+      "finding": "One of 40 files exceeded the student’s aggregate subsidized loan eligibility by $500.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=40",
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=41"
+      ],
+      "followup": "Next-year auditors found corrective action appeared effective. The follow-up is distinct from proof of a cash return.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=42",
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=43"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2018-003",
+      "schedule": "Federal awards",
+      "finding": "One Pell payment exceeded lifetime eligibility by $75 and federal reporting was also $75 below disbursement: the same mismatch, not two losses.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=41",
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=42",
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=43"
+      ],
+      "followup": "The next audit reported that the new biweekly variance reviews appeared implemented and effective.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=44",
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=45"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2018-004",
+      "schedule": "Federal awards",
+      "finding": "One of six tested withdrawal files had a Direct Loan return after the 45-day period. No questioned costs.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=43",
+        "https://app.fac.gov/dissemination/report/pdf/2018-06-CENSUS-0000118326#page=44"
+      ],
+      "followup": "Following auditors said weekly processing and a two-person approval appeared effective. FY2020 different withdrawal findings concern amounts and eligibility.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=45",
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=46"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2019-001",
+      "schedule": "Federal awards",
+      "finding": "One of 40 Pell files received $537 more than eligibility after a manual packaging override.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2019-06-CENSUS-0000118326#page=40"
+      ],
+      "followup": "The next report described system changes, award review and safeguards. The reports cited do not document an individual payment confirmation.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326#page=47"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2020-001",
+      "schedule": "Federal awards",
+      "finding": "FY2019 Pell expenditure total carried into FY2020 federal reporting. No excess draws or questioned costs.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326#page=43"
+      ],
+      "followup": "Following report describes secondary review by the financial aid and business offices.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=44",
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=45"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2020-002",
+      "schedule": "Federal awards",
+      "finding": "Four of 17 withdrawal files tested used wrong payment-period days. Under-returns totaled $974 across four programs ($676+$183+$93+$22).",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326#page=44",
+        "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326#page=45"
+      ],
+      "followup": "Following report describes secondary reviews of school calendars and calculations. Original transaction disposition remains unverified.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=45",
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=46"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2020-003",
+      "schedule": "Federal awards",
+      "finding": "Seven of 17 files sampled from 47 withdrawn students had eligible post-withdrawal aid not paid, totaling $1,345.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326#page=45",
+        "https://app.fac.gov/dissemination/report/pdf/2020-06-CENSUS-0000118326#page=46"
+      ],
+      "followup": "The college reported fixing the notice system in spring 2021 and adding manual account checks and notices; the follow-up does not document original student receipt.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=47",
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=48"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2021-001",
+      "schedule": "Financial statements",
+      "finding": "Year-end closing and a manual financial-statement process delayed reporting. Originally a significant deficiency.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=42",
+        "https://app.fac.gov/dissemination/report/pdf/2021-06-CENSUS-0000118326#page=43"
+      ],
+      "followup": "Repeated as a significant deficiency in FY2022. The FY2023 auditor elevated the prior finding to a material weakness. FY2024 and FY2025 again identify a material weakness. No item-level closure in the latest audit.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326#page=48",
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=48",
+        "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000364903#page=46",
+        "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775#page=40",
+        "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775#page=47"
+      ],
+      "includedInBulkFederalFindingIndex": false
+    },
+    {
+      "id": "2022-001",
+      "schedule": "Federal awards",
+      "finding": "One of six HEERF purchases tested exceeded the threshold without competitive quotations. The audit identified no questioned costs and gave no original purchase amount.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326#page=44"
+      ],
+      "followup": "In FY2023 follow-up, two of five tested purchases did not follow policy; auditor continued recommendation. Management proposed new purchasing review in August 2024. FY2024/25 current federal schedules reported no new findings, without transaction-level procurement closure.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=48",
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=49",
+        "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000364903#page=41",
+        "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775#page=40"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2022-002",
+      "schedule": "Federal awards",
+      "finding": "The college reported only eight of 12 required monthly federal Direct Loan cash reconciliations had been performed; no questioned costs.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326#page=45"
+      ],
+      "followup": "Management said the finance manager took responsibility and shared reconciliations with other teams, beginning with February 2022. Later reports document a changed process rather than a cash recovery.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=50",
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=51"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2022-003",
+      "schedule": "Federal awards",
+      "finding": "One of 21 tested students had an enrollment change reported later than the required 60-day window. No questioned costs.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326#page=45",
+        "https://app.fac.gov/dissemination/report/pdf/2022-06-CENSUS-0000118326#page=46"
+      ],
+      "followup": "College described monthly reminders, and following audit recorded corrective action. This is reporting timeliness, not a finding of ineligible borrowing.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=51",
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=52"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2023-001",
+      "schedule": "Federal awards",
+      "finding": "One of 40 loan files received an entire academic year’s aid for a single semester. $2,250 subsidized and $4,000 unsubsidized, total $6,250 excess.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=44",
+        "https://app.fac.gov/dissemination/report/pdf/2023-06-GSAFAC-0000054781#page=45"
+      ],
+      "followup": "After January 2024 training and a new semester-only loan report, FY2024 auditors discontinued the recommendation. No individual balance adjustment appears on the cited follow-up.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000364903#page=42",
+        "https://app.fac.gov/dissemination/report/pdf/2024-06-GSAFAC-0000364903#page=43"
+      ],
+      "includedInBulkFederalFindingIndex": true
+    },
+    {
+      "id": "2025-001",
+      "schedule": "Financial statements",
+      "finding": "Auditors said the FY2025 reporting package missed the nine-month deadline. It appears in financial-statement findings; that report’s federal award program section says none. No questioned costs.",
+      "original": [
+        "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775#page=40"
+      ],
+      "followup": "The FAC shows acceptance on May 29, 2026, 59 days after the nine-month date March 31. Acceptance does not give the date of a first transmission attempt. The college agreed with the finding.",
+      "followupSources": [
+        "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775#page=43",
+        "https://app.fac.gov/dissemination/report/pdf/2025-06-GSAFAC-0000419775#page=44"
+      ],
+      "includedInBulkFederalFindingIndex": false
+    }
+  ],
+  "periodsWithoutCurrentFederalProgramFindings": [
+    2016,
+    2021,
+    2024,
+    2025
+  ],
+  "fy2015PriorYearSchedule": "https://app.fac.gov/dissemination/report/pdf/2016-06-CENSUS-0000118326#page=38"
+}
