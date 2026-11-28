@@ -1,0 +1,31 @@
+{
+ "type": "Source transcription summary",
+ "as_of": "2026-11-27",
+ "issuer": "Bandwidth Inc.",
+ "SEC_filing_date": "2026-10-29",
+ "official_legal_contingencies_note": "https://www.sec.gov/Archives/edgar/data/1514416/000151441626000082/R18.htm",
+ "previous_quarterly_filing": "https://www.sec.gov/Archives/edgar/data/1514416/000151441625000121/band-20250930.htm",
+ "events": [
+  {
+   "date": "2025-07-10",
+   "description": "Company reported receiving a corrected City determination asserting a $3.8 million access line tax deficiency."
+  },
+  {
+   "date": "2025-07-25",
+   "description": "Company reported depositing the full disputed amount under protest."
+  },
+  {
+   "date": "2025-08-07",
+   "description": "Company reported filing an administrative refund claim for the full deposit."
+  },
+  {
+   "date": "2025-12-31",
+   "description": "Company disclosed a separate Superior Court refund complaint."
+  },
+  {
+   "date": "2026-03-27",
+   "description": "Company disclosed the City’s answer to its complaint."
+  }
+ ],
+ "limitation": "The filings state the company’s position. No judgment or refund ledger has been verified. This deposit is excluded from the $21,340,000 authorized in the different multi-carrier litigation."
+}

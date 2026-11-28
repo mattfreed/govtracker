@@ -12,7 +12,7 @@
   "poster": "access-for-all-grant-closeout.jpg"
  },
  "access-line-tax-settlement": {
-  "seconds": 53.8,
+  "seconds": 63.6,
   "poster": "access-line-tax-settlement.jpg"
  },
  "accessible-van-trip-reporting": {
@@ -531,6 +531,10 @@
   "seconds": 41.2,
   "poster": "doherty-painting-public-payroll-and-debarments.jpg"
  },
+ "downtown-park-fee-project-attribution": {
+  "seconds": 48.1,
+  "poster": "downtown-park-fee-project-attribution.jpg"
+ },
  "downtown-steam-franchise-fees": {
   "seconds": 60.1,
   "poster": "downtown-steam-franchise-fees.jpg"
@@ -911,6 +915,10 @@
   "seconds": 130.3,
   "poster": "mid-market-urban-alchemy.jpg"
  },
+ "mission-flood-settlement-authorizations": {
+  "seconds": 52.4,
+  "poster": "mission-flood-settlement-authorizations.jpg"
+ },
  "mission-housing-tax-appeal-deadlines": {
   "seconds": 53.4,
   "poster": "mission-housing-tax-appeal-deadlines.jpg"
@@ -1146,6 +1154,10 @@
  "public-access-cable-fund": {
   "seconds": 50.8,
   "poster": "public-access-cable-fund.jpg"
+ },
+ "public-art-fee-misposted-receipts": {
+  "seconds": 59.6,
+  "poster": "public-art-fee-misposted-receipts.jpg"
  },
  "public-power-ballot-late-contribution-reports": {
   "seconds": 46.8,
@@ -1415,6 +1427,10 @@
   "seconds": 52.8,
   "poster": "sfusd-cafeteria-interest-on-general-fund-support.jpg"
  },
+ "sfusd-clean-energy-contract-and-late-reports": {
+  "seconds": 44.7,
+  "poster": "sfusd-clean-energy-contract-and-late-reports.jpg"
+ },
  "sfusd-e-rate-inflated-equipment": {
   "seconds": 80.9,
   "poster": "sfusd-e-rate-inflated-equipment.jpg"
@@ -1511,9 +1527,17 @@
   "seconds": 40.7,
   "poster": "stanford-hotel-program-monitoring.jpg"
  },
+ "street-artist-certificate-fees": {
+  "seconds": 40.1,
+  "poster": "street-artist-certificate-fees.jpg"
+ },
  "street-improvement-permit-review-clocks": {
   "seconds": 49.6,
   "poster": "street-improvement-permit-review-clocks.jpg"
+ },
+ "street-tree-fee-legacy-balance": {
+  "seconds": 49.7,
+  "poster": "street-tree-fee-legacy-balance.jpg"
  },
  "success-center-youthbuild-shared-costs": {
   "seconds": 63.5,
@@ -1543,6 +1567,10 @@
   "seconds": 45.7,
   "poster": "sweet-public-campaign-financing-order.jpg"
  },
+ "symphony-tax-allocation-and-return-gift": {
+  "seconds": 52.0,
+  "poster": "symphony-tax-allocation-and-return-gift.jpg"
+ },
  "tax-portal-missed-homelessness-tax-refunds": {
   "seconds": 58.7,
   "poster": "tax-portal-missed-homelessness-tax-refunds.jpg"
@@ -1570,6 +1598,10 @@
  "transbay-plumbing-bid-challenge": {
   "seconds": 40.9,
   "poster": "transbay-plumbing-bid-challenge.jpg"
+ },
+ "transit-impact-fee-project-funding-deficit": {
+  "seconds": 43.6,
+  "poster": "transit-impact-fee-project-funding-deficit.jpg"
  },
  "travel-gifts-missing-from-form-700": {
   "seconds": 153.1,
