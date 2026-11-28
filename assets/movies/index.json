@@ -83,6 +83,10 @@
   "seconds": 59.5,
   "passages": 11
  },
+ "bart-antioch-project-invoice-review": {
+  "seconds": 45.4,
+  "passages": 13
+ },
  "bart-certified-payroll-before-payment": {
   "seconds": 46.9,
   "passages": 13
@@ -130,6 +134,10 @@
  "bart-outreach-contract-treatment-outcomes": {
   "seconds": 68.1,
   "passages": 13
+ },
+ "bart-overlapping-public-payroll": {
+  "seconds": 46.6,
+  "passages": 14
  },
  "bart-overtime-highest-transit": {
   "seconds": 156.7,
@@ -604,8 +612,8 @@
   "passages": 15
  },
  "janitorial-workers-compensation-premium-fraud": {
-  "seconds": 47.9,
-  "passages": 12
+  "seconds": 62.2,
+  "passages": 15
  },
  "jj-community-resource-grant-debarment": {
   "seconds": 50.9,
@@ -762,6 +770,10 @@
  "nems-medi-cal-reconciliation-settlement": {
   "seconds": 72.1,
   "passages": 13
+ },
+ "new-asia-rent-waiver-and-housing-transition": {
+  "seconds": 54.2,
+  "passages": 14
  },
  "nexstreet-district-contracts": {
   "seconds": 130.2,
@@ -1406,6 +1418,10 @@
  "who-gets-a-yes": {
   "seconds": 158.6,
   "passages": 41
+ },
+ "windsor-supportive-housing-citations": {
+  "seconds": 53.0,
+  "passages": 11
  },
  "wong-civil-settlement-accounting": {
   "seconds": 50.5,

@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 360 case files. The public citation check tested 2,873 distinct URLs across 4,541 case citations. 2,776 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 364 case files. The public citation check tested 2,909 distinct URLs across 4,582 case citations. 2,810 returned content. 93 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -363,3 +363,13 @@ The number of students reached grew. The service threshold changed, and the depa
 The administrator paid the public insurer during court-ordered diversion. Her charges were dismissed after she completed the program. The separate payroll tax estimate and the co-defendants’ warrants have different outcomes. [Case and film](https://sfgovtracker.com/#case/plastering-payroll-state-fund-restitution) · [Original felony charging announcement with the insurer and payroll reporting allegations](https://sfdistrictattorney.org/district-attorney-brooke-jenkins-announces-multiple-felony-charges-in-insurance-and-tax-fraud-scheme/)
 
 Fictitious audit charges on more than 600 real claims diverted $627,118.86 from San Francisco’s self-insured workers’ compensation fund. The prosecutor reports that the City got all of the money back. [Updated case, film and recovery records](https://sfgovtracker.com/#case/ellicott-workers-compensation-fictitious-audits)
+
+Two documents gave the tenant different move-out deadlines. A separate $10,000 difference in rent reflects two additional months. The developer loan vouchers and the tenant settlement belong to different accounts. [Case and film](https://sfgovtracker.com/#case/new-asia-rent-waiver-and-housing-transition) · [Acknowledged August notice and relocation calculation, PDF pages 1–3](https://sfgov.legistar.com/View.ashx?M=F&ID=15861667&GUID=1A13466E-F98D-40D2-AB11-054E93ACC907)
+
+The inspector general matched two public payrolls on 21 dates. BART confirmed a $993.17 recovery, while the related timekeeping control remained open in November 2026. [Case and film](https://sfgovtracker.com/#case/bart-overlapping-public-payroll) · [January 16 investigation report, PDF pages 1–2, four separate matters](https://oig.bart.gov/files/ae5b56ef8/Summary%2Bof%2BInvestigations%2BVolume%2BI%2B-%2B2026.pdf#page=1)
+
+BART documented recovery of $3,204. Four years later, training for invoice approvers remained open with a revised target. [Case and film](https://sfgovtracker.com/#case/bart-antioch-project-invoice-review) · [FY2022 annual report, refund and training status, PDF page 15](https://www.bart.gov/sites/default/files/docs/OIG%20Annual%20Report%20to%20the%20Legislature%20Fiscal%20Year%202022_Final_070822.pdf#page=15)
+
+Bank records led the receiver to another firm’s assets. Later court filings show that some frozen money paid the receiver’s fees and distribution of the remaining proceeds was contested. Direct insurer collections against the combined restitution order remain unresolved. [Updated case and film](https://sfgovtracker.com/#case/janitorial-workers-compensation-premium-fraud) · [Remaining receiver assets and contested distribution, workers’ compensation grant filing, PDF page 12](https://sfgov.legistar.com/View.ashx?M=F&ID=13281914&GUID=FAB18C19-6CDB-43B6-80D5-7F70DD9E5F1D#page=12)
+
+The Windsor Hotel and a six-building housing agreement show why both employer and property matter. The two employers separately contested their safety citations. The overall satisfaction measure met its target while the Windsor fell below it. [Case and film](https://sfgovtracker.com/#case/windsor-supportive-housing-citations) · [HSH inspection 1697989.015, related activity and item-by-item assessment](https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1697989.015)
