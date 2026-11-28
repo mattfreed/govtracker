@@ -900,8 +900,8 @@
   "passages": 16
  },
  "permit-maze-permits-to-finish-permits": {
-  "seconds": 138.8,
-  "passages": 35
+  "seconds": 155.3,
+  "passages": 38
  },
  "permit-reviews-miss-city-deadline": {
   "seconds": 130.2,
@@ -1786,5 +1786,81 @@
  "public-health-records-storage-charges": {
   "seconds": 41.9,
   "passages": 11
+ },
+ "balboa-park-fee-appropriations-await-transfer": {
+  "seconds": 47.6,
+  "passages": 11
+ },
+ "court-debt-aging-categories": {
+  "seconds": 48.7,
+  "passages": 11
+ },
+ "court-judicial-benefit-reimbursement": {
+  "seconds": 41.9,
+  "passages": 12
+ },
+ "ferry-building-power-and-franchise-fees": {
+  "seconds": 51.6,
+  "passages": 12
+ },
+ "housing-authority-cash-and-pension-reconciliations": {
+  "seconds": 43.7,
+  "passages": 14
+ },
+ "hsa-fleet-lease-inventory": {
+  "seconds": 50.6,
+  "passages": 12
+ },
+ "municipal-bond-insurance-settlement-tranches": {
+  "seconds": 60.0,
+  "passages": 13
+ },
+ "planning-revision-to-letter-review-times": {
+  "seconds": 54.1,
+  "passages": 10
+ },
+ "rams-vocational-grant-salary-allocations": {
+  "seconds": 82.8,
+  "passages": 17
+ },
+ "sfusd-early-kindergarten-size-and-staffing": {
+  "seconds": 42.1,
+  "passages": 14
+ },
+ "sfusd-english-learner-pupil-count-adjustment": {
+  "seconds": 40.3,
+  "passages": 14
+ },
+ "sfusd-school-safety-plan-deadlines": {
+  "seconds": 43.7,
+  "passages": 11
+ },
+ "sfusd-school-site-deposit-delays": {
+  "seconds": 41.7,
+  "passages": 14
+ },
+ "sign-permit-settlement-and-fee-payments": {
+  "seconds": 55.7,
+  "passages": 13
+ },
+ "sfusd-employee-credit-card-reconciliation": {
+  "seconds": 48.9,
+  "passages": 13
+ },
+ "sfusd-series-c-school-bond-premium": {
+  "seconds": 66.1,
+  "passages": 17
+ },
+ "sfusd-after-school-registration-and-staffing": {
+  "seconds": 51.8,
+  "passages": 13
+ },
+ "sfusd-capital-asset-closeout": {
+  "seconds": 49.7,
+  "passages": 13
+ },
+ "sfusd-facilities-report-card-ratings": {
+  "seconds": 50.9,
+  "passages": 13
  }
 }

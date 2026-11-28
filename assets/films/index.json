@@ -111,6 +111,10 @@
   "seconds": 64.7,
   "poster": "baker-places-health-debt-repayment.jpg"
  },
+ "balboa-park-fee-appropriations-await-transfer": {
+  "seconds": 47.6,
+  "poster": "balboa-park-fee-appropriations-await-transfer.jpg"
+ },
  "bart-airport-connector-stimulus-redirect": {
   "seconds": 59.5,
   "poster": "bart-airport-connector-stimulus-redirect.jpg"
@@ -503,6 +507,14 @@
   "seconds": 121.5,
   "poster": "contractor-gifts-off-the-list.jpg"
  },
+ "court-debt-aging-categories": {
+  "seconds": 48.7,
+  "poster": "court-debt-aging-categories.jpg"
+ },
+ "court-judicial-benefit-reimbursement": {
+  "seconds": 41.9,
+  "poster": "court-judicial-benefit-reimbursement.jpg"
+ },
  "cpa-resilient-back-office": {
   "seconds": 172.4,
   "poster": "cpa-resilient-back-office.jpg"
@@ -631,6 +643,10 @@
   "seconds": 130.3,
   "poster": "federal-money-passed-on-not-in-the-register.jpg"
  },
+ "ferry-building-power-and-franchise-fees": {
+  "seconds": 51.6,
+  "poster": "ferry-building-power-and-franchise-fees.jpg"
+ },
  "film-rebate-local-spending-and-budget": {
   "seconds": 58.7,
   "poster": "film-rebate-local-spending-and-budget.jpg"
@@ -723,6 +739,10 @@
   "seconds": 145.1,
   "poster": "hospices-revoked-after-1-26-billion.jpg"
  },
+ "housing-authority-cash-and-pension-reconciliations": {
+  "seconds": 43.7,
+  "poster": "housing-authority-cash-and-pension-reconciliations.jpg"
+ },
  "housing-authority-subsidies-and-central-office-fees": {
   "seconds": 55.6,
   "poster": "housing-authority-subsidies-and-central-office-fees.jpg"
@@ -746,6 +766,10 @@
  "hrc-split-purchases": {
   "seconds": 130.4,
   "poster": "hrc-split-purchases.jpg"
+ },
+ "hsa-fleet-lease-inventory": {
+  "seconds": 50.6,
+  "poster": "hsa-fleet-lease-inventory.jpg"
  },
  "hsa-premium-pay-authorizations": {
   "seconds": 43.5,
@@ -967,6 +991,10 @@
   "seconds": 51.1,
   "poster": "mountain-tunnel-inspection-hours-and-budget.jpg"
  },
+ "municipal-bond-insurance-settlement-tranches": {
+  "seconds": 60.0,
+  "poster": "municipal-bond-insurance-settlement-tranches.jpg"
+ },
  "natoma-park-impact-fee-bridge": {
   "seconds": 61.4,
   "poster": "natoma-park-impact-fee-bridge.jpg"
@@ -1064,7 +1092,7 @@
   "poster": "permit-consultants-unreported-contacts.jpg"
  },
  "permit-maze-permits-to-finish-permits": {
-  "seconds": 138.8,
+  "seconds": 155.3,
   "poster": "permit-maze-permits-to-finish-permits.jpg"
  },
  "permit-reviews-miss-city-deadline": {
@@ -1082,6 +1110,10 @@
  "pier-45-fire-insurance-and-wharf-funding": {
   "seconds": 65.1,
   "poster": "pier-45-fire-insurance-and-wharf-funding.jpg"
+ },
+ "planning-revision-to-letter-review-times": {
+  "seconds": 54.1,
+  "poster": "planning-revision-to-letter-review-times.jpg"
  },
  "plastering-payroll-state-fund-restitution": {
   "seconds": 45.7,
@@ -1194,6 +1226,10 @@
  "purchase-limit-beyond-hrc": {
   "seconds": 131.8,
   "poster": "purchase-limit-beyond-hrc.jpg"
+ },
+ "rams-vocational-grant-salary-allocations": {
+  "seconds": 82.8,
+  "poster": "rams-vocational-grant-salary-allocations.jpg"
  },
  "recology-landfill-non-city-waste": {
   "seconds": 63.4,
@@ -1447,9 +1483,17 @@
   "seconds": 42.7,
   "poster": "sfpuc-wireless-pole-license-counts.jpg"
  },
+ "sfusd-after-school-registration-and-staffing": {
+  "seconds": 51.8,
+  "poster": "sfusd-after-school-registration-and-staffing.jpg"
+ },
  "sfusd-cafeteria-interest-on-general-fund-support": {
   "seconds": 52.8,
   "poster": "sfusd-cafeteria-interest-on-general-fund-support.jpg"
+ },
+ "sfusd-capital-asset-closeout": {
+  "seconds": 49.7,
+  "poster": "sfusd-capital-asset-closeout.jpg"
  },
  "sfusd-clean-energy-contract-and-late-reports": {
   "seconds": 44.7,
@@ -1462,6 +1506,22 @@
  "sfusd-e-rate-net-disbursement-reconciliation": {
   "seconds": 55.3,
   "poster": "sfusd-e-rate-net-disbursement-reconciliation.jpg"
+ },
+ "sfusd-early-kindergarten-size-and-staffing": {
+  "seconds": 42.1,
+  "poster": "sfusd-early-kindergarten-size-and-staffing.jpg"
+ },
+ "sfusd-employee-credit-card-reconciliation": {
+  "seconds": 48.9,
+  "poster": "sfusd-employee-credit-card-reconciliation.jpg"
+ },
+ "sfusd-english-learner-pupil-count-adjustment": {
+  "seconds": 40.3,
+  "poster": "sfusd-english-learner-pupil-count-adjustment.jpg"
+ },
+ "sfusd-facilities-report-card-ratings": {
+  "seconds": 50.9,
+  "poster": "sfusd-facilities-report-card-ratings.jpg"
  },
  "sfusd-immunization-attendance-audits": {
   "seconds": 47.5,
@@ -1487,6 +1547,18 @@
   "seconds": 40.4,
   "poster": "sfusd-school-bus-maintenance-claims.jpg"
  },
+ "sfusd-school-safety-plan-deadlines": {
+  "seconds": 43.7,
+  "poster": "sfusd-school-safety-plan-deadlines.jpg"
+ },
+ "sfusd-school-site-deposit-delays": {
+  "seconds": 41.7,
+  "poster": "sfusd-school-site-deposit-delays.jpg"
+ },
+ "sfusd-series-c-school-bond-premium": {
+  "seconds": 66.1,
+  "poster": "sfusd-series-c-school-bond-premium.jpg"
+ },
  "sfusd-title-i-overpayment-offset": {
   "seconds": 56.4,
   "poster": "sfusd-title-i-overpayment-offset.jpg"
@@ -1502,6 +1574,10 @@
  "side-doors-of-influence": {
   "seconds": 143.8,
   "poster": "side-doors-of-influence.jpg"
+ },
+ "sign-permit-settlement-and-fee-payments": {
+  "seconds": 55.7,
+  "poster": "sign-permit-settlement-and-fee-payments.jpg"
  },
  "silicon-valley-bart-extension-cost-and-oversight": {
   "seconds": 56.2,
