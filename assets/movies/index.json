@@ -911,6 +911,10 @@
   "seconds": 44.8,
   "passages": 10
  },
+ "pier-35-wage-order-and-escrow": {
+  "seconds": 42.9,
+  "passages": 11
+ },
  "pier-45-fire-insurance-and-wharf-funding": {
   "seconds": 65.1,
   "passages": 14
@@ -934,6 +938,10 @@
  "port-embarcadero-percentage-rent-overcharge": {
   "seconds": 43.3,
   "passages": 12
+ },
+ "port-federal-grant-extension-and-obligation-reduction": {
+  "seconds": 40.0,
+  "passages": 11
  },
  "port-pier-23-rent-and-rebid": {
   "seconds": 76.8,
@@ -1291,6 +1299,10 @@
   "seconds": 179.1,
   "passages": 43
  },
+ "soft-story-retrofit-permits-and-certificates": {
+  "seconds": 49.0,
+  "passages": 13
+ },
  "somarts-grant-reimbursement-errors": {
   "seconds": 43.6,
   "passages": 12
@@ -1486,6 +1498,10 @@
  "windsor-supportive-housing-citations": {
   "seconds": 53.0,
   "passages": 11
+ },
+ "wins-bankruptcy-assets-and-city-tax-claim": {
+  "seconds": 62.2,
+  "passages": 13
  },
  "wong-civil-settlement-accounting": {
   "seconds": 50.5,

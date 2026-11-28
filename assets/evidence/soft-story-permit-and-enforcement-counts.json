@@ -1,0 +1,32 @@
+{
+ "asOf": "2026-10-07",
+ "method": "Aggregate by exact block and lot. Lowercase and trim registry status. Restrict comparisons to parcels with exclusively noncompliant program rows. Match references to soft story, soft-story, soft storey or Chapter 34B in permit and complaint descriptions, and require filing, completion or enforcement dates on or before the program snapshot as applicable. Count distinct permit and complaint numbers. Completion of a relevant permit need not represent a building-wide program certificate.",
+ "sources": {
+  "statuses.json": "https://data.sfgov.org/resource/beah-shgi.json?%24select=tier%2Cstatus%2Ccount%28%2A%29%20as%20property_rows%2Cmax%28data_as_of%29%20as%20data_as_of&%24group=tier%2Cstatus&%24order=tier%2Cstatus",
+  "registry.json": "https://data.sfgov.org/resource/beah-shgi.json?%24select=block%2Clot%2Cparcel_number%2Ctier%2Cstatus%2Cdata_as_of&%24order=block%2Clot&%24limit=10000",
+  "permit-candidates.json": "https://data.sfgov.org/resource/i98e-djp9.json?%24select=permit_number%2Crecord_id%2Cblock%2Clot%2Cstreet_number%2Cstreet_name%2Cdescription%2Cfiled_date%2Ccompleted_date%2Cstatus%2Cdata_as_of&%24where=upper%28description%29%20like%20%27%25SOFT%25STOR%25%27%20or%20upper%28description%29%20like%20%27%2534B%25%27&%24order=permit_number%2Crecord_id&%24limit=50000",
+  "complaint-candidates.json": "https://data.sfgov.org/resource/gm2e-bten.json?%24select=complaint_number%2Cblock%2Clot%2Cstreet_number%2Cstreet_name%2Ccomplaint_description%2Cdate_filed%2Cdate_1st_nov_issued%2Cdirector_hearing_date%2Cclosed_date%2Cdate_abated%2Cstatus%2Cdata_as_of&%24where=upper%28complaint_description%29%20like%20%27%25SOFT%25STOR%25%27%20or%20upper%28complaint_description%29%20like%20%27%2534B%25%27&%24order=complaint_number&%24limit=50000"
+ },
+ "counts": {
+  "registryRows": 4958,
+  "distinctParcels": 4901,
+  "rowsByStatus": {
+   "work complete, cfc issued": 4718,
+   "non-compliant": 228,
+   "newly added": 12
+  },
+  "exclusiveNoncompliantParcels": 225,
+  "mixedStatusParcels": 2,
+  "matchedPermitParcels": 196,
+  "distinctRelevantPermitNumbers": 334,
+  "completedPermitParcels": 52,
+  "distinctCompletedPermitNumbers": 70,
+  "explicitRetrofitTermCompletedParcels": 35,
+  "complaintParcels": 167,
+  "distinctComplaints": 230,
+  "firstNoticeParcels": 148,
+  "directorHearingDateParcels": 130,
+  "closedComplaintParcels": 45,
+  "closedComplaintAndCompletedPermitParcels": 5
+ }
+}
