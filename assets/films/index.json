@@ -43,6 +43,10 @@
   "seconds": 130.2,
   "poster": "airport-electrical-one-bidder.jpg"
  },
+ "airport-health-plan-settlement": {
+  "seconds": 60.0,
+  "poster": "airport-health-plan-settlement.jpg"
+ },
  "airport-local-business-participation-credit": {
   "seconds": 77.3,
   "poster": "airport-local-business-participation-credit.jpg"
@@ -519,6 +523,10 @@
   "seconds": 123.3,
   "poster": "davis-family-payments.jpg"
  },
+ "development-fee-corrections-posted-in-later-years": {
+  "seconds": 49.9,
+  "poster": "development-fee-corrections-posted-in-later-years.jpg"
+ },
  "dish-sf-contingency": {
   "seconds": 130.2,
   "poster": "dish-sf-contingency.jpg"
@@ -739,6 +747,10 @@
   "seconds": 130.4,
   "poster": "hrc-split-purchases.jpg"
  },
+ "hsa-premium-pay-authorizations": {
+  "seconds": 43.5,
+  "poster": "hsa-premium-pay-authorizations.jpg"
+ },
  "hsh-oversight-declined": {
   "seconds": 139.9,
   "poster": "hsh-oversight-declined.jpg"
@@ -815,6 +827,10 @@
   "seconds": 144.1,
   "poster": "landlord-and-contractor-same-people.jpg"
  },
+ "leadership-high-charter-settlement-and-closure": {
+  "seconds": 42.8,
+  "poster": "leadership-high-charter-settlement-and-closure.jpg"
+ },
  "left-city-then-led-its-contractor": {
   "seconds": 132.2,
   "poster": "left-city-then-led-its-contractor.jpg"
@@ -826,6 +842,10 @@
  "life-generations-cash-to-iou": {
   "seconds": 130.1,
   "poster": "life-generations-cash-to-iou.jpg"
+ },
+ "lincoln-high-instructional-time-waiver": {
+  "seconds": 47.3,
+  "poster": "lincoln-high-instructional-time-waiver.jpg"
  },
  "lincoln-park-golf-minimum-rent": {
   "seconds": 42.8,
@@ -1158,6 +1178,10 @@
  "public-art-fee-misposted-receipts": {
   "seconds": 59.6,
   "poster": "public-art-fee-misposted-receipts.jpg"
+ },
+ "public-health-records-storage-charges": {
+  "seconds": 41.9,
+  "poster": "public-health-records-storage-charges.jpg"
  },
  "public-power-ballot-late-contribution-reports": {
   "seconds": 46.8,

@@ -1762,5 +1762,29 @@
  "transit-impact-fee-project-funding-deficit": {
   "seconds": 43.6,
   "passages": 11
+ },
+ "airport-health-plan-settlement": {
+  "seconds": 60.0,
+  "passages": 12
+ },
+ "development-fee-corrections-posted-in-later-years": {
+  "seconds": 49.9,
+  "passages": 11
+ },
+ "hsa-premium-pay-authorizations": {
+  "seconds": 43.5,
+  "passages": 11
+ },
+ "leadership-high-charter-settlement-and-closure": {
+  "seconds": 42.8,
+  "passages": 14
+ },
+ "lincoln-high-instructional-time-waiver": {
+  "seconds": 47.3,
+  "passages": 14
+ },
+ "public-health-records-storage-charges": {
+  "seconds": 41.9,
+  "passages": 11
  }
 }
