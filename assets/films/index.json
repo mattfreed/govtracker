@@ -3,6 +3,14 @@
   "seconds": 58.5,
   "poster": "629-post-veteran-housing-bridge-loan.jpg"
  },
+ "access-for-all-grant-closeout": {
+  "seconds": 63.6,
+  "poster": "access-for-all-grant-closeout.jpg"
+ },
+ "accessible-van-trip-reporting": {
+  "seconds": 62.1,
+  "poster": "accessible-van-trip-reporting.jpg"
+ },
  "affordable-housing-power-connection-delays": {
   "seconds": 57.6,
   "poster": "affordable-housing-power-connection-delays.jpg"
@@ -46,6 +54,10 @@
  "anchor-qea-local-subconsultant-participation": {
   "seconds": 68.1,
   "poster": "anchor-qea-local-subconsultant-participation.jpg"
+ },
+ "app-driver-wage-settlement": {
+  "seconds": 51.7,
+  "poster": "app-driver-wage-settlement.jpg"
  },
  "approved-after-the-fact": {
   "seconds": 141.4,
@@ -130,6 +142,10 @@
  "bart-graffiti-safety-and-investigator-access": {
   "seconds": 45.7,
   "poster": "bart-graffiti-safety-and-investigator-access.jpg"
+ },
+ "bart-holiday-salary-continuation-and-missed-pay": {
+  "seconds": 59.7,
+  "poster": "bart-holiday-salary-continuation-and-missed-pay.jpg"
  },
  "bart-inventory-quote-and-card-purchase-samples": {
   "seconds": 51.1,
@@ -271,6 +287,10 @@
   "seconds": 130.1,
   "poster": "buildings-bought-for-housing.jpg"
  },
+ "bundox-restaurant-tax-discharge-and-rent": {
+  "seconds": 73.7,
+  "poster": "bundox-restaurant-tax-discharge-and-rent.jpg"
+ },
  "bvhpf-tier3-still-funded": {
   "seconds": 130.0,
   "poster": "bvhpf-tier3-still-funded.jpg"
@@ -291,6 +311,18 @@
   "seconds": 56.3,
   "poster": "caltrain-farebox-setaside-receivable.jpg"
  },
+ "caltrain-operator-performance-fee-disclosures": {
+  "seconds": 43.1,
+  "poster": "caltrain-operator-performance-fee-disclosures.jpg"
+ },
+ "caltrain-right-of-way-delayed-repayment": {
+  "seconds": 69.2,
+  "poster": "caltrain-right-of-way-delayed-repayment.jpg"
+ },
+ "caltrain-san-bruno-collision-cost-recovery": {
+  "seconds": 50.7,
+  "poster": "caltrain-san-bruno-collision-cost-recovery.jpg"
+ },
  "caltrain-station-apartment-embezzlement": {
   "seconds": 59.3,
   "poster": "caltrain-station-apartment-embezzlement.jpg"
@@ -306,6 +338,14 @@
  "care-home-payroll-and-state-fund-restitution": {
   "seconds": 46.0,
   "poster": "care-home-payroll-and-state-fund-restitution.jpg"
+ },
+ "central-subway-design-consultant-overhead-pools": {
+  "seconds": 50.4,
+  "poster": "central-subway-design-consultant-overhead-pools.jpg"
+ },
+ "central-subway-management-consultant-overhead": {
+  "seconds": 62.3,
+  "poster": "central-subway-management-consultant-overhead.jpg"
  },
  "central-subway-testing-and-delay-claims": {
   "seconds": 64.1,
@@ -372,7 +412,7 @@
   "poster": "city-computer-store-monarch-invoices.jpg"
  },
  "city-concession-receipts-rent-reconciliation": {
-  "seconds": 130.0,
+  "seconds": 131.4,
   "poster": "city-concession-receipts-rent-reconciliation.jpg"
  },
  "city-funded-nonprofits-fund-political-arms": {
@@ -462,6 +502,10 @@
  "crestwood-locked-beds-contract": {
   "seconds": 130.6,
   "poster": "crestwood-locked-beds-contract.jpg"
+ },
+ "crystal-springs-golf-rent-and-late-fees": {
+  "seconds": 59.0,
+  "poster": "crystal-springs-golf-rent-and-late-fees.jpg"
  },
  "davis-family-payments": {
   "seconds": 123.3,
@@ -562,6 +606,10 @@
  "federal-money-passed-on-not-in-the-register": {
   "seconds": 130.3,
   "poster": "federal-money-passed-on-not-in-the-register.jpg"
+ },
+ "film-rebate-local-spending-and-budget": {
+  "seconds": 58.7,
+  "poster": "film-rebate-local-spending-and-budget.jpg"
  },
  "fixed-crews-fixed-stations": {
   "seconds": 142.7,
@@ -715,6 +763,10 @@
   "seconds": 62.2,
   "poster": "janitorial-workers-compensation-premium-fraud.jpg"
  },
+ "jin-electric-public-works-wage-withholdings": {
+  "seconds": 44.9,
+  "poster": "jin-electric-public-works-wage-withholdings.jpg"
+ },
  "jj-community-resource-grant-debarment": {
   "seconds": 50.9,
   "poster": "jj-community-resource-grant-debarment.jpg"
@@ -794,6 +846,14 @@
  "lower-alemany-engineering-bid-protest": {
   "seconds": 44.6,
   "poster": "lower-alemany-engineering-bid-protest.jpg"
+ },
+ "lyft-access-fee-offset-review": {
+  "seconds": 53.4,
+  "poster": "lyft-access-fee-offset-review.jpg"
+ },
+ "lyft-wheelchair-complaint-corrections": {
+  "seconds": 62.3,
+  "poster": "lyft-wheelchair-complaint-corrections.jpg"
  },
  "lyric-hud-grant-reimbursement-and-rate": {
   "seconds": 54.2,
@@ -1067,6 +1127,10 @@
   "seconds": 133.3,
   "poster": "providence-oasis-invoices.jpg"
  },
+ "public-access-cable-fund": {
+  "seconds": 50.8,
+  "poster": "public-access-cable-fund.jpg"
+ },
  "public-power-ballot-late-contribution-reports": {
   "seconds": 46.8,
   "poster": "public-power-ballot-late-contribution-reports.jpg"
@@ -1100,12 +1164,16 @@
   "poster": "restricted-housing-project-debt-payments.jpg"
  },
  "restricted-source-gift-cases": {
-  "seconds": 130.7,
+  "seconds": 135.1,
   "poster": "restricted-source-gift-cases.jpg"
  },
  "rmc-bay-sand-royalty-settlement": {
   "seconds": 48.3,
   "poster": "rmc-bay-sand-royalty-settlement.jpg"
+ },
+ "ronen-campaign-joint-check-and-mailers": {
+  "seconds": 42.0,
+  "poster": "ronen-campaign-joint-check-and-mailers.jpg"
  },
  "roofing-permit-payroll-and-state-insurance": {
   "seconds": 47.0,
@@ -1242,6 +1310,10 @@
  "sfmta-overtime-slips-and-operator-settlement": {
   "seconds": 56.5,
   "poster": "sfmta-overtime-slips-and-operator-settlement.jpg"
+ },
+ "sfmta-paratransit-broker-payments": {
+  "seconds": 58.2,
+  "poster": "sfmta-paratransit-broker-payments.jpg"
  },
  "sfmta-service-contracts-outlive-their-bids": {
   "seconds": 130.3,
@@ -1447,6 +1519,10 @@
   "seconds": 58.7,
   "poster": "tax-portal-missed-homelessness-tax-refunds.jpg"
  },
+ "taxi-complaints-closed-without-review": {
+  "seconds": 54.3,
+  "poster": "taxi-complaints-closed-without-review.jpg"
+ },
  "tenant-counsel-grants-office-cost-allocation": {
   "seconds": 52.6,
   "poster": "tenant-counsel-grants-office-cost-allocation.jpg"
@@ -1490,6 +1566,10 @@
  "two-sets-of-books": {
   "seconds": 130.3,
   "poster": "two-sets-of-books.jpg"
+ },
+ "uber-airport-toll-refunds": {
+  "seconds": 51.5,
+  "poster": "uber-airport-toll-refunds.jpg"
  },
  "under-ten-million-then-amended": {
   "seconds": 154.3,
@@ -1543,6 +1623,10 @@
   "seconds": 130.4,
   "poster": "waiver-reports-not-filed.jpg"
  },
+ "walk-sf-ballot-committee-filing-delays": {
+  "seconds": 45.2,
+  "poster": "walk-sf-ballot-committee-filing-delays.jpg"
+ },
  "walton-bacr-trip-and-vote": {
   "seconds": 165.2,
   "poster": "walton-bacr-trip-and-vote.jpg"
@@ -1586,6 +1670,10 @@
  "yank-sing-wage-and-tip-recovery": {
   "seconds": 57.6,
   "poster": "yank-sing-wage-and-tip-recovery.jpg"
+ },
+ "yerba-buena-gardens-management-false-claims": {
+  "seconds": 56.9,
+  "poster": "yerba-buena-gardens-management-false-claims.jpg"
  },
  "youth-grants-missed-board-approval": {
   "seconds": 40.4,

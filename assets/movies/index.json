@@ -328,8 +328,8 @@
   "passages": 14
  },
  "city-concession-receipts-rent-reconciliation": {
-  "seconds": 130.0,
-  "passages": 27
+  "seconds": 131.4,
+  "passages": 30
  },
  "city-funded-nonprofits-fund-political-arms": {
   "seconds": 130.7,
@@ -1036,8 +1036,8 @@
   "passages": 15
  },
  "restricted-source-gift-cases": {
-  "seconds": 130.7,
-  "passages": 35
+  "seconds": 135.1,
+  "passages": 36
  },
  "rmc-bay-sand-royalty-settlement": {
   "seconds": 48.3,
@@ -1614,5 +1614,93 @@
  "sfpuc-water-discount-eligibility-and-repayments": {
   "seconds": 57.2,
   "passages": 13
+ },
+ "bart-holiday-salary-continuation-and-missed-pay": {
+  "seconds": 59.7,
+  "passages": 13
+ },
+ "public-access-cable-fund": {
+  "seconds": 50.8,
+  "passages": 13
+ },
+ "ronen-campaign-joint-check-and-mailers": {
+  "seconds": 42.0,
+  "passages": 10
+ },
+ "walk-sf-ballot-committee-filing-delays": {
+  "seconds": 45.2,
+  "passages": 12
+ },
+ "central-subway-management-consultant-overhead": {
+  "seconds": 62.3,
+  "passages": 12
+ },
+ "accessible-van-trip-reporting": {
+  "seconds": 62.1,
+  "passages": 12
+ },
+ "caltrain-operator-performance-fee-disclosures": {
+  "seconds": 43.1,
+  "passages": 12
+ },
+ "sfmta-paratransit-broker-payments": {
+  "seconds": 58.2,
+  "passages": 13
+ },
+ "taxi-complaints-closed-without-review": {
+  "seconds": 54.3,
+  "passages": 12
+ },
+ "bundox-restaurant-tax-discharge-and-rent": {
+  "seconds": 73.7,
+  "passages": 16
+ },
+ "crystal-springs-golf-rent-and-late-fees": {
+  "seconds": 59.0,
+  "passages": 13
+ },
+ "access-for-all-grant-closeout": {
+  "seconds": 63.6,
+  "passages": 12
+ },
+ "caltrain-san-bruno-collision-cost-recovery": {
+  "seconds": 50.7,
+  "passages": 13
+ },
+ "caltrain-right-of-way-delayed-repayment": {
+  "seconds": 69.2,
+  "passages": 14
+ },
+ "central-subway-design-consultant-overhead-pools": {
+  "seconds": 50.4,
+  "passages": 13
+ },
+ "lyft-wheelchair-complaint-corrections": {
+  "seconds": 62.3,
+  "passages": 12
+ },
+ "film-rebate-local-spending-and-budget": {
+  "seconds": 58.7,
+  "passages": 13
+ },
+ "jin-electric-public-works-wage-withholdings": {
+  "seconds": 44.9,
+  "passages": 12
+ },
+ "lyft-access-fee-offset-review": {
+  "seconds": 53.4,
+  "passages": 12
+ },
+ "app-driver-wage-settlement": {
+  "seconds": 51.7,
+  "passages": 12
+ },
+ "yerba-buena-gardens-management-false-claims": {
+  "seconds": 56.9,
+  "passages": 13
+ },
+ "uber-airport-toll-refunds": {
+  "seconds": 51.5,
+  "passages": 12
  }
 }

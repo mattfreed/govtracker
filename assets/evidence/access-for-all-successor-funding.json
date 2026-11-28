@@ -1,0 +1,34 @@
+{
+ "title": "SFMTA 2026 Access for All successor solicitation funding",
+ "event": "SFGOV-0000011591",
+ "presentationDate": "2026-04-23",
+ "basis": "Project transcription of the funding amounts printed in the SFMTA pre-proposal conference slide. The agency outreach presentation independently reports $2.4 million in rounded terms.",
+ "slideText": "https://govtribe.com/file/government-file/sfmta-2026-26-loc-pre-proposal-conference-presentation-dot-pdf",
+ "agencyOutreach": "https://www.sfmta.com/media/44822/download?inline=#page=9",
+ "contractData": "https://data.sfgov.org/resource/cqi5-hm2d.csv?%24where=contract_no+in+%28%271000035104%27%2C%271000035290%27%2C%271000035140%27%2C%271000033775%27%29&%24limit=50000",
+ "voucherData": "https://data.sfgov.org/resource/n9pm-xkyq.csv?%24where=department_code%3D%27MTA%27+and+fiscal_year%3E%3D%272025%27+and+%28vendor%3D%27TOWER+WAV+LLC%27+or+vendor%3D%27Nomad+Transit+LLC%27+or+vendor%3D%27GREEN+CAB%27%29&%24limit=50000&%24order=fiscal_year%2Cvoucher",
+ "byFiscalCycle": [
+  {
+   "fiscalCycle": "FY2023–24",
+   "dollars": "885984.57"
+  },
+  {
+   "fiscalCycle": "FY2024–25",
+   "dollars": "1456103.55"
+  },
+  {
+   "fiscalCycle": "FY2025–26",
+   "dollars": "95398.05"
+  },
+  {
+   "fiscalCycle": "FY2026–27",
+   "dollars": "1166.74"
+  }
+ ],
+ "administrationShownSeparately": "561375.94",
+ "priorGrantCloseout": {
+  "Tower": "730041.02",
+  "Nomad": "155943.55",
+  "combined": "885984.57"
+ }
+}
