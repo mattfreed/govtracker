@@ -674,7 +674,7 @@
     }
     if (page.length) pages.push(page);
     if (options.singlePage) return plateTitle(title) + '<ol class="plate-rows">' + pages.flat().join('') + '</ol>';
-    return plateTitle(title) + pages.map((items,i) => '<div class="plate-page"' + (i ? ' hidden' : '') + '><ol class="plate-rows">' + items.join('') + '</ol></div>').join('') + (pages.length > 1 ? '<span class="plate-pagenum"></span>' : '');
+    return plateTitle(title) + '<div class="plate-pages">' + pages.map((items,i) => '<div class="plate-page"' + (i ? ' hidden' : '') + '><ol class="plate-rows">' + items.join('') + '</ol></div>').join('') + '</div>' + (pages.length > 1 ? '<span class="plate-pagenum"></span>' : '');
   }
   function feature(v, icon, title, detail, chip) {
     const accent = chip ? '<b class="plate-chip">' + esc(chip) + '</b>' : '';
@@ -743,7 +743,7 @@
       const pay=(o.city || []).map(([period,amount])=>row(period,amount,'money'));
       return '<div class="plate-page" hidden>'+listPlate(o.name,pay,{bars:true,singlePage:true})+'<p class="plate-loan">'+esc(['PPP loan',o.loan,o.approved].filter(Boolean).join(' · '))+(o.forgiven?' · Forgiven '+esc(o.forgiven):'')+'</p></div>';
     });
-    return groups.join('')+(groups.length>1?'<span class="plate-pagenum"></span>':'');
+    return '<div class="plate-pages">'+groups.join('')+'</div>'+(groups.length>1?'<span class="plate-pagenum"></span>':'');
   }
 
   function plateFor(b, c, opening) {
@@ -833,7 +833,17 @@
         // Continued beats with identical visuals share page time. An authored change begins a new table.
         const phase=bs.length>1 && oneVisual ? st.lt/Math.max(.2,st.dur) : st.bp;
         const next=Math.min(pages.length-1,Math.floor(Math.max(0,phase || 0)*pages.length));
-        if(next!==pageIndex){if(pageIndex>=0) st.beforePageChange?.();pages.forEach((p,k)=>{p.hidden=k!==next;});if(pageLabel)pageLabel.textContent=(next+1)+' / '+pages.length;pageIndex=next;fit();}
+        if (next !== pageIndex) {
+          const old = pages[pageIndex], current = pages[next];
+          pages.forEach((p,k) => { p.hidden = k !== next; p.classList.toggle('in', k === next); });
+          current.inert = false;
+          current.removeAttribute('aria-hidden');
+          current.classList.remove('out');
+          if (pageLabel) pageLabel.textContent = (next + 1) + ' / ' + pages.length;
+          pageIndex = next;
+          fit();
+          if (old) st.blendPages?.(old, current);
+        }
       }
     }
     paint(bs[0]); lastKey=keys[0]; return {el,update};

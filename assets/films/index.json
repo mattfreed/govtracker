@@ -16,7 +16,7 @@
   "poster": "airport-architect-officer-subcontract.jpg"
  },
  "airport-baggage-maintenance-state-ban": {
-  "seconds": 51.2,
+  "seconds": 57.4,
   "poster": "airport-baggage-maintenance-state-ban.jpg"
  },
  "airport-bond-trustee-retroactive-approval": {
@@ -158,6 +158,10 @@
  "bay-area-hospice-surge": {
   "seconds": 130.2,
   "poster": "bay-area-hospice-surge.jpg"
+ },
+ "bay-corridor-design-contract-term": {
+  "seconds": 51.8,
+  "poster": "bay-corridor-design-contract-term.jpg"
  },
  "beach-chalet-late-rent-recovery": {
   "seconds": 47.4,
@@ -443,6 +447,10 @@
   "seconds": 153.2,
   "poster": "failed-checkups-kept-funding.jpg"
  },
+ "family-housing-state-funding-delay": {
+  "seconds": 54.8,
+  "poster": "family-housing-state-funding-delay.jpg"
+ },
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
   "poster": "family-shelter-beds-left-empty.jpg"
@@ -667,6 +675,10 @@
   "seconds": 52.3,
   "poster": "maceo-may-storm-repair-insurance.jpg"
  },
+ "make-ready-contractor-licensing-and-insurance": {
+  "seconds": 52.8,
+  "poster": "make-ready-contractor-licensing-and-insurance.jpg"
+ },
  "marin-street-water-headquarters-design": {
   "seconds": 65.0,
   "poster": "marin-street-water-headquarters-design.jpg"
@@ -844,12 +856,16 @@
   "poster": "port-pier-23-rent-and-rebid.jpg"
  },
  "port-rent-arrears-and-collections": {
-  "seconds": 55.9,
+  "seconds": 65.6,
   "poster": "port-rent-arrears-and-collections.jpg"
  },
  "portsmouth-garage-renovation-overrun": {
   "seconds": 56.2,
   "poster": "portsmouth-garage-renovation-overrun.jpg"
+ },
+ "power-scheduling-transmission-cost-forecast": {
+  "seconds": 48.8,
+  "poster": "power-scheduling-transmission-cost-forecast.jpg"
  },
  "ppp-and-city-money": {
   "seconds": 134.1,
@@ -928,7 +944,7 @@
   "poster": "rmc-bay-sand-royalty-settlement.jpg"
  },
  "roofing-permit-payroll-and-state-insurance": {
-  "seconds": 42.2,
+  "seconds": 47.0,
   "poster": "roofing-permit-payroll-and-state-insurance.jpg"
  },
  "safehouse-client-stipends-and-housing-loan": {
@@ -970,6 +986,10 @@
  "service-numbers-copied-forward": {
   "seconds": 130.4,
   "poster": "service-numbers-copied-forward.jpg"
+ },
+ "sewer-improvement-phase-one-budget": {
+  "seconds": 68.1,
+  "poster": "sewer-improvement-phase-one-budget.jpg"
  },
  "sf-assessor-smart-system-delay": {
   "seconds": 41.3,

@@ -16,8 +16,8 @@
   "passages": 14
  },
  "airport-baggage-maintenance-state-ban": {
-  "seconds": 51.2,
-  "passages": 12
+  "seconds": 57.4,
+  "passages": 13
  },
  "airport-bond-trustee-retroactive-approval": {
   "seconds": 50.7,
@@ -158,6 +158,10 @@
  "bay-area-hospice-surge": {
   "seconds": 130.2,
   "passages": 38
+ },
+ "bay-corridor-design-contract-term": {
+  "seconds": 51.8,
+  "passages": 14
  },
  "beach-chalet-late-rent-recovery": {
   "seconds": 47.4,
@@ -443,6 +447,10 @@
   "seconds": 153.2,
   "passages": 43
  },
+ "family-housing-state-funding-delay": {
+  "seconds": 54.8,
+  "passages": 14
+ },
  "family-shelter-beds-left-empty": {
   "seconds": 142.6,
   "passages": 33
@@ -667,6 +675,10 @@
   "seconds": 52.3,
   "passages": 13
  },
+ "make-ready-contractor-licensing-and-insurance": {
+  "seconds": 52.8,
+  "passages": 16
+ },
  "marin-street-water-headquarters-design": {
   "seconds": 65.0,
   "passages": 14
@@ -844,12 +856,16 @@
   "passages": 19
  },
  "port-rent-arrears-and-collections": {
-  "seconds": 55.9,
-  "passages": 11
+  "seconds": 65.6,
+  "passages": 13
  },
  "portsmouth-garage-renovation-overrun": {
   "seconds": 56.2,
   "passages": 12
+ },
+ "power-scheduling-transmission-cost-forecast": {
+  "seconds": 48.8,
+  "passages": 15
  },
  "ppp-and-city-money": {
   "seconds": 134.1,
@@ -928,8 +944,8 @@
   "passages": 10
  },
  "roofing-permit-payroll-and-state-insurance": {
-  "seconds": 42.2,
-  "passages": 14
+  "seconds": 47.0,
+  "passages": 15
  },
  "safehouse-client-stipends-and-housing-loan": {
   "seconds": 58.3,
@@ -970,6 +986,10 @@
  "service-numbers-copied-forward": {
   "seconds": 130.4,
   "passages": 35
+ },
+ "sewer-improvement-phase-one-budget": {
+  "seconds": 68.1,
+  "passages": 17
  },
  "sf-assessor-smart-system-delay": {
   "seconds": 41.3,

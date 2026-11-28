@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 345 case files. The public citation check tested 2,706 distinct URLs across 4,359 case citations. 2,609 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 350 case files. The public citation check tested 2,805 distinct URLs across 4,466 case citations. 2,708 returned content. 91 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -324,4 +324,20 @@ San Francisco approved a $2.49 million train-control delay claim after settling 
 
 San Francisco twice flagged late financial statements. The nonprofit’s independent auditor later documented six federal forms filed beyond nine months. The Controller lowered the city risk designation as other problems were corrected. [Underlying records and case film](https://sfgovtracker.com/#case/conard-house-late-audit-filings)
 
-An injured worker’s claim exposed conflicting payroll declarations. The prosecutor traced the discrepancy across permits, insurer audits and homeowners’ contracts and documented felony pleas. [Underlying records and case film](https://sfgovtracker.com/#case/roofing-permit-payroll-and-state-insurance)
+The adopted licensing decision identifies a felony premium-fraud conviction for Yong Chan Chon and two misdemeanors for Douglas Guinn. It records an insurer restitution order against Guinn and found insufficient evidence to assign that order to Chon. [Underlying records and case film](https://sfgovtracker.com/#case/roofing-permit-payroll-and-state-insurance)
+
+## Power contracts, sewer delivery, licensing and housing finance
+
+A later budget report understated earlier market-charge limits by $500,000 and $30 million. The signed amendments, the earlier analyst report and the later payment register identify what each figure represents. [Case and film](https://sfgovtracker.com/#case/power-scheduling-transmission-cost-forecast) · [October 2025 analyst report, PDF page 15, Exhibits 1 and 2](https://sfgov.legistar.com/View.ashx?M=F&ID=14856578&GUID=9487BC3E-3820-4BD4-B785-AC30B8B9209F)
+
+A late notice moved the contract beyond the original authority. Later amendments carried the date forward until the Commission expressly corrected the discrepancy in 2019. [Case and film](https://sfgovtracker.com/#case/bay-corridor-design-contract-term) · [Executed fourth amendment, section 2 on the revised term](https://sfgov.legistar.com/View.ashx?M=F&ID=8574209&GUID=9E78809A-330D-4ECF-A34A-873480C60336)
+
+An operator with a revoked personal license ran a licensed company. A separate board decision reached a second business through the shared qualifier. The criminal court record reported by the prosecutor distinguishes the operator’s plea from the dismissed charges. [Case and film](https://sfgovtracker.com/#case/make-ready-contractor-licensing-and-insurance) · [Signed September 2018 licensing decision](https://www.cslb.ca.gov/CompletedPDF/Accusations/N2016-472/N2016-472-20180809-Order.pdf)
+
+The Public Utilities Commission raised Phase 1 of its sewer improvement program from $2.91 billion in 2016 to $4.40 billion in 2022 and moved the approved finish back 68 months. Later reports show both project delays and work delivered. [Case and film](https://sfgovtracker.com/#case/sewer-improvement-phase-one-budget) · [FY2025–26 Q4, executive program budget, spending and schedule tables, PDF pp. 7–8](https://www.sfpuc.gov/sites/default/files/documents/WWE-CIP-Q4-FY25-26.pdf#page=8)
+
+After two unsuccessful state funding rounds, the sponsors of affordable family housing on 18th Street proposed replacing service space with more apartments. City analysts moved expected lease-up more than two years. [Case and film](https://sfgovtracker.com/#case/family-housing-state-funding-delay) · [File 241135, January 22 analyst report, pp. 23–28, redesign, borrowing and schedule](https://sfgov.legistar.com/View.ashx?M=F&ID=13685828&GUID=FE233601-8FB5-4328-8C04-26C0D7E0D641)
+
+SFO disqualified its incumbent because its United States headquarters was in Georgia. The replacement firm later won a new competition after the City repealed the ban. [Case and film](https://sfgovtracker.com/#case/airport-baggage-maintenance-state-ban) · [March 2022 covered-state list, including operative dates and Georgia grounds](https://media.api.sf.gov/documents/Appendix_D_Administrative_Code_Chapter_12X_List_of_States_as_of_3.2022.pdf)
+
+Pandemic arrears were concentrated in a few dozen Port agreements. Two years later the Port requested a collections officer, citing the risk that aging debts would become uncollectible. Later audited balances leave open how much of the original debt was recovered. [Case and film](https://sfgovtracker.com/#case/port-rent-arrears-and-collections) · [Port portfolio management and delinquency, November 2021 staff memorandum, pp. 7–10 and Tables 1–3](https://sfport.com/files/2021-11/11092021_Item%208A%20Delinquency%20Challenges_final_0.pdf)

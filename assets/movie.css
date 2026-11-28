@@ -690,6 +690,10 @@
 .s6.fd-slide .plate-row-value { text-align:right; color:var(--pg-accent); font-variant-numeric:tabular-nums; }
 .s6.fd-slide .plate-rows .plate-icon { color:var(--pg-accent); width:38px; height:38px; }
 .s6.fd-slide .plate-bar { position:absolute; bottom:2px; left:0; width:var(--value); max-width:100%; height:5px; background:var(--pg-accent); }
+.plate-pages { position:relative; }
+.plate-pages > .plate-page { background:var(--pg-paper); }
+.plate-pages > .plate-page.out { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.plate-pages > .plate-page.in { position:relative; z-index:1; }
 .s6.fd-slide .plate-pagenum { display:block; text-align:right; margin-top:4px; color:var(--pg-dim); font:620 25px/1.15 ui-monospace,monospace; }
 .s6.fd-slide .plate-sequence { display:grid; grid-template-columns:repeat(var(--stops),minmax(0,1fr)); gap:22px; }
 .s6.fd-slide .plate-sequence article { position:relative; padding:14px 14px 0 0; border-top:4px solid var(--pg-accent); min-width:0; }

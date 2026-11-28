@@ -369,17 +369,17 @@
     }
     function finishCut() {
       if (!s.cut) return;
-      const {animation, previous} = s.cut;
+      const {animation, retire} = s.cut;
       s.cut = null;
       animation.onfinish = null;
       animation.cancel();
-      previous.remove();
+      retire();
     }
     function canBlend() {
       return playing() && !s.jump && !voice.seeking && !motion?.matches && typeof view6.animate === 'function';
     }
     // The outgoing plate stays opaque while the next one fades over it on the compositor.
-    function blend(previous, next) {
+    function blend(previous, next, retire = () => previous.remove()) {
       previous.classList.remove('in');
       previous.classList.add('out');
       previous.inert = true;
@@ -387,7 +387,7 @@
       const animation = next.animate([{opacity: 0}, {opacity: 1}], {duration: CUT_MS, easing: 'ease-out'});
       // New animations otherwise wait for another rendering update to acquire a start time.
       if (document.timeline?.currentTime != null) animation.startTime = document.timeline.currentTime;
-      s.cut = {animation, previous};
+      s.cut = {animation, retire};
       animation.onfinish = () => { if (s.cut?.animation === animation) finishCut(); };
     }
     s.finishCut = finishCut;
@@ -426,7 +426,13 @@
         previous = s.cur6.el.cloneNode(true);
         view6.insertBefore(previous, s.cur6.el);
       }
-      try { s.cur6.update({t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0), beforePageChange: keepPreviousPage}); }
+      function blendPages(old, current) {
+        if (changed || previous || !canBlend()) return;
+        finishCut();
+        old.hidden = false;
+        blend(old, current, () => { old.hidden = true; old.classList.remove('out'); });
+      }
+      try { s.cur6.update({t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0), beforePageChange: keepPreviousPage, blendPages}); }
       catch (e) { if (!s.err6) { s.err6 = 1; console.error(e); } }
       if (previous) blend(previous, s.cur6.el);
       if (bi !== s.bi && bi === s.bi + 1 && !s.jump && playing() && b.step > 0) sound(window.FD_FILM6.SFX[b.kind]);
