@@ -1408,8 +1408,8 @@
   "passages": 13
  },
  "turk-street-construction-award-and-delivery": {
-  "seconds": 41.4,
-  "passages": 11
+  "seconds": 46.9,
+  "passages": 12
  },
  "two-sets-of-books": {
   "seconds": 130.3,
@@ -1538,5 +1538,17 @@
  "zsfg-workplace-safety-citations": {
   "seconds": 57.1,
   "passages": 12
+ },
+ "american-airporter-driver-judgment-and-ellis-garage": {
+  "seconds": 46.6,
+  "passages": 13
+ },
+ "bart-graffiti-safety-and-investigator-access": {
+  "seconds": 45.7,
+  "passages": 13
+ },
+ "justis-project-budget-and-delivery": {
+  "seconds": 52.5,
+  "passages": 11
  }
 }

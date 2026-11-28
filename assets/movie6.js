@@ -762,7 +762,7 @@
       const text=v.text || src.title || note, markAt = v.mark ? text.indexOf(v.mark) : -1;
       const marked=markAt<0 ? esc(text) : esc(text.slice(0,markAt))+'<mark>'+esc(v.mark)+'</mark>'+esc(text.slice(markAt+v.mark.length));
       body = '<article class="paper plate-paper"><div class="plate-document-meta">'+plateIcon(glyph)+'<span>'+esc(v.date || src.date || '')+'</span></div><h2>'+marked+'</h2>'+plateNote(src.title !== text ? src.title : '')+'</article>';
-    } else if (type === 'record' || type === 'rank' || type === 'form') {
+    } else if (type === 'record' || type === 'rank' || type === 'form' || type === 'compare') {
       style = 'table'; glyph = type==='rank' ? 'chart' : (v.layout==='flow'?'transfer':v.layout==='timeline'?'calendar':'document');
       heading=v.context || v.kicker || cat;
       const rows=(v.rows || []).map(r => Array.isArray(r) ? row(r[0],r[1],glyph) : row(r.label,r.value ?? r.event,r.icon || glyph));
@@ -797,7 +797,7 @@
     if (opening && ['scene','bignum','count','quote','slam'].includes(type) && c.title !== v.label) heading = c.title;
     return {type,style,layout:v.layout,html:plateHeader(glyph,heading)+'<div class="plate-body">'+body+'</div>'};
   }
-  const plateKinds = new Set(['scene','bignum','count','hook','slam','title','doc','headline','record','rank','form','chain','span','versus','quote','caveat','explain','unknowns','settle','status','end','clock','share','sfmap','line','bars']);
+  const plateKinds = new Set(['scene','bignum','count','hook','slam','title','doc','headline','record','rank','form','compare','chain','span','versus','quote','caveat','explain','unknowns','settle','status','end','clock','share','sfmap','line','bars']);
   function editorialShot(bs,c,k) {
     const el = node('<div class="s6 fd-slide"><div class="plate-frame"></div></div>'), frame = el.firstChild;
     const keys = bs.map(b => JSON.stringify(b.visual || {}) + (b.visual?.type ? '' : b.text));
