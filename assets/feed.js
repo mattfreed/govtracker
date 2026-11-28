@@ -180,17 +180,25 @@
     const setSound = on => { s.sound = on; store.set('fd.sound', on ? 'on' : 'off'); root.classList.toggle('muted', !on); reels.forEach((_, k) => { const v = vid(k); if (v) v.muted = !on; }); muteIcon(); };
     const play = i => { s.watching = true; const v = vid(i) || openLive(i); if (!v) return; v.muted = !s.sound; const p = v.play(); if (p && p.catch) p.catch(() => { if (!v.muted) { v.muted = true; root.classList.add('muted'); v.play().catch(() => {}); } }); };
     const activate = i => {
-      if (s.fullscreen.active() || i === s.i || !reels[i]) return; s.i = i;
+      if (s.fullscreen.active() || i === s.i || !reels[i]) return;
+      const previous = s.i;
+      s.i = i;
       for (let k = Math.max(0, i - 2); k <= Math.min(reels.length - 1, i + 3); k++) { const bg = reels[k].querySelector('.reel-bg[data-bg]'); if (bg) { bg.style.backgroundImage = `url('${bg.dataset.bg}')`; bg.removeAttribute('data-bg'); } }   // covers load only near the film on screen
-      reels.forEach(r => r.classList.remove('playing', 'started'));
+      reels[previous]?.classList.remove('playing', 'started');
       openLive(i); if (s.watching) play(i);                                     // nothing plays until the viewer taps play (owner, 24 Nov 2026); after that, the next film carries on
-      counter.textContent = `${i + 1} / ${reels.length}`; items.forEach((b, k) => { b.classList.toggle('on', k === i); if (k === i) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current'); }); if (items[i]) { const ol = items[i].closest('.feed-list'), bt = items[i]; if (ol && (bt.offsetTop < ol.scrollTop + 40 || bt.offsetTop + bt.offsetHeight > ol.scrollTop + ol.clientHeight - 20)) ol.scrollTo({ top: bt.offsetTop - ol.clientHeight / 3, behavior: 'smooth' }); } if (items[i] && innerWidth < 1100) { const ol = items[i].closest('ol'), bt = items[i].closest('li') || items[i]; if (ol) ol.scrollTo({ left: bt.offsetLeft - ol.clientWidth / 2 + bt.offsetWidth / 2, behavior: 'smooth' }); }
+      counter.textContent = `${i + 1} / ${reels.length}`;
+      const former = previous >= 0 ? items[previous] : root.querySelector('[data-go][aria-current]');
+      former?.classList.remove('on');
+      former?.removeAttribute('aria-current');
+      items[i]?.classList.add('on');
+      items[i]?.setAttribute('aria-current', 'true');
+      if (items[i]) { const ol = items[i].closest('.feed-list'), bt = items[i]; if (ol && (bt.offsetTop < ol.scrollTop + 40 || bt.offsetTop + bt.offsetHeight > ol.scrollTop + ol.clientHeight - 20)) ol.scrollTo({ top: bt.offsetTop - ol.clientHeight / 3, behavior: 'instant' }); } if (items[i] && innerWidth < 1100) { const ol = items[i].closest('ol'), bt = items[i].closest('li') || items[i]; if (ol) ol.scrollTo({ left: bt.offsetLeft - ol.clientWidth / 2 + bt.offsetWidth / 2, behavior: 'instant' }); }
       { const lg = document.querySelector('.feed-legend'); if (lg && lg.classList.contains('away') !== (i > 0)) { lg.classList.toggle('away', i > 0); document.documentElement.style.setProperty('--fd-leg', (i > 0 ? 0 : lg.offsetHeight) + 'px'); let done = false; const re = () => { if (done) return; done = true; scroller.scrollTo({ top: reels[s.i].offsetTop, behavior: 'auto' }); }; scroller.addEventListener('scrollend', re, { once: true }); setTimeout(re, 1200); } }   // the label key stays at the top of the feed: once you move on it is gone, not following you
       if (i > 0) root.classList.add('moved');
       try { history.replaceState(null, '', '#watch/' + reels[i].dataset.id + (root.dataset.tier ? '?tier=' + root.dataset.tier : '')); } catch (e) { /* file: */ }
       document.title = reels[i].getAttribute('aria-label') + ' — SF Money Trail';
     };
-    const go = i => { s.fullscreen.exit(false); const target = i < reels.length ? reels[i] : scroller.lastElementChild; if (target) target.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); };
+    const go = i => { s.fullscreen.exit(false); const target = i < reels.length ? reels[i] : scroller.lastElementChild; if (target) target.scrollIntoView({ behavior: 'instant', block: 'start' }); };
     const shows = [];
     function wire(k, v) {                                                             // the open film's voice track drives this reel's play state, bar and auto-advance
       const r = reels[k];

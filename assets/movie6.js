@@ -805,7 +805,7 @@
     let lastIndex = -1, pageIndex = -1, pages = [], pageLabel, lastKey = '';
     function paint(b) {
       const plate=plateFor(b,c,k===0);
-      el.className = ['s6','fd-slide','plate-'+plate.style,plate.type==='doc'?'s6-doc':'',plate.type==='record'?'s6-record':'',...['in','out'].filter(name=>el.classList.contains(name))].filter(Boolean).join(' ');
+      el.className = ['s6','fd-slide','plate-'+plate.style,plate.type==='doc'?'s6-doc':'',plate.type==='record'?'s6-record':'',el.classList.contains('in')?'in':''].filter(Boolean).join(' ');
       el.dataset.kind=plate.type; el.dataset.graphics='evidence';
       if (plate.layout) el.dataset.layout=plate.layout; else delete el.dataset.layout;
       frame.innerHTML=plate.html;
@@ -825,7 +825,7 @@
       const i=Math.min(Math.max(0,st.i || 0),bs.length-1),b=bs[i];
       if(lastIndex!==i){
         const key=keys[i];
-        if(key!==lastKey){st.beforePageChange?.();paint(b);lastKey=key;}
+        if(key!==lastKey){paint(b);lastKey=key;}
         if(!pages.length) fit();
         lastIndex=i;
       }
@@ -834,15 +834,10 @@
         const phase=bs.length>1 && oneVisual ? st.lt/Math.max(.2,st.dur) : st.bp;
         const next=Math.min(pages.length-1,Math.floor(Math.max(0,phase || 0)*pages.length));
         if (next !== pageIndex) {
-          const old = pages[pageIndex], current = pages[next];
           pages.forEach((p,k) => { p.hidden = k !== next; p.classList.toggle('in', k === next); });
-          current.inert = false;
-          current.removeAttribute('aria-hidden');
-          current.classList.remove('out');
           if (pageLabel) pageLabel.textContent = (next + 1) + ' / ' + pages.length;
           pageIndex = next;
           fit();
-          if (old) st.blendPages?.(old, current);
         }
       }
     }

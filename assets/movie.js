@@ -9,7 +9,6 @@
   const mediaUrl = (id, extension) => BASE + encodeURIComponent(id) + extension + editionQuery;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
-  const CUT_MS = 160;
   const fmtT = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
   const money = v => { const a = Math.abs(v); return a >= 1e9 ? '$' + (v / 1e9).toFixed(2) + 'B' : a >= 1e6 ? '$' + (v / 1e6).toFixed(1) + 'M' : a >= 1e4 ? '$' + Math.round(v / 1e3) + 'K' : '$' + Math.round(v).toLocaleString('en-US'); };
   const figs = t => esc(t).replace(/(-?\$[\d,]+(?:\.\d+)?(?:\s?(?:million|billion|thousand)|[KMB]\b)?|\b\d[\d,]*(?:\.\d+)?%|\b\d{1,3}(?:,\d{3})+\b)/g, '<b class="fig">$1</b>');
@@ -37,7 +36,7 @@
     },
     number(c, bs) {
       const v = at(bs, 'value');
-      return `<div class="v-num"><div class="k"${B(bs[0])}>The number</div><div class="n-v"${B(v)} data-count="${+c.amount.value}">$0</div><div class="n-l"${B(v)}>${esc(c.amount.label || '')}</div></div>`;
+      return `<div class="v-num"><div class="k"${B(bs[0])}>The number</div><div class="n-v"${B(v)} data-count="${+c.amount.value}">${money(+c.amount.value)}</div><div class="n-l"${B(v)}>${esc(c.amount.label || '')}</div></div>`;
     },
     oneline(c, bs) { return `<div class="v-one"><div class="k"${B(bs[0])}>In one line</div><p class="${size(c.oneLine, 210, 330).trim()}"${B(bs[0])}>${figs(c.oneLine)}</p></div>`; },
     story(c, bs) {
@@ -120,7 +119,7 @@
   }
   function close() {
     if (!cur) return;
-    const s = cur; cur = null; cancelAnimationFrame(s.raf); s.finishCut?.();
+    const s = cur; cur = null; cancelAnimationFrame(s.raf);
     try { s.voice.pause(); s.bed.pause(); } catch (e) { /* not started */ }
     if (s.blobUrl) URL.revokeObjectURL(s.blobUrl);
     window.removeEventListener('keydown', s.onKey, true); window.removeEventListener('resize', s.fit); if (s.onUp) window.removeEventListener('pointerup', s.onUp); if (s.ro) s.ro.disconnect();
@@ -166,10 +165,7 @@
     if (window.ResizeObserver) { s.ro = new ResizeObserver(() => s.fit()); s.ro.observe($('.mv-wrap')); }           // the bar grows once the chapters arrive: refit then too
     // the film clock: the audio's own time, smoothed between its updates (some browsers move currentTime in steps) and never more than .25 s ahead of it
     const clk = { ct: -1, pt: 0, shown: 0 };
-    const motion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
-    voice.addEventListener('seeking', () => { s.jump = true; clk.ct = -1; finishCut(); });
-    voice.addEventListener('pause', finishCut);
-    voice.addEventListener('waiting', finishCut);
+    voice.addEventListener('seeking', () => { s.jump = true; clk.ct = -1; });
     const now = () => {
       if (s.still != null) return s.still; if (s.want != null) return s.want;
       const ct = voice.currentTime || 0, pt = performance.now();
@@ -245,7 +241,7 @@
       if (s.v6) {                                                                  // a written film: shots, drawn by assets/movie6.js
         root.classList.add('v6'); s.names6 = m.chapters || {}; s.shots = [];
         s.beats.forEach(b => { const last = s.shots[s.shots.length - 1]; if (!last || last.id !== b.shot || last.kind !== b.visual?.type) s.shots.push({ id: b.shot, kind: b.visual?.type, beats: [], k: s.shots.length }); b.si = s.shots.length - 1; b.step = s.shots[b.si].beats.length; s.shots[b.si].beats.push(b); });
-        s.shots.forEach((sh, k) => { sh.t0 = k ? Math.max(0, sh.beats[0].t0 - .3) : 0; }); s.shots.forEach((sh, k) => { sh.t1 = k + 1 < s.shots.length ? s.shots[k + 1].t0 : s.dur; });
+        s.shots.forEach((sh, k) => { sh.t0 = k ? sh.beats[0].t0 : 0; }); s.shots.forEach((sh, k) => { sh.t1 = k + 1 < s.shots.length ? s.shots[k + 1].t0 : s.dur; });
         let subs = null; try { subs = localStorage.getItem(SUBS_KEY); } catch (e) { /* none saved */ }
         if (subs === 'off') { root.classList.add('nocap'); $('[data-act=cap]').setAttribute('aria-pressed', 'false'); }
         $('[data-act=cap]').textContent = 'Subtitles'; $('[data-act=cap]').title = 'Subtitles on or off (C)';
@@ -318,16 +314,28 @@
       const action = playing() ? 'Pause' : voice.ended ? 'Play again' : 'Play';
       if (playButton.textContent !== action) playButton.textContent = action;
     }
-    // short-form captions: groups of up to four words, broken at punctuation, the word being said lit. Word times are
-    // estimated from the passage's timing by the length of each word (the voice reads at an even pace).
-    // A voice that reports word times (ElevenLabs, beat field wt) places each word exactly; otherwise times are estimated from word lengths.
-    // Emphasised words come from the authored script.
+    // Keep a complete phrase on screen. Word timestamps select the next phrase
+    // even when the browser skips display frames or playback jumps during a seek.
     function norm(w) { return String(w).toLowerCase().replace(/[^a-z0-9$.%']/g, '').replace(/[.']+$/, ''); }
     function capsOf(b) {
       if (!b.caps) { const ws = b.text.split(/\s+/).filter(Boolean), d = Math.max(.2, b.t1 - b.t0); let at;
         if (Array.isArray(b.wt) && b.wt.length) at = ws.map((_, i) => clamp((b.wt[Math.min(b.wt.length - 1, Math.round(i * (b.wt.length - 1) / Math.max(1, ws.length - 1)))] || 0) / d));
         else { const wt = ws.map(w => w.replace(/[^\w$]/g, '').length + 2 + (/[.,;:?!]$/.test(w) ? 3 : 0)), tot = wt.reduce((x, y) => x + y, 0); let acc = 0; at = wt.map(x => { const a = acc / tot; acc += x; return a; }); }
-        const gs = []; let g = []; ws.forEach((w, i) => { g.push(i); if (g.length >= 4 || /[.,;:?!]$/.test(w) || i === ws.length - 1) { gs.push(g); g = []; } }); b.caps = { ws, at, gs, em: new Set() }; }
+        const gs = [];
+        let group = [], length = 0;
+        for (let i = 0; i < ws.length; i++) {
+          if (group.length && length + 1 + ws[i].length > 42) {
+            gs.push(group); group = []; length = 0;
+          }
+          group.push(i);
+          length += ws[i].length + (group.length > 1 ? 1 : 0);
+          if (group.length >= 8 || (group.length >= 3 && /[.!?;:]$/.test(ws[i]))) {
+            gs.push(group); group = []; length = 0;
+          }
+        }
+        if (group.length) gs.push(group);
+        b.caps = { ws, at, gs, em: new Set() };
+      }
       return b.caps;
     }
     function caps6(b, bi, p) {
@@ -340,14 +348,6 @@
       if (group !== s.captionGroup) {
         cap.innerHTML = '<span class="cg">' + group.map(i => '<span' + (em.has(i) ? ' class="em"' : '') + '>' + esc(ws[i]) + '</span>').join(' ') + '</span>';
         s.captionGroup = group;
-        s.captionWord = -1;
-      }
-      if (wi !== s.captionWord) {
-        [...cap.firstChild.children].forEach((word, j) => {
-          word.classList.toggle('now', group[j] === wi);
-          word.classList.toggle('past', group[j] < wi);
-        });
-        s.captionWord = wi;
       }
     }
 
@@ -367,48 +367,18 @@
       shot.update({t: first.t0, lt: first.t0 - next.t0, dur: Math.max(1, next.t1 - next.t0), i: 0, bp: 0, bt: 0});
       s.prepared = {k: next.k, ...shot};
     }
-    function finishCut() {
-      if (!s.cut) return;
-      const {animation, retire} = s.cut;
-      s.cut = null;
-      animation.onfinish = null;
-      animation.cancel();
-      retire();
-    }
-    function canBlend() {
-      return playing() && !s.jump && !voice.seeking && !motion?.matches && typeof view6.animate === 'function';
-    }
-    // The outgoing plate stays opaque while the next one fades over it on the compositor.
-    function blend(previous, next, retire = () => previous.remove()) {
-      previous.classList.remove('in');
-      previous.classList.add('out');
-      previous.inert = true;
-      previous.setAttribute('aria-hidden', 'true');
-      const animation = next.animate([{opacity: 0}, {opacity: 1}], {duration: CUT_MS, easing: 'ease-out'});
-      // New animations otherwise wait for another rendering update to acquire a start time.
-      if (document.timeline?.currentTime != null) animation.startTime = document.timeline.currentTime;
-      s.cut = {animation, retire};
-      animation.onfinish = () => { if (s.cut?.animation === animation) finishCut(); };
-    }
-    s.finishCut = finishCut;
     function frame6(t, bi) {
       const b = s.beats[Math.max(0, bi)], sh = s.shots[b.si], p = bi < 0 ? 0 : clamp((t - b.t0) / Math.max(.2, b.t1 - b.t0));
-      if (s.jump || motion?.matches) finishCut();
       const changed = !s.cur6 || s.cur6.k !== sh.k;
-      let previous;
       if (changed) {
-        finishCut();
         view6.setAttribute('aria-hidden', String(sh.kind !== 'end'));
-        const old = s.cur6;
         s.cur6 = s.prepared?.k === sh.k ? s.prepared : {k: sh.k, ...window.FD_FILM6.shot(sh.beats, c, sh.k)};
         s.prepared = null;
-        prep.replaceChildren();
         s.cur6.el.classList.add('in');
-        view6.appendChild(s.cur6.el);
-        if (old) {
-          if (canBlend() && old.k + 1 === sh.k && t - b.t0 < .2) previous = old.el;
-          else old.el.remove();
-        }
+        // Swap the entire prepared plate in one paint. A late frame can skip a
+        // cue without ever displaying an empty or partially visible frame.
+        view6.replaceChildren(s.cur6.el);
+        prep.replaceChildren();
         if (b.view !== s.view) {
           s.view = b.view;
           $('.mv-top .ch').textContent = s.chName(b.view);
@@ -420,21 +390,8 @@
         }
       }
       const lt = Math.max(0, t - sh.t0), dur = Math.max(1, sh.t1 - sh.t0);
-      function keepPreviousPage() {
-        if (changed || previous || !canBlend()) return;
-        finishCut();
-        previous = s.cur6.el.cloneNode(true);
-        view6.insertBefore(previous, s.cur6.el);
-      }
-      function blendPages(old, current) {
-        if (changed || previous || !canBlend()) return;
-        finishCut();
-        old.hidden = false;
-        blend(old, current, () => { old.hidden = true; old.classList.remove('out'); });
-      }
-      try { s.cur6.update({t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0), beforePageChange: keepPreviousPage, blendPages}); }
+      try { s.cur6.update({t, lt, dur, i: b.step, bp: p, bt: Math.max(0, t - b.t0)}); }
       catch (e) { if (!s.err6) { s.err6 = 1; console.error(e); } }
-      if (previous) blend(previous, s.cur6.el);
       if (bi !== s.bi && bi === s.bi + 1 && !s.jump && playing() && b.step > 0) sound(window.FD_FILM6.SFX[b.kind]);
       s.bi = bi;
       s.jump = false;
@@ -449,15 +406,11 @@
       if (s.v6) return frame6(t, bi);
       const b = beats[Math.max(0, bi)], p = bi < 0 ? 0 : clamp((t - b.t0) / Math.max(.2, b.t1 - b.t0));
       if (b.view !== s.view) {
-        finishCut();
-        const previous = s.view && canBlend() && bi === s.bi + 1 ? view.cloneNode(true) : null;
-        if (previous) view.before(previous);
         s.view = b.view; s.bi = -2; const render = draw[b.view];
         view.dataset.graphics = 'legacy';
         view.innerHTML = render ? render(c, beats.filter(x => x.view === b.view)) : '<div class="v-open"><h1>' + esc(b.text || c.title) + '</h1></div>';
         $('.mv-top .ch').textContent = CHAPTER[b.view] || ''; root.querySelectorAll('.mv-chap button').forEach(x => x.classList.toggle('cur', x.dataset.view === b.view));
-        const r = view.querySelector('[data-roll]'); if (r) s.roll = r;
-        if (previous) blend(previous, view);
+        const r = view.querySelector('[data-roll]'); if (r) { s.roll = r; s.sourcePage = -1; }
       }
       if (bi !== s.bi) {
         const step = bi === s.bi + 1 && !s.jump; s.jump = false; view.classList.add('in');
@@ -479,9 +432,18 @@
         if (step && playing()) sound(SFX[b.kind]);
         s.bi = bi;
       }
-      // things that move through a passage: the number counting up, the source list rolling, the words
-      view.querySelectorAll('[data-count]').forEach(el => { const k = +el.dataset.b, v = +el.dataset.count, q = bi > k ? 1 : bi < k ? 0 : 1 - Math.pow(1 - clamp(p * 2.4), 3); el.textContent = money(v * q); });
-      if (b.view === 'close' && s.roll) { const k = beats.find(x => x.view === 'close' && x.kind === 'sources'), over = Math.max(0, s.roll.scrollHeight - 300), q = k ? clamp((t - k.t0) / Math.max(1, s.dur - k.t0 - .5)) : 0; s.roll.style.transform = `translateY(${-Math.round(over * q)}px)`; }
+      if (b.view === 'close' && s.roll) {
+        const start = beats.find(x => x.view === 'close' && x.kind === 'sources');
+        const height = s.roll.parentNode.clientHeight || 300;
+        const extent = Math.max(0, s.roll.scrollHeight - height);
+        const pages = Math.ceil(extent / height) + 1;
+        const phase = start ? clamp((t - start.t0) / Math.max(1, s.dur - start.t0)) : 0;
+        const page = Math.min(pages - 1, Math.floor(phase * pages));
+        if (page !== s.sourcePage) {
+          s.roll.style.transform = 'translateY(' + -Math.min(extent, page * height) + 'px)';
+          s.sourcePage = page;
+        }
+      }
       chrome(t, b, bi, p);
     }
     return s;
