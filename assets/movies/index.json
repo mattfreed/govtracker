@@ -1930,5 +1930,15 @@
   "seconds": 45.0,
   "passages": 12,
   "audioStatus": "temporary-local"
+ },
+ "housing-grant-hiring-and-training-counts": {
+  "seconds": 43.6,
+  "passages": 12,
+  "audioStatus": "temporary-local"
+ },
+ "thirteen-unreported-federal-subawards": {
+  "seconds": 45.5,
+  "passages": 14,
+  "audioStatus": "temporary-local"
  }
 }

@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 481 case files. The public citation check tested 3,988 distinct URLs across 5,697 case citations. 3,887 returned content. 95 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 483 case files. The public citation check tested 3,998 distinct URLs across 5,708 case citations. 3,898 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -619,3 +619,7 @@ A Port restaurant lease audit traced charges left out of percentage rent. A late
 - [Unexpected financial-system reports delayed San Francisco’s year-end close](https://sfgovtracker.com/#case/city-financial-system-report-reconciliation). After moving to PeopleSoft, the City used manual reconciliations to produce its FY2018 statements. A separate earlier governance finding had already been marked implemented. The following audit records what happened to the reporting recommendation. [Source](https://sfgov.legistar.com/View.ashx?GUID=3717CAEA-8283-4B33-8B75-595FD9C88676&ID=4039157&M=F#page=183)
 
 - [The Port could not document its vendor check. Auditors found no suspension or debarment.](https://sfgovtracker.com/#case/port-security-grant-vendor-check). One sampled Port security contract lacked evidence of a timely check. The audits record a federal closure but disagree on the year. Treasury records a separate reduction in the same award without identifying its cause. [Source](https://media.api.sf.gov/documents/FY2015_Single_Audit_Report.pdf#page=185)
+
+- [Thirteen federal subawards were missing from the City’s reports](https://sfgovtracker.com/#case/thirteen-unreported-federal-subawards). A City audit identified twelve homelessness subawards and one workforce subaward. Federal records now show a $58,000 workforce award in the audited year. [Source](https://sfgov.legistar.com/View.ashx?GUID=3717CAEA-8283-4B33-8B75-595FD9C88676&ID=4039157&M=F#page=186)
+
+- [Housing reports overstated new hires and undercounted trainees](https://sfgovtracker.com/#case/housing-grant-hiring-and-training-counts). The City overstated new hires by three in one federal program and omitted one trainee in a different program. The following audit recorded the correction. [Source](https://media.api.sf.gov/documents/FY2016_Single_Audit_Report.pdf#page=193)
