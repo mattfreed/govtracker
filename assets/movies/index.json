@@ -1574,5 +1574,17 @@
  "downtown-steam-franchise-fees": {
   "seconds": 60.1,
   "passages": 14
+ },
+ "bart-inventory-quote-and-card-purchase-samples": {
+  "seconds": 51.1,
+  "passages": 12
+ },
+ "bart-time-not-worked-restitution-and-pension": {
+  "seconds": 50.3,
+  "passages": 12
+ },
+ "civic-center-steam-loop-repairs": {
+  "seconds": 55.5,
+  "passages": 13
  }
 }
