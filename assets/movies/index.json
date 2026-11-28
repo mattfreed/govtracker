@@ -1702,5 +1702,17 @@
  "uber-airport-toll-refunds": {
   "seconds": 51.5,
   "passages": 12
+ },
+ "abag-rincon-hill-bond-embezzlement": {
+  "seconds": 72.2,
+  "passages": 15
+ },
+ "access-line-tax-settlement": {
+  "seconds": 53.8,
+  "passages": 13
+ },
+ "regents-water-overbilling-credit": {
+  "seconds": 42.0,
+  "passages": 11
  }
 }

@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 426 case files. The public citation check tested 3,540 distinct URLs across 5,232 case citations. 3,439 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 429 case files. The public citation check tested 3,570 distinct URLs across 5,262 case citations. 3,469 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -509,3 +509,9 @@ A Port restaurant lease audit traced charges left out of percentage rent. A late
 - [Yerba Buena Gardens expense claims led to a $400,000 settlement and contracting injunction](https://sfgovtracker.com/#case/yerba-buena-gardens-management-false-claims). The adopted ordinance approved a $400,000 agreement concerning the disputed property-management expenses, with a three-year City contracting restriction and a designated use for the funds. Contract encumbrances are distinct from collections. [Source](https://sfocii.org/sites/default/files/inline-files/RESO%205-2018_MJM%20Contract%203rd%20Amnd.pdf#page=1)
 
 - [The $4 Uber airport toll that appeared before SFO’s ride-hail fee](https://sfgovtracker.com/#case/uber-airport-toll-refunds). The $4 on the July receipt preceded SFO’s subsequent $3.85 per-trip tariff. The federal court ordered $1,814,909.55 in statewide class refunds. The Airport’s reported $6.5 million of FY2015 trip revenues and the separate public penalty cover different populations and obligations. [Source](https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_15-cv-04348/pdf/USCOURTS-cand-3_15-cv-04348-2.pdf#page=2)
+
+- [A false developer reimbursement diverted $1.3 million in Rincon Hill bond funds](https://sfgovtracker.com/#case/abag-rincon-hill-bond-embezzlement). The $1,296,340.66 Rincon Hill transfer was included in $3,876,135.21 taken across the regional cases. The authority’s audited accounts report restoration, and the City traced the $925,666 infrastructure portion to Union Bank in July 2016. [Source](https://sfbos.org/ftp/uploadedfiles/bdsupvrs/resolutions15/r0204-15.pdf#page=1)
+
+- [Three telecom settlements and one tax account](https://sfgovtracker.com/#case/access-line-tax-settlement). Three 2025 ordinances total $21.34 million across the three defendant groups in the same case. The City recorded $79.60 million in FY2025–26 current access line tax revenue. The ledger does not distinguish individual settlement receipts. [Source](https://sfbos.org/sites/default/files/o0182-25.pdf#page=1)
+
+- [The university overbilling case that San Francisco settled with a water credit](https://sfgovtracker.com/#case/regents-water-overbilling-credit). San Francisco authorized $473,530.02 as a credit to the Regents’ water account. Verification of the customer-level posting requires the dated credit memorandum and corrected bills. [Source](https://sfgov.legistar.com/View.ashx?M=F&ID=4979635&GUID=ED81F916-3E49-4B9F-91EB-CBA661877C4B#page=1)
