@@ -2,7 +2,7 @@
 
 ## Reopened investigations on November 27
 
-The current edition contains 429 case files. The public citation check tested 3,570 distinct URLs across 5,262 case citations. 3,469 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
+The current edition contains 433 case files. The public citation check tested 3,595 distinct URLs across 5,288 case citations. 3,495 returned content. 94 refused automated retrieval. The other responses are recorded separately from successful downloads. A successful response verifies access; each case states what its sources establish.
 
 The payment review compared 3,337,302 positive supplier voucher-and-department observations. Equal payments spanning at least three vouchers occurred in 159,565 groups. Three identical SFMTA bus vouchers illustrate why the underlying invoice and vehicle acceptance milestones matter. The relationship review retained previously unflagged entities and compared the directed transfers reported by each filer. Both full comparison datasets are downloadable.
 
@@ -515,3 +515,11 @@ A Port restaurant lease audit traced charges left out of percentage rent. A late
 - [Three telecom settlements and one tax account](https://sfgovtracker.com/#case/access-line-tax-settlement). Three 2025 ordinances total $21.34 million across the three defendant groups in the same case. The City recorded $79.60 million in FY2025–26 current access line tax revenue. The ledger does not distinguish individual settlement receipts. [Source](https://sfbos.org/sites/default/files/o0182-25.pdf#page=1)
 
 - [The university overbilling case that San Francisco settled with a water credit](https://sfgovtracker.com/#case/regents-water-overbilling-credit). San Francisco authorized $473,530.02 as a credit to the Regents’ water account. Verification of the customer-level posting requires the dated credit memorandum and corrected bills. [Source](https://sfgov.legistar.com/View.ashx?M=F&ID=4979635&GUID=ED81F916-3E49-4B9F-91EB-CBA661877C4B#page=1)
+
+- [San Francisco recorded $2.9 million in SoMa fees under the wrong authority code](https://sfgovtracker.com/#case/soma-stabilization-fee-authority-code). The Controller documented a fiscal 2018–19 coding error. The payer detail and revenue ledger agree on the receipts, and the next report carries their balance forward. The available records do not identify the correcting journal. [Source](https://sfcontroller.org/sites/default/files/Documents/Budget/FY2016-17%20through%20FY2018-19%20Development%20Impact%20Fee%20Report-1-2-20-Final.pdf#page=16)
+
+- [SFUSD arts spending rose while other funding fell $92,577 short](https://sfgovtracker.com/#case/sfusd-proposition-28-arts-spending). Auditors found that Proposition 28 money replaced $92,576.57 of prior arts support in FY2023–24. The next audit recorded the corrective action as implemented. [Source](https://www.cde.ca.gov/FG/aa/pa/calc23p2.asp#ams)
+
+- [Why the Giants paid for Fan Fest traffic but not ordinary home games](https://sfgovtracker.com/#case/event-traffic-cost-recovery). A city audit traced $709,168 in unreimbursed traffic work across games, fairs, demonstrations and routine duty. The Giants’ documented Fan Fest payment shows how the event and its contract changed who owed the bill. [Source](https://sfcontroller.org/sites/default/files/FileCenter/Documents/3304-mta-final.pdf#page=27)
+
+- [Police collected event overhead and kept it in the overtime fund](https://sfgovtracker.com/#case/police-event-overhead-retention). A 1996 audit traced $3,112,906 in private-payer police fees and found that collected overhead stayed in the wrong City fund. It documented unauthorized waivers, while stadium agreements and street-fair caps explained other unreimbursed costs. [Source](https://sfbos.org/sites/default/files/Budget_Analyst_Phase_I_Management_Audit_Report_San_Francisco_Police_Department_SFPD_Fiscal_Year_1996-97_0.pdf#page=121)

@@ -579,6 +579,10 @@
   "seconds": 42.3,
   "poster": "european-food-wholesale-wage-order.jpg"
  },
+ "event-traffic-cost-recovery": {
+  "seconds": 50.8,
+  "poster": "event-traffic-cost-recovery.jpg"
+ },
  "faces-sf-childcare-and-meal-repayments": {
   "seconds": 49.7,
   "poster": "faces-sf-childcare-and-meal-repayments.jpg"
@@ -1059,6 +1063,10 @@
   "seconds": 113.0,
   "poster": "police-captains-overtime-in-lieu.jpg"
  },
+ "police-event-overhead-retention": {
+  "seconds": 47.8,
+  "poster": "police-event-overhead-retention.jpg"
+ },
  "police-overtime-limits-not-enforced": {
   "seconds": 174.0,
   "poster": "police-overtime-limits-not-enforced.jpg"
@@ -1423,6 +1431,10 @@
   "seconds": 63.3,
   "poster": "sfusd-pay-reported-outside-regular-wages.jpg"
  },
+ "sfusd-proposition-28-arts-spending": {
+  "seconds": 47.5,
+  "poster": "sfusd-proposition-28-arts-spending.jpg"
+ },
  "sfusd-school-bond-interest-and-duplicate-entries": {
   "seconds": 47.1,
   "poster": "sfusd-school-bond-interest-and-duplicate-entries.jpg"
@@ -1462,6 +1474,10 @@
  "soft-story-retrofit-permits-and-certificates": {
   "seconds": 49.0,
   "poster": "soft-story-retrofit-permits-and-certificates.jpg"
+ },
+ "soma-stabilization-fee-authority-code": {
+  "seconds": 43.5,
+  "poster": "soma-stabilization-fee-authority-code.jpg"
  },
  "somarts-grant-reimbursement-errors": {
   "seconds": 43.6,

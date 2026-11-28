@@ -1714,5 +1714,21 @@
  "regents-water-overbilling-credit": {
   "seconds": 42.0,
   "passages": 11
+ },
+ "event-traffic-cost-recovery": {
+  "seconds": 50.8,
+  "passages": 11
+ },
+ "police-event-overhead-retention": {
+  "seconds": 47.8,
+  "passages": 12
+ },
+ "sfusd-proposition-28-arts-spending": {
+  "seconds": 47.5,
+  "passages": 13
+ },
+ "soma-stabilization-fee-authority-code": {
+  "seconds": 43.5,
+  "passages": 11
  }
 }
